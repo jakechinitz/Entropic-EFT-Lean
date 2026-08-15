@@ -9,12 +9,19 @@ This file is not part of the `EntropicEFT` library target. It is run in CI
 on an axiom outside the declared trust base:
 
 * `propext`, `Classical.choice`, `Quot.sound` — standard Lean/Mathlib foundations;
-* `Lean.ofReduceBool` — the `native_decide` certificate, i.e. compiled evaluation
-  of a finite enumeration rather than kernel reduction.
+* the enumerated `native_decide` certificates — compiled evaluation of a finite
+  enumeration rather than kernel reduction. Lean 4.33 mints one named axiom per
+  use, e.g. `EntropicEFT.UV.boundaryStates_card._native.native_decide.ax_1_1`,
+  so the checker pins the exact set of declarations allowed to make such an
+  appeal (`EXPECTED_NATIVE_SOURCES`). A new `native_decide` beneath an audited
+  theorem therefore fails CI rather than quietly widening the trust base.
 
 Anything else — in particular `sorryAx`, which a `sorry` would introduce — is a
-CI failure. This is the machine-checked form of the trust-base paragraph in the
+CI failure. This is the machine-checked form of the trust-base section of the
 README: readers do not have to take the claim on anyone's word.
+
+Adding a theorem here is cheap and strictly increases coverage; the audited set
+should grow as the formalization does.
 -/
 
 -- Foundations-only results (no enumeration certificate expected).

@@ -223,12 +223,33 @@ From this point the build is no longer verified only on the author's machine.
    so the pinned Mathlib revision cannot drift underneath the build.
 2. The build log is scanned for `declaration uses 'sorry'` and the job fails if any
    appears — `lake build` only warns on `sorry`, it does not fail.
-3. `Scripts/AxiomAudit.lean` runs `#print axioms` over the headline theorems listed in
-   the sections above, and `tools/check_axioms.py` fails the job if any of them depends
-   on an axiom outside `{propext, Classical.choice, Quot.sound, Lean.ofReduceBool}`.
-   `sorryAx` is deliberately absent from that allowlist. The captured footprint is
-   uploaded as a CI artifact so the axiom lists can be read directly rather than taken
-   on trust.
+3. `Scripts/AxiomAudit.lean` runs `#print axioms` over twenty-one headline theorems
+   from the sections above, and `tools/check_axioms.py` fails the job if any of them
+   depends on an axiom outside the trust base. `sorryAx` is deliberately absent from
+   the allowlist. The captured footprint is uploaded as a CI artifact so the axiom
+   lists can be read directly rather than taken on trust.
+
+   Correction to the earlier sections' wording: `native_decide` under Lean 4.33 does
+   NOT resolve to the single global `Lean.ofReduceBool` axiom. Each use mints its own
+   opaque axiom named after the declaration that used it, e.g.
+   `EntropicEFT.UV.boundaryStates_card._native.native_decide.ax_1_1`. This is strictly
+   better for auditing: the certificates are individually named and countable rather
+   than pooled behind one anonymous global. The audited dependency cone contains ten
+   such certificates across nine declarations:
+
+   - `EntropicEFT.UV.allPortAssignments_card`
+   - `EntropicEFT.UV.boundaryStates_card`
+   - `EntropicEFT.UV.spectrum_min`, `EntropicEFT.UV.spectrum_max`
+   - `EntropicEFT.UV.unorientedStates_card`
+   - `EntropicEFT.Structure.four_subsets_share`
+   - `EntropicEFT.Structure.support_card_four`
+   - `EntropicEFT.Structure.johnson_fibration` (two certificates)
+   - `EntropicEFT.Structure.unweighted_mean_exact`
+
+   `tools/check_axioms.py` pins exactly this set, so a new `native_decide` anywhere
+   beneath an audited theorem fails the build instead of silently widening the trust
+   base. A certificate *disappearing* is reported but not failed — that means a proof
+   stopped relying on compiled evaluation, which is an improvement.
 4. A separate job runs `tools/syntax_sanity.py` and `tools/audit.py` (the independent
    Python re-derivation, 42 numerical checks) on a clean Python 3.12 environment.
 

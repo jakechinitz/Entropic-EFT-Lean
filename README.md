@@ -29,13 +29,19 @@ answer. A theorem in this repository rests on exactly three kinds of thing:
 1. **Standard foundations.** `propext`, `Classical.choice`, `Quot.sound` — the ordinary
    axioms of Lean 4 and Mathlib, and nothing else. There are zero project-level `axiom`
    declarations and zero `sorry`/`admit` holes; CI fails if either appears.
-2. **Enumerated `native_decide` certificates.** The finite combinatorial counts (the
-   1,680-state cardinality, the eleven spectrum multiplicities, the ℤ₂ orientation
-   doubling over 4,802 states) are discharged by compiled evaluation rather than kernel
-   reduction, which means trusting the Lean compiler in addition to the kernel. This
-   trust is removable in principle by replacing `native_decide` with `decide` and
-   accepting a much longer kernel evaluation; it is *not* removed here. These are the
-   only places the kernel is bypassed, and they are all finite enumerations.
+2. **Enumerated `native_decide` certificates.** The finite combinatorial counts — the
+   1,680-state cardinality, the spectrum extremes, the ℤ₂ orientation doubling, the
+   Johnson fibration, the four-subset pigeonhole, the exact flat mean — are discharged
+   by compiled evaluation rather than kernel reduction, which means trusting the Lean
+   compiler in addition to the kernel. "Enumerated" is meant literally: Lean 4.33 mints
+   a *separate, named* axiom for each such appeal, of the form
+   `EntropicEFT.UV.boundaryStates_card._native.native_decide.ax_1_1`. In the audited
+   dependency cone there are ten of them across nine declarations, and CI pins that
+   exact set — a new `native_decide` anywhere beneath an audited theorem introduces a
+   name the checker does not recognize and fails the build. The trust is removable in
+   principle by replacing `native_decide` with `decide` and accepting a much longer
+   kernel evaluation; it is *not* removed here. These are the only places the kernel is
+   bypassed, and they are all finite enumerations.
 3. **Named physical premises and external mathematics.** Everything that is a modelling
    commitment is a Lean *structure* with named fields — `SurvivalGapMassBridge`,
    `MarkedFusionIncidence`, `FixedContinuumEventMeasure`, `RelationalCapacityGaugeSplit`,
@@ -45,10 +51,11 @@ answer. A theorem in this repository rests on exactly three kinds of thing:
    Consuming one of these is visible in the type of every theorem that depends on it.
 
 Categories 1 and 2 are checked mechanically on every push: `Scripts/AxiomAudit.lean`
-runs `#print axioms` over the headline theorems and `tools/check_axioms.py` fails the
-build if anything outside that allowlist — `sorryAx` above all — appears. The captured
-footprint is uploaded as a CI artifact, so you can read the actual axiom list for
-yourself rather than trusting this paragraph.
+runs `#print axioms` over twenty-one headline theorems and `tools/check_axioms.py` fails
+the build if anything outside the trust base appears — `sorryAx`, what a `sorry`
+introduces, above all. The captured footprint is uploaded as a CI artifact, so you can
+read the actual axiom list of each theorem for yourself rather than trusting this
+paragraph.
 
 Category 3 is not mechanically checkable, and that is the point. Formalizing a premise
 must not make the premise look derived. `EntropicEFT/OpenProblems/Interfaces.lean` is the
