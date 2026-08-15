@@ -1,0 +1,82 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# One run per ref; a newer push cancels an in-flight one.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lean:
+    name: lake build (Lean 4.33.0 + Mathlib)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      # Installs elan, honours `lean-toolchain`, fetches the Mathlib cache,
+      # and runs `lake build` on the default target.
+      - name: Build
+        uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: true
+          lint-module: false
+          test: false
+
+      # Everything is warm after the step above, so this is a cheap no-op
+      # rebuild whose log we can inspect. `lake build` does not fail on a
+      # `sorry` — it only warns — so we fail explicitly here instead.
+      - name: Fail on any `sorry`
+        run: |
+          set -o pipefail
+          lake build 2>&1 | tee build.log
+          if grep -q "declaration uses 'sorry'" build.log; then
+            echo "::error::build log contains a 'declaration uses sorry' warning"
+            grep -n "declaration uses 'sorry'" build.log
+            exit 1
+          fi
+          echo "no sorry warnings in build output"
+
+      # Machine-check the trust base claimed in the README: standard
+      # foundations plus the enumerated native_decide certificates, nothing else.
+      - name: Axiom footprint audit
+        run: |
+          set -o pipefail
+          lake env lean Scripts/AxiomAudit.lean 2>&1 | tee axiom-footprint.txt
+          python3 tools/check_axioms.py axiom-footprint.txt
+
+      - name: Upload axiom footprint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: axiom-footprint
+          path: axiom-footprint.txt
+          if-no-files-found: warn
+
+  audit:
+    name: python audit (independent re-derivation)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip scipy
+
+      - name: Delimiter sanity
+        run: python tools/syntax_sanity.py
+
+      # Re-enumerates the 1,680 states and re-derives the spectrum, the H.9
+      # decomposition, eta*, L*, G*, and the lepton ratios from scratch in
+      # Python — an independent check that the Lean definitions say what the
+      # manuscript says they say. This is NOT the Lean kernel.
+      - name: Deterministic audit
+        run: python tools/audit.py

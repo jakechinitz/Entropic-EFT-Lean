@@ -1,0 +1,302 @@
+PASS: Lean modules present
+PASS: LOCAL CONTRACT: EntropicEFT/Audit/ClaimLedger.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Audit/ClaimLedger.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Audit/ClaimLedger.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Audit/ClaimLedger.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Audit/Connections.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Audit/Connections.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Audit/Connections.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Audit/Connections.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Clusters/Projection.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Clusters/Projection.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Clusters/Projection.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Clusters/Projection.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Core/PhysicalInterfaces.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Core/PhysicalInterfaces.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Core/PhysicalInterfaces.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Core/PhysicalInterfaces.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Core/Prelude.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Core/Prelude.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Core/Prelude.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Core/Prelude.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Core/Status.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Core/Status.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Core/Status.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Core/Status.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Cosmology/FixedMeasureDarkEnergy.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Cosmology/FixedMeasureDarkEnergy.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Cosmology/FixedMeasureDarkEnergy.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Cosmology/FixedMeasureDarkEnergy.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Cosmology/SaturatedDust.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Cosmology/SaturatedDust.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Cosmology/SaturatedDust.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Cosmology/SaturatedDust.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Edge/Kernel.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Edge/Kernel.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Edge/Kernel.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Edge/Kernel.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Edge/SourceProjection.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Edge/SourceProjection.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Edge/SourceProjection.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Edge/SourceProjection.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Edge/TetrahedralFrame.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Edge/TetrahedralFrame.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Edge/TetrahedralFrame.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Edge/TetrahedralFrame.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Foundations/Postulates.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Foundations/Postulates.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Foundations/Postulates.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Foundations/Postulates.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Gauge/ProjectiveColor.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Gauge/ProjectiveColor.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Gauge/ProjectiveColor.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Gauge/ProjectiveColor.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Gaussian/RelativeCovariance.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Gaussian/RelativeCovariance.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Gaussian/RelativeCovariance.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Gaussian/RelativeCovariance.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Gravity/FieldDefinitions.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Gravity/FieldDefinitions.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Gravity/FieldDefinitions.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Gravity/FieldDefinitions.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Gravity/Static.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Gravity/Static.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Gravity/Static.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Gravity/Static.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Gravity/StrongField.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Gravity/StrongField.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Gravity/StrongField.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Gravity/StrongField.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Information/Renewal.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Information/Renewal.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Information/Renewal.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Information/Renewal.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Lattice/FiniteRegulator.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Lattice/FiniteRegulator.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Lattice/FiniteRegulator.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Lattice/FiniteRegulator.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Marked/CorrectedH9.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Marked/CorrectedH9.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Marked/CorrectedH9.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Marked/CorrectedH9.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Marked/EdgeGraph.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Marked/EdgeGraph.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Marked/EdgeGraph.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Marked/EdgeGraph.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Marked/SingleStrandRecord.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Marked/SingleStrandRecord.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Marked/SingleStrandRecord.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Marked/SingleStrandRecord.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Microstructure/Architecture.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Microstructure/Architecture.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Microstructure/Architecture.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Microstructure/Architecture.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Numerics/Spine.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Numerics/Spine.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Numerics/Spine.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Numerics/Spine.lean
+PASS: LOCAL CONTRACT: EntropicEFT/OpenProblems/Interfaces.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/OpenProblems/Interfaces.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/OpenProblems/Interfaces.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/OpenProblems/Interfaces.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Quantum/Histories.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Quantum/Histories.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Quantum/Histories.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Quantum/Histories.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Quantum/Replacement.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Quantum/Replacement.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Quantum/Replacement.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Quantum/Replacement.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Representation/FusionSpec.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Representation/FusionSpec.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Representation/FusionSpec.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Representation/FusionSpec.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Representation/MarkedComplement.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Representation/MarkedComplement.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Representation/MarkedComplement.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Representation/MarkedComplement.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Representation/SharpTransfer.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Representation/SharpTransfer.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Representation/SharpTransfer.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Representation/SharpTransfer.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Representation/SpinDimensions.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Representation/SpinDimensions.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Representation/SpinDimensions.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Representation/SpinDimensions.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Scale/Electron.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Scale/Electron.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Scale/Electron.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Scale/Electron.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Scale/Leptons.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Scale/Leptons.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Scale/Leptons.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Scale/Leptons.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Transport/Telegrapher.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Transport/Telegrapher.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Transport/Telegrapher.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Transport/Telegrapher.lean
+PASS: LOCAL CONTRACT: EntropicEFT/Transverse/RankOne.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/Transverse/RankOne.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/Transverse/RankOne.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/Transverse/RankOne.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/Admissibility.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/Admissibility.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/Admissibility.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/Admissibility.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/Boundary.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/Boundary.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/Boundary.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/Boundary.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/BranchAudit.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/BranchAudit.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/BranchAudit.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/BranchAudit.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/ClosureInvariant.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/ClosureInvariant.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/ClosureInvariant.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/ClosureInvariant.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/EtaStar.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/EtaStar.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/EtaStar.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/EtaStar.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/EtaUniqueness.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/EtaUniqueness.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/EtaUniqueness.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/EtaUniqueness.lean
+PASS: LOCAL CONTRACT: EntropicEFT/UV/Spectrum.lean
+PASS: no proof-hole/global-axiom pattern `\bsorry\b` in EntropicEFT/UV/Spectrum.lean
+PASS: no proof-hole/global-axiom pattern `\badmit\b` in EntropicEFT/UV/Spectrum.lean
+PASS: no proof-hole/global-axiom pattern `(^|\n)\s*axiom\s` in EntropicEFT/UV/Spectrum.lean
+PASS: import resolves: EntropicEFT.Core.Status
+PASS: import resolves: EntropicEFT.Gravity.Static
+PASS: import resolves: EntropicEFT.Cosmology.SaturatedDust
+PASS: import resolves: EntropicEFT.Gauge.ProjectiveColor
+PASS: import resolves: EntropicEFT.Marked.CorrectedH9
+PASS: import resolves: EntropicEFT.Marked.SingleStrandRecord
+PASS: import resolves: EntropicEFT.Cosmology.SaturatedDust
+PASS: import resolves: EntropicEFT.Core.Status
+PASS: import resolves: EntropicEFT.Core.Prelude
+PASS: import resolves: EntropicEFT.Cosmology.SaturatedDust
+PASS: import resolves: EntropicEFT.Marked.CorrectedH9
+PASS: import resolves: EntropicEFT.Transport.Telegrapher
+PASS: import resolves: EntropicEFT.Edge.TetrahedralFrame
+PASS: import resolves: EntropicEFT.Edge.Kernel
+PASS: import resolves: EntropicEFT.Core.Prelude
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.UV.ClosureInvariant
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.Gravity.Static
+PASS: import resolves: EntropicEFT.Edge.SourceProjection
+PASS: import resolves: EntropicEFT.Gravity.Static
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.UV.EtaStar
+PASS: import resolves: EntropicEFT.UV.Boundary
+PASS: import resolves: EntropicEFT.Core.Prelude
+PASS: import resolves: EntropicEFT.Representation.FusionSpec
+PASS: import resolves: EntropicEFT.Marked.SingleStrandRecord
+PASS: import resolves: EntropicEFT.UV.EtaStar
+PASS: import resolves: EntropicEFT.Marked.CorrectedH9
+PASS: import resolves: EntropicEFT.Representation.FusionSpec
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.Scale.Leptons
+PASS: import resolves: EntropicEFT.UV.EtaUniqueness
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.Quantum.Replacement
+PASS: import resolves: EntropicEFT.Information.Renewal
+PASS: import resolves: EntropicEFT.Representation.SpinDimensions
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.Representation.FusionSpec
+PASS: import resolves: EntropicEFT.Representation.FusionSpec
+PASS: import resolves: EntropicEFT.Core.Prelude
+PASS: import resolves: EntropicEFT.Marked.CorrectedH9
+PASS: import resolves: EntropicEFT.Scale.Electron
+PASS: import resolves: EntropicEFT.Transverse.RankOne
+PASS: import resolves: EntropicEFT.Gaussian.RelativeCovariance
+PASS: import resolves: EntropicEFT.UV.Spectrum
+PASS: import resolves: EntropicEFT.Core.PhysicalInterfaces
+PASS: import resolves: EntropicEFT.UV.EtaStar
+PASS: import resolves: EntropicEFT.UV.Boundary
+PASS: import resolves: EntropicEFT.UV.Admissibility
+PASS: import resolves: EntropicEFT.UV.EtaStar
+PASS: import resolves: EntropicEFT.UV.ClosureInvariant
+PASS: import resolves: EntropicEFT.Foundations.Postulates
+PASS: import resolves: EntropicEFT.UV.Boundary
+PASS: import resolves: EntropicEFT.UV.ClosureInvariant
+PASS: import resolves: EntropicEFT.UV.Spectrum
+PASS: import resolves: EntropicEFT.UV.Admissibility
+PASS: import resolves: EntropicEFT.UV.EtaStar
+PASS: import resolves: EntropicEFT.UV.EtaUniqueness
+PASS: import resolves: EntropicEFT.UV.BranchAudit
+PASS: import resolves: EntropicEFT.Representation.SpinDimensions
+PASS: import resolves: EntropicEFT.Representation.FusionSpec
+PASS: import resolves: EntropicEFT.Representation.MarkedComplement
+PASS: import resolves: EntropicEFT.Representation.SharpTransfer
+PASS: import resolves: EntropicEFT.Information.Renewal
+PASS: import resolves: EntropicEFT.Quantum.Replacement
+PASS: import resolves: EntropicEFT.Quantum.Histories
+PASS: import resolves: EntropicEFT.Marked.SingleStrandRecord
+PASS: import resolves: EntropicEFT.Marked.CorrectedH9
+PASS: import resolves: EntropicEFT.Marked.EdgeGraph
+PASS: import resolves: EntropicEFT.Scale.Electron
+PASS: import resolves: EntropicEFT.Scale.Leptons
+PASS: import resolves: EntropicEFT.Edge.TetrahedralFrame
+PASS: import resolves: EntropicEFT.Edge.Kernel
+PASS: import resolves: EntropicEFT.Edge.SourceProjection
+PASS: import resolves: EntropicEFT.Gravity.Static
+PASS: import resolves: EntropicEFT.Gravity.FieldDefinitions
+PASS: import resolves: EntropicEFT.Gaussian.RelativeCovariance
+PASS: import resolves: EntropicEFT.Transverse.RankOne
+PASS: import resolves: EntropicEFT.Transport.Telegrapher
+PASS: import resolves: EntropicEFT.Cosmology.SaturatedDust
+PASS: import resolves: EntropicEFT.Cosmology.FixedMeasureDarkEnergy
+PASS: import resolves: EntropicEFT.Gravity.StrongField
+PASS: import resolves: EntropicEFT.Gauge.ProjectiveColor
+PASS: import resolves: EntropicEFT.Lattice.FiniteRegulator
+PASS: import resolves: EntropicEFT.Clusters.Projection
+PASS: import resolves: EntropicEFT.Microstructure.Architecture
+PASS: import resolves: EntropicEFT.Numerics.Spine
+PASS: import resolves: EntropicEFT.Audit.Connections
+PASS: import resolves: EntropicEFT.Audit.ClaimLedger
+PASS: import resolves: EntropicEFT.OpenProblems.Interfaces
+PASS: source manuscript SHA-256 matches audited upload
+PASS: P(7,4)=840
+PASS: orientation doubling gives 1680
+PASS: complete eleven-value K^2 spectrum and degeneracies
+PASS: spectrum multiplicities sum to 1680
+PASS: classical closure bounds 20/3 <= |c|^2 <= 104/3
+PASS: quantum variance bounds 22 <= V_q <= 42
+PASS: K^2 = |c|^2 + V_q on every state
+PASS: K^2 never equals classical |c|^2 on injective ensemble
+PASS: uniform injective <Sigma m_i^2> = 16
+PASS: uniform injective <S^2> = 8
+PASS: uniform injective <K^2> = 152/3
+PASS: eta_star: 0.0298668443935224 vs 0.0298668443935224
+PASS: g_share_eff: 7.4198000235709 vs 7.4198000235709
+PASS: mean K^2: 50.2229154254182 vs 50.2229154254
+PASS: Var K^2: 15.6889750077784 vs 15.6889750078
+PASS: stationarity eta*<K^2>=3/2: 1.5 vs 1.5
+PASS: weighted mean closure decomposition: 50.2229154254182 vs 50.2229154254182
+PASS: variance decomposition Var(K^2)=Var(c^2)+Var(Vq)+2Cov: 15.6889750077784 vs 15.6889750077784
+PASS: H.9 pair contraction u=8 eta/49: 0.00487621949281998 vs 0.00487621949281998
+PASS: zeta_star: 0.00512358448494742 vs 0.005123584484947
+PASS: six-coordinate/two-copy closure countermodel eta: 0.0603400492178353 vs 0.0603400492178353
+PASS: six-coordinate/two-copy edge amplitude alpha^21: 0.901267680947515 vs 0.901267680947515
+PASS: baseline L0: 1.6077194701589e-35 vs 1.60771947015888e-35
+PASS: marked Lstar: 1.61625370139258e-35 vs 1.61625370139257e-35
+PASS: induced Gstar: 6.67428907722101e-11 vs 6.67428907722091e-11
+PASS: muon/electron ratio: 206.768280236903 vs 206.768280237
+PASS: tau/electron ratio: 3477.34330974673 vs 3477.34331
+PASS: matched-G cancellation sample: 37.4330391304348 vs 37.4330391304348
+PASS: a0-abundance epsilon reciprocity sample: 20985472060 vs 20985472060
+PASS: primitive route eigenvalue ratio 7/6: 1.16666666666667 vs 1.16666666666667
+
+--- NOTES ---
+NOTE: weighted split: <|c|^2>=17.941303637837, <V_q>=32.281611787581
+NOTE: stationarity shares: eta<|c|^2>=0.535850123968, eta<V_q>=0.964149876032
+NOTE: closure split correlation: corr(|c|^2,V_q)=-0.889053188919; covariance=-32.229742816051
+NOTE: two-copy closure countermodel: eta=0.060340049218, alpha^21=0.901267680948; baseline alpha^21=0.949969363427
+
+AUDIT PASSED: 42 Lean modules; deterministic finite/numerical checks passed.
+IMPORTANT: this script is not the Lean kernel. Run `lake build` in an environment with Lean 4.33.0 to typecheck proofs.
+delimiter sanity passed

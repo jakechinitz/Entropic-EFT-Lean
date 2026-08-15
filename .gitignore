@@ -1,0 +1,27 @@
+# Lean / Lake build artifacts — never committed.
+# The point of this repository is that others rebuild it from source.
+/.lake/
+.lake/
+build/
+*.olean
+*.ilean
+*.trace
+*.hash
+
+# Local toolchain / editor state
+.elan/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# CI scratch
+build.log
+axiom-footprint.txt
+
+# OS
+.DS_Store
