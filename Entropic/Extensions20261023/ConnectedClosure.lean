@@ -66,8 +66,11 @@ theorem source_bounds {r : ℝ} (h0 : 1/2 ≤ r) (h1 : r ≤ 1) :
 
 theorem source_as_fractional_rate {r : ℝ} (h : 3-2*r ≠ 0) :
     sourceFactor r = rateRatio r * (2*kineticX r) := by
-  unfold sourceFactor rateRatio kineticX
-  field_simp [h] <;> ring
+  have hx : 2*kineticX r = (3-2*r)*(2*r-1) := by unfold kineticX; ring
+  rw [source_factorization, hx]
+  unfold rateRatio
+  rw [← mul_assoc, div_mul_cancel₀ _ h]
+  ring
 
 theorem rate_ratio_bounds {r : ℝ} (h0 : 1/2 ≤ r) (h1 : r ≤ 1) :
     3/4 ≤ rateRatio r ∧ rateRatio r ≤ 1 := by
