@@ -1,5 +1,4 @@
 import Entropic
-import EntropicEFT
 open Lean in
 #eval show CoreM Unit from do
   let env ← getEnv
