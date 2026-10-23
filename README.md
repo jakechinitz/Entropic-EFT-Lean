@@ -25,12 +25,14 @@ Two modules address open points from an external review. See [scope and reading]
 
 The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completion.global_effective_assumptions_compatible`): the exact native rooted history measure with the unique native η, and a global inhomogeneous clock/stock family with positive baryons, donor and retained stock, active release, radial contrast at every epoch and unbounded future proper time. The local pressure equations, density and volume evolution and component positivity are kernel checked; the coordinate Einstein-tensor reduction is checked separately in SymPy (`tools/completion_metric_check.py`). `Obstructions`, with `Compatibility.exact_dense_core_isEmpty`, records four incompatibilities (fixed finite archive against recoverable IID history, positive stock against the exact raw dense-core profile, one exchange vector against distinct streams, and bare against physical G without matching). `GlobalFloor.current_floor_fails_global_domain` proves that its first floor constant leaves the depletion-action domain; the selected-action certificate is local in time. This is not a microscopic or full-theory compatibility proof. Provenance, the 27 obligations and the global-floor candidate: [completion record](verification/completion_2026-10-23.md).
 
+`Entropic/FourItems` adds two follow-up modules. `Streams`: a covariant 1+1 source/force decomposition for multistream exchange with energy conservation, positive internal allocation, an explicit two-stream witness and Bianchi-I constraint propagation (the Bianchi-I metric reduction is checked in SymPy, `tools/fouritems_bianchi_tensor.py`). `Selection`: matching underdetermination when the selected C.5 premise is omitted, affine kernel-normalization degeneracy, reversible energy-preserving swaps, and finite compensating-register bounds for an energy-conserving reset. These are not physical-selection proofs and contain no bound galaxy or native gravitational state. Record: [four open items](verification/fouritems_2026-10-23.md).
+
 ## Status (2026-10-23)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 182 modules, 3,367 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_completion_2026-10-23.log`) |
+| Library | one Lean library, `Entropic`: 184 modules, 3,404 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_fouritems_2026-10-23.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
