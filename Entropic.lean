@@ -97,3 +97,5 @@ import Entropic.Pass2.Var
 import Entropic.Pass2.Fields
 import Entropic.Pass2.Harmonic
 import Entropic.Pass2.IBPForm
+import Entropic.Pass2.Conformal
+import Entropic.Pass2.ADM

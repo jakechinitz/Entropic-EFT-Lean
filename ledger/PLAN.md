@@ -73,7 +73,9 @@ deploy with originals preserved; push to the PR branch lean435-single-library; s
  16  G3 first-variation theorem with compact support on R^n; Euler-Lagrange equations of the actions   DONE
      (Pass2 Var/Fields/IBPForm/Harmonic: 6 proved incl. C11-56, C03-133 brought forward from chunk 17; 5 partial;
       11 time-boxed with reasons)
- 17  G4 coordinate GR: conformally flat curvature, weak-field reduction, maximum principle and Phi = Psi, static spherical reduction
+ 17  G4 coordinate GR: conformally flat curvature, weak-field reduction, maximum principle and Phi = Psi, static spherical reduction   DONE
+     (Pass2 Conformal/ADM, Harmonic: C11-50, C11-51, C11-52 proved, C01-44 partial (compact support);
+      C11-56, C03-133 proved in chunk 16; warped-product, Lorentzian and Regge items time-boxed with reasons)
  18  G5, G6, G9 matrix calculus and ODE, finite combinatorics, special-function and stated-input numerics
  19  G2, G7, G8 top multiplet and coherent states, Lie closure, ensemble numerics at eta_*
  20  G12 reclassification, final audit, CLAIMS/RETIREMENT/README/drop-in refresh, deploy, PR update

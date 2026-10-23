@@ -4,13 +4,13 @@ Status of all 1,437 manuscript claims by kind (A exact, B numeric, C premise-con
 
 | Kind | proved | partial | premise-conditional | numeric | data comparison | not formalized | interpretive | definition | corrected | other | total |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| A | 674 | 71 | 1 | 4 | 0 | 131 | 1 | 5 | 1 | 3 | 891 |
+| A | 677 | 71 | 1 | 4 | 0 | 128 | 1 | 5 | 1 | 3 | 891 |
 | B | 104 | 7 | 0 | 54 | 2 | 40 | 0 | 0 | 1 | 1 | 209 |
 | C | 81 | 4 | 125 | 1 | 0 | 2 | 0 | 2 | 1 | 1 | 217 |
 | D | 6 | 1 | 0 | 0 | 62 | 0 | 0 | 0 | 0 | 0 | 69 |
 | E | 0 | 0 | 27 | 0 | 0 | 0 | 17 | 0 | 0 | 2 | 46 |
 | ? | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
-| all | 868 | 85 | 153 | 59 | 64 | 173 | 18 | 7 | 3 | 7 | 1437 |
+| all | 871 | 85 | 153 | 59 | 64 | 170 | 18 | 7 | 3 | 7 | 1437 |
 
 Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized); C06-30 (summary (C06-21…-24 proved)); C11-64 (trivial (O(ρ)·O(ρ) = O(ρ²)); not separately formalized); C14-05 (cited (not proved in text)); C14-28 (exploratory (excluded by the text)); C14-92 (conjecture (E)); C15-79 (status ledger (E))
 
@@ -973,8 +973,11 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Sweep.Stag.LG_zero`: C09-65
 - `Sweep.Stag.L_symmetric`: C09-65
 - `Var.I2_diag`: C11-57
+- `Var.adm_density_expansion`: C11-51, C11-52
+- `Var.adm_reduction`: C01-44
 - `Var.carrier_excess`: C02-12
 - `Var.carrier_Φ`: C02-11, C12-02
+- `Var.conformal_scalar_curvature`: C06-05, C11-50, C12-81
 - `Var.euler_lagrange`: C11-55, C12-07
 - `Var.gateaux`: C11-55
 - `Var.harmonic_decay_zero`: C11-56

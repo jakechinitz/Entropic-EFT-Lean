@@ -47,7 +47,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-41 | B | unknown | Shell-target crossing | not formalized |
 | C01-42 | C | medium | Continuum stiffness from the lattice action | proved: AppCDE.gammaQ_from_lattice |
 | C01-43 | A | easy | Einstein-normalized stiffness | proved: AppCDE.gamma_from_gammaQ |
-| C01-44 | A | hard | Static ADM reduction of Einstein-Hilbert to quadratic order | not formalized |
+| C01-44 | A | hard | Static ADM reduction of Einstein-Hilbert to quadratic order | partial: Var.adm_reduction, adm_density_expansion, conformal_scalar_curvature (for compactly supported C² perturbations the linear term integrates to 0 and the quadratic term to ∫ 2(|∇ψ|² − 2∇φ·∇ψ), giving I^(2) = Var.I2); asymptotic falloff in place of compact support and the GHY term are not formalized |
 | C01-45 | A | el | Field equations of the reduced action and Phi = Psi | proved: Var.two_potential_Φ, two_potential_Ψ, two_potential_newton, no_slip, I2_diag (Φ = Ψ from Δ(Φ − Ψ) = 0 and decay by the weak maximum principle Var.weak_max) |
 | C01-46 | A | easy | Capacity action equals rescaled Newton action | proved: AppCDE.bridge_unique |
 | C01-47 | A | easy | Covariant reduced-functional field equation | partial: Var.scalar_EL, scalar_static (static flat case: γΔS = λ + κχ and ΔδS = −(κ/γ)ρ); the covariant □ form on a general g_ref is not formalized |
@@ -247,7 +247,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-97 | D | n | Volume-displacement measurement | data (D) |
 | C03-98 | A | easy | CDT coupling displacement of the restored N_41 term | proved: Main.Cosmo.cdt_shift |
 | C03-99 | C | medium | Critical-surface translation invariance | premise (C) |
-| C03-100 | A | medium | Regge four-volumes of (4,1) and (3,2) simplices | not formalized (Cayley-Menger volumes) |
+| C03-100 | A | medium | Regge four-volumes of (4,1) and (3,2) simplices | not formalized (Cayley-Menger volumes) (second pass, time-boxed: the symbolic 6 × 6 Cayley–Menger determinants exceed the simp budget; the volumes check numerically) |
 | C03-101 | A | easy | Nondegeneracy condition alpha > 7/12 | proved: Main.Cosmo.regge_nondegenerate |
 | C03-102 | B | easy | Physical edge under face-wise lock | proved: Main.Cosmo.lock_edge |
 | C03-103 | A | easy | Integrated volume operator | definition |
@@ -499,10 +499,10 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C06-02 | C | medium | Continuous multiplicative lapse map is a power law | proved (existing): BlackHole.lapse_is_power, lapse_exponent_pos, f_one |
 | C06-03 | A | easy | Weak-field expansion of q^alpha | proved: AppFG.power_weak_field |
 | C06-04 | C | easy | Weak-field matching fixes alpha = 1/2, N = sqrt q, N^2 = q | proved (existing): BlackHole.lapse_is_sqrt; AppFG.lapse_square_is_identity, exponent_eq_slope |
-| C06-05 | A | hard | Warped-product scalar curvature decomposition | not formalized (warped-product curvature; no Lorentzian geometry in Mathlib) |
+| C06-05 | A | hard | Warped-product scalar curvature decomposition | not formalized (warped-product curvature; no Lorentzian geometry in Mathlib) (second pass, time-boxed: warped-product curvature of a 4D Lorentzian metric: no coordinate Lorentzian geometry beyond the conformally flat 3D case (Var.conformal_scalar_curvature)) |
 | C06-06 | A | hard | Spherically reduced Einstein-Hilbert action | partial: AppFG.reduced_integrand, reduced_prefactor (integration by parts deferred) |
-| C06-07 | A | hard | Boundary extrinsic curvature split and reduced GHY term | not formalized (GHY boundary split) |
-| C06-08 | A | hard | Reduced vacuum field equations | not formalized (variational calculus on curved 2D metric) |
+| C06-07 | A | hard | Boundary extrinsic curvature split and reduced GHY term | not formalized (GHY boundary split) (second pass, time-boxed: GHY boundary split not formalized) |
+| C06-08 | A | hard | Reduced vacuum field equations | not formalized (variational calculus on curved 2D metric) (second pass, time-boxed: variational calculus on a curved 2-metric not formalized) |
 | C06-09 | A | medium | Misner-Sharp mass is conserved in vacuum | proved: AppFG.misner_sharp_conserved (pointwise tensor form); BlackHole.vacuum_iff_schwarzschild (static radial form) |
 | C06-10 | A | easy | Multiplier form gives lambda = 0 | proved: AppFG.multiplier_zero |
 | C06-11 | A | hard | Schwarzschild is the unique static spherical vacuum exterior (Birkhoff) | partial: BlackHole.vacuum_iff_schwarzschild (static reduced form); full Birkhoff deferred |
@@ -666,11 +666,11 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-115 | C | hard | Regge-to-Einstein–Hilbert limit | premise C (Regge convergence theorem); not formalized |
 | C07-116 | C | hard | Two-derivative uniqueness | premise C (Lovelock); not formalized |
 | C07-117 | A | easy | Proper-time composition gives worldline action | proved: AppH1.phase_composition |
-| C07-118 | A | hard | Point-particle stress tensor | not formalized: functional derivative on Lorentzian manifolds |
-| C07-119 | A | hard | Einstein equations from ordinary action | not formalized: variational GR |
+| C07-118 | A | hard | Point-particle stress tensor | not formalized: functional derivative on Lorentzian manifolds (second pass, time-boxed: functional derivative on Lorentzian manifolds not formalized) |
+| C07-119 | A | hard | Einstein equations from ordinary action | not formalized: variational GR (second pass, time-boxed: variational GR not formalized) |
 | C07-120 | A | easy | Dirac dispersion with negative Clifford convention | proved: AppH1.clifford_square, AppH1.dirac_dispersion |
 | C07-121 | C | easy | Event count and proper-time fluctuation | proved: AppH1.phase_composition |
-| C07-122 | A | hard | Geodesic equation from worldline action | not formalized: variational geodesic equation |
+| C07-122 | A | hard | Geodesic equation from worldline action | not formalized: variational geodesic equation (second pass, time-boxed: geodesic equation from the worldline action not formalized) |
 | C07-123 | A | easy | Weak-field proper time expansion | proved: AppH1.proper_time_slope |
 | C07-124 | A | easy | Equality of inertial and gravitational mass | proved: AppH1.equivalence_principle |
 | C07-125 | C | hard | Newtonian limit and no-slip | premise C; not formalized (linearized Einstein equations) |
@@ -832,11 +832,11 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C09-56 | A | medium | Variational upper bound on path gaps | proved: AppH11.path_gap_bound (variational premise from C09-55) |
 | C09-57 | A | medium | Kuhn triangulation counts | proved: AppH11.kuhn_counts |
 | C09-58 | B | hard | Angular contraction equals Einstein-Regge weight on a six-simplex complex | B: numerical |
-| C09-59 | A | hard | Schläfli Hessian at a flat simplex | not formalized: Schläfli identity |
-| C09-60 | A | hard | Bloch-assembled Hessian annihilates gauge modes | not formalized: Bloch Hessian gauge modes |
+| C09-59 | A | hard | Schläfli Hessian at a flat simplex | not formalized: Schläfli identity (second pass, time-boxed: Schläfli identity not formalized) |
+| C09-60 | A | hard | Bloch-assembled Hessian annihilates gauge modes | not formalized: Bloch Hessian gauge modes (second pass, time-boxed: Bloch-assembled Regge Hessian not formalized) |
 | C09-61 | C | easy | Edge response to a plane-wave metric | premise C |
 | C09-62 | C | hard | Effective quadratic metric form (linearized Einstein) | premise C |
-| C09-63 | A | medium | Lorentzian kernel counting | not formalized: linearized Einstein kernel counting |
+| C09-63 | A | medium | Lorentzian kernel counting | not formalized: linearized Einstein kernel counting (second pass, time-boxed: kernel dimension of the linearized Einstein operator for general p not formalized) |
 | C09-64 | B | hard | Sheared-background errors and Newton coefficient | B |
 | C09-65 | A | medium | Staggered constraint complex identities | proved: Sweep.Stag.CG_zero, Sweep.Stag.LG_zero, Sweep.Stag.CK_half, Sweep.Stag.L_symmetric, Sweep.Stag.CK_lambda (C(2K_λ) + dGᵀ = 2(2λ − 1)ΔT) |
 | C09-66 | A | medium | TT frequencies and unit speed | proved: AppH11.lattice_symbol_zero (zeros of k̂²; unit speed limit not separately formalized) |
@@ -1019,13 +1019,13 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C11-43 | A | easy | Both cap readings sit on the c_s^2 pole | proved: AppKN.cap_readings |
 | C11-44 | A | easy | Instantaneous coupling of periodic bounded input | proved: AppKN.instantaneous_coupling |
 | C11-45 | A | easy | Einstein-Hilbert normalization conventions | proved: AppKN.eh_conventions |
-| C11-46 | A | hard | Matter conservation from the Bianchi identity | not formalized: contracted Bianchi identity (differential geometry) |
+| C11-46 | A | hard | Matter conservation from the Bianchi identity | not formalized: contracted Bianchi identity (differential geometry) (second pass, time-boxed: contracted Bianchi identity needs Lorentzian differential geometry) |
 | C11-47 | A | medium | Trace coupling vanishes for classical radiation | proved: AppKN.maxwell_traceless |
 | C11-48 | A | easy | Lapse expansion | proved: AppKN.lapse_expansion (explicit 2φ² remainder) |
 | C11-49 | A | easy | Conformal factor expansion | proved: Sweep.Alg.conformal_expansion (remainder ≤ 4∣ψ∣³/(1 − 2∣ψ∣)) |
-| C11-50 | A | hard | Scalar curvature of a conformally flat 3-metric | not formalized: conformal curvature formula |
-| C11-51 | A | medium | Second-order expansion of N sqrt(h) ^(3)R | not formalized (needs the C11-50 curvature formula) |
-| C11-52 | A | medium | Integrated-by-parts quadratic form | partial: Var.quad_form_ibp (the divergence identity with explicit B = 4φ∇ψ + 4ψ∇ψ); the N√h ^(3)R expansion rests on C11-50/51 |
+| C11-50 | A | hard | Scalar curvature of a conformally flat 3-metric | proved: Var.conformal_scalar_curvature, christoffel_eq (Γ and R computed from h = e^{2ζ}δ by the coordinate formulas) |
+| C11-51 | A | medium | Second-order expansion of N sqrt(h) ^(3)R | proved: Var.adm_density_expansion (N = 1 + εφ, ζ = −εψ − ε²ψ²: N√h ^(3)R = ε·4Δψ + ε²(4φΔψ + 4ψΔψ + 6|∇ψ|²) + O(ε³) with an explicit C|ε|³ bound) |
+| C11-52 | A | medium | Integrated-by-parts quadratic form | proved: Var.quad_form_ibp (explicit divergence B = 4φ∇ψ + 4ψ∇ψ), with Var.adm_density_expansion for the c-expansion |
 | C11-53 | C | easy | First-order nonrelativistic matter action | premise C |
 | C11-54 | A | easy | Reduced two-potential action | E: definition |
 | C11-55 | A | medium | Constraint equations | proved: Var.two_potential_Φ, two_potential_Ψ (C² fields, continuous ρ, all compactly supported smooth variations; first variation by Var.gateaux, Var.euler_lagrange) |
@@ -1039,12 +1039,12 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C11-63 | A | easy | Unit-normalized representative | proved: AppKN.unit_normalization |
 | C11-64 | A | easy | Canonical scalar stress is second order | trivial (O(ρ)·O(ρ) = O(ρ²)); not separately formalized |
 | C11-65 | A | easy | Algebraic multiplier routes are empty | proved: AppKN.multiplier_routes |
-| C11-66 | A | hard | Warped-product curvature identity | not formalized: warped-product curvature |
-| C11-67 | A | medium | Angular reduction of the Einstein-Hilbert action | not formalized (warped-product curvature) |
-| C11-68 | A | medium | Reduced spherical action after integration by parts | not formalized (integration by parts on a curved 2-metric) |
-| C11-69 | A | hard | Extrinsic curvature of a product boundary | not formalized (extrinsic curvature of product boundaries) |
-| C11-70 | A | medium | Reduced GHY coefficient | not formalized (GHY reduction) |
-| C11-71 | A | hard | Vacuum Euler-Lagrange equations | not formalized: derivation of the reduced EL equations |
+| C11-66 | A | hard | Warped-product curvature identity | not formalized: warped-product curvature (second pass, time-boxed: as C06-05) |
+| C11-67 | A | medium | Angular reduction of the Einstein-Hilbert action | not formalized (warped-product curvature) (second pass, time-boxed: rests on C11-66) |
+| C11-68 | A | medium | Reduced spherical action after integration by parts | not formalized (integration by parts on a curved 2-metric) (second pass, time-boxed: needs covariant divergence on a curved 2-metric) |
+| C11-69 | A | hard | Extrinsic curvature of a product boundary | not formalized (extrinsic curvature of product boundaries) (second pass, time-boxed: extrinsic curvature of product boundaries not formalized) |
+| C11-70 | A | medium | Reduced GHY coefficient | not formalized (GHY reduction) (second pass, time-boxed: rests on C11-69) |
+| C11-71 | A | hard | Vacuum Euler-Lagrange equations | not formalized: derivation of the reduced EL equations (second pass, time-boxed: as C06-08) |
 | C11-72 | A | medium | Misner-Sharp first integral | proved: AppKN.misner_sharp_conserved (from the vacuum EL equations) |
 | C11-73 | A | easy | q_geo in terms of the constant mass | proved: AppKN.qgeo_from_mass; existing EFT.Gravity.qgeo_from_misnerSharp |
 | C11-74 | A | hard | Schwarzschild exterior and q_geo = N^2 | proved (existing): BlackHole.vacuum_iff_schwarzschild, schwarzschild_vacuum, lapse_sq_eq_qgeo |
@@ -1111,7 +1111,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C12-27 | B | hard | Dwarf dispersion table and c window | B |
 | C12-28 | A | easy | CTP influence functional unitarity conditions | proved: AppKN.influence_unitarity |
 | C12-29 | A | easy | Quasistatic contact: no-slip metric response | proved: AppKN.no_slip_response (a),(b); (c) premise |
-| C12-30 | A | hard | Linear Ward identity from Bianchi; covariance of carrier maps | not formalized: linearized Bianchi |
+| C12-30 | A | hard | Linear Ward identity from Bianchi; covariance of carrier maps | not formalized: linearized Bianchi (second pass, time-boxed: linearized Bianchi identity not formalized) |
 | C12-31 | C | hard | Kubo retarded kernel sign and noise kernel | premise C |
 | C12-32 | C | medium | Point-mass deep-regime lensing | premise C |
 | C12-33 | A | easy | Causal transport: response function and poles | proved: AppKN.causal_transport |
@@ -1143,7 +1143,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C12-59 | A | hard | Weyl-ordered constraint commutators | not formalized (Weyl quantization on function spaces) |
 | C12-60 | A | easy | Two-Killing-direction sector: momenta and DOF count | proved: AppKN.two_killing_sector |
 | C12-61 | A | easy | Diffeomorphism generator in the sector | proved: AppKN.two_killing_sector |
-| C12-62 | A | medium | Integrated scalar curvature in the sector | not formalized (curvature identity in the sector) |
+| C12-62 | A | medium | Integrated scalar curvature in the sector | not formalized (curvature identity in the sector) (second pass, time-boxed: sector metric curvature identity not formalized) |
 | C12-63 | A | hard | Constraint algebra in the sector | not formalized: constraint algebra |
 | C12-64 | B | hard | Discrete bracket defects and rates | B |
 | C12-65 | A | easy | Finite-area Hamiltonian commutator | proved: Sweep.Alg.area_commutator |
@@ -1162,7 +1162,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C12-78 | A | medium | Conformal/shape split of the kinetic matrix | not formalized (symbolic DeWitt-supermetric calculus) |
 | C12-79 | A | easy | Rotated-contour covariance | proved: Sweep.Alg.rotated_contour |
 | C12-80 | B | hard | Static source response ratios | B |
-| C12-81 | A | hard | Conformal-factor form of the Euclidean action | not formalized (conformal transformation of scalar curvature) |
+| C12-81 | A | hard | Conformal-factor form of the Euclidean action | not formalized (conformal transformation of scalar curvature) (second pass, time-boxed: 4D conformal transformation of scalar curvature not formalized (3D conformally flat case: Var.conformal_scalar_curvature)) |
 | C12-82 | A | medium | Gaussian integration of the conformal mode | not formalized (Gaussian integral with general quadratic form) |
 | C12-83 | A | easy | Transfer-kernel density cancellation | proved: AppKN.density_cancellation |
 | C12-84 | A | medium | Integrated proper clock (Duhamel) and cocycle | not formalized: Duhamel |
@@ -1214,8 +1214,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-43 | B | medium | Linear-depletion vs positive allocation at fixed history | not formalized (numerical model) |
 | C13-44 | A | easy | Effective equation of state | proved: AppO.effective_w, Ledger.active_release_effectiveW_lt_neg_one |
 | C13-45 | A | easy | Linear clock constraint | proved: AppO.linear_clock |
-| C13-46 | A | hard | Linearized capacity perturbation equations | not formalized (perturbation linearization) |
-| C13-47 | A | hard | Synchronous-gauge reduction | not formalized (gauge reduction) |
+| C13-46 | A | hard | Linearized capacity perturbation equations | not formalized (perturbation linearization) (second pass, time-boxed: perturbation linearization not formalized) |
+| C13-47 | A | hard | Synchronous-gauge reduction | not formalized (gauge reduction) (second pass, time-boxed: rests on C13-46) |
 | C13-48 | A | easy | Conserved-fluid representation | proved: AppO.conserved_fluid |
 | C13-49 | A | easy | Radial adjustment preserving angular marginals | proved: AppO.radial_adjustment; RetainedRelaxation.marginal_preserved, RetainedRelaxation.angular_observable_preserved, RetainedRelaxation.relax_nonneg |
 | C13-50 | A | medium | Relative-entropy dissipation for radial master equation | proved: AppO.entropy_dissipation (conservation, symmetrized form, ≤ 0) |
