@@ -20,7 +20,9 @@ Two cases, both kernel checked.
     (`independent_records_bounded`).
 
 The two options are an unbounded external archive (A) and finite capacity with
-effective (mixing) memorylessness and super-exponential recurrence (B). -/
+recurrence (B). `Entropic.FiniteRenewal` constructs an explicit register for (B) that
+reproduces the one-time marginal, the product law on every window up to its length, and
+the exact Kac return times used by the coefficient chains. -/
 
 namespace Entropic.HistoryCapacity
 
