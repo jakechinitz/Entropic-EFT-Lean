@@ -19,6 +19,13 @@ import Entropic.Reciprocity
 import Entropic.HistoryCapacity
 import Entropic.FiniteRenewal
 import Entropic.StockSettling
+import Entropic.Compatibility.History
+import Entropic.Compatibility.GibbsHistory
+import Entropic.Compatibility.Projection
+import Entropic.Compatibility.Expanding
+import Entropic.Compatibility.SharedModel
+import Entropic.Compatibility.All
+import Entropic.Completion.InfiniteHistory
 import Entropic.CapacityDomain
 import Entropic.ShellLadder
 import Entropic.AppB.Elementary

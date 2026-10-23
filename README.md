@@ -19,12 +19,16 @@ Two modules address open points from an external review. See [scope and reading]
 - `Entropic/FiniteRenewal.lean`: Kac's return-time identity for any finite reversible dynamics, and a finite shift register whose readings have the product law on every window up to its length (ensemble over register states). The charged-lepton shell load 720^N holds exactly without memorylessness. The G_* chain does not transfer as derived: every finite reversible renewal is periodic with entropy rate zero, which the maximum-entropy-rate selection of App. H.4 rejects.
 - `Entropic/StockSettling.lean`: any schedule of central pair contacts conserves linear and angular momentum; reversible maps preserve fine-grained Casimirs; on a signed work ledger the population at supply exhaustion does not depend on the contact rate; and with work proportional to σ² the settled fraction is min(1, σ_c²/σ²). The σ² scaling and the fixed supply per unit stock are stated hypotheses.
 
+## Assumption compatibility (2026-10-23)
+
+`Entropic/Compatibility` proves `Nonempty EffectiveModel` (`Entropic.Compatibility.effective_assumptions_compatible`): one structure carrying the native closure root η and ε, the 1680-state Gibbs histories, the 720-state shell cycle, a finite positive stock shared by reconstruction, redistribution and nonzero reciprocal Newton forces, and an explicit expanding homogeneous Einstein solution with positive energy transfer, tied to the finite model through the same mass budget. It also proves that a fixed finite faithful archive and an exact dense-core RAR profile are each impossible. This is an effective subsystem, not a consistency proof of the full theory: the finite force system is not embedded in the expanding metric. `Entropic/Completion/InfiniteHistory.lean` gives one probability space for all integer times with the native Gibbs marginal and a measure-preserving reversible shift. Provenance and scope: [compatibility record](verification/compatibility_2026-10-23.md).
+
 ## Status (2026-10-23)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 162 modules, 2,992 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_settling_2026-10-23.log`) |
+| Library | one Lean library, `Entropic`: 169 modules, 3,160 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_compatibility_2026-10-23.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
