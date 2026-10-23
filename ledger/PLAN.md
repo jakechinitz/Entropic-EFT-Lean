@@ -76,6 +76,8 @@ deploy with originals preserved; push to the PR branch lean435-single-library; s
  17  G4 coordinate GR: conformally flat curvature, weak-field reduction, maximum principle and Phi = Psi, static spherical reduction   DONE
      (Pass2 Conformal/ADM, Harmonic: C11-50, C11-51, C11-52 proved, C01-44 partial (compact support);
       C11-56, C03-133 proved in chunk 16; warped-product, Lorentzian and Regge items time-boxed with reasons)
- 18  G5, G6, G9 matrix calculus and ODE, finite combinatorics, special-function and stated-input numerics
+ 18  G5, G6, G9 matrix calculus and ODE, finite combinatorics, special-function and stated-input numerics   DONE
+     (Pass2 Kinetic: C15-30 proved, C15-43 partial; the rest need matrix-function calculus, Haar measure,
+      quantum entropy, matrix-tree, Γ enclosures or encoded data that Mathlib lacks; reasons in the ledger)
  19  G2, G7, G8 top multiplet and coherent states, Lie closure, ensemble numerics at eta_*
  20  G12 reclassification, final audit, CLAIMS/RETIREMENT/README/drop-in refresh, deploy, PR update

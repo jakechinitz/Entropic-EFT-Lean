@@ -865,6 +865,7 @@ open Lean in
     ("Matrix.exp_conj", ["Matrix.exp_conj", "Entropic.Matrix.exp_conj"]),
     ("Pass2.DiagCommutant.jzz_commutant", ["Pass2.DiagCommutant.jzz_commutant", "Entropic.Pass2.DiagCommutant.jzz_commutant"]),
     ("Pass2.Intertwiner.intertwiner", ["Pass2.Intertwiner.intertwiner", "Entropic.Pass2.Intertwiner.intertwiner"]),
+    ("Pass2.Kinetic.s4_characters", ["Pass2.Kinetic.s4_characters", "Entropic.Pass2.Kinetic.s4_characters"]),
     ("Pass2.Pair.pair_commutant", ["Pass2.Pair.pair_commutant", "Entropic.Pass2.Pair.pair_commutant"]),
     ("Pass2.PairGen.bilinear_commutant", ["Pass2.PairGen.bilinear_commutant", "Entropic.Pass2.PairGen.bilinear_commutant"]),
     ("Pass2.RealForms.four_slot_weights", ["Pass2.RealForms.four_slot_weights", "Entropic.Pass2.RealForms.four_slot_weights"]),

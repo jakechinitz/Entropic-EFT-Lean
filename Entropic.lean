@@ -99,3 +99,4 @@ import Entropic.Pass2.Harmonic
 import Entropic.Pass2.IBPForm
 import Entropic.Pass2.Conformal
 import Entropic.Pass2.ADM
+import Entropic.Pass2.Kinetic

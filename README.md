@@ -12,12 +12,12 @@ and the ledger citation check on every push.
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 149 modules, 2,582 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Library | one Lean library, `Entropic`: 150 modules, 2,587 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
 | Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_chunk14_2026-10-22.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
-| Ledger totals | proved 871, proved in part 85, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 170, other 35 (interpretive, definitions, corrections, cited results) |
-| Citation check | `scripts/CiteCheck.lean`: 972 Lean names cited in the ledger, 0 unresolved |
+| Ledger totals | proved 872, proved in part 86, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 168, other 35 (interpretive, definitions, corrections, cited results) |
+| Citation check | `scripts/CiteCheck.lean`: 973 Lean names cited in the ledger, 0 unresolved |
 
 Supporting files:
 
@@ -92,7 +92,7 @@ shim for `/proc/<pid>/exe` discovery. Its source and explanation are under
 
 ## Not formalized
 
-The ledger gives a reason for each of the 170 statements marked not formalized.
+The ledger gives a reason for each of the 168 statements marked not formalized.
 The main groups are:
 
 - pseudo-Riemannian curvature and variational calculus on manifolds (warped-product
