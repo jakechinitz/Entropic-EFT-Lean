@@ -3,7 +3,7 @@ from pathlib import Path
 import re, sys
 root=Path(__file__).resolve().parents[1]
 fail=[]
-for p in [root/'EntropicEFT.lean', *sorted((root/'EntropicEFT').rglob('*.lean'))]:
+for p in [root/'Entropic'/'EFT.lean', *sorted((root/'Entropic'/'EFT').rglob('*.lean'))]:
     s=p.read_text()
     # Strip nested-ish documentation/comments iteratively and line comments.
     old=None
