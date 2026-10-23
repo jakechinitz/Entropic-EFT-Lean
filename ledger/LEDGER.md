@@ -31,7 +31,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-25 | B | medium | Unique closure precision eta_* | proved (existing): ClosureRoot.stationary_bracket |
 | C01-26 | E | easy | Local stiffness of the closed branch | premise (E) |
 | C01-27 | ? | ln | Effective sharing entropy and ceiling | proved: Main.Core.sharing_ceiling (ln 1680 ∈ (7.426549067, 7.426549078), g < ln 1680) |
-| C01-28 | A | medium | Memoryless renewal from full conditional entropy | proved: AppCDE.refresh_unique; EFT.Information.input_independent_unique |
+| C01-28 | A | medium | Memoryless renewal from full conditional entropy | proved: AppCDE.refresh_unique; EFT.Information.input_independent_unique; two-tick product law in a finite register: FiniteRenewal.consecutive_pair_count |
 | C01-29 | A | easy | Fixed-epoch rescaling invariance | proved: AppCDE.entropy_unit |
 | C01-30 | A | easy | Occupancy fraction identity | proved (existing): AppB.occupancy |
 | C01-31 | ? | - | Lorentzian time dilation | proved (a): Main.Core.time_dilation; (b) not formalized |
@@ -167,7 +167,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-17 | A | easy | Off-diagonal damping by environment overlap | proved: AppFG.Histories.environment_overlap |
 | C03-18 | C | hard | Retained-sector reconstruction (su(9), C^9, CP^8) | partial: fresh tangent metric = ¼ Fisher via AppP.Exp.fubini_study_expansion; su(9) generation and CP⁸ not formalized (Lie closure, quotient topology) |
 | C03-19 | C | hard | Two-mark bridge generates su(81) | partial: Pass2.Bridge81.bridge_generates (complex form of the su(81) closure); real form not formalized |
-| C03-20 | A | medium | History capacity non-reuse | proved (existing): HistoryCapacity.exact_export_bound, no_finite_archive |
+| C03-20 | A | medium | History capacity non-reuse | proved (existing): HistoryCapacity.exact_export_bound, no_finite_archive; finite option: FiniteRenewal.window_count, FiniteRenewal.reading_periodic |
 | C03-21 | A | medium | Maximum-path-entropy kernel | proved: Main.Cosmo.max_path_entropy |
 | C03-22 | E | n | Tensor factorization of the cell space | premise (E) |
 | C03-23 | A | easy | Capacity operators commute with geometric gauge action | proved: AppQ.capacity_commutes |
@@ -878,8 +878,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C10-06 | A | easy | Vanishing Fisher information at N = 3 | proved (existing + new): GenerationCutoff exclusion theorems with AppIJ.variance_pos |
 | C10-07 | B | easy | First-shell oriented state count | proved: AppIJ.first_shell_count; existing ShellLadder.shell_load |
 | C10-08 | A | easy | Geometric return-time law | proved: AppIJ.geometric_return |
-| C10-09 | A | easy | Kac-type arithmetic mean of return times | proved: AppIJ.kac_mean |
-| C10-10 | A | easy | Geometric mean of return times equals exp(entropy) | proved: AppIJ.entropy_le_log_card |
+| C10-09 | A | easy | Kac-type arithmetic mean of return times | proved: AppIJ.kac_mean; return-time dynamics with no independence assumption: FiniteRenewal.kac_sum, FiniteRenewal.label_kac, FiniteRenewal.arithmetic_return_load |
+| C10-10 | A | easy | Geometric mean of return times equals exp(entropy) | proved: AppIJ.entropy_le_log_card; FiniteRenewal.geometric_return_load |
 | C10-11 | B | hard | ln 720 - H_1 range over excluded labels | B: numeric (not certified) |
 | C10-12 | B | medium | Mass-factor shift from replacing 720 by e^{H_1} | B |
 | C10-13 | A | easy | Singlet-complement projector matrix elements | proved: AppIJ.singlet_complement |
@@ -1355,7 +1355,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C14-84 | A | easy | Occupation conservation for the dressing Hamiltonian | proved: AppP.occupation_conserved |
 | C14-85 | C | easy | Absorbing zero-defect sector | premise (C); invariance form as AppO.no_late_recruitment |
 | C14-86 | C | easy | False-record probability bound | proved (given premises): AppP.false_record_min |
-| C14-87 | A | medium | Finite shell recurrence factor and Gaussian overlap | proved (pieces): AppIJ.kac_mean (return-time factor = card), AppIJ.gaussian_ladder (q^{N²}) |
+| C14-87 | A | medium | Finite shell recurrence factor and Gaussian overlap | proved (pieces): AppIJ.kac_mean (return-time factor = card), AppIJ.gaussian_ladder (q^{N²}); finite reversible register: FiniteRenewal.finite_register_reproduces |
 | C14-88 | A | hard | Mixing and reset audit (O.12) | partial: see C13-77, C13-78, C13-81 |
 | C14-89 | B | medium | Label-ledger enumeration (O.15) | not formalized (finite state machine of O.15) (second pass, time-boxed: label-ledger BFS not encoded) |
 | C14-90 | D | n | Tied-abundance likelihood fit | data (D) |

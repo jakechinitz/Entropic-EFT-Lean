@@ -17,6 +17,8 @@ import Entropic.BlackHole
 import Entropic.Director
 import Entropic.Reciprocity
 import Entropic.HistoryCapacity
+import Entropic.FiniteRenewal
+import Entropic.StockSettling
 import Entropic.CapacityDomain
 import Entropic.ShellLadder
 import Entropic.AppB.Elementary
