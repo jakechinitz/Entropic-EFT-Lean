@@ -4,13 +4,13 @@ Status of all 1,437 manuscript claims by kind (A exact, B numeric, C premise-con
 
 | Kind | proved | partial | premise-conditional | numeric | data comparison | not formalized | interpretive | definition | corrected | other | total |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| A | 658 | 64 | 1 | 4 | 0 | 154 | 1 | 5 | 1 | 3 | 891 |
+| A | 674 | 71 | 1 | 4 | 0 | 131 | 1 | 5 | 1 | 3 | 891 |
 | B | 104 | 7 | 0 | 54 | 2 | 40 | 0 | 0 | 1 | 1 | 209 |
 | C | 81 | 4 | 125 | 1 | 0 | 2 | 0 | 2 | 1 | 1 | 217 |
 | D | 6 | 1 | 0 | 0 | 62 | 0 | 0 | 0 | 0 | 0 | 69 |
 | E | 0 | 0 | 27 | 0 | 0 | 0 | 17 | 0 | 0 | 2 | 46 |
 | ? | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
-| all | 852 | 78 | 153 | 59 | 64 | 196 | 18 | 7 | 3 | 7 | 1437 |
+| all | 868 | 85 | 153 | 59 | 64 | 173 | 18 | 7 | 3 | 7 | 1437 |
 
 Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized); C06-30 (summary (C06-21…-24 proved)); C11-64 (trivial (O(ρ)·O(ρ) = O(ρ²)); not separately formalized); C14-05 (cited (not proved in text)); C14-28 (exploratory (excluded by the text)); C14-92 (conjecture (E)); C15-79 (status ledger (E))
 
@@ -840,7 +840,7 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Main.Cosmo.volume_density`: C03-105, C03-112
 - `Main.Cosmo.volume_displacement`: C03-96
 - `Main.Cosmo.zero_cap_density`: C03-113
-- `Main.Galactic.Qperp_deriv`: C02-09, C02-10, C12-01, C12-03
+- `Main.Galactic.Qperp_deriv`: C02-09, C02-10, C02-11, C02-12, C12-01, C12-03
 - `Main.Galactic.a0_value`: C02-05
 - `Main.Galactic.acceleration_abundance`: C02-06
 - `Main.Galactic.bath_cap`: C02-57, C02-59, C03-149
@@ -876,6 +876,17 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Main.Galactic.transport_parameters`: C02-52
 - `Main.Galactic.x_consistency`: C02-07
 - `Matrix.exp_conj`: C15-17
+- `Pass2.DiagCommutant.jzz_commutant`: C14-73
+- `Pass2.Intertwiner.intertwiner`: C07-51
+- `Pass2.Pair.pair_commutant`: C04-37
+- `Pass2.PairGen.bilinear_commutant`: C14-73
+- `Pass2.RealForms.four_slot_weights`: C14-75
+- `Pass2.RealForms.real_forms`: C09-09
+- `Pass2.SU3Form.su3_invariant_form`: C10-38
+- `Pass2.Schur.block_commutant`: C07-126, C15-11
+- `Pass2.Schur.block_phases`: C04-72, C15-11
+- `Pass2.Schur.lock_unique`: C03-24, C15-10
+- `Pass2.Schur.schur_ladder`: C04-51, C15-10, C15-13
 - `PositiveLedger.common_drain_conserves`: C13-13
 - `PositiveLedger.common_fractional_drain_unique`: C13-12
 - `PositiveLedger.step_positive`: C13-17
@@ -907,7 +918,7 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Sweep.Alg.label_match`: C04-65, C04-66, C07-52
 - `Sweep.Alg.matrix_units`: C10-35
 - `Sweep.Alg.mismatch_asymptotic`: C04-54
-- `Sweep.Alg.projected_vector_zero`: C08-44
+- `Sweep.Alg.projected_vector_zero`: C08-44, C14-75
 - `Sweep.Alg.regPerm_inState`: C07-46
 - `Sweep.Alg.reversible_export`: C07-46
 - `Sweep.Alg.rotated_contour`: C12-79
@@ -939,7 +950,7 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Sweep.Dirac.vector_spin_one`: C04-74
 - `Sweep.Gauss.cov3`: C07-55
 - `Sweep.Gauss.hermite_gram`: C07-55
-- `Sweep.Gauss.so3_split`: C07-55
+- `Sweep.Gauss.so3_split`: C07-55, C09-09
 - `Sweep.Info.fused_label_cap`: C04-34
 - `Sweep.Info.seven_label_cap`: C04-34
 - `Sweep.SpinPair.Qf_psd`: C07-79
@@ -953,7 +964,7 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Sweep.SpinPair.projector_split`: C04-36, C04-41, C04-65, C07-49, C07-52, C09-06
 - `Sweep.SpinPair.selfadjoint`: C07-79
 - `Sweep.SpinPair.top_state`: C04-40
-- `Sweep.SpinPair.transfer_formula`: C04-44
+- `Sweep.SpinPair.transfer_formula`: C04-44, C15-04
 - `Sweep.SpinPair.transfer_limit`: C04-44
 - `Sweep.SpinPair.transfer_semigroup`: C04-44
 - `Sweep.Stag.CG_zero`: C09-65
@@ -961,3 +972,16 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `Sweep.Stag.CK_lambda`: C09-65
 - `Sweep.Stag.LG_zero`: C09-65
 - `Sweep.Stag.L_symmetric`: C09-65
+- `Var.I2_diag`: C11-57
+- `Var.carrier_excess`: C02-12
+- `Var.carrier_Φ`: C02-11, C12-02
+- `Var.euler_lagrange`: C11-55, C12-07
+- `Var.gateaux`: C11-55
+- `Var.harmonic_decay_zero`: C11-56
+- `Var.ibp`: C12-53
+- `Var.identification_before_variation`: C11-58
+- `Var.no_slip`: C03-133
+- `Var.quad_form_ibp`: C11-52
+- `Var.scalar_EL`: C01-47
+- `Var.two_potential_Φ`: C01-45, C11-55
+- `Var.weak_max`: C01-45

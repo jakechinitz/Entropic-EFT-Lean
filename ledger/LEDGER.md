@@ -48,9 +48,9 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-42 | C | medium | Continuum stiffness from the lattice action | proved: AppCDE.gammaQ_from_lattice |
 | C01-43 | A | easy | Einstein-normalized stiffness | proved: AppCDE.gamma_from_gammaQ |
 | C01-44 | A | hard | Static ADM reduction of Einstein-Hilbert to quadratic order | not formalized |
-| C01-45 | A | el | Field equations of the reduced action and Phi = Psi | not formalized |
+| C01-45 | A | el | Field equations of the reduced action and Phi = Psi | proved: Var.two_potential_Φ, two_potential_Ψ, two_potential_newton, no_slip, I2_diag (Φ = Ψ from Δ(Φ − Ψ) = 0 and decay by the weak maximum principle Var.weak_max) |
 | C01-46 | A | easy | Capacity action equals rescaled Newton action | proved: AppCDE.bridge_unique |
-| C01-47 | A | easy | Covariant reduced-functional field equation | not formalized |
+| C01-47 | A | easy | Covariant reduced-functional field equation | partial: Var.scalar_EL, scalar_static (static flat case: γΔS = λ + κχ and ΔδS = −(κ/γ)ρ); the covariant □ form on a general g_ref is not formalized |
 | C01-48 | A | easy | Weak-field G from source equation plus bridge | proved: AppCDE.newton_from_bridge |
 | C01-49 | C | easy | Green-matched source map | premise (C) |
 | C01-50 | C | easy | G = c^3 L_*^2/hbar from the source-map identities | proved: AppCDE.G_over_Gstar |
@@ -77,8 +77,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C02-08 | A | easy | Bosonic cell free energy | proved: Main.Galactic.bose_cell |
 | C02-09 | A | medium | Well-definedness and derivative of Q_⊥ | proved: Main.Galactic.qint_integrable, Main.Galactic.Qperp_deriv (improper integral finite, Q_⊥′ = n_B) |
 | C02-10 | A | easy | Total auxiliary derivative identity | proved: Main.Galactic.Qperp_deriv |
-| C02-11 | A | hard | Euler-Lagrange equations of the QUMOND-type action | not formalized (variational Euler-Lagrange) |
-| C02-12 | A | easy | Excess (transverse) Poisson equation | not formalized (variational) |
+| C02-11 | A | hard | Euler-Lagrange equations of the QUMOND-type action | partial: Var.carrier_Φ, carrier_Φb (both equations for every C² interpolating Q); the manuscript Q has Q′ = 1/(1 − e^{−z^{1/4}}) singular at z = 0 (Main.Galactic.Qperp_deriv), so the global statement needs ∇Φ_b ≠ 0 |
+| C02-12 | A | easy | Excess (transverse) Poisson equation | partial: Var.carrier_excess (Δφ_⊥ = div[(Q′ − 1)∇Φ_b] for C² Q) with Q′ − 1 = n_B(z^{1/4}) for z > 0 by Main.Galactic.Qperp_deriv |
 | C02-13 | A | medium | Spherical reduction to the exponential RAR | proved: GalacticLaw.gObs_thermal, AppKN.radial_divfree_zero |
 | C02-14 | A | easy | Newtonian and deep limits of the RAR | proved: GalacticLaw.newtonian_limit, GalacticLaw.deep_limit, GalacticLaw.btfr_fourth_power |
 | C02-15 | C | easy | Per-carrier response breaks reciprocity (scaling) | proved (given premise): GalacticLaw.percarrier_balance_iff |
@@ -87,10 +87,10 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C02-18 | A | easy | Radial director values | proved (existing): Director.radial_selects_kappa |
 | C02-19 | A | medium | Positivity of the director density 𝒮 | proved (adapted frame): Main.Galactic.director_density, sym_eigen_gap |
 | C02-20 | A | medium | Null-Lagrangian property of s | proved via C02-17 (divergence); EL operator not formalized |
-| C02-21 | A | easy | Variable-stiffness κ term reduces to a connection cross term | not formalized (integration by parts with variable stiffness) |
-| C02-22 | A | easy | Tilt expansion and coherence length | not formalized (tilt expansion) |
-| C02-23 | A | easy | Midplane excess of the near-radial director | not formalized (midplane expansion) |
-| C02-24 | A | hard | Momentum balance of joint-source excess forces | not formalized (field-space momentum balance) |
+| C02-21 | A | easy | Variable-stiffness κ term reduces to a connection cross term | not formalized (integration by parts with variable stiffness) (second pass, time-boxed: s[ê] integration by parts with variable stiffness not formalized) |
+| C02-22 | A | easy | Tilt expansion and coherence length | not formalized (tilt expansion) (second pass, time-boxed: O(δ⁴) tilt expansion of Q_⊥ not formalized) |
+| C02-23 | A | easy | Midplane excess of the near-radial director | not formalized (midplane expansion) (second pass, time-boxed: approximate midplane estimate (≃), not a theorem) |
+| C02-24 | A | hard | Momentum balance of joint-source excess forces | not formalized (field-space momentum balance) (second pass, time-boxed: field-space momentum balance needs decay estimates for φ_⊥ not formalized) |
 | C02-25 | B | easy | Milky Way-LMC Plummer force numbers | not formalized |
 | C02-26 | C | hard | Multi-carrier director: on-shell balance and defects (numerical) | premise (C) |
 | C02-27 | D | n | Reflex velocity vs measured travel velocity | data (D) |
@@ -171,7 +171,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-21 | A | medium | Maximum-path-entropy kernel | proved: Main.Cosmo.max_path_entropy |
 | C03-22 | E | n | Tensor factorization of the cell space | premise (E) |
 | C03-23 | A | easy | Capacity operators commute with geometric gauge action | proved: AppQ.capacity_commutes |
-| C03-24 | A | medium | Frame lock unique up to phase (Schur) | not formalized (Schur lemma) |
+| C03-24 | A | medium | Frame lock unique up to phase (Schur) | proved: Pass2.Schur.lock_unique, phase_of_unitary (ladder Schur lemma `schur_ladder` for V₃; a lock commuting with the generators is c·W, |c| = 1 when unitary) |
 | C03-25 | C | hard | V_3 unique zero-cost sector and unique J=3 minimum | premise (C) |
 | C03-26 | A | hard | Maximal fusion map on coherent states | not formalized (coherent states) |
 | C03-27 | E | hard | Ferromagnetic Heisenberg order in d >= 3 | premise (E) |
@@ -223,7 +223,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-73 | A | hard | Lattice Green function with O(a^2/r^3) correction | not formalized |
 | C03-74 | B | hard | 128^3 periodic Laplacian fit | not formalized (numerics) |
 | C03-75 | A | hard | Mosco convergence implies Green-function convergence | not formalized (Mosco convergence) |
-| C03-76 | A | hard | Newtonian potential solution and point-source profile | not formalized (Newtonian potential) |
+| C03-76 | A | hard | Newtonian potential solution and point-source profile | not formalized (Newtonian potential) (second pass, time-boxed: needs Δ(1/|x|) = −4πδ on ℝ³ (not in Mathlib)) |
 | C03-77 | A | easy | Junction condition coefficient | proved: Main.Cosmo.junction_coefficient |
 | C03-78 | B | easy | SI value of 8 pi G_*/c^2 | proved: Main.Cosmo.native_si |
 | C03-79 | B | easy | Native mass unit m_* | proved: Main.Cosmo.native_si |
@@ -280,7 +280,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-130 | D | n | Milky Way vertical potential comparisons | data (D) |
 | C03-131 | D | n | Disk vertical dynamics comparisons | data (D) |
 | C03-132 | D | n | Halo shape comparisons | data (D) |
-| C03-133 | A | hard | No slip from scalar constraint | not formalized (harmonic decay argument) |
+| C03-133 | A | hard | No slip from scalar constraint | proved: Var.no_slip |
 | C03-134 | A | easy | Transverse metric perturbation | proved: AppKN.no_slip_response |
 | C03-135 | D | n | Cassini quadrupole bound on descendant smoothing | data (D) |
 | C03-136 | C | medium | Telegrapher relation D/tau_0 = c^2 | premise (C) |
@@ -358,7 +358,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C04-34 | A | medium | Fused-label information cap | proved: Sweep.Info.fused_label_cap, Sweep.Info.seven_label_cap (full-support marginals) |
 | C04-35 | B | easy | Horizon target sigma_* | proved: AppB.sigma_star |
 | C04-36 | A | hard | Clebsch-Gordan decomposition of the face space | partial: instances j₀ = 3/2 (Sweep.SpinPair.projector_split, AppP.Spin.multiplicities) and 1 (AppQ.W.spin1_pair); general Clebsch–Gordan not formalized |
-| C04-37 | A | hard | Schur block decomposition of covariant Hessian | not formalized (rep theory) |
+| C04-37 | A | hard | Schur block decomposition of covariant Hessian | proved (j₀ = 3/2): Pass2.Pair.pair_commutant, covariant_hessian (H(p) = Σ_J (Z_J p² + r_J) P_J on V_{3/2} ⊗ V_{3/2}); general j₀ not formalized |
 | C04-38 | A | easy | Pure-saddle stability criterion | proved: AppB.block_mass |
 | C04-39 | A | easy | Dual generators obey su(2) | proved: Sweep.SpinPair.dual_commutator (su(2) relations for −(J^a)ᵀ), Sweep.SpinPair.dual_equivalent (spin-3/2 equivalence) |
 | C04-40 | A | hard | Highest-weight and coherent-state fusion identity | partial: Sweep.SpinPair.top_state (j = 3/2: the top product state lies in V₃); coherent-state covariance not formalized |
@@ -372,7 +372,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C04-48 | A | easy | Mixed-J exclusion at fixed density | proved: AppB.mixed_exclusion, mixed_exclusion_pos |
 | C04-49 | A | hard | Maximal-fusion blocking map unique | partial: AppQ.W.top_weight (weight 3N occurs once); uniqueness of equivariant coisometries needs Schur theory (not formalized) |
 | C04-50 | A | hard | Coherent states under F_N | not formalized (SU(2) coherent states) |
-| C04-51 | A | hard | Equivariant lock propagates under maximal blocking | not formalized (equivariant isometries, Schur theory) |
+| C04-51 | A | hard | Equivariant lock propagates under maximal blocking | not formalized (second pass, time-boxed): needs the isotypic decomposition of V₃^{⊗N} and uniqueness of its top component for general N; the V_{3N} step is the ladder Schur lemma Pass2.Schur.schur_ladder |
 | C04-52 | A | medium | All-pairs diagnostic Hamiltonian identity | proved: AppB.all_pairs |
 | C04-53 | A | medium | Kernel and gap of H_N | partial: Sweep.Alg.heisenberg_gap (E_{3N} = 0, Δ_N = 3κN); top weight 3N has multiplicity one (AppQ.W.top_weight); ker H_N = V_{3N} needs sl₂ theory (not formalized) |
 | C04-54 | A | medium | Coherent-data mismatch expectation | partial: Sweep.Alg.mismatch_asymptotic (j²(1 − cos θ) = j²θ²/2 + O(θ⁴)); the coherent-state expectation is not formalized |
@@ -393,7 +393,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C04-69 | A | easy | Complement isometry L | proved: AppB.complement_isometry |
 | C04-70 | A | easy | Sharp pair map is an isometry | proved: AppB.sharp_pair_isometry |
 | C04-71 | A | easy | General retained-output constraint | proved: AppB.retained_output |
-| C04-72 | A | hard | Block-phase freedom of equivariant complement isometries | not formalized (equivariant isometries, Schur theory) |
+| C04-72 | A | hard | Block-phase freedom of equivariant complement isometries | proved: Pass2.Schur.block_phases, block_commutant (in the ladder bases of the three blocks) |
 | C04-73 | A | easy | Dilation weights and sharp limit | proved: Sweep.SpinPair.fixed_on_V3 ((I − T_s) on V_J is 1 − e^{−c_J s}), Sweep.SpinPair.dilation_weights |
 | C04-74 | A | hard | Vector representation is spin one | proved: Sweep.Dirac.vector_spin_one |
 | C04-75 | C | - | Conditional integer chain | premise (C) |
@@ -599,7 +599,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-48 | A | easy | Pairwise comparator depth | proved: AppH1.comparator_depth |
 | C07-49 | A | hard | Maximal fusion of two spin-3/2 slots | proved (ladder-basis model): Sweep.SpinPair.projector_split; AppP.Spin.multiplicities, AppP.Spin.total_spin (Casimir eigenvalues J(J+1), multiplicities 7, 5, 3, 1) |
 | C07-50 | A | hard | Two vector strands | proved (ladder-basis model): AppQ.W.spin1_pair (multiplicities 1, 3, 5) |
-| C07-51 | A | hard | Unique isometric intertwiner Q → H_mark | not formalized: SU(2) rep theory |
+| C07-51 | A | hard | Unique isometric intertwiner Q → H_mark | proved: Pass2.Intertwiner.intertwiner (explicit equivariant 𝓘 : H_mark → Q with 𝓛𝓘 = I₉, 𝓘𝓛 = P_Q), intertwiner_unique (every equivariant J : H_mark → Q is 𝓘(aΠ₂ + bΠ₁ + cΠ₀)), mark_commutant |
 | C07-52 | A | medium | Matching complement and strand product | partial: instances s = 1 (AppQ.W.spin1_pair), j = 3/2 (Sweep.SpinPair.projector_split); label form Sweep.Alg.label_match |
 | C07-53 | A | easy | Closure vector norm and regularity | proved (existing): AppB.closure_norm |
 | C07-54 | A | medium | Gaussian (Hubbard–Stratonovich) representation | proved: Sweep.Ana.gaussian_representation_3d, Sweep.Ana.amplitude_sq |
@@ -674,7 +674,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-123 | A | easy | Weak-field proper time expansion | proved: AppH1.proper_time_slope |
 | C07-124 | A | easy | Equality of inertial and gravitational mass | proved: AppH1.equivalence_principle |
 | C07-125 | C | hard | Newtonian limit and no-slip | premise C; not formalized (linearized Einstein equations) |
-| C07-126 | A | hard | Commutant of the marked fiber | not formalized: SU(2) rep theory (Schur) |
+| C07-126 | A | hard | Commutant of the marked fiber | proved: Pass2.Schur.block_commutant, blocks_idem, blocks_diag, commutant_C3 (commutant spanned by three orthogonal block idempotents) |
 | C07-127 | A | easy | Renewal triangularity: no extra persistent pole | proved: AppH1.renewal_triangular, AppH1.renewal_eigen |
 | C08-01 | A | easy | Whitened Hessian and relative covariance | proved: AppH10.whiten, AppH10.whiten_posDef, AppH10.whiten_inv, AppH10.psqrt_mul_self, AppH10.psqrt_transpose |
 | C08-02 | A | medium | Finite-regulator Gaussian determinant theorem | proved: AppH10.determinant_theorem, AppH10.gaussian_integral, AppH10.det_whiten |
@@ -782,7 +782,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C09-06 | A | medium | Primitive fusion decomposition and projector traces | proved (ladder-basis model): Sweep.SpinPair.projector_split (P_Q P₃ = 0, P_Q + P₃ = I, Tr P₃ = 7, Tr P_Q = 9); AppP.Spin.multiplicities |
 | C09-07 | A | easy | Sector dephasing under a sector-resolving record | proved: AppH11.ptr_record (orthogonal sector records give zero off-diagonal block) |
 | C09-08 | C | easy | Free-vertex overlap condition | proved: AppH11.overlap_cases (⟨e_y∣e_x⟩ = 1 iff e_x = e_y; premise C on free sector) |
-| C09-09 | A | medium | Real form of the complement Q | not formalized: invariant real forms of integer-spin irreps (rep theory) |
+| C09-09 | A | medium | Real form of the complement Q | proved: Pass2.RealForms.real_forms, ad_casimir (scalar, antisymmetric and symmetric-traceless real 3 × 3 matrices: Casimir 0, 2, 6), with Sweep.Gauss.so3_split |
 | C09-10 | C | easy | Retained map Gram identity | proved: AppH11.retained_gram |
 | C09-11 | A | easy | Real isometry L between Q_R and the one-mark carrier | proved: AppH11.carrier_isometry |
 | C09-12 | C | easy | Quadratic operator, inherited Hessian, mismatch gap | proved: AppH11.inherited_hessian, AppH11.mismatch_gap |
@@ -804,7 +804,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C09-28 | A | hard | Gaussian first-moment bridge identity | proved: Sweep.Ana.gaussian_first_moment, Sweep.Ana.moment_1d |
 | C09-29 | C | easy | Isotropic second moment and normalized response | proved: AppH11.isotropic_moments (arithmetic; isotropy premise C) |
 | C09-30 | C | easy | Fisher metric equals 4 x mark metric | proved: AppH11.fisher_four (arithmetic; identification premise C) |
-| C09-31 | A | medium | Tensor-product factorization from commuting full matrix algebras | not formalized: double-commutant tensor factorization |
+| C09-31 | A | medium | Tensor-product factorization from commuting full matrix algebras | not formalized (second pass, time-boxed): structure theorem for commuting full matrix subalgebras (double commutant factorization) is not in Mathlib |
 | C09-32 | A | medium | Projected bridge factorizes; rank, trace, Hilbert-Schmidt norm | partial: Sweep.Alg.bridge_factorizes (mixed product), AppP.Spin.bridge_traces (Tr A = 0, Tr A² = 38); rank 8 not certified |
 | C09-33 | A | easy | Bridge is not a sum of one-mark Hamiltonians | proved: AppH11.bridge_not_additive |
 | C09-34 | A | hard | Two-mark Lie closure su(81) | not formalized: Lie closure su(81) |
@@ -907,7 +907,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C10-35 | A | medium | Matrix units and the algebra generated by S_3 | partial: (a) Sweep.Alg.matrix_units, Sweep.Alg.units_span; (b) dimension 5 from Sweep.Alg.s3_relation, Sweep.Alg.s3_independent, Sweep.Alg.s3_closed; the isomorphism with ℂ ⊕ M₂(ℂ) is not formalized |
 | C10-36 | A | easy | Plaquette holonomy transforms by conjugation | proved: AppIJ.holonomy_gauge |
 | C10-37 | A | easy | Hilbert-Schmidt return failure identity | proved: AppIJ.return_failure |
-| C10-38 | A | hard | Uniqueness of the frame-invariant quadratic form on the adjoint | not formalized: Schur uniqueness of invariant form |
+| C10-38 | A | hard | Uniqueness of the frame-invariant quadratic form on the adjoint | proved: Pass2.SU3Form.su3_invariant_form, invariant_form_unique, conj_coords, trace_form (invariance under three unitaries already forces q = c Tr X²) |
 | C10-39 | A | hard | Haar second moment for a qutrit | not formalized: Haar moments on S⁵ |
 | C10-40 | A | medium | Adjoint character formula | proved: AppIJ.adjoint_character (trace of Ad on M₃ = ∣Tr U∣²; −1 on the traceless part is the CI component) |
 | C10-41 | A | easy | Averaged return failure and adjoint Wilson coefficient | proved: AppIJ.wilson_coefficient, AppIJ.center_invariance |
@@ -1025,13 +1025,13 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C11-49 | A | easy | Conformal factor expansion | proved: Sweep.Alg.conformal_expansion (remainder ≤ 4∣ψ∣³/(1 − 2∣ψ∣)) |
 | C11-50 | A | hard | Scalar curvature of a conformally flat 3-metric | not formalized: conformal curvature formula |
 | C11-51 | A | medium | Second-order expansion of N sqrt(h) ^(3)R | not formalized (needs the C11-50 curvature formula) |
-| C11-52 | A | medium | Integrated-by-parts quadratic form | not formalized: integration by parts on ℝ³ |
+| C11-52 | A | medium | Integrated-by-parts quadratic form | partial: Var.quad_form_ibp (the divergence identity with explicit B = 4φ∇ψ + 4ψ∇ψ); the N√h ^(3)R expansion rests on C11-50/51 |
 | C11-53 | C | easy | First-order nonrelativistic matter action | premise C |
 | C11-54 | A | easy | Reduced two-potential action | E: definition |
-| C11-55 | A | medium | Constraint equations | not formalized: variational Euler-Lagrange on ℝ³ |
-| C11-56 | A | hard | Harmonic difference vanishes for isolated sources | not formalized: Liouville for harmonic functions |
-| C11-57 | A | easy | Newton action from substitution | not formalized: variational |
-| C11-58 | A | easy | Pre-variation identification loses a constraint | not formalized: variational |
+| C11-55 | A | medium | Constraint equations | proved: Var.two_potential_Φ, two_potential_Ψ (C² fields, continuous ρ, all compactly supported smooth variations; first variation by Var.gateaux, Var.euler_lagrange) |
+| C11-56 | A | hard | Harmonic difference vanishes for isolated sources | proved: Var.harmonic_decay_zero, no_slip (C² harmonic on ℝⁿ, n ≥ 1, tending to 0 at infinity) |
+| C11-57 | A | easy | Newton action from substitution | proved: Var.I2_diag, newton_EL |
+| C11-58 | A | easy | Pre-variation identification loses a constraint | proved: Var.identification_before_variation (single-field variation: ΔΦ = 4πGρ; independent variation: ΔΨ = 4πGρ and Δ(Φ − Ψ) = 0) |
 | C11-59 | A | easy | Field-redefinition coefficient A | proved: AppKN.redefinition_coefficient |
 | C11-60 | A | easy | Capacity action in Phi | proved (existing): AppH10.static_capacity |
 | C11-61 | A | easy | Off-shell identity I_cap = (2 kappa S_inf/c^2) I_Newton | proved (existing): AppH10.static_capacity |
@@ -1071,7 +1071,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C11-95 | A | easy | Longitudinal/transverse split inherits Z_0 | proved: AppKN.longitudinal_split |
 | C11-96 | A | easy | Polar decomposition of the transverse pair | proved: AppKN.polar_kinetic |
 | C11-97 | C | easy | Phase-cell Haar volume | premise C |
-| C11-98 | A | easy | Varying-frame kinetic expansion | not formalized: varying-frame expansion |
+| C11-98 | A | easy | Varying-frame kinetic expansion | not formalized: varying-frame expansion (second pass, time-boxed: varying-frame expansion not formalized) |
 | C11-99 | A | easy | Rank-one quartic coupling matrix | proved: AppKN.rank_one_criterion |
 | C11-100 | A | easy | Legendre form of the capacity potential | proved: AppKN.capacity_legendre |
 | C11-101 | A | easy | Hessian on the stationary surface is rank one | proved: AppKN.rank_one_hessian |
@@ -1083,20 +1083,20 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C11-107 | C | easy | Phase-cell acceleration scale | premise C; ε bracket existing Spine.epsilon_bracket |
 | C11-108 | A | easy | Thermal free energy and occupation | proved: AppKN.thermal_occupation |
 | C12-01 | A | easy | Derivative of the Q function | proved (chunk 13): Main.Galactic.qint_integrable, Main.Galactic.Qperp_deriv |
-| C12-02 | A | medium | Euler-Lagrange equations of the carrier action | not formalized: variational EL |
+| C12-02 | A | medium | Euler-Lagrange equations of the carrier action | partial: Var.carrier_Φ, carrier_Φb (C² Q; see C02-11 for the z = 0 caveat) |
 | C12-03 | A | easy | Transverse Poisson equation (spherical-slaved form) | premise C (the C12-02 field equations): Sweep.Alg.transverse_poisson with Main.Galactic.Qperp_deriv |
 | C12-04 | A | medium | Spherical sources give the exponential RAR | proved: AppKN.radial_divfree_zero (bounded radial divergence-free field vanishes); RAR form existing GalacticLaw.gObs_thermal |
 | C12-05 | A | easy | Saddle-splay is a divergence; integration by parts | proved: AppKN.saddle_splay |
 | C12-06 | C | medium | Phi_b equation with director and stiffness | premise C |
-| C12-07 | A | medium | Director Euler-Lagrange equation | not formalized: director EL |
+| C12-07 | A | medium | Director Euler-Lagrange equation | not formalized: director EL (second pass, time-boxed: director EL with the unit-length constraint (multiplier and projection) not formalized; the unconstrained first-variation theorem is Var.euler_lagrange) |
 | C12-08 | A | medium | Radial-director identity | partial (existing): Director.radial_selects_kappa |
 | C12-09 | A | easy | Total-Q replacement spoils Newtonian limit | proved: AppKN.total_q_replacement |
-| C12-10 | A | medium | Axisymmetric director energy density | not formalized: cylindrical director energy |
+| C12-10 | A | medium | Axisymmetric director energy density | not formalized: cylindrical director energy (second pass, time-boxed: cylindrical director energy not formalized) |
 | C12-11 | C | easy | Linearized coherence length | premise C |
 | C12-12 | B | hard | Milky Way coherence-length and potential-shift numbers | B |
-| C12-13 | A | hard | Stock variation of the stiffness energy | not formalized: functional derivative of Green potential |
+| C12-13 | A | hard | Stock variation of the stiffness energy | not formalized: functional derivative of Green potential (second pass, time-boxed: needs the Newtonian Green function of Δ on ℝ³ (not in Mathlib)) |
 | C12-14 | A | easy | Multi-carrier static energy and excess flux | proved (pointwise derivative): Sweep.Alg.constitutive_derivative |
-| C12-15 | A | hard | Force from stationary directors and momentum balance | not formalized: envelope theorem in field space |
+| C12-15 | A | hard | Force from stationary directors and momentum balance | not formalized: envelope theorem in field space (second pass, time-boxed: envelope theorem in field space not formalized) |
 | C12-16 | B | hard | MW-LMC force table | B |
 | C12-17 | B | hard | Independent reproduction and four results | B |
 | C12-18 | B | hard | Single continuous director outcomes | B |
@@ -1134,7 +1134,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C12-50 | A | easy | Kasner exact-solution data | proved: AppKN.kasner_exponents (exponents; metric data routine) |
 | C12-51 | B | hard | Kasner integration numerics | B |
 | C12-52 | B | hard | TOV demonstration solution | B |
-| C12-53 | A | medium | Hermiticity of the static Dirac Hamiltonian | not formalized: Dirac Hermiticity |
+| C12-53 | A | medium | Hermiticity of the static Dirac Hamiltonian | not formalized: Dirac Hermiticity (second pass, time-boxed: symmetric Dirac operator with matrix coefficients not formalized; Var.ibp is the scalar integration by parts it needs) |
 | C12-54 | A | medium | Configuration-space determinants | not formalized (symbolic DeWitt-supermetric calculus) |
 | C12-55 | A | easy | Measure, half-density, and pattern normalization | proved: AppKN.pattern_normalization |
 | C12-56 | A | medium | Weyl symbol of a quadratic kinetic term | not formalized: Weyl symbol |
@@ -1341,14 +1341,14 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C14-70 | A | medium | Microcanonical form and entropy increase | not formalized (matrix logarithm) |
 | C14-71 | A | hard | Primitivity implies geometric convergence | not formalized (quantum Perron-Frobenius) |
 | C14-72 | A | easy | Aperiodicity from a positive-definite Kraus operator | partial: (a) AppP.Num.no_event_kraus; (b) not formalized |
-| C14-73 | A | easy | Spin-3/2 pair channel: commutant dimensions and gap | not formalized (commutant dimensions) |
+| C14-73 | A | easy | Spin-3/2 pair channel: commutant dimensions and gap | partial: (a) Pass2.PairGen.bilinear_commutant (commutant of {J_a ⊗ J_b} is C·I); (c) Pass2.DiagCommutant.jzz_commutant, jzz_support_card (48); (b) dimension 8 and (d) channel not formalized |
 | C14-74 | A | easy | Lower bound on K² over injective assignments | proved: AppP.Num.K2_floor (pair sum ≤ 11 by kernel enumeration, equality cases); also EFT.UV.quantumK2R_lower |
-| C14-75 | A | medium | Intertwiner space dimension and vanishing transported bilinears | not formalized (rep theory; see honesty flag on intertwinerDim) |
+| C14-75 | A | medium | Intertwiner space dimension and vanishing transported bilinears | partial: (a) Pass2.RealForms.four_slot_weights (weight multiplicities 44 and 40; dim = 44 − 40 via the character formula, not formalized); (b) Sweep.Alg.projected_vector_zero |
 | C14-76 | C | easy | Gauge factorization (premise) | premise (C) |
 | C14-77 | A | easy | Mirror gluing as a π rotation and the product angle | proved: AppP.Num.mirror_rotation, product_angle, gluing_angle_degrees (141.055° < θ < 141.065°) |
 | C14-78 | A | medium | Irrationality of the gluing angle | proved: AppP.Num.gluing_angle_irrational (Niven) |
 | C14-79 | A | hard | Density of gluing products in SO(3) | not formalized (density in SO(3)) |
-| C14-80 | A | medium | Face-pair and two-pair commutants; irreducibility on networks | not formalized (commutants) |
+| C14-80 | A | medium | Face-pair and two-pair commutants; irreducibility on networks | not formalized (second pass, time-boxed): the gate algebra of the four native gluings is not encoded as matrices in the library |
 | C14-81 | C | hard | Finite-network arrow theorem | premise (C); remainder not formalized |
 | C14-82 | A | easy | Non-reuse: history dimension lower bound | proved: AppP.non_reuse |
 | C14-83 | A | easy | Record root: bound on recoverable past layers | proved: AppP.record_root |
@@ -1365,16 +1365,16 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C15-01 | A | medium | Face-mismatch operator eigenvalue on coupled irreps | proved (ladder basis): Q_f = 9/4 − J_L·J_R, AppP.Spin.total_spin (Q = 6 − J²/2), minpoly_M |
 | C15-02 | A | medium | Spectral decomposition and kernel of Q_f | proved (ladder basis): AppP.Spin.resolution, eigen_relations, multiplicities (Q = 6P₀ + 5P₁ + 3P₂, kernel J = 3, dim 7) |
 | C15-03 | A | medium | Clebsch-Gordan decomposition and dimensions 7 and 9 | proved (dimensions): AppP.Spin.multiplicities (1, 3, 5, 7), AppP.Spin.bridge_traces (Tr P_Q = 9) |
-| C15-04 | A | easy | Matching transfer and its limit | not formalized (matrix exponential of the spectral form) |
+| C15-04 | A | easy | Matching transfer and its limit | proved: Sweep.SpinPair.transfer_formula, transfer_limit |
 | C15-05 | A | medium | Marked present/history representation is multiplicity free | proved (multiplicities): AppQ.W.spin1_pair (V₁⊗V₁ spectrum 4, −4, −8 with multiplicities 5, 3, 1), ladder1; equivariant isomorphism to Q_cap not formalized |
 | C15-06 | A | easy | Lower bound K^2 >= 122/3 | proved: AppP.Num.K2_floor, AppQ.K2_equality (equality only for {0,1,2,3}, {−3,−2,−1,0}) |
 | C15-07 | C | easy | Same-factor impossibility | proved (remainder): AppQ.same_factor, AppQ.gibbs_constant; premise (C) |
 | C15-08 | A | easy | Injective port count | proved: AppP.injective_count |
 | C15-09 | A | easy | Capacity observables commute with geometric gauge action | proved: AppQ.capacity_commutes |
-| C15-10 | A | medium | Schur form of the one-cell lock | not formalized (Schur lemma for SU(2) representations) |
-| C15-11 | A | medium | Blockwise uniqueness of locks on Q_cap | not formalized (equivariant unitaries) |
+| C15-10 | A | medium | Schur form of the one-cell lock | proved: Pass2.Schur.lock_unique, phase_of_unitary (via Pass2.Schur.schur_ladder, schur_similar) |
+| C15-11 | A | medium | Blockwise uniqueness of locks on Q_cap | proved: Pass2.Schur.block_phases (equivariant unitary on V₀ ⊕ V₁ ⊕ V₂ is diag(e^{iφ₀}I₁, e^{iφ₁}I₃, e^{iφ₂}I₅); commutant by Pass2.Schur.block_commutant) |
 | C15-12 | A | medium | Multiplicity one of the top spin in tensor powers | partial: AppQ.W.top_weight (top weight 3N occurs once, nothing above, all N); the weight-to-multiplicity step is standard SU(2) theory, not formalized |
-| C15-13 | A | hard | Equivariant lock under maximal blocking (Lemma) | not formalized (equivariant blocking) |
+| C15-13 | A | hard | Equivariant lock under maximal blocking (Lemma) | not formalized (second pass, time-boxed): as C04-51; the scalar step on V_{3N} is Pass2.Schur.schur_ladder, schur_similar |
 | C15-14 | A | hard | Coherent-state blocking | not formalized (coherent states) |
 | C15-15 | A | easy | Relational-frame covariance of K^2(R) | proved: AppQ.frame_covariance |
 | C15-16 | A | easy | Frame-independent ranks and spectra (840, 1680) | proved: AppQ.frame_invariance (rank, trace) |

@@ -86,3 +86,14 @@ import Entropic.Sweep.Information
 import Entropic.Sweep.Legacy
 import Entropic.Sweep.Gaussian
 import Entropic.RetainedRelaxation
+import Entropic.Pass2.Schur
+import Entropic.Pass2.Pair
+import Entropic.Pass2.PairGen
+import Entropic.Pass2.RealForms
+import Entropic.Pass2.SU3Form
+import Entropic.Pass2.Intertwiner
+import Entropic.Pass2.DiagCommutant
+import Entropic.Pass2.Var
+import Entropic.Pass2.Fields
+import Entropic.Pass2.Harmonic
+import Entropic.Pass2.IBPForm

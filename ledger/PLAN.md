@@ -62,3 +62,18 @@ Chunks (one module group per chunk, each ends with build + axiom audit + ledger 
       two-pole transform and sum rule, S₇ orbit count, staggered complex identities, Dirac frame flips,
       fused-label cap, Hermite Gram, legacy instances; CiteCheck 0 unresolved; see CLAIMS.md, RETIREMENT.md;
       the v0.8 library is merged into the single library as Entropic.EFT, namespace EntropicEFT → Entropic.EFT)
+
+Second pass on the 196 open claims (see OPEN_TRIAGE.md for groups, importance, tractability).
+Each chunk: attempt every target in its groups; time-box anything that resists after real prodding
+and record the reason in the ledger; build; axiom audit; CiteCheck; ledger + PLAN (mark DONE);
+deploy with originals preserved; push to the PR branch lean435-single-library; short report.
+ 15  G1 Schur lemma for ladder irreps of every spin, commutants, equivariant uniqueness; duplicate sweep   DONE
+     (Pass2 Schur/Pair/PairGen/RealForms/SU3Form/Intertwiner/DiagCommutant: 10 proved, 2 partial;
+      C04-51, C15-13, C14-80, C09-31 time-boxed with reasons)
+ 16  G3 first-variation theorem with compact support on R^n; Euler-Lagrange equations of the actions   DONE
+     (Pass2 Var/Fields/IBPForm/Harmonic: 6 proved incl. C11-56, C03-133 brought forward from chunk 17; 5 partial;
+      11 time-boxed with reasons)
+ 17  G4 coordinate GR: conformally flat curvature, weak-field reduction, maximum principle and Phi = Psi, static spherical reduction
+ 18  G5, G6, G9 matrix calculus and ODE, finite combinatorics, special-function and stated-input numerics
+ 19  G2, G7, G8 top multiplet and coherent states, Lie closure, ensemble numerics at eta_*
+ 20  G12 reclassification, final audit, CLAIMS/RETIREMENT/README/drop-in refresh, deploy, PR update

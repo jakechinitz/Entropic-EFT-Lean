@@ -12,12 +12,12 @@ and the ledger citation check on every push.
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 136 modules, 2,379 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Library | one Lean library, `Entropic`: 147 modules, 2,562 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
 | Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_chunk14_2026-10-22.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
-| Ledger totals | proved 852, proved in part 78, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 196, other 35 (interpretive, definitions, corrections, cited results) |
-| Citation check | `scripts/CiteCheck.lean`: 945 Lean names cited in the ledger, 0 unresolved |
+| Ledger totals | proved 868, proved in part 85, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 173, other 35 (interpretive, definitions, corrections, cited results) |
+| Citation check | `scripts/CiteCheck.lean`: 969 Lean names cited in the ledger, 0 unresolved |
 
 Supporting files:
 
@@ -62,6 +62,7 @@ with the cited data; E (interpretive) is not formalized.
 | `Entropic/Main` | main-text Parts IV to VIII (galactic, core, cosmological statements) |
 | `Entropic/Sweep` | final sweep: spin-3/2 pair projectors and transfer semigroup, Gaussian and Fourier integrals, S₇ orbit count, staggered constraint complex, Dirac frame flips, fused-label information cap, Hermite Gram matrix, v0.8 certificate instances |
 | `Entropic/RetainedRelaxation.lean` | retained angular-marginal update of O.3 |
+| `Entropic/Pass2` | second pass on the open claims: ladder Schur lemma and commutants (frame lock up to phase, block phases, V₀⊕V₁⊕V₂ commutant, spin-3/2 pair commutant via an integer coupled basis, H_mark → Q intertwiner and its uniqueness, SU(3) invariant form, real forms); first variation on ℝⁿ (integration by parts, fundamental lemma, Euler–Lagrange theorem) and the field equations of the two-potential, Newton, scalar and carrier actions; weak maximum principle and vanishing of decaying harmonic functions |
 | `Entropic/EFT/` | v0.8 library, ported to Lean 4.35.0 (namespace `Entropic.EFT`) |
 
 ## Reproduce the check
@@ -91,7 +92,7 @@ shim for `/proc/<pid>/exe` discovery. Its source and explanation are under
 
 ## Not formalized
 
-The ledger gives a reason for each of the 196 statements marked not formalized.
+The ledger gives a reason for each of the 173 statements marked not formalized.
 The main groups are:
 
 - pseudo-Riemannian curvature and variational calculus on manifolds (warped-product
