@@ -82,4 +82,6 @@ deploy with originals preserved; push to the PR branch lean435-single-library; s
  19  G2, G7, G8 top multiplet and coherent states, Lie closure, ensemble numerics at eta_*   DONE
      (Pass2 SlGen/LieJJ/LieTensor/Bridge81: C14-43, C14-44 proved; C14-34, C14-50, C09-34, C03-19 partial (complex forms);
       coherent-state, graph-kernel and η_* ensemble numerics time-boxed with reasons)
- 20  G12 reclassification, final audit, CLAIMS/RETIREMENT/README/drop-in refresh, deploy, PR update
+ 20  G12 reclassification, final audit, CLAIMS/RETIREMENT/README/drop-in refresh, deploy, PR update   DONE
+     (19 simulation rows reclassified; OPEN_TRIAGE outcome table; drop-in R1_lean_dropin_2026-10-23.txt;
+      final: 2,812 theorems, 0 nonstandard axioms; ledger 874 proved, 90 partial, 143 not formalized with reasons)

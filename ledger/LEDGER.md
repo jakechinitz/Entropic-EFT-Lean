@@ -44,7 +44,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-38 | A | easy | Return operator and Sigma_ret = 65/9 | proved: AppCDE.Sigma_ret |
 | C01-39 | C | easy | Loop-dressed coupling and its values | proved: AppCDE.loop_values |
 | C01-40 | B | easy | Sensitivity of J_ren to Sigma_ret | proved: AppCDE.Jren_sensitivity |
-| C01-41 | B | unknown | Shell-target crossing | not formalized |
+| C01-41 | B | unknown | Shell-target crossing | simulation output (not a theorem; reclassified in the second pass): numerical model output |
 | C01-42 | C | medium | Continuum stiffness from the lattice action | proved: AppCDE.gammaQ_from_lattice |
 | C01-43 | A | easy | Einstein-normalized stiffness | proved: AppCDE.gamma_from_gammaQ |
 | C01-44 | A | hard | Static ADM reduction of Einstein-Hilbert to quadratic order | partial: Var.adm_reduction, adm_density_expansion, conformal_scalar_curvature (for compactly supported C² perturbations the linear term integrates to 0 and the quadratic term to ∫ 2(|∇ψ|² − 2∇φ·∇ψ), giving I^(2) = Var.I2); asymptotic falloff in place of compact support and the GHY term are not formalized |
@@ -91,7 +91,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C02-22 | A | easy | Tilt expansion and coherence length | not formalized (tilt expansion) (second pass, time-boxed: O(δ⁴) tilt expansion of Q_⊥ not formalized) |
 | C02-23 | A | easy | Midplane excess of the near-radial director | not formalized (midplane expansion) (second pass, time-boxed: approximate midplane estimate (≃), not a theorem) |
 | C02-24 | A | hard | Momentum balance of joint-source excess forces | not formalized (field-space momentum balance) (second pass, time-boxed: field-space momentum balance needs decay estimates for φ_⊥ not formalized) |
-| C02-25 | B | easy | Milky Way-LMC Plummer force numbers | not formalized |
+| C02-25 | B | easy | Milky Way-LMC Plummer force numbers | simulation output (not a theorem; reclassified in the second pass): numerical model output |
 | C02-26 | C | hard | Multi-carrier director: on-shell balance and defects (numerical) | premise (C) |
 | C02-27 | D | n | Reflex velocity vs measured travel velocity | data (D) |
 | C02-28 | D | n | Dwarf / satellite empirical comparisons | data (D) |
@@ -220,8 +220,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-70 | A | hard | Green function of conserved transport ~ 1/(4 pi D r) | not formalized (Green-function asymptotics) |
 | C03-71 | A | easy | Cubic lattice symbol expansion | proved: Sweep.Alg.cubic_symbol (remainder ≤ 2∣w∣ Σ (7/4320)∣a k_i∣⁶), AppH10.cos_bound6 |
 | C03-72 | A | easy | Diffusion constant D = w/a | proved: Main.Cosmo.diffusion_constant |
-| C03-73 | A | hard | Lattice Green function with O(a^2/r^3) correction | not formalized |
-| C03-74 | B | hard | 128^3 periodic Laplacian fit | not formalized (numerics) |
+| C03-73 | A | hard | Lattice Green function with O(a^2/r^3) correction | not formalized (second pass, time-boxed: lattice Green function asymptotics need Fourier analysis on ℤ³ not in Mathlib) |
+| C03-74 | B | hard | 128^3 periodic Laplacian fit | simulation output (not a theorem; reclassified in the second pass): numerics |
 | C03-75 | A | hard | Mosco convergence implies Green-function convergence | not formalized (Mosco convergence) |
 | C03-76 | A | hard | Newtonian potential solution and point-source profile | not formalized (Newtonian potential) (second pass, time-boxed: needs Δ(1/|x|) = −4πδ on ℝ³ (not in Mathlib)) |
 | C03-77 | A | easy | Junction condition coefficient | proved: Main.Cosmo.junction_coefficient |
@@ -229,9 +229,9 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-79 | B | easy | Native mass unit m_* | proved: Main.Cosmo.native_si |
 | C03-80 | A | easy | Native-unit junction equation | proved: Main.Cosmo.native_junction |
 | C03-81 | D | n | Transport experiment measurements | data (D) |
-| C03-82 | B | easy | Screening-length bound xi > 4.6 | not formalized (fit numerics) |
+| C03-82 | B | easy | Screening-length bound xi > 4.6 | simulation output (not a theorem; reclassified in the second pass): fit numerics |
 | C03-83 | D | n | Smeared-source profile fit | data (D) |
-| C03-84 | B | easy | Effective Green dimension | not formalized (fit numerics) |
+| C03-84 | B | easy | Effective Green dimension | simulation output (not a theorem; reclassified in the second pass): fit numerics |
 | C03-85 | A | easy | Joint partition function and effective action | proved: Main.Cosmo.effective_action |
 | C03-86 | D | n | Phase-membership criteria and volume-pair data | data (D) |
 | C03-87 | B | medium | G_* closed form and value | proved: AppCDE.Gstar_value, residuals |
@@ -354,7 +354,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C04-30 | B | medium | Closed-branch moments | proved: AppB.var_at_root, AppB.mean_at_root |
 | C04-31 | A | easy | Closure-saturation product | proved (existing): EFT.UV.EtaStarSpec.closure_product |
 | C04-32 | A | easy | Rooted reduction counts | proved: AppB.rooted_classes, AppB.rooted_microstates |
-| C04-33 | B | hard | Induced-fraction benchmarks | not formalized: inputs (Y_r, toy/loc models, U(0)) not specified in text |
+| C04-33 | B | hard | Induced-fraction benchmarks | simulation output (not a theorem; reclassified in the second pass): inputs (Y_r, toy/loc models, U(0)) not specified in text |
 | C04-34 | A | medium | Fused-label information cap | proved: Sweep.Info.fused_label_cap, Sweep.Info.seven_label_cap (full-support marginals) |
 | C04-35 | B | easy | Horizon target sigma_* | proved: AppB.sigma_star |
 | C04-36 | A | hard | Clebsch-Gordan decomposition of the face space | partial: instances j₀ = 3/2 (Sweep.SpinPair.projector_split, AppP.Spin.multiplicities) and 1 (AppQ.W.spin1_pair); general Clebsch–Gordan not formalized |
@@ -453,9 +453,9 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C05-38 | C | easy | G_0/G_* formula from Q.11 rule | proved: AppCDE.Calibration.G0_formula, G0_eq_K, K_bounds |
 | C05-39 | B | easy | Calibration numerics at m_4 = 2.35 | proved: AppCDE.Calibration.calibration_235 |
 | C05-40 | B | easy | Calibration root and sensitivity range | proved: AppCDE.Calibration.calibration_root, G0_strictMono |
-| C05-41 | B | medium | Pair-volume spectrum | not formalized (numerical spectrum of the H.12 volume operator) |
+| C05-41 | B | medium | Pair-volume spectrum | simulation output (not a theorem; reclassified in the second pass): numerical spectrum of the H.12 volume operator |
 | C05-42 | A | medium | Maximum-entropy volume state | partial: AppCDE.Tilted.M_strictMono, unique_tilt; λ value needs H.12 spectrum |
-| C05-43 | B | hard | Minimum RMS face-cosine deviation at j=3 | not formalized (numerical minimization over H.12 shapes) |
+| C05-43 | B | hard | Minimum RMS face-cosine deviation at j=3 | simulation output (not a theorem; reclassified in the second pass): numerical minimization over H.12 shapes |
 | C05-44 | C | easy | Scalar normalization at event-calibrated volume | partial: AppCDE.Calibration.displacement_ratio (scaling premise) |
 | C05-45 | C | easy | Einstein-continuation scalar coefficients | proved: AppCDE.Calibration.einstein_coefficients |
 | C05-46 | A | easy | Bridge field redefinition (uniqueness) | proved: AppCDE.bridge_unique |
@@ -1198,10 +1198,10 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-27 | B | medium | s -> infinity limiting minimum | not formalized (numerical minimum) (second pass, time-boxed: certified numerical minimization not formalized) |
 | C13-28 | A | easy | Change in spherical acceleration under projection | proved: AppO.projection_change |
 | C13-29 | A | easy | Bound on /delta g/g/ | proved: AppO.projection_bound |
-| C13-30 | B | hard | Plummer projection check | not formalized (numerical model output) |
+| C13-30 | B | hard | Plummer projection check | simulation output (not a theorem; reclassified in the second pass): numerical model output |
 | C13-31 | A | easy | Circular-orbit kinetic realization | proved: AppO.circular_jeans (Jeans balance); distribution normalization not formalized |
 | C13-32 | B | easy | Exponential vs linear budget at full release | proved: AppO.Num.budget_ratio (0.000455 < · < 0.000456), AppO.Num.budget_equality_iff, AppO.Num.budget_value (13.6–13.7 M_b at f_b = 0.157) |
-| C13-33 | B | hard | NFW stock vs RAR response agreement | not formalized (model numerics) |
+| C13-33 | B | hard | NFW stock vs RAR response agreement | simulation output (not a theorem; reclassified in the second pass): model numerics |
 | C13-34 | D | n | LMC reflex estimates | data (D) |
 | C13-35 | A | easy | Homogeneous density, vacuum and flatness equations | partial: follows from C13-18 (PositiveLedger) with the Friedmann sum as premise; Stieltjes change of variable not formalized |
 | C13-36 | B | easy | Present capacity/baryon ratio | proved: AppO.Num.capacity_baryon_ratio |
@@ -1210,8 +1210,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-39 | A | easy | Total-stock balance along the clock | proved: AppO.stock_balance (differential), AppO.stock_integrated (FTC form) |
 | C13-40 | A | easy | Local capacity under common baryon-capacity flow | proved (algebra): AppO.local_capacity, AppO.capacity_contrast |
 | C13-41 | A | easy | Density-floor bound on calB | proved: AppO.density_floor (inequality), AppO.Num.density_floor_values |
-| C13-42 | B | hard | Nonlinear spherical exhaustion check | not formalized (numerical model) |
-| C13-43 | B | medium | Linear-depletion vs positive allocation at fixed history | not formalized (numerical model) |
+| C13-42 | B | hard | Nonlinear spherical exhaustion check | simulation output (not a theorem; reclassified in the second pass): numerical model |
+| C13-43 | B | medium | Linear-depletion vs positive allocation at fixed history | simulation output (not a theorem; reclassified in the second pass): numerical model |
 | C13-44 | A | easy | Effective equation of state | proved: AppO.effective_w, Ledger.active_release_effectiveW_lt_neg_one |
 | C13-45 | A | easy | Linear clock constraint | proved: AppO.linear_clock |
 | C13-46 | A | hard | Linearized capacity perturbation equations | not formalized (perturbation linearization) (second pass, time-boxed: perturbation linearization not formalized) |
@@ -1222,7 +1222,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-51 | A | medium | Radial flux realization conserves mass | proved (1-D no-flux form): AppO.no_flux_conservation, AppO.stationary_profile |
 | C13-52 | A | medium | Energy diffusion at fixed L preserves L-bin mass | proved (1-D no-flux form): AppO.no_flux_conservation |
 | C13-53 | A | easy | Protected null space of noise covariance | proved: AppO.protected_null |
-| C13-54 | B | hard | Numerical stock-evolution witnesses | not formalized (simulation output) |
+| C13-54 | B | hard | Numerical stock-evolution witnesses | simulation output (not a theorem; reclassified in the second pass): simulation output |
 | C13-55 | E | n | Dimension ratio does not fix eta | premise (E) |
 | C13-56 | C | medium | eta conditional relation | proved (remainder A): AppO.Num.drain_ratio from ClosureStationary; premises (C) as stated |
 | C13-57 | B | n | Marked fugacity value | proved: AppCDE.zeta_rat (ζ* ∈ (0.005123584484, 0.005123584486)) |
@@ -1243,7 +1243,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-72 | A | medium | Memory kernel: conditional entropy strictly below share for a > 0 | proved: AppO.memory_not_product (joint law not product ⇒ I > 0 by AppFG.Info.subadditive_eq_iff) |
 | C13-73 | C | easy | Full rerouting coefficient | premise (C) |
 | C13-74 | C | easy | Additive pricing fixes released fraction | proved (given the C premise): AppO.additive_pricing via AppFG.Born.born |
-| C13-75 | B | easy | Poisson coverage estimate | not formalized (inputs missing) |
+| C13-75 | B | easy | Poisson coverage estimate | simulation output (not a theorem; reclassified in the second pass): inputs missing |
 | C13-76 | A | easy | Absorbing first-entry fraction | proved: AppO.absorbing_first_entry (monotonicity); Monte Carlo values not formalized |
 | C13-77 | A | hard | Closed-cohort mutual-information dissipation | not formalized (PDE dissipation) |
 | C13-78 | A | medium | Bounded, nondecreasing resolved kernel | proved (given C13-77): AppO.resolved_kernel |
@@ -1254,7 +1254,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-83 | A | easy | Virial dynamical time | proved: AppO.virial_time |
 | C13-84 | D | n | Approximate PPF likelihood results | data (D) |
 | C13-85 | B | easy | Matched direct-perturbation chi^2 table | proved: AppO.Num.chi2_rows (arithmetic only) |
-| C13-86 | B | hard | Reference-split invariance numerics | not formalized (numerics) |
+| C13-86 | B | hard | Reference-split invariance numerics | simulation output (not a theorem; reclassified in the second pass): numerics |
 | C13-87 | D | n | Self-gravitating SPH measurement of K_mix | data (D) |
 | C13-88 | B | easy | Virial temperature at 14 km/s | proved: AppO.Num.virial_temperature |
 | C13-89 | A | easy | Large-scale release bias definitions | proved: AppO.hazard_cancels |
@@ -1264,7 +1264,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-93 | A | easy | Label cap sum | proved: AppO.label_cap |
 | C13-94 | E | n | Formation energy balance | premise (E) |
 | C13-95 | A | easy | Formation isometry | proved: AppO.formation_isometry |
-| C13-96 | B | medium | Pair abundance and annihilation rate at k_B T = m_e c^2 | not formalized (inputs missing) |
+| C13-96 | B | medium | Pair abundance and annihilation rate at k_B T = m_e c^2 | simulation output (not a theorem; reclassified in the second pass): inputs missing |
 | C13-97 | B | easy | Formation-epoch radiation debit and recurrence margin | proved with correction: AppO.Num.recurrence_margin gives e^{9.1 g} ∈ (2.0e29, 2.2e29), not 3e29 (PAPER_ISSUES); 1.0024/ε ∈ (5.33, 5.335) |
 | C13-98 | A | medium | Clock deficit monotonicity | proved: AppO.reverse_cauchy_schwarz, AppO.deficit_rate, AppO.deficit_persists |
 | C13-99 | C | easy | No-late-recruitment theorem | proved (invariant part): AppO.no_late_recruitment; premises (i)-(vi) (C) |
@@ -1324,7 +1324,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C14-53 | A | easy | Occupancy record indistinguishability | proved: AppO.identity_free_record (C13-61) |
 | C14-54 | A | easy | Mixing fraction is in [0,1] | proved: AppO.mixing_fraction (C13-69) |
 | C14-55 | C | n | Marked accumulation law (definitional) | premise (C) |
-| C14-56 | B | medium | PPF benchmark calibration values | not formalized (inputs) |
+| C14-56 | B | medium | PPF benchmark calibration values | simulation output (not a theorem; reclassified in the second pass): inputs |
 | C14-57 | A | easy | Normalized record-strand energy | proved: AppP.record_strand_energy |
 | C14-58 | B | medium | Mean closure energy at η_* | proved to 9 decimals: AppP.Num.mean_closure_energy (⟨K²⟩ = 3/(2η*) ∈ (50.2229154252, 50.2229154257)); the 10th decimal is not fixed by the η* bracket |
 | C14-59 | C | easy | Drain coefficient equals η_* | proved (remainder): AppO.Num.drain_ratio; premise (C) |
@@ -1361,7 +1361,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C14-90 | D | n | Tied-abundance likelihood fit | data (D) |
 | C14-91 | D | n | Linear lensing comparison | data (D) |
 | C14-92 | E | n | Lepton-ladder sealed conjecture | conjecture (E) |
-| C14-93 | B | medium | Miscellaneous reproduced numbers in the register | not formalized (miscellaneous numerics) |
+| C14-93 | B | medium | Miscellaneous reproduced numbers in the register | simulation output (not a theorem; reclassified in the second pass): miscellaneous numerics |
 | C15-01 | A | medium | Face-mismatch operator eigenvalue on coupled irreps | proved (ladder basis): Q_f = 9/4 − J_L·J_R, AppP.Spin.total_spin (Q = 6 − J²/2), minpoly_M |
 | C15-02 | A | medium | Spectral decomposition and kernel of Q_f | proved (ladder basis): AppP.Spin.resolution, eigen_relations, multiplicities (Q = 6P₀ + 5P₁ + 3P₂, kernel J = 3, dim 7) |
 | C15-03 | A | medium | Clebsch-Gordan decomposition and dimensions 7 and 9 | proved (dimensions): AppP.Spin.multiplicities (1, 3, 5, 7), AppP.Spin.bridge_traces (Tr P_Q = 9) |
@@ -1422,7 +1422,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C15-58 | A | medium | Symmetric count states and collective raising operator | not formalized (symmetric count states) (second pass, time-boxed: Dicke-state ladder for general M not formalized) |
 | C15-59 | A | medium | Flat count ground state with diagonal correction | proved (quadratic form): AppQ.Fock.tri_sum_squares, flat_ground_state; spin-sector matrix identification not formalized |
 | C15-60 | B | medium | First count gap values | not formalized (numerics) (second pass, time-boxed: eigenvalue numerics, not a theorem) |
-| C15-61 | B | hard | TT count-oscillator gap ratios | not formalized (numerics) |
+| C15-61 | B | hard | TT count-oscillator gap ratios | simulation output (not a theorem; reclassified in the second pass): numerics |
 | C15-62 | A | easy | Aggregate count entropy is logarithmic | proved: AppIJ.entropy_le_log_card |
 | C15-63 | A | easy | Frame-covariant transport intertwines | proved: AppQ.transport_intertwines |
 | C15-64 | A | easy | Two-direction decomposition of K^{AB} | proved: AppQ.two_direction |

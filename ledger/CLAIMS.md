@@ -1,16 +1,16 @@
-# Claims map (chunk 14, 2026-10-22)
+# Claims map (second pass complete, 2026-10-23)
 
 Status of all 1,437 manuscript claims by kind (A exact, B numeric, C premise-conditional, D data, E interpretive, ? unclassified) and outcome. Lean names are relative to the `Entropic` namespace (the v0.8 library is `Entropic.EFT`).
 
-| Kind | proved | partial | premise-conditional | numeric | data comparison | not formalized | interpretive | definition | corrected | other | total |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| A | 680 | 75 | 1 | 4 | 0 | 121 | 1 | 5 | 1 | 3 | 891 |
-| B | 104 | 7 | 0 | 54 | 2 | 40 | 0 | 0 | 1 | 1 | 209 |
-| C | 81 | 5 | 125 | 1 | 0 | 1 | 0 | 2 | 1 | 1 | 217 |
-| D | 6 | 1 | 0 | 0 | 62 | 0 | 0 | 0 | 0 | 0 | 69 |
-| E | 0 | 0 | 27 | 0 | 0 | 0 | 17 | 0 | 0 | 2 | 46 |
-| ? | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
-| all | 874 | 90 | 153 | 59 | 64 | 162 | 18 | 7 | 3 | 7 | 1437 |
+| Kind | proved | partial | premise-conditional | numeric | data comparison | not formalized | simulation output | interpretive | definition | corrected | other | total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| A | 680 | 75 | 1 | 4 | 0 | 121 | 0 | 1 | 5 | 1 | 3 | 891 |
+| B | 104 | 7 | 0 | 54 | 2 | 21 | 19 | 0 | 0 | 1 | 1 | 209 |
+| C | 81 | 5 | 125 | 1 | 0 | 1 | 0 | 0 | 2 | 1 | 1 | 217 |
+| D | 6 | 1 | 0 | 0 | 62 | 0 | 0 | 0 | 0 | 0 | 0 | 69 |
+| E | 0 | 0 | 27 | 0 | 0 | 0 | 0 | 17 | 0 | 0 | 2 | 46 |
+| ? | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| all | 874 | 90 | 153 | 59 | 64 | 143 | 19 | 18 | 7 | 3 | 7 | 1437 |
 
 Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized); C06-30 (summary (C06-21…-24 proved)); C11-64 (trivial (O(ρ)·O(ρ) = O(ρ²)); not separately formalized); C14-05 (cited (not proved in text)); C14-28 (exploratory (excluded by the text)); C14-92 (conjecture (E)); C15-79 (status ledger (E))
 

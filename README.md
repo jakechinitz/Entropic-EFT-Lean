@@ -16,7 +16,7 @@ and the ledger citation check on every push.
 | Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_chunk14_2026-10-22.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
-| Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 162, other 35 (interpretive, definitions, corrections, cited results) |
+| Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
 | Citation check | `scripts/CiteCheck.lean`: 979 Lean names cited in the ledger, 0 unresolved |
 
 Supporting files:
@@ -92,7 +92,7 @@ shim for `/proc/<pid>/exe` discovery. Its source and explanation are under
 
 ## Not formalized
 
-The ledger gives a reason for each of the 162 statements marked not formalized.
+The ledger gives a reason for each of the 143 statements marked not formalized.
 The main groups are:
 
 - pseudo-Riemannian curvature and variational calculus on manifolds (warped-product

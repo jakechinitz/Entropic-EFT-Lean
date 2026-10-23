@@ -2,6 +2,27 @@
 
 Each open claim is assigned to a group by the mathematics it needs. Importance says how much of the paper rests on the group. Tractability: T1 decidable or elementary, T2 needs one reusable development, T3 substantial development, T4 outside Mathlib today (kept as cited results). Chunk is the work chunk in PLAN.md.
 
+## Second-pass outcome (chunks 15 to 20, 2026-10-23)
+
+Of the 196 claims open at the start of the second pass: proved, partial, reclassified as simulation output, or still not formalized with a reason recorded in the ledger.
+
+| Group | proved | partial | simulation output | not formalized |
+|---|---|---|---|---|
+| G1 Schur lemma, commutants, equivariant uniqueness | 10 | 2 | 0 | 4 |
+| G2 Top multiplet, coherent states, Heisenberg kernels | 0 | 0 | 0 | 8 |
+| G3 First variation and integration by parts on R^n | 5 | 4 | 0 | 11 |
+| G4 Coordinate GR: weak field, spherical reduction, maximum principle | 4 | 1 | 0 | 22 |
+| G5 Matrix calculus, ODE, Haar moments and quantum-information inequalities | 1 | 0 | 0 | 26 |
+| G6 Finite combinatorics and explicit linear algebra | 0 | 1 | 0 | 17 |
+| G7 Lie-algebra closure | 2 | 4 | 0 | 5 |
+| G8 Ensemble numerics at eta_* | 0 | 0 | 0 | 9 |
+| G9 Special functions and stated-input arithmetic | 0 | 0 | 0 | 11 |
+| G10 Unbounded operators, distributions, lattice Green functions | 0 | 0 | 0 | 25 |
+| G11 Convex geometry and topology | 0 | 0 | 0 | 5 |
+| G12 Simulation outputs, data fits, unstated inputs | 0 | 0 | 19 | 0 |
+| all | 22 | 12 | 19 | 143 |
+
+
 ## Major holes
 
 1. Newton limit and Phi = Psi (G3, G4): field equations of the reduced action, conformally flat curvature, harmonic decay. Plan: first-variation theorem, coordinate curvature, maximum principle.
