@@ -1,221 +1,106 @@
-# EntropicEFT — Lean formalization
+# Entropic Scalar EFT: Lean formalization
 
 [![build](https://github.com/jakechinitz/Entropic-EFT-Lean/actions/workflows/build.yml/badge.svg)](https://github.com/jakechinitz/Entropic-EFT-Lean/actions/workflows/build.yml)
 
-**What this repository proves and what it does not:** the finite combinatorial and
-algebraic content of *Entropic Scalar EFT* — the 1,680-state boundary ensemble and its
-exact K² spectrum, the corrected H.9 closure decomposition, existence and uniqueness of
-the stationary η\*, the gauge factor-split no-go, and the joint satisfiability of the
-interpreted premise set in an explicit finite model — is machine-checked by the Lean 4
-kernel; the *physical* content — that this microstructure describes Nature — is not
-proved here at all, and is instead carried by explicitly named premise structures,
-external mathematics certificates, and open interfaces that this repository deliberately
-leaves unfilled.
+This project formalizes the mathematical statements of Jacob Chinitz's
+*Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic
+Structure* in **Lean 4.35.0 with mathlib**. The source record and the SHA-256
+hash of the PDF used are in `provenance.json`. CI builds the library, runs the axiom audit
+and the ledger citation check on every push.
 
-Nothing below upgrades that sentence. Every green check on this page is a statement
-about a finite formal object, not about the universe.
+## Status (2026-10-22)
 
-Audited manuscript SHA-256:
+| Item | Value |
+|---|---|
+| Library | one Lean library, `Entropic`: 136 modules, 2,379 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_chunk14_2026-10-22.log`) |
+| Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
+| Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
+| Ledger totals | proved 852, proved in part 78, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 196, other 35 (interpretive, definitions, corrections, cited results) |
+| Citation check | `scripts/CiteCheck.lean`: 945 Lean names cited in the ledger, 0 unresolved |
 
-```text
-bec8390dec21af31fa5c1e3ca8c26503e664ee66ddb679d6f4085dba5e9882c7
+Supporting files:
+
+- `ledger/CLAIMS.md`: kind × status table and the reverse index from Lean names to claims.
+- `ledger/RETIREMENT.md`: the 114 structures of the v0.8 library (`Entropic.EFT`) classified as instantiated certificates, mathematical packages with their proving theorems, physical premises, or data carriers.
+- `ledger/PLAN.md`: the 14 work chunks and what each module group covers.
+- `ledger/extraction/`: the per-section claim extraction (C01 to C15) from which the ledger was built.
+- `tools/`: an independent Python re-derivation of the finite ensemble and closure numbers of `Entropic.EFT` (not the Lean kernel), run in CI.
+- `verification/`: the axiom-audit and citation-check logs of the release build. Version 0.8 (Lean 4.33, library `EntropicEFT`) is in the git history of `main` before this release.
+
+## Read this distinction first
+
+A Lean theorem says that its conclusion follows from its **explicit
+mathematical assumptions**. It does not establish that those assumptions
+describe nature, that the transcription captures every qualification in the
+paper, or that a prediction is observationally accurate.
+
+There are three different evidential claims:
+
+1. **An identity is correct.** For example, the three exchange currents sum to
+   zero. This is proved.
+2. **A consistency check is incomplete, or a specified combination of
+   assumptions is incompatible.** For example, the reduced continuity
+   equation alone does not preserve positive stock for every positive initial
+   stock and positive prescribed drain. This is proved for that reduced
+   equation. Whether the full model permits those inputs is a separate question.
+3. **The model is excluded by observations.** This would require a definite
+   physical prediction and a comparison with measurements, including relevant
+   uncertainties. No theorem in this project makes this claim.
+
+Ledger kinds follow the same separation: A (exact mathematics) and B (numerical
+values) are proved outright where formalized; C (premise-conditional) records the
+physical premise and proves what follows from it; D (data) records the comparison
+with the cited data; E (interpretive) is not formalized.
+
+## Layout
+
+| Path | Content |
+|---|---|
+| `Entropic/FiniteModel.lean`, `ClosureRoot.lean`, `Spine.lean`, ... | finite boundary ensemble, closure root with certified decimals, spine constants |
+| `Entropic/AppB` to `Entropic/AppQ` | one module group per appendix (B, C to E, F and G, H.1 to H.9a, H.10, H.11 to H.15, I and J, K to N, O, P, Q) |
+| `Entropic/Main` | main-text Parts IV to VIII (galactic, core, cosmological statements) |
+| `Entropic/Sweep` | final sweep: spin-3/2 pair projectors and transfer semigroup, Gaussian and Fourier integrals, S₇ orbit count, staggered constraint complex, Dirac frame flips, fused-label information cap, Hermite Gram matrix, v0.8 certificate instances |
+| `Entropic/RetainedRelaxation.lean` | retained angular-marginal update of O.3 |
+| `Entropic/EFT/` | v0.8 library, ported to Lean 4.35.0 (namespace `Entropic.EFT`) |
+
+## Reproduce the check
+
+Install the Lean toolchain manager (elan), then from this directory:
+
+```sh
+lake exe cache get
+bash verify.sh
 ```
 
-## Trust base
+`verify.sh` builds the project, runs the axiom audit, and checks the audit
+output. The `lean-toolchain` and `lake-manifest.json` files pin the compiler and
+dependency revisions; do not run `lake update` if you want those exact pins.
+The first setup needs internet access and several GB of disk space.
 
-If you are deciding how much weight to put on the badge above, this is the complete
-answer. A theorem in this repository rests on exactly three kinds of thing:
+## Verification and trust
 
-1. **Standard foundations.** `propext`, `Classical.choice`, `Quot.sound` — the ordinary
-   axioms of Lean 4 and Mathlib, and nothing else. There are zero project-level `axiom`
-   declarations and zero `sorry`/`admit` holes; CI fails if either appears.
-2. **Enumerated `native_decide` certificates.** The finite combinatorial counts — the
-   1,680-state cardinality, the spectrum extremes, the ℤ₂ orientation doubling, the
-   Johnson fibration, the four-subset pigeonhole, the exact flat mean — are discharged
-   by compiled evaluation rather than kernel reduction, which means trusting the Lean
-   compiler in addition to the kernel. "Enumerated" is meant literally: Lean 4.33 mints
-   a *separate, named* axiom for each such appeal, of the form
-   `EntropicEFT.UV.boundaryStates_card._native.native_decide.ax_1_1`. In the audited
-   dependency cone there are ten of them across nine declarations, and CI pins that
-   exact set — a new `native_decide` anywhere beneath an audited theorem introduces a
-   name the checker does not recognize and fails the build. The trust is removable in
-   principle by replacing `native_decide` with `decide` and accepting a much longer
-   kernel evaluation; it is *not* removed here. These are the only places the kernel is
-   bypassed, and they are all finite enumerations.
-3. **Named physical premises and external mathematics.** Everything that is a modelling
-   commitment is a Lean *structure* with named fields — `SurvivalGapMassBridge`,
-   `MarkedFusionIncidence`, `FixedContinuumEventMeasure`, `RelationalCapacityGaugeSplit`,
-   and so on — never an axiom and never a theorem. Ordinary mathematics not mechanized
-   here (the SU(2) Clebsch–Gordan construction, the finite-Gibbs derivative fields, the
-   thirteen-digit η\* interval enclosure) is likewise a `...Math` certificate structure.
-   Consuming one of these is visible in the type of every theorem that depends on it.
+All theorems have proof terms checked by the Lean kernel. Physical premises are
+theorem hypotheses or explicit definitions of the model. Statements over the reals
+use mathlib's standard foundations (`propext`, `Classical.choice`, `Quot.sound`);
+the audit log gives the count for the whole library and for `Entropic.EFT`.
 
-Categories 1 and 2 are checked mechanically on every push: `Scripts/AxiomAudit.lean`
-runs `#print axioms` over twenty-one headline theorems and `tools/check_axioms.py` fails
-the build if anything outside the trust base appears — `sorryAx`, what a `sorry`
-introduces, above all. The captured footprint is uploaded as a CI artifact, so you can
-read the actual axiom list of each theorem for yourself rather than trusting this
-paragraph.
+The hosted verification environment needed an executable-path compatibility
+shim for `/proc/<pid>/exe` discovery. Its source and explanation are under
+`verification/`; it does not modify Lean's proof checker.
 
-Category 3 is not mechanically checkable, and that is the point. Formalizing a premise
-must not make the premise look derived. `EntropicEFT/OpenProblems/Interfaces.lean` is the
-one-stop index of what remains open: the GFT/CDT embedding, the transverse influence
-functional, the strong-field boundary theory, and arrow-of-time typicality all have
-interfaces with no global instance.
+## Not formalized
 
-## Design goal
+The ledger gives a reason for each of the 196 statements marked not formalized.
+The main groups are:
 
-The repository is deliberately **not** one giant proof file. Every Lean module begins
-with a `LOCAL CONTRACT` specifying:
+- pseudo-Riemannian curvature and variational calculus on manifolds (warped-product
+  reductions, Bianchi identities, Euler–Lagrange equations of the field actions);
+- unbounded operators and functional calculus (strong-resolvent limits, rigging maps,
+  spectral measures);
+- general SU(2) representation theory beyond the explicit j = 1, 3/2 and weight-count
+  cases (Clebsch–Gordan for all spins, Schur uniqueness, coherent-state integrals);
+- Haar integrals, Lie-closure computations (su(81), su(9^N)), Joyce's closed form for
+  the diamond Green function, and simulation outputs.
 
-- manuscript location;
-- what is defined locally;
-- what is proved exactly;
-- which inputs are ordinary external mathematics;
-- which inputs are physical/model assumptions;
-- what remains open.
-
-A reader — human or LLM — should therefore be able to inspect one module without
-reconstructing the full manuscript.
-
-## Epistemic rule
-
-1. **Exact finite/algebraic content** is stated as Lean definitions/theorems.
-2. **Ordinary mathematics not yet mechanized in this repository** is represented by a
-   narrowly scoped `...Math` certificate structure (for example the full SU(2)
-   Clebsch–Gordan construction or finite-Gibbs differentiation).
-3. **Physical bridges** are explicit structures such as `SurvivalGapMassBridge`,
-   `MarkedFusionIncidence`, or `FixedContinuumEventMeasure`.
-4. **Open completions** are interfaces with no global instance: GFT/CDT embedding,
-   transverse influence functional, strong-field boundary theory, arrow-of-time
-   typicality, etc.
-5. **Empirical results** are data/status certificates, never Lean theorems about Nature.
-
-## The H.9 repair
-
-The repository incorporates the corrected closure decomposition
-
-```text
-K^2 = |c|^2 + V_q
-```
-
-rather than the inconsistent identification `K^2 = |c|^2` that appeared in H.9. The full
-renewed amplitude is exactly factorized into
-
-```text
-exp(-eta K^2/2)
-  = exp(-eta V_q/2) * exp(-eta |c|^2/2).
-```
-
-Only the genuine three-component vector `c` is Gaussian-linearized. The scalar
-quantum-variance factor stays in the native fresh-state amplitude. The normalized
-vector-response coupling remains `sqrt eta`; the minimal marked source then *explicitly*
-reuses that coupling rather than pretending this reuse follows from the Gaussian identity
-alone.
-
-See `EntropicEFT/Marked/CorrectedH9.lean`.
-
-## Single-strand record ledger (H.9 → O.13)
-
-`EntropicEFT/Marked/SingleStrandRecord.lean` makes the record-energy ambiguity explicit.
-The finite selected model contains one three-mode canonical phase space, so Lean-level
-bookkeeping gives exactly three coordinate/momentum pairs and zero-point ledger `3/2`.
-The nine marked labels are matrix-unit/operator labels `(a,b)` with identity
-Hilbert–Schmidt Gram; they do **not** create nine (or six) independent oscillators.
-On the degenerate first-excitation triplet the difference-sign Liouvillian has eigenvalue
-zero. A literal two-deposit countermodel is represented by a different type containing two
-phase spaces; it has six pairs and zero-point energy `3`.
-
-The repository deliberately does **not** claim that Hubbard–Stratonovich integration alone
-proves this physical oscillator realization. The identification of the single `d^3 xi`
-auxiliary with one canonical oscillator strand, the operator-dual history reading, the
-difference-sign `W_*` dynamics, and fresh-per-vertex preparation are packaged as
-`SingleStrandCanonicalRealization`. Once that realization is adopted, O.13 no longer takes
-`3/2` as an arbitrary input: it imports the exact finite ledger theorem. The further
-identification of that ledger with physically released IR energy remains an explicit
-bridge.
-
-A Tomita–Takesaki/GNS interpretation is compatible with the finite operator-doubling
-picture, but is not claimed as a theorem here: a full modular statement would require a
-specified von Neumann algebra, state, and cyclic/separating hypotheses.
-
-## Main directories
-
-- `Core/` — shared notation, claim status, physical interfaces.
-- `Foundations/` — postulates/operational inputs without physical axioms.
-- `UV/` — 1680-state ensemble, closure invariant, exact spectrum, Gibbs closure, eta audit.
-- `Representation/` — twice-spin arithmetic, 7+9 complement specification, sharp transfer.
-- `Information/` — classical replacement/maximum-caliber separation.
-- `Quantum/` — replacement channels, histories, records, no-signaling interfaces.
-- `Marked/` — corrected H.9, single-strand/operator-record ledger, and 21-edge graph.
-- `Scale/` — recurrence, electron scale, lepton shell algebra.
-- `Edge/` — tetrahedral isotropy, edge kernel, source projection.
-- `Gravity/` — static capacity/Einstein branch, field variables, strong spherical branch.
-- `Gaussian/` — finite covariance determinant/KL bridge.
-- `Transverse/` — rank-one galactic EFT algebra and open influence-functional gate.
-- `Transport/` — telegrapher branch.
-- `Cosmology/` — saturated dust, fixed-measure/unimodular dark-energy algebra, O.13 gate.
-- `Gauge/` — factor-split no-go, gauge propagation, decorated-vertex realization.
-- `Lattice/` — exact finite-regulator identities and empirical/open simulation certificates.
-- `Clusters/` — cluster bookkeeping and open map test.
-- `Microstructure/` — native gate and geometric embedding obligations.
-- `Numerics/` — interval-certificate interfaces for transcendental numerical spine.
-- `Structure/` — cross-cutting connections (complete capacity graph, Johnson fibration,
-  exact flat mean, BCC quantization, the 3/2 bridge, stationarity bracketing).
-- `Instantiation/` — the explicit finite ToyCDT model realizing the premise set.
-- `Audit/` — cross-sector identities and machine-readable Section 26 claim ledger.
-- `OpenProblems/` — one-stop unresolved-completion index.
-
-## Reproducing the build
-
-The project is pinned by `lean-toolchain` and `lakefile.toml` to Lean/Mathlib
-**v4.33.0**, with exact dependency revisions in the committed `lake-manifest.json`.
-Build artifacts (`.lake/`) are deliberately not committed — the claim is that you can
-rebuild this, not that you can download it.
-
-```bash
-elan toolchain install $(cat lean-toolchain)   # if you do not already have it
-lake exe cache get                             # prebuilt Mathlib oleans
-lake build                                     # ~2,231 jobs, 48 modules
-lake env lean Scripts/AxiomAudit.lean          # trust base, printed
-```
-
-Do **not** run `lake update`: it would re-resolve dependencies and discard the pinned
-revisions in `lake-manifest.json`.
-
-The independent Python audit re-enumerates the 1,680 states and re-derives the complete
-K² spectrum, the corrected H.9 decomposition and bounds, η\*, the sharing entropy, the
-marked transfer, L\*, G\*, the lepton ratios, and several cross-sector cancellations —
-from the manuscript definitions rather than from the Lean sources:
-
-```bash
-pip install scipy
-python tools/audit.py
-```
-
-It is a cross-check on whether the Lean definitions mean what they are said to mean. It
-is not a proof checker, and it is not a substitute for `lake build`.
-
-Both are run on every push by [`.github/workflows/build.yml`](.github/workflows/build.yml).
-
-## Reading strategy
-
-If asked about one result, open only its module and its direct imports. Do **not** assume
-a structure field is proved merely because it exists. The suffix conventions are useful:
-
-- `...Math` = ordinary mathematics proof obligation / certificate;
-- `...Spec`, `...Bridge`, `...Completion`, `...Target` = conditional physical or model
-  content;
-- theorem with no such input = intended exact formal consequence.
-
-See `MANUSCRIPT_MAP.md` for the module ↔ manuscript map, `SECTION_REVIEWS.md` for the
-per-section audit notes, and `BUILD_STATUS.md` for the version-by-version record of what
-was verified when.
-
-## Citing
-
-Releases are tagged and immutable; cite a tag (for example `v0.8.0`) rather than a branch.
-
-## License
-
-Apache License 2.0 — see [LICENSE](LICENSE).
+No theorem asserts that the paper is physically correct or physically inconsistent.
