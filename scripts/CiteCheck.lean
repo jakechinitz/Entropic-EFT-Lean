@@ -1,5 +1,4 @@
 import Entropic
-import EntropicEFT
 open Lean in
 #eval show CoreM Unit from do
   let env ← getEnv
@@ -864,6 +863,24 @@ open Lean in
     ("Main.Galactic.transport_parameters", ["Main.Galactic.transport_parameters", "Entropic.Main.Galactic.transport_parameters"]),
     ("Main.Galactic.x_consistency", ["Main.Galactic.x_consistency", "Entropic.Main.Galactic.x_consistency"]),
     ("Matrix.exp_conj", ["Matrix.exp_conj", "Entropic.Matrix.exp_conj"]),
+    ("Pass2.Bridge81.bridge_generates", ["Pass2.Bridge81.bridge_generates", "Entropic.Pass2.Bridge81.bridge_generates"]),
+    ("Pass2.DiagCommutant.jzz_commutant", ["Pass2.DiagCommutant.jzz_commutant", "Entropic.Pass2.DiagCommutant.jzz_commutant"]),
+    ("Pass2.Intertwiner.intertwiner", ["Pass2.Intertwiner.intertwiner", "Entropic.Pass2.Intertwiner.intertwiner"]),
+    ("Pass2.Kinetic.s4_characters", ["Pass2.Kinetic.s4_characters", "Entropic.Pass2.Kinetic.s4_characters"]),
+    ("Pass2.LieJJ.L_eq_traceless", ["Pass2.LieJJ.L_eq_traceless", "Entropic.Pass2.LieJJ.L_eq_traceless"]),
+    ("Pass2.LieTensor.gen_eq_sl", ["Pass2.LieTensor.gen_eq_sl", "Entropic.Pass2.LieTensor.gen_eq_sl"]),
+    ("Pass2.LieTensor.tensor_generation", ["Pass2.LieTensor.tensor_generation", "Entropic.Pass2.LieTensor.tensor_generation"]),
+    ("Pass2.LieTensor.three_slot", ["Pass2.LieTensor.three_slot", "Entropic.Pass2.LieTensor.three_slot"]),
+    ("Pass2.Pair.pair_commutant", ["Pass2.Pair.pair_commutant", "Entropic.Pass2.Pair.pair_commutant"]),
+    ("Pass2.PairGen.bilinear_commutant", ["Pass2.PairGen.bilinear_commutant", "Entropic.Pass2.PairGen.bilinear_commutant"]),
+    ("Pass2.RealForms.four_slot_weights", ["Pass2.RealForms.four_slot_weights", "Entropic.Pass2.RealForms.four_slot_weights"]),
+    ("Pass2.RealForms.real_forms", ["Pass2.RealForms.real_forms", "Entropic.Pass2.RealForms.real_forms"]),
+    ("Pass2.SU3Form.su3_invariant_form", ["Pass2.SU3Form.su3_invariant_form", "Entropic.Pass2.SU3Form.su3_invariant_form"]),
+    ("Pass2.Schur.block_commutant", ["Pass2.Schur.block_commutant", "Entropic.Pass2.Schur.block_commutant"]),
+    ("Pass2.Schur.block_phases", ["Pass2.Schur.block_phases", "Entropic.Pass2.Schur.block_phases"]),
+    ("Pass2.Schur.lock_unique", ["Pass2.Schur.lock_unique", "Entropic.Pass2.Schur.lock_unique"]),
+    ("Pass2.Schur.schur_ladder", ["Pass2.Schur.schur_ladder", "Entropic.Pass2.Schur.schur_ladder"]),
+    ("Pass2.SlGen.traceless_mem", ["Pass2.SlGen.traceless_mem", "Entropic.Pass2.SlGen.traceless_mem"]),
     ("PositiveLedger.common_drain_conserves", ["PositiveLedger.common_drain_conserves", "Entropic.PositiveLedger.common_drain_conserves"]),
     ("PositiveLedger.common_fractional_drain_unique", ["PositiveLedger.common_fractional_drain_unique", "Entropic.PositiveLedger.common_fractional_drain_unique"]),
     ("PositiveLedger.step_positive", ["PositiveLedger.step_positive", "Entropic.PositiveLedger.step_positive"]),
@@ -948,7 +965,23 @@ open Lean in
     ("Sweep.Stag.CK_half", ["Sweep.Stag.CK_half", "Entropic.Sweep.Stag.CK_half"]),
     ("Sweep.Stag.CK_lambda", ["Sweep.Stag.CK_lambda", "Entropic.Sweep.Stag.CK_lambda"]),
     ("Sweep.Stag.LG_zero", ["Sweep.Stag.LG_zero", "Entropic.Sweep.Stag.LG_zero"]),
-    ("Sweep.Stag.L_symmetric", ["Sweep.Stag.L_symmetric", "Entropic.Sweep.Stag.L_symmetric"])]
+    ("Sweep.Stag.L_symmetric", ["Sweep.Stag.L_symmetric", "Entropic.Sweep.Stag.L_symmetric"]),
+    ("Var.I2", ["Var.I2", "Entropic.Var.I2"]),
+    ("Var.I2_diag", ["Var.I2_diag", "Entropic.Var.I2_diag"]),
+    ("Var.adm_density_expansion", ["Var.adm_density_expansion", "Entropic.Var.adm_density_expansion"]),
+    ("Var.carrier_excess", ["Var.carrier_excess", "Entropic.Var.carrier_excess"]),
+    ("Var.carrier_Φ", ["Var.carrier_Φ", "Entropic.Var.carrier_Φ"]),
+    ("Var.conformal_scalar_curvature", ["Var.conformal_scalar_curvature", "Entropic.Var.conformal_scalar_curvature"]),
+    ("Var.euler_lagrange", ["Var.euler_lagrange", "Entropic.Var.euler_lagrange"]),
+    ("Var.gateaux", ["Var.gateaux", "Entropic.Var.gateaux"]),
+    ("Var.harmonic_decay_zero", ["Var.harmonic_decay_zero", "Entropic.Var.harmonic_decay_zero"]),
+    ("Var.ibp", ["Var.ibp", "Entropic.Var.ibp"]),
+    ("Var.identification_before_variation", ["Var.identification_before_variation", "Entropic.Var.identification_before_variation"]),
+    ("Var.no_slip", ["Var.no_slip", "Entropic.Var.no_slip"]),
+    ("Var.quad_form_ibp", ["Var.quad_form_ibp", "Entropic.Var.quad_form_ibp"]),
+    ("Var.scalar_EL", ["Var.scalar_EL", "Entropic.Var.scalar_EL"]),
+    ("Var.two_potential_Φ", ["Var.two_potential_Φ", "Entropic.Var.two_potential_Φ"]),
+    ("Var.weak_max", ["Var.weak_max", "Entropic.Var.weak_max"])]
   let mut bad := 0
   for (tok, cs) in items do
     let found := cs.filter (fun c => env.contains c.toName)

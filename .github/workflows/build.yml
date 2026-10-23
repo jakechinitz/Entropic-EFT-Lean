@@ -24,7 +24,6 @@ jobs:
         uses: leanprover/lean-action@v1
         with:
           use-mathlib-cache: true
-          lint-module: false
           test: false
 
       - name: Fail on any `sorry`, `native_decide` or project axiom
@@ -34,10 +33,7 @@ jobs:
           if grep -q "declaration uses 'sorry'" build.log; then
             echo "::error::build log contains a 'declaration uses sorry' warning"; exit 1
           fi
-          if grep -rEq '\bsorry\b|\bnative_decide\b|^\s*axiom\s' --include=*.lean Entropic; then
-            echo "::error::sorry, native_decide or axiom found in the sources"; exit 1
-          fi
-          echo "no sorry, native_decide or project axioms"
+          python3 tools/scan_sources.py
 
       # Every theorem may depend only on propext, Classical.choice, Quot.sound.
       - name: Axiom audit
