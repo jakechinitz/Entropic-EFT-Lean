@@ -3,7 +3,7 @@ import Entropic.EFT.Gaussian.RelativeCovariance
 /-!
 # Entropic.EFT.Transverse.RankOne
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 15; Appendix N.8.
 * Closed algebra: one-invariant leading potential has a rank-one 2x2 Hessian,
   `C_cross^2 = A_L A_T`, and the clamped static response ratio.

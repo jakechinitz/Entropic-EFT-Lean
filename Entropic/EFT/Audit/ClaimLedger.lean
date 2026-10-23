@@ -3,7 +3,7 @@ import Entropic.EFT.Core.Status
 /-!
 # Entropic.EFT.Audit.ClaimLedger
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 26.
 * Purpose: machine-readable index of the principal closure-status rows.
 * This is metadata.  The theorem/module named by a row remains the authority.

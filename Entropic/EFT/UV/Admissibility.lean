@@ -3,7 +3,7 @@ import Entropic.EFT.UV.Spectrum
 /-!
 # Entropic.EFT.UV.Admissibility
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 6.1--6.3; Appendix B.2.
 * Defines: exact finite Gibbs family on the 1680 states.
 * Closed here: normalization-ready finite sums and stationary-product algebra.

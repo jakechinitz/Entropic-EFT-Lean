@@ -3,7 +3,7 @@ import Entropic.EFT.Quantum.Replacement
 /-!
 # Entropic.EFT.Quantum.Histories
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 3.3, 22; Appendix G.
 * Encodes the operational decoherent-histories layer separately from the Many-Pasts ontology.
 * No theorem here derives Hilbert-space quantum kinematics from the substrate.

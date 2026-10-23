@@ -4,7 +4,7 @@ import Mathlib.Tactic.Ring
 import Mathlib.Tactic.Linarith
 
 /-! Algebraic checks on the response formulas (p. 265) and the homogeneous
-release prescription (p. 274). These are NOT a formalization of quantum KMS
+release prescription (p. 274). These are not a formalization of quantum KMS
 theory, spacetime causality, or an observational likelihood. -/
 
 noncomputable section

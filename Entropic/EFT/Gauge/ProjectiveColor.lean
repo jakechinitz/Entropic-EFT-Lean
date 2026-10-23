@@ -4,7 +4,7 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Gauge.ProjectiveColor
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix I.2.
 * Closed algebra: three tetrahedral route polynomials, their closure-scalar sum identity,
   primitive Gram eigenvalue ratio 7/6, t8 and diamond blocking formulas once the named

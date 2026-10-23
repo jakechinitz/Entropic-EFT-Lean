@@ -3,7 +3,7 @@ import Entropic.EFT.Transverse.RankOne
 /-!
 # Entropic.EFT.Transport.Telegrapher
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 17; Appendix E.1--E.2.
 * Closed algebra: causal parameter relation, canonical H0 branch, quadratic-mode roots
   specification, and exact static source ratio A/D = kappa/gamma.

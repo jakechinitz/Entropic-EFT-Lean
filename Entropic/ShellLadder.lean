@@ -2,14 +2,14 @@ import Entropic.GenerationCutoff
 import Mathlib.Data.Nat.Factorial.Basic
 import Mathlib.Tactic
 
-/-! Charged-lepton shell ladder (App. I.1; response to critique item 9).
+/-! Charged-lepton shell ladder (App. I.1).
 
 * The shell grades are exactly N ∈ {0, 1, 2}: a grade exists only if every way of
   excluding N labels leaves a nonempty reduced ensemble with nonconstant K²
-  (`shell_allowed_iff`). The same closure collapse that ends the ladder at three
-  generations makes N ≥ 3 undefined; the formula 720^N (2/7)^{N²} is not a
-  prediction outside its grades.
-* The coefficients are counted, not fitted: each single-label exclusion leaves
+  (`shell_allowed_iff`). The closure collapse that ends the ladder at three generations
+  leaves N ≥ 3 undefined, so the formula 720^N (2/7)^{N²} applies on these three
+  grades only.
+* The coefficients come from counting: each single-label exclusion leaves
   2·P(6,4) = 720 = 6! oriented states (`shell_load`), and the singlet overlap of an
   N-shell source is N²/7 (`singlet_source_norm`).
 * Zero-parameter test: the baseline obeys m₂m₀/m₁² = (2/7)², independent of the

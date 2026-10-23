@@ -1,21 +1,19 @@
 import Entropic.BlackHole
 import Mathlib.Tactic
 
-/-! Where the capacity variable is defined (Sec. 21, App. F.4; response to critique item 8).
+/-! Domain of the capacity variable (Sec. 21, App. F.4).
 
 * In flat FRW the spherical invariant about a chosen centre is q_geo = 1 − (H R/c)²
-  (`frw_qgeo`). At a FIXED event its value depends on the chosen centre
-  (`frw_qgeo_center_dependent`), so it is not a scalar field on spacetime and cannot be
-  a local capacity. Its negative values beyond the Hubble sphere say nothing about a
-  local capacity.
-* In the static exterior the centre is fixed by the source and q_geo equals the
-  normalized Killing norm N² (`static_identification`), positive exactly where static
-  observers exist, r > r_s.
-* At the horizon nothing local marks q = 0: the radial tidal acceleration across a
+  (`frw_qgeo`). At a fixed event its value depends on the chosen centre
+  (`frw_qgeo_center_dependent`), so q_geo is a function of the centre as well as the event.
+  It defines a local capacity only where the centre is fixed by the source.
+* In the static exterior the source fixes the centre, and q_geo equals the normalized
+  Killing norm N² (`static_identification`), positive exactly where static observers
+  exist, r > r_s.
+* At the horizon the local geometry is regular: the radial tidal acceleration across a
   length ℓ is ℓc⁶/(4(GM)²), decreasing in M (`horizon_tidal_decreasing`), and the
   Kretschmann scalar there is the finite 3c⁸/(4(GM)⁴) (`horizon_kretschmann`).
-  Excising the interior is therefore an additional postulate, not a consequence of the
-  capacity identification. -/
+  Excising the interior is a separate postulate of the capacity identification. -/
 
 noncomputable section
 namespace Entropic.CapacityDomain
@@ -64,7 +62,7 @@ theorem horizon_tidal_eq {GM c ℓ : ℝ} (hGM : GM ≠ 0) (hc : c ≠ 0) :
     horizonTidal GM c ℓ = ℓ * c ^ 6 / (4 * GM ^ 2) := by
   unfold horizonTidal; field_simp <;> ring
 
-/-- It decreases with mass: large horizons are locally unremarkable. -/
+/-- It decreases with mass, so the tidal field at a large horizon is weak. -/
 theorem horizon_tidal_decreasing {c ℓ : ℝ} (hc : 0 < c) (hℓ : 0 < ℓ) :
     StrictAntiOn (fun GM => horizonTidal GM c ℓ) (Set.Ioi 0) := by
   intro x hx y hy hxy

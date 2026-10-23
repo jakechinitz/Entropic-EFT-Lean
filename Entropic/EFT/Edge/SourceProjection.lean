@@ -3,7 +3,7 @@ import Entropic.EFT.Edge.Kernel
 /-!
 # Entropic.EFT.Edge.SourceProjection
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix C.5--C.7.
 * Closed algebra: exclusion information log(7/6), source/stiffness ratio formula,
   fixed-epoch entropy-normalization cancellation.

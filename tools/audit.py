@@ -4,7 +4,7 @@
 This is NOT a replacement for `lake build`.  It checks:
   * local import resolution,
   * forbidden proof holes/global axioms,
-  * LOCAL CONTRACT headers,
+  * "Local contract" headers,
   * exact 1680-state combinatorics and K^2 spectrum,
   * corrected H.9 closure decomposition/bounds,
   * numerical spine against the manuscript definitions,
@@ -46,7 +46,7 @@ files = sorted(LEAN_ROOT.rglob("*.lean"))
 check(bool(files), "Lean modules present")
 for p in files:
     text = p.read_text()
-    check("LOCAL CONTRACT" in text, f"LOCAL CONTRACT: {p.relative_to(ROOT)}")
+    check("Local contract" in text, f"Local contract header: {p.relative_to(ROOT)}")
     # Remove documentation/comments before searching for proof holes/global axioms.
     code = re.sub(r"/-.*?-\/", "", text, flags=re.S)
     code = re.sub(r"--.*", "", code)

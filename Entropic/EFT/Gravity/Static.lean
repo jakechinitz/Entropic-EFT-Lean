@@ -3,7 +3,7 @@ import Entropic.EFT.Edge.SourceProjection
 /-!
 # Entropic.EFT.Gravity.Static
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 10--14; Appendices D.1--D.2, N.1--N.3.
 * Closed algebra: capacity-field redefinition, coefficient match, fixed-epoch scaling,
   and the exact matched-G cancellation.

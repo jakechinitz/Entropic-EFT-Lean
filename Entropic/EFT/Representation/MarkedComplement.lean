@@ -3,7 +3,7 @@ import Entropic.EFT.Representation.FusionSpec
 /-!
 # Entropic.EFT.Representation.MarkedComplement
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.4.2e; H.9.
 * Closed arithmetic: equality of the multiplicity-free endpoint ranges forces `2j = 2s+1`.
 * Representation-theoretic premise: both decompositions really contain exactly one copy of

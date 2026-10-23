@@ -3,7 +3,7 @@ import Entropic.EFT.Marked.CorrectedH9
 /-!
 # Entropic.EFT.Marked.EdgeGraph
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: H.9 complete edge-Hessian audit.
 * Closed finite combinatorics: 21 unordered edges of K7 and adjacency definitions.
 * The Johnson-graph eigenvalue computation is isolated as a mathematical certificate.

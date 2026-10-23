@@ -20,7 +20,7 @@ def H (p : Ω → ℝ) : ℝ := ∑ ω, negMulLog (p ω)
 
 /-! ### Isotropic defect partition (C05-15) -/
 
-/-- For ANY probability on boundary states and any face-label map, the label-averaged
+/-- For any probability on boundary states and any face-label map, the label-averaged
 exclusion probability is 6/7, so ΔS_def = −ln⟨Z_def/Z_vac⟩ = ln(7/6). -/
 theorem isotropic_defect (p : Ω → ℝ) (hp1 : ∑ ω, p ω = 1) (lab : Ω → Fin 7) :
     (1/7) * ∑ l : Fin 7, (∑ ω, if lab ω ≠ l then p ω else 0) = 6/7 ∧
@@ -175,7 +175,7 @@ theorem renyi_order (p : Ω → ℝ) (hp : ∀ ω, 0 ≤ p ω) (hp1 : ∑ ω, p 
 
 /-! ### Refresh kernel (C05-69) -/
 
-/-- The refresh kernel P(b,b′) = p(b′) is row-stochastic, rank one, and p is its UNIQUE
+/-- The refresh kernel P(b,b′) = p(b′) is row-stochastic, rank one, and p is its unique
 stationary probability. -/
 theorem refresh_unique (p μ : Ω → ℝ) (hp1 : ∑ ω, p ω = 1) (hμ1 : ∑ ω, μ ω = 1)
     (hstat : ∀ b', ∑ b, μ b * p b' = μ b') : μ = p := by

@@ -180,7 +180,7 @@ theorem local_speed_bound {D0 τ q : ℝ} (hD : 0 ≤ D0) (hτ : 0 < τ) :
   rw [div_le_div_iff₀ hτ (by positivity)]
   nlinarith [sq_nonneg (q - 1/2), mul_nonneg hD (sq_nonneg (q - 1/2))]
 
-/-- C06-35 (corrected): the hyperbolic capacity system does NOT preserve 0 ≤ q ≤ 1 in general.
+/-- C06-35 (corrected): the hyperbolic capacity system does not preserve 0 ≤ q ≤ 1 in general.
 Exact global solution of ∂ₜq + ∂ₓJ = −Γ₀qΣ, τ∂ₜJ + J = −D₀q(1−q)∂ₓq with Σ = 0:
 q(t,x) = −a₀τ(1 − e^{−t/τ}), J(t,x) = a₀e^{−t/τ}x. It starts at q ≡ 0 and q < 0 for all t > 0
 when a₀ > 0. (Memory in J lets q cross the q = 0 level, which the parabolic limit forbids.) -/

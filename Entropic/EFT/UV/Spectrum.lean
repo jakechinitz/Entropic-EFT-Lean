@@ -3,7 +3,7 @@ import Entropic.EFT.UV.ClosureInvariant
 /-!
 # Entropic.EFT.UV.Spectrum
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.2; Appendix P.
 * Assumes: only the exact 1680-state boundary space and `quantumK3` formula.
 * Closed outputs: complete eleven-value spectrum and exact degeneracies.

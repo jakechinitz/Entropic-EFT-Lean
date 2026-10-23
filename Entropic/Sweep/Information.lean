@@ -44,7 +44,7 @@ theorem mi_le_H (P : X → Λ → ℝ) (hP : ∀ x l, 0 ≤ P x l) : mutualInfo 
 
 variable [DecidableEq X]
 
-/-- C04-34: if X — L — Y is Markov (P(x, y) = Σ_l P(x, l) K(y | l)) with full-support marginals of X and
+/-- C04-34: if X → L → Y is Markov (P(x, y) = Σ_l P(x, l) K(y | l)) with full-support marginals of X and
 L, then I(X;Y) ≤ I(X;L) ≤ H(L) ≤ ln |L|; with a seven-valued shared label, I(X;Y) ≤ ln 7. -/
 theorem fused_label_cap [Nonempty Λ] (P : X → Λ → ℝ) (K : Λ → Y → ℝ) (hP : ∀ x l, 0 ≤ P x l)
     (h1 : ∑ x, ∑ l, P x l = 1) (hpX : ∀ x, 0 < pX P x) (hpL : ∀ l, 0 < pY P l)

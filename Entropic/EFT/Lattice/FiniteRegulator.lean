@@ -4,7 +4,7 @@ import Entropic.EFT.Core.Prelude
 /-!
 # Entropic.EFT.Lattice.FiniteRegulator
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 24--25; Appendix J.
 * Closed algebra: energy-origin invariance of the centered capacity weight and exact finite
   combinatorial audit targets.

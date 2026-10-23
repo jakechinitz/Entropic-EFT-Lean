@@ -14,7 +14,7 @@ import Mathlib.Tactic.NormNum.Pow
 /-!
 # Entropic.EFT.Core.Prelude
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix A; shared notation only.
 * Status: mathematical infrastructure, not a physical claim.
 * Assumes: Mathlib.
@@ -22,7 +22,7 @@ LOCAL CONTRACT
 * Does not prove: any substrate ontology, continuum limit, or empirical statement.
 * Downstream: every module may import this file.
 
-DESIGN RULE
+Design rule
 Physical premises are never global `axiom`s.  A conditional physical statement is
 represented by an explicit structure or a theorem parameter.  Open completions are
 uninhabited interfaces, not `sorry`s.

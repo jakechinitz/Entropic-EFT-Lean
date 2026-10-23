@@ -3,7 +3,7 @@ import Entropic.EFT.Scale.Electron
 /-!
 # Entropic.EFT.Scale.Leptons
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 13.5; Appendix I.1.
 * Closed arithmetic: 720 = P(6,4), 2/7 singlet/orientation factor, N^2 pair count,
   baseline and marked mass-ratio formulas.

@@ -3,7 +3,7 @@ import Entropic.EFT.Core.Status
 /-!
 # Entropic.EFT.Core.PhysicalInterfaces
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 1--4, 23--26; Appendices H, N, O.
 * Status: interfaces for premises and open completions.
 * Proves: nothing about whether Nature instantiates these structures.

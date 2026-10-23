@@ -3,7 +3,7 @@ import Entropic.EFT.Gravity.Static
 /-!
 # Entropic.EFT.Gravity.FieldDefinitions
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 2--4, 11.
 * Pure definitions of S_ent, deltaS, q at the continuum bookkeeping level.
 * No claim that a particular microscopic observable has this continuum limit is proved here.

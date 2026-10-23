@@ -3,7 +3,7 @@ import Entropic.EFT.Transport.Telegrapher
 /-!
 # Entropic.EFT.Cosmology.SaturatedDust
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 20; Appendix M.
 * Closed algebra: epsilon definition, pinned abundance formula, cross-sector reciprocal identity.
 * Conditional physics: recruitment reaches the source cap, coherent clock is pinned, allocations

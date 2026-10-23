@@ -4,7 +4,7 @@ import Entropic.EFT.Marked.CorrectedH9
 /-!
 # Entropic.EFT.Cosmology.FixedMeasureDarkEnergy
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 25; Appendix O.1--O.5, O.13.
 * Closed algebra: common fixed-N factors cancel from normalized weights; routing ratio
   `(3/2)/<K^2> = eta` at any stationary closure point; monotone-release w_eff inequality

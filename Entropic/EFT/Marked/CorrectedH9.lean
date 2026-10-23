@@ -5,9 +5,9 @@ import Entropic.EFT.UV.EtaStar
 /-!
 # Entropic.EFT.Marked.CorrectedH9
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 13.4; Appendix H.9, corrected after the B.2 audit.
-* Critical repair: `K^2` is NOT the norm of the classical closure vector.
+* `K^2` is not the norm of the classical closure vector.
   Instead `K^2 = |c|^2 + V_q`, and the amplitude factorizes exactly.
 * Closed algebra: factorization, response coupling notation, pair contraction arithmetic,
   21-block exponent, routing counts and routing polynomials.

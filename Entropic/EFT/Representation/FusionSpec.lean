@@ -4,7 +4,7 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Representation.FusionSpec
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.4.2a--f; H.9, H.10.I.
 * Status: external mathematical interface for the SU(2) representation layer.
 * Purpose: distinguish actual representation content from dimension arithmetic.
@@ -38,7 +38,7 @@ structure FusionThreeHalvesSpec where
   /-- Finite-width mismatch spectrum is 6,5,3,0 on J=0,1,2,3. -/
   mismatchSpectrumCorrect : Prop
 
-/-- Physical incidence is deliberately separate from the mathematical representation spec. -/
+/-- Physical incidence is kept separate from the mathematical representation spec. -/
 structure PhysicalFusionRecord (F : FusionThreeHalvesSpec) where
   incidence : MarkedFusionIncidence
   incidenceHolds : incidence.holds

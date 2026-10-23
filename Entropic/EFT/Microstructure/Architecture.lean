@@ -3,7 +3,7 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Microstructure.Architecture
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 23; Appendix H.1--H.8.
 * Purpose: collect microscopic action/condensate obligations without contaminating finite
   UV theorems or the corrected H.9 transfer algebra.

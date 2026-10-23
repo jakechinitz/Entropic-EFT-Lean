@@ -3,14 +3,14 @@ import Entropic.EFT.UV.Admissibility
 /-!
 # Entropic.EFT.UV.EtaStar
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.2.
 * Separates finite exact input from real-analysis proof obligations.
 * The manuscript root is represented by `EtaStarSpec` only after stationarity and a
   rational enclosure are supplied.
 * No physical assumption occurs here.
 
-IMPORTANT
+Scope
 `GibbsAnalysis` is an external-mathematics interface, not a theory axiom.  It isolates
 Mathlib work still required for a fully internal proof of differentiation and certified
 root existence.  Downstream physical modules may use only an explicit `EtaStarSpec`.

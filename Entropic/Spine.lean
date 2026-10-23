@@ -3,7 +3,7 @@ import Mathlib.Analysis.Real.Pi.Bounds
 
 /-! Numerical spine downstream of the closure root (main manuscript Sections 3, 13.5,
 App. C.5 and R.2). The formulas (marked fugacity, shell factors, area blocking,
-cell normalization) are the manuscript's stated definitions and are INPUT here;
+cell normalization) are the manuscript's stated definitions and are input here;
 what is kernel checked is that the stated numbers follow from them exactly,
 starting from the 1680-state spectrum, with certified rational error bounds. -/
 
@@ -139,7 +139,7 @@ def gammaBI : ℝ := Real.log 2 / (6 * Real.pi)
 theorem channel_area : 24 * Real.pi * gammaBI = 4 * Real.log 2 := by
   unfold gammaBI; field_simp <;> ring
 
-/-- Area-blocking identity, for EVERY block size N ≥ 1 (the script checks N = 1, 2, 10, 1000):
+/-- Area-blocking identity, for every block size N ≥ 1 (the script checks N = 1, 2, 10, 1000):
 Z_A(N) · 8π γ_BI √(3N(3N+1)) = 4 N ln 2 with Z_A(N) = √(3N/(3N+1)). -/
 theorem area_blocking (N : ℕ) (hN : 1 ≤ N) :
     Real.sqrt (3 * N / (3 * N + 1)) * (8 * Real.pi * gammaBI) *

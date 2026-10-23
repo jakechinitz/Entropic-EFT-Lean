@@ -3,7 +3,7 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Foundations.Postulates
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 1--4.
 * Purpose: name the theory-defining commitments without turning them into mathematical axioms.
 * Status: physical premises only.  No theorem in this file claims that Nature satisfies them.

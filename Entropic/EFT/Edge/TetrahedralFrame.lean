@@ -3,7 +3,7 @@ import Entropic.EFT.Core.Prelude
 /-!
 # Entropic.EFT.Edge.TetrahedralFrame
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 5, 7; Appendix C.1, C.5; Appendix N.8.
 * Closed finite geometry: regular tetrahedral raw normals, zero sum, pairwise dot products,
   and the isotropic outer-product identity.

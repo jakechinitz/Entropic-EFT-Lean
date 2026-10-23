@@ -5,29 +5,29 @@ import Entropic.EFT.Marked.CorrectedH9
 /-!
 # Entropic.EFT.Gauge.SpinePropagation
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: gauge-compatibility propagation across the microscopic numerical spine.
 * Tightened criterion (correcting a too-weak earlier phrasing): for self-adjoint O,
   descending to the invariant subspace is equivalent to [O, P_inv] = 0, but that is
-  WEAKER than full kinematical gauge invariance U(g) O U(g)† = O.  The separated-factor
-  construction yields the STRONG form: with U_gauge(g) = I_open ⊗ U_right(g) and
-  O = O_open ⊗ I, one has [O, U_gauge(g)] = 0 for EVERY g, hence [O, P_inv] = 0
+  weaker than full kinematical gauge invariance U(g) O U(g)† = O.  The separated-factor
+  construction yields the strong form: with U_gauge(g) = I_open ⊗ U_right(g) and
+  O = O_open ⊗ I, one has [O, U_gauge(g)] = 0 for every g, hence [O, P_inv] = 0
   automatically.  This module proves the strong form for the spine.
 * Closed here, kernel-checked:
-  - `fullGaugeAction_commutes`: an open-factor operator commutes with the ENTIRE gauge
+  - `fullGaugeAction_commutes`: an open-factor operator commutes with the entire gauge
     group action (∀ g), not merely with the projector.
   - `openObservable_fullGauge_invariant`: open-slot observable values are unchanged by
     every gauge transformation.
-  - A spine ledger: each m-label operator of the microscopic chain — the closure
+  - A spine ledger: each m-label operator of the microscopic chain, the closure
     invariants (quantumK3, classicalClosure3, quantumVariance3, K²), the three route
     observables (routeA/B/C), the port sums (sumM, sumSq), the Gibbs weight at every η,
-    and the injectivity/admissibility predicate — factors through the open slot, hence
+    and the injectivity/admissibility predicate, factors through the open slot, hence
     inherits full gauge invariance by the same one-line mechanism.
   - Parameter-level spine quantities (scalarPassage 2/7, pairContractionU, edge
     amplitude, ζ, Z_e chain) contain NO gauge-factor dependence: they are functions of
     (η, g_share) alone, recorded as gauge scalars.
-* Not closed here: that the DECORATED microscopic 𝒢_v realizes these operators on the
-  open factor of an actual GFT field — that is `RelationalCapacityGaugeSplit` inside the
+* Not closed here: that the decorated microscopic 𝒢_v realizes these operators on the
+  open factor of an actual GFT field: that is `RelationalCapacityGaugeSplit` inside the
   open `GeometricEmbeddingSpec`, unchanged.
 -/
 
@@ -45,8 +45,8 @@ g-indexed family on the gauge factor. -/
 def gaugeAction (U : G → B → B) (g : G) : JointState A B → JointState A B :=
   actRight (U g)
 
-/-- STRONG form: an open-factor operator commutes with the ENTIRE gauge group action,
-for every group element — not merely with the invariant projector. -/
+/-- Strong form: an open-factor operator commutes with the entire gauge group action,
+for every group element: not merely with the invariant projector. -/
 theorem fullGaugeAction_commutes (f : A → A) (U : G → B → B) :
     ∀ g : G, actLeft (B := B) f ∘ gaugeAction U g = gaugeAction U g ∘ actLeft f :=
   fun _ => rfl
@@ -59,7 +59,7 @@ theorem openObservable_fullGauge_invariant {X : Type*} (K : A → X) (U : G → 
 /-! ## The spine ledger
 
 Each operator below is a function of the open-slot data alone (`PortAssignment` or
-`BoundaryCode`).  Its joint-space lift is therefore invariant under the FULL gauge
+`BoundaryCode`).  Its joint-space lift is therefore invariant under the full gauge
 action.  Individually each proof is `rfl`; the ledger's value is totality: no m-label
 operator of the numerical spine escapes the mechanism. -/
 
@@ -96,7 +96,7 @@ theorem quantumVariance3_gauge_invariant (p : JointState BoundaryCode B) :
 theorem quantumK2R_gauge_invariant (p : JointState BoundaryCode B) :
     quantumK2R ((gaugeAction U g p).1) = quantumK2R p.1 := rfl
 
-/-- The Gibbs weight — hence the whole admissibility measure — is gauge invariant at
+/-- The Gibbs weight, hence the whole admissibility measure, is gauge invariant at
 every η, so meanK2, varK2, and the stationary root η* inherit invariance wholesale. -/
 theorem weight_gauge_invariant (η : ℝ) (p : JointState BoundaryCode B) :
     weight η ((gaugeAction U g p).1) = weight η p.1 := rfl
@@ -119,7 +119,7 @@ theorem parameter_spine_gauge_scalar :
 /-! ## Compositional sufficiency for the decorated vertex
 
 If every generator of the microscopic dynamics is an open-factor operator, then any
-finite composition of generators — hence the entire assembled transfer — commutes with
+finite composition of generators, hence the entire assembled transfer, commutes with
 the full gauge action.  This converts the 𝒢_v requirement list into a sufficiency
 theorem: decoration locality alone propagates gauge invariance to the assembled
 dynamics. -/
@@ -128,7 +128,7 @@ dynamics. -/
 theorem actLeft_comp {A B : Type*} (f f' : A → A) :
     actLeft (B := B) f ∘ actLeft f' = actLeft (f ∘ f') := rfl
 
-/-- SUFFICIENCY: any finite word in open-factor generators commutes with every gauge
+/-- Sufficiency: any finite word in open-factor generators commutes with every gauge
 transformation.  The assembled transfer operator of a vertex whose generators all obey
 decoration locality is therefore fully gauge invariant. -/
 theorem assembled_transfer_gauge_commutes {A B G : Type*}

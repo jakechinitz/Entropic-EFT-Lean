@@ -239,7 +239,7 @@ theorem vsq_bounds {a₀ G M r : ℝ} (ha : 0 < a₀) (hG : 0 < G) (hM : 0 < M) 
     have he : r * (G * M / r ^ 2) = G * M / r := by field_simp <;> ring
     nlinarith
 
-/-- Asymptotic flatness with the exact BTFR normalization, for ANY spherical
+/-- Asymptotic flatness with the exact BTFR normalization, for any spherical
 baryon distribution of finite mass: if Menc(r) → M > 0 then v² → √(G M a₀),
 so v⁴ → G M a₀. -/
 theorem btfr {a₀ G M : ℝ} (ha : 0 < a₀) (hG : 0 < G) (hM : 0 < M) {Menc : ℝ → ℝ}

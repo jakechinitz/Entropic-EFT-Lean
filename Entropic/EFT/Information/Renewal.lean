@@ -3,13 +3,13 @@ import Entropic.EFT.UV.EtaStar
 /-!
 # Entropic.EFT.Information.Renewal
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 1.2, 3.3, 13; Appendices D.4, G.8, H.4, H.8.
 * Closed algebra: definition and uniqueness of the input-independent refresh kernel,
   stationarity once the marginal is normalized, and seven-layer additivity bookkeeping.
 * External mathematics interface: Shannon/KL theorem that maximum conditional entropy at
   fixed marginal occurs iff mutual information vanishes.
-* Physical premise: faithful full-support history resolution is NOT proved here.
+* Physical premise: faithful full-support history resolution is not proved here.
 -/
 
 open scoped BigOperators

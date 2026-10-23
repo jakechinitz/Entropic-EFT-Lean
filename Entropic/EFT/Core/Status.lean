@@ -3,7 +3,7 @@ import Entropic.EFT.Core.Prelude
 /-!
 # Entropic.EFT.Core.Status
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 26.
 * Status: bookkeeping only.
 * Purpose: machine-readable epistemic vocabulary matching the paper.

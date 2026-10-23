@@ -3,7 +3,7 @@ import Entropic.EFT.UV.Boundary
 /-!
 # Entropic.EFT.UV.ClosureInvariant
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.2 and the corrected H.9 audit.
 * Critical separation:
     `quantumK3 = 3 <C_hat^2>`;
