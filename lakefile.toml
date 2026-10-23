@@ -1,11 +1,11 @@
-name = "EntropicEFT"
-version = "0.2.1"
-defaultTargets = ["EntropicEFT"]
+name = "entropic_formalization"
+version = "0.4.0"
+defaultTargets = ["Entropic"]
 
 [[require]]
 name = "mathlib"
 git = "https://github.com/leanprover-community/mathlib4.git"
-rev = "v4.33.0"
+rev = "v4.35.0"
 
 [[lean_lib]]
-name = "EntropicEFT"
+name = "Entropic"

@@ -1,0 +1,10 @@
+{
+  "paper_title": "Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure",
+  "author": "Jacob Chinitz",
+  "record_url": "https://zenodo.org/records/23429324",
+  "manuscript_date": "2026-10-16",
+  "pdf_sha256": "dbce593badd9fc6a181b0b7903849f6ca2af9a9f10073ef6b83ae4db584b8c44",
+  "lean_toolchain": "leanprover/lean4:v4.19.0",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "scope": "Partial formalization; no observational exclusion or full-model consistency theorem"
+}

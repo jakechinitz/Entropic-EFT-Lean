@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic audit for the EntropicEFT Lean repository.
+"""Deterministic audit for the Entropic.EFT submodule (the v0.8 library) of the Lean repository.
 
 This is NOT a replacement for `lake build`.  It checks:
   * local import resolution,
@@ -22,7 +22,7 @@ except Exception as e:
     sys.exit(2)
 
 ROOT = Path(__file__).resolve().parents[1]
-LEAN_ROOT = ROOT / "EntropicEFT"
+LEAN_ROOT = ROOT / "Entropic" / "EFT"
 SOURCE = Path("/mnt/data/dark energy addition(1).tex")
 EXPECTED_SOURCE_SHA = "bec8390dec21af31fa5c1e3ca8c26503e664ee66ddb679d6f4085dba5e9882c7"
 
@@ -54,13 +54,13 @@ for p in files:
         check(re.search(bad, code) is None, f"no proof-hole/global-axiom pattern `{bad}` in {p.relative_to(ROOT)}")
 
 # Resolve local imports.
-modules = {"EntropicEFT." + ".".join(p.relative_to(LEAN_ROOT).with_suffix("").parts): p for p in files}
-for p in files + [ROOT / "EntropicEFT.lean"]:
+modules = {"Entropic.EFT." + ".".join(p.relative_to(LEAN_ROOT).with_suffix("").parts): p for p in files}
+for p in files + [ROOT / "Entropic" / "EFT.lean"]:
     if not p.exists():
         failures.append(f"missing top-level file {p}")
         continue
     for line in p.read_text().splitlines():
-        if line.startswith("import EntropicEFT."):
+        if line.startswith("import Entropic.EFT."):
             mod = line.split()[1]
             check(mod in modules, f"import resolves: {mod}")
 
@@ -219,4 +219,4 @@ if failures:
     print(f"\nAUDIT FAILED: {len(failures)} failure(s)")
     sys.exit(1)
 print(f"\nAUDIT PASSED: {len(files)} Lean modules; deterministic finite/numerical checks passed.")
-print("IMPORTANT: this script is not the Lean kernel. Run `lake build` in an environment with Lean 4.33.0 to typecheck proofs.")
+print("IMPORTANT: this script is not the Lean kernel. Run `lake build` in an environment with Lean 4.35.0 to typecheck proofs.")

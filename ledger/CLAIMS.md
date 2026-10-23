@@ -1,0 +1,963 @@
+# Claims map (chunk 14, 2026-10-22)
+
+Status of all 1,437 manuscript claims by kind (A exact, B numeric, C premise-conditional, D data, E interpretive, ? unclassified) and outcome. Lean names are relative to the `Entropic` namespace (the v0.8 library is `Entropic.EFT`).
+
+| Kind | proved | partial | premise-conditional | numeric | data comparison | not formalized | interpretive | definition | corrected | other | total |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A | 658 | 64 | 1 | 4 | 0 | 154 | 1 | 5 | 1 | 3 | 891 |
+| B | 104 | 7 | 0 | 54 | 2 | 40 | 0 | 0 | 1 | 1 | 209 |
+| C | 81 | 4 | 125 | 1 | 0 | 2 | 0 | 2 | 1 | 1 | 217 |
+| D | 6 | 1 | 0 | 0 | 62 | 0 | 0 | 0 | 0 | 0 | 69 |
+| E | 0 | 0 | 27 | 0 | 0 | 0 | 17 | 0 | 0 | 2 | 46 |
+| ? | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 |
+| all | 852 | 78 | 153 | 59 | 64 | 196 | 18 | 7 | 3 | 7 | 1437 |
+
+Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized); C06-30 (summary (C06-21…-24 proved)); C11-64 (trivial (O(ρ)·O(ρ) = O(ρ²)); not separately formalized); C14-05 (cited (not proved in text)); C14-28 (exploratory (excluded by the text)); C14-92 (conjecture (E)); C15-79 (status ledger (E))
+
+## Reverse index: Lean name → claims
+
+- `AppB.Gstar_closed_form`: C01-08, C04-04, C05-33, C05-62
+- `AppB.Legacy.Z_eq`: C04-26
+- `AppB.Legacy.closureProduct_strictMonoOn'`: C04-28
+- `AppB.Legacy.etaStarSpec`: C04-23
+- `AppB.Legacy.numericalSpine`: C04-29
+- `AppB.Legacy.stationary_iff`: C04-16
+- `AppB.Legacy.stationary_le_cutoff'`: C04-19
+- `AppB.Legacy.uniqueEtaStar`: C04-22
+- `AppB.Lstar_pos`: C04-04
+- `AppB.Qf`: C04-43
+- `AppB.Qf_heisenberg`: C04-56
+- `AppB.Qf_three_halves`: C04-45
+- `AppB.ZA_one`: C04-60
+- `AppB.aUV_at_root`: C04-24, C05-31
+- `AppB.adm_coefficient`: C04-01
+- `AppB.all_pairs`: C04-52
+- `AppB.block_mass`: C04-38, C04-47
+- `AppB.bond_table`: C04-57
+- `AppB.branch_counts`: C04-10, C04-42, C04-78
+- `AppB.cell_density`: C04-02
+- `AppB.closure_expectation`: C04-13
+- `AppB.closure_norm`: C04-12, C07-53
+- `AppB.complement_isometry`: C04-69
+- `AppB.concave_on_window`: C04-21
+- `AppB.counting_conventions`: C04-82
+- `AppB.curvature_at_root`: C04-24
+- `AppB.dimension_match`: C04-67
+- `AppB.evidence_second`: C04-17
+- `AppB.evidence_slope`: C04-15
+- `AppB.homogeneous_minimum`: C04-46
+- `AppB.isolated_face`: C04-64
+- `AppB.j32_constant`: C04-79
+- `AppB.log_1680`: C04-08
+- `AppB.max_entropy`: C04-77
+- `AppB.mean_at_root`: C04-30
+- `AppB.mean_hasDerivAt`: C04-27
+- `AppB.mean_rescale_invariant`: C04-83
+- `AppB.mixed_exclusion`: C04-48
+- `AppB.occupancy`: C01-30, C04-05
+- `AppB.parity_odd_zero`: C04-90
+- `AppB.refinement_exponents`: C04-61
+- `AppB.rescaling_invariance`: C04-06
+- `AppB.retained_output`: C04-71
+- `AppB.rooted_classes`: C04-32
+- `AppB.rooted_microstates`: C04-32
+- `AppB.sharp_pair_isometry`: C04-70
+- `AppB.sigma_star`: C01-37, C04-35, C05-05
+- `AppB.trace_source`: C04-07
+- `AppB.tuples_count_matches`: C04-42
+- `AppB.varK2_le`: C04-20
+- `AppB.var_at_root`: C04-30
+- `AppCDE.Calibration.G0_formula`: C05-38
+- `AppCDE.Calibration.calibration_235`: C05-39
+- `AppCDE.Calibration.calibration_root`: C05-40
+- `AppCDE.Calibration.displacement_ratio`: C05-44
+- `AppCDE.Calibration.einstein_coefficients`: C05-45
+- `AppCDE.CausalDiamond.diamond_volume`: C05-34
+- `AppCDE.Conditional.condLaw_entropy_lt`: C05-71
+- `AppCDE.Conditional.muon_sigma`: C01-02, C05-65, C07-75, C10-23
+- `AppCDE.Defect.defect_costs`: C05-16
+- `AppCDE.Defect.log_seven_sixths`: C06-54
+- `AppCDE.E_mul`: C05-68
+- `AppCDE.G_over_Gstar`: C01-50, C05-29
+- `AppCDE.Gstar_value`: C01-01, C03-87, C05-65, C07-74, C11-11
+- `AppCDE.History.one_pass_eq_tensor_power`: C05-70
+- `AppCDE.Jbare_value`: C01-36, C05-03
+- `AppCDE.Jren_sensitivity`: C01-40
+- `AppCDE.Jtree_value`: C05-04
+- `AppCDE.L0_value`: C01-06, C07-28, C11-08
+- `AppCDE.Lattice.gradient`: C05-10
+- `AppCDE.Lstar`: C15-36
+- `AppCDE.Lstar_planck`: C01-11
+- `AppCDE.Lstar_value`: C05-63, C07-32, C11-10
+- `AppCDE.MoveGraph.components`: C03-59, C05-60, C07-18, C10-74
+- `AppCDE.MoveGraph.pattern_classes`: C03-59
+- `AppCDE.MoveGraph.sector_count`: C03-59
+- `AppCDE.Sigma_ret`: C01-38, C05-07
+- `AppCDE.Sprinkling.count_moments`: C05-36
+- `AppCDE.Tilted.M_strictMono`: C05-42
+- `AppCDE.Ze`: C07-22
+- `AppCDE.bounded_lapse`: C05-47
+- `AppCDE.bridge_unique`: C01-46, C05-46
+- `AppCDE.characteristic_speed`: C05-76
+- `AppCDE.closure_saturation`: C05-66
+- `AppCDE.critical_wavelength`: C05-79
+- `AppCDE.d_dot`: C11-92
+- `AppCDE.dihedral_not_divisor`: C05-19
+- `AppCDE.dim_eff_values`: C05-72, C11-06, C11-07
+- `AppCDE.electron_planck_ratio`: C01-09, C09-71
+- `AppCDE.electron_tick`: C01-54, C05-56
+- `AppCDE.entropy_unit`: C01-29, C05-30
+- `AppCDE.eta_bracket`: C11-04
+- `AppCDE.event_energy_difference`: C01-58, C07-71
+- `AppCDE.event_volume`: C05-35
+- `AppCDE.exclusion_sufficiency`: C05-17
+- `AppCDE.frame_identity`: C01-35, C05-01, C05-23, C07-92
+- `AppCDE.fuglede_kadison`: C01-55, C05-53
+- `AppCDE.gammaQ_from_lattice`: C01-42, C05-12
+- `AppCDE.gamma_from_gammaQ`: C01-43, C05-13
+- `AppCDE.gamma_pos`: C05-82
+- `AppCDE.green_transverse`: C05-24, C06-27
+- `AppCDE.halo_density`: C05-51
+- `AppCDE.hbar_c_over_L2`: C05-14
+- `AppCDE.independent_costs_add`: C05-18
+- `AppCDE.isotropic_defect`: C05-15
+- `AppCDE.kappa_over_gamma`: C05-27
+- `AppCDE.log_ratio`: C05-61
+- `AppCDE.log_sq_ratio`: C01-10, C07-31, C11-28
+- `AppCDE.loop_values`: C01-39, C05-08
+- `AppCDE.mass_entropy_anchor`: C01-53, C05-52
+- `AppCDE.neglog_bounds`: C05-57
+- `AppCDE.newton_acceleration`: C05-49
+- `AppCDE.newton_from_bridge`: C01-48, C05-28
+- `AppCDE.plane_wave_dispersion`: C05-74
+- `AppCDE.point_source`: C01-51, C05-48
+- `AppCDE.prec_half`: C05-58, C07-30
+- `AppCDE.product_entropy`: C07-12
+- `AppCDE.r_bracket`: C08-18
+- `AppCDE.radiation_trace`: C05-81
+- `AppCDE.refresh_unique`: C01-28, C05-69
+- `AppCDE.regular_tetrahedron`: C05-37
+- `AppCDE.renyi_order`: C05-55
+- `AppCDE.residuals`: C01-04, C01-12, C03-155
+- `AppCDE.source_amplitude`: C05-25
+- `AppCDE.static_limit`: C05-77
+- `AppCDE.support_scale`: C05-59, C05-73
+- `AppCDE.telegrapher_stable`: C05-75
+- `AppCDE.transverse_fraction`: C05-02
+- `AppCDE.underdamped_roots`: C05-78
+- `AppCDE.zeta_rat`: C01-07, C03-39, C07-59, C08-20, C11-09, C13-57, C15-33
+- `AppFG.Born.born`: C01-33, C06-45, C09-38, C13-74
+- `AppFG.Histories.coarse_grain`: C06-39
+- `AppFG.Histories.conditional_normalized`: C03-11, C06-41, C11-24
+- `AppFG.Histories.dec_hermitian`: C06-38, C09-44
+- `AppFG.Histories.environment_overlap`: C03-17, C09-03
+- `AppFG.Histories.instrument_distribution`: C06-43
+- `AppFG.Histories.no_signaling`: C06-46, C09-43
+- `AppFG.Histories.record_born`: C06-40
+- `AppFG.Histories.record_conditional`: C06-44
+- `AppFG.Histories.record_pushforward`: C03-12, C06-47
+- `AppFG.Histories.replacement_dual`: C03-16, C09-01
+- `AppFG.Histories.replacement_unique`: C03-15, C07-45
+- `AppFG.Histories.softmax_form`: C06-42
+- `AppFG.Info.conditional_le`: C06-53
+- `AppFG.Info.dressing_bound`: C06-52, C07-17
+- `AppFG.Info.product_kernel_detailed_balance`: C03-13, C06-51
+- `AppFG.Info.subadditive`: C07-13, C13-69
+- `AppFG.Info.subadditive_eq_iff`: C13-72, C15-38
+- `AppFG.ZA_props`: C06-22
+- `AppFG.capacity_fraction`: C03-01, C06-01
+- `AppFG.capacity_overshoot`: C06-35
+- `AppFG.casimir_alternative`: C06-25
+- `AppFG.channel_numbers`: C06-24
+- `AppFG.cut_entropy`: C06-21
+- `AppFG.echo_delay`: C06-33
+- `AppFG.front_velocity`: C06-36
+- `AppFG.immirzi_from_matching`: C06-23, C07-110, C08-98
+- `AppFG.lapse_square_is_identity`: C06-04
+- `AppFG.misner_sharp_conserved`: C03-05, C06-09
+- `AppFG.multiplier_zero`: C03-03, C06-10
+- `AppFG.null_decomposition`: C06-15
+- `AppFG.power_weak_field`: C06-03
+- `AppFG.projected_area_form`: C06-20
+- `AppFG.qgeo_inverse_metric`: C03-08, C06-12
+- `AppFG.reduced_integrand`: C03-04, C06-06
+- `AppFG.telegrapher_elimination`: C06-34
+- `AppFG.tortoise`: C06-31
+- `AppFG.weak_deficit_matches`: C06-13
+- `AppH1.A0_sq`: C07-60
+- `AppH1.A1_sq`: C07-60
+- `AppH1.Ze_scaling`: C07-32
+- `AppH1.baseline_newton`: C07-31
+- `AppH1.berry_reparam`: C07-82
+- `AppH1.cell_edge`: C07-112, C08-98, C10-82
+- `AppH1.charged_transfer`: C07-67
+- `AppH1.clifford_square`: C07-120
+- `AppH1.comparator_depth`: C07-48
+- `AppH1.condensate_min`: C07-35
+- `AppH1.consecutive_ratio`: C07-04
+- `AppH1.correlated_energy`: C07-24, C07-72
+- `AppH1.deficit_min`: C07-19, C07-21
+- `AppH1.density_overlap`: C07-37
+- `AppH1.dirac_cone_linear`: C07-93
+- `AppH1.dirac_dispersion`: C07-120
+- `AppH1.dresselhaus_bound`: C07-98
+- `AppH1.dresselhaus_extremes`: C07-98
+- `AppH1.edge_degree`: C07-100
+- `AppH1.electron_calibration`: C07-28
+- `AppH1.equivalence_principle`: C07-124
+- `AppH1.fixed_marginal_kl`: C07-13, C07-23, C07-42
+- `AppH1.gibbs`: C07-13, C07-43
+- `AppH1.gluing_sum_zero`: C07-101, C07-92
+- `AppH1.gluing_unitary`: C07-91
+- `AppH1.halmos_sqrt`: C07-57
+- `AppH1.johnson_multiplicities`: C07-60
+- `AppH1.johnson_polynomials`: C07-60
+- `AppH1.joint_ge_marginal`: C07-72
+- `AppH1.lightest_branch`: C07-05
+- `AppH1.lindblad_relaxation`: C07-39
+- `AppH1.log_entropy_stiffness`: C07-02
+- `AppH1.log_small_r`: C07-29
+- `AppH1.madelung`: C07-01
+- `AppH1.madelung_cross`: C07-38
+- `AppH1.madelung_deriv`: C07-01
+- `AppH1.memory_family`: C07-15
+- `AppH1.motif_table`: C07-63, C07-64
+- `AppH1.neg_log_prod`: C07-11, C07-26
+- `AppH1.occupation_ordering`: C07-06
+- `AppH1.ordering_bound`: C07-08
+- `AppH1.orientation_bit`: C07-87
+- `AppH1.pair_contraction`: C07-56
+- `AppH1.pair_form`: C07-09
+- `AppH1.pauli_product`: C07-95
+- `AppH1.pfaffian_edge`: C07-58, C07-61
+- `AppH1.phase_composition`: C07-117, C07-121
+- `AppH1.proper_time_slope`: C07-123
+- `AppH1.rank_one_coupling`: C07-40
+- `AppH1.reality_even_spectrum`: C07-107
+- `AppH1.recurrence_det`: C07-68
+- `AppH1.recurrence_eigen`: C07-69
+- `AppH1.recurrence_eigen_t`: C07-69
+- `AppH1.recurrence_energy`: C07-70
+- `AppH1.recurrence_spectrum`: C07-69
+- `AppH1.regge_coefficient`: C07-114
+- `AppH1.relFrame_gauge`: C07-76
+- `AppH1.relFrame_inv`: C07-76
+- `AppH1.relFrame_loop`: C07-76
+- `AppH1.relFrame_loop_conj`: C07-76
+- `AppH1.relative_fluctuation`: C07-85
+- `AppH1.renewal_eigen`: C07-127, C07-41
+- `AppH1.renewal_triangular`: C07-127, C07-41
+- `AppH1.routing_controls`: C07-65
+- `AppH1.scalar_semigroup`: C07-66
+- `AppH1.superlinear`: C07-07
+- `AppH1.support_mass`: C07-03, C07-21
+- `AppH1.symmetrized_kernel`: C07-34
+- `AppH1.tau_mass`: C07-74, C07-75, C10-23
+- `AppH1.time_reversal`: C07-44
+- `AppH1.trace_kron_factor`: C07-11
+- `AppH1.twist_bijection`: C07-83
+- `AppH1.y_map_coefficient`: C07-86
+- `AppH1.zmu_window`: C07-25
+- `AppH10.F_nullQ`: C08-32
+- `AppH10.block_length`: C08-56, C08-57
+- `AppH10.capacity_schur`: C08-76
+- `AppH10.cdt_edge`: C08-98
+- `AppH10.coercive_inverse`: C08-77
+- `AppH10.complete_square_matrix`: C08-05
+- `AppH10.complete_square_min`: C08-05
+- `AppH10.compression_nonneg`: C08-34
+- `AppH10.compression_split`: C08-34
+- `AppH10.connected_derivative`: C08-07
+- `AppH10.cos_bound6`: C03-71, C08-37
+- `AppH10.cube_gaps`: C08-41
+- `AppH10.cube_root_sum`: C08-29
+- `AppH10.cycle_eigen`: C08-41
+- `AppH10.det_whiten`: C08-02
+- `AppH10.determinant_theorem`: C08-02
+- `AppH10.dilation_isometry`: C08-73
+- `AppH10.edge_factor_pos`: C08-19
+- `AppH10.einstein_phase_stability`: C08-75
+- `AppH10.eliminate_integral`: C08-05
+- `AppH10.fiber_dimensions`: C08-21, C08-22, C08-23, C08-32
+- `AppH10.fine_embed`: C08-55
+- `AppH10.fine_null`: C08-32
+- `AppH10.frozen_areas`: C08-35
+- `AppH10.fusion_gap`: C08-49
+- `AppH10.gammaRel_eq_zero_iff`: C08-09
+- `AppH10.gammaRel_kl_form`: C08-10
+- `AppH10.gammaRel_nonneg`: C08-09
+- `AppH10.gaussian_integral`: C08-02, C08-04
+- `AppH10.gns_projector`: C08-84, C09-01
+- `AppH10.hasDerivAt_det_one_add`: C08-07
+- `AppH10.idReplace_add`: C08-86
+- `AppH10.idReplace_kron`: C08-74, C08-86
+- `AppH10.idReplace_unitary`: C08-74, C08-86
+- `AppH10.legendre_admissible`: C08-08
+- `AppH10.legendre_attained`: C08-08
+- `AppH10.legendre_le`: C08-08
+- `AppH10.marked_edge_values`: C08-16, C08-17
+- `AppH10.momentum_condition`: C08-58
+- `AppH10.no_extra_pole`: C08-78
+- `AppH10.nullQ_idem`: C08-51
+- `AppH10.orth_frobenius`: C08-46
+- `AppH10.prim_compress`: C08-51
+- `AppH10.prim_exp`: C08-53, C09-51
+- `AppH10.prim_intertwine`: C08-51
+- `AppH10.prim_pow_intertwine`: C08-53
+- `AppH10.prim_resolvent`: C08-51, C08-52
+- `AppH10.prim_resolvent_general`: C08-54, C08-64
+- `AppH10.psqrt`: C09-92
+- `AppH10.psqrt_mul_self`: C08-01
+- `AppH10.psqrt_transpose`: C08-01
+- `AppH10.reflection_positive`: C08-68
+- `AppH10.replace_props`: C08-24, C08-25
+- `AppH10.resolvent_bound`: C08-60
+- `AppH10.resolvent_lower`: C08-60
+- `AppH10.roots_filter`: C08-29
+- `AppH10.schur_norm_bound`: C08-77
+- `AppH10.second_order_coefficient`: C08-46, C08-47
+- `AppH10.selection`: C08-35
+- `AppH10.shape_spectrum`: C08-48
+- `AppH10.stat_projector`: C08-24
+- `AppH10.static_capacity`: C08-15, C11-60, C11-61
+- `AppH10.successive_det`: C08-06
+- `AppH10.sum_log_eigenvalues`: C08-03
+- `AppH10.symbol_expansion`: C08-37
+- `AppH10.symbol_periodic`: C08-38
+- `AppH10.trace_log_form`: C08-03, C08-12
+- `AppH10.trace_log_series`: C08-14
+- `AppH10.trace_pow_eq`: C08-14
+- `AppH10.trace_sub_logdet_eq_zero`: C08-09
+- `AppH10.trace_sub_logdet_nonneg`: C08-09
+- `AppH10.ttMap_apply`: C08-65
+- `AppH10.tt_projector`: C08-65
+- `AppH10.tt_trace`: C08-65
+- `AppH10.whiten`: C08-01
+- `AppH10.whiten_inv`: C08-01
+- `AppH10.whiten_posDef`: C08-01
+- `AppH11.bridge_not_additive`: C09-33
+- `AppH11.bridge_spectrum_arith`: C09-36
+- `AppH11.canonical_map`: C09-69
+- `AppH11.carrier_isometry`: C09-11
+- `AppH11.coarse_symbol`: C09-85
+- `AppH11.cochain_counts`: C09-86
+- `AppH11.codifferential_adjoint`: C09-81
+- `AppH11.dirac_kahler_selfadjoint`: C09-81
+- `AppH11.fisher_four`: C09-30
+- `AppH11.fixed_edge_ratio`: C09-74
+- `AppH11.frame_connection`: C09-13
+- `AppH11.fubini_study`: C09-25
+- `AppH11.fused_volume`: C09-52
+- `AppH11.hasDerivAt_Zs_m2`: C09-75
+- `AppH11.hasDerivAt_mom_m1`: C09-75
+- `AppH11.heff_hermitian`: C09-21
+- `AppH11.heff_schrodinger`: C09-21
+- `AppH11.idTensor_kron`: C09-02
+- `AppH11.idTensor_marginal`: C09-78
+- `AppH11.inherited_hessian`: C09-12
+- `AppH11.isotropic_moments`: C09-29
+- `AppH11.kahler_bookkeeping`: C09-27
+- `AppH11.kraus_complete`: C09-41
+- `AppH11.kraus_dilation`: C09-41
+- `AppH11.kuhn_counts`: C09-57
+- `AppH11.lapse_monotone`: C09-83
+- `AppH11.lattice_symbol_zero`: C09-66
+- `AppH11.lift_identities`: C09-93
+- `AppH11.lift_intertwine_pow`: C09-92, C09-93
+- `AppH11.lift_posSemidef`: C09-93
+- `AppH11.micro_metric`: C09-91
+- `AppH11.mismatch_gap`: C09-12, C09-15
+- `AppH11.mixed_log_derivative`: C09-75, C10-98
+- `AppH11.mixed_prob`: C09-40
+- `AppH11.moving_subspace`: C09-94
+- `AppH11.orbital_frequency_pos`: C09-81
+- `AppH11.orbital_mass_derivative`: C09-82
+- `AppH11.overlap_cases`: C09-05, C09-08
+- `AppH11.overlap_product`: C09-04
+- `AppH11.path_gap_bound`: C09-56
+- `AppH11.polar_generator`: C09-16
+- `AppH11.polar_jacobian`: C09-26
+- `AppH11.polar_metric_pos`: C09-17
+- `AppH11.projector_complete`: C09-39
+- `AppH11.projector_prob`: C09-39
+- `AppH11.proper_time_semigroup`: C09-72
+- `AppH11.ptr_record`: C01-34, C09-03, C09-07
+- `AppH11.pure_trace`: C09-40
+- `AppH11.reduced_prob`: C09-40
+- `AppH11.replace_tensor`: C09-02, C13-91
+- `AppH11.response_phase`: C09-23
+- `AppH11.responses_separate`: C09-23
+- `AppH11.retained_gram`: C09-10
+- `AppH11.schrodinger_amplitude`: C09-18
+- `AppH11.stinespring_isometry`: C09-42
+- `AppH11.symplectic_derivative`: C09-19
+- `AppH11.tautological_connection`: C09-45
+- `AppH11.transported_complex_structure`: C09-19, C09-20
+- `AppH11.transported_form`: C09-20
+- `AppH11.unitary_deriv`: C09-21
+- `AppIJ.A0_value`: C10-16
+- `AppIJ.P1_P2`: C10-29
+- `AppIJ.P1_idem`: C10-29
+- `AppIJ.P2_idem`: C10-29
+- `AppIJ.adjoint_casimir`: C10-46
+- `AppIJ.adjoint_character`: C10-40
+- `AppIJ.apex_height`: C10-86
+- `AppIJ.apex_numbers`: C10-86
+- `AppIJ.averaged_channel`: C10-45, C11-18
+- `AppIJ.baseline_gauge`: C10-25
+- `AppIJ.budget_operator`: C10-76
+- `AppIJ.cdt_displacement`: C10-57, C10-95
+- `AppIJ.center_invariance`: C10-41
+- `AppIJ.circulant_decomp`: C10-29
+- `AppIJ.closure_solvable`: C10-04
+- `AppIJ.collision_benchmark`: C03-60, C10-61
+- `AppIJ.color_shell_commute`: C10-54
+- `AppIJ.cosmological_delta`: C10-84
+- `AppIJ.demonstration_point`: C10-65
+- `AppIJ.diamond_cell`: C10-50
+- `AppIJ.diamond_girth`: C10-48
+- `AppIJ.diamond_time_square`: C10-48
+- `AppIJ.effective_action`: C10-79
+- `AppIJ.entropy_le_log_card`: C10-10, C15-62
+- `AppIJ.first_shell_count`: C10-07
+- `AppIJ.fisher_eq_variance`: C10-05
+- `AppIJ.fisher_score`: C10-05
+- `AppIJ.gaussian_ladder`: C10-18, C14-87
+- `AppIJ.geometric_return`: C10-08
+- `AppIJ.gmean_deriv`: C10-67
+- `AppIJ.hasDerivAt_logZt`: C10-55
+- `AppIJ.heat_kernel_couplings`: C10-47, C10-53, C11-19, C11-20, C11-21
+- `AppIJ.holonomy_gauge`: C10-36
+- `AppIJ.isotropy`: C10-52
+- `AppIJ.isotropy_rho_one`: C10-52
+- `AppIJ.kac_mean`: C10-09, C14-87
+- `AppIJ.ladder_recurrence`: C10-19
+- `AppIJ.log_14_13`: C10-47
+- `AppIJ.log_seven_bounds`: C10-16
+- `AppIJ.min_norm_velocity`: C10-100
+- `AppIJ.newton_benchmark`: C10-99
+- `AppIJ.ordered_incidence`: C10-15
+- `AppIJ.orientation_ln2`: C10-59
+- `AppIJ.origin_invariance`: C03-94, C10-56
+- `AppIJ.pairings`: C10-26
+- `AppIJ.projective_channel`: C10-34
+- `AppIJ.return_failure`: C10-37
+- `AppIJ.rotated_kraus`: C10-43
+- `AppIJ.route_gram`: C10-33, C11-15
+- `AppIJ.route_irreducible`: C10-31
+- `AppIJ.second_difference`: C10-20
+- `AppIJ.shells_count`: C10-01
+- `AppIJ.shells_injective`: C10-01
+- `AppIJ.simplex41_volume`: C10-80
+- `AppIJ.singlet_complement`: C10-13
+- `AppIJ.singlet_eigenvalue`: C10-30
+- `AppIJ.sorted_orbits`: C03-54, C10-60
+- `AppIJ.sourced_normalization`: C10-102
+- `AppIJ.t8_exponent`: C10-46
+- `AppIJ.thermodynamic_integration`: C10-55
+- `AppIJ.throughput_max`: C10-42
+- `AppIJ.throughput_pair`: C10-42, C11-16
+- `AppIJ.transport_conservation`: C10-77
+- `AppIJ.two_source_volume`: C10-81
+- `AppIJ.variance_nonneg`: C10-67
+- `AppIJ.variance_pos`: C10-03, C10-06
+- `AppIJ.volume_tilt`: C10-64
+- `AppIJ.wilson_coefficient`: C10-41, C11-17
+- `AppKN.block_average`: C11-87
+- `AppKN.bose_slope`: C02-48, C12-35
+- `AppKN.cap_readings`: C11-43
+- `AppKN.capacity_equation`: C11-79
+- `AppKN.capacity_legendre`: C11-100
+- `AppKN.carrier_projector`: C11-85
+- `AppKN.carrier_tower`: C11-88
+- `AppKN.causal_transport`: C02-49, C12-33
+- `AppKN.cofactor_reconstruction`: C12-47
+- `AppKN.coherent_variance`: C11-105
+- `AppKN.column_stochastic`: C11-91
+- `AppKN.commutator_diag`: C12-70
+- `AppKN.composite_isometry`: C12-87
+- `AppKN.cycle_rephasing`: C12-77
+- `AppKN.density_cancellation`: C12-83
+- `AppKN.derivation_idempotent`: C12-70
+- `AppKN.difference_mode`: C11-103
+- `AppKN.dissipative_spectrum`: C12-38
+- `AppKN.eh_conventions`: C11-45
+- `AppKN.exact_closure`: C12-45
+- `AppKN.flux_conservation`: C12-85
+- `AppKN.flux_multiplier`: C12-26
+- `AppKN.grammar_size`: C11-29
+- `AppKN.graph_lift_counts`: C12-68
+- `AppKN.herm_form_star`: C12-85
+- `AppKN.influence_unitarity`: C12-28
+- `AppKN.instantaneous_coupling`: C11-44
+- `AppKN.interface_order`: C12-20
+- `AppKN.iwasawa_frequency`: C12-76
+- `AppKN.kasner_exponents`: C12-50
+- `AppKN.lag_transmission`: C11-39
+- `AppKN.lapse_expansion`: C11-48
+- `AppKN.lapse_square_equation`: C11-78
+- `AppKN.longitudinal_split`: C11-95
+- `AppKN.low_frequency_limit`: C12-42
+- `AppKN.mass_term_rank`: C11-104
+- `AppKN.maxwell_traceless`: C11-47
+- `AppKN.misner_sharp_conserved`: C11-72
+- `AppKN.multiplier_routes`: C11-65
+- `AppKN.n_isometry`: C12-86
+- `AppKN.native_numbers_window`: C11-37
+- `AppKN.no_linear_response`: C11-83
+- `AppKN.no_slip_response`: C02-29, C03-134, C12-29
+- `AppKN.one_bit_entropy`: C11-01
+- `AppKN.partition_unity`: C11-90
+- `AppKN.pattern_normalization`: C12-55
+- `AppKN.phase_cell_window`: C11-34
+- `AppKN.plateau_sound_speed`: C11-42
+- `AppKN.polar_kinetic`: C11-96
+- `AppKN.qgeo_from_mass`: C11-73
+- `AppKN.radial_divfree_zero`: C02-13, C12-04
+- `AppKN.rank_one_criterion`: C11-99
+- `AppKN.rank_one_hessian`: C11-101, C11-102
+- `AppKN.reconstruction_positivity`: C12-44
+- `AppKN.redefinition_coefficient`: C11-59
+- `AppKN.relative_first_law`: C11-82
+- `AppKN.rigging_threshold`: C12-75
+- `AppKN.saddle_splay`: C02-17, C12-05
+- `AppKN.source_preservation`: C11-86
+- `AppKN.substrate_leading`: C11-28
+- `AppKN.sum_zero_norm`: C11-93
+- `AppKN.susceptibility_cancels`: C11-106
+- `AppKN.thermal_occupation`: C11-108
+- `AppKN.thermal_variance`: C11-105
+- `AppKN.total_q_replacement`: C12-09
+- `AppKN.two_killing_sector`: C12-60, C12-61
+- `AppKN.two_pole_symbol`: C02-49, C12-36
+- `AppKN.unit_normalization`: C11-62, C11-63
+- `AppKN.uplift_ratios`: C11-26, C11-27
+- `AppKN.volume_shape`: C12-71
+- `AppKN.weak_capacity`: C11-80
+- `AppKN.x_coth_ge_one`: C12-41
+- `AppO.H_le_joint`: C13-69
+- `AppO.Num.bsc_entropies`: C13-82
+- `AppO.Num.bsc_values`: C13-82
+- `AppO.Num.budget_equality_iff`: C13-32
+- `AppO.Num.budget_ratio`: C02-37, C13-32
+- `AppO.Num.budget_value`: C13-32
+- `AppO.Num.capacity_baryon_ratio`: C13-36
+- `AppO.Num.chi2_rows`: C13-85
+- `AppO.Num.decoherence_time`: C13-64
+- `AppO.Num.density_floor_values`: C13-41
+- `AppO.Num.drain_ratio`: C13-56, C14-59, C15-40
+- `AppO.Num.early_release`: C13-65
+- `AppO.Num.lower_bound_witness`: C13-26
+- `AppO.Num.recurrence_margin`: C13-97
+- `AppO.Num.reionization_increments`: C13-68
+- `AppO.Num.stream_separation`: C13-62
+- `AppO.Num.uniform_core_root`: C13-24
+- `AppO.Num.virial_temperature`: C13-88
+- `AppO.absorbing_first_entry`: C13-76
+- `AppO.additive_pricing`: C13-74
+- `AppO.admissibility_projection`: C13-21
+- `AppO.average_mean_var`: C13-06
+- `AppO.average_var_bound`: C13-06
+- `AppO.capacity_contrast`: C13-40
+- `AppO.circular_jeans`: C13-31
+- `AppO.clock_geodesic`: C13-11
+- `AppO.clock_homogeneity`: C13-07
+- `AppO.coarse_partition`: C13-79
+- `AppO.common_clock`: C13-14
+- `AppO.conserved_fluid`: C13-48
+- `AppO.constant_cancels`: C13-58
+- `AppO.constant_mode`: C13-05
+- `AppO.currents_sum`: C13-11, C13-13
+- `AppO.deficit_persists`: C13-98
+- `AppO.deficit_rate`: C13-98
+- `AppO.density_floor`: C13-41
+- `AppO.effective_w`: C13-44
+- `AppO.entropy_dissipation`: C13-50
+- `AppO.face_map_dims`: C13-01
+- `AppO.formation_energy`: C13-100
+- `AppO.formation_isometry`: C13-95
+- `AppO.fraction_in_unit`: C13-16
+- `AppO.fresh_draw`: C13-63
+- `AppO.hazard_cancels`: C13-89
+- `AppO.identity_free_record`: C02-75, C13-61, C14-53, C15-37
+- `AppO.integration_constant`: C13-03
+- `AppO.label_cap`: C13-93
+- `AppO.linear_clock`: C13-45
+- `AppO.linear_positivity`: C13-15
+- `AppO.local_capacity`: C13-40
+- `AppO.mass_slope_le_three`: C13-25
+- `AppO.memory_not_product`: C13-72, C15-38
+- `AppO.mixing_fraction`: C02-77, C13-69, C14-54
+- `AppO.mixing_zero_of_function`: C13-69
+- `AppO.no_flux_conservation`: C13-51, C13-52
+- `AppO.no_late_recruitment`: C13-99, C14-85
+- `AppO.projection_bound`: C13-29
+- `AppO.projection_change`: C13-28
+- `AppO.protected_null`: C13-53
+- `AppO.radial_adjustment`: C13-49
+- `AppO.ratio_ge_three`: C13-26
+- `AppO.ratio_pos`: C13-23
+- `AppO.reallocated_fraction`: C13-16
+- `AppO.release_isometry`: C02-76, C13-90, C15-39
+- `AppO.release_positivity`: C13-15
+- `AppO.reset_decomposition`: C13-80
+- `AppO.reset_monotone`: C13-81
+- `AppO.resolved_kernel`: C13-78
+- `AppO.reverse_cauchy_schwarz`: C13-98
+- `AppO.stationary_profile`: C13-51
+- `AppO.stock_balance`: C13-39
+- `AppO.stock_integrated`: C13-39
+- `AppO.target_mass_deriv`: C13-22
+- `AppO.target_ratio`: C13-22
+- `AppO.transverse_force`: C13-19
+- `AppO.unimodular_to_einstein`: C13-03
+- `AppO.vacuum_shift`: C13-04
+- `AppO.virial_time`: C13-83
+- `AppO.x_slope`: C13-22
+- `AppP.Exp.bhattacharyya`: C14-32
+- `AppP.Exp.first_derivative`: C14-30
+- `AppP.Exp.fubini_study_expansion`: C03-18, C14-32
+- `AppP.Exp.info_twice_distance`: C14-33
+- `AppP.Exp.marginals`: C14-29
+- `AppP.Exp.second_order`: C14-29
+- `AppP.Exp.total_history_monotone`: C14-31
+- `AppP.Kstar_charpoly_eval`: C14-03
+- `AppP.Kstar_idem`: C14-03
+- `AppP.Kstar_spectrum`: C14-03
+- `AppP.Num.K2_floor`: C03-104, C03-62, C14-74, C15-06
+- `AppP.Num.critical_energy`: C14-27
+- `AppP.Num.de_sitter_numbers`: C14-63
+- `AppP.Num.electron_record_energy`: C14-46
+- `AppP.Num.gluing_angle_irrational`: C14-78
+- `AppP.Num.history_vs_desitter`: C03-153, C14-64
+- `AppP.Num.hubble_register`: C14-66
+- `AppP.Num.isotropic_angle`: C14-16
+- `AppP.Num.mean_closure_energy`: C03-53, C14-58
+- `AppP.Num.mirror_rotation`: C14-77
+- `AppP.Num.no_event_kraus`: C14-72
+- `AppP.Num.thermal_thresholds`: C03-154, C14-61, C14-62
+- `AppP.Num.trial_budget`: C14-26
+- `AppP.Spin.WR_chain`: C14-49
+- `AppP.Spin.bridge_traces`: C09-32, C14-48, C15-03
+- `AppP.Spin.eigen_root_bound`: C14-49
+- `AppP.Spin.minpoly_M`: C01-22, C14-38
+- `AppP.Spin.multiplicities`: C01-21, C04-36, C07-49, C09-06, C15-03
+- `AppP.Spin.not_local`: C14-48
+- `AppP.Spin.resolution`: C15-02
+- `AppP.Spin.total_spin`: C07-49, C15-01
+- `AppP.bridge_generators_commute`: C14-42
+- `AppP.dark_ledger_monotone`: C14-60
+- `AppP.data_processing`: C14-52, C14-69
+- `AppP.defect_positive`: C14-18
+- `AppP.descendant_independent`: C14-04
+- `AppP.dimension_exclusions`: C14-35
+- `AppP.distinct_pure_support`: C14-24
+- `AppP.entropy_decomposition`: C14-12
+- `AppP.false_record_min`: C03-154, C14-86
+- `AppP.frequencies_distinct`: C14-40
+- `AppP.full_rank_stable`: C14-37
+- `AppP.history_commutes`: C14-67
+- `AppP.history_dimension`: C14-06
+- `AppP.horizon_cut`: C14-65
+- `AppP.injective_count`: C14-20, C15-08, C15-41
+- `AppP.isometry_difference`: C14-02
+- `AppP.isometry_powers`: C14-02
+- `AppP.isotropic_benchmark`: C14-09
+- `AppP.jensen_cost`: C14-10
+- `AppP.lie_closure_commutes`: C14-42
+- `AppP.log_sum`: C14-52
+- `AppP.modular_rank`: C14-35
+- `AppP.non_reuse`: C14-82
+- `AppP.occupation_conserved`: C03-154, C14-84
+- `AppP.one_bit_sufficient`: C14-13
+- `AppP.phase_generator`: C14-40
+- `AppP.projected_factorization`: C14-47
+- `AppP.projective_cost`: C14-15
+- `AppP.record_overlap_power`: C14-17
+- `AppP.record_root`: C14-83
+- `AppP.record_strand_energy`: C14-57
+- `AppP.recovery_map`: C14-01
+- `AppP.renewal_tp`: C14-01, C15-49
+- `AppP.sqrt_overlap`: C14-14
+- `AppP.union_bound`: C14-25
+- `AppP.union_threshold`: C14-25
+- `AppP.visibility_source`: C14-07
+- `AppQ.Fock.car`: C15-47
+- `AppQ.Fock.polar_gluing`: C15-73
+- `AppQ.Fock.purification_marginal`: C15-49
+- `AppQ.Fock.separable_vs_coherent`: C03-42, C15-48
+- `AppQ.Fock.tri_sum_squares`: C15-59
+- `AppQ.Fock.vandermonde3`: C15-71
+- `AppQ.K2_equality`: C15-06
+- `AppQ.K2_perm`: C15-42
+- `AppQ.W.calibration_numbers`: C01-17, C15-57
+- `AppQ.W.cut_bond`: C15-45
+- `AppQ.W.intertwiner_counts`: C03-47, C07-77, C08-43, C09-47, C15-69
+- `AppQ.W.product_entropy`: C15-45
+- `AppQ.W.spin1_pair`: C01-21, C04-36, C04-65, C07-50, C07-52, C15-05
+- `AppQ.W.top_fusion`: C15-70
+- `AppQ.W.top_weight`: C04-49, C04-53, C07-80, C08-50, C15-12
+- `AppQ.alpha_seven`: C01-18, C15-68
+- `AppQ.block_selection`: C15-74
+- `AppQ.capacity_commutes`: C03-23, C15-09
+- `AppQ.cdt_asymmetry`: C01-18, C15-66
+- `AppQ.channel_area_relation`: C15-53
+- `AppQ.constraint_derivative`: C15-29
+- `AppQ.encoded_cell`: C03-41, C15-44
+- `AppQ.encoded_counts`: C03-41, C15-41
+- `AppQ.encoded_powers`: C15-78
+- `AppQ.flux_area`: C15-54
+- `AppQ.frame_connection_antisymm`: C15-29
+- `AppQ.frame_covariance`: C15-15
+- `AppQ.frame_invariance`: C15-16, C15-17
+- `AppQ.fresh_amplitude`: C15-26
+- `AppQ.gibbs_constant`: C15-07
+- `AppQ.half_turn`: C15-75
+- `AppQ.hessian_pushforward`: C15-28
+- `AppQ.hinge_semigroup`: C03-43, C15-50
+- `AppQ.hinge_trace`: C15-51
+- `AppQ.lift_counts`: C15-65
+- `AppQ.matched_immirzi`: C15-55, C15-56
+- `AppQ.odd_mixed`: C15-67
+- `AppQ.port_parity`: C15-67
+- `AppQ.potential_form`: C15-23
+- `AppQ.potential_minimum`: C15-24
+- `AppQ.relative_masses`: C15-25
+- `AppQ.replica_traces`: C15-52
+- `AppQ.return_contraction`: C01-57, C15-32
+- `AppQ.same_factor`: C15-07
+- `AppQ.sewing`: C15-77
+- `AppQ.sharing_split`: C15-34
+- `AppQ.transfer_projector`: C15-20
+- `AppQ.transport_intertwines`: C15-63
+- `AppQ.two_direction`: C15-64
+- `AppQ.witness_K2`: C15-19
+- `AppQ.witness_identity`: C15-18
+- `BlackHole.entropy_eq`: C06-18
+- `BlackHole.lapse_is_power`: C06-02
+- `BlackHole.lapse_is_sqrt`: C03-02, C06-04
+- `BlackHole.lapse_sq_eq_qgeo`: C03-08
+- `BlackHole.ppn_beta`: C06-37
+- `BlackHole.qS_sign`: C03-09, C06-12
+- `BlackHole.quarter_as_projection`: C06-19, C06-20
+- `BlackHole.surface_gravity_from_q`: C06-17
+- `BlackHole.vacuum_iff_schwarzschild`: C03-07, C06-09, C06-11, C11-74
+- `ClosureRoot.N_strictMonoOn`: C04-28
+- `ClosureRoot.evidence_hasDerivAt`: C04-15
+- `ClosureRoot.evidence_unique_max`: C04-22
+- `ClosureRoot.gshare_bracket`: C03-53, C04-29, C04-80, C11-05, C15-34
+- `ClosureRoot.meanK2_bounds`: C04-18
+- `ClosureRoot.partition_eq`: C04-26
+- `ClosureRoot.stationary_bracket`: C01-25, C04-23
+- `ClosureRoot.stationary_exists`: C15-35
+- `ClosureRoot.stationary_existsUnique`: C11-04
+- `ClosureRoot.stationary_iff`: C04-16
+- `ClosureRoot.stationary_in_window`: C04-19
+- `ClosureRoot.stationary_unique`: C03-121
+- `Director.radial_selects_kappa`: C02-18, C12-08
+- `EFT.Audit.galactic_abundance_reciprocity`: C02-06
+- `EFT.Edge.entropy_unit_ratio_invariant`: C05-30
+- `EFT.Gauge.primitive_route_ratio`: C10-32
+- `EFT.Gauge.route_ratio_eq_seven_six`: C10-33
+- `EFT.Gauge.route_sum_identity`: C10-27
+- `EFT.Gravity.horizon_quarter_identity`: C06-29
+- `EFT.Gravity.nHor`: C06-28
+- `EFT.Gravity.qgeo_from_misnerSharp`: C03-06, C06-14, C11-73
+- `EFT.Information.input_independent_unique`: C01-28
+- `EFT.Information.refresh_stationary`: C05-69
+- `EFT.Scale.Gstar_closed_form`: C05-33
+- `EFT.Transport.CanonicalHubbleTransport.diffusion_closed`: C05-76
+- `EFT.Transverse.a0_closed`: C01-13, C05-32
+- `EFT.UV.EtaStarSpec.closure_product`: C04-31
+- `EFT.UV.boundaryStates_card`: C01-19, C04-10, C05-64, C07-47, C11-03
+- `EFT.UV.closure_decomposition`: C04-14
+- `EFT.UV.mult_122`: C04-25
+- `EFT.UV.quantumK2R_lower`: C14-74
+- `EFT.UV.spectrum_min`: C04-18
+- `EFT.UV.sum_by_level`: C04-25
+- `GalacticLaw.btfr_fourth_power`: C02-14
+- `GalacticLaw.btfr_parameter_free`: C02-04
+- `GalacticLaw.deep_limit`: C02-14
+- `GalacticLaw.deflection_deep`: C02-35
+- `GalacticLaw.gObs_thermal`: C02-13, C12-04
+- `GalacticLaw.newtonian_limit`: C02-14, C02-62
+- `GalacticLaw.percarrier_balance_iff`: C02-15
+- `GalacticLaw.surface_density_deep`: C02-34
+- `GaussianSource.complete_square`: C08-05
+- `GenerationCutoff.one_exclusion_nonconstant`: C10-03, C11-22
+- `GenerationCutoff.three_exclusion_constant`: C10-02, C11-23
+- `HistoryCapacity.exact_export_bound`: C03-20
+- `Ledger.active_release_effectiveW_lt_neg_one`: C13-44
+- `Main.Core.abundance`: C01-14, C02-58, C03-145
+- `Main.Core.decoherent_histories`: C01-32
+- `Main.Core.dilation_coherence`: C01-34
+- `Main.Core.evidence_derivative`: C01-24, C03-121
+- `Main.Core.farey_count`: C01-05
+- `Main.Core.fusion_dimensions`: C01-21
+- `Main.Core.gaussian_representation_1d`: C01-56
+- `Main.Core.gibbs_max_entropy`: C01-24
+- `Main.Core.marked_carrier`: C01-23
+- `Main.Core.one_bit_area`: C01-60
+- `Main.Core.schwarzschild_scalar`: C01-52
+- `Main.Core.sharing_ceiling`: C01-27
+- `Main.Core.shell_ratios`: C01-03
+- `Main.Core.time_dilation`: C01-31
+- `Main.Cosmo.beta_zero_marginal`: C03-52
+- `Main.Cosmo.bulk_poisson`: C03-169
+- `Main.Cosmo.cdt_shift`: C03-98
+- `Main.Cosmo.centered_density`: C03-92, C03-93
+- `Main.Cosmo.channel_determinant`: C03-30, C03-31
+- `Main.Cosmo.cosmological_entropy`: C03-172
+- `Main.Cosmo.coupling_displacement`: C03-107
+- `Main.Cosmo.defect_configs`: C03-62
+- `Main.Cosmo.diffusion_constant`: C03-72
+- `Main.Cosmo.effective_action`: C03-85
+- `Main.Cosmo.epsilon_value`: C02-58, C03-148
+- `Main.Cosmo.fixed_ratio`: C03-109, C03-89
+- `Main.Cosmo.fresh_norm`: C03-28
+- `Main.Cosmo.gaussian_kl_nonneg`: C03-114, C03-115
+- `Main.Cosmo.gaussian_kl_quadratic`: C03-116
+- `Main.Cosmo.horizon_normalization`: C03-168
+- `Main.Cosmo.hubble_ratio`: C03-162
+- `Main.Cosmo.isotropic_point`: C03-108
+- `Main.Cosmo.junction_coefficient`: C03-77
+- `Main.Cosmo.k4_matchings`: C03-29
+- `Main.Cosmo.kirchhoff_cancellation`: C03-66
+- `Main.Cosmo.laplacian_constant`: C03-67
+- `Main.Cosmo.laplacian_form`: C03-68
+- `Main.Cosmo.laplacian_kernel`: C03-68
+- `Main.Cosmo.lock_edge`: C03-102, C03-111
+- `Main.Cosmo.max_path_entropy`: C03-21
+- `Main.Cosmo.native_junction`: C03-80
+- `Main.Cosmo.native_si`: C03-78, C03-79
+- `Main.Cosmo.no_signaling`: C03-152
+- `Main.Cosmo.origin_invariance`: C03-94
+- `Main.Cosmo.rare_event`: C03-38
+- `Main.Cosmo.rare_event_value`: C03-38
+- `Main.Cosmo.rebalanced_budget`: C03-64
+- `Main.Cosmo.regge_nondegenerate`: C03-101
+- `Main.Cosmo.survival_gap`: C03-32
+- `Main.Cosmo.volume_density`: C03-105, C03-112
+- `Main.Cosmo.volume_displacement`: C03-96
+- `Main.Cosmo.zero_cap_density`: C03-113
+- `Main.Galactic.Qperp_deriv`: C02-09, C02-10, C12-01, C12-03
+- `Main.Galactic.a0_value`: C02-05
+- `Main.Galactic.acceleration_abundance`: C02-06
+- `Main.Galactic.bath_cap`: C02-57, C02-59, C03-149
+- `Main.Galactic.boost_fluctuation`: C02-50
+- `Main.Galactic.bose_cell`: C02-08
+- `Main.Galactic.budget_numbers`: C02-37
+- `Main.Galactic.cap_radius`: C02-36
+- `Main.Galactic.cap_residual`: C02-63
+- `Main.Galactic.cap_threshold`: C02-68
+- `Main.Galactic.clash_value`: C02-60
+- `Main.Galactic.clock_normalization`: C02-70
+- `Main.Galactic.deep_compression`: C02-62
+- `Main.Galactic.deep_excess_density`: C02-33
+- `Main.Galactic.director_density`: C02-19
+- `Main.Galactic.dust_stress`: C02-71
+- `Main.Galactic.excess_surface_density`: C02-34
+- `Main.Galactic.fourier_response`: C02-53
+- `Main.Galactic.haar_two_phase`: C02-03
+- `Main.Galactic.laplace_poles_stable`: C02-54
+- `Main.Galactic.lensing_density`: C02-32
+- `Main.Galactic.linear_lift`: C02-60
+- `Main.Galactic.nematic_invariance`: C02-16
+- `Main.Galactic.nesting`: C02-02
+- `Main.Galactic.nine_state_dilation`: C02-76
+- `Main.Galactic.occupancy`: C02-69
+- `Main.Galactic.parallel_response`: C02-45
+- `Main.Galactic.qint_integrable`: C02-09, C12-01
+- `Main.Galactic.release_exchange`: C02-79
+- `Main.Galactic.selector_projector`: C02-01
+- `Main.Galactic.source_inversion`: C02-64
+- `Main.Galactic.telegrapher_static`: C02-51
+- `Main.Galactic.transport_magnitudes`: C02-55, C02-56
+- `Main.Galactic.transport_parameters`: C02-52
+- `Main.Galactic.x_consistency`: C02-07
+- `Matrix.exp_conj`: C15-17
+- `PositiveLedger.common_drain_conserves`: C13-13
+- `PositiveLedger.common_fractional_drain_unique`: C13-12
+- `PositiveLedger.step_positive`: C13-17
+- `PositiveLedger.stock`: C13-38
+- `PositiveLedger.stock_hasDerivAt`: C13-18
+- `RetainedRelaxation.angular_observable_preserved`: C13-49
+- `RetainedRelaxation.marginal_preserved`: C13-49
+- `RetainedRelaxation.relax_nonneg`: C13-49
+- `ShellLadder.shell_allowed_iff`: C10-01
+- `ShellLadder.shell_load`: C10-07
+- `ShellLadder.singlet_source_norm`: C10-14
+- `Spine.area_blocking`: C04-60, C06-26, C15-54
+- `Spine.channel_area`: C06-24, C14-65, C15-56
+- `Spine.epsilon_bracket`: C01-13, C05-32, C11-107
+- `Spine.horizon_quarter`: C06-29
+- `Spine.muRatio`: C01-02
+- `Spine.muRatio_bracket`: C03-155, C10-22
+- `Spine.tauRatio_bracket`: C03-155
+- `Spine.zeta`: C15-33
+- `Sweep.Alg.area_commutator`: C12-65
+- `Sweep.Alg.bridge_factorizes`: C09-32
+- `Sweep.Alg.conformal_expansion`: C11-49
+- `Sweep.Alg.constitutive_derivative`: C12-14
+- `Sweep.Alg.cubic_symbol`: C03-71
+- `Sweep.Alg.heisenberg_gap`: C04-53
+- `Sweep.Alg.invariant_form_scalar`: C11-94
+- `Sweep.Alg.kernel_mass`: C11-89
+- `Sweep.Alg.label_dims`: C04-65, C04-66
+- `Sweep.Alg.label_match`: C04-65, C04-66, C07-52
+- `Sweep.Alg.matrix_units`: C10-35
+- `Sweep.Alg.mismatch_asymptotic`: C04-54
+- `Sweep.Alg.projected_vector_zero`: C08-44
+- `Sweep.Alg.regPerm_inState`: C07-46
+- `Sweep.Alg.reversible_export`: C07-46
+- `Sweep.Alg.rotated_contour`: C12-79
+- `Sweep.Alg.s3_closed`: C10-35
+- `Sweep.Alg.s3_independent`: C10-35
+- `Sweep.Alg.s3_relation`: C10-35
+- `Sweep.Alg.transported_bilinear_zero`: C08-45
+- `Sweep.Alg.transverse_poisson`: C12-03
+- `Sweep.Alg.units_span`: C10-35
+- `Sweep.Alg.z_relation`: C09-47
+- `Sweep.Ana.amplitude_sq`: C07-54
+- `Sweep.Ana.chiR_causal`: C12-37
+- `Sweep.Ana.chiR_coincident`: C12-37
+- `Sweep.Ana.chiR_poles`: C12-37
+- `Sweep.Ana.chiR_transform`: C12-37
+- `Sweep.Ana.gaussian_first_moment`: C09-28
+- `Sweep.Ana.gaussian_representation_3d`: C07-54
+- `Sweep.Ana.hfg_C0`: C08-89
+- `Sweep.Ana.integral_two_pole`: C12-39
+- `Sweep.Ana.moment_1d`: C09-28
+- `Sweep.Ana.static_sum_rule`: C12-39
+- `Sweep.Ana.two_sided_transform`: C08-67
+- `Sweep.Count.average`: C07-62
+- `Sweep.Count.fibre_card`: C07-62
+- `Sweep.Dirac.inversion`: C07-88
+- `Sweep.Dirac.no_compensation`: C07-88
+- `Sweep.Dirac.parity`: C07-88
+- `Sweep.Dirac.time_flip`: C07-88
+- `Sweep.Dirac.vector_spin_one`: C04-74
+- `Sweep.Gauss.cov3`: C07-55
+- `Sweep.Gauss.hermite_gram`: C07-55
+- `Sweep.Gauss.so3_split`: C07-55
+- `Sweep.Info.fused_label_cap`: C04-34
+- `Sweep.Info.seven_label_cap`: C04-34
+- `Sweep.SpinPair.Qf_psd`: C07-79
+- `Sweep.SpinPair.dilation_weights`: C04-73
+- `Sweep.SpinPair.dual_commutator`: C04-39
+- `Sweep.SpinPair.dual_equivalent`: C04-39
+- `Sweep.SpinPair.fixed_on_V3`: C04-73, C07-79
+- `Sweep.SpinPair.kernel_V3`: C07-79
+- `Sweep.SpinPair.leakage`: C09-14
+- `Sweep.SpinPair.leakage_weighted`: C09-14
+- `Sweep.SpinPair.projector_split`: C04-36, C04-41, C04-65, C07-49, C07-52, C09-06
+- `Sweep.SpinPair.selfadjoint`: C07-79
+- `Sweep.SpinPair.top_state`: C04-40
+- `Sweep.SpinPair.transfer_formula`: C04-44
+- `Sweep.SpinPair.transfer_limit`: C04-44
+- `Sweep.SpinPair.transfer_semigroup`: C04-44
+- `Sweep.Stag.CG_zero`: C09-65
+- `Sweep.Stag.CK_half`: C09-65
+- `Sweep.Stag.CK_lambda`: C09-65
+- `Sweep.Stag.LG_zero`: C09-65
+- `Sweep.Stag.L_symmetric`: C09-65

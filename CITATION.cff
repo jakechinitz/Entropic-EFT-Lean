@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "EntropicEFT: a Lean 4 formalization of Entropic Scalar EFT"
+title: "Entropic: a Lean 4 formalization of Entropic Scalar EFT"
 message: "If you use this formalization, please cite the tagged release you built."
 type: software
 authors:
@@ -7,11 +7,14 @@ authors:
     given-names: Jake
 repository-code: "https://github.com/jakechinitz/Entropic-EFT-Lean"
 license: Apache-2.0
-version: 0.8.0
+version: 0.9.0
+date-released: 2026-10-22
 abstract: >-
-  A modular Lean 4 / Mathlib formalization of the finite combinatorial and algebraic
-  content of "Entropic Scalar EFT: From Entanglement Microstructure to Gravity and
-  Cosmic Structure". Machine-checked results include the 1,680-state boundary ensemble
+  A Lean 4.35 / Mathlib formalization of the mathematical statements of "Entropic
+  Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure": one
+  library of 2,379 theorems using only the standard axioms, with a ledger of all 1,437
+  manuscript claims (852 proved, 78 in part). The v0.8 library is its submodule
+  Entropic.EFT. Machine-checked results include the 1,680-state boundary ensemble
   and its exact K-squared spectrum, the corrected H.9 closure decomposition, existence
   and uniqueness of the stationary eta*, the gauge factor-split no-go, and joint
   satisfiability of the interpreted premise set in an explicit finite model. Physical
