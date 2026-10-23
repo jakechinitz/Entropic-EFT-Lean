@@ -100,3 +100,7 @@ import Entropic.Pass2.IBPForm
 import Entropic.Pass2.Conformal
 import Entropic.Pass2.ADM
 import Entropic.Pass2.Kinetic
+import Entropic.Pass2.SlGen
+import Entropic.Pass2.LieJJ
+import Entropic.Pass2.LieTensor
+import Entropic.Pass2.Bridge81
