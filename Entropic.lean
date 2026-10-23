@@ -106,9 +106,9 @@ import Entropic.Pass2.LieTensor
 import Entropic.Pass2.Bridge81
 
 -- Effective dynamics and empirical certificates, 2026-10-23.
-import Entropic\Extensions20261023\EmpiricalCertificates
-import Entropic\Extensions20261023\MuseProjection
-import Entropic\Extensions20261023\ConnectedClosure
-import Entropic\Extensions20261023\EffectiveContact
-import Entropic\Extensions20261023\MergerContact
-import Entropic\Extensions20261023\ClusterOutliers
+import Entropic.Extensions20261023.EmpiricalCertificates
+import Entropic.Extensions20261023.MuseProjection
+import Entropic.Extensions20261023.ConnectedClosure
+import Entropic.Extensions20261023.EffectiveContact
+import Entropic.Extensions20261023.MergerContact
+import Entropic.Extensions20261023.ClusterOutliers
