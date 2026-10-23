@@ -11,12 +11,11 @@ def interceptWeight (i : Fin 112) : ℚ := 1/112 - (177/200:ℚ)*slopeWeight i
 def lowSum (w : Fin 112 → ℚ) : ℚ := ∑ i, min (w i*lower i) (w i*upper i)
 def highSum (w : Fin 112 → ℚ) : ℚ := ∑ i, max (w i*lower i) (w i*upper i)
 theorem grid_brackets : ∀ i : Fin 112, 0 ≤ lower i ∧ lower i ^ 2 ≤ square i ∧ square i ≤ upper i ^ 2 := by
-  intro i
-  fin_cases i <;> norm_num [lower, upper, square, z]
+  decide +kernel
 theorem slope_interval : (1.22564:ℚ) < lowSum slopeWeight ∧ highSum slopeWeight < 1.22566 := by
-  norm_num [lowSum, highSum, slopeWeight, lower, upper, z, Fin.sum_univ_succ]
+  decide +kernel
 theorem intercept_interval : (1.00277:ℚ) < lowSum interceptWeight ∧ highSum interceptWeight < 1.00280 := by
-  norm_num [lowSum, highSum, interceptWeight, slopeWeight, lower, upper, z, Fin.sum_univ_succ]
+  decide +kernel
 
 theorem weighted_interval (w l u y : ℝ) (hl : l ≤ y) (hu : y ≤ u) :
     min (w*l) (w*u) ≤ w*y ∧ w*y ≤ max (w*l) (w*u) := by

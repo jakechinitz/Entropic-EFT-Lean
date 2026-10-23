@@ -13,7 +13,7 @@ These sources consolidate six standalone supplements into the existing pinned li
 
 The original projects in the Sol and Fable workspace are, respectively: Unified empirical program 2026-10-23; Connected theory closure 2026-10-23; Effective dynamics and coupling 2026-10-23; Conservative cluster merger 2026-10-23; and Cluster outlier closure 2026-10-23. Original files and all saved numerical runs are preserved there. The publication integration record records source SHA-256 hashes and exact paper snapshots.
 
-The original certificates were checked in the available Lean/mathlib 4.19 standalone environment. This repository pins 4.35: successful CI, including the axiom audit, is the compatibility check. The upstream ledger totals and manuscript hash retain their original snapshot meaning; these additions do not silently reclassify its empirical claims.
+All six integrated source files now pass standalone Lean/mathlib 4.19 compilation and axiom checks. The original MuseProjection file was an unfinished numerical proof attempt; its three finite rational certificates are completed here using `decide +kernel`, without changing their statements. Its generic weighted-interval lemma is unchanged. This repository pins 4.35: successful CI, including the axiom audit, is the compatibility check. The upstream ledger totals and manuscript hash retain their original snapshot meaning; these additions do not silently reclassify its empirical claims.
 
 ## What is not certified
 
