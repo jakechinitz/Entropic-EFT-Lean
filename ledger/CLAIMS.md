@@ -775,6 +775,14 @@ Rows classed "other": C05-54 (cited theorem (Ornstein–Weiss); not formalized);
 - `EFT.UV.quantumK2R_lower`: C14-74
 - `EFT.UV.spectrum_min`: C04-18
 - `EFT.UV.sum_by_level`: C04-25
+- `FiniteRenewal.arithmetic_return_load`: C10-09
+- `FiniteRenewal.consecutive_pair_count`: C01-28
+- `FiniteRenewal.finite_register_reproduces`: C14-87
+- `FiniteRenewal.geometric_return_load`: C10-10
+- `FiniteRenewal.kac_sum`: C10-09
+- `FiniteRenewal.label_kac`: C10-09
+- `FiniteRenewal.reading_periodic`: C03-20
+- `FiniteRenewal.window_count`: C03-20
 - `GalacticLaw.btfr_fourth_power`: C02-14
 - `GalacticLaw.btfr_parameter_free`: C02-04
 - `GalacticLaw.deep_limit`: C02-14

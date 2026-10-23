@@ -83,7 +83,7 @@ def effWeight (M S : ℝ) : ℝ := 1 + S / M
 
 /-- Two baryonic components with different effective weights (galaxies 1 + 1 = 2, gas
 1 + 0 = 1 here), every pair force reciprocal, free fall universal, total momentum
-conserved. Bodies: galaxy, its stock (co-located), gas. -/
+conserved. Bodies: galaxy, its stock and gas, at arbitrary positions. -/
 theorem distinct_weights_reciprocal (x : Fin 3 → V) (κ : Fin 3 → Fin 3 → ℝ) (hκ : ∀ i j, κ i j = κ j i) :
     let m : Fin 3 → ℝ := ![1, 1, 5]
     effWeight (m 0) (m 1) ≠ effWeight (m 2) 0 ∧

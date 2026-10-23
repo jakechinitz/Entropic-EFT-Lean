@@ -10,18 +10,33 @@ and the ledger citation check on every push.
 
 ## Effective dynamics and cluster extensions (2026-10-23)
 
-Six modules under `Entropic/Extensions20261023` add 119 explicit theorem declarations to the import graph. The 154-module/2,812-theorem figures below identify the previously audited upstream snapshot; they are not recomputed totals for these additions. The normal pinned Lean 4.35 build and module-based axiom audit include all six modules. Their earlier standalone checks used Lean/mathlib 4.19. See [extension scope and provenance](verification/extensions_2026-10-23.md) for the distinction between conditional mathematics and empirical calculations.
+Six modules under `Entropic/Extensions20261023` add 119 explicit theorem declarations to the import graph. The status table below counts them. The normal pinned Lean 4.35 build and module-based axiom audit include all six modules. Their earlier standalone checks used Lean/mathlib 4.19. See [extension scope and provenance](verification/extensions_2026-10-23.md) for the distinction between conditional mathematics and empirical calculations.
 
-## Status (2026-10-22)
+## Stock settling and finite renewal (2026-10-23)
+
+Two modules address open points from an external review. See [scope and reading](verification/settling_renewal_2026-10-23.md).
+
+- `Entropic/FiniteRenewal.lean`: Kac's return-time identity for any finite reversible dynamics, and a finite shift register whose readings have the product law on every window up to its length (ensemble over register states). The charged-lepton shell load 720^N holds exactly without memorylessness. The G_* chain does not transfer as derived: every finite reversible renewal is periodic with entropy rate zero, which the maximum-entropy-rate selection of App. H.4 rejects.
+- `Entropic/StockSettling.lean`: any schedule of central pair contacts conserves linear and angular momentum; reversible maps preserve fine-grained Casimirs; on a signed work ledger the population at supply exhaustion does not depend on the contact rate; and with work proportional to σ² the settled fraction is min(1, σ_c²/σ²). The σ² scaling and the fixed supply per unit stock are stated hypotheses.
+
+## Assumption compatibility (2026-10-23)
+
+`Entropic/Compatibility` proves `Nonempty EffectiveModel` (`Entropic.Compatibility.effective_assumptions_compatible`): one structure carrying the native closure root η and ε, the 1680-state Gibbs histories, the 720-state shell cycle, a finite positive stock shared by reconstruction, redistribution and nonzero reciprocal Newton forces, and an explicit expanding homogeneous Einstein solution with positive energy transfer, tied to the finite model through the same mass budget. It also proves that a fixed finite faithful archive and an exact dense-core RAR profile are each impossible. This is an effective subsystem, not a consistency proof of the full theory: the finite force system is not embedded in the expanding metric. `Entropic/Completion/InfiniteHistory.lean` gives one probability space for all integer times with the native Gibbs marginal and a measure-preserving reversible shift. Provenance and scope: [compatibility record](verification/compatibility_2026-10-23.md).
+
+The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completion.global_effective_assumptions_compatible`): the exact native rooted history measure with the unique native η, and a global inhomogeneous clock/stock family with positive baryons, donor and retained stock, active release, radial contrast at every epoch and unbounded future proper time. The local pressure equations, density and volume evolution and component positivity are kernel checked; the coordinate Einstein-tensor reduction is checked separately in SymPy (`tools/completion_metric_check.py`). `Obstructions`, with `Compatibility.exact_dense_core_isEmpty`, records four incompatibilities (fixed finite archive against recoverable IID history, positive stock against the exact raw dense-core profile, one exchange vector against distinct streams, and bare against physical G without matching). `GlobalFloor.current_floor_fails_global_domain` proves that its first floor constant leaves the depletion-action domain; the selected-action certificate is local in time. This is not a microscopic or full-theory compatibility proof. Provenance, the 27 obligations and the global-floor candidate: [completion record](verification/completion_2026-10-23.md).
+
+`Entropic/FourItems` adds two follow-up modules. `Streams`: a covariant 1+1 source/force decomposition for multistream exchange with energy conservation, positive internal allocation, an explicit two-stream witness and Bianchi-I constraint propagation (the Bianchi-I metric reduction is checked in SymPy, `tools/fouritems_bianchi_tensor.py`). `Selection`: matching underdetermination when the selected C.5 premise is omitted, affine kernel-normalization degeneracy, reversible energy-preserving swaps, and finite compensating-register bounds for an energy-conserving reset. These are not physical-selection proofs and contain no bound galaxy or native gravitational state. Record: [four open items](verification/fouritems_2026-10-23.md).
+
+## Status (2026-10-23)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 154 modules, 2,812 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_chunk14_2026-10-22.log`) |
+| Library | one Lean library, `Entropic`: 184 modules, 3,404 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_fouritems_2026-10-23.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
-| Citation check | `scripts/CiteCheck.lean`: 979 Lean names cited in the ledger, 0 unresolved |
+| Citation check | `scripts/CiteCheck.lean`: 987 Lean names cited in the ledger, 0 unresolved |
 
 Supporting files:
 
