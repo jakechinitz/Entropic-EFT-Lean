@@ -74,7 +74,7 @@ theorem past_exists_at_every_tick (t : ℤ) : ∃ s : ℤ, s < t := ⟨t-1, by o
 
 def blank : Microstate := ⟨0,⟨0,by decide⟩⟩
 def rootMarginal (eta : ℝ) (t : ℤ) : Measure Microstate :=
-  if 0≤t then nativeMeasure eta else Measure.dirac blank
+  if 0 ≤ t then nativeMeasure eta else Measure.dirac blank
 instance (eta : ℝ) (t : ℤ) : IsProbabilityMeasure (rootMarginal eta t) := by
   unfold rootMarginal; split_ifs <;> infer_instance
 def rootedLaw (eta : ℝ) : Measure History := Measure.infinitePi (rootMarginal eta)
@@ -83,7 +83,7 @@ instance (eta : ℝ) : IsProbabilityMeasure (rootedLaw eta) := inferInstanceAs
 
 -- A chosen initial boundary is compatible with exact future renewal.
 -- It is an extra initial-state choice, not a consequence of finite accessible capacity.
-theorem rooted_future_law (eta : ℝ) (times : Finset ℤ) (ht : ∀ t∈times,0≤t)
+theorem rooted_future_law (eta : ℝ) (times : Finset ℤ) (ht : ∀ t∈times,0 ≤ t)
     (word : ℤ → Microstate) :
     rootedLaw eta (Set.pi (times : Set ℤ) (fun t => {word t}))=
       ∏ t∈times,ENNReal.ofReal (probability eta (word t)) := by
