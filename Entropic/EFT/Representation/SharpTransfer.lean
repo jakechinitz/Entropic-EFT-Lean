@@ -4,7 +4,7 @@ import Mathlib.Analysis.InnerProductSpace.Basic
 /-!
 # Entropic.EFT.Representation.SharpTransfer
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.4.2b--e.
 * Closed algebra: if transmitted and complement maps are orthogonal partial isometries
   whose initial projectors sum to identity, their flagged direct-sum map is an isometry.

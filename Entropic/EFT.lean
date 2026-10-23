@@ -48,5 +48,5 @@ import Entropic.EFT.Structure.Connections
 # Entropic.EFT
 
 Top-level import for the machine-audited formalization scaffold of the manuscript.
-Each imported module has its own LOCAL CONTRACT and can be read independently.
+Each imported module has its own local contract and can be read independently.
 -/

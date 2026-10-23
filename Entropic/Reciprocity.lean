@@ -3,25 +3,26 @@ import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Analysis.Calculus.MeanValue
 import Mathlib.Tactic
 
-/-! Momentum balance with an inertial retained stock (response to critique items 1, 10).
+/-! Momentum balance with an inertial retained stock (App. O.3).
 
 App. O.3 realizes the galactic excess as a positive, collisionless, self-gravitating
-stock that "moves with its carrier" (Vlasov–Poisson). If that stock is part of the
-state and couples like all other mass (one metric, unit weight), every interaction is
-a reciprocal pair force. Then:
+stock that moves with its carrier (Vlasov–Poisson). With the stock in the state and
+coupled like all other mass (one metric, unit weight), every interaction is a
+reciprocal pair force. Then:
 
-* total momentum of baryons + stock is conserved exactly (`total_force_zero`);
-* free fall is universal: accelerations do not depend on the body's own mass;
-* any baryonic "self-acceleration" is exactly the stock's recoil (`baryon_recoil`);
-* components with different effective excess weights (stock per baryon) coexist with
-  the third law and universal free fall (`trilemma_escape`); the critique's trilemma
-  assumes the baryons are the only bodies;
+* total momentum of baryons and stock is conserved exactly (`total_force_zero`);
+* free fall is universal: accelerations are independent of the body's own mass;
+* the net force on the baryons equals minus the force on the stock (`baryon_recoil`);
+* components with different effective excess weights (stock per baryon) satisfy the
+  third law and universal free fall when the stock is counted as a body
+  (`distinct_weights_reciprocal`);
 * stock created from source-associated capacity at the local matter velocity
   conserves momentum (`comoving_exchange`);
-* predictions are functions of the present state (baryons AND stock); a history
-  label is replaced by a state variable (`stock_is_state`);
+* predictions are functions of the present state, baryons and stock together; the
+  stock content serves as the state variable that carries a system's history
+  (`stock_is_state`);
 * a finite exchange rate makes the effective weight Lipschitz in time, so a gas
-  parcel's weight cannot jump when it shocks (`weight_lipschitz`). -/
+  parcel's weight changes continuously when it shocks (`weight_lipschitz`). -/
 
 noncomputable section
 namespace Entropic.Reciprocity
@@ -80,10 +81,10 @@ theorem baryon_recoil {β σ : Type*} [Fintype β] [Fintype σ]
 /-- Effective excess weight of a component carrying stock S per baryonic mass M. -/
 def effWeight (M S : ℝ) : ℝ := 1 + S / M
 
-/-- Trilemma escape. Two baryonic components with DIFFERENT effective weights
-(galaxies 1 + 1 = 2, gas 1 + 0 = 1 here), every pair force reciprocal, free fall
-universal, total momentum conserved. Bodies: galaxy, its stock (co-located), gas. -/
-theorem trilemma_escape (x : Fin 3 → V) (κ : Fin 3 → Fin 3 → ℝ) (hκ : ∀ i j, κ i j = κ j i) :
+/-- Two baryonic components with different effective weights (galaxies 1 + 1 = 2, gas
+1 + 0 = 1 here), every pair force reciprocal, free fall universal, total momentum
+conserved. Bodies: galaxy, its stock (co-located), gas. -/
+theorem distinct_weights_reciprocal (x : Fin 3 → V) (κ : Fin 3 → Fin 3 → ℝ) (hκ : ∀ i j, κ i j = κ j i) :
     let m : Fin 3 → ℝ := ![1, 1, 5]
     effWeight (m 0) (m 1) ≠ effWeight (m 2) 0 ∧
       (∀ i j, pairForce m κ x i j = -pairForce m κ x j i) ∧
@@ -101,8 +102,8 @@ theorem comoving_exchange (mu mR δ : ℝ) (v vR : V) :
   rw [sub_smul]; abel
 
 /-- The excess force on a test body depends on the stock in the state. Identical
-baryons with different stock give different forces, so a "history label" is a
-state variable (the stock), not a non-state rule. -/
+baryons with different stock give different forces, so the stock is the state variable
+that records a system's history. -/
 theorem stock_is_state (G d : ℝ) (hG : G ≠ 0) (hd : d ≠ 0) (S₁ S₂ : ℝ) (h : S₁ ≠ S₂) :
     G * S₁ / d ^ 2 ≠ G * S₂ / d ^ 2 := by
   intro heq

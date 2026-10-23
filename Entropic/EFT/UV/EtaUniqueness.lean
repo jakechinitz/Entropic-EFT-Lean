@@ -3,7 +3,7 @@ import Entropic.EFT.UV.EtaStar
 /-!
 # Entropic.EFT.UV.EtaUniqueness
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.2.
 * Goal: isolate the real-analysis theorem proving the stationary closure point is globally unique.
 * Exact finite inputs already proved elsewhere: K^2 lies in [122/3,170/3], hence range 16.

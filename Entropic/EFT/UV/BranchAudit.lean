@@ -3,7 +3,7 @@ import Entropic.EFT.UV.EtaStar
 /-!
 # Entropic.EFT.UV.BranchAudit
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.5, Appendix L.
 * Exact arithmetic is separated from historical/empirical branch selection.
 * No theorem says a branch is physically realized.

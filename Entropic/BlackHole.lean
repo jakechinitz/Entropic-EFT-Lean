@@ -16,7 +16,7 @@ form q(r) = 1 − r_s/r on any exterior interval, with the marginal surface at r
 
 F.5: Schwarzschild horizon thermodynamics with the matched length L*² = ħG/c³.
 The physical identifications (capacity ↔ q_geo, the domain postulate q ≥ 0,
-L_P = L*) are INPUT, exactly as the manuscript states them. -/
+L_P = L*) are input, exactly as the manuscript states them. -/
 
 noncomputable section
 namespace Entropic.BlackHole

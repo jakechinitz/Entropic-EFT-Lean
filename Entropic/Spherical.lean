@@ -81,7 +81,7 @@ theorem core_deriv_neg {A x : ℝ} (hA : 0 < A) (hx : 6 ≤ x) :
 /-- Conditional incompatibility: a stock with nonnegative enclosed-mass
 derivative cannot have this exact enclosed-mass profile at x >= 6.
 The equality identifying the physical stock with the spherical excess is
-EXPLICIT. The theorem does not prohibit signed effective/phantom densities. -/
+explicit. The theorem does not prohibit signed effective/phantom densities. -/
 theorem no_nonnegative_stock_matching_core
     {A x : ℝ} (hA : 0 < A) (hx : 6 ≤ x) (stock : ℝ → ℝ)
     (hmatch : stock = coreExcessMass A)

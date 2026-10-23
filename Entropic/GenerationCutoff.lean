@@ -6,7 +6,7 @@ cutoff has also been checked without choosing a preferred excluded alphabet").
 Removing one or two labels from the seven-label alphabet always leaves a
 nonconstant closure functional K²; removing any three labels makes it constant
 (zero closure variance). The enumeration is kernel checked with `decide`.
-The physical reading of "excluded labels" as generations is INPUT. -/
+The physical reading of "excluded labels" as generations is input. -/
 
 namespace Entropic.GenerationCutoff
 open Entropic.FiniteModel
@@ -50,7 +50,7 @@ theorem three_exclusion_constant :
     (labels.sublistsLen 3).all (fun ex => constantK2 (reduced ex) && (tuples (reduced ex)).length == 24) = true := by
   decide
 
-/-- The structural reason, for ANY integer alphabet: 3K² is invariant under all
+/-- The structural reason, for any integer alphabet: 3K² is invariant under all
 permutations of the four ports (it depends only on the label multiset). -/
 theorem threeK2_swap12 (a b c d : Int) : threeK2 (a, b, c, d) = threeK2 (b, a, c, d) := by
   simp only [threeK2]; ring

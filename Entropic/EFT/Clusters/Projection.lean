@@ -3,7 +3,7 @@ import Entropic.EFT.Cosmology.SaturatedDust
 /-!
 # Entropic.EFT.Clusters.Projection
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 18; Section 26 cluster rows.
 * Closed algebra: capacity ceiling inherited from epsilon, residual/source bookkeeping formulas.
 * Conditional physics: diffuse suppression, hot-bath weighting, coherence lift and regime split.

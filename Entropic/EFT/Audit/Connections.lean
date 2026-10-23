@@ -7,10 +7,10 @@ import Entropic.EFT.Marked.SingleStrandRecord
 /-!
 # Entropic.EFT.Audit.Connections
 
-LOCAL CONTRACT
+Local contract
 * Purpose: collect cross-sector identities discovered by dependency auditing.
 * Every theorem here is exact algebra imported from the sector modules; none is new physics.
-* These results are useful precisely because they show when two apparent checks are NOT independent.
+* These results show when two apparent checks are not independent.
 -/
 
 namespace Entropic.EFT.Audit
@@ -73,7 +73,7 @@ theorem projective_route_ratio :
 
 /-- Three appearances of `3/2` play different algebraic roles.  Under the selected
 single-strand realization the closure-evidence weight and O.13 zero-point ledger share the
-same underlying three-coordinate response count, so they must NOT be advertised as
+same underlying three-coordinate response count, so they must not be advertised as
 independent numerical evidence.  The electron `3/2` remains the reciprocal of the separate
 `2/3` transverse export factor. -/
 def threeHalvesRoleAudit : List String :=

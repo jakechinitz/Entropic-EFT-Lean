@@ -3,24 +3,24 @@ import Entropic.EFT.Gauge.SpinePropagation
 /-!
 # Entropic.EFT.Gauge.VertexRealization
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: joint realizability of the seven-item decorated-vertex specification.
-* WHAT THIS IS: a concrete finite model — explicit open factor, gauge factor, frame,
-  generator list — satisfying all seven microscopic requirements simultaneously,
-  kernel-checked.  The compositional sufficiency theorem is CONSUMED here: the model's
+* What this is: a concrete finite model, explicit open factor, gauge factor, frame,
+  generator list, satisfying all seven microscopic requirements simultaneously,
+  kernel-checked.  The compositional sufficiency theorem is consumed here: the model's
   assembled transfer is fully gauge invariant because its generators obey decoration
   locality, with no further argument.
-* THE FRAME THEOREM (load-bearing): the explicit integer tetrahedral frame
-  v₀=(1,1,1), v₁=(1,−1,−1), v₂=(−1,1,−1), v₃=(−1,−1,1) — pairwise dot −1, norm² 3,
-  hence cos θ = −1/3 — REALIZES the audited invariant: |Σ mᵢvᵢ|² = classicalClosure3
+* The frame theorem: the explicit integer tetrahedral frame
+  v₀=(1,1,1), v₁=(1,−1,−1), v₂=(−1,1,−1), v₃=(−1,−1,1), pairwise dot −1, norm² 3,
+  hence cos θ = −1/3, realizes the audited invariant: |Σ mᵢvᵢ|² = classicalClosure3
   for every boundary code.  The frame takes no gauge-factor argument by type, so the
   closure operator built from it is architecturally, not gauge-geometrically, framed.
   This closes the frame-provenance trap at the structural level.
-* WHAT THIS IS NOT: the physical GFT condensate.  Item (1) (j=3 selection) is realized
-  KINEMATICALLY (the seven-channel alphabet is the model's alphabet); its DYNAMICAL
+* What this is not: the physical GFT condensate.  Item (1) (j=3 selection) is realized
+  kinematically (the seven-channel alphabet is the model's alphabet); its dynamical
   stabilization, and the derivation of this model from an actual decorated GFT field,
   remain the physics program inside `GeometricEmbeddingSpec`.  The theorem proven is:
-  the specification is jointly satisfiable — nothing in requirements (1)–(7) is
+  the specification is jointly satisfiable: nothing in requirements (1)–(7) is
   contradictory, and decoration locality provably propagates to the assembled dynamics.
 -/
 
@@ -62,10 +62,10 @@ def closureVec (a : PortAssignment) : IVec :=
   , labelInt a.m0 - labelInt a.m1 + labelInt a.m2 - labelInt a.m3
   , labelInt a.m0 - labelInt a.m1 - labelInt a.m2 + labelInt a.m3 )
 
-/-- FRAME REALIZATION THEOREM: the squared norm of the closure vector in the explicit
-architectural frame equals the audited invariant `3|c|² = 4Σ − S²` for EVERY code.
+/-- Frame realization theorem: the squared norm of the closure vector in the explicit
+architectural frame equals the audited invariant `3|c|² = 4Σ − S²` for every code.
 The soft closure operator is thereby exhibited as an open-factor observable of a
-concrete gauge-independent frame — the Gauss reading cannot re-enter through the frame. -/
+concrete gauge-independent frame: the Gauss reading cannot re-enter through the frame. -/
 theorem frame_realizes_closure (b : BoundaryCode) :
     normSq (closureVec b.assignment) = classicalClosure3 b := by
   unfold normSq dot closureVec classicalClosure3 sumM sumSq
@@ -82,7 +82,7 @@ def iota0 : GaugeFactor := 0
 /-- The model's generators: the Gibbs reweighting is diagonal, so the structural content
 of a transfer step on the open factor is a code-preserving map; we take the identity
 step together with the orientation flip as the generating set.  What matters for the
-specification is their TYPE: every generator is `BoundaryCode → BoundaryCode`,
+specification is their type: every generator is `BoundaryCode → BoundaryCode`,
 touching the gauge factor nowhere. -/
 def orientationFlip (b : BoundaryCode) : BoundaryCode :=
   ⟨⟨1 - b.orientation.val, by omega⟩, b.assignment⟩
@@ -94,8 +94,8 @@ theorem quantifies over. -/
 def assembledTransfer {B : Type*} : JointState BoundaryCode B → JointState BoundaryCode B :=
   (vertexGenerators.map (fun f => actLeft (B := B) f)).foldr (· ∘ ·) id
 
-/-- (2) CONSUMED SUFFICIENCY: the model's assembled transfer commutes with EVERY gauge
-transformation, directly by `assembled_transfer_gauge_commutes` — decoration locality
+/-- (2) Consumed sufficiency: the model's assembled transfer commutes with every gauge
+transformation, directly by `assembled_transfer_gauge_commutes`: decoration locality
 of the generator list is the only input. -/
 theorem model_transfer_gauge_invariant {B G : Type*} (U : G → B → B) (g : G) :
     assembledTransfer (B := B) ∘ gaugeAction U g
@@ -112,7 +112,7 @@ rule, so the admissible ensemble is dynamically stable. -/
 theorem flip_preserves_injectivity (b : BoundaryCode) :
     (orientationFlip b).assignment.injective ↔ b.assignment.injective := Iff.rfl
 
-/-- (6) Orientation sector: the ℤ₂ label is genuinely two-valued and the flip is an
+/-- (6) Orientation sector: the ℤ₂ label is two-valued and the flip is an
 involution exchanging the sectors. -/
 theorem flip_involutive : ∀ b, orientationFlip (orientationFlip b) = b := by decide
 
@@ -129,7 +129,7 @@ theorem jointWeight_factorizes (η : ℝ) :
 /-! ## The joint realization -/
 
 /-- The seven-item decorated-vertex specification, stated over an arbitrary gauge-group
-family so gauge invariance is quantified over EVERY action on the gauge factor. -/
+family so gauge invariance is quantified over every action on the gauge factor. -/
 structure DecoratedVertexModel where
   /-- (1) kinematic: the channel alphabet has exactly seven letters (2j+1, j=3). -/
   sevenChannels : Fintype.card Label = 7
@@ -150,7 +150,7 @@ structure DecoratedVertexModel where
   measureSplit : ∀ η : ℝ, ∃ (w₁ : BoundaryCode → ℝ) (w₂ : GaugeFactor → ℝ),
     jointWeight η = fun p => w₁ p.1 * w₂ p.2
 
-/-- FINAL THEOREM: the specification is jointly satisfiable — the explicit model
+/-- The specification is jointly satisfiable: the explicit model
 witnesses all seven requirements at once. -/
 def vertexModel : DecoratedVertexModel where
   sevenChannels := by decide

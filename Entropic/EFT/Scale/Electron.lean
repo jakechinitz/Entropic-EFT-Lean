@@ -3,7 +3,7 @@ import Entropic.EFT.Marked.CorrectedH9
 /-!
 # Entropic.EFT.Scale.Electron
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 2, 13; Appendices D.4, H.6, H.9.
 * Closed algebra: recurrence, survival gap formula, electron-anchored L*, induced G* identity.
 * Physical bridge exposed: identifying the lowest positive charged survival gap with the

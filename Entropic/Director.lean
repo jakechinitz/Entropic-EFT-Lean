@@ -37,7 +37,7 @@ theorem S_conj (A R : M3) (hR : Rᵀ * R = 1) : S (R * A * Rᵀ) = S A := by
   rw [e1, e2, tr_conj _ _ hR, tr_conj _ _ hR, tr_conj _ _ hR]
 
 /-- Adapted frame (director along the third axis, so the third row vanishes):
-𝒮 = (a−f)² + (b+d)² + c² + g² — the anisotropic-splay square plus |bend|². -/
+𝒮 = (a−f)² + (b+d)² + c² + g²: the anisotropic-splay square plus |bend|². -/
 theorem S_adapted (A : M3) (h : ∀ j, A 2 j = 0) :
     S A = (A 0 0 - A 1 1) ^ 2 + (A 0 1 + A 1 0) ^ 2 + A 0 2 ^ 2 + A 1 2 ^ 2 := by
   unfold S

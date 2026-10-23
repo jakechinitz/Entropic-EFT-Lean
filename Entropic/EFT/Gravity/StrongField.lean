@@ -5,7 +5,7 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Gravity.StrongField
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 21; Appendices F, N.5--N.7.
 * Closed algebra: Misner--Sharp first-integral rearrangement, q=0 horizon radius,
   horizon 1/4 normalization identity.
@@ -61,7 +61,7 @@ structure SphericalEinsteinReduction where
   schwarzschildUniqueness : Prop
   marginalSphereIffQgeoZero : Prop
 
-/-- Physical domain interpretation, deliberately downstream of the geometric theorem. -/
+/-- Physical domain interpretation, downstream of the geometric theorem. -/
 structure CapacityExhaustionInterpretation where
   reduction : SphericalEinsteinReduction
   boundedDomain : StrongBoundarySpec

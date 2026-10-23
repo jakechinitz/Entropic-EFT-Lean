@@ -3,8 +3,8 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.OpenProblems.Interfaces
 
-LOCAL CONTRACT
-* Purpose: one-stop index of genuinely unresolved completions.
+Local contract
+* Purpose: index of the unresolved completions.
 * No field below is inhabited globally in this repository.
 * This prevents `open` in the manuscript from becoming `axiom` in Lean.
 -/

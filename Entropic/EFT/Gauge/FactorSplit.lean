@@ -4,11 +4,11 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Gauge.FactorSplit
 
-LOCAL CONTRACT
-* Manuscript: gauge-compatibility repair of the 1680 ensemble (response to the
-  gauge-invariance objection); standard GFT kinematics L²(G⁴/G) with Peter–Weyl.
+Local contract
+* Manuscript: gauge compatibility of the 1680 ensemble; standard GFT kinematics
+  L²(G⁴/G) with Peter–Weyl.
 * Closed here, kernel-checked:
-  - `sameFactorGaussCasimir_noGo`: the admissibility invariant K² CANNOT be the Gauss
+  - `sameFactorGaussCasimir_noGo`: the admissibility invariant K² cannot be the Gauss
     (local gauge) Casimir.  A Gauss Casimir annihilates every physical state; the
     audited spectrum has floor 122/3 > 0 on the nonempty ensemble.  Both readings at
     once are contradictory.  Uses the decide spectrum floor constructively.
@@ -21,12 +21,11 @@ LOCAL CONTRACT
     matched intermediate spin J = 0..6), hence 7⁴·7 = 16807 gauge-invariant modes; fixing
     one geometric intertwiner leaves 2401 open magnetic tuples, of which 840 are
     injective, doubled by orientation to the audited 1680.
-* Physical premise (explicit, NOT proven): the manuscript's routed capacity labels m_i
+* Physical premise (explicit, not proven): the manuscript's routed capacity labels m_i
   are the open/relational magnetic indices of the fixed-spin GFT quantum, while the
   cellwise SU(2) projector acts on the geometric/intertwiner factor.  This is
   `RelationalCapacityGaugeSplit` below.  The no-go shows the same-factor alternative is
-  impossible; it does not by itself construct the decorated 𝒢_v realizing the split —
-  that remains inside the open `GeometricEmbeddingSpec`.
+  impossible; it does not by itself construct the decorated 𝒢_v realizing the split: that remains inside the open `GeometricEmbeddingSpec`.
 -/
 
 set_option maxRecDepth 200000
@@ -71,7 +70,7 @@ def actLeft {A B : Type*} (f : A → A) : JointState A B → JointState A B :=
 def actRight {A B : Type*} (g : B → B) : JointState A B → JointState A B :=
   fun p => (p.1, g p.2)
 
-/-- Left-factor and right-factor operators commute EXACTLY.  This is the mechanism by
+/-- Left-factor and right-factor operators commute exactly.  This is the mechanism by
 which the admissibility invariant (open factor) coexists with the local gauge projector
 (intertwiner factor): `[K², P_inv] = 0` without `K² = 0`. -/
 theorem leftFactor_commutes_rightFactor {A B : Type*} (f : A → A) (g : B → B) :
@@ -111,7 +110,7 @@ theorem openFactor_chain :
 magnetic indices; the cellwise SU(2) projector acts on the geometric/intertwiner factor;
 g_share is capacity entropy conditional on the selected cell state.  The no-go above
 shows the same-factor alternative is impossible; constructing the decorated 𝒢_v that
-realizes THIS split microscopically remains part of the open GFT embedding. -/
+realizes this split microscopically remains part of the open GFT embedding. -/
 structure RelationalCapacityGaugeSplit where
   holds : Prop
 

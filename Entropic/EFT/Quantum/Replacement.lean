@@ -3,12 +3,12 @@ import Entropic.EFT.Information.Renewal
 /-!
 # Entropic.EFT.Quantum.Replacement
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Section 3.3, 22; Appendix H.8, H.11.
 * Purpose: isolate the exact quantum-channel statements needed by the theory.
 * Matrix algebra is explicit; complete positivity/Stinespring uniqueness is packaged as
   an external mathematical theorem interface until fully mechanized.
-* Position and retained marked fiber are NOT part of the replaceable register.
+* Position and retained marked fiber are not part of the replaceable register.
 -/
 
 namespace Entropic.EFT.Quantum

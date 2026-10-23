@@ -4,7 +4,7 @@ import Entropic.EFT.UV.EtaUniqueness
 /-!
 # Entropic.EFT.Numerics.Spine
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix P.
 * Purpose: specification of certified numerical enclosures, never floating-point proof by fiat.
 * Exact combinatorics belong in UV/Marked/Scale modules.  Transcendental decimal values need

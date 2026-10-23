@@ -5,18 +5,18 @@ import Mathlib.Analysis.Calculus.Deriv.MeanValue
 /-!
 # Entropic.EFT.UV.RootExistence
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.2 stationarity root.
-* Upgrade: existence of a stationary closure root is now a THEOREM conditional only on
+* Existence of a stationary closure root is a theorem conditional only on
   the calculus fields of `GibbsAnalysis` (finite-sum differentiation), no longer a bare
   field of `EtaStarSpec`.
 * Proved unconditionally here (no certificate needed): positivity of the partition
   function; the exact bounds `122/3 ≤ meanK2 η ≤ 170/3` for every real η, discharging
   the `mean_bounds` field of `GibbsAnalysis` outright.
 * The IVT endpoints are exact rationals: `g(1/100) ≤ 17/30 < 3/2` and
-  `g(9/244) ≥ (9/244)·(122/3) = 3/2` — the same arithmetic coincidence behind the
+  `g(9/244) ≥ (9/244)·(122/3) = 3/2`: the same arithmetic coincidence behind the
   cutoff theorem, now used constructively.
-* NOT proved here: the thirteen-digit decimal enclosure of `EtaStarSpec` (an interval
+* Not proved here: the thirteen-digit decimal enclosure of `EtaStarSpec` (an interval
   arithmetic project) and the derivative fields of `GibbsAnalysis` themselves.
 -/
 
@@ -47,7 +47,7 @@ theorem quantumK2R_upper {b : BoundaryCode} (hb : b ∈ boundaryStates) :
   have h' : ((quantumK3 b : ℝ)) ≤ 170 := by exact_mod_cast h
   linarith
 
-/-- The Gibbs mean never leaves the exact spectral window, for EVERY real η.
+/-- The Gibbs mean never leaves the exact spectral window, for every real η.
 This discharges the `mean_bounds` field of `GibbsAnalysis` as a theorem. -/
 theorem meanK2_bounds (η : ℝ) : (122/3 : ℝ) ≤ meanK2 η ∧ meanK2 η ≤ (170/3 : ℝ) := by
   constructor
@@ -92,7 +92,7 @@ theorem closureProduct_continuousOn (A : GibbsAnalysis) :
 
 /-! ## Existence -/
 
-/-- MAIN THEOREM: the stationarity equation has a root in the exact rational window
+/-- The stationarity equation has a root in the exact rational window
 `[1/100, 9/244]`, conditional only on the finite-sum calculus certificate. -/
 theorem stationary_root_exists (A : GibbsAnalysis) :
     ∃ η : ℝ, StationaryClosure η ∧ η ∈ Set.Icc (1/100 : ℝ) (9/244) := by

@@ -7,17 +7,17 @@ import Entropic.EFT.Foundations.Postulates
 /-!
 # Entropic.EFT.Instantiation.ToyCDT
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: consistency upgrade for the premise ledger (v0.3 target).
-* Purpose: show the premise STRUCTURES are simultaneously satisfiable by exhibiting one
+* Purpose: show the premise structures are simultaneously satisfiable by exhibiting one
   explicit finite discrete model and an interpretation of each premise as a nontrivial
   statement about that model, then proving all interpreted statements at once.
-* METHODOLOGICAL WARNING: premise fields are `Prop`-valued slots, so `True` inhabits any
-  of them vacuously.  The content of this file therefore lives in the INTERPRETATION map
+* Premise fields are `Prop`-valued slots, so `True` inhabits any
+  of them vacuously.  The content of this file therefore lives in the interpretation map
   `ToyCDT.interpret`: each field is assigned a concrete, falsifiable-in-the-model
   proposition.  The final theorem proves the conjunction.  This is a relative-consistency
   statement about the premise set under this interpretation; it says nothing about Nature.
-* NOT instantiated (deliberately): `GeometricEmbeddingSpec`, `TransverseInfluenceSpec`,
+* Not instantiated: `GeometricEmbeddingSpec`, `TransverseInfluenceSpec`,
   `StrongBoundarySpec`, `ArrowOfTimeSpec`, `CommonGeometryCapacityLimit`, `VolumeConjugacy`,
   `CausticReleaseBridge`.  These are continuum/dynamical completions a finite toy cannot
   honestly witness; leaving them open is the informative boundary of this construction.
@@ -57,7 +57,7 @@ injective ensemble, whose cardinality is exactly 1680 (kernel-checked upstream).
 def finiteLocalCapacityP : Prop :=
   (∀ e : Event, stateOf e ∈ boundaryStates) ∧ boundaryStates.card = 1680
 
-/-- `geometryCapacityEquivalence`: adjacency in the toy is DEFINED as channel sharing,
+/-- `geometryCapacityEquivalence`: adjacency in the toy is defined as channel sharing,
 so geometric linkage and shared capacity are one relation.  The statement asserts the
 two readings agree extensionally. -/
 def sharesChannel (e f : Event) : Prop :=
@@ -71,11 +71,11 @@ pair of events is geometrically linked. -/
 def geometricLink (_e _f : Event) : Prop := True
 
 /-- The premise now has falsifiable content: geometric linkage coincides with channel
-sharing, which holds only because two injective four-port codes over a SEVEN-channel
-alphabet must intersect (4 + 4 > 7).  With an 8-channel alphabet this would be FALSE. -/
+sharing, which holds only because two injective four-port codes over a seven-channel
+alphabet must intersect (4 + 4 > 7).  With an 8-channel alphabet this would be false. -/
 def geometryCapacityP : Prop := ∀ e f : Event, geometricLink e f ↔ sharesChannel e f
 
-/-- `massEntropy`: toy mass is DEFINED as an entropy deficit against the log-1680 ceiling;
+/-- `massEntropy`: toy mass is defined as an entropy deficit against the log-1680 ceiling;
 the premise asserts the definitional identity holds for every event. -/
 noncomputable def toyMass (support : ℕ) : ℝ := Real.log 1680 - Real.log support
 
@@ -114,7 +114,7 @@ coincide numerically with the nonmaximal fusion complement dimension at 2j = 3.
 Both sides are independently defined upstream; their agreement is the incidence. -/
 def markedIncidenceP : Prop := recordLabelCount = nonmaxComplementDim 3
 
-/-- `SameClosureCouplingMarkedSource` — the premise's content: routing the charged return through the SAME closure-response
+/-- `SameClosureCouplingMarkedSource`. Content of the premise: routing the charged return through the same closure-response
 coefficient must reproduce the upstream H.9 pair contraction `u = 8η/49` with no second
 coefficient.  This is an algebraic identity requiring `(√η)² = η`, not a definition. -/
 def sameCouplingP : Prop :=
@@ -214,7 +214,7 @@ theorem fixedMeasure_holds : fixedMeasureP := fun _ _ => rfl
 
 /-! ## The joint realization -/
 
-/-- A realization bundles the interpreted premises with proofs that the SAME toy model
+/-- A realization bundles the interpreted premises with proofs that the same toy model
 satisfies all of them simultaneously.  Its existence is the relative-consistency
 statement: nothing in the interpreted premise set contradicts anything else. -/
 structure ToyRealization where
@@ -238,7 +238,7 @@ structure ToyRealization where
   measure : FixedContinuumEventMeasure
   measure_holds : measure.holds
 
-/-- MAIN THEOREM of this module: the toy CDT complex jointly realizes the interpreted
+/-- The toy CDT complex jointly realizes the interpreted
 premise set.  Every field is discharged by a nonvacuous statement about the same model. -/
 def toyRealization : ToyRealization where
   foundation := interpretFoundation

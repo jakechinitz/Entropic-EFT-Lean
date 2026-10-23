@@ -3,7 +3,7 @@ import Entropic.EFT.Representation.FusionSpec
 /-!
 # Entropic.EFT.Marked.SingleStrandRecord
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: repaired H.9 and Appendix O.13 record-energy reading.
 * Purpose: make the "one response strand versus two deposits" distinction explicit in types.
 * Closed finite mathematics:
@@ -20,7 +20,7 @@ LOCAL CONTRACT
   realized by this one phase space; the history index is the dual/operator end of the same
   strand; `W_*` uses the commutator (difference-sign) record dynamics and prepares a fresh
   strand per renewal vertex.
-* Important nonclaim: a three-variable Hubbard--Stratonovich integral, by itself, does NOT
+* Scope: a three-variable Hubbard--Stratonovich integral, by itself, does not
   logically manufacture conjugate momenta or a physical oscillator Hamiltonian.  The
   canonical single-strand realization is a named model identification, not a theorem of
   Gaussian integration alone.
@@ -81,7 +81,7 @@ theorem first_excitation_energy (a : ResponseMode) :
     singleStrandCanonicalPairCount, responseModeCount]
 
 /-- One canonical phase-space point.  The fact that the selected realization contains this
-structure ONCE is the type-level meaning of "one symplectic sector". -/
+structure once is the type-level meaning of "one symplectic sector". -/
 structure SingleResponsePhasePoint where
   ξ : ResponseMode → ℝ
   π : ResponseMode → ℝ
@@ -142,9 +142,9 @@ theorem no_extra_quantum_from_record_label (r : RecordLabel) :
     stationaryRecordEnergy + recordLiouvillianEigenvalue r = 3/2 := by
   simp [recordLiouvillianEigenvalue, endpointEnergy, stationaryRecordEnergy_eq_three_halves]
 
-/-- Explicit countermodel with two genuinely independent response phase spaces.  This is a
-different type from `SingleStrandEvent`; it is what a literal two-deposit interpretation
-would have to add. -/
+/-- Explicit countermodel with two independent response phase spaces.  This is a
+different type from `SingleStrandEvent`, carrying the second phase space that a literal
+two-deposit interpretation would add. -/
 structure TwoDepositEvent where
   present : SingleResponsePhasePoint
   history : SingleResponsePhasePoint
@@ -156,7 +156,7 @@ theorem twoDepositCanonicalPairCount_eq_six : twoDepositCanonicalPairCount = 6 :
   norm_num [twoDepositCanonicalPairCount, singleStrandCanonicalPairCount,
     responseModeCount]
 
-/-- Ground-state energy of two genuinely independent three-mode sectors. -/
+/-- Ground-state energy of two independent three-mode sectors. -/
 def twoDepositZeroPointEnergy : ℚ := 2 * singleStrandZeroPointEnergy
 
 theorem twoDepositZeroPointEnergy_eq_three : twoDepositZeroPointEnergy = 3 := by

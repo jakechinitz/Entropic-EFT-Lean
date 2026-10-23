@@ -3,7 +3,7 @@ import Entropic.EFT.Edge.TetrahedralFrame
 /-!
 # Entropic.EFT.Edge.Kernel
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 7--9; Appendix C.1--C.4.
 * Closed algebra: tree coupling, minimal-return trace, Dyson resummation, continuum
   stiffness formula once the named minimal return operator is adopted.

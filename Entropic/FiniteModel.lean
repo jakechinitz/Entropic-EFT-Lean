@@ -4,7 +4,7 @@ import Mathlib.Tactic.Linarith
 
 /-! Finite boundary ensemble, main manuscript pp. 104–105.
 The physical choice of seven labels, four distinguishable ports, no repeated
-labels and two orientations is INPUT. The enumeration is kernel checked.
+labels and two orientations is input. The enumeration is kernel checked.
 No numerical fixed point is asserted as an exact real number. -/
 
 namespace Entropic.FiniteModel
@@ -66,7 +66,7 @@ def meanK2 (eta : ℝ) : ℝ :=
       partition eta
 
 /-- A statement of the paper's stationary condition; existence, uniqueness
-and the decimal value of eta are NOT claimed to be proved by this definition. -/
+and the decimal value of eta are not claimed to be proved by this definition. -/
 def ClosureStationary (eta : ℝ) : Prop := 0 < eta ∧ meanK2 eta = 3 / (2 * eta)
 
 end

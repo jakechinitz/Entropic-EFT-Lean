@@ -3,14 +3,14 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.UV.Boundary
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Sections 5--6; Appendix B.1, B.4.3--B.4.4.
 * Primitive input encoded: seven labels, four distinguishable ports, single-copy
   injectivity, and two global orientations.
 * Closed outputs: 840 unoriented assignments and 1680 oriented states.
 * Does not prove: why Nature chooses this alphabet or tetrahedral UV architecture.
 
-LLM NOTE
+Encoding
 `0 : Fin 7` represents m=-3 and `6 : Fin 7` represents m=+3.
 -/
 

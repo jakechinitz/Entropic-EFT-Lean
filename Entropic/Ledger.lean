@@ -6,7 +6,7 @@ import Mathlib.Tactic.Ring
 import Mathlib.Tactic.Positivity
 
 /-! Scalar components of the source ledger, main manuscript pp. 53, 275–278.
-The covariant action and its variation are NOT proved here. -/
+The covariant action and its variation are not proved here. -/
 
 noncomputable section
 namespace Entropic.Ledger

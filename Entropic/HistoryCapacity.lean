@@ -4,22 +4,22 @@ import Mathlib.Data.Fintype.Pi
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Tactic
 
-/-! History capacity (App. P.9; response to critique item 7).
+/-! History capacity (App. P.9).
 
-Two horns, both kernel checked.
+Two cases, both kernel checked.
 
-(A) EXACT memoryless renewal with every per-tick draw kept recoverable needs
-    2^N ≤ D after N ticks, so no finite capacity suffices (`exact_export_bound`,
-    `no_finite_archive`). This is the manuscript's P.9 non-reuse theorem; it is
-    what forces the "non-geometric history factor".
+(A) Exact memoryless renewal with every per-tick draw kept recoverable needs
+    2^N ≤ D after N ticks, so it requires unbounded capacity (`exact_export_bound`,
+    `no_finite_archive`). This is the manuscript's P.9 non-reuse theorem, the source of
+    the non-geometric history factor.
 
-(B) A FINITE reversible (bijective) dynamics on D states keeps the initial state
+(B) A finite reversible (bijective) dynamics on D states keeps the initial state
     exactly recoverable after any number of ticks with D fixed
     (`initial_state_recoverable`), and it recurs: some power is the identity
-    (`finite_reversible_recurs`). What it cannot do is store more than log₂ D
-    independent binary records (`independent_records_bounded`).
+    (`finite_reversible_recurs`). It stores at most log₂ D independent binary records
+    (`independent_records_bounded`).
 
-So the choice is between an unbounded external archive (A) and finite capacity with
+The two options are an unbounded external archive (A) and finite capacity with
 effective (mixing) memorylessness and super-exponential recurrence (B). -/
 
 namespace Entropic.HistoryCapacity

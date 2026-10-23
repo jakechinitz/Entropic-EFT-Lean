@@ -3,7 +3,7 @@ import Entropic.EFT.Core.Prelude
 /-!
 # Entropic.EFT.Representation.SpinDimensions
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix B.4.2e; H.9.
 * Encodes twice-spin as a natural number, avoiding half-integer arithmetic.
 * Closed outputs: the dimension/complement arithmetic and unique endpoint match.

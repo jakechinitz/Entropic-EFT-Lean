@@ -3,11 +3,11 @@ import Entropic.EFT.Core.PhysicalInterfaces
 /-!
 # Entropic.EFT.Gaussian.RelativeCovariance
 
-LOCAL CONTRACT
+Local contract
 * Manuscript: Appendix H.10.A--G; Section 25, 29.9.
 * Exact finite-dimensional target: normalized Gaussian determinant ratio and the
   quadratic-source convex conjugate `1/2 Tr(G-I-log G)`.
-* This file separates those mathematical identities from the OPEN identification of a
+* This file separates those mathematical identities from the open identification of a
   decorated GFT Hessian with a geometric relative-information operator.
 -/
 
@@ -54,7 +54,7 @@ structure PositiveScalarSupportLemma where
   alpha21_pos : 0 < alpha21
   supportPreserved : Prop
 
-/-- OPEN physical identification with a geometric relative-information operator. -/
+/-- Open physical identification with a geometric relative-information operator. -/
 structure GFTGeometricRelativeInfoBridge where
   gaussianMath : GaussianDeterminantMath
   embedding : GeometricEmbeddingSpec
