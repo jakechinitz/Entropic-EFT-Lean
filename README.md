@@ -8,6 +8,10 @@ Structure* in **Lean 4.35.0 with mathlib**. The source record and the SHA-256
 hash of the PDF used are in `provenance.json`. CI builds the library, runs the axiom audit
 and the ledger citation check on every push.
 
+## Effective dynamics and cluster extensions (2026-10-23)
+
+Six modules under `Entropic/Extensions20261023` add 119 explicit theorem declarations to the import graph. The 154-module/2,812-theorem figures below identify the previously audited upstream snapshot; they are not recomputed totals for these additions. The normal pinned Lean 4.35 build and module-based axiom audit include all six modules. Their earlier standalone checks used Lean/mathlib 4.19. See [extension scope and provenance](verification/extensions_2026-10-23.md) for the distinction between conditional mathematics and empirical calculations.
+
 ## Status (2026-10-22)
 
 | Item | Value |
