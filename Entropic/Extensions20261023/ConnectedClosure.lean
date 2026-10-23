@@ -67,7 +67,7 @@ theorem source_bounds {r : ℝ} (h0 : 1/2 ≤ r) (h1 : r ≤ 1) :
 theorem source_as_fractional_rate {r : ℝ} (h : 3-2*r ≠ 0) :
     sourceFactor r = rateRatio r * (2*kineticX r) := by
   unfold sourceFactor rateRatio kineticX
-  field_simp; ring
+  field_simp [h] <;> ring
 
 theorem rate_ratio_bounds {r : ℝ} (h0 : 1/2 ≤ r) (h1 : r ≤ 1) :
     3/4 ≤ rateRatio r ∧ rateRatio r ≤ 1 := by
@@ -84,7 +84,7 @@ theorem dust_source : sourceFactor 1 = 1 := by norm_num [sourceFactor]
 
 theorem current_factorization (J lam theta Vp A : ℝ) (hl : lam ≠ 0) :
     -theta*J-Vp*A*(J/lam)^2 = -(theta+Vp*A*J/lam^2)*J := by
-  field_simp; ring
+  field_simp [hl] <;> ring
 
 theorem sound_speed_range {r : ℝ} (h0 : 1/2 ≤ r) (h1 : r ≤ 1) :
     0 ≤ (4*r*(1-r))/(4*r*(1-r)+2*kineticX r) ∧
@@ -103,12 +103,12 @@ theorem shape_hasDerivAt (r : ℝ) :
     HasDerivAt energyShape (kineticX r) r := by
   convert ((hasDerivAt_id r).div_const 2).add
     ((((hasDerivAt_id r).const_sub 1).pow 3).const_mul (2/3)) using 1 <;>
-    simp [energyShape, kineticX] <;> ring
+    (try funext x) <;> simp [energyShape, kineticX] <;> ring
 
 theorem kinetic_hasDerivAt (r : ℝ) :
     HasDerivAt kineticX (4*(1-r)) r := by
   convert ((((hasDerivAt_id r).const_sub 1).pow 2).const_mul 2).const_sub (1/2) using 1 <;>
-    simp [kineticX] <;> ring
+    (try funext x) <;> simp [kineticX] <;> ring
 
 theorem unchanged_action (lam X V h : ℝ) (hh : h=0) :
     lam*X-lam/2-h-V = lam*(X-1/2)-V := by rw [hh]; ring
@@ -146,7 +146,7 @@ theorem passive_lag_sign (n q qd gamma K : ℝ → ℝ) (t0 : ℝ)
   have h := regular_rate_positivity (fun t => n t-q t) K gamma (fun t => -qd t) t0
     (fun t => by convert (hn t).sub (hq t) using 1 <;> ring) hK
     (fun t ht => neg_nonneg.mpr (hfall t ht)) (by change 0 ≤ n t0-q t0; linarith)
-  intro t ht; have hh := h t ht; dsimp at hh; linarith
+  intro t ht; have hh := h t ht; change 0 ≤ n t-q t at hh; linarith
 
 theorem finite_positive_memory {ι : Type*} [Fintype ι]
     (w q : ι → ℝ) (now : ℝ) (hw : ∀ i, 0 ≤ w i)
@@ -166,9 +166,8 @@ theorem logGap_derivative {r : ℝ} (hr : 0 < r) :
   have hn : r+1 ≠ 0 := by linarith
   convert (Real.hasDerivAt_log hr.ne').sub
     ((((hasDerivAt_id r).sub_const 1).const_mul 2).div
-      ((hasDerivAt_id r).add_const 1) hn) using 1
-  simp only [id_eq]
-  field_simp; ring
+      ((hasDerivAt_id r).add_const 1) hn) using 1 <;>
+    (try funext x) <;> simp [logGap] <;> field_simp [hn, hr.ne'] <;> ring
 
 theorem logarithmic_mean_bound {r : ℝ} (hr : 1 ≤ r) :
     2*(r-1)/(r+1) ≤ Real.log r := by
@@ -177,10 +176,10 @@ theorem logarithmic_mean_bound {r : ℝ} (hr : 1 ≤ r) :
     · intro t ht
       exact (logGap_derivative (by have : 1 ≤ t := ht; linarith)).continuousAt.continuousWithinAt
     · intro t ht
-      have ht' : 1 < t := by simpa only [interior_Ici] using ht
+      have ht' : 1 < t := by simpa only [interior_Ici, Set.mem_Ioi] using ht
       exact (logGap_derivative (by linarith)).differentiableAt.differentiableWithinAt
     · intro t ht
-      have ht' : 1 < t := by simpa only [interior_Ici] using ht
+      have ht' : 1 < t := by simpa only [interior_Ici, Set.mem_Ioi] using ht
       rw [(logGap_derivative (by linarith : 0<t)).deriv]
       positivity
   have h := hm (by simp) hr hr
@@ -195,7 +194,7 @@ theorem noise_delay_bound {r : ℝ} (hr : 1 < r) :
   have hz : 2*(r+1)/(r-1)*(2*(r-1)/(r+1))=4 := by
     have h1 : r-1 ≠ 0 := by linarith
     have h2 : r+1 ≠ 0 := by linarith
-    field_simp; ring
+    field_simp [h1, h2] <;> ring
   rwa [hz] at hh
 
 theorem receiver_background (C V W : ℝ) :
@@ -206,10 +205,10 @@ theorem receiver_exchange (Cp Vp Wp H C W : ℝ)
     (Cp-Wp+3*H*(C-W))+(Vp+Wp+3*H*W)=0 := by linear_combination h
 
 theorem receiver_tradeoff (f g Om : ℝ) (hf : f ≠ 0) (ho : Om ≠ 0) :
-    f*(2*g^2/(3*f*Om))=2*g^2/(3*Om) := by field_simp; ring
+    f*(2*g^2/(3*f*Om))=2*g^2/(3*Om) := by field_simp [hf, ho] <;> ring
 
 theorem loading_reciprocity (load eps c H : ℝ) (hl : load ≠ 0) (he : eps ≠ 0) :
-    (load*eps*c*H)*(1/(load*eps))=c*H := by field_simp; ring
+    (load*eps*c*H)*(1/(load*eps))=c*H := by field_simp [hl, he] <;> ring
 
 theorem different_loading_changes_acceleration (l1 l2 eps c H : ℝ)
     (hl : l1 ≠ l2) (he : eps ≠ 0) (hc : c ≠ 0) (hH : H ≠ 0) :
@@ -258,9 +257,9 @@ theorem adiabatic_stock_scaling (m r v : ℝ) (hm : m ≠ 0)
     m*v*r=1 ∧ v^2=m/r ∧ v^4=m^8 := by
   rw [hr, hv]
   constructor
-  · field_simp; ring
+  · field_simp [hm] <;> ring
   constructor
-  · field_simp; ring
+  · field_simp [hm] <;> ring
   · ring
 
 theorem two_pole_tracking (n1 n2 q qd gamma omega K1 K2 : ℝ → ℝ) (t0 : ℝ)
@@ -283,7 +282,7 @@ theorem two_pole_tracking (n1 n2 q qd gamma omega K1 K2 : ℝ → ℝ) (t0 : ℝ
       change 0 ≤ omega t*(n1 t-q t)-qd t
       linarith)
     (by change 0 ≤ n2 t0-q t0; linarith)
-  intro t ht; have h := hn2 t ht; dsimp at h; linarith
+  intro t ht; have h := hn2 t ht; change 0 ≤ n2 t-q t at h; linarith
 
 theorem relabeling_cancels (u R du dR gamma : ℝ)
     (hu : du = -gamma*u) (hR : dR = gamma*u) : du+dR=0 := by

@@ -137,11 +137,11 @@ theorem enthalpy_gate_bound (h0 ht lam : ℝ)
   exact ⟨div_nonneg (by linarith) hd.le,(div_le_one hd).mpr (by linarith)⟩
 
 theorem cold_gate_limit (lam v : ℝ) (hl : lam ≠ 0) :
-    (lam*v^2+0)/(lam+0)=v^2 := by field_simp
+    (lam*v^2+0)/(lam+0)=v^2 := by field_simp [hl] <;> ring
 
 theorem warm_power_fractional_rate (n mu lam ht B : ℝ) (hm : mu ≠ 0)
     (hd : lam+ht ≠ 0) :
-    ((n*mu)/(lam+ht)*B)/mu=n*B/(lam+ht) := by field_simp; ring
+    ((n*mu)/(lam+ht)*B)/mu=n*B/(lam+ht) := by field_simp [hm, hd] <;> ring
 
 theorem warm_current_regular (n lam theta Vp A B D : ℝ) (hl : lam ≠ 0) :
     -theta*n-Vp*A*(n/lam)^2-n*B/D =

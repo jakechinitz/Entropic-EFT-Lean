@@ -28,7 +28,7 @@ theorem effective_vacuum_w_le (V rate : ℝ) (hV : 0 < V) (hr : 0 ≤ rate) :
   linarith
 
 theorem bare_cross_relation (e c H : ℝ) (he : e ≠ 0) :
-    (e*c*H)*(1/e)=c*H := by field_simp; ring
+    (e*c*H)*(1/e)=c*H := by field_simp [he] <;> ring
 
 theorem corrected_cross_relation (e c H massFactor survival : ℝ) (he : e ≠ 0) :
     (e*c*H)*(massFactor*survival/e)=massFactor*survival*c*H := by
