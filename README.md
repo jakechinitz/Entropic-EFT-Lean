@@ -29,14 +29,14 @@ The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completi
 
 ## Halo envelope premises (2026-10-24)
 
-`Entropic/MicroEnvelope3D.lean` (GPT, ported) gives the pressure and depletion-floor identities, a weighted Schur bound and the matched-family stability margins of the isentropic envelope. `Entropic/EnvelopePremises.lean` separates its premises: the exponent γ = 2 is the stiffest member of the warm family that stays causal at every density (`causal_iff`, `stiff_limit`); a universal pair kernel has bounded range across compositions (`pair_coefficient_bounds`), so the matched coefficient ζ ∝ M_b must be a state label; matching gives `g(a) = 2η(1+η)a₀` and a closed-form envelope solution and stock (`envelope_mass_matched`); and a stock reaching radius L needs a stock-to-baryon ratio of at least (L/r_M − 1)/2 (`stock_ratio_lower_bound`). Scope and the weak-lensing comparison: [envelope premises](verification/envelope_premises_2026-10-24.md).
+`Entropic/MicroEnvelope3D.lean` (GPT, ported) gives the pressure and depletion-floor identities, a weighted Schur bound and the matched-family stability margins of the isentropic envelope. `Entropic/EnvelopePremises.lean` separates its premises: the exponent γ = 2 is the stiffest member of the warm family that stays causal at every density (`causal_iff`, `stiff_limit`); a universal pair kernel has bounded range across compositions (`pair_coefficient_bounds`), so the matched coefficient ζ ∝ M_b must be a state label; matching gives `g(a) = 2η(1+η)a₀` and a closed-form envelope solution and stock (`envelope_mass_matched`); a stock reaching radius L needs a stock-to-baryon ratio of at least (L/r_M − 1)/2 (`stock_ratio_lower_bound`); and a Milky Way-mass curve at 300 kpc completes fewer than 1.6 orbits in a Hubble time (`outskirts_orbit_bound`), so the lensing-scale stock is set mainly by infall. Scope and the weak-lensing comparison: [envelope premises](verification/envelope_premises_2026-10-24.md).
 
 ## Status (2026-10-23)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 186 modules, 3,445 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_envelope_2026-10-24.log`) |
+| Library | one Lean library, `Entropic`: 186 modules, 3,448 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_envelope2_2026-10-24.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |

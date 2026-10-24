@@ -182,7 +182,72 @@ bound, the pair-kernel range bound and the lensing lower bound are proved in
 Lean. The continuum harmonic expansion and PDE energy argument remain as in
 GPT's note.
 
+
+7. FOLLOW-UP: THE OUTER BOUNDARY IS COSMOLOGICAL, AND THE OUTSKIRTS ARE UNRELAXED
+
+(a) The extent bound does not depend on the exponent. gamma_scan.py repeats the
+matching for gamma = 2, 1.8, 5/3, 1.5 and 1.4. The edge scales as
+R = c(gamma) S r_M with c = 1.17, 1.25, 1.35, 1.61 and 2.04 for S between
+30 and 100, and somewhat larger at S = 5. Softening the equation of state buys at most a factor of two. The
+reason is kinematic: a flat curve to L needs enclosed mass A L, so S is close
+to L / r_M whatever stress holds the stock up. A stiffer or softer envelope
+only moves the edge a little.
+
+(b) Lensing follows the RAR far beyond any envelope. The KiDS/GAMA lensing RAR
+(Brouwer et al. 2021) reaches g_bar of about 1e-15 m/s^2. For isolated
+late-type lenses it agrees with the RAR extrapolation, and is reliable to about
+300 kpc in KiDS-bright and further in GAMA. Inside an envelope the density
+falls as sin(k r)/r, steeper than 1/r^2, so the curve drops below the RAR. The
+matching radius a must therefore lie beyond the lensing reach, not at
+70 kpc. For an isolated Milky Way-mass galaxy the RAR stock density at 1 Mpc
+is about 18 times the mean matter density. That is the infall zone. The
+natural outer condition is matching to the cosmological stock background
+there, not a zero-density surface at R <= 2a. GPT's vacuum surface is the
+premise to replace. Its stability bound still holds in the interior but
+needs boundary terms for a background-matched edge.
+
+(c) With a cosmological edge the stock ratio follows from the RAR alone:
+S = R / r_M - 1/2 (isothermal_stock_ratio). The implied retention
+(1 + k_C)/(1 + S) equals McGaugh et al.'s (2010) detected baryon fraction
+f_d = M_b / (f_b M_tot), with f_b = 1/(1 + k_C) = 0.162
+(retention_is_detected_fraction). Matching at 200 times the mean density gives
+f_ret from 0.10 at log M_b = 9.75 to 0.25 at 11.3. That rises as V_c, the
+observed trend. This is a consistency statement, not a prediction, since the
+BTFR and an isothermal profile already imply f_d proportional to V_c. In this
+reading a galaxy's missing baryons are ancestral baryons it lost, while it
+kept their stock. That is the same bookkeeping as in LCDM.
+
+(d) The outskirts are not settled. At 300 kpc an isolated Milky Way-mass
+galaxy (v = 195 km/s) completes 1.5 orbits in 13.8 Gyr; at 1 Mpc it completes
+0.4 (outskirts_orbit_bound proves fewer than 1.6 for v <= 200 km/s at
+r >= 300 kpc). The other mass bins give 0.7 to 1.8 orbits at 300 kpc. Phase
+mixing and any contact-driven redistribution need several orbits, and the
+stock at these radii is still arriving. So wherever the lensing RAR holds
+beyond about 200 kpc, its profile is set mainly during infall, as
+secondary-infall profiles are in collisionless cosmology, not by relaxation
+onto a galactic target. A local contact can reset velocities quickly. It
+cannot move mass across a radius in less than a crossing time (about 1.5 Gyr
+at 300 kpc), and the profile there has had only a few.
+
+What this changes. For galaxies, the halo pressure law matters only near the
+boundary with the cosmic web. The open premises become: (i) a collisionless
+infall calculation for the stock that yields a near-isothermal outer profile
+continuous with the settled inner RAR; (ii) the transition radius between
+settled and infall-built stock, which the contact rate and orbit count place
+near 100-200 kpc for Milky Way-mass galaxies; and (iii) whether the infall
+profile reproduces the lensing RAR or only the flat curve. Item (iii) is
+sharp. The early/late-type split in the lensing RAR (at least 6 sigma, Brouwer
+et al. 2021) is a natural outcome of environment-dependent infall and an
+unnatural one for a universal settled target.
+
 Sources
   Mistele, McGaugh, Lelli, Schombert, Li 2024, ApJL, "Indefinitely flat
   circular velocities and the baryonic Tully-Fisher relation from weak
   lensing", arXiv:2406.09685.
+  Brouwer et al. 2021, A&A, "The weak lensing radial acceleration relation",
+  arXiv:2106.11677.
+  McGaugh, Schombert, de Blok, Zagursky 2010, ApJL, "The baryon content of
+  cosmic structures", arXiv:0911.2700.
+  "A comprehensive assessment of weak-lensing inferred circular velocity
+  profiles of isolated galaxies", arXiv:2609.14085 (isolation validated to
+  300 kpc).

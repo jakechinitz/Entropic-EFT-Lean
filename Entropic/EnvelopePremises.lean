@@ -3,6 +3,7 @@ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.Analysis.Calculus.Deriv.Inv
 import Mathlib.Order.Filter.AtTopBot.Basic
+import Mathlib.Analysis.Real.Pi.Bounds
 import Mathlib.Tactic
 
 /-! Premises of the isentropic halo envelope (research note 2026-10-24).
@@ -29,7 +30,12 @@ assumed.
    and its stock is given in closed form (`envelope_mass`).
 4. Extent. Since `R ≤ 2 a` and `a = r_M / (2 η)`, a stock that extends to radius `L`
    requires a stock-to-baryon ratio of at least `(L / r_M - 1) / 2`
-   (`stock_ratio_lower_bound`). -/
+   (`stock_ratio_lower_bound`).
+5. Outer boundary. A deep-RAR stock out to `R` has ratio `R / r_M - 1/2`
+   (`isothermal_stock_ratio`); the implied retention `(1 + k)/(1 + S)` is the detected
+   baryon fraction (`retention_is_detected_fraction`); and a Milky Way-mass curve at
+   `300 kpc` completes fewer than 1.6 orbits in a Hubble time (`outskirts_orbit_bound`), so
+   the stock there is set mainly by infall rather than by relaxation. -/
 
 noncomputable section
 namespace Entropic.EnvelopePremises
@@ -246,5 +252,39 @@ theorem stock_ratio_lower_bound {rM η R L S : ℝ} (hr : 0 < rM) (hη : 0 < η)
       _ = 1 / η * rM := by ring
   have hS' : (1 - η) / (2 * η) = (1 / η - 1) / 2 := by field_simp
   linarith
+
+/-! ## 5. The outer boundary and the dynamical age of the outskirts -/
+
+/-- Deep-RAR stock out to radius `R`: with enclosed stock `A R - M/2` and `A = M / r_M`,
+the stock-to-baryon ratio is `R / r_M - 1/2`. -/
+theorem isothermal_stock_ratio {M rM R : ℝ} (hM : 0 < M) (hr : 0 < rM) :
+    ((M / rM) * R - M / 2) / M = R / rM - 1 / 2 := by
+  field_simp
+
+/-- The retained fraction of ancestral baryons, `(1 + k) / (1 + S)` for cohort budget `k`
+and stock ratio `S`, is the detected baryon fraction `M_b / (f_b M_tot)` with cosmic
+fraction `f_b = 1 / (1 + k)`. -/
+theorem retention_is_detected_fraction {k S Mb : ℝ} (hk : 0 < 1 + k) (hS : 0 < 1 + S)
+    (hM : 0 < Mb) :
+    (1 + k) / (1 + S) = Mb / ((1 / (1 + k)) * (Mb + S * Mb)) := by
+  field_simp
+
+/-- Number of circular orbits completed in time `t` at radius `r` and speed `v`. -/
+def orbitCount (t v r : ℝ) : ℝ := t * v / (2 * Real.pi * r)
+
+/-- A Milky Way-mass flat curve (`v ≤ 200 km/s`) at `r ≥ 300 kpc` completes fewer than
+`1.6` orbits in `13.8 Gyr`. -/
+theorem outskirts_orbit_bound {t v r : ℝ} (ht0 : 0 ≤ t) (ht : t ≤ 4.356e17) (hv0 : 0 ≤ v)
+    (hv : v ≤ 2.0e5) (hr : 9.257e21 ≤ r) :
+    orbitCount t v r < 1.6 := by
+  unfold orbitCount
+  have hpi : 3.14 < Real.pi := Real.pi_gt_d2
+  have hr0 : 0 < r := lt_of_lt_of_le (by norm_num) hr
+  rw [div_lt_iff₀ (by positivity)]
+  have h1 : t * v ≤ 4.356e17 * 2.0e5 := mul_le_mul ht hv hv0 (by norm_num)
+  have h2 : 1.6 * (2 * 3.14 * 9.257e21) ≤ 1.6 * (2 * Real.pi * r) := by
+    have : 2 * 3.14 * 9.257e21 ≤ 2 * Real.pi * r := by nlinarith
+    linarith
+  nlinarith
 
 end Entropic.EnvelopePremises
