@@ -41,6 +41,8 @@ import Entropic.Completion.GlobalModel
 import Entropic.Completion.All
 import Entropic.FourItems.Streams
 import Entropic.FourItems.Selection
+import Entropic.MicroEnvelope3D
+import Entropic.EnvelopePremises
 import Entropic.CapacityDomain
 import Entropic.ShellLadder
 import Entropic.AppB.Elementary
