@@ -31,11 +31,11 @@ assumed.
 4. Extent. Since `R ≤ 2 a` and `a = r_M / (2 η)`, a stock that extends to radius `L`
    requires a stock-to-baryon ratio of at least `(L / r_M - 1) / 2`
    (`stock_ratio_lower_bound`).
-5. Outer boundary. A deep-RAR stock out to `R` has ratio `R / r_M - 1/2`
-   (`isothermal_stock_ratio`); the implied retention `(1 + k)/(1 + S)` is the detected
-   baryon fraction (`retention_is_detected_fraction`); and a Milky Way-mass curve at
-   `300 kpc` completes fewer than 1.6 orbits in a Hubble time (`outskirts_orbit_bound`), so
-   the stock there is set mainly by infall rather than by relaxation. -/
+5. Stock ratio bookkeeping. A deep-RAR stock out to a supplied radius `R` has ratio
+   `R / r_M - 1/2` (`isothermal_stock_ratio`). With full stock retention, the retained
+   fraction of ancestral baryons is `k / S` (`retained_fraction`); the detected baryon
+   fraction is `(1 + k)/(1 + S)` (`detected_fraction_formula`), which is larger whenever
+   `k < S` (`retained_lt_detected`). -/
 
 noncomputable section
 namespace Entropic.EnvelopePremises
@@ -253,7 +253,7 @@ theorem stock_ratio_lower_bound {rM η R L S : ℝ} (hr : 0 < rM) (hη : 0 < η)
   have hS' : (1 - η) / (2 * η) = (1 / η - 1) / 2 := by field_simp
   linarith
 
-/-! ## 5. The outer boundary and the dynamical age of the outskirts -/
+/-! ## 5. Stock ratio bookkeeping -/
 
 /-- Deep-RAR stock out to radius `R`: with enclosed stock `A R - M/2` and `A = M / r_M`,
 the stock-to-baryon ratio is `R / r_M - 1/2`. -/
@@ -261,30 +261,27 @@ theorem isothermal_stock_ratio {M rM R : ℝ} (hM : 0 < M) (hr : 0 < rM) :
     ((M / rM) * R - M / 2) / M = R / rM - 1 / 2 := by
   field_simp
 
-/-- The retained fraction of ancestral baryons, `(1 + k) / (1 + S)` for cohort budget `k`
-and stock ratio `S`, is the detected baryon fraction `M_b / (f_b M_tot)` with cosmic
-fraction `f_b = 1 / (1 + k)`. -/
-theorem retention_is_detected_fraction {k S Mb : ℝ} (hk : 0 < 1 + k) (hS : 0 < 1 + S)
+/-- Detected baryon fraction `M_b / (f_b M_tot)` with cosmic fraction `f_b = 1 / (1 + k)`
+and total mass `M_b (1 + S)`: it equals `(1 + k) / (1 + S)`. -/
+theorem detected_fraction_formula {k S Mb : ℝ} (hk : 0 < 1 + k) (hS : 0 < 1 + S)
     (hM : 0 < Mb) :
-    (1 + k) / (1 + S) = Mb / ((1 / (1 + k)) * (Mb + S * Mb)) := by
+    Mb / ((1 / (1 + k)) * (Mb + S * Mb)) = (1 + k) / (1 + S) := by
   field_simp
 
-/-- Number of circular orbits completed in time `t` at radius `r` and speed `v`. -/
-def orbitCount (t v r : ℝ) : ℝ := t * v / (2 * Real.pi * r)
+/-- Retained fraction of ancestral baryons. If a galaxy keeps all of its cohort stock
+`k B₀` and a fraction `f` of its ancestral baryons `B₀`, its stock ratio is `S = k / f`,
+so `f = k / S`. -/
+theorem retained_fraction {k S f B0 : ℝ} (hB : 0 < B0) (hS0 : 0 < S)
+    (hS : S * (f * B0) = k * B0) : f = k / S := by
+  have h1 : S * f = k := mul_right_cancel₀ hB.ne' (by rw [← hS]; ring)
+  rw [eq_div_iff hS0.ne', mul_comm, h1]
 
-/-- A Milky Way-mass flat curve (`v ≤ 200 km/s`) at `r ≥ 300 kpc` completes fewer than
-`1.6` orbits in `13.8 Gyr`. -/
-theorem outskirts_orbit_bound {t v r : ℝ} (ht0 : 0 ≤ t) (ht : t ≤ 4.356e17) (hv0 : 0 ≤ v)
-    (hv : v ≤ 2.0e5) (hr : 9.257e21 ≤ r) :
-    orbitCount t v r < 1.6 := by
-  unfold orbitCount
-  have hpi : 3.14 < Real.pi := Real.pi_gt_d2
-  have hr0 : 0 < r := lt_of_lt_of_le (by norm_num) hr
-  rw [div_lt_iff₀ (by positivity)]
-  have h1 : t * v ≤ 4.356e17 * 2.0e5 := mul_le_mul ht hv hv0 (by norm_num)
-  have h2 : 1.6 * (2 * 3.14 * 9.257e21) ≤ 1.6 * (2 * Real.pi * r) := by
-    have : 2 * 3.14 * 9.257e21 ≤ 2 * Real.pi * r := by nlinarith
-    linarith
+/-- The detected fraction exceeds the retained fraction exactly when `k < S`:
+`k / S < (1 + k) / (1 + S)` for `0 < k < S`. -/
+theorem retained_lt_detected {k S : ℝ} (hk : 0 < k) (hkS : k < S) :
+    k / S < (1 + k) / (1 + S) := by
+  have hS : 0 < S := lt_trans hk hkS
+  rw [div_lt_div_iff₀ hS (by linarith)]
   nlinarith
 
 end Entropic.EnvelopePremises

@@ -200,45 +200,39 @@ late-type lenses it agrees with the RAR extrapolation, and is reliable to about
 falls as sin(k r)/r, steeper than 1/r^2, so the curve drops below the RAR. The
 matching radius a must therefore lie beyond the lensing reach, not at
 70 kpc. For an isolated Milky Way-mass galaxy the RAR stock density at 1 Mpc
-is about 18 times the mean matter density. That is the infall zone. The
-natural outer condition is matching to the cosmological stock background
-there, not a zero-density surface at R <= 2a. GPT's vacuum surface is the
-premise to replace. Its stability bound still holds in the interior but
+is about 18 times the mean matter density, in the infall zone. A candidate
+outer condition is matching to the cosmological stock background there,
+instead of a zero-density surface at R <= 2a. The vacuum surface is the
+premise to reconsider. Its stability bound still holds in the interior but
 needs boundary terms for a background-matched edge.
 
-(c) With a cosmological edge the stock ratio follows from the RAR alone:
-S = R / r_M - 1/2 (isothermal_stock_ratio). The implied retention
-(1 + k_C)/(1 + S) equals McGaugh et al.'s (2010) detected baryon fraction
-f_d = M_b / (f_b M_tot), with f_b = 1/(1 + k_C) = 0.162
-(retention_is_detected_fraction). Matching at 200 times the mean density gives
-f_ret from 0.10 at log M_b = 9.75 to 0.25 at 11.3. That rises as V_c, the
-observed trend. This is a consistency statement, not a prediction, since the
-BTFR and an isothermal profile already imply f_d proportional to V_c. In this
-reading a galaxy's missing baryons are ancestral baryons it lost, while it
-kept their stock. That is the same bookkeeping as in LCDM.
+(c) With a supplied edge radius R and the RAR continued to it, the stock ratio
+is S = R / r_M - 1/2 (isothermal_stock_ratio). This moves the unknown to R; it
+does not derive S. Matching at 200 times the mean density is one more
+condition, not a consequence of the theory. With full stock retention, the
+fraction of ancestral baryons a galaxy keeps is f_ret = k_C / S
+(retained_fraction). McGaugh et al.'s detected baryon fraction is a different
+quantity, f_d = M_b / (f_b M_tot) = (1 + k_C)/(1 + S) with f_b = 1/(1 + k_C)
+(detected_fraction_formula). It is larger whenever S > k_C
+(retained_lt_detected). An earlier version of this note identified the two;
+that was wrong. At the 200-mean-density radius, f_ret runs from 0.09 at
+log M_b = 9.75 to 0.22 at 11.3.
 
-(d) The outskirts are not settled. At 300 kpc an isolated Milky Way-mass
-galaxy (v = 195 km/s) completes 1.5 orbits in 13.8 Gyr; at 1 Mpc it completes
-0.4 (outskirts_orbit_bound proves fewer than 1.6 for v <= 200 km/s at
-r >= 300 kpc). The other mass bins give 0.7 to 1.8 orbits at 300 kpc. Phase
-mixing and any contact-driven redistribution need several orbits, and the
-stock at these radii is still arriving. So wherever the lensing RAR holds
-beyond about 200 kpc, its profile is set mainly during infall, as
-secondary-infall profiles are in collisionless cosmology, not by relaxation
-onto a galactic target. A local contact can reset velocities quickly. It
-cannot move mass across a radius in less than a crossing time (about 1.5 Gyr
-at 300 kpc), and the profile there has had only a few.
+(d) Orbit counts do not settle the relaxation question. At 300 kpc a Milky
+Way-mass galaxy completes about 1.5 orbits in 13.8 Gyr, but the crossing time
+r/v is only about 1.5 Gyr. Collisionless violent relaxation acts over a few
+crossing times, and a parcel's present radius and speed do not describe its
+whole history. An earlier version of this note, and a Lean theorem now
+removed, used the fixed-radius orbit count to argue that infall must set the
+outer profile. That inference does not follow. Infall is one candidate for the
+outer profile, not a result.
 
-What this changes. For galaxies, the halo pressure law matters only near the
-boundary with the cosmic web. The open premises become: (i) a collisionless
-infall calculation for the stock that yields a near-isothermal outer profile
-continuous with the settled inner RAR; (ii) the transition radius between
-settled and infall-built stock, which the contact rate and orbit count place
-near 100-200 kpc for Milky Way-mass galaxies; and (iii) whether the infall
-profile reproduces the lensing RAR or only the flat curve. Item (iii) is
-sharp. The early/late-type split in the lensing RAR (at least 6 sigma, Brouwer
-et al. 2021) is a natural outcome of environment-dependent infall and an
-unnatural one for a universal settled target.
+What this changes. The compact, vacuum-bounded envelope is in tension with
+stacked lensing, since its edge at 124 kpc gives 111 km/s at 300 kpc against
+183 km/s. GPT's stability result stands as a conditional result for its stated
+boundary conditions. The next step is to test an extended, cosmologically
+embedded stock distribution, and to derive its profile and normalization from
+the theory rather than supplying an edge radius.
 
 Sources
   Mistele, McGaugh, Lelli, Schombert, Li 2024, ApJL, "Indefinitely flat
