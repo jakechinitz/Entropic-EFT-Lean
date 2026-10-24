@@ -27,12 +27,16 @@ The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completi
 
 `Entropic/FourItems` adds two follow-up modules. `Streams`: a covariant 1+1 source/force decomposition for multistream exchange with energy conservation, positive internal allocation, an explicit two-stream witness and Bianchi-I constraint propagation (the Bianchi-I metric reduction is checked in SymPy, `tools/fouritems_bianchi_tensor.py`). `Selection`: matching underdetermination when the selected C.5 premise is omitted, affine kernel-normalization degeneracy, reversible energy-preserving swaps, and finite compensating-register bounds for an energy-conserving reset. These are not physical-selection proofs and contain no bound galaxy or native gravitational state. Record: [four open items](verification/fouritems_2026-10-23.md).
 
+## Halo envelope premises (2026-10-24)
+
+`Entropic/MicroEnvelope3D.lean` (GPT, ported) gives the pressure and depletion-floor identities, a weighted Schur bound and the matched-family stability margins of the isentropic envelope. `Entropic/EnvelopePremises.lean` separates its premises: the exponent γ = 2 is the stiffest member of the warm family that stays causal at every density (`causal_iff`, `stiff_limit`); a universal pair kernel has bounded range across compositions (`pair_coefficient_bounds`), so the matched coefficient ζ ∝ M_b must be a state label; matching gives `g(a) = 2η(1+η)a₀` and a closed-form envelope solution and stock (`envelope_mass_matched`); and a stock reaching radius L needs a stock-to-baryon ratio of at least (L/r_M − 1)/2 (`stock_ratio_lower_bound`). Scope and the weak-lensing comparison: [envelope premises](verification/envelope_premises_2026-10-24.md).
+
 ## Status (2026-10-23)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 184 modules, 3,404 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_fouritems_2026-10-23.log`) |
+| Library | one Lean library, `Entropic`: 186 modules, 3,445 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_envelope_2026-10-24.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
