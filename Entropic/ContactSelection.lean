@@ -30,6 +30,12 @@ Section 2 (new):
   imbalance `d` to the baryons as `-d g_R (1 + λ J')/(λ - 1)`;
 * `vp_acceleration_scaling`: the Vlasov-Poisson scaling moves accelerations by `β²/α`;
 * `clip_renormalise_not_minimal`: the three-shell counterexample to clip-and-renormalise.
+
+Section 3 (galaxy and cluster bookkeeping): the occupation is the enclosed stock-to-baryon
+ratio; clipping a monotone target at the budget is the optimal admissible profile; the
+weak-lensing stock bound `S ≥ (π/4) sqrt(a0/g) - 1`; an always-on field response misses the
+X-COP cluster ratios while the cohort value `1 + k_C` lies between them; no cells means no
+bias; the precision needed for the `a0(z)` ratio test.
 -/
 
 noncomputable section
@@ -319,5 +325,71 @@ the clipped-and-renormalised profile `(4/3, 0, 2/3)` has mismatch `5/9`, while t
 isotonic profile `(3/2, 0, 1/2)` has `1/2`. -/
 theorem clip_renormalise_not_minimal :
     ((3/2:ℝ) - 2)^2 + ((3/2:ℝ) - 1)^2 < ((4/3:ℝ) - 2)^2 + ((4/3:ℝ) - 1)^2 := by norm_num
+
+/-! ## 3. Galaxy and cluster bookkeeping -/
+
+/-- Spherically, the occupation `n = g_s/g_b` is the enclosed stock-to-baryon mass ratio. -/
+theorem occupation_is_enclosed_ratio (G Ms Mb r : ℝ) (hG : G ≠ 0) (hr : r ≠ 0) :
+    (G*Ms/r^2)/(G*Mb/r^2) = Ms/Mb := by
+  rcases eq_or_ne Mb 0 with h | h
+  · simp [h]
+  · field_simp
+
+/-- Pointwise optimality of clipping: for any profile bounded by the budget `M`, the clipped
+target `min T M` has no larger weighted mismatch. -/
+theorem clip_optimal {K : Type*} [Fintype K] (T Y w : K → ℝ) (M : ℝ)
+    (hw : ∀ k, 0 ≤ w k) (hY : ∀ k, Y k ≤ M) :
+    (∑ k, w k*(min (T k) M - T k)^2) ≤ ∑ k, w k*(Y k - T k)^2 := by
+  apply Finset.sum_le_sum; intro k _
+  apply mul_le_mul_of_nonneg_left _ (hw k)
+  rcases le_total (T k) M with h | h
+  · rw [min_eq_left h, sub_self]; nlinarith [sq_nonneg (Y k - T k)]
+  · rw [min_eq_right h]
+    have h1 : Y k - T k ≤ M - T k := by linarith [hY k]
+    have h2 : M - T k ≤ 0 := by linarith
+    nlinarith
+
+/-- A non-decreasing target stays non-decreasing after clipping, so the clipped target is
+an admissible (positive-density) stock profile and, by `clip_optimal`, the minimiser. -/
+theorem clip_monotone {T : ℝ → ℝ} (hT : Monotone T) (M : ℝ) :
+    Monotone (fun r => min (T r) M) := fun _ _ hab => min_le_min_right M (hT hab)
+
+/-- Weak-lensing stock bound. An isolated finite halo has `ΔΣ ≤ (1+S) g/(πG)`; a deep-RAR
+signal `ΔΣ = sqrt(g a0)/(4G)` therefore needs `S ≥ (π/4) sqrt(a0/g) - 1`. -/
+theorem lensing_stock_bound (G g a0 S : ℝ) (hG : 0 < G) (hg : 0 < g) (ha : 0 < a0)
+    (h : Real.sqrt (g*a0)/(4*G) ≤ (1+S)*g/(Real.pi*G)) :
+    Real.pi/4*Real.sqrt (a0/g) - 1 ≤ S := by
+  have hpi := Real.pi_pos
+  have hsq : Real.sqrt (g*a0) = g*Real.sqrt (a0/g) := by
+    rw [show g*a0 = g^2*(a0/g) by field_simp, Real.sqrt_mul (sq_nonneg g),
+      Real.sqrt_sq hg.le]
+  rw [hsq] at h
+  have h' : g*Real.sqrt (a0/g)*(Real.pi*G) ≤ (1+S)*g*(4*G) := by
+    rw [div_le_div_iff₀ (by positivity) (by positivity)] at h; linarith
+  have h'' : Real.sqrt (a0/g)*Real.pi ≤ (1+S)*4 := by
+    have := (mul_le_mul_iff_of_pos_right (show 0 < g*G by positivity)).mp
+      (by nlinarith [h'] : Real.sqrt (a0/g)*Real.pi*(g*G) ≤ (1+S)*4*(g*G))
+    exact this
+  linarith
+
+/-- With the cohort stock retained, an RAR field response that stays on in clusters adds
+its boost `B = 4.2-5.0` at `R500` to `k_C`, overshooting the X-COP median `6.45` by more
+than 1.4; the RAR alone (`B ≤ 5.0`) falls short of it by at least 1.29. -/
+theorem field_response_misses_clusters :
+    1.4 < ((5.1760752:ℝ) + 4.2)/6.45 ∧ (6.45:ℝ)/5.0 ≥ 1.29 := by norm_num
+
+/-- The cohort ratio `1 + k_C = 6.18` lies between the X-COP medians at `R200` and `R500`. -/
+theorem cohort_between_xcop : (6.10:ℝ) < 1 + 5.1760752 ∧ 1 + (5.1760752:ℝ) < 6.45 := by
+  norm_num
+
+/-- Off active carriers the cell density vanishes, so the bias density
+`𝒩 Θ ∂_n D` vanishes and the stock is collisionless there. -/
+theorem no_cells_no_bias (cellFE affinity : ℝ) (h : cellFE = 0) : cellFE*affinity = 0 := by
+  rw [h, zero_mul]
+
+/-- Redshift test: separating `H(2.3)/H0 = 3.4648` from an alternative ratio `3.0` at three
+standard deviations works with a 4.4% fractional uncertainty and fails at 4.5%. -/
+theorem redshift_ratio_precision :
+    3*(0.044*(3.4648:ℝ)) < 3.4648 - 3 ∧ 3.4648 - 3 < 3*(0.045*(3.4648:ℝ)) := by norm_num
 
 end Entropic.ContactSelection
