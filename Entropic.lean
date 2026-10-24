@@ -139,3 +139,10 @@ import Entropic.Extensions20261023.ConnectedClosure
 import Entropic.Extensions20261023.EffectiveContact
 import Entropic.Extensions20261023.MergerContact
 import Entropic.Extensions20261023.ClusterOutliers
+
+-- Electromagnetic extension and native-selection obstructions.
+import Entropic.Electromagnetism.Gauge
+import Entropic.Electromagnetism.Spectrum
+import Entropic.Electromagnetism.Mechanisms
+import Entropic.Electromagnetism.NativeSelection
+import Entropic.Electromagnetism.Coupling

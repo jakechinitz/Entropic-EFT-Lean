@@ -1,0 +1,50 @@
+APPENDIX S: ELECTROMAGNETIC EXTENSION — SCOPE LEDGER
+
+New modules: Entropic/Electromagnetism/{Gauge,Spectrum,Mechanisms}.lean.
+Imported by the main Entropic.lean entry point.
+
+S.1–S.2: commutator product rule; neutral bilinears; charged hopping;
+weighted products of arbitrary length and closed loops; gauge-invariant
+coefficient scaling; finite sums; invariant kernel; local hopping phase
+cancellation; four-link holonomy; integer rotor shift on sequences;
+closed-graph total Gauss constraint and neutrality.
+
+S.3: complex Maxwell symbol; nonzero norm; longitudinal kernel;
+transverse eigenvalue; transverse dimension exactly two at nonzero momentum;
+symbol polynomial; longitudinal characterization of the kernel;
+trigonometric symbol and small-momentum component derivative.
+
+S.4–S.5: matrix projective phase cancellation; no scalar phase readout from
+conjugation channels; finite-dimensional exact-rotor obstruction;
+Gaussian square completion; zero linear derivative of the local composite
+Berry connection; leading-loop algebraic coefficient, positivity, rational
+control coefficients; nonuniqueness of positive stiffness.
+
+Explicit premises: conserved chosen charge, operator commutators, graph
+closure, nonzero momentum, phase-unitarity condition, Gaussian/bosonic
+kernel, native link and amplitude assignment. These are not inferred from
+the 1680-state gravity ensemble.
+
+Numerical controls: the independent check_numerics.py in
+02 Research/Electromagnetic extension 2026-10-24; seeded random gauges,
+finite nonunitary flux cutoff, Gauss-preserving matter/plaquette examples,
+quadratic spectrum, isolated bosonic loop determinants and curvatures.
+
+NOT FORMALIZED: CAR/Fock construction from native operators; Hilbert-space
+self-adjointness and rotor evolution; Gaussian integral and logdet series
+convergence; interacting Coulomb phase; native metric continuum limit;
+fermionic induced coefficient; physical electric charge, fine-structure
+constant and renormalization. The full-theory physical selection remains open.
+
+Validation: use the dated verification manifest and logs. The installed
+Windows compiler/cache pair is Lean/mathlib 4.19.0; the main project pins
+4.35.0. Standalone kernel checking of the new modules does not constitute
+a full 4.35 project rebuild. No toolchain or dependency pins were changed.
+The pre-existing whole-manuscript ledger totals are not silently revised.
+
+UPDATE (later on 24 Oct 2026): two further modules, NativeSelection.lean (S.4 native
+bridge, exchange spectrum, empty vacuum) and Coupling.lean (S.6-S.8 commutants, central
+transfer, response algebra, matching condition, unified normalization and one-loop
+scale bound), are also imported. All five modules (78 theorems) build in the pinned
+Lean 4.35.0 library; the full axiom audit passes (verification/axiom_audit_em_2026-10-24.log).
+Linter-only edits were made for 4.35 (unused simp arguments and `<;>` combinators).
