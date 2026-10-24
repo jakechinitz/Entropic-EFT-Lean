@@ -39,3 +39,12 @@ Observed-cluster runs (device folder `02 Research/Bose contact observed clusters
 cluster gate. With the galaxy-scaled work allowance (0.45 V_f^2), the mass inside
 R500 falls to 55-84% of the no-contact control; with a 15,000 (km/s)^2 reserve it
 stays at 98-99%. No theorem here selects either allowance or proves the gate.
+
+## Section 4: cell reservoir (added later on 2026-10-24)
+- `cell_energy_density_RJ`: with g = a0 x^2 and n = 1/x, g^2 n(1+n) x n = g a0 (1+x).
+- `cell_reservoir_deep`: if V^4 = G M a0, then (a0 M R)/(V^2 R/G) = V^2.
+- `cluster_core_reservoir_small`: 131.7 < 0.01 * 15000 (arithmetic on the measured
+  X-COP core reservoirs; device folder `02 Research/Cluster switch derivation 2026-10-24`).
+Identifications that are NOT formalized: condensed baryons as carrier records, the
+record-dominance support boundary, carried stock as stock bound to the carrier, and the
+work register as the cell energy.

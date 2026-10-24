@@ -392,4 +392,32 @@ standard deviations works with a 4.4% fractional uncertainty and fails at 4.5%. 
 theorem redshift_ratio_precision :
     3*(0.044*(3.4648:ℝ)) < 3.4648 - 3 ∧ 3.4648 - 3 < 3*(0.045*(3.4648:ℝ)) := by norm_num
 
+/-! ## 4. Carrier support and the cell reservoir
+
+The response cells of a carrier hold energy `𝒩 Θ x n` per unit volume. In the
+Rayleigh-Jeans regime `n = 1/x` this is `g a0 (1+x)/(4πG)`; integrated to the budget
+edge it gives the carrier's flat-velocity scale `V_f²` per unit stock mass. Off the
+carrier support there are no cells, hence neither bias nor work. -/
+
+/-- Rayleigh-Jeans cell energy density: with `g = a0 x²` and `n = 1/x`,
+`g² n(1+n) x n = g a0 (1+x)`. -/
+theorem cell_energy_density_RJ (a0 x : ℝ) (hx : 0 < x) :
+    (a0*x^2)^2 * ((1/x)*(1+1/x)) * x * (1/x) = (a0*x^2)*a0*(1+x) := by
+  field_simp
+  ring
+
+/-- Deep-regime reservoir: if `V⁴ = G M a0`, the leading cell energy `a0 M R` per unit
+of the stock `V² R/G` it supports equals `V²`. -/
+theorem cell_reservoir_deep (V G M a0 R : ℝ) (hV : 0 < V) (hG : 0 < G) (hR : 0 < R)
+    (hT : V^4 = G*M*a0) :
+    (a0*M*R) / (V^2*R/G) = V^2 := by
+  have hV2 : V^2 ≠ 0 := by positivity
+  rw [div_eq_iff (by positivity)]
+  field_simp
+  nlinarith [hT]
+
+/-- The X-COP core cells hold at most `131.7 (km/s)²` per unit cluster stock, below
+1% of the `15000 (km/s)²` reserve that left 98-99% of the mass at `R500`. -/
+theorem cluster_core_reservoir_small : (131.7:ℝ) < 0.01*15000 := by norm_num
+
 end Entropic.ContactSelection
