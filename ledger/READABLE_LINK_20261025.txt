@@ -1,0 +1,46 @@
+APPENDIX S.10: THE QUTRIT-QUBIT LINK AS THE CANDIDATE ELECTROWEAK RECORD - SCOPE LEDGER
+
+New module: Entropic/Electromagnetism/ReadableLink.lean (18 theorems), imported by Entropic.lean.
+Module axiom audit: verification/axiom_audit_readable_link_2026-10-25.log (18 theorems, 0 with
+nonstandard axioms). The library total of 194 modules and 3,607 theorems adds this module's 18
+theorems to the audited 3,589; the full library audit was not rerun.
+
+Manuscript claims and their Lean status:
+
+S.10, central charge and hypercharge of the link
+  - Q = diag(d2 1, -d1 1) is traceless: center_traceless
+  - Q acts on C^d1 (x) C^d2 as the scalar d2 - d1 (general m, n, any commutative ring):
+    center_acts_as_scalar
+  - qubit-qutrit instance, 3 - 2 = 1: qubit_qutrit_charge; equal ends carry none:
+    equal_link_uncharged
+  - Y = Q/6: link hypercharge 1/6, Y = diag(1/2, 1/2, -1/3, -1/3, -1/3): link_hypercharge
+  - scalar blocks commute with every block operator: scalar_block_commutes
+  - that S(U(3) x U(2)) is isomorphic to (SU(3) x SU(2) x U(1))/Z6: NOT FORMALIZED (cited,
+    Baez and Huerta 2010)
+
+I.2 / S.10, triality
+  - omega^3 = 1 gives det(omega 1_3) = 1: triality_det_one
+  - (1_2, omega 1_3) acts on the link as omega: triality_on_link
+  - conjugation by omega 1 is the identity on every operator: triality_channel_blind
+
+S.10, stiffness limits for a qubit record
+  - isotropic channel t X + c Tr(X) I compressed by W V = 1 keeps t on traceless operators:
+    compressed_isotropic_channel
+  - pinned limit (k = 1) gives 1: pinned_limit; isotropic limit gives 13/14: isotropic_limit
+  - 13/14 < 0.94915 < 1: required_between_limits
+  - alpha_2^-1(m_P) = 34.6 for t_3 = 13/14 and the requirement 49.15: numerical
+  - the frame alignment that would fix t_3: NOT DERIVED
+
+Read cap (named hypothesis)
+  - no product of two integers >= 2 equals 7: no_product_seven
+  - unequal readable types are (2,3), (3,2): readable_unequal
+  - under the cap, every link with an end of dimension >= 4 is unreadable:
+    capacity_ends_unreadable
+  - the cap itself (Stormer 1963, Woronowicz 1976, Choi 1975): HYPOTHESIS, not formalized
+
+S.10 / Section 27, fixed alpha beside evolving a0
+  - the transfer multiplier has no dependence on H, while eps c H'/(eps c H) = H'/H:
+    coupling_fixed_a0_scales
+  - H(1.15)/H0 > 1.95 for Omega_m = 0.315: a0_ratio_at_espresso_redshift
+  - Delta alpha/alpha = 1.3 +/- 1.3 (stat) +/- 0.4 (sys) ppm at z = 1.15 (Murphy et al. 2022):
+    cited data
