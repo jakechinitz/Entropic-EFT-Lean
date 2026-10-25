@@ -146,3 +146,4 @@ import Entropic.Electromagnetism.Spectrum
 import Entropic.Electromagnetism.Mechanisms
 import Entropic.Electromagnetism.NativeSelection
 import Entropic.Electromagnetism.Coupling
+import Entropic.Electromagnetism.Stiffness

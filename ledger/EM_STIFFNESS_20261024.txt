@@ -1,0 +1,36 @@
+APPENDIX S.9-S.10: PHASES OF THE NATIVE GLUING AND ELECTROWEAK STIFFNESS - SCOPE LEDGER
+
+New module: Entropic/Electromagnetism/Stiffness.lean (9 theorems), imported by Entropic.lean.
+
+Manuscript claims and their Lean status:
+
+S.9, native gluing gives no photon
+  - cubic invariant Tr Q^3 nonzero for N = 3 (Q = diag(2,-1,-1)): cubic_invariant_nonzero
+  - mean-field ordering coupling N(N+1)/(2 z_c) = 45/8 for N = 9, z_c = 8: mean_field_coupling
+  - induced fiber stiffness 9 l/(24 pi^2) < 1.0111331 for l <= 26: fiber_stiffness_below_deconfinement
+  - first-order transition, Higgs and confined phases: NOT FORMALIZED (4D Metropolis scan
+    and the cited 3D lattice literature; the lattice phase diagram is outside Lean)
+
+S.9, native charged leptons are too weak
+  - each ln(m_P/m_l) <= 51.6 gives (2/3 pi) sum < 33: leptons_cannot_induce_alpha
+  - the values 51.53, 46.20, 43.37 and alpha^-1 = 29.9: numerical (rge2.py)
+
+S.10, stiffness must be native to the substrate
+  - b_2 = -22/3 + 4 n_g/3 + n_H/6 = -19/6: su2_coefficient
+  - an asymptotically free inverse coupling stays positive above its reference scale:
+    asymptotically_free_not_induced
+  - two-loop values alpha_Y^-1 = 55.08, alpha_2^-1 = 49.15, alpha_3^-1 = 52.90 at m_P:
+    numerical (rge2.py, two-loop gauge running with the top Yukawa coupling)
+
+S.10, form of the transfer
+  - Haar-averaged adjoint eigenvalue 1 - 2(1-k)/(d+1) from the two averages
+    (algebraic identity, the averages are hypotheses): adjoint_transfer_eigenvalue
+  - color instance d = 3, k = 6/7 gives 13/14: color_transfer
+  - heat-kernel coordinate g^2 = (4 sqrt 6/3) ln(14/13): color_heat_kernel_coordinate
+
+S.10, targets and the common heat time: numerical (rge2.py); not formalized.
+S.10, status (electroweak records, Gauss constraint, overlap and Luscher constructions,
+  anomaly cancellation): premises and cited results; not formalized.
+
+Scripts: 02 Research/EM stiffness 2026-10-24 (rge2.py and its output) and
+02 Research/Electromagnetism phases 2026-10-24 (cpn4d.py, cpn4d_L6.json).

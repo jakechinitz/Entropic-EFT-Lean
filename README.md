@@ -33,7 +33,7 @@ The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completi
 
 ## Electromagnetic extension (2026-10-24)
 
-`Entropic/Electromagnetism/` holds the algebra behind Appendix S of the manuscript, in five modules with 78 theorems. `Gauge` and `Spectrum` cover the charged hopping and Gauss-law algebra, closed-graph neutrality, the rotor shift identity on sequences, and the lattice Maxwell symbol with exactly two transverse directions at nonzero momentum. `Mechanisms` covers projective phase freedom, the finite-matrix rotor obstruction, Gaussian square completion, the composite Berry connection's vanishing linear term and the leading loop coefficient. `NativeSelection` covers the native bridge traces and its common-average coefficients, the aligned exchange spectrum and the empty fermion vacuum. `Coupling` covers the commutants, central-transfer freedom, response algebra, the diamond matching condition and the unified-normalization scale bound. The operator relations are hypotheses: the modules do not derive electromagnetism from the native vertex, fix the electric charge, or select a Coulomb phase. Scope: `ledger/ELECTROMAGNETISM_20261024.txt`.
+`Entropic/Electromagnetism/` holds the algebra behind Appendix S of the manuscript, in six modules with 87 theorems. `Gauge` and `Spectrum` cover the charged hopping and Gauss-law algebra, closed-graph neutrality, the rotor shift identity on sequences, and the lattice Maxwell symbol with exactly two transverse directions at nonzero momentum. `Mechanisms` covers projective phase freedom, the finite-matrix rotor obstruction, Gaussian square completion, the composite Berry connection's vanishing linear term and the leading loop coefficient. `NativeSelection` covers the native bridge traces and its common-average coefficients, the aligned exchange spectrum and the empty fermion vacuum. `Coupling` covers the commutants, central-transfer freedom, response algebra, the diamond matching condition and the unified-normalization scale bound. `Stiffness` covers the algebra of S.9 and S.10: the cubic invariant and mean-field coupling of the native gluing, the bound keeping its induced stiffness below the compact $U(1)$ deconfinement value, the lepton bound $\alpha^{-1}<33$, the $SU(2)_L$ coefficient and the positivity of an asymptotically free inverse coupling, and the Haar-averaged transfer eigenvalue $1-2(1-k)/(d+1)$ with its color instance $13/14$. The operator relations are hypotheses: the modules do not derive electromagnetism from the native vertex, fix the electric charge, or select a Coulomb phase. Scope: `ledger/ELECTROMAGNETISM_20261024.txt` and `ledger/EM_STIFFNESS_20261024.txt`.
 
 ## Contact selection (2026-10-24)
 
@@ -43,8 +43,8 @@ The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completi
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 192 modules, 3,580 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_em_2026-10-24.log`) |
+| Library | one Lean library, `Entropic`: 193 modules, 3,589 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_em_stiffness_2026-10-24.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
