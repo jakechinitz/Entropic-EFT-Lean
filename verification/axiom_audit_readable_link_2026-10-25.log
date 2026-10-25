@@ -1,0 +1,5 @@
+Entropic.Electromagnetism.ReadableLink: 18 theorems; 0 with nonstandard axioms
+
+Built with Lean 4.35.0 and the pinned mathlib (lake build Entropic.Electromagnetism.ReadableLink),
+audited with the #audit_axioms command of scripts/AxiomAudit.lean restricted to the module prefix.
+real	7m49.599s
