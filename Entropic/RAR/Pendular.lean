@@ -137,4 +137,93 @@ theorem gap_unruh {g κ c H : ℝ} (hg : 0 ≤ g) (hκ : 0 < κ) (hc : 0 < c) (h
     gap g (κ * c / H) H ^ 2 = (2 * π) ^ 2 * (g / c) / (κ * H) := by
   rw [gap_sq hg hκ hc hH]; unfold a0; field_simp; ring
 
+/-! ## Thermodynamic lever (2026-10-28, pass f)
+
+The pull on the frame is a free energy. A static frame reads the baryonic field along itself, `g cos δ`, and holds
+an oriented record of entropy `s` at the Unruh temperature of that projected field; records of fixed entropy have
+free energy `−T s`, so the frame's free energy is `−s T_U cos δ` and the pull is `s T_U (1 − cos δ)`
+(`grip_free_energy`, `grip_stiffness`). The inertia is the enthalpy of the register, `S k_B T_H` with `S` its
+entropy (`enthalpy_eq`), carried at the horizon arm `c/H`. Temperatures are written as rates
+(`k_B T_U/ħ = g/(2πc)`, `k_B T_H/ħ = H/2π`). Then `ω² = g/ℓ` with `ℓ = (S/s) c/H` (`thermo_lever`): the lever
+coefficient is `κ = S/s`. With `S = g_share,eff` and `s = 1` nat, `κ = g_share,eff` (`thermo_gap_sq`). The RAR
+window `5.35 ≤ κ ≤ 8.69` requires `0.85 < s < 1.39`; it excludes one bit `ln 2` and `3/2`, and contains one nat
+(`entropy_window`, `one_bit_excluded`, `three_halves_excluded`, `one_nat_allowed`). The closure split
+`S = 1/2 + 1 + ln Z` (`closure_split`) gives the transverse pair exactly one nat when `β U = 3/2`. The premises are
+the Unruh reading of the projected baryonic field by a static frame and the identification of the oriented record
+with the transverse share; neither is derived here. -/
+
+/-- Unruh temperature as a rate, `k_B T_U/ħ = g/(2πc)`. -/
+def unruhRate (g c : ℝ) : ℝ := g / (2 * π * c)
+
+/-- Horizon temperature as a rate, `k_B T_H/ħ = H/(2π)`. -/
+def horizonRate (H : ℝ) : ℝ := H / (2 * π)
+
+/-- **Pull as free energy.** With `F(δ) = −s T cos δ`, `F(δ) − F(0) = s T (1 − cos δ)`: the aligned frame is the
+minimum for `s, T ≥ 0`. -/
+theorem grip_free_energy (s T δ : ℝ) :
+    (-(s * T * cos δ)) - (-(s * T * cos 0)) = s * T * (1 - cos δ) := by
+  rw [cos_zero]; ring
+
+theorem grip_nonneg {s T : ℝ} (hs : 0 ≤ s) (hT : 0 ≤ T) (δ : ℝ) : 0 ≤ s * T * (1 - cos δ) := by
+  have := cos_le_one δ
+  exact mul_nonneg (mul_nonneg hs hT) (by linarith)
+
+/-- The pull has small-angle stiffness `s T`, the pendulum weight `M g ℓ` of `tilt_stiffness`. -/
+theorem grip_stiffness (s T : ℝ) :
+    deriv (deriv (fun δ : ℝ => s * T * (1 - cos δ))) 0 = s * T := by
+  have h := tilt_stiffness s T 1
+  simp only [mul_one] at h
+  exact h
+
+/-- **Enthalpy.** If `F = U − T S` and the pressure term is `−F` (chemical potential zero), the enthalpy is `T S`. -/
+theorem enthalpy_eq {U F T S : ℝ} (hF : F = U - T * S) : U + (-F) = T * S := by
+  rw [hF]; ring
+
+/-- **Thermodynamic lever.** Stiffness `s T_U`, inertia `S T_H (c/H)²/c²`: `ω² = g / ((S/s) c/H)`. -/
+theorem thermo_lever {g c H S s : ℝ} (hc : 0 < c) (hH : 0 < H) (hS : 0 < S) (hs : 0 < s) :
+    (s * unruhRate g c) / (S * horizonRate H * (c / H) ^ 2 / c ^ 2) = g / (S / s * c / H) := by
+  unfold unruhRate horizonRate
+  have hπ : (0:ℝ) < π := pi_pos
+  field_simp
+
+/-- With the thermodynamic lever, `x² = (2π)² (g/c) / ((S/s) H)`; for `S = g_s`, `s = 1` this is `gap_sq`. -/
+theorem thermo_gap_sq {g c H S s : ℝ} (hg : 0 ≤ g) (hc : 0 < c) (hH : 0 < H) (hS : 0 < S) (hs : 0 < s) :
+    gap g (S / s * c / H) H ^ 2 = (2 * π) ^ 2 * (g / c) / (S / s * H) :=
+  gap_unruh hg (div_pos hS hs) hc hH
+
+theorem thermo_gap_one_nat {g c H gs : ℝ} (hg : 0 ≤ g) (hc : 0 < c) (hH : 0 < H) (hgs : 0 < gs) :
+    gap g (gs / 1 * c / H) H = Real.sqrt (g / a0 gs c H) := by
+  rw [div_one]; exact gap_eq hg hgs hc hH
+
+/-- **Entropy window.** `κ = S/s` with `κ ∈ [κ₁, κ₂]`, `κ₁ > 0`, gives `s ∈ [S/κ₂, S/κ₁]`. -/
+theorem entropy_window {S s κ₁ κ₂ : ℝ} (hs : 0 < s) (h1 : 0 < κ₁)
+    (hlo : κ₁ ≤ S / s) (hhi : S / s ≤ κ₂) : S / κ₂ ≤ s ∧ s ≤ S / κ₁ := by
+  have h2 : 0 < κ₂ := lt_of_lt_of_le h1 (le_trans hlo hhi)
+  constructor
+  · rw [div_le_iff₀ h2]; rw [div_le_iff₀ hs] at hhi; linarith
+  · rw [le_div_iff₀ h1]; rw [le_div_iff₀ hs] at hlo; linarith
+
+/-- With `7.4198000220 < g_s < 7.4198000250` (ClosureRoot enclosure) and `κ ≤ 8.69`, one bit `ln 2` is too small. -/
+theorem one_bit_excluded {gs : ℝ} (hgs : 7.4198000220 < gs) : Real.log 2 < gs / 8.69 := by
+  have := Real.log_two_lt_d9
+  rw [lt_div_iff₀ (by norm_num)]; nlinarith
+
+theorem three_halves_excluded {gs : ℝ} (hgs : gs < 7.4198000250) : gs / 5.35 < 3 / 2 := by
+  rw [div_lt_iff₀ (by norm_num)]; linarith
+
+theorem one_nat_allowed {gs : ℝ} (h1 : 7.4198000220 < gs) (h2 : gs < 7.4198000250) :
+    gs / 8.69 < 1 ∧ 1 < gs / 5.35 := by
+  constructor
+  · rw [div_lt_iff₀ (by norm_num)]; linarith
+  · rw [lt_div_iff₀ (by norm_num)]; linarith
+
+/-- **Closure split.** With `S = βU + ln Z` and `βU = 3/2` shared equally over three closure components, the
+longitudinal component carries `1/2`, the transverse pair `1`, and the multiplicity `ln Z` carries no orientation. -/
+theorem closure_split {S βU L : ℝ} (hS : S = βU + L) (hU : βU = 3 / 2) :
+    S = βU / 3 + 2 * (βU / 3) + L ∧ 2 * (βU / 3) = 1 := by
+  subst hU
+  refine ⟨?_, ?_⟩
+  · rw [hS]; ring
+  · norm_num
+
 end Entropic.RAR
