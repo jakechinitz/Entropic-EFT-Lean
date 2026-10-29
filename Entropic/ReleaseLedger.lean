@@ -29,6 +29,8 @@ A history is a finite list of release events: event `k` releases the fraction `f
 * `early_release_needed`: some release happens at `a³ ≤ F(1)/I_rel`.
 * `reference_history_releases_early`: for the paper's reference history (`F(1) = 0.6633922061`,
   `I_rel = 94.2116`), some release happens at `a < 1/5.2`, before redshift 4.2.
+* `fitted_history_releases_early`: for the standard-configuration direct fit of Section 20 (`H₀ = 68.458`,
+  `F(1) = 0.66185`, `I_rel = 92.327`, 2.0 % below the reference integral), before redshift 4.18.
 
 Ported from the held-out-test record of 2026-10-26 (`verification/heldout_bestfit_2026-10-26.md`), with the
 paper's current reference numbers in place of the 2026-10-26 fit.
@@ -167,6 +169,30 @@ theorem reference_history_releases_early {a f : Fin n → ℝ} (h : Valid a f)
   by_contra hge
   have hge' : 1 / 5.2 ≤ a k := not_lt.mp hge
   have : (1 / 5.2 : ℝ) ^ 3 ≤ a k ^ 3 := pow_le_pow_left₀ (by norm_num) hge' 3
+  linarith
+
+/-- Released fraction of the standard-configuration direct fit (Section 20, linear depletion). -/
+def fittedReleased : ℝ := 0.66185
+
+/-- Release integral of the standard-configuration direct fit (`H₀ = 68.458`). -/
+def fittedIntegral : ℝ := 92.327
+
+/-- The standard-configuration fit (`F(1) = 0.66185`, `I_rel = 92.327`): some release happens at a scale factor
+below `1/5.18`, i.e. before redshift 4.18. -/
+theorem fitted_history_releases_early {a f : Fin n → ℝ} (h : Valid a f)
+    (hF : released f = fittedReleased) (hI : releaseIntegral a f = fittedIntegral) :
+    ∃ k, 0 < f k ∧ a k < 1 / 5.18 := by
+  have hFpos : 0 < released f := by rw [hF]; unfold fittedReleased; norm_num
+  obtain ⟨k, hk, hk3⟩ := early_release_needed h hFpos
+  refine ⟨k, hk, ?_⟩
+  rw [hF, hI] at hk3
+  have hbound : fittedReleased / fittedIntegral < (1 / 5.18) ^ 3 := by
+    unfold fittedReleased fittedIntegral; norm_num
+  have hlt : a k ^ 3 < (1 / 5.18) ^ 3 := lt_of_le_of_lt hk3 hbound
+  obtain ⟨_, ha, _⟩ := h k
+  by_contra hge
+  have hge' : 1 / 5.18 ≤ a k := not_lt.mp hge
+  have : (1 / 5.18 : ℝ) ^ 3 ≤ a k ^ 3 := pow_le_pow_left₀ (by norm_num) hge' 3
   linarith
 
 end Entropic.ReleaseLedger

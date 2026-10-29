@@ -25,9 +25,11 @@ Two flags in the record were checked on 2026-10-29:
   Section 18 confines contacts to stock inside active-carrier supports, and cluster stock outside the central
   galaxy's support (47–99 kpc in X-COP) is collisionless. Above 2000 km s⁻¹, typical of cluster
   collisions, the law is below 0.03 cm² g⁻¹.
-- **Two values of H₀.** The galaxy runs use `a₀` at `H₀ = 67.4`; the release cosmology fits `H₀ = 68.94`, a
-  2.3 % higher `a₀`, which the paper states. Rerunning the 22-dwarf registered predictions at the higher `a₀`
-  leaves every classification unchanged and moves the support-rule χ² from 31.03 to 30.83.
+- **Values of H₀.** The galaxy runs use `a₀` at `H₀ = 67.4`. The theory's own release fit in the standard
+  configuration of the paper (plain DES-Dovekie, Σm_ν = 0.06 eV, low-ℓ τ prior) gives `H₀ = 68.458`, a 1.6 %
+  higher `a₀ = 1.250×10⁻¹⁰ m s⁻²`; the paper now quotes that value beside the Planck one (2026-10-29). At the
+  higher `a₀` every dwarf classification is unchanged; the support-rule χ² moves from 31.03 to 30.90, and with
+  the release gate from 21.7 to 21.6.
 
 ---
 
