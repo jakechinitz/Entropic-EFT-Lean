@@ -663,7 +663,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-112 | C | medium | Face-wise lock gives regular cells; edge length | proved: AppH1.cell_edge |
 | C07-113 | A | medium | Hinge amplitude from Cauchy equations | not formalized: continuous U(1) Cauchy equation in two variables (second pass, time-boxed: continuous bimultiplicative U(1) maps (Cauchy equations) not formalized) |
 | C07-114 | A | easy | Regge coefficient and channel form | proved: AppH1.regge_coefficient |
-| C07-115 | C | hard | Regge-to-Einstein–Hilbert limit | premise C (Regge convergence theorem); not formalized |
+| C07-115 | C | hard | Regge-to-Einstein–Hilbert limit | partial: quadratic order on the regular Freudenthal–Kuhn lattice proved: ReggeGraviton.symbol_limit (∑A ε = ½∫√g R at second order, coefficient 1), ReggeGraviton.Kred_schur, ReggeGraviton.regge_strong_resolvent_normalized (per-simplex Hessian computed exactly in tools/regge_simplex_hessian.py); nonlinear and irregular triangulations not formalized |
 | C07-116 | C | hard | Two-derivative uniqueness | premise C (Lovelock); not formalized |
 | C07-117 | A | easy | Proper-time composition gives worldline action | proved: AppH1.phase_composition |
 | C07-118 | A | hard | Point-particle stress tensor | not formalized: functional derivative on Lorentzian manifolds (second pass, time-boxed: functional derivative on Lorentzian manifolds not formalized) |
@@ -736,9 +736,9 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C08-58 | B | easy | Momentum condition | proved: AppH10.momentum_condition |
 | C08-59 | C | hard | Regge length-metric TT symbol | premise C (Dittrich-Kogios symbol) |
 | C08-60 | A | easy | Pointwise resolvent limit and uniform bound | proved: AppH10.resolvent_bound, AppH10.resolvent_lower (uniform bound; pointwise limit is continuity of inversion) |
-| C08-61 | A | hard | Strong-resolvent convergence to Z_G(-Delta)P_TT | not formalized: strong-resolvent convergence on L²(ℝ³) (unbounded operators) |
+| C08-61 | A | hard | Strong-resolvent convergence to Z_G(-Delta)P_TT | proved in Euclidean four-dimensional form for the Freudenthal–Kuhn regular branch (not the centrally subdivided lattice of the cited symbol): ReggeGraviton.regge_strong_resolvent_normalized, ReggeGraviton.KEHg_TT (TT eigenvalue −¼|k|², Frobenius-normalized) (per-simplex Hessian computed exactly in tools/regge_simplex_hessian.py); Lorentzian/3D TT and reflection positivity not formalized |
 | C08-62 | A | hard | Strong-resolvent convergence of the Hamiltonians | not formalized: functional calculus for s.r. convergence |
-| C08-63 | A | medium | Massless TT spectrum | not formalized: spectrum of multiplication operator c∣k∣ |
+| C08-63 | A | medium | Massless TT spectrum | partial: massless TT symbol ReggeGraviton.KEHg_TT (TT eigenspace, eigenvalue −¼|k|²); spectrum of the multiplication operator not formalized |
 | C08-64 | A | easy | Primitive pullback with hierarchical complement | proved: AppH10.prim_resolvent_general |
 | C08-65 | A | easy | TT projector trace | proved: AppH10.tt_trace, AppH10.tt_projector, AppH10.ttMap_apply |
 | C08-66 | E | n | Graviton Fock space | E: definition |

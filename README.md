@@ -8,6 +8,21 @@ Structure* in **Lean 4.35.0 with mathlib**. The source record and the SHA-256
 hash of the PDF used are in `provenance.json`. CI builds the library, runs the axiom audit
 and the ledger citation check on every push.
 
+## Regge graviton (2026-10-28)
+
+`Entropic/ReggeGraviton/` (sixteen modules) proves the graviton step of Appendix H.10 at quadratic
+order for a regular metric-Regge lattice, with the lattice symbol computed rather than cited. On the
+Freudenthal–Kuhn triangulation of `ℤ⁴` (24 simplices per hypercube; the length-Regge lattice of
+Dittrich et al., arXiv:2105.10808, not the centrally subdivided lattice of the cited symbol), the
+quadratic Regge action reduces, after the four body diagonals are integrated out (`KC_eq`,
+`Kred_schur`), to a Hermitian symbol on metric perturbations with `ε⁻² Kred(εk) → KEH(k)`
+(`symbol_limit`), the Fourier kernel of `(√g R)⁽²⁾` (`KEH_quad`). So `∑_t A_t ε_t = ½∫√g R` at quadratic
+order with coefficient exactly 1. In Frobenius-normalized coordinates the transverse-traceless
+polarizations are an eigenspace with eigenvalue `−¼|k|²` (`KEHg_TT`), and the lattice operators converge
+to the linearized Einstein operator in the strong-resolvent sense (`regge_strong_resolvent_normalized`).
+The one input not derived in Lean is the exact flat Hessian of one Kuhn simplex (`hzL`). Record, the
+independent review and the scope: [Regge graviton](verification/regge_graviton_2026-10-28.md).
+
 ## Effective dynamics and cluster extensions (2026-10-23)
 
 Six modules under `Entropic/Extensions20261023` add 119 explicit theorem declarations to the import graph. The status table below counts them. The normal pinned Lean 4.35 build and module-based axiom audit include all six modules. Their earlier standalone checks used Lean/mathlib 4.19. See [extension scope and provenance](verification/extensions_2026-10-23.md) for the distinction between conditional mathematics and empirical calculations.

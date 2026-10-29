@@ -13,6 +13,7 @@ import Entropic.ClosureRoot
 import Entropic.GenerationCutoff
 import Entropic.Spine
 import Entropic.GalacticLaw
+import Entropic.ReggeGraviton
 import Entropic.BlackHole
 import Entropic.Director
 import Entropic.Reciprocity
