@@ -9,6 +9,10 @@ Structure* in **Lean 4.35.0 with mathlib**. The source record and the SHA-256
 hash of the PDF used are in `provenance.json`. CI builds the library, runs the axiom audit
 and the ledger citation check on every push.
 
+## Contact ledger, release ledger and redshift law (2026-10-29)
+
+Three modules port the general parts of the 2026-10-26 held-out-test formalization, restated on the existing library. `Entropic/ContactLedger.lean`: for any sequence of proposed stock contacts under the acceptance rule and work register of Appendix O.3, kinetic energy plus register changes only by credits, the register never goes negative, heating is bounded by the initial register plus credits, and once both are spent the stock cannot end hotter (`run_heating_bounded`, `spent_register_no_heating`); the mismatch never rises. `Entropic/ReleaseLedger.lean`: committed plus released stock is conserved, the vacuum density is nonnegative and one-signed, `I_rel ≥ F(1)`, and some release happens at `a³ ≤ F(1)/I_rel`; for the paper's reference history (`F(1) = 0.6633922061`, `I_rel = 94.2116`) some release precedes redshift 4.2 (`reference_history_releases_early`). `Entropic/RAR/Redshift.lean`: with `a₀(z) = ε c H(z)` in `GalacticLaw.gObs`, the boost at fixed baryonic acceleration rises with `H(z)`, `cH/a₀ = 1/ε` at every redshift, and the deep-regime Tully–Fisher zero point moves as `M(z)/M(0) = H(0)/H(z)` (`btfr_redshift`). The held-out record itself, with its 2026-10-26 numbers and the two flags checked on 2026-10-29, is archived in [held-out record](verification/heldout_bestfit_2026-10-26.md).
+
 ## Regge graviton (2026-10-28)
 
 `Entropic/ReggeGraviton/` (sixteen modules) proves the graviton step of Appendix H.10 at quadratic
@@ -81,16 +85,16 @@ The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completi
 
 `Entropic/RAR/Pendular.lean` gives the algebra of the Section 15 response cell read as the horizon-thermal tilt mode of the transverse frame, with lever `ℓ = g_share,eff c/H`. A pendulum potential `M g ℓ (1 − cos θ)` has `ω² = g/ℓ` (`tilt_frequency_sq`). With `x = 2πω/H` (a definition: `ħω/k_BT_H` at `T_H = ħH/2πk_B`), `x² = g/a₀` with `a₀ = g_share,eff cH/4π²` (`gap_sq`, `gap_eq`), `x = 1` exactly at `g = a₀` (`unit_gap_iff`), the projected-field gap is `x√cos δ` (`gap_tilt`), and the excess `g·n_B(x)` lies between `√(g a₀) − g/2` and `√(g a₀)` (`excess_bounds`). A local relativistic director tilt, `ω = c/ξ`, has a horizon gap above one for every `ξ < 2πc/H` (`local_mode_frozen`), and it matches the cell gap only when `ξ² = c²ℓ/g` (`coherence_length`). The Unruh form is `x² = (2π)²(g/c)/(κH)` (`gap_unruh`). The tilt-mode identification, its horizon thermalization and the lever are physical premises (ledger C02-04) and are not derived here. The thermodynamic lever gives the algebra of the lever coefficient: a static frame holding an oriented record of entropy `s` at the Unruh temperature of the projected field has free energy `−s T_U cos δ` and pull `s T_U (1 − cos δ)` (`grip_free_energy`, `grip_stiffness`); with the register enthalpy `S k_B T_H` as inertia at the arm `c/H`, `ω² = g/((S/s)c/H)`, so `κ = S/s` (`thermo_lever`, `thermo_gap_sq`). The RAR window excludes `s = ln 2` and `s = 3/2` and contains one nat (`one_bit_excluded`, `three_halves_excluded`, `one_nat_allowed`), and `S = βU + ln Z` with `βU = 3/2` gives the transverse pair exactly one nat (`closure_split`). The Unruh reading and the one-nat record are premises.
 
-## Status (2026-10-28)
+## Status (2026-10-29)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 195 modules, 3,619 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_rar_pendular_2026-10-28.log`) |
+| Library | one Lean library, `Entropic`: 222 modules, 5,037 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_2026-10-29.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
-| Citation check | `scripts/CiteCheck.lean`: 997 Lean names cited in the ledger, 0 unresolved |
+| Citation check | `scripts/CiteCheck.lean`: 1,028 Lean names cited in the ledger, 0 unresolved |
 
 Supporting files:
 
