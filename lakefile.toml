@@ -9,3 +9,7 @@ rev = "v4.35.0"
 
 [[lean_lib]]
 name = "Entropic"
+
+# Standalone target: the assumption-compatibility result and the modules it needs.
+[[lean_lib]]
+name = "Compatibility"
