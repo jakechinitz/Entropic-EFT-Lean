@@ -148,3 +148,4 @@ import Entropic.Electromagnetism.NativeSelection
 import Entropic.Electromagnetism.Coupling
 import Entropic.Electromagnetism.Stiffness
 import Entropic.Electromagnetism.ReadableLink
+import Entropic.RAR.Pendular
