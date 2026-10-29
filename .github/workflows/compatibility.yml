@@ -1,0 +1,53 @@
+name: compatibility
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compatibility:
+    name: lake build Compatibility + audit (standalone target)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      # Installs elan and fetches the Mathlib cache; the build below is the standalone target only.
+      - name: Toolchain and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: true
+          build: false
+          test: false
+
+      - name: Build the Compatibility target alone
+        run: |
+          set -o pipefail
+          lake build Compatibility 2>&1 | tee compat-build.log
+          if grep -q "declaration uses 'sorry'" compat-build.log; then
+            echo "::error::build log contains a 'declaration uses sorry' warning"; exit 1
+          fi
+
+      # Every theorem in Entropic.Compatibility and Entropic.Completion may depend only on
+      # propext, Classical.choice, Quot.sound.
+      - name: Compatibility axiom audit
+        run: |
+          set -o pipefail
+          lake env lean scripts/CompatibilityAudit.lean 2>&1 | tee compat-audit.txt
+          grep -q "Entropic.Compatibility: .* theorems; 0 with nonstandard axioms" compat-audit.txt
+          grep -q "Entropic.Completion: .* theorems; 0 with nonstandard axioms" compat-audit.txt
+          grep -q "effective_assumptions_compatible' depends on axioms: \[propext, Classical.choice, Quot.sound\]" compat-audit.txt
+
+      - name: Upload audit log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: compatibility-audit
+          path: |
+            compat-build.log
+            compat-audit.txt

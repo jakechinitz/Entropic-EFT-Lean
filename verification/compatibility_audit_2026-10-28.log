@@ -1,0 +1,13 @@
+Compatibility target imports 33 Entropic modules
+Entropic.Compatibility: 147 theorems; 0 with nonstandard axioms
+Entropic.Completion: 228 theorems; 0 with nonstandard axioms
+'Entropic.Compatibility.effective_assumptions_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Entropic.Completion.spatial_history_assumptions_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Entropic.Completion.global_effective_assumptions_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Entropic.Completion.GlobalModel.positive_fields' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Entropic.Completion.GlobalModel.selected_depletion_initial_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Entropic.Completion.InfiniteHistory.cylinder_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Entropic.Completion.Entropy.seven_channel_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+[exited with code 0]

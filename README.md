@@ -1,6 +1,7 @@
 # Entropic Scalar EFT: Lean formalization
 
 [![build](https://github.com/jakechinitz/Entropic-EFT-Lean/actions/workflows/build.yml/badge.svg)](https://github.com/jakechinitz/Entropic-EFT-Lean/actions/workflows/build.yml)
+[![compatibility](https://github.com/jakechinitz/Entropic-EFT-Lean/actions/workflows/compatibility.yml/badge.svg)](https://github.com/jakechinitz/Entropic-EFT-Lean/actions/workflows/compatibility.yml)
 
 This project formalizes the mathematical statements of Jacob Chinitz's
 *Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic
@@ -49,6 +50,16 @@ bracketed (`manuscript_Gtet`, `SInfCell_bounds`, `source_amplitude_bounds`). Sco
 checks: [diamond Green function](verification/diamond_green_2026-10-27.md).
 
 ## Assumption compatibility (2026-10-23)
+
+**Standalone build.** The compatibility result is its own Lake target and CI job:
+
+```sh
+lake exe cache get
+lake build Compatibility
+lake env lean scripts/CompatibilityAudit.lean
+```
+
+`Compatibility.lean` imports `Entropic.Compatibility.All` and `Entropic.Completion.All`, so the target builds 33 of the library's modules and nothing else. The audit checks every theorem in `Entropic.Compatibility` (147) and `Entropic.Completion` (228): none depends on an axiom beyond `propext`, `Classical.choice` and `Quot.sound`. It also prints the axioms of the three existence theorems, `effective_assumptions_compatible`, `spatial_history_assumptions_compatible` and `global_effective_assumptions_compatible`. Log: `verification/compatibility_audit_2026-10-28.log`. The `compatibility` badge above tracks this job.
 
 `Entropic/Compatibility` proves `Nonempty EffectiveModel` (`Entropic.Compatibility.effective_assumptions_compatible`): one structure carrying the native closure root η and ε, the 1680-state Gibbs histories, the 720-state shell cycle, a finite positive stock shared by reconstruction, redistribution and nonzero reciprocal Newton forces, and an explicit expanding homogeneous Einstein solution with positive energy transfer, tied to the finite model through the same mass budget. It also proves that a fixed finite faithful archive and an exact dense-core RAR profile are each impossible. This is an effective subsystem, not a consistency proof of the full theory: the finite force system is not embedded in the expanding metric. `Entropic/Completion/InfiniteHistory.lean` gives one probability space for all integer times with the native Gibbs marginal and a measure-preserving reversible shift. Provenance and scope: [compatibility record](verification/compatibility_2026-10-23.md).
 
