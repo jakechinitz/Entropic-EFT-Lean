@@ -59,6 +59,7 @@ import Entropic.AppCDE.WeakField
 import Entropic.AppCDE.ElectronNumerics
 import Entropic.AppCDE.Calibration
 import Entropic.AppCDE.GibbsNumerics
+import Entropic.DiamondGreen
 import Entropic.AppCDE.Defect
 import Entropic.AppCDE.Conditional
 import Entropic.AppCDE.MoveGraph

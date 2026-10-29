@@ -3,6 +3,19 @@ open Lean in
 #eval show CoreM Unit from do
   let env ← getEnv
   let items : List (String × List String) := [
+    ("DiamondGreen.greenDiamond_eq_integral", ["DiamondGreen.greenDiamond_eq_integral", "Entropic.DiamondGreen.greenDiamond_eq_integral"]),
+    ("DiamondGreen.integral_normSq_pow", ["DiamondGreen.integral_normSq_pow", "Entropic.DiamondGreen.integral_normSq_pow"]),
+    ("DiamondGreen.dWalks_even", ["DiamondGreen.dWalks_even", "Entropic.DiamondGreen.dWalks_even"]),
+    ("DiamondGreen.greenDiamond_eq", ["DiamondGreen.greenDiamond_eq", "Entropic.DiamondGreen.greenDiamond_eq"]),
+    ("DiamondGreen.returnFCC_eq_integral", ["DiamondGreen.returnFCC_eq_integral", "Entropic.DiamondGreen.returnFCC_eq_integral"]),
+    ("DiamondGreen.Gtet0_eq", ["DiamondGreen.Gtet0_eq", "Entropic.DiamondGreen.Gtet0_eq"]),
+    ("DiamondGreen.Gtet0_bounds", ["DiamondGreen.Gtet0_bounds", "Entropic.DiamondGreen.Gtet0_bounds"]),
+    ("DiamondGreen.greenDiamond_lt_top", ["DiamondGreen.greenDiamond_lt_top", "Entropic.DiamondGreen.greenDiamond_lt_top"]),
+    ("DiamondGreen.source_amplitude_bounds", ["DiamondGreen.source_amplitude_bounds", "Entropic.DiamondGreen.source_amplitude_bounds"]),
+    ("DiamondGreen.SInfCell_bounds", ["DiamondGreen.SInfCell_bounds", "Entropic.DiamondGreen.SInfCell_bounds"]),
+    ("DiamondGreen.watsonAGM_bounds", ["DiamondGreen.watsonAGM_bounds", "Entropic.DiamondGreen.watsonAGM_bounds"]),
+    ("DiamondGreen.manuscript_Gtet", ["DiamondGreen.manuscript_Gtet", "Entropic.DiamondGreen.manuscript_Gtet"]),
+    ("DiamondGreen.WatsonFCC", ["DiamondGreen.WatsonFCC", "Entropic.DiamondGreen.WatsonFCC"]),
     ("AppB.Gstar_closed_form", ["AppB.Gstar_closed_form", "Entropic.AppB.Gstar_closed_form"]),
     ("AppB.Legacy.Z_eq", ["AppB.Legacy.Z_eq", "Entropic.AppB.Legacy.Z_eq"]),
     ("AppB.Legacy.closureProduct_strictMonoOn'", ["AppB.Legacy.closureProduct_strictMonoOn'", "Entropic.AppB.Legacy.closureProduct_strictMonoOn'"]),

@@ -19,6 +19,20 @@ Two modules address open points from an external review. See [scope and reading]
 - `Entropic/FiniteRenewal.lean`: Kac's return-time identity for any finite reversible dynamics, and a finite shift register whose readings have the product law on every window up to its length (ensemble over register states). The charged-lepton shell load 720^N holds exactly without memorylessness. The G_* chain does not transfer as derived: every finite reversible renewal is periodic with entropy rate zero, which the maximum-entropy-rate selection of App. H.4 rejects.
 - `Entropic/StockSettling.lean`: any schedule of central pair contacts conserves linear and angular momentum; reversible maps preserve fine-grained Casimirs; on a signed work ledger the population at supply exhaustion does not depend on the contact rate; and with work proportional to σ² the settled fraction is min(1, σ_c²/σ²). The σ² scaling and the fixed supply per unit stock are stated hypotheses.
 
+## Diamond-lattice Green function (2026-10-27)
+
+`Entropic/DiamondGreen/` (six modules) closes the source-side lattice constant of Appendix C.5. Proved
+unconditionally: the manuscript's Brillouin-zone integral `(2π)⁻³ ∫ 4/(16 − |1 + e^{ik₁} + e^{ik₂} + e^{ik₃}|²)`
+equals the walk series of `[(4 − A)⁻¹]₀₀` (`greenDiamond_eq_integral`); on one sublattice two diamond steps
+are `4 + (fcc step)`, so closed diamond walks of length `2n` number `∑ₖ C(n,k) 4^(n−k)` closed fcc walks of
+length `k` (`dWalks_even`) and `G_tet(0) = P_fcc/3` (`greenDiamond_eq`); `G_tet(0) < ∞` (`greenDiamond_lt_top`);
+the fcc integral representation of `P_fcc` (`returnFCC_eq_integral`); and the enclosure
+`0.44822039438838 < √3/(4 agm(1, cos 15°)²) < 0.44822039438839` (`watsonAGM_bounds`). One classical result
+is cited as a hypothesis, `WatsonFCC`: Watson's 1939 evaluation of the fcc integral, in Gauss's AGM form.
+Given it, `G_tet(0)`, `S₀ = 3 ln 2/(32π G_tet(0))` and the source amplitude `ln(7/6)/(π G_tet(0))` are
+bracketed (`manuscript_Gtet`, `SInfCell_bounds`, `source_amplitude_bounds`). Scope and independent
+checks: [diamond Green function](verification/diamond_green_2026-10-27.md).
+
 ## Assumption compatibility (2026-10-23)
 
 `Entropic/Compatibility` proves `Nonempty EffectiveModel` (`Entropic.Compatibility.effective_assumptions_compatible`): one structure carrying the native closure root η and ε, the 1680-state Gibbs histories, the 720-state shell cycle, a finite positive stock shared by reconstruction, redistribution and nonzero reciprocal Newton forces, and an explicit expanding homogeneous Einstein solution with positive energy transfer, tied to the finite model through the same mass budget. It also proves that a fixed finite faithful archive and an exact dense-core RAR profile are each impossible. This is an effective subsystem, not a consistency proof of the full theory: the finite force system is not embedded in the expanding metric. `Entropic/Completion/InfiniteHistory.lean` gives one probability space for all integer times with the native Gibbs marginal and a measure-preserving reversible shift. Provenance and scope: [compatibility record](verification/compatibility_2026-10-23.md).

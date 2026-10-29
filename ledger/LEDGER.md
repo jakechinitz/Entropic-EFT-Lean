@@ -432,16 +432,16 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C05-17 | A | easy | Exclusion sufficiency lemma (KL) | proved: AppCDE.exclusion_sufficiency |
 | C05-18 | A | easy | Additivity of source for independent exclusions | proved: AppCDE.independent_costs_add |
 | C05-19 | A | easy | Dihedral angle does not divide 360 degrees | proved: AppCDE.dihedral_not_divisor |
-| C05-20 | A | hard | Diamond on-site Green function as Brillouin-zone integral | not formalized (Bloch/Fourier on Z³) |
-| C05-21 | A | hard | Joyce closed form for G_tet(0) | not formalized (Joyce elliptic evaluation) |
-| C05-22 | B | medium | Numerical value of G_tet(0) | not formalized (needs Γ(1/3) enclosure) (second pass, time-boxed: certified Γ(1/3) enclosure not available) |
+| C05-20 | A | hard | Diamond on-site Green function as Brillouin-zone integral | proved: DiamondGreen.greenDiamond_eq_integral (manuscript integral = walk series), DiamondGreen.integral_normSq_pow |
+| C05-21 | A | hard | Joyce closed form for G_tet(0) | proved given cited input DiamondGreen.WatsonFCC (Watson 1939 fcc integral in AGM form): exact reduction DiamondGreen.dWalks_even, DiamondGreen.greenDiamond_eq (G_tet(0) = P_fcc/3), DiamondGreen.returnFCC_eq_integral, DiamondGreen.Gtet0_eq; the Γ form is not stated in Lean |
+| C05-22 | B | medium | Numerical value of G_tet(0) | proved given cited input DiamondGreen.WatsonFCC (Watson 1939 fcc integral in AGM form): DiamondGreen.Gtet0_bounds (0.44822039438838 < G_tet(0) < 0.44822039438839); finiteness unconditional DiamondGreen.greenDiamond_lt_top |
 | C05-23 | A | easy | Diamond bond frame identity | proved: AppCDE.frame_identity, d_dot, frame_sum_zero |
 | C05-24 | A | easy | Local Green tensor and transverse projection 2/3 | proved: AppCDE.green_transverse |
-| C05-25 | B | medium | Dimensionless source amplitude | partial: AppCDE.source_amplitude (algebra); value needs G_tet |
+| C05-25 | B | medium | Dimensionless source amplitude | proved given cited input DiamondGreen.WatsonFCC (Watson 1939 fcc integral in AGM form): AppCDE.source_amplitude (algebra), DiamondGreen.source_amplitude_bounds (0.1094722281, 0.1094722285) |
 | C05-26 | C | medium | Continuum source equation | premise (C) |
 | C05-27 | C | easy | Source-to-stiffness ratio (boxed) | proved: AppCDE.kappa_over_gamma |
 | C05-28 | A | easy | Newton constant from bridge with one-bit dictionary | proved: AppCDE.newton_from_bridge |
-| C05-29 | B | medium | S_0 value and G/G_* = S_0/S_inf | partial: AppCDE.G_over_Gstar (algebra); S₀ value needs G_tet |
+| C05-29 | B | medium | S_0 value and G/G_* = S_0/S_inf | proved given cited input DiamondGreen.WatsonFCC (Watson 1939 fcc integral in AGM form): AppCDE.G_over_Gstar (algebra), DiamondGreen.SInfCell_bounds (S₀ ∈ (0.0461482515, 0.0461482516)) |
 | C05-30 | A | easy | Entropy-unit rescaling invariance | proved: AppCDE.entropy_unit; EFT.Edge.entropy_unit_ratio_invariant |
 | C05-31 | B | medium | Local inverse susceptibility a_UV | proved (existing): AppB.aUV_at_root |
 | C05-32 | C | easy | MOND-scale formula a_0 | proved (existing): EFT.Transverse.a0_closed; Spine.epsilon_bracket |
@@ -985,8 +985,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C11-09 | B | hard | Marked-vertex constants zeta_*, Z_e | proved (existing): AppCDE.zeta_rat, Ze_bracket |
 | C11-10 | B | easy | Dressed substrate length L_* | proved (existing): AppCDE.Lstar_value |
 | C11-11 | B | easy | Induced Newton scale G_* | proved (existing): AppCDE.Gstar_value |
-| C11-12 | B | medium | Numerical value of the Joyce closed form | not formalized: Joyce closed form numeric (second pass, time-boxed: as C05-22) |
-| C11-13 | A | hard | Diamond-lattice Green function equals Joyce value | not formalized: diamond Green function = Joyce value |
+| C11-12 | B | medium | Numerical value of the Joyce closed form | proved given cited input DiamondGreen.WatsonFCC (Watson 1939 fcc integral in AGM form): DiamondGreen.watsonAGM_bounds (AGM value, unconditional), DiamondGreen.Gtet0_eq |
+| C11-13 | A | hard | Diamond-lattice Green function equals Joyce value | proved given cited input DiamondGreen.WatsonFCC (Watson 1939 fcc integral in AGM form): DiamondGreen.manuscript_Gtet |
 | C11-14 | B | medium | Route covariance spectrum and lambda_1 = (3/4)Var(K^2) | B |
 | C11-15 | A | easy | Primitive recoupling spectrum and ratio | proved (existing): AppIJ.route_gram |
 | C11-16 | A | easy | Kraus completeness of direct and complementary branches | proved (existing): AppIJ.throughput_pair |
