@@ -41,16 +41,16 @@ The completion modules extend this to `Nonempty GlobalModel` (`Entropic.Completi
 
 `Entropic/RAR/Pendular.lean` gives the algebra of the Section 15 response cell read as the horizon-thermal tilt mode of the transverse frame, with lever `ℓ = g_share,eff c/H`. A pendulum potential `M g ℓ (1 − cos θ)` has `ω² = g/ℓ` (`tilt_frequency_sq`). With `x = 2πω/H` (a definition: `ħω/k_BT_H` at `T_H = ħH/2πk_B`), `x² = g/a₀` with `a₀ = g_share,eff cH/4π²` (`gap_sq`, `gap_eq`), `x = 1` exactly at `g = a₀` (`unit_gap_iff`), the projected-field gap is `x√cos δ` (`gap_tilt`), and the excess `g·n_B(x)` lies between `√(g a₀) − g/2` and `√(g a₀)` (`excess_bounds`). A local relativistic director tilt, `ω = c/ξ`, has a horizon gap above one for every `ξ < 2πc/H` (`local_mode_frozen`), and it matches the cell gap only when `ξ² = c²ℓ/g` (`coherence_length`). The Unruh form is `x² = (2π)²(g/c)/(κH)` (`gap_unruh`). The tilt-mode identification, its horizon thermalization and the lever are physical premises (ledger C02-04) and are not derived here.
 
-## Status (2026-10-23)
+## Status (2026-10-28)
 
 | Item | Value |
 |---|---|
-| Library | one Lean library, `Entropic`: 193 modules, 3,589 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
-| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_em_stiffness_2026-10-24.log`) |
+| Library | one Lean library, `Entropic`: 194 modules, 3,601 theorems (the v0.8 library is its submodule `Entropic.EFT`, 727 theorems) |
+| Axioms | every theorem depends only on `propext`, `Classical.choice`, `Quot.sound` (`scripts/AxiomAudit.lean`, log in `verification/axiom_audit_rar_pendular_2026-10-28.log`) |
 | Proof hygiene | no `sorry`, no custom axioms, no `native_decide`; finite enumerations and integer matrix identities are checked by kernel `decide` |
 | Claim ledger | `ledger/LEDGER.md`: all 1,437 statements of the manuscript with kind and status |
 | Ledger totals | proved 874, proved in part 90, numerical enclosures 59, data comparisons 64, physical premises 153, not formalized 143, simulation outputs 19, other 35 (interpretive, definitions, corrections, cited results) |
-| Citation check | `scripts/CiteCheck.lean`: 987 Lean names cited in the ledger, 0 unresolved |
+| Citation check | `scripts/CiteCheck.lean`: 997 Lean names cited in the ledger, 0 unresolved |
 
 Supporting files:
 
