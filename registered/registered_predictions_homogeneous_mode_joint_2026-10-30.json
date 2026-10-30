@@ -1,0 +1,82 @@
+{
+ "title": "Registered predictions: homogeneous mode jointly with the direct geodesic release (addendum to registered_predictions_homogeneous_mode_2026-10-29.json)",
+ "date": "2026-10-30",
+ "theory": "Entropic Scalar EFT; trace-coupled homogeneous mode with onset at z_c = 3400 (matter-radiation equality), abundance tie omega_c = 5.333 omega_b, direct geodesic release history (Section 20)",
+ "method": {
+  "likelihood": "Planck 2018 plik-lite TTTEEE + low-ell TT bins, DESI DR2 BAO, DES-Dovekie SN, sum m_nu = 0.06 eV, tau prior 0.0506 +- 0.0086, free calibration",
+  "mode_proxy": "CAMB EarlyQuintessence, n = 3, theta_i = 2.83, peak fraction f_EDE at z_c (one added amplitude)",
+  "joint_evaluation": "CMB = CMB[mode + Lambda at joint theta*] + (CMB[release] - CMB[Lambda at release theta*]); BAO/SN from the release background with the mode's r_drag; f_EDE -> 0 reproduces the release fit to Delta chi2 = 0.02",
+  "code": "harness_joint.py, abundance_joint.py, fisher_joint.py (02 Research/Homogeneous mode fit 2026-10-29/joint)"
+ },
+ "fit": {
+  "chi2": 2237.99,
+  "chi2_release_only": 2239.88,
+  "chi2_LCDM": 2239.03,
+  "n_params": 6,
+  "n_params_LCDM": 6,
+  "f_EDE": [
+   0.018,
+   0.01
+  ],
+  "H0": [
+   69.42,
+   0.55
+  ],
+  "n_s": 0.971,
+  "r_drag_Mpc": 146.4,
+  "profile": {
+   "f_EDE=0.05": {
+    "delta_chi2": 13.5,
+    "H0": 71.16
+   },
+   "f_EDE=0.07": {
+    "delta_chi2": 34.1,
+    "H0": 72.33,
+    "note": "release history driven outside its physical range"
+   },
+   "z_c=6800": {
+    "delta_chi2": -0.7,
+    "f_EDE": 0.031,
+    "H0": 69.75
+   }
+  }
+ },
+ "predictions": {
+  "J1_H0": {
+   "value": "69.4 +- 0.6 km/s/Mpc",
+   "falsifier": "local H0 >= 73 with 1 km/s/Mpc uncertainty excludes the mode with the abundance tie at 3 sigma"
+  },
+  "J2_a0": {
+   "value": "a0 = eps c H0 = 1.27e-10 m/s^2",
+   "falsifier": "a 2% galactic a0 inconsistent with eps c H0 for the measured H0"
+  },
+  "J3_rdrag": {
+   "value": "r_drag = 146.4 Mpc (joint best fit; 147.3 without the mode, 144.7 at f_EDE = 0.05)"
+  },
+  "J4_high_z_halos": {
+   "value": {
+    "z14.5_n(>1e10)/LCDM": 1.33,
+    "z14.5_n(>3e10)/LCDM": 1.41,
+    "z10_n(>1e10)/LCDM": 1.17,
+    "z10_n(>1e11)/LCDM": 1.26,
+    "UV_LF_bright_end_dex_z14.5": 0.07,
+    "UV_LF_bright_end_dex_z12.5": 0.05,
+    "UV_LF_bright_end_dex_z10": 0.03
+   },
+   "falsifier": "a high-z halo or bright-galaxy excess over LambdaCDM of order 3x or more at z >= 12 that survives star-formation modelling is not produced by the mode (the tie caps it near 1.4x)"
+  },
+  "J5_clusters_z1.98": {
+   "value": {
+    "n(>1.6e14)/LCDM": 1.22,
+    "n(>2.6e14)/LCDM": 1.26
+   },
+   "note": "unchanged by the mode (release-only 1.22, 1.27); XLSSC 122-like clusters are not a test of the mode"
+  }
+ },
+ "caveats": [
+  "proxy potential in place of the unspecified mode potential",
+  "one added amplitude",
+  "split evaluation neglects cross terms between the mode and the release lensing/ISW change (second order)",
+  "halo ratios use linear power with Sheth-Tormen (z >= 10) and Tinker 200m (z = 1.98) mass functions"
+ ]
+}
