@@ -1,0 +1,40 @@
+{
+ "R1": {
+  "falsifier": "A local H0 established at >= 72 with total uncertainty <= 1 km/s/Mpc, or a CMB/BAO determination of the sound horizon r_drag outside 145.8 +- 1.0 Mpc in a fit that holds omega_c = 5.333 omega_b.",
+  "name": "Hubble constant",
+  "statement": "H0 = 69.5 +- 0.8 (approximate: fde profile at fde = 0, 0.033, 0.07 plus a 0.4 allowance for the other parameters) km/s/Mpc from CMB + BAO + SN within the theory; f_EDE(z_eq) = 0.033 (+0.008, -0.012); f_EDE = 0.07 costs Delta chi2 = +19.7, so H0 >= 71.5 is excluded by the abundance tie."
+ },
+ "R2": {
+  "name": "Galactic acceleration scale at this H0",
+  "statement": "a0 = eps c H0 = 1.2684e-10 m/s^2 at H0 = 69.46; the absolute-distance RAR determination (2026-10-29: 1.21 +- 0.19) must converge to 1.27 +- 0.015."
+ },
+ "R3": {
+  "falsifier": "CMB damping-tail and polarization data (ACT DR6, SPT-3G, Simons Observatory) excluding f_EDE > 0.02 at z_c ~ 3000-7000, or requiring z_c < 2000.",
+  "name": "Early-universe energy component",
+  "statement": "A transient early energy peaking at z ~ 3400 with fraction 0.02-0.05 of the total, n_s = 0.976 +- 0.005 (approximate, from the same profile)."
+ },
+ "R4": {
+  "name": "High-redshift halo abundance relative to the LambdaCDM best fit",
+  "statement": "n(>1e10 Msun) is 1.27 (z = 10) and 1.53 (z = 14.5) times LambdaCDM; with one star-formation model calibrated at z = 4, the bright-end UV luminosity function at M_UV = -20 is +0.07 dex (z = 12.5) and +0.09 dex (z = 14.5) above the LambdaCDM cosmology. A generic early-dark-energy fit with free omega_c gives +0.31 and +0.41 dex; the tie excludes it."
+ },
+ "best_fit": {
+  "H0": 69.46,
+  "chi2": 2236.91,
+  "chi2_LCDM": 2239.03,
+  "chi2_tied_without_mode": 2244.38,
+  "f_EDE": 0.0329,
+  "n_params": 6,
+  "n_params_LCDM": 6,
+  "ns": 0.9756,
+  "ombh2": 0.02262,
+  "r_drag_Mpc": 145.78,
+  "sigma8": 0.813
+ },
+ "caveats": [
+  "The paper specifies the timing (trace coupling) and sign of the mode but not its potential; the axion-like n = 3 form with theta_i = 2.83 is a proxy and one amplitude is a new fitted parameter.",
+  "z_c = 6800 fits slightly better (Delta chi2 = -0.76, f_EDE = 0.050, H0 = 69.85); z_c = 1700 fits worse (Delta chi2 = +4.2).",
+  "The release sector is approximated by Lambda; adding its clustering deficit as A_L = 0.979 raises chi2 to 2239.67 at the same H0 (69.44). The direct geodesic treatment of the deficit fitted 1.5-1.8 better than the A_L shortcut, so the combined model is expected near 2238 +- 1."
+ ],
+ "created": "2026-10-29",
+ "model": "Trace-coupled homogeneous mode of the capacity field (Sections 19, E.3-E.4), implemented as a transient early-energy component (CAMB EarlyQuintessence, n = 3, theta_i = 2.83) whose peak is fixed at matter-radiation equality, z_c = 3400, by the trace coupling; the abundance tie omega_c = 5.333 omega_b; Lambda at late times. One amplitude f_EDE(z_c) is fitted. Likelihood: Planck 2018 plik-lite TTTEEE + low-ell TT, DESI DR2 BAO, DES-Dovekie, sum m_nu = 0.06 eV, tau = 0.0506 +- 0.0086, Planck calibration free."
+}
