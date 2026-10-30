@@ -1,0 +1,155 @@
+{
+ "P1": {
+  "MoM_z14_log10_Mdyn_over_Mbar_within_re": {
+   "note": "half of M_bar inside r_e [kpc]",
+   "values": {
+    "Mbar=1e+08,re=0.06": 0.3066,
+    "Mbar=1e+08,re=0.074": 0.3725,
+    "Mbar=1e+08,re=0.09": 0.438,
+    "Mbar=1e+09,re=0.06": 0.0537,
+    "Mbar=1e+09,re=0.074": 0.0834,
+    "Mbar=1e+09,re=0.09": 0.1181,
+    "Mbar=3e+08,re=0.06": 0.1597,
+    "Mbar=3e+08,re=0.074": 0.2108,
+    "Mbar=3e+08,re=0.09": 0.2642
+   },
+   "z": 14.44
+  },
+  "falsifier": "In a sample of >= 20 such galaxies at 3 <= z <= 12 with resolved kinematics and baryonic masses that include measured gas, the median log10(M_dyn/M_bar) at matched g_bar differs from P1 by more than 0.2 dex beyond the quoted systematic error, or the dark fraction at fixed g_bar decreases with redshift between z = 3 and z = 10.",
+  "log10_Mdyn_over_Mbar_table": {
+   "rows: z, columns: g_bar [m s^-2]": {
+    "0": {
+     "1e-08": 0.0001,
+     "1e-09": 0.0265,
+     "1e-10": 0.2283,
+     "1e-11": 0.6084,
+     "3e-09": 0.0033,
+     "3e-10": 0.1037,
+     "3e-11": 0.412
+    },
+    "1": {
+     "1e-08": 0.0005,
+     "1e-09": 0.0551,
+     "1e-10": 0.3101,
+     "1e-11": 0.7175,
+     "3e-09": 0.011,
+     "3e-10": 0.1623,
+     "3e-11": 0.5112
+    },
+    "10": {
+     "1e-08": 0.0636,
+     "1e-09": 0.33,
+     "1e-10": 0.7428,
+     "1e-11": 1.2139,
+     "3e-09": 0.1775,
+     "3e-10": 0.5345,
+     "3e-11": 0.9852
+    },
+    "12": {
+     "1e-08": 0.082,
+     "1e-09": 0.3698,
+     "1e-10": 0.7922,
+     "1e-11": 1.2666,
+     "3e-09": 0.2086,
+     "3e-10": 0.5805,
+     "3e-11": 1.0368
+    },
+    "14": {
+     "1e-08": 0.1001,
+     "1e-09": 0.4052,
+     "1e-10": 0.835,
+     "1e-11": 1.312,
+     "3e-09": 0.2371,
+     "3e-10": 0.6207,
+     "3e-11": 1.0813
+    },
+    "2": {
+     "1e-08": 0.0025,
+     "1e-09": 0.0939,
+     "1e-10": 0.3933,
+     "1e-11": 0.8208,
+     "3e-09": 0.0262,
+     "3e-10": 0.2275,
+     "3e-11": 0.6073
+    },
+    "3": {
+     "1e-08": 0.0064,
+     "1e-09": 0.1326,
+     "1e-10": 0.4629,
+     "1e-11": 0.9031,
+     "3e-09": 0.0453,
+     "3e-10": 0.285,
+     "3e-11": 0.6851
+    },
+    "4": {
+     "1e-08": 0.0122,
+     "1e-09": 0.1685,
+     "1e-10": 0.5208,
+     "1e-11": 0.9696,
+     "3e-09": 0.0656,
+     "3e-10": 0.3346,
+     "3e-11": 0.7486
+    },
+    "6": {
+     "1e-08": 0.0274,
+     "1e-09": 0.2315,
+     "1e-10": 0.6128,
+     "1e-11": 1.0726,
+     "3e-09": 0.1058,
+     "3e-10": 0.4159,
+     "3e-11": 0.8478
+    },
+    "8": {
+     "1e-08": 0.0451,
+     "1e-09": 0.2845,
+     "1e-10": 0.6844,
+     "1e-11": 1.1508,
+     "3e-09": 0.1433,
+     "3e-10": 0.4807,
+     "3e-11": 0.9237
+    }
+   }
+  },
+  "name": "Dynamical-to-baryonic mass of relaxed galaxies at redshift z",
+  "statement": "For a galaxy whose condensed baryons (stars and cold gas) dominate its baryonic field and whose stock has relaxed (age >~ 100 Myr after its main progenitor crossed the release gate), the enclosed dynamical mass within radius r obeys M_dyn(<r) / M_bar(<r) = nu(g_bar(r)/a0(z)), nu(y) = 1/(1 - exp(-sqrt y)), g_bar = G M_bar(<r)/r^2 (spherical; disks carry geometry corrections of the paper), a0(z) = 1.2501e-10 m s^-2 x E(z), E(z) = sqrt(0.3035 (1+z)^3 + 0.6965).",
+  "status_against_existing_data": "z ~ 5.5-7.4 (de Graaff et al. 2024, 6 galaxies): mean offset -0.11 dex, rms 0.24 dex, tied with an abundance-matched NFW model (+0.12, 0.24) and better than constant a0 (+0.24, 0.33). z ~ 0.6-2.5 (RC100, Nestor Shachar et al. 2023, medians): at the sample median Sigma_bar the law predicts f_DM(R_e) = 0.34 at z ~ 1 (observed 0.38) and 0.45 at z ~ 2 (observed 0.27 +- 0.02); the tension at z ~ 2 depends on the baryonic surface density of that bin and on the gas-mass and pressure-support systematics, and is recorded here as an existing tension, not a prediction."
+ },
+ "P2": {
+  "falsifier": "A projected mass inside 20 kpc at or above the matched NFW value with a total uncertainty below 15 %.",
+  "name": "XLSSC 122 inner core (z = 1.98)",
+  "statement": "With spectroscopic arc redshifts and a free inner mass profile, the projected mass inside 20 kpc of the BCG is 20-35 % below that of an NFW model matched to the projected mass at 100 kpc (support radius 14-51 kpc for f_gas = 0.05-0.15); the projected mass at R >= 50 kpc equals the CDM model."
+ },
+ "P3": {
+  "name": "Halo abundance relative to LambdaCDM on the same likelihood",
+  "statement": "n(>M) at z = 1.98 is 1.22 (M = 1.6e14) and 1.28 (2.6e14) times LambdaCDM; at z = 14.44 it is 1.18 (1e10) and 1.24 (3e10) times.",
+  "values": {
+   "z14p44": {
+    "1.0e+10": {
+     "n_GEO": 6.6848100016680076e-06,
+     "n_LCDM": 5.663033207311946e-06,
+     "ratio": 1.1804292429429466
+    },
+    "3.0e+10": {
+     "n_GEO": 1.29237240784716e-07,
+     "n_LCDM": 1.0434068968605159e-07,
+     "ratio": 1.2386082665695914
+    }
+   },
+   "z1p98": {
+    "1.6e+14": {
+     "n_GEO": 2.666892752842501e-08,
+     "n_LCDM": 2.182970490734757e-08,
+     "ratio": 1.2216806247091607
+    },
+    "2.6e+14": {
+     "n_GEO": 2.2444023496313522e-09,
+     "n_LCDM": 1.755643969367207e-09,
+     "ratio": 1.278392651808732
+    }
+   }
+  }
+ },
+ "created": "2026-10-29",
+ "not_predicted": "The UV luminosity function at z = 9-14.5 does not separate the theories: with one feedback-regulated model calibrated separately for each theory at z = 4, the predicted log phi differ by <= 0.03 dex at z = 9-14.5, because the deeper central wells of the relaxed stock are already present at z = 4 and enter the calibration.",
+ "theory": "Entropic Scalar EFT, GitHub Entropic-EFT-Lean main cfcfa373; manuscript as of CHANGE_RECORD_20261029b"
+}
