@@ -174,6 +174,18 @@ theorem record_root {N : ℕ} (d : Fin N → ℝ) {D dmin : ℝ} (hmin : 1 < dmi
   rw [Real.log_pow] at this
   rw [le_div_iff₀ (Real.log_pos hmin)]; exact this
 
+/-- C14-83 (Born-weight form): if the realized present record has probability `pR > 0` and refines
+`N` independent recoverable renewal records with `0 < p n ≤ pmax < 1` (so `pR ≤ ∏ p n`), then
+`N ≤ ln(1/pR) / ln(1/pmax)`: the surprisal of the present record bounds the recoverable past. -/
+theorem record_root_born {N : ℕ} (p : Fin N → ℝ) {pR pmax : ℝ}
+    (hR : 0 < pR) (hp : ∀ n, 0 < p n) (hmax : ∀ n, p n ≤ pmax) (hpm0 : 0 < pmax) (hpmax : pmax < 1)
+    (hprod : pR ≤ ∏ n, p n) :
+    (N : ℝ) ≤ Real.log (1 / pR) / Real.log (1 / pmax) := by
+  refine record_root (fun n => 1 / p n) (one_lt_one_div hpm0 hpmax)
+    (fun n => one_div_le_one_div_of_le (hp n) (hmax n)) ?_
+  rw [Finset.prod_div_distrib, Finset.prod_const_one]
+  exact one_div_le_one_div_of_le hR hprod
+
 /-! ### C14-07 … C14-18: conditioned laws -/
 
 section Conditioned
