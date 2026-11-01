@@ -161,7 +161,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-11 | A | easy | Record-conditioned history weight normalization | proved: AppFG.Histories.conditional_normalized, softmax_form |
 | C03-12 | C | easy | Coarse-graining of merged records | proved: AppFG.Histories.record_pushforward |
 | C03-13 | A | easy | Detailed balance of the replacement kernel | proved: AppFG.Info.product_kernel_detailed_balance |
-| C03-14 | C | hard | Primitivity and relative-entropy contraction of one-tick channel | premise (C); quantum data processing deferred |
+| C03-14 | C | hard | Primitivity and relative-entropy contraction of one-tick channel | withdrawn (domain, 31 Oct): the persistent sector's reduced channel is unitary by the H.11 renewal identity, so primitivity on the present register is replaced by the one-tick renewal H-theorem (C14-69) and case-by-case irreducibility of record-writing couplings (P.8) |
 | C03-15 | A | hard | Uniqueness of the complete renewal channel | proved: AppFG.Histories.replacement_unique |
 | C03-16 | A | easy | Heisenberg dual of the replacement channel | proved: AppFG.Histories.replacement_dual |
 | C03-17 | A | easy | Off-diagonal damping by environment overlap | proved: AppFG.Histories.environment_overlap |
@@ -543,7 +543,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C06-46 | A | medium | No-signaling of local marginals | proved: AppFG.Histories.no_signaling |
 | C06-47 | A | easy | Record coarse-graining is linear push-forward | proved: AppFG.Histories.record_pushforward |
 | C06-48 | E | n | Markov macrohistory weight (coarse Markov form) | interpretive (E) |
-| C06-49 | C | hard | Relative-entropy contraction for primitive channel (cross-reference to P.8) | premise (C), cross-ref P.8 (chunk 11) |
+| C06-49 | C | hard | Relative-entropy contraction for primitive channel (cross-reference to P.8) | withdrawn (domain, 31 Oct): the persistent sector's reduced channel is unitary by the H.11 renewal identity, so primitivity on the present register is replaced by the one-tick renewal H-theorem (C14-69) and case-by-case irreducibility of record-writing couplings (P.8) |
 | C06-50 | C | medium | False-record bounds (cross-references to P.4, P.10) | premise (C), cross-ref P.4/P.10 (chunk 11) |
 | C06-51 | A | easy | Product kernel is detailed-balanced | proved: AppFG.Info.product_kernel_detailed_balance |
 | C06-52 | A | medium | Conditional entropy bound for stationary dressing kernel | proved: AppFG.Info.dressing_bound, subadditive, subadditive_eq_iff |
@@ -1348,8 +1348,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C14-77 | A | easy | Mirror gluing as a π rotation and the product angle | proved: AppP.Num.mirror_rotation, product_angle, gluing_angle_degrees (141.055° < θ < 141.065°) |
 | C14-78 | A | medium | Irrationality of the gluing angle | proved: AppP.Num.gluing_angle_irrational (Niven) |
 | C14-79 | A | hard | Density of gluing products in SO(3) | not formalized (density in SO(3)) |
-| C14-80 | A | medium | Face-pair and two-pair commutants; irreducibility on networks | not formalized (second pass, time-boxed): the gate algebra of the four native gluings is not encoded as matrices in the library |
-| C14-81 | C | hard | Finite-network arrow theorem | premise (C); remainder not formalized |
+| C14-80 | A | medium | Face-pair and two-pair commutants; irreducibility on networks | not formalized (second pass, time-boxed): the gate algebra of the four native gluings is not encoded as matrices in the library; scope (31 Oct): the unrestricted-tensor-product commutants are math claims; P.8 no longer uses them for an arrow theorem. On the injective closure code, code-preserving face bilinears give 576 sectors on two glued cells and intra-cell exchange joins them |
+| C14-81 | C | hard | Finite-network arrow theorem | withdrawn (domain, 31 Oct): the persistent sector's reduced channel is unitary by the H.11 renewal identity, so primitivity on the present register is replaced by the one-tick renewal H-theorem (C14-69) and case-by-case irreducibility of record-writing couplings (P.8); the arrow is restated as renewal H-theorem + export orientation + record growth and typicality + record root |
 | C14-82 | A | easy | Non-reuse: history dimension lower bound | proved: AppP.non_reuse |
 | C14-83 | A | easy | Record root: bound on recoverable past layers | proved: AppP.record_root |
 | C14-84 | A | easy | Occupation conservation for the dressing Hamiltonian | proved: AppP.occupation_conserved |
