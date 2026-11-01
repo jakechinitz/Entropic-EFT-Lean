@@ -394,13 +394,19 @@ theorem redshift_ratio_precision :
 
 /-! ## 4. Carrier support and the cell reservoir
 
-The response cells of a carrier hold energy `𝒩 Θ x n` per unit volume. In the
-Rayleigh-Jeans regime `n = 1/x` this is `g a0 (1+x)/(4πG)`; integrated to the budget
-edge it gives the carrier's flat-velocity scale `V_f²` per unit stock mass. Off the
-carrier support there are no cells, hence neither bias nor work. -/
+The response cells of a carrier hold energy `𝒩 Θ x n` per unit volume. At leading
+Rayleigh-Jeans order this is `g a0/(4πG)`; integrated to the budget edge it gives the
+carrier's flat-velocity scale `V_f²` per unit stock mass. Off the carrier support there
+are no cells, hence neither bias nor work.
 
-/-- Rayleigh-Jeans cell energy density: with `g = a0 x²` and `n = 1/x`,
-`g² n(1+n) x n = g a0 (1+x)`. -/
+Scope (31 Oct 2026): the lemma below substitutes the truncated occupation `n = 1/x`, so
+its `(1+x)` factor is an artifact of the truncation. The exact Bose factor is
+`x³ n_B²(1+n_B) = 1 - x/2 + O(x³)` with `n_B = 1/(eˣ-1)` (Full paper, Appendix O.3);
+only the leading term `1` carries physical meaning here. -/
+
+/-- Algebraic identity with the truncated occupation `n = 1/x` and `g = a0 x²`:
+`g² n(1+n) x n = g a0 (1+x)`. Its leading term `g a0` is the Rayleigh-Jeans cell energy
+density; the `x` correction is not the physical one (exact factor `1 - x/2 + O(x³)`). -/
 theorem cell_energy_density_RJ (a0 x : ℝ) (hx : 0 < x) :
     (a0*x^2)^2 * ((1/x)*(1+1/x)) * x * (1/x) = (a0*x^2)*a0*(1+x) := by
   field_simp
