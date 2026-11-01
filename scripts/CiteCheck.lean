@@ -996,6 +996,7 @@ open Lean in
     ("Var.I2", ["Var.I2", "Entropic.Var.I2"]),
     ("Var.I2_diag", ["Var.I2_diag", "Entropic.Var.I2_diag"]),
     ("Var.adm_density_expansion", ["Var.adm_density_expansion", "Entropic.Var.adm_density_expansion"]),
+    ("Var.adm_reduction", ["Var.adm_reduction", "Entropic.Var.adm_reduction"]),
     ("Var.carrier_excess", ["Var.carrier_excess", "Entropic.Var.carrier_excess"]),
     ("Var.carrier_Φ", ["Var.carrier_Φ", "Entropic.Var.carrier_Φ"]),
     ("Var.conformal_scalar_curvature", ["Var.conformal_scalar_curvature", "Entropic.Var.conformal_scalar_curvature"]),

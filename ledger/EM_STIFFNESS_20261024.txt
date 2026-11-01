@@ -6,7 +6,10 @@ Manuscript claims and their Lean status:
 
 S.9, native gluing gives no photon
   - cubic invariant Tr Q^3 nonzero for N = 3 (Q = diag(2,-1,-1)): cubic_invariant_nonzero
-  - mean-field ordering coupling N(N+1)/(2 z_c) = 45/8 for N = 9, z_c = 8: mean_field_coupling
+  - disordered mean-field spinodal N(N+1)/z_c = 45/4 for N = 9, z_c = 8,
+    with undirected bonds counted once: mean_field_coupling (arithmetic only).
+    The Haar susceptibility and self-consistency derivation are outside this theorem;
+    the first-order coexistence coupling requires a separate free-energy calculation.
   - induced fiber stiffness 9 l/(24 pi^2) < 1.0111331 for l <= 26: fiber_stiffness_below_deconfinement
   - first-order transition, Higgs and confined phases: NOT FORMALIZED (4D Metropolis scan
     and the cited 3D lattice literature; the lattice phase diagram is outside Lean)

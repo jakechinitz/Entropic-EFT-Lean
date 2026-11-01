@@ -568,7 +568,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-17 | A | medium | Markov ceiling and uniqueness of the replacement kernel | proved (existing): AppFG.Info.dressing_bound, product_kernel_detailed_balance |
 | C07-18 | A | easy | Locality fracture: 48 × 35 | proved (existing): AppCDE.MoveGraph.components |
 | C07-19 | C | easy | Temporal mutual information raises mass | proved: AppH1.deficit_min |
-| C07-20 | B | hard | Mixing-test mutual information values | B, generator Q unspecified in paper: values not reproducible from stated data; flagged |
+| C07-20 | B | hard | Historical mixing benchmark; explicit reset-generator replacement | B: former occupied-label-swap MI values withdrawn; H.4 now specifies Q_bb'=p_*(b')-delta_bb' and its analytic semigroup; no new Lean proof credit |
 | C07-21 | C | easy | Correlation deficit and mass (H.5) | proved: AppH1.deficit_min, AppH1.support_mass (premise C: support-to-length relation) |
 | C07-22 | C | easy | Motif sum independent of readout law | premise C (motif operator independent of P); remainder trivial: Z_e defined from ζ_* only (AppCDE.Ze) |
 | C07-23 | A | medium | Fixed-marginal KL identity (seven layers) | proved: AppH1.fixed_marginal_kl |
@@ -1232,7 +1232,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C13-61 | A | easy | Identity-free record overlap | proved: AppO.identity_free_record |
 | C13-62 | B | easy | Stream separation time | proved: AppO.Num.stream_separation |
 | C13-63 | A | easy | Fresh-draw kernel | proved: AppO.fresh_draw |
-| C13-64 | B | easy | Decoherence time to /gamma/ < e^{-5} | proved: AppO.Num.decoherence_time |
+| C13-64 | B | easy | Conditional IID square-root-record decoherence timing | proved (conditional arithmetic): AppO.Num.decoherence_time; record instrument, IID overlap law and Renyi-half exponent are supplied inputs |
 | C13-65 | B | easy | Early-release bound at z=15 | proved: AppO.Num.early_release (factor 17.6–17.7) |
 | C13-66 | C | n | Potential-dependent vertex shift | premise (C) |
 | C13-67 | C | n | Running a_0 | premise (C) |

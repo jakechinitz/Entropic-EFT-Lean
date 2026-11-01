@@ -197,12 +197,15 @@ theorem density_floor_values :
 theorem stream_separation : 1.615e-39 < (1.616255e-35 : ℝ) / 1e4 ∧ (1.616255e-35 : ℝ) / 1e4 < 1.625e-39 := by
   norm_num
 
-/-- C13-64: 10/D_pin = 66.71 ticks for D_pin = 0.1499, n > 10/D_pin gives e^{−nD/2} < e^{−5}, and
-(10/D_pin)·t_P with t_P = 5.391247·10⁻⁴⁴ s is 3.6·10⁻⁴² s. -/
+/-- C13-64: conditional timing arithmetic for the selected IID square-root-record
+overlap B^n, using the rounded Renyi-half exponent D = -2 log B = 0.14961945.
+The record instrument, IID assumption and evaluation of D are external inputs,
+not conclusions of this theorem. The threshold is 66.83 < 10/D < 66.84 ticks,
+or approximately 3.6e-42 s at the supplied tick duration. -/
 theorem decoherence_time :
-    66.71 < (10 : ℝ) / 0.1499 ∧ (10 : ℝ) / 0.1499 < 66.72 ∧
-      (∀ n : ℝ, 10 / 0.1499 < n → Real.exp (-(n * 0.1499 / 2)) < Real.exp (-5)) ∧
-      3.55e-42 < (10 : ℝ) / 0.1499 * 5.391247e-44 ∧ (10 : ℝ) / 0.1499 * 5.391247e-44 < 3.65e-42 := by
+    66.83 < (10 : ℝ) / 0.14961945 ∧ (10 : ℝ) / 0.14961945 < 66.84 ∧
+      (∀ n : ℝ, 10 / 0.14961945 < n → Real.exp (-(n * 0.14961945 / 2)) < Real.exp (-5)) ∧
+      3.55e-42 < (10 : ℝ) / 0.14961945 * 5.391247e-44 ∧ (10 : ℝ) / 0.14961945 * 5.391247e-44 < 3.65e-42 := by
   refine ⟨by norm_num, by norm_num, fun n hn => ?_, by norm_num, by norm_num⟩
   apply Real.exp_lt_exp.mpr
   rw [div_lt_iff₀ (by norm_num)] at hn; linarith

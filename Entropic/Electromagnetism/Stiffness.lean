@@ -29,8 +29,10 @@ theorem color_transfer : (1:ℝ) - 2*(1 - 6/7)/(3+1) = 13/14 := by norm_num
 theorem cubic_invariant_nonzero :
     (2:ℝ) + (-1) + (-1) = 0 ∧ (2:ℝ)^3 + (-1)^3 + (-1)^3 = 6 := by norm_num
 
-/-- Mean-field ordering coupling `N(N+1)/(2z)` for `N = 9` on the 4D cubic lattice. -/
-theorem mean_field_coupling : (9:ℝ)*(9+1)/(2*8) = 45/8 := by norm_num
+/-- Arithmetic value of the disordered mean-field spinodal `N(N+1)/z` for `N = 9`,
+`z = 8`, with each undirected bond counted once. The Haar susceptibility and
+self-consistency derivation are external inputs; this is not a coexistence coupling. -/
+theorem mean_field_coupling : (9:ℝ)*(9+1)/8 = 45/4 := by norm_num
 
 /-- Induced stiffness of the nine fiber components, `9 ℓ/(24π^2)` with `ℓ = ln(Λ/m)`,
 stays below the compact U(1) deconfinement value `1.0111331` whenever `ℓ ≤ 26`. -/
