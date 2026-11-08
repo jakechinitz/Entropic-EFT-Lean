@@ -1,0 +1,80 @@
+{
+  "stamp": "20261023_150846_dynamics_clusters",
+  "files": [
+    {
+      "path": "01 Current Papers\\Astra Full\\Entropic Scalar EFT.tex",
+      "backup": "01 Current Papers\\Astra Full\\Previous PDFs\\20261023_150846_dynamics_clusters\\Entropic Scalar EFT.tex",
+      "sha256": "ec5cd61b3d39dd3296fe792c35c5b057c3bb67b8136041d3ad0326cadcbe213b"
+    },
+    {
+      "path": "01 Current Papers\\Astra Full\\Entropic Scalar EFT.pdf",
+      "backup": "01 Current Papers\\Astra Full\\Previous PDFs\\20261023_150846_dynamics_clusters\\Entropic Scalar EFT.pdf",
+      "sha256": "e29ca4cce7047dee0a8b472520f3c3e1d68f257d75b23be450bc458d7b9ebfc5"
+    },
+    {
+      "path": "01 Current Papers\\Astra Full\\Entropic_EFT_source_and_proofs.zip",
+      "backup": "01 Current Papers\\Astra Full\\Previous PDFs\\20261023_150846_dynamics_clusters\\Entropic_EFT_source_and_proofs.zip",
+      "sha256": "fd12d3b34f4425891f73584c97bbe7187bbeb004d1f94f7fa02219a1e7e459ec"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\01_results_and_basis.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\01_results_and_basis.tex",
+      "sha256": "50cee7ef5cf0643d3b8360aded058507814b5fe3d1be1a086c081dbc5621c885"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\02_acceleration.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\02_acceleration.tex",
+      "sha256": "988d3f84c16af8b29432723e864b9eeaa36f226561e29b17846e5f24e48f7415"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\03_history.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\03_history.tex",
+      "sha256": "5653bb8ab5ff2c69634b8a064a05001a5096e420116080d620493441f976d84e"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\04_dwarfs.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\04_dwarfs.tex",
+      "sha256": "a82b52fb345c1e072d891cb8601fab2e90b7160d4e4d60cec0c766618c317b28"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\05_cosmology.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\05_cosmology.tex",
+      "sha256": "03a4c4a1a10b6ef0c8052062c547e423c180452f8174a036aa543f00c5a594fc"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\06_interpretation_and_audit.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\06_interpretation_and_audit.tex",
+      "sha256": "c2b6d2535ed840c678c1aed886c08f80d42e4b3a5ba6a7fb9d3f690c16602d55"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\07_references.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\07_references.tex",
+      "sha256": "595ed010a16ce70bfc7d17cae89d85e6b378b3670416a448daf8d36ced26c8e1"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\Empirical_Results.tex",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\Empirical_Results.tex",
+      "sha256": "7dedf34a5c6a4f82652ab6fe2f92dc566b6b8e71686b70a8c9bf05844973a067"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\Empirical_Results.pdf",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\Empirical_Results.pdf",
+      "sha256": "a67038812b3562e718a176c322d6d9a9656d6f397c8f70a18c105c501a6dcbba"
+    },
+    {
+      "path": "01 Current Papers\\Empirical Results\\Empirical_Results_Source.zip",
+      "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_150846_dynamics_clusters\\Empirical_Results_Source.zip",
+      "sha256": "8e97f62c95532596789a2e24f182361e1af8a4d5a3b275d41daf438de193db88"
+    },
+    {
+      "path": "02 Research\\Unified closure 2026-10-21\\formalization\\Entropic.lean",
+      "backup": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\before_lean\\Entropic.lean",
+      "sha256": "462281dbeb18da50be225ac4fab41baa5e8e9e087f3b91de6cceead40bbd34f8"
+    },
+    {
+      "path": "02 Research\\Unified closure 2026-10-21\\formalization\\README.md",
+      "backup": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\before_lean\\README.md",
+      "sha256": "ddd2a59681578b391bad6952d6b509af54a3f29f20783b54ef8cedbe3fba9085"
+    }
+  ]
+}

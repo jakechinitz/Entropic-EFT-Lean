@@ -1,0 +1,143 @@
+\section{18. Cluster Stock, Conservative Contact, and Lensing}
+\label{sec:clusterstock}
+
+Cluster lensing and dynamics probe the same gravitating inventory. In the
+weak-field kinetic realization of O.3, baryons and a positive retained stock
+move in a common potential,
+\[
+\nabla^2\Phi=4\pi G(\rho_*+\rho_g+\rho_C),\qquad
+\kappa=\frac{\Sigma_*+\Sigma_g+\Sigma_C}{\Sigma_{\rm crit}}.
+\]
+The static response prescribes a possible equilibrium of this stock.
+Adding that equilibrium as a second halo would duplicate its mass.
+Gas can shock while stars and weakly coupled stock continue through an
+encounter. A spatial separation of gas and lensing peaks is therefore
+dynamically possible; its size depends on the initial distributions,
+encounter, and contact law.
+
+\paragraph{One cohort budget.}
+For a fully released closed cohort, use the conservative normalization
+\[
+k_C=\frac{e^{-\eta_*}}{\epsilon}=5.1760752,\qquad C_0=k_C B_0,
+\qquad f_{b,\rm coext}=\frac1{1+k_C}=0.1619151.
+\]
+Here $B_0$ is its ancestral baryonic mass and $C_0$ its surviving stock.
+The mass convention and release history must be kept fixed across systems.
+Inside an observed aperture, the retained fractions of baryons and stock
+can differ. Writing them as $f_b^{\rm ret}$ and $f_C^{\rm ret}$ gives
+\[
+\frac{C}{B}=k_C\frac{f_C^{\rm ret}}{f_b^{\rm ret}},\qquad
+\eta_{\rm ret}:=\frac{k_C B}{M_{\rm grav}-B}
+=\frac{f_b^{\rm ret}}{f_C^{\rm ret}}.
+\]
+Thus $M_{\rm grav}=(1+k_C)B$ tests coextensiveness. It is a restrictive
+special case of the transport model. For any positive inferred stock
+$C=M_{\rm grav}-B$, the minimal compatible closed inventory is
+\[
+B_0=\max(B,C/k_C),\qquad
+B_{\rm out}=B_0-B\ge0,\quad C_{\rm out}=k_CB_0-C\ge0.
+\]
+This construction supplies an admissible inventory. Its assembly history,
+work cost, and transport time require a forward solution.
+
+\paragraph{Reciprocal contact with finite available work.}
+The coupling of O.3 admits central pair transitions in the relative
+radial velocity $w$. For a pair with reduced mass
+$\mu=m_im_j/(m_i+m_j)$ and separation direction $\boldsymbol n$,
+\[
+\delta\boldsymbol v_i=\frac{m_j}{m_i+m_j}\delta w\boldsymbol n,
+\qquad
+\delta\boldsymbol v_j=-\frac{m_i}{m_i+m_j}\delta w\boldsymbol n,
+\qquad
+\Delta K=\frac\mu2[(w+\delta w)^2-w^2].
+\]
+Both linear and angular momentum are conserved by each impulse. The work
+and heat registers balance $\Delta K$ event by event. A symmetric factor
+$v(U)v(U-W)$ suppresses a transition when either endpoint has exhausted
+its available work; the floor state permits no such transition. Local
+partners include gas and stars from both progenitors. An initial cohort
+label does not confer a special interaction eligibility.
+
+Seventeen controlled runs comprise fourteen encounters and three isolated
+controls. They use coextensive Plummer progenitors of mass ratio $0.3$,
+the same $k_C$, a gas adiabatic index $5/3$, and a selected two-component
+relative-energy target. Weak contact preserves a stock concentration near
+the stars while the gas lags. Increasing the rate alters that separation,
+but the strongest tested contact also changes the isolated stock median
+radius by $-27\%$ and the gas median radius by $+46\%$ within six dynamical
+time units. It has not selected a stable cluster equilibrium.
+The zero-work run permits zero events and reproduces the no-contact
+trajectory; a low-work run permits 61 events against 7114 with the larger
+work reserve. The largest energy drift is below $0.007\%$ of the binding
+energy, with momentum errors at roundoff. Resolution, timestep, and
+contact-range controls support the qualitative mechanism. These are
+selected effective encounters; their rates, target, and work reserves
+have not been inferred independently from cluster data. The spatial
+stress of the full depleted scalar is not evolved in this particle test.
+
+\paragraph{Radial data and independent lensing.}
+Public X-COP profiles provide twelve radial targets, seven with stellar
+profiles; five overlap the MENeaCS weak-lensing sample
+\citep{Ettori2019Cluster,Herbonnet2020Cluster}. With one fixed normalization,
+all nominal NFW targets admit positive cumulative stock and positive
+stock in the fifteen tested radial shells. The forward hydrostatic
+reconstruction of A644 has negative inferred shells, so positivity depends
+on a physically admissible mass reconstruction. Projected stellar masses
+are approximately deprojected; unmeasured diffuse light and correlated
+profile errors remain relevant.
+
+For the five independent lensing targets, the self-consistent coextensive
+$M_{500}$ ranges, in $10^{14}M_\odot$, are
+\[
+\begin{array}{c|cc}
+ &M_{500}^{\rm coext}&M_{500}^{\rm WL}\\\hline
+\mathrm{A1795}&3.96\text{--}4.23&9.3\pm2.2\\
+\mathrm{A2029}&7.46\text{--}8.07&12.1\pm2.5\\
+\mathrm{A2142}&9.29\text{--}10.02&9.7\pm2.3\\
+\mathrm{A85}&5.20\text{--}5.43&5.7\pm2.2\\
+\mathrm{ZW1215}&4.19\text{--}4.46&3.5\pm2.2
+\end{array}
+\]
+The ranges double the nominal stellar mass and are sensitivity ranges.
+A1795 and A2029 require substantial relative baryon--stock segregation
+under the central lensing targets: $\eta_{\rm ret}=0.518$ and $0.704$.
+A positive transport inventory can accommodate these values, but it does
+not predict them. ZW1215 changes substantially with the lensing estimator;
+the two estimators use overlapping data and cannot be counted as independent
+confirmations. The empirical companion gives the aperture conventions
+and profile-level qualifications.
+
+\paragraph{Gas support and possible outlier mechanisms.}
+Retaining the common potential fixes the local gas balance,
+\[
+a_g=-g-\frac{P_{\rm th}'}{\rho_g}
+       -\frac{P_{\rm nt}'}{\rho_g}+\frac{f_{Cg}}{\rho_g},\qquad
+M=M_{\rm th}+M_{\rm nt}+M_{\rm contact}-M_{\rm acc},
+\]
+where $M_{\rm contact}=r^2f_{Cg}/(G\rho_g)$ and
+$M_{\rm acc}=r^2a_g/G$. Assembly segregation, acceleration, and reciprocal
+contact are possible contributions. A quiet gas velocity field alone
+does not determine all of these terms. A passive drag vanishes at zero
+relative drift, however, and a persistent supporting force requires its
+own constitutive derivation. The small measured turbulent support in
+A1795 and A2029 constrains a purely turbulent explanation
+\citep{Sarkar2026Cluster,XRISM2025Cluster}. These possibilities remain
+conditional pending joint lensing, pressure, and transport fits.
+
+\paragraph{A resolved merger target.}
+The public CANUCS Bullet v1 reconstruction supplies a separate spatial
+test \citep{Rihtarsic2026Cluster}. At $z_l=0.296$, in its
+$H_0=70\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$, $\Omega_m=0.3$ convention,
+$\Sigma_{\rm crit}=1.8268761\times10^9M_\odot\,\mathrm{kpc}^{-2}$
+for $D_{ls}/D_s=1$. Within 150 kpc of the Bullet's BCG3, the reconstructed
+total mass is $8.511\times10^{13}M_\odot$ and the supplied gas mass is
+$6.184\times10^{12}M_\odot$. The released subcluster halo centre lies
+3.92 kpc from BCG3, while the supplied gas-density peak lies about
+169 kpc away. The latter is a pixel-based gas-density diagnostic.
+The non-gas map still includes stars. These are targets extracted from
+an existing best-fit reconstruction, with no simulated-map likelihood.
+The illustrative encounters have 24--30 kpc force softening and roughly
+90 kpc map smoothing under the quoted physical scaling; they cannot test
+the observed few-kiloparsec alignment. A common selected contact must
+reproduce the isolated profiles and the merger morphology together.
+

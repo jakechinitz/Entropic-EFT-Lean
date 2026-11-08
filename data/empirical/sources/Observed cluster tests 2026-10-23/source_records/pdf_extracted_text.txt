@@ -1,0 +1,293 @@
+       Observed cluster tests of the conservative stock sector
+
+
+                 Research calculation for the Entropic Scalar EFT project
+
+                                   23 October 2026
+
+
+
+                                         Abstract
+
+         Public radial profiles for twelve X-COP clusters, five matching weak-lensing mass estimates and
+      a released Bullet Cluster lens reconstruction provide the first resolved observational targets for the
+      conservative stock dynamics. The existing surviving cohort allocation is held fixed. A restricted model
+       in which stock follows the present baryons is insufficient across these targets. A2142 is close to its
+     mass budget; A1795 requires substantial relative segregation if its independent lensing mass is adopted.
+     The Bullet reconstruction supplies simultaneous aperture-mass, gas-separation and galaxy-alignment
+       targets. These calculations constrain the required outcome of transport. They do not demonstrate
+      that the proposed interaction produces it.
+
+
+1  The tested statement
+
+
+The preceding encounter calculation evolved gravitating stock, stellar tracers and baryonic gas with
+reciprocal impulses and a finite-work contact. Its initial profiles and coupling parameters were specified.
+Here the gravitating profiles come from observations, and their associated assumptions remain explicit.
+
+We retain the project’s saturated surviving allocation
+
+                                                        1
+                  k = 5.1760752079627395,      fb,coext =    = 0.1619151.                    (1)
+                                                      1 + k
+
+It is a stock-to-original-cohort-baryon ratio. For a restricted comparison, impose the stronger assumption
+that stock and present baryons occupy each aperture in that ratio:
+
+                      Mcoext(< r) = (1 + k)Mb(< r),   Mb = Mg + M⋆.                       (2)
+
+Equation (2) is a testable shortcut, not a necessary consequence of the theory. A gravitating target
+instead requires
+                                              kMb
+                             Mc,req = Mgrav −Mb,     η(r) =                    .                          (3)
+                                                        Mgrav −Mb
+
+For a single conserved cohort with aperture retentions rb and rc, η = rb/rc. In a mixed aperture it is
+an effective inventory diagnostic: imported material must be tracked separately. Values above one can
+reflect preferential stock loss or imported baryons. Neither sign of η −1 alone establishes a violation of
+the whole-cohort inventory.
+
+The normalization is unchanged between clusters. The full-release convention is itself a conditional input;
+it is not evidence that each observed cluster has reached the same release state. No per-cluster coupling,
+stock amplitude or acceleration scale is fitted here.
+
+
+
+
+
+                                            1
+2  Resolved X-COP profiles
+
+
+We downloaded the complete primary X-COP archive and read its FITS tables for all twelve clusters [1,
+2, 3]. Seven have released stellar profiles; the other five receive gas-only lower-bound diagnostics. No
+stellar mass is invented for those five. The comparison uses the released hydrostatic masses without a
+correction that enforces the cosmic baryon fraction.
+
+
+
+
+
+Solid blue: equation (2) divided by the NFW hydrostatic mass. Dashed orange: the same baryons divided by
+the forward hydrostatic reconstruction. Blue shading spans zero to the measured projected stellar mass, for the
+measured stellar component only; it is not a confidence band. Dotted blue doubles the adopted deprojected stellar
+contribution. This is a sensitivity scenario for stellar-population and diffuse-light uncertainty, not a hard upper
+bound.
+
+All principal radial tests start at 0.1R500 and stop within the available gas, mass and stellar profiles,
+with a maximum of 1.5R500. The measured shapes generally require more centrally concentrated stock
+than a local rescaling of the gas and stars. Agreement near one outer aperture does not reproduce the
+inner profile. Correlated radial samples are not summed into a fictitious independent-bin χ2.
+
+
+
+
+
+                                            2
+3  Mass inventory and reconstruction sensitivity
+
+
+The stellar FITS profiles are projected cumulative masses. Ghizzardi et al. apply a factor 0.75 at
+R500 to obtain a spherical mass and exclude intracluster light [4]. We preserve that distinction. Our
+radial extension uses the geometric sphere-to-cylinder ratio of a spherical generalized NFW distribution
+with inner slope 1.64, choosing its scale once so that D(R500) = 0.75. This gives R500/rs = 1.28214.
+Multiplying the measured profile by this radius-dependent factor is an approximation, not a recovered
+three-dimensional stellar distribution. The reported geometric and doubled-star sensitivities bracket
+alternatives for this measured component.
+
+
+                         Cluster   Mcoext/MHSE   ηHSE  Ratio with 2M⋆
+
+                     A1795            0.903  0.887             0.943
+                     A2029            0.912  0.897             0.959
+                     A2142            1.023  1.027             1.071
+                     A2319            1.213  1.265             1.255
+                    A644             0.851  0.827             0.894
+                    A85              0.952  0.943             0.976
+                   ZW1215          0.679  0.640             0.705
+
+
+All entries are evaluated at the released hydrostatic R500. The source tables, interpolation results and
+full precision are saved alongside this note.
+
+The nominal NFW reconstruction requires positive cumulative stock and positive stock in each of fifteen
+finite radial shells for every cluster tested. This is a conditional consistency result. The NFW mass shape
+was supplied by the observational reconstruction, and positive shell masses do not prove a nonnegative
+distribution function, stable equilibrium or formation history.
+
+The less constrained forward reconstruction for A644 gives four negative residual shell masses over the
+tested range. We retain this failure.  It prevents a blanket claim that arbitrary released hydrostatic
+profiles admit a positive stock density, and points to sensitivity to the mass reconstruction and hydrostatic
+assumptions.
+
+
+
+
+
+The required relative retention changes with radius. These curves are inferred targets; selecting them as an
+interaction’s equilibrium would not constitute a prediction.
+
+
+
+
+                                            3
+4  Five independent weak-lensing comparisons
+
+
+We matched A1795, A2029, A2142, A85 and ZW1215 to the public MENeaCS results [5]. The lensing
+masses do not use the X-ray hydrostatic equilibrium equation.  They retain their authors’ NFW
+concentration prescription and simulation calibration. The aperture and NFW methods use the same
+shear observations and are not counted as independent datasets.
+
+For a mass prediction under equation (2), solve for its own overdensity radius:
+
+                                          4π
+                            (1 + k)Mb(< Rcoext500  ) =    500ρcrit(z) Rcoext500   3.                          (4)                                              3
+Thus the prediction is not evaluated at a conveniently selected hydrostatic radius. Separately, equation (3)
+is evaluated at the radius corresponding to each measured lensing mass. Its one-sigma endpoint diagnostics
+also change the aperture radius.
+
+                                 M500 [1014M⊙]                 η at lensing R500
+            Cluster   Coextensive  Lensing NFW  Lensing aperture NFW / aperture
+          A1795       3.96–4.23        9.3 ± 2.2              9.2+2.3−2.3      0.518 / 0.523
+          A2029       7.46–8.07       12.1 ± 2.5            10.8+1.9−2.3      0.704 / 0.761
+          A2142      9.29–10.02        9.7 ± 2.3            11.3+2.1−2.2      0.969 / 0.867
+         A85         5.20–5.43        5.7 ± 2.2              7.4+2.3−2.3      0.937 / 0.779
+         ZW1215     4.19–4.46        3.5 ± 2.2              7.0+2.4−1.4      1.143 / 0.686
+
+The coextensive range changes the adopted stellar mass from one to two times its nominal value. It is
+not a statistical interval.
+
+
+
+
+
+A1795 is the most useful stress test in this overlap sample: its two lensing estimators agree closely and
+require roughly half as much retained baryonic mass per unit retained stock as a coextensive cohort. Its
+nominal mass difference is 2.43 times the quoted NFW lensing error alone (2.30 with doubled stars).
+These ratios are descriptive residuals, not a combined exclusion significance. A2029 also requires relative
+segregation. ZW1215 is sensitive to the lensing estimator, so its hydrostatic deficit cannot be promoted
+to an equally robust lensing discrepancy.
+
+
+                                            4
+5  The Bullet Cluster as a spatial target
+
+
+We retrieved the current public CANUCS Bullet v1 best-fit convergence map and its fixed gas compo-
+nent [6, 7]. Their documentation sets Dls/Ds = 1, giving
+
+                              c2
+                     Σcrit =     = 1.8268761 × 109 M⊙kpc−2,       1′′ = 4.41302 kpc               (5)
+                   4πGDl
+
+for the release cosmology at zl = 0.296. We integrate matched circular apertures after registering the
+FITS world coordinates. The total reconstruction already contains the supplied gas. Subtracting gas
+leaves a non-gas component that still includes stars; galaxy lens halos are not pure stellar mass.
+
+
+
+
+
+            Centre         Radius (kpc)  Mtotal/1013M⊙  Mg/1013M⊙  Mg/Mtotal
+
+         BCG1                   60            2.315         0.163       0.070
+         BCG2                   60            2.272         0.206       0.091
+         BCG3 (Bullet)            60            2.151         0.099       0.046
+         BCG1                  150           11.281         1.006       0.089
+         BCG2                  150           11.607         1.259       0.108
+         BCG3 (Bullet)           150            8.511         0.618       0.073
+
+
+The released subcluster halo centre is 3.92 kpc from BCG3, reproducing the published roughly 4 kpc
+alignment. The supplied gas-density map has its local peak about 169 kpc from BCG3; this is a
+native-pixel diagnostic with an 8.68 kpc gas pixel, not an X-ray brightness-peak measurement or a fitted
+offset posterior. Aperture integration changes by at most 0.214% when pixel sampling is coarsened.
+Observational and model uncertainties are larger.
+
+These are measurements of an existing lens reconstruction. No simulated map has been optimized
+against it. The previous encounter’s 24–30 kpc force softening, much broader map smoothing, different
+mass ratio and specified Plummer profiles cannot establish agreement at the observed few-kiloparsec
+alignment.
+
+
+
+
+                                            5
+6  What the effective dynamics must now accomplish
+
+
+Three complementary targets emerge. A2142 provides a useful normalization and equilibrium benchmark.
+A1795 demands a quantitative assembly and transport explanation while retaining the observed gas
+profile. The Bullet demands separated gas and gravitating concentrations together with close halo–
+galaxy alignment. A model should meet these requirements using the same constitutive coupling, with
+environmental state changes computed from the work and depletion variables.
+
+The useful improvement is a set of numerical obligations. A nonnegative stock inventory can be written
+for the nominal NFW targets, and the previous conservative experiment supplies a candidate transport
+mechanism. Connecting them requires a selected phase-space distribution and coupling law that survive
+an isolated-cluster control and then the merger. The strongest previously tested contact changed the
+isolated halo appreciably, so increasing its rate is not an established solution to A1795’s retention target.
+Depletion can suppress the interaction, but assigning a favorable depleted state to each cluster would
+introduce a hidden fit unless its history is computed.
+
+A next forward calculation should fix gas and stellar inputs, specify the initial cohort and formation
+history, and derive the stock evolution under the common potential. Lensing profiles, projected gas
+morphology and galaxy offsets then provide the comparison. Fitting the observed total mass first and
+calling the recovered stock a prediction would not perform this test. A contact-rate bound also requires
+this forward calculation; a particle-dark-matter self-interaction limit cannot simply be relabeled as the
+rate of the present stock–baryon process.
+
+
+7  Scope and reproducibility
+
+The analysis adopts the observational H0 = 70 km s−1 Mpc−1, Ωm = 0.3 distance convention. Small
+redshift differences between the two catalogues are retained in the source record; the largest distance
+mismatch is about 2% for ZW1215. We use the X-COP redshift for radius conversion and do not
+claim a recalibration of the original shear-source efficiencies. Stellar deprojection, missing diffuse light,
+hydrostatic departures, triaxiality, correlated profile errors and lens-model systematics remain relevant.
+No joint likelihood or new theorem of microphysical uniqueness is claimed.
+
+The project directory contains the pre-calculation protocol; the original X-COP archive; 115 expanded
+FITS tables; the primary lensing paper and transcribed five-row table; the Bullet maps, catalogues and
+parameter files; acquisition URLs and checksums; twelve radial result tables; and separate radial and
+Bullet summaries. An oversized whole-folder Bullet download was stopped after the required small input
+files were recovered and individually CRC-checked. Its partial archive is preserved, and the complete
+convergence map was retrieved directly with a recorded checksum.
+
+The calculation scripts are radial_analysis.py and bullet_analysis.py. validate.py checks in-
+dependent critical-density normalization, overdensity roots, cohort normalization, stellar projection
+convention, world-coordinate round trips, map subtraction, aperture convergence and source hashes. All
+fifteen numerical/data-handling checks pass. The A644 forward-profile failure is explicitly retained as an
+analysis result. These checks validate the reduction, not the theory. The four publication papers and
+preceding simulation outputs are unchanged.
+
+
+References
+
+
+[1] X-COP collaboration. Public data release, archive linked 22 July 2025; retrieved 23 October 2026.
+
+[2] S. Ettori et al. Hydrostatic mass profiles in X-COP galaxy clusters. A&A 621, A39 (2019). arXiv:1805.00035.
+
+
+                                            6
+[3] D. Eckert  et  al. Non-thermal  pressure support  in X-COP galaxy  clusters. A&A  621, A40  (2019).
+    arXiv:1805.00034.
+
+[4] S. Ghizzardi et al. Iron in X-COP. A&A 646, A92 (2021), Sec. 4.1. arXiv:2007.01084.
+
+[5] R. Herbonnet et al. CCCP and MENeaCS: (updated) weak-lensing masses for 100 galaxy clusters. MNRAS
+    497, 4684 (2020), Table A2. arXiv:1912.04414.
+
+[6] G. Rihtaršič et al. Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy (2026).
+   arXiv:2601.22245v2.
+
+[7] CANUCS. Public Bullet lens-model release, v1 README dated 17 March 2026; retrieved 23 October 2026.
+
+
+
+
+
+                                            7

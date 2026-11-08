@@ -1,0 +1,973 @@
+{
+  "k_stock_per_cohort_baryon": 5.1760752079627395,
+  "coextensive_baryon_fraction": 0.16191512673140898,
+  "stellar_deprojection": {
+    "alpha": 1.64,
+    "R500_over_rs": 1.2821406687574768,
+    "D_at_R500": 0.75
+  },
+  "clusters": {
+    "A1644": {
+      "has_stellar_profile": false,
+      "redshift": 0.0473,
+      "R500_kpc": 1054.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8701308378673824,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 44313009647207.71,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 348282922210231.6,
+        "coextensive_to_NFW": 0.785799310903718,
+        "required_stock_per_present_baryon": 6.859608836841393,
+        "relative_baryon_to_stock_retention": 0.7545729401016601,
+        "coextensive_to_NFW_double_stars": 0.785799310903718,
+        "hydro_M500_header_Msun": 348380000000000.0,
+        "hydro_error_header_Msun": 19832000000000.0,
+        "gas_error_lo_Msun": 156534022745.55588,
+        "gas_error_hi_Msun": 198255683940.46906
+      },
+      "0.1R500": {
+        "gas_Msun": 406182177595.70135,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 7309570468964.436,
+        "coextensive_to_NFW": 0.3431954979593391,
+        "required_stock_per_present_baryon": 16.995793198588125,
+        "relative_baryon_to_stock_retention": 0.30455037593613027
+      },
+      "0.3R500": {
+        "gas_Msun": 4559221749772.1455,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 53863758210922.44,
+        "coextensive_to_NFW": 0.5227651644006968,
+        "required_stock_per_present_baryon": 10.814244001975636,
+        "relative_baryon_to_stock_retention": 0.4786349565459343
+      },
+      "0.5R500": {
+        "gas_Msun": 12493491814699.123,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 125430059476699.28,
+        "coextensive_to_NFW": 0.6151694847277224,
+        "required_stock_per_present_baryon": 9.03963194093788,
+        "relative_baryon_to_stock_retention": 0.5725980041866296
+      },
+      "1.0R500": {
+        "gas_Msun": 44313009647207.71,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 348282922210231.6,
+        "coextensive_to_NFW": 0.785799310903718,
+        "required_stock_per_present_baryon": 6.859608836841393,
+        "relative_baryon_to_stock_retention": 0.7545729401016601,
+        "coextensive_to_NFW_double_stars": 0.785799310903718,
+        "hydro_M500_header_Msun": 348380000000000.0,
+        "hydro_error_header_Msun": 19832000000000.0,
+        "gas_error_lo_Msun": 156534022745.55588,
+        "gas_error_hi_Msun": 198255683940.46906
+      }
+    },
+    "A1795": {
+      "has_stellar_profile": true,
+      "redshift": 0.0622,
+      "R500_kpc": 1153.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.849759351442475,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 64719540305322.664,
+        "star_3D_approx_Msun": 2984999979282.814,
+        "M_NFW_Msun": 462840441154500.25,
+        "coextensive_to_NFW": 0.9034394913185315,
+        "required_stock_per_present_baryon": 5.836180250377389,
+        "relative_baryon_to_stock_retention": 0.8868943360047928,
+        "coextensive_to_NFW_double_stars": 0.9432708948186936,
+        "hydro_M500_header_Msun": 462570000000000.0,
+        "hydro_error_header_Msun": 14443000000000.0,
+        "gas_error_lo_Msun": 305180435021.4694,
+        "gas_error_hi_Msun": 245621160760.59607
+      },
+      "0.1R500": {
+        "gas_Msun": 1907364088651.011,
+        "star_3D_approx_Msun": 436715124926.94806,
+        "M_NFW_Msun": 22883688187358.41,
+        "coextensive_to_NFW": 0.6326431909903948,
+        "required_stock_per_present_baryon": 8.76233569872802,
+        "relative_baryon_to_stock_retention": 0.5907186606322469
+      },
+      "0.3R500": {
+        "gas_Msun": 12492573934842.627,
+        "star_3D_approx_Msun": 1086650841220.8247,
+        "M_NFW_Msun": 122136003711080.78,
+        "coextensive_to_NFW": 0.6866633174046621,
+        "required_stock_per_present_baryon": 7.9943281538703115,
+        "relative_baryon_to_stock_retention": 0.6474684436686321
+      },
+      "0.5R500": {
+        "gas_Msun": 27021514465457.344,
+        "star_3D_approx_Msun": 1488803351359.684,
+        "M_NFW_Msun": 229936799532374.38,
+        "coextensive_to_NFW": 0.765783760571088,
+        "required_stock_per_present_baryon": 7.065038103389519,
+        "relative_baryon_to_stock_retention": 0.7326323131193687
+      },
+      "1.0R500": {
+        "gas_Msun": 64719540305322.664,
+        "star_3D_approx_Msun": 2984999979282.814,
+        "M_NFW_Msun": 462840441154500.25,
+        "coextensive_to_NFW": 0.9034394913185315,
+        "required_stock_per_present_baryon": 5.836180250377389,
+        "relative_baryon_to_stock_retention": 0.8868943360047928,
+        "coextensive_to_NFW_double_stars": 0.9432708948186936,
+        "hydro_M500_header_Msun": 462570000000000.0,
+        "hydro_error_header_Msun": 14443000000000.0,
+        "gas_error_lo_Msun": 305180435021.4694,
+        "gas_error_hi_Msun": 245621160760.59607
+      }
+    },
+    "A2029": {
+      "has_stellar_profile": true,
+      "redshift": 0.0766,
+      "R500_kpc": 1414.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8408213559909055,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 121071229233793.27,
+        "star_3D_approx_Msun": 6585000006660.197,
+        "M_NFW_Msun": 864424552831321.6,
+        "coextensive_to_NFW": 0.9120685778436224,
+        "required_stock_per_present_baryon": 5.771503106229859,
+        "relative_baryon_to_stock_retention": 0.896833132148122,
+        "coextensive_to_NFW_double_stars": 0.9591165881672076,
+        "hydro_M500_header_Msun": 865110000000000.0,
+        "hydro_error_header_Msun": 29367000000000.0,
+        "gas_error_lo_Msun": 580687351207.6187,
+        "gas_error_hi_Msun": 1154035616058.4175
+      },
+      "0.1R500": {
+        "gas_Msun": 3981278576385.158,
+        "star_3D_approx_Msun": 819009471239.6216,
+        "M_NFW_Msun": 41444719807486.81,
+        "coextensive_to_NFW": 0.7153369630613274,
+        "required_stock_per_present_baryon": 7.633798512985901,
+        "relative_baryon_to_stock_retention": 0.6780471346155765
+      },
+      "0.3R500": {
+        "gas_Msun": 24996886939338.035,
+        "star_3D_approx_Msun": 1743846874347.3057,
+        "M_NFW_Msun": 224040801764762.28,
+        "coextensive_to_NFW": 0.7371549371745223,
+        "required_stock_per_present_baryon": 7.378259300053426,
+        "relative_baryon_to_stock_retention": 0.7015306724074146
+      },
+      "0.5R500": {
+        "gas_Msun": 51727950688081.945,
+        "star_3D_approx_Msun": 3116100139046.4014,
+        "M_NFW_Msun": 425239956567571.4,
+        "coextensive_to_NFW": 0.7965408174522104,
+        "required_stock_per_present_baryon": 6.753620495830123,
+        "relative_baryon_to_stock_retention": 0.7664148749783312
+      },
+      "1.0R500": {
+        "gas_Msun": 121071229233793.27,
+        "star_3D_approx_Msun": 6585000006660.197,
+        "M_NFW_Msun": 864424552831321.6,
+        "coextensive_to_NFW": 0.9120685778436224,
+        "required_stock_per_present_baryon": 5.771503106229859,
+        "relative_baryon_to_stock_retention": 0.896833132148122,
+        "coextensive_to_NFW_double_stars": 0.9591165881672076,
+        "hydro_M500_header_Msun": 865110000000000.0,
+        "hydro_error_header_Msun": 29367000000000.0,
+        "gas_error_lo_Msun": 580687351207.6187,
+        "gas_error_hi_Msun": 1154035616058.4175
+      }
+    },
+    "A2142": {
+      "has_stellar_profile": true,
+      "redshift": 0.09,
+      "R500_kpc": 1424.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8259201290397822,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 141217246325987.16,
+        "star_3D_approx_Msun": 6930000254224.664,
+        "M_NFW_Msun": 894618988079655.4,
+        "coextensive_to_NFW": 1.0227466093649709,
+        "required_stock_per_present_baryon": 5.038714918641968,
+        "relative_baryon_to_stock_retention": 1.0272609765661822,
+        "coextensive_to_NFW_double_stars": 1.0705884317849996,
+        "hydro_M500_header_Msun": 895229999999999.9,
+        "hydro_error_header_Msun": 26404000000000.0,
+        "gas_error_lo_Msun": 833461762533.7498,
+        "gas_error_hi_Msun": 513561434689.2115
+      },
+      "0.1R500": {
+        "gas_Msun": 3181300454399.9717,
+        "star_3D_approx_Msun": 493109379545.85065,
+        "M_NFW_Msun": 32570334118995.09,
+        "coextensive_to_NFW": 0.696751571427461,
+        "required_stock_per_present_baryon": 7.864099431178293,
+        "relative_baryon_to_stock_retention": 0.6581904582031968
+      },
+      "0.3R500": {
+        "gas_Msun": 24558827794385.844,
+        "star_3D_approx_Msun": 1561653681018.963,
+        "M_NFW_Msun": 197293332675625.8,
+        "coextensive_to_NFW": 0.8176761772559779,
+        "required_stock_per_present_baryon": 6.553204287654435,
+        "relative_baryon_to_stock_retention": 0.7898540898097645
+      },
+      "0.5R500": {
+        "gas_Msun": 55468140119374.336,
+        "star_3D_approx_Msun": 2756017386122.1025,
+        "M_NFW_Msun": 400612347339810.75,
+        "coextensive_to_NFW": 0.8976178044986567,
+        "required_stock_per_present_baryon": 5.8805177181308705,
+        "relative_baryon_to_stock_retention": 0.8802073994274029
+      },
+      "1.0R500": {
+        "gas_Msun": 141217246325987.16,
+        "star_3D_approx_Msun": 6930000254224.664,
+        "M_NFW_Msun": 894618988079655.4,
+        "coextensive_to_NFW": 1.0227466093649709,
+        "required_stock_per_present_baryon": 5.038714918641968,
+        "relative_baryon_to_stock_retention": 1.0272609765661822,
+        "coextensive_to_NFW_double_stars": 1.0705884317849996,
+        "hydro_M500_header_Msun": 895229999999999.9,
+        "hydro_error_header_Msun": 26404000000000.0,
+        "gas_error_lo_Msun": 833461762533.7498,
+        "gas_error_hi_Msun": 513561434689.2115
+      }
+    },
+    "A2255": {
+      "has_stellar_profile": false,
+      "redshift": 0.0809,
+      "R500_kpc": 1196.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8480468853778781,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 79382622589028.3,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 525600232724672.1,
+        "coextensive_to_NFW": 0.9327869677180735,
+        "required_stock_per_present_baryon": 5.621099373924147,
+        "relative_baryon_to_stock_retention": 0.9208296924929239,
+        "coextensive_to_NFW_double_stars": 0.9327869677180735,
+        "hydro_M500_header_Msun": 525690000000000.0,
+        "hydro_error_header_Msun": 34283999999999.996,
+        "gas_error_lo_Msun": 482840501282.3349,
+        "gas_error_hi_Msun": 404927780277.1071
+      },
+      "0.1R500": {
+        "gas_Msun": 509194059236.18225,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 10662962671309.328,
+        "coextensive_to_NFW": 0.2949293645894698,
+        "required_stock_per_present_baryon": 19.940862285990395,
+        "relative_baryon_to_stock_retention": 0.2595712830131338
+      },
+      "0.3R500": {
+        "gas_Msun": 7834764824220.066,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 79534510763123.62,
+        "coextensive_to_NFW": 0.608391204356529,
+        "required_stock_per_present_baryon": 9.15148668116418,
+        "relative_baryon_to_stock_retention": 0.5655993816410472
+      },
+      "0.5R500": {
+        "gas_Msun": 24330317936455.496,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 186698910231220.47,
+        "coextensive_to_NFW": 0.8048567247826706,
+        "required_stock_per_present_baryon": 6.673508859145605,
+        "relative_baryon_to_stock_retention": 0.7756152448751558
+      },
+      "1.0R500": {
+        "gas_Msun": 79382622589028.3,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 525600232724672.1,
+        "coextensive_to_NFW": 0.9327869677180735,
+        "required_stock_per_present_baryon": 5.621099373924147,
+        "relative_baryon_to_stock_retention": 0.9208296924929239,
+        "coextensive_to_NFW_double_stars": 0.9327869677180735,
+        "hydro_M500_header_Msun": 525690000000000.0,
+        "hydro_error_header_Msun": 34283999999999.996,
+        "gas_error_lo_Msun": 482840501282.3349,
+        "gas_error_hi_Msun": 404927780277.1071
+      }
+    },
+    "A2319": {
+      "has_stellar_profile": true,
+      "redshift": 0.0557,
+      "R500_kpc": 1368.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.0577119526110197
+      ],
+      "minimum_required_stock_fraction_NFW": 0.7976850047650896,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 145526282705015.84,
+        "star_3D_approx_Msun": 5215681984462.762,
+        "M_NFW_Msun": 767741599935976.5,
+        "coextensive_to_NFW": 1.2126393971564402,
+        "required_stock_per_present_baryon": 4.09308473932583,
+        "relative_baryon_to_stock_retention": 1.2645902876702448,
+        "coextensive_to_NFW_double_stars": 1.2545968007926958,
+        "hydro_M500_header_Msun": 767810000000000.0,
+        "hydro_error_header_Msun": 28624000000000.0,
+        "gas_error_lo_Msun": 489207291824.82404,
+        "gas_error_hi_Msun": 563016443315.6647
+      },
+      "0.1R500": {
+        "gas_Msun": 1985978068226.472,
+        "star_3D_approx_Msun": 567384072882.3547,
+        "M_NFW_Msun": 38689494582931.9,
+        "coextensive_to_NFW": 0.40759789670681834,
+        "required_stock_per_present_baryon": 14.15237261492823,
+        "relative_baryon_to_stock_retention": 0.36573904240642324
+      },
+      "0.3R500": {
+        "gas_Msun": 19386525665092.598,
+        "star_3D_approx_Msun": 1464050526489.5938,
+        "M_NFW_Msun": 204518206994547.6,
+        "coextensive_to_NFW": 0.6296492062049127,
+        "required_stock_per_present_baryon": 8.808755648542501,
+        "relative_baryon_to_stock_retention": 0.5876057203175087
+      },
+      "0.5R500": {
+        "gas_Msun": 49913414797708.945,
+        "star_3D_approx_Msun": 2286282213587.9165,
+        "M_NFW_Msun": 383677481598840.6,
+        "coextensive_to_NFW": 0.8402610787351754,
+        "required_stock_per_present_baryon": 6.350185988930292,
+        "relative_baryon_to_stock_retention": 0.8151060798826563
+      },
+      "1.0R500": {
+        "gas_Msun": 145526282705015.84,
+        "star_3D_approx_Msun": 5215681984462.762,
+        "M_NFW_Msun": 767741599935976.5,
+        "coextensive_to_NFW": 1.2126393971564402,
+        "required_stock_per_present_baryon": 4.09308473932583,
+        "relative_baryon_to_stock_retention": 1.2645902876702448,
+        "coextensive_to_NFW_double_stars": 1.2545968007926958,
+        "hydro_M500_header_Msun": 767810000000000.0,
+        "hydro_error_header_Msun": 28624000000000.0,
+        "gas_error_lo_Msun": 489207291824.82404,
+        "gas_error_hi_Msun": 563016443315.6647
+      }
+    },
+    "A3158": {
+      "has_stellar_profile": false,
+      "redshift": 0.059,
+      "R500_kpc": 1123.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.847577613452438,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 61616722019856.695,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 425956205337729.1,
+        "coextensive_to_NFW": 0.8934005526719381,
+        "required_stock_per_present_baryon": 5.912996851738718,
+        "relative_baryon_to_stock_retention": 0.875372562804716,
+        "coextensive_to_NFW_double_stars": 0.8934005526719381,
+        "hydro_M500_header_Msun": 426370000000000.0,
+        "hydro_error_header_Msun": 18224000000000.0,
+        "gas_error_lo_Msun": 180722554859.5628,
+        "gas_error_hi_Msun": 191305796696.99976
+      },
+      "0.1R500": {
+        "gas_Msun": 806535899306.0604,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 14479871020808.352,
+        "coextensive_to_NFW": 0.34401041037436053,
+        "required_stock_per_present_baryon": 16.953163688394728,
+        "relative_baryon_to_stock_retention": 0.3053161818702911
+      },
+      "0.3R500": {
+        "gas_Msun": 9403540135983.115,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 90177700384356.31,
+        "coextensive_to_NFW": 0.6440280784871606,
+        "required_stock_per_present_baryon": 8.589760779484191,
+        "relative_baryon_to_stock_retention": 0.602586654138878
+      },
+      "0.5R500": {
+        "gas_Msun": 23206629916966.926,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 186709637168568.16,
+        "coextensive_to_NFW": 0.7676405667327503,
+        "required_stock_per_present_baryon": 7.045529998824183,
+        "relative_baryon_to_stock_retention": 0.7346608713363745
+      },
+      "1.0R500": {
+        "gas_Msun": 61616722019856.695,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 425956205337729.1,
+        "coextensive_to_NFW": 0.8934005526719381,
+        "required_stock_per_present_baryon": 5.912996851738718,
+        "relative_baryon_to_stock_retention": 0.875372562804716,
+        "coextensive_to_NFW_double_stars": 0.8934005526719381,
+        "hydro_M500_header_Msun": 426370000000000.0,
+        "hydro_error_header_Msun": 18224000000000.0,
+        "gas_error_lo_Msun": 180722554859.5628,
+        "gas_error_hi_Msun": 191305796696.99976
+      }
+    },
+    "A3266": {
+      "has_stellar_profile": false,
+      "redshift": 0.0589,
+      "R500_kpc": 1430.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.122611403465271
+      ],
+      "minimum_required_stock_fraction_NFW": 0.864578589995552,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 116237795150463.61,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 879453158573513.2,
+        "coextensive_to_NFW": 0.8162951691724709,
+        "required_stock_per_present_baryon": 6.5659827978938194,
+        "relative_baryon_to_stock_retention": 0.7883169004985937,
+        "coextensive_to_NFW_double_stars": 0.8162951691724709,
+        "hydro_M500_header_Msun": 879679999999999.9,
+        "hydro_error_header_Msun": 57210000000000.01,
+        "gas_error_lo_Msun": 514442528619.03723,
+        "gas_error_hi_Msun": 659976612121.8309
+      },
+      "0.1R500": {
+        "gas_Msun": 1322825853036.455,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 23138547146296.62,
+        "coextensive_to_NFW": 0.3530849151303875,
+        "required_stock_per_present_baryon": 16.49175607143124,
+        "relative_baryon_to_stock_retention": 0.3138583414369852
+      },
+      "0.3R500": {
+        "gas_Msun": 14231763264768.316,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 158359350698781.62,
+        "coextensive_to_NFW": 0.5550442072241125,
+        "required_stock_per_present_baryon": 10.127177128557978,
+        "relative_baryon_to_stock_retention": 0.5111074035988317
+      },
+      "0.5R500": {
+        "gas_Msun": 41495045664109.66,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 348629579987424.5,
+        "coextensive_to_NFW": 0.7350968979414587,
+        "required_stock_per_present_baryon": 7.401715780950807,
+        "relative_baryon_to_stock_retention": 0.6993074796635641
+      },
+      "1.0R500": {
+        "gas_Msun": 116237795150463.61,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 879453158573513.2,
+        "coextensive_to_NFW": 0.8162951691724709,
+        "required_stock_per_present_baryon": 6.5659827978938194,
+        "relative_baryon_to_stock_retention": 0.7883169004985937,
+        "coextensive_to_NFW_double_stars": 0.8162951691724709,
+        "hydro_M500_header_Msun": 879679999999999.9,
+        "hydro_error_header_Msun": 57210000000000.01,
+        "gas_error_lo_Msun": 514442528619.03723,
+        "gas_error_hi_Msun": 659976612121.8309
+      }
+    },
+    "A644": {
+      "has_stellar_profile": true,
+      "redshift": 0.0704,
+      "R500_kpc": 1250.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8544643917586199,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 4,
+      "R500": {
+        "gas_Msun": 77632929012980.16,
+        "star_3D_approx_Msun": 4177500048562.7725,
+        "M_NFW_Msun": 593856274882575.9,
+        "coextensive_to_NFW": 0.8508243223997203,
+        "required_stock_per_present_baryon": 6.258931186338603,
+        "relative_baryon_to_stock_retention": 0.8269902725980728,
+        "coextensive_to_NFW_double_stars": 0.8942701115113927,
+        "hydro_M500_header_Msun": 594080000000000.0,
+        "hydro_error_header_Msun": 51329000000000.0,
+        "gas_error_lo_Msun": 649161501919.6599,
+        "gas_error_hi_Msun": 736558993937.9585
+      },
+      "0.1R500": {
+        "gas_Msun": 1765429003147.3936,
+        "star_3D_approx_Msun": 514305520216.5169,
+        "M_NFW_Msun": 33912520874471.6,
+        "coextensive_to_NFW": 0.4151803377460946,
+        "required_stock_per_present_baryon": 13.875644741490014,
+        "relative_baryon_to_stock_retention": 0.37303313138924565
+      },
+      "0.3R500": {
+        "gas_Msun": 14880307814325.695,
+        "star_3D_approx_Msun": 1047578072258.1124,
+        "M_NFW_Msun": 169911302934427.3,
+        "coextensive_to_NFW": 0.5789598422263517,
+        "required_stock_per_present_baryon": 9.667536429146885,
+        "relative_baryon_to_stock_retention": 0.535407882442239
+      },
+      "0.5R500": {
+        "gas_Msun": 31510510896176.94,
+        "star_3D_approx_Msun": 1961289829656.252,
+        "M_NFW_Msun": 309103208225598.5,
+        "coextensive_to_NFW": 0.6687874895100091,
+        "required_stock_per_present_baryon": 8.234734956671625,
+        "relative_baryon_to_stock_retention": 0.6285660965650366
+      },
+      "1.0R500": {
+        "gas_Msun": 77632929012980.16,
+        "star_3D_approx_Msun": 4177500048562.7725,
+        "M_NFW_Msun": 593856274882575.9,
+        "coextensive_to_NFW": 0.8508243223997203,
+        "required_stock_per_present_baryon": 6.258931186338603,
+        "relative_baryon_to_stock_retention": 0.8269902725980728,
+        "coextensive_to_NFW_double_stars": 0.8942701115113927,
+        "hydro_M500_header_Msun": 594080000000000.0,
+        "hydro_error_header_Msun": 51329000000000.0,
+        "gas_error_lo_Msun": 649161501919.6599,
+        "gas_error_hi_Msun": 736558993937.9585
+      }
+    },
+    "A85": {
+      "has_stellar_profile": true,
+      "redshift": 0.0555,
+      "R500_kpc": 1235.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.3050000395369432
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8396370825329238,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 84874038349611.64,
+        "star_3D_approx_Msun": 2205000009395.8477,
+        "M_NFW_Msun": 564808090830822.4,
+        "coextensive_to_NFW": 0.9521936719270411,
+        "required_stock_per_present_baryon": 5.4861544348049,
+        "relative_baryon_to_stock_retention": 0.9434796758773365,
+        "coextensive_to_NFW_double_stars": 0.976304951692094,
+        "hydro_M500_header_Msun": 564820000000000.0,
+        "hydro_error_header_Msun": 17836000000000.0,
+        "gas_error_lo_Msun": 409781104574.8808,
+        "gas_error_hi_Msun": 298289301939.88544
+      },
+      "0.1R500": {
+        "gas_Msun": 1854333698240.775,
+        "star_3D_approx_Msun": 198579239731.74918,
+        "M_NFW_Msun": 21445615576921.83,
+        "coextensive_to_NFW": 0.5912138383177113,
+        "required_stock_per_present_baryon": 9.446432082064677,
+        "relative_baryon_to_stock_retention": 0.5479397049591046
+      },
+      "0.3R500": {
+        "gas_Msun": 14296505490002.451,
+        "star_3D_approx_Msun": 741785606911.0308,
+        "M_NFW_Msun": 127866225449094.02,
+        "coextensive_to_NFW": 0.7263655158941914,
+        "required_stock_per_present_baryon": 7.502709824212525,
+        "relative_baryon_to_stock_retention": 0.6898940954984907
+      },
+      "0.5R500": {
+        "gas_Msun": 32846487036774.266,
+        "star_3D_approx_Msun": 1204891988415.2534,
+        "M_NFW_Msun": 256821148036457.75,
+        "coextensive_to_NFW": 0.8188728981328328,
+        "required_stock_per_present_baryon": 6.542165850213415,
+        "relative_baryon_to_stock_retention": 0.7911867914192192
+      },
+      "1.0R500": {
+        "gas_Msun": 84874038349611.64,
+        "star_3D_approx_Msun": 2205000009395.8477,
+        "M_NFW_Msun": 564808090830822.4,
+        "coextensive_to_NFW": 0.9521936719270411,
+        "required_stock_per_present_baryon": 5.4861544348049,
+        "relative_baryon_to_stock_retention": 0.9434796758773365,
+        "coextensive_to_NFW_double_stars": 0.976304951692094,
+        "hydro_M500_header_Msun": 564820000000000.0,
+        "hydro_error_header_Msun": 17836000000000.0,
+        "gas_error_lo_Msun": 409781104574.8808,
+        "gas_error_hi_Msun": 298289301939.88544
+      }
+    },
+    "RXC1825": {
+      "has_stellar_profile": false,
+      "redshift": 0.065,
+      "R500_kpc": 1105.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.8460744413627551,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 54060905318867.97,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 408573552865666.56,
+        "coextensive_to_NFW": 0.8171948838050661,
+        "required_stock_per_present_baryon": 6.557652807620833,
+        "relative_baryon_to_stock_retention": 0.7893182758848526,
+        "coextensive_to_NFW_double_stars": 0.8171948838050661,
+        "hydro_M500_header_Msun": 408270000000000.0,
+        "hydro_error_header_Msun": 13300999999999.998,
+        "gas_error_lo_Msun": 209950185505.18954,
+        "gas_error_hi_Msun": 313619729753.4452
+      },
+      "0.1R500": {
+        "gas_Msun": 484518415714.5753,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 15676704004407.41,
+        "coextensive_to_NFW": 0.19088337537373107,
+        "required_stock_per_present_baryon": 31.35522839990955,
+        "relative_baryon_to_stock_retention": 0.1650785362474882
+      },
+      "0.3R500": {
+        "gas_Msun": 6622040819882.336,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 93004907549579.33,
+        "coextensive_to_NFW": 0.4397426244630199,
+        "required_stock_per_present_baryon": 13.0447499614223,
+        "relative_baryon_to_stock_retention": 0.39679374639376985
+      },
+      "0.5R500": {
+        "gas_Msun": 18023121680811.203,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 186433946188210.5,
+        "coextensive_to_NFW": 0.5970594800937215,
+        "required_stock_per_present_baryon": 9.344153997845021,
+        "relative_baryon_to_stock_retention": 0.5539372755582219
+      },
+      "1.0R500": {
+        "gas_Msun": 54060905318867.97,
+        "star_3D_approx_Msun": 0.0,
+        "M_NFW_Msun": 408573552865666.56,
+        "coextensive_to_NFW": 0.8171948838050661,
+        "required_stock_per_present_baryon": 6.557652807620833,
+        "relative_baryon_to_stock_retention": 0.7893182758848526,
+        "coextensive_to_NFW_double_stars": 0.8171948838050661,
+        "hydro_M500_header_Msun": 408270000000000.0,
+        "hydro_error_header_Msun": 13300999999999.998,
+        "gas_error_lo_Msun": 209950185505.18954,
+        "gas_error_hi_Msun": 313619729753.4452
+      }
+    },
+    "ZW1215": {
+      "has_stellar_profile": true,
+      "redshift": 0.0766,
+      "R500_kpc": 1358.0,
+      "radial_range_over_R500": [
+        0.1,
+        1.5
+      ],
+      "minimum_required_stock_fraction_NFW": 0.885194613975901,
+      "negative_required_stock_shells_NFW": 0,
+      "negative_required_stock_shells_forward": 0,
+      "R500": {
+        "gas_Msun": 81106744213242.61,
+        "star_3D_approx_Msun": 3194999933366.228,
+        "M_NFW_Msun": 766488393669474.6,
+        "coextensive_to_NFW": 0.6792717493337616,
+        "required_stock_per_present_baryon": 8.092200896063046,
+        "relative_baryon_to_stock_retention": 0.6396375070817832,
+        "coextensive_to_NFW_double_stars": 0.7050158571909443,
+        "hydro_M500_header_Msun": 766340000000000.0,
+        "hydro_error_header_Msun": 52481000000000.0,
+        "gas_error_lo_Msun": 353621629250.24585,
+        "gas_error_hi_Msun": 366314924032.7399
+      },
+      "0.1R500": {
+        "gas_Msun": 1172426450098.8127,
+        "star_3D_approx_Msun": 302305535722.8979,
+        "M_NFW_Msun": 20567242658653.477,
+        "coextensive_to_NFW": 0.442842815985885,
+        "required_stock_per_present_baryon": 12.946427456914178,
+        "relative_baryon_to_stock_retention": 0.399807222895178
+      },
+      "0.3R500": {
+        "gas_Msun": 13531482652129.479,
+        "star_3D_approx_Msun": 1093157734890.2585,
+        "M_NFW_Msun": 139714215686814.39,
+        "coextensive_to_NFW": 0.6464830974831681,
+        "required_stock_per_present_baryon": 8.553343671330156,
+        "relative_baryon_to_stock_retention": 0.6051522547038956
+      },
+      "0.5R500": {
+        "gas_Msun": 33098035568379.324,
+        "star_3D_approx_Msun": 1661919965242.4888,
+        "M_NFW_Msun": 306784815275174.1,
+        "coextensive_to_NFW": 0.6997742029980498,
+        "required_stock_per_present_baryon": 7.825811499627333,
+        "relative_baryon_to_stock_retention": 0.6614106675338686
+      },
+      "1.0R500": {
+        "gas_Msun": 81106744213242.61,
+        "star_3D_approx_Msun": 3194999933366.228,
+        "M_NFW_Msun": 766488393669474.6,
+        "coextensive_to_NFW": 0.6792717493337616,
+        "required_stock_per_present_baryon": 8.092200896063046,
+        "relative_baryon_to_stock_retention": 0.6396375070817832,
+        "coextensive_to_NFW_double_stars": 0.7050158571909443,
+        "hydro_M500_header_Msun": 766340000000000.0,
+        "hydro_error_header_Msun": 52481000000000.0,
+        "gas_error_lo_Msun": 353621629250.24585,
+        "gas_error_hi_Msun": 366314924032.7399
+      }
+    }
+  },
+  "lensing": {
+    "A1795": {
+      "NFW_at_central_mass": {
+        "radius_kpc": 1455.2278469926446,
+        "baryon_Msun": 84625255554513.88,
+        "ratio": 0.5619913363416604,
+        "eta": 0.5181449885051261
+      },
+      "NFW_at_mass_minus_1sigma": {
+        "radius_kpc": 1330.013747789653,
+        "baryon_Msun": 78160953507801.25,
+        "ratio": 0.6798984890003656,
+        "eta": 0.6403006840563367
+      },
+      "NFW_at_mass_plus_1sigma": {
+        "radius_kpc": 1561.957792030301,
+        "baryon_Msun": 89581997620448.72,
+        "ratio": 0.4811001344203743,
+        "eta": 0.4372645088281116
+      },
+      "published_NFW_M500_1e14": 9.3,
+      "published_NFW_error_1e14": 2.2,
+      "published_aperture_M500_1e14": 9.2,
+      "published_aperture_radius_kpc": 1450.0,
+      "at_published_aperture": {
+        "baryon_Msun": 84379980880019.28,
+        "ratio": 0.5664533782189751,
+        "eta": 0.5226743221654757
+      },
+      "coextensive_prediction": [
+        {
+          "stellar_multiplier": 1,
+          "R500_kpc": 1094.4069961418688,
+          "M500_1e14": 3.955729083850619,
+          "central_residual_in_lensing_sigma": 2.4292140527951736
+        },
+        {
+          "stellar_multiplier": 2,
+          "R500_kpc": 1119.3422070793893,
+          "M500_1e14": 4.232320991959894,
+          "central_residual_in_lensing_sigma": 2.303490458200048
+        }
+      ]
+    },
+    "A2029": {
+      "NFW_at_central_mass": {
+        "radius_kpc": 1581.3236542259094,
+        "baryon_Msun": 144879572408403.88,
+        "ratio": 0.7394935002411452,
+        "eta": 0.7040589434370723
+      },
+      "NFW_at_mass_minus_1sigma": {
+        "radius_kpc": 1463.9156544227392,
+        "baryon_Msun": 132883100620653.72,
+        "ratio": 0.8548916909379557,
+        "eta": 0.8315788532381655
+      },
+      "NFW_at_mass_plus_1sigma": {
+        "radius_kpc": 1683.4876284103116,
+        "baryon_Msun": 155015976267033.62,
+        "ratio": 0.6557467999047717,
+        "eta": 0.6148537736873625
+      },
+      "published_NFW_M500_1e14": 12.1,
+      "published_NFW_error_1e14": 2.5,
+      "published_aperture_M500_1e14": 10.8,
+      "published_aperture_radius_kpc": 1520.0,
+      "at_published_aperture": {
+        "baryon_Msun": 138460728300952.0,
+        "ratio": 0.791799880866643,
+        "eta": 0.761182421782298
+      },
+      "coextensive_prediction": [
+        {
+          "stellar_multiplier": 1,
+          "R500_kpc": 1345.7066701328497,
+          "M500_1e14": 7.45717411337449,
+          "central_residual_in_lensing_sigma": 1.8571303546502036
+        },
+        {
+          "stellar_multiplier": 2,
+          "R500_kpc": 1381.7922690178752,
+          "M500_1e14": 8.073304699346723,
+          "central_residual_in_lensing_sigma": 1.6106781202613107
+        }
+      ]
+    },
+    "A2142": {
+      "NFW_at_central_mass": {
+        "radius_kpc": 1462.586666612524,
+        "baryon_Msun": 152992080201078.34,
+        "ratio": 0.97411401396343,
+        "eta": 0.9692666302896396
+      },
+      "NFW_at_mass_minus_1sigma": {
+        "radius_kpc": 1336.4158110287701,
+        "baryon_Msun": 137272964067338.88,
+        "ratio": 1.1456866893241238,
+        "eta": 1.1788672876321684
+      },
+      "NFW_at_mass_plus_1sigma": {
+        "radius_kpc": 1570.0908422885104,
+        "baryon_Msun": 165612111766521.3,
+        "ratio": 0.8523607146829721,
+        "eta": 0.8287227215285763
+      },
+      "published_NFW_M500_1e14": 9.7,
+      "published_NFW_error_1e14": 2.3,
+      "published_aperture_M500_1e14": 11.3,
+      "published_aperture_radius_kpc": 1540.0,
+      "at_published_aperture": {
+        "baryon_Msun": 162171105760083.53,
+        "ratio": 0.8863548192325268,
+        "eta": 0.8673122335657291
+      },
+      "coextensive_prediction": [
+        {
+          "stellar_multiplier": 1,
+          "R500_kpc": 1441.4616073928507,
+          "M500_1e14": 9.285731963458096,
+          "central_residual_in_lensing_sigma": 0.18011653762691462
+        },
+        {
+          "stellar_multiplier": 2,
+          "R500_kpc": 1478.678788526892,
+          "M500_1e14": 10.023708616562363,
+          "central_residual_in_lensing_sigma": -0.1407428767662451
+        }
+      ]
+    },
+    "A85": {
+      "NFW_at_central_mass": {
+        "radius_kpc": 1238.763219814234,
+        "baryon_Msun": 87398382833185.0,
+        "ratio": 0.9469806761966144,
+        "eta": 0.9373789612530791
+      },
+      "NFW_at_mass_minus_1sigma": {
+        "radius_kpc": 1052.8973479321128,
+        "baryon_Msun": 71052083257409.38,
+        "ratio": 1.2537800282291156,
+        "eta": 1.3184214849761906
+      },
+      "NFW_at_mass_plus_1sigma": {
+        "radius_kpc": 1381.144274557772,
+        "baryon_Msun": 99289385878477.17,
+        "ratio": 0.7762262209340616,
+        "eta": 0.7440588260151034
+      },
+      "published_NFW_M500_1e14": 5.7,
+      "published_NFW_error_1e14": 2.2,
+      "published_aperture_M500_1e14": 7.4,
+      "published_aperture_radius_kpc": 1350.0,
+      "at_published_aperture": {
+        "baryon_Msun": 96760314532952.27,
+        "ratio": 0.8075661887860044,
+        "eta": 0.7786190381040292
+      },
+      "coextensive_prediction": [
+        {
+          "stellar_multiplier": 1,
+          "R500_kpc": 1201.4892463604228,
+          "M500_1e14": 5.2007935372238565,
+          "central_residual_in_lensing_sigma": 0.22691202853461073
+        },
+        {
+          "stellar_multiplier": 2,
+          "R500_kpc": 1218.6470743355414,
+          "M500_1e14": 5.426799791122274,
+          "central_residual_in_lensing_sigma": 0.12418191312623904
+        }
+      ]
+    },
+    "ZW1215": {
+      "NFW_at_central_mass": {
+        "radius_kpc": 1045.7992484348788,
+        "baryon_Msun": 63319050354515.52,
+        "ratio": 1.1173234773893361,
+        "eta": 1.1432366438615724
+      },
+      "NFW_at_mass_minus_1sigma": {
+        "radius_kpc": 751.7499848835092,
+        "baryon_Msun": 40664157793743.27,
+        "ratio": 1.9318838215586358,
+        "eta": 2.356061506902525
+      },
+      "NFW_at_mass_plus_1sigma": {
+        "radius_kpc": 1230.4121069493149,
+        "baryon_Msun": 76154062164613.06,
+        "ratio": 0.825145991790386,
+        "eta": 0.7981824349586899
+      },
+      "published_NFW_M500_1e14": 3.5,
+      "published_NFW_error_1e14": 2.2,
+      "published_aperture_M500_1e14": 7.0,
+      "published_aperture_radius_kpc": 1320.0,
+      "at_published_aperture": {
+        "baryon_Msun": 81924366894317.0,
+        "ratio": 0.7228157875771923,
+        "eta": 0.6860757190491137
+      },
+      "coextensive_prediction": [
+        {
+          "stellar_multiplier": 1,
+          "R500_kpc": 1110.5045242433323,
+          "M500_1e14": 4.190675806844628,
+          "central_residual_in_lensing_sigma": -0.31394354856574
+        },
+        {
+          "stellar_multiplier": 2,
+          "R500_kpc": 1133.974704771203,
+          "M500_1e14": 4.46203702002214,
+          "central_residual_in_lensing_sigma": -0.43728955455551816
+        }
+      ]
+    }
+  },
+  "interpretation": "Coextensive shortcut is a restricted hypothesis, not a necessary theory prediction. No complete model likelihood."
+}

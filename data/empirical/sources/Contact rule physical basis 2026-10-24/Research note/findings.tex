@@ -1,0 +1,109 @@
+\textbf{Result.} The contact rule can be tied to the theory's own response cell through three steps. Each is a stated premise, and each is backed by an identity proved in the Lean library.
+\begin{enumerate}
+\item \textbf{The occupation is the stock's excess field in baryon units.} Section~15 gives the excess flux $J=n_B(x)\,g_b$, so each quantum of the cell carries the flux $g_b$. If the stock carries the response (Appendix O.3), the cell occupation is $n=g_s/g_b$.
+\item \textbf{The free energy is the Bose relative entropy.} Its weight per volume is fixed by equipartition. The excess free energy of a cell is $\Theta D(n\Vert n_*)$, the relative entropy of geometric distributions; it is non-negative and vanishes only at $n_*$. Its Gaussian limit equals the quadratic field mismatch $(\delta g)^2/8\pi G$ exactly when the cell free-energy density is $\mathcal N\Theta=g_b^2n_*(1+n_*)/4\pi G$. In that case the cells' static susceptibility, already the $\chi_0=n_*(1+n_*)/\Theta$ of the manuscript's two-pole response, equals the gravitational compliance of the excess field. The quadratic functional used in the simulations is then the theory's own functional to leading order, with no free coefficient.
+\item \textbf{Greedy descent is the zero-temperature limit of local detailed balance.} Orbit-population transitions in contact with the horizon bath have uphill-to-downhill rate ratio $\exp(-\Delta F/\Theta)$. For any macroscopic move, $\Delta F/\Theta=\int\mathcal N\,\Delta D$ is astronomically large: the cells are about 13--60\,fm across, roughly $10^{104}$ in a galaxy volume. Uphill transitions are therefore suppressed exactly, and accept-if-$F$-decreases is the correct limit. Relaxation of the cells' own free energy releases heat to the bath, so the register pays only the mechanical $\Delta K$, as implemented.
+\end{enumerate}
+Replacing the quadratic mismatch by the full nonlinear Bose functional in the 3-D simulations gives the same outcome. The Milky Way model sits 0.019--0.024\,dex rms from the RAR, the dwarf 0.025--0.030\,dex, and the budget-limited massive spiral 0.051\,dex; contacts conserve momentum and angular momentum to roundoff. Twenty-eight statements, thirteen ported from the bridge note and fifteen new, are in \texttt{Entropic/ContactSelection.lean}, with standard axioms only.
+
+Three things remain open. The rate prefactor is free. The cluster gate is not derived: the theory's candidate is that cells exist only on active carriers. The back-reaction of the cell free energy on baryons away from equilibrium still needs a common-action audit.
+
+\section{The occupation}
+The cell has gap $\Theta x$ with $x=\sqrt{g_b/a_0}$, mean occupation $n_*=1/(e^x-1)$, and excess flux $\mathbf J=n_B(\widetilde x)(\hat{\mathbf e}\cdot\nabla\Phi_b)\hat{\mathbf e}$ (Section~15). At fixed baryons, $\partial J/\partial n=g_b$: the occupation has no observable effect other than the excess field it sources, at one baryonic field unit per quantum.
+
+Appendix O.3 makes the stock the carrier of that response. The stock field in baryon units is then the only available measure of the occupation:
+\[
+n\equiv\frac{g_s}{g_b}\quad\text{(spherical)},\qquad
+n\equiv\frac{\hat{\mathbf e}\cdot\nabla\Phi_s}{\hat{\mathbf e}\cdot\nabla\Phi_b}\quad\text{(along the director)}.
+\]
+This is a premise, since the manuscript does not state that the stock field \emph{is} the occupation rather than being sourced by it. It is, however, the identification forced by asking what $n$ means for the field. In nonspherical systems the curl-free part of $\mathbf J$ is what a stock field can match. The director form is therefore an identification for the projected component.
+
+\section{The free energy and its weight}
+For a geometric occupation of mean $n$, the excess free energy at fixed gap is $\Theta D(n;x)$, with
+\[
+D=xn-\big[(1+n)\ln(1+n)-n\ln n\big]-\ln(1-e^{-x})
+=n\ln\frac{n}{n_*}-(1+n)\ln\frac{1+n}{1+n_*}\equiv\mathrm{KL}(n\Vert n_*).
+\]
+Write $\phi(t)=t\ln t$. Then $\mathrm{KL}=n_*\phi(a)-(1+n_*)\phi(b)$, with $a=n/n_*$ and $b=(1+n)/(1+n_*)$. Since $b$ is the convex combination $\tfrac1{1+n_*}\cdot1+\tfrac{n_*}{1+n_*}a$, convexity of $\phi$ gives $D\ge0$, with equality only at $n=n_*$. The curvature is $\partial_n^2D=1/[n(1+n)]$, the inverse of the occupation variance.
+
+The functional on the stock is $F_D=\int\mathcal N\Theta\,D(n\Vert n_*)\,d^3x$. For $n=n_*+\delta g/g_b$ its density is $\mathcal N\Theta(\delta g)^2/[2g_b^2n_*(1+n_*)]+O(\delta g^3)$. This equals the field-mismatch density $(\delta g)^2/8\pi G$ if and only if
+\begin{equation}
+\mathcal N\Theta=\frac{g_b^2\,n_*(1+n_*)}{4\pi G}.
+\end{equation}
+Read as a statement about compliances, this says the cells' static susceptibility $\chi_0=n_*(1+n_*)/\Theta$ (per cell, in occupation units), converted to field units, equals the compliance $4\pi G$ of the gravitational field. Equivalently, the occupation fluctuations of each cell hold $\Theta/2$ of excess-field energy. This is the fluctuation--dissipation consistency between the cells and the field they source.
+
+With $\Theta=\hbar H_0/2\pi=3.7\times10^{-53}$\,J, the condition fixes $\mathcal N$:
+\begin{center}\small
+\begin{tabular}{lccc}\toprule
+$g_b/a_0$ & 1 & 0.1 & 0.01\\\midrule
+cells per m$^3$ & $4.5\times10^{41}$ & $4.9\times10^{40}$ & $4.9\times10^{39}$\\
+cell size & 13\,fm & 27\,fm & 59\,fm\\\bottomrule
+\end{tabular}\end{center}
+In the deep regime $\mathcal N\to\epsilon c\,g_b/(2G\hbar)$. The cell count is a consequence to be checked against the microscopic GFT, not evidence. It does show that the large-deviation limit of the cell statistics, in which $D$ is the exact rate function, is reached with enormous margin.
+
+The convex dual of $\mathcal Q_\perp$ in Section~15 is another cost with the same minimum but a different curvature, $4x^3/[n(1+n)]$. The equipartition condition selects the Bose relative entropy, and with it the field-mismatch form near equilibrium. Away from equilibrium the two functionals differ. The nonlinear Bose form has the derivative
+\[
+\frac{d\psi_D}{dr}=g_b\,n_*(1+n_*)\Big[\ln\Big(1+\frac1n\Big)-x\Big],
+\]
+which reduces to $d\psi/dr=J-g_s$ at linear order.
+
+\section{The contact rule}
+In the slow-contact, phase-mixed regime the stock is described by orbit populations $w_i$. For a fixed orbit basis, $\partial F/\partial w_i=\langle\psi\rangle_i$, the orbit-averaged functional derivative (bridge note). The stock elements are classical, so relabelling an element's orbit changes no internal entropy. Local detailed balance with the horizon bath then requires
+\[
+\frac{k_{i\to j}}{k_{j\to i}}=\exp\!\Big(-\frac{F_j-F_i}{\Theta}\Big),
+\qquad \frac{|\Delta F|}{\Theta}=\Big|\int\mathcal N\,\Delta D\,d^3x\Big|\gg1 .
+\]
+Any change in one element's orbit alters $D$ over a region containing $\sim10^{90}$ or more cells. Uphill transitions are therefore suppressed by factors far beyond any physical relevance. The rule "accept if $F$ decreases", with a free downhill rate prefactor, is the $\Theta\to0^+$ limit (Lean: \texttt{uphill\_rate\_vanishes}). Any symmetric non-negative mobility then never raises $F$ in the continuum population description (Lean: \texttt{symmetric\_flow\_dissipates}). The finite-event non-monotonicity seen in the runs comes from the self-consistent potential moving every other orbit and from the quadratic remainder, as the bridge note shows. It does not come from the bias.
+
+\textbf{Energy.} The descent lowers the cells' own free energy, and passive relaxation of a system's free energy toward its bath releases heat. The register therefore pays only the mechanical $\Delta K$ of each impulse, as implemented. The bridge note's heat cost $Q=-\Theta\lambda\Delta D$ applies to an externally imposed bias and is not needed here.
+
+\textbf{Mechanics.} Contacts are equal and opposite impulses along the pair separation, which conserve $\mathbf P$ and $\mathbf L$ (Lean: \texttt{pair\_impulse\_conserves\_angular\_momentum}). A cooling impulse cannot remove more than the pair's radial relative kinetic energy $\mu u^2/2$ (Lean: \texttt{central\_cooling\_bound}).
+
+\section{Simulations with the Bose functional}
+The setup is \texttt{descent3.py} with $\psi_D$ replacing $\psi$: 3-D impulses, equilibrium NFW stock, 12\,Gyr, $N=4000$, gate 175\,km\,s$^{-1}$ (open for all three). RMS offset from the RAR, 8--12\,Gyr:
+\begin{center}\small
+\begin{tabular}{lccc}\toprule
+Case & quadratic $E_{\rm mis}$ & Bose $F_D$ & $F_D$ end/start, rises/24\\\midrule
+Milky Way, 1 proposal/orbit, seeds 1--2 & 0.017--0.020 & 0.019--0.024 & 0.010--0.046, 7\\
+Dwarf, 3 proposals/orbit, seeds 1--2 & 0.029--0.033 & 0.025--0.030 & 0.74--0.75, 8--10\\
+Massive spiral, light halo & 0.049 & 0.051 & 0.055, 2\\\bottomrule
+\end{tabular}\end{center}
+The outcome does not depend on using the quadratic approximation. Energy closes to $\le10^{-3}V_f^2$ in all runs, and $\mathbf P$, $\mathbf L$ are conserved to $\le5\times10^{-17}$.
+
+\section{The cluster gate}
+A frequency cutoff fails: at equal acceleration, larger systems have lower orbital frequencies and pass more of the response (bridge note). The theory's candidate is the carrier support of the cells. $\mathcal N$ is defined only on active carriers. These are retained, dynamically coherent source records, and their order melts where carriers overlap (Section~15). Where no active carrier is present, $\mathcal N=0$, there is no bias, and the stock evolves as collisionless matter. A cluster's stock then stays CDM-like for two reasons:
+\begin{itemize}
+\item shock-heated intracluster gas is not an active carrier;
+\item member records overlap throughout the core, including the BCG region, and their order melts there.
+\end{itemize}
+This rule is not a universal dispersion threshold, and it makes different predictions:
+\begin{itemize}
+\item At fixed velocity dispersion, fossil groups, with one dominant carrier, should follow the RAR more closely than ordinary groups.
+\item Isolated massive ellipticals should follow it, as isolated lensing ellipticals do.
+\item The transition should track carrier multiplicity and baryon phase rather than mass alone.
+\end{itemize}
+It has not been simulated: that needs a member-galaxy model with overlapping records.
+
+\section{Status}
+\begin{center}\small
+\begin{tabular}{p{0.27\linewidth}p{0.66\linewidth}}\toprule
+Now grounded & the form of the bias (Bose relative entropy); the weight of the quadratic mismatch (equipartition); greedy acceptance (zero-temperature limit of local detailed balance); no heat cost for passive descent; momentum and angular momentum conservation\\
+Premises & the stock field is the cell occupation; equipartition between cells and field; orbit populations exchange with the cells (one global rate prefactor); cells exist only on active carriers\\
+Open & a microscopic exchange operator and its rate; a back-reaction audit of $F_D$ on baryons away from equilibrium (its first variation vanishes at equilibrium, but transient recoil must be computed in a common action); the cluster gate as a computed carrier-support model; 3-D baryons and cosmological assembly\\
+\bottomrule\end{tabular}\end{center}
+
+\section*{Lean}
+\texttt{Entropic/ContactSelection.lean} has 28 statements, all checked in the main 4.35 library with standard axioms. Thirteen are ported from the bridge note: Bose entropy and gap derivatives, affinity, dissipative sign, orbit pairing, exact field variation, finite-step descent, central-impulse energetics, heat bookkeeping and two-pole monotonicity. Fifteen are new:
+\begin{itemize}
+\item \texttt{boseGap\_eq\_relEnt}, \texttt{relEnt\_nonneg}, \texttt{boseGap\_nonneg}, \texttt{boseGap\_at\_nStar}, \texttt{relEnt\_self}: the gap function is a relative entropy, non-negative, and zero at $n_*$.
+\item \texttt{boseGap\_second\_derivative}: its curvature is $1/[n(1+n)]$.
+\item \texttt{equipartition\_matching}: the Gaussian limit of the cell functional equals the field mismatch exactly under the equipartition condition.
+\item \texttt{uphill\_rate\_vanishes}: local detailed balance as $\Theta\to0^+$ suppresses every uphill transition.
+\item \texttt{symmetric\_flow\_identity}, \texttt{symmetric\_flow\_dissipates}: a finite H-theorem for orbit populations.
+\item \texttt{pair\_impulse\_conserves\_momentum}, \texttt{pair\_impulse\_conserves\_angular\_momentum}: conservation by pair impulses along the separation.
+\item \texttt{stiff\_coupling\_amplification}: the exact algebra of constraint 2.
+\item \texttt{vp\_acceleration\_scaling}: constraint 1.
+\item \texttt{clip\_renormalise\_not\_minimal}: the three-shell counterexample.
+\end{itemize}
+
+\textbf{Reproducibility.} \texttt{descent3.py} (argument 9: \texttt{D} for the Bose functional), \texttt{runD.sh}, \texttt{summarize3.py}; outputs \texttt{d3\_*\_FD.json}, \texttt{log3D\_*.txt}. Lean: \texttt{Entropic/ContactSelection.lean} in the formalization repository.

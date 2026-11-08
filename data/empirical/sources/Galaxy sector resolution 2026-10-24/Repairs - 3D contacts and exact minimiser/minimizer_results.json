@@ -1,0 +1,49 @@
+{
+ "counterexample": {
+  "isotonic_enclosed": [
+   1.5,
+   1.5,
+   2.0
+  ],
+  "shell_masses": [
+   1.5,
+   0.0,
+   0.5
+  ],
+  "E_isotonic": 0.5,
+  "E_clip_renorm": 0.5555555555555556
+ },
+ "MW": {
+  "budget": 3554530696666.3525,
+  "T_monotone": true,
+  "budget_edge_kpc": null,
+  "Emis_floor": 0.0,
+  "Emis_clip": 4.368030220333944e-17
+ },
+ "dwarf": {
+  "budget": 49425697545.16327,
+  "T_monotone": true,
+  "budget_edge_kpc": 96.34363374849754,
+  "Emis_floor": 7325415261230.925,
+  "Emis_clip": 29993981671304.574
+ },
+ "massive_spiral": {
+  "budget": 2100000000000.0,
+  "T_monotone": true,
+  "budget_edge_kpc": 165.79882388719653,
+  "Emis_floor": 138753751064287.03,
+  "Emis_clip": 1822620800260173.5
+ },
+ "compact_core": {
+  "negative_response_range_kpc": [
+   0.2832669466208307,
+   0.8784564007536886
+  ],
+  "negative_mass": 1676178.752716757,
+  "Emis_isotonic": 2857256.3967451863,
+  "Emis_clip_renorm": 10182975.101237562,
+  "max_enclosed_difference": 1676168.189086658,
+  "g_offset_isotonic_dex_max": 0.00011078507034197941,
+  "g_offset_clip_dex_max": 2.406039048760378e-05
+ }
+}

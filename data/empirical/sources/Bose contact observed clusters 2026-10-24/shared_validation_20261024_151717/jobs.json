@@ -1,0 +1,52 @@
+[
+  {
+    "cluster": "A1795",
+    "k": 0,
+    "N": 4000,
+    "seed": 2,
+    "regspec": 663893.96740049,
+    "dt": 0.1,
+    "softening": 2.5,
+    "label": "shared_resolution"
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "N": 4000,
+    "seed": 2,
+    "regspec": 663893.96740049,
+    "dt": 0.1,
+    "softening": 2.5,
+    "label": "shared_resolution"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 0,
+    "N": 4000,
+    "seed": 2,
+    "regspec": 719672.338441907,
+    "dt": 0.1,
+    "softening": 2.5,
+    "label": "shared_resolution"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 3,
+    "N": 4000,
+    "seed": 2,
+    "regspec": 719672.338441907,
+    "dt": 0.1,
+    "softening": 2.5,
+    "label": "shared_resolution"
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 663893.96740049,
+    "dt": 0.05,
+    "softening": 5,
+    "label": "shared_timestep"
+  }
+]

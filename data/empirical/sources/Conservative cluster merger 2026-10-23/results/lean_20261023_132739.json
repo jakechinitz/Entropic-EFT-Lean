@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "theorems": 8,
+  "names": [
+    "reciprocal_pair_momentum",
+    "relative_velocity_update",
+    "reduced_mass_work",
+    "central_pair_torque",
+    "sph_pair_power",
+    "viscous_heat_nonnegative",
+    "negative_work_recharges",
+    "floor_gate_absorbing"
+  ],
+  "compiler": "Lean/mathlib 4.19 standalone supplement; not a rebuild of upstream 4.35",
+  "source_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+  "log": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Conservative cluster merger 2026-10-23\\logs\\lean_20261023_132739.log",
+  "audit_source": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Conservative cluster merger 2026-10-23\\formalization\\Audit_20261023_132739.lean",
+  "contains_sorry": false
+}

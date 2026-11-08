@@ -1,0 +1,10 @@
+The tilted candidate survives independent phase replication.
+Both new realizations retain substantial halo and stellar inclinations for eight billion years. Together with the original run, this establishes repeatability at the tested particle count within the same conditional stock and rigid-disk model. It is stronger evidence of dynamical feasibility, but it is not a proof of continuum stability or a completed prediction of the manuscript. All three also develop late precession drift and become rounder; a stationary configuration has not been demonstrated.
+
+Final 7.5-8 Gyr averaged moments (halo, stars; 10-40 kpc):
+Original: 40.794, 22.157 degrees
+Replica 1: 39.584, 21.378 degrees
+Replica 2: 42.356, 22.332 degrees
+
+Read: Halo tilt - independent phase replication audit.pdf
+Manuscript and a0 unchanged. See PROTOCOL.txt and INTERPRETATION RULES.txt.

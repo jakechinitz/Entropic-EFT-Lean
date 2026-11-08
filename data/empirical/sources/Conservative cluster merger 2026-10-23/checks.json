@@ -1,0 +1,15 @@
+{
+  "gravity_reference_max_error": 5.329070518200751e-15,
+  "hydro_instantaneous_energy_identity_error": 1.4210854715202004e-14,
+  "pair_momentum_error": 2.094764613337708e-15,
+  "pair_angular_error": 3.774758283725532e-15,
+  "pair_energy_error": 1.0658141036401503e-14,
+  "zero_floor_gate": true,
+  "unit_mass_Msun": 1000000000000000.0,
+  "unit_length_kpc": 300.0,
+  "unit_velocity_km_s": 3786.339481169995,
+  "unit_time_Gyr": 0.07747262705016546,
+  "rate_nu1_per_Gyr": 12.907784827697595,
+  "rate_nu01_per_Gyr": 1.2907784827697597,
+  "conditional_tests_passed": true
+}

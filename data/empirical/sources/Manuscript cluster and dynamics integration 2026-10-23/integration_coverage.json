@@ -1,0 +1,120 @@
+{
+  "depletion_and_coupling": {
+    "main": "O.3; Section 20; closure table",
+    "empirical": "Cosmology: self-limiting completion and coupling",
+    "sources": [
+      "Connected theory closure 2026-10-23",
+      "Effective dynamics and coupling 2026-10-23"
+    ]
+  },
+  "clusters_and_outliers": {
+    "main": "Section 18; closure table",
+    "empirical": "Clusters: conservative dynamics and observed targets",
+    "sources": [
+      "Conservative cluster merger 2026-10-23",
+      "Observed cluster tests 2026-10-23",
+      "Cluster outlier closure 2026-10-23"
+    ],
+    "status": "Conditional mechanisms and observed targets; no claim of fitted cluster population"
+  },
+  "broader_empirical_program": {
+    "main": "Section 27; N.8; O.12",
+    "empirical": "Acceleration, cosmology, independent checks across scales",
+    "sources": [
+      "Unified empirical program 2026-10-23"
+    ]
+  },
+  "formalization": {
+    "main": "R.1",
+    "empirical": "Scope of verification; T5",
+    "modules": [
+      {
+        "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+        "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\EmpiricalCertificates.lean",
+        "path": "Entropic/Extensions20261023/EmpiricalCertificates.lean",
+        "sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+        "theorems": 7,
+        "original_source_sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+        "integrated_sha256": "17fd847cab53876ea5da0a0f2f7e5bf46c9c1b5907aeb3bd49cc82461856abc1",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.MuseProjection",
+        "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\MuseProjection.lean",
+        "path": "Entropic/Extensions20261023/MuseProjection.lean",
+        "sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+        "theorems": 4,
+        "original_source_sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+        "integrated_sha256": "f38af918b9ad232a6ac9aaa4f88241fa7f72a97044b102fcec1b1efc4e1a3641",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.ConnectedClosure",
+        "source": "02 Research\\Connected theory closure 2026-10-23\\formalization\\ConnectedClosure.lean",
+        "path": "Entropic/Extensions20261023/ConnectedClosure.lean",
+        "sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+        "theorems": 42,
+        "original_source_sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+        "integrated_sha256": "84b4633f7ec80ddca7843b3c991082432ea9d1fdf5243cb944cf141e29fc17bc",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.EffectiveContact",
+        "source": "02 Research\\Effective dynamics and coupling 2026-10-23\\formalization\\EffectiveContact.lean",
+        "path": "Entropic/Extensions20261023/EffectiveContact.lean",
+        "sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+        "theorems": 36,
+        "original_source_sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+        "integrated_sha256": "d8738cfa5aa1dec68546be7a1b08f187c40bec770f9910a7f42e1b939cf8f90a",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.MergerContact",
+        "source": "02 Research\\Conservative cluster merger 2026-10-23\\formalization\\MergerContact.lean",
+        "path": "Entropic/Extensions20261023/MergerContact.lean",
+        "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+        "theorems": 8,
+        "original_source_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+        "integrated_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.ClusterOutliers",
+        "source": "02 Research\\Cluster outlier closure 2026-10-23\\formalization\\ClusterOutliers.lean",
+        "path": "Entropic/Extensions20261023/ClusterOutliers.lean",
+        "sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+        "theorems": 22,
+        "original_source_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+        "integrated_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      }
+    ],
+    "ci": {
+      "success": true,
+      "commit": "a6552daf39daf83d5159fcbcda698d1801731d24",
+      "toolchain": "Lean 4.35.0; pinned mathlib",
+      "pull_request": "https://github.com/jakechinitz/Entropic-EFT-Lean/pull/4",
+      "workflow_run": "https://github.com/jakechinitz/Entropic-EFT-Lean/actions/runs/40013357154",
+      "run_id": 40013357154,
+      "job_id": 120619069460,
+      "build": "success",
+      "source_scan": "success",
+      "axiom_audit": "success",
+      "citation_check": "success",
+      "independent_python_audit": "success",
+      "library_modules": 160,
+      "extension_explicit_theorems": 119,
+      "audit_summary": [
+        "Entropic: 2937 theorems; 0 with nonstandard axioms",
+        "Entropic.EFT: 727 theorems; 0 with nonstandard axioms"
+      ],
+      "merged": false,
+      "finished_at": "2026-10-23T19:47:39Z",
+      "audited_theorem_constants": 2937,
+      "legacy_theorem_constants": 727,
+      "nonstandard_axioms": 0,
+      "ledger_references": 979,
+      "unresolved_ledger_references": 0
+    }
+  }
+}

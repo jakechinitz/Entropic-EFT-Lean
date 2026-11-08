@@ -1,0 +1,431 @@
+{
+  "symbolic": {
+    "density_split": "0",
+    "pressure_split": "0",
+    "total_exchange": "0",
+    "TT_trace": "0",
+    "TT_transverse": "0",
+    "TT_norm": "0",
+    "TT_equal_principal_coefficients": "0",
+    "TT_offdiagonal": "0",
+    "noise_delay_log_derivative": "0"
+  },
+  "stock": {
+    "point_source_budget_rows": [
+      {
+        "present_baryon_mass_Msun": 1000000000.0,
+        "stock_budget_per_present_baryon": 5.1761,
+        "rM_kpc": 1.052273093832811,
+        "latest_exact_RAR_radius_kpc": 5.957326323553241,
+        "RAR_stock_per_present_baryon_at_1Mpc": 949.8237307254612
+      },
+      {
+        "present_baryon_mass_Msun": 1000000000.0,
+        "stock_budget_per_present_baryon": 14.0,
+        "rM_kpc": 1.052273093832811,
+        "latest_exact_RAR_radius_kpc": 15.251910395291004,
+        "RAR_stock_per_present_baryon_at_1Mpc": 949.8237307254612
+      },
+      {
+        "present_baryon_mass_Msun": 1000000000.0,
+        "stock_budget_per_present_baryon": 30.0,
+        "rM_kpc": 1.052273093832811,
+        "latest_exact_RAR_radius_kpc": 32.0914540927315,
+        "RAR_stock_per_present_baryon_at_1Mpc": 949.8237307254612
+      },
+      {
+        "present_baryon_mass_Msun": 10000000000.0,
+        "stock_budget_per_present_baryon": 5.1761,
+        "rM_kpc": 3.327579697023763,
+        "latest_exact_RAR_radius_kpc": 18.838719947305435,
+        "RAR_stock_per_present_baryon_at_1Mpc": 300.0189999285262
+      },
+      {
+        "present_baryon_mass_Msun": 10000000000.0,
+        "stock_budget_per_present_baryon": 14.0,
+        "rM_kpc": 3.327579697023763,
+        "latest_exact_RAR_radius_kpc": 48.230775517918616,
+        "RAR_stock_per_present_baryon_at_1Mpc": 300.0189999285262
+      },
+      {
+        "present_baryon_mass_Msun": 10000000000.0,
+        "stock_budget_per_present_baryon": 30.0,
+        "rM_kpc": 3.327579697023763,
+        "latest_exact_RAR_radius_kpc": 101.48208835976394,
+        "RAR_stock_per_present_baryon_at_1Mpc": 300.0189999285262
+      },
+      {
+        "present_baryon_mass_Msun": 60000000000.0,
+        "stock_budget_per_present_baryon": 5.1761,
+        "rM_kpc": 8.150872336153263,
+        "latest_exact_RAR_radius_kpc": 46.14525127808952,
+        "RAR_stock_per_present_baryon_at_1Mpc": 122.18693400480049
+      },
+      {
+        "present_baryon_mass_Msun": 60000000000.0,
+        "stock_budget_per_present_baryon": 14.0,
+        "rM_kpc": 8.150872336153263,
+        "latest_exact_RAR_radius_kpc": 118.14078991761967,
+        "RAR_stock_per_present_baryon_at_1Mpc": 122.18693400480049
+      },
+      {
+        "present_baryon_mass_Msun": 60000000000.0,
+        "stock_budget_per_present_baryon": 30.0,
+        "rM_kpc": 8.150872336153263,
+        "latest_exact_RAR_radius_kpc": 248.5793345134579,
+        "RAR_stock_per_present_baryon_at_1Mpc": 122.18693400480049
+      },
+      {
+        "present_baryon_mass_Msun": 100000000000.0,
+        "stock_budget_per_present_baryon": 5.1761,
+        "rM_kpc": 10.522730938328111,
+        "latest_exact_RAR_radius_kpc": 59.57326323553241,
+        "RAR_stock_per_present_baryon_at_1Mpc": 94.53324119623042
+      },
+      {
+        "present_baryon_mass_Msun": 100000000000.0,
+        "stock_budget_per_present_baryon": 14.0,
+        "rM_kpc": 10.522730938328111,
+        "latest_exact_RAR_radius_kpc": 152.51910395291006,
+        "RAR_stock_per_present_baryon_at_1Mpc": 94.53324119623042
+      },
+      {
+        "present_baryon_mass_Msun": 100000000000.0,
+        "stock_budget_per_present_baryon": 30.0,
+        "rM_kpc": 10.522730938328111,
+        "latest_exact_RAR_radius_kpc": 320.91454092731504,
+        "RAR_stock_per_present_baryon_at_1Mpc": 94.53324119623042
+      }
+    ],
+    "equilibrium_counterexamples": [
+      {
+        "plummer_scale_kpc": 10.0,
+        "enclosed_stock_Msun_at_20kpc": 601055072351.9435,
+        "stock_acceleration_m_s2_at_20kpc": 2.0944849358734087e-10
+      },
+      {
+        "plummer_scale_kpc": 40.0,
+        "enclosed_stock_Msun_at_20kpc": 75131884043.99294,
+        "stock_acceleration_m_s2_at_20kpc": 2.618106169841761e-11
+      }
+    ],
+    "scope": "The cap uses the whole specified Lagrangian stock budget, not a universal bound per present baryon. This reproduces a known cap principle and makes its cross-sector restriction explicit."
+  },
+  "rates": [
+    {
+      "rate": 0.1,
+      "stationary_residual": 3.469446951953614e-18,
+      "detailed_balance_residual": 0.0,
+      "state_at_time_one": [
+        0.9191118053305656,
+        0.03330690368741415,
+        0.04758129098202021
+      ],
+      "L1_distance_to_equilibrium": 1.538223610661131
+    },
+    {
+      "rate": 1.0,
+      "stationary_residual": 0.0,
+      "detailed_balance_residual": 0.0,
+      "state_at_time_one": [
+        0.46269752499572603,
+        0.2212421955899952,
+        0.3160602794142789
+      ],
+      "L1_distance_to_equilibrium": 0.6253950499914519
+    },
+    {
+      "rate": 10.0,
+      "stationary_residual": 0.0,
+      "detailed_balance_residual": 1.1102230246251565e-16,
+      "state_at_time_one": [
+        0.1500385899402983,
+        0.34998411002458363,
+        0.4999773000351194
+      ],
+      "L1_distance_to_equilibrium": 7.717988059524616e-05
+    }
+  ],
+  "response": {
+    "rows": [
+      {
+        "two_equal_pole_time_Gyr": 0.1,
+        "initial_condition": "equilibrated",
+        "min_total_force_over_instantaneous_equilibrium": 1.0,
+        "max_total_force_over_instantaneous_equilibrium": 1.0656521744303573,
+        "today_force_ratio": 1.0015956354558482,
+        "force_ratio_z23": 1.0255048614988482
+      },
+      {
+        "two_equal_pole_time_Gyr": 0.1,
+        "initial_condition": "unoccupied",
+        "min_total_force_over_instantaneous_equilibrium": 0.3269359571404108,
+        "max_total_force_over_instantaneous_equilibrium": 1.0479332805803512,
+        "today_force_ratio": 1.0015956354558464,
+        "force_ratio_z23": 1.0255047748127033
+      },
+      {
+        "two_equal_pole_time_Gyr": 0.5,
+        "initial_condition": "equilibrated",
+        "min_total_force_over_instantaneous_equilibrium": 1.0,
+        "max_total_force_over_instantaneous_equilibrium": 1.2194851357040322,
+        "today_force_ratio": 1.0091085751701085,
+        "force_ratio_z23": 1.1839939980882577
+      },
+      {
+        "two_equal_pole_time_Gyr": 0.5,
+        "initial_condition": "unoccupied",
+        "min_total_force_over_instantaneous_equilibrium": 0.3269359571404108,
+        "max_total_force_over_instantaneous_equilibrium": 1.103092401951024,
+        "today_force_ratio": 1.0091085748717223,
+        "force_ratio_z23": 1.0791347945450935
+      },
+      {
+        "two_equal_pole_time_Gyr": 2.0,
+        "initial_condition": "equilibrated",
+        "min_total_force_over_instantaneous_equilibrium": 1.0,
+        "max_total_force_over_instantaneous_equilibrium": 1.4934424203113628,
+        "today_force_ratio": 1.082397270733173,
+        "force_ratio_z23": 1.4487456490521704
+      },
+      {
+        "two_equal_pole_time_Gyr": 2.0,
+        "initial_condition": "unoccupied",
+        "min_total_force_over_instantaneous_equilibrium": 0.3269359571404108,
+        "max_total_force_over_instantaneous_equilibrium": 1.115357821758719,
+        "today_force_ratio": 1.064270205058098,
+        "force_ratio_z23": 0.6826504405752168
+      }
+    ],
+    "scope": "Fixed baryonic acceleration, positive equal-pole kernel, formation at z=6. A sign result and illustrative histories, not a galaxy fit."
+  },
+  "noise": {
+    "two_pole_rows": [
+      {
+        "gamma_over_H": 0.01,
+        "Omega_over_H": 0.01,
+        "variance_factor": 1.000324242705677,
+        "quadrature_error": 5.1297990121477634e-11,
+        "zero_temperature_lower_bound": 0.02,
+        "mean_delay_times_H": 200.0,
+        "F_times_delay_times_H": 200.06484854113543
+      },
+      {
+        "gamma_over_H": 0.01,
+        "Omega_over_H": 0.03,
+        "variance_factor": 1.0009589311174973,
+        "quadrature_error": 1.4503134012258278e-10,
+        "zero_temperature_lower_bound": 0.0329583686600433,
+        "mean_delay_times_H": 133.33333333333334,
+        "F_times_delay_times_H": 133.46119081566633
+      },
+      {
+        "gamma_over_H": 0.01,
+        "Omega_over_H": 0.1,
+        "variance_factor": 1.0030473448323918,
+        "quadrature_error": 1.224191444777652e-10,
+        "zero_temperature_lower_bound": 0.051168557622089904,
+        "mean_delay_times_H": 110.0,
+        "F_times_delay_times_H": 110.33520793156309
+      },
+      {
+        "gamma_over_H": 0.1,
+        "Omega_over_H": 0.1,
+        "variance_factor": 1.0286659830158533,
+        "quadrature_error": 1.311485273888226e-10,
+        "zero_temperature_lower_bound": 0.2,
+        "mean_delay_times_H": 20.0,
+        "F_times_delay_times_H": 20.57331966031707
+      },
+      {
+        "gamma_over_H": 0.1,
+        "Omega_over_H": 0.30000000000000004,
+        "variance_factor": 1.0763692154632831,
+        "quadrature_error": 1.3173115500878248e-10,
+        "zero_temperature_lower_bound": 0.3295836866004329,
+        "mean_delay_times_H": 13.333333333333332,
+        "F_times_delay_times_H": 14.35158953951044
+      },
+      {
+        "gamma_over_H": 0.1,
+        "Omega_over_H": 1.0,
+        "variance_factor": 1.188119839002121,
+        "quadrature_error": 8.686692875912104e-11,
+        "zero_temperature_lower_bound": 0.5116855762208992,
+        "mean_delay_times_H": 11.0,
+        "F_times_delay_times_H": 13.069318229023331
+      },
+      {
+        "gamma_over_H": 1.0,
+        "Omega_over_H": 1.0,
+        "variance_factor": 2.2898681336964524,
+        "quadrature_error": 1.3311994202944606e-13,
+        "zero_temperature_lower_bound": 2.0,
+        "mean_delay_times_H": 2.0,
+        "F_times_delay_times_H": 4.579736267392905
+      },
+      {
+        "gamma_over_H": 1.0,
+        "Omega_over_H": 3.0,
+        "variance_factor": 3.5,
+        "quadrature_error": 5.179667665766565e-11,
+        "zero_temperature_lower_bound": 3.295836866004329,
+        "mean_delay_times_H": 1.3333333333333333,
+        "F_times_delay_times_H": 4.666666666666666
+      },
+      {
+        "gamma_over_H": 1.0,
+        "Omega_over_H": 10.0,
+        "variance_factor": 5.286596119929454,
+        "quadrature_error": 5.872301653972387e-10,
+        "zero_temperature_lower_bound": 5.116855762208991,
+        "mean_delay_times_H": 1.1,
+        "F_times_delay_times_H": 5.8152557319224005
+      },
+      {
+        "gamma_over_H": 10.0,
+        "Omega_over_H": 10.0,
+        "variance_factor": 20.03326713633715,
+        "quadrature_error": 1.4569551372830039e-09,
+        "zero_temperature_lower_bound": 20.0,
+        "mean_delay_times_H": 0.2,
+        "F_times_delay_times_H": 4.00665342726743
+      },
+      {
+        "gamma_over_H": 10.0,
+        "Omega_over_H": 30.0,
+        "variance_factor": 32.980566308564114,
+        "quadrature_error": 1.4675734369071214e-09,
+        "zero_temperature_lower_bound": 32.95836866004329,
+        "mean_delay_times_H": 0.13333333333333333,
+        "F_times_delay_times_H": 4.397408841141882
+      },
+      {
+        "gamma_over_H": 10.0,
+        "Omega_over_H": 100.0,
+        "variance_factor": 51.18687252603036,
+        "quadrature_error": 7.856686157932682e-10,
+        "zero_temperature_lower_bound": 51.16855762208991,
+        "mean_delay_times_H": 0.11,
+        "F_times_delay_times_H": 5.63055597786334
+      },
+      {
+        "gamma_over_H": 50.0,
+        "Omega_over_H": 50.0,
+        "variance_factor": 100.00666613348562,
+        "quadrature_error": 1.8135992999678444e-09,
+        "zero_temperature_lower_bound": 100.0,
+        "mean_delay_times_H": 0.04,
+        "F_times_delay_times_H": 4.000266645339425
+      },
+      {
+        "gamma_over_H": 50.0,
+        "Omega_over_H": 150.0,
+        "variance_factor": 164.79628754716808,
+        "quadrature_error": 3.795357433496917e-09,
+        "zero_temperature_lower_bound": 164.79184330021647,
+        "mean_delay_times_H": 0.02666666666666667,
+        "F_times_delay_times_H": 4.394567667924482
+      },
+      {
+        "gamma_over_H": 50.0,
+        "Omega_over_H": 500.0,
+        "variance_factor": 255.8464546290111,
+        "quadrature_error": 1.0154825985030127e-09,
+        "zero_temperature_lower_bound": 255.84278811044956,
+        "mean_delay_times_H": 0.022,
+        "F_times_delay_times_H": 5.628622001838244
+      },
+      {
+        "gamma_over_H": 100.0,
+        "Omega_over_H": 100.0,
+        "variance_factor": 200.00333326667143,
+        "quadrature_error": 1.0218031140217198e-09,
+        "zero_temperature_lower_bound": 200.0,
+        "mean_delay_times_H": 0.02,
+        "F_times_delay_times_H": 4.000066665333429
+      },
+      {
+        "gamma_over_H": 100.0,
+        "Omega_over_H": 300.0,
+        "variance_factor": 329.5859087979651,
+        "quadrature_error": 5.856035418757092e-09,
+        "zero_temperature_lower_bound": 329.58368660043294,
+        "mean_delay_times_H": 0.013333333333333334,
+        "F_times_delay_times_H": 4.394478783972868
+      },
+      {
+        "gamma_over_H": 100.0,
+        "Omega_over_H": 1000.0,
+        "variance_factor": 511.6874095357166,
+        "quadrature_error": 6.000635930229689e-10,
+        "zero_temperature_lower_bound": 511.6855762208991,
+        "mean_delay_times_H": 0.011,
+        "F_times_delay_times_H": 5.6285615048928825
+      }
+    ],
+    "adiabatic_requirements": [
+      {
+        "bose_argument": 0.1,
+        "assumed_abs_dlnH_dlna": 1.5,
+        "occupation_tracking_tolerance": 0.03,
+        "max_mean_delay_H_adiabatic": 0.03806503278561616,
+        "variance_factor_lower_bound": 105.08331944775053,
+        "Neff_for_3percent_instantaneous_force_rms": 105648.1327197228
+      },
+      {
+        "bose_argument": 1.0,
+        "assumed_abs_dlnH_dlna": 1.5,
+        "occupation_tracking_tolerance": 0.03,
+        "max_mean_delay_H_adiabatic": 0.025284822353142306,
+        "variance_factor_lower_bound": 158.19767068693264,
+        "Neff_for_3percent_instantaneous_force_rms": 64664.07854103627
+      },
+      {
+        "bose_argument": 3.0,
+        "assumed_abs_dlnH_dlna": 1.5,
+        "occupation_tracking_tolerance": 0.03,
+        "max_mean_delay_H_adiabatic": 0.012669505755095145,
+        "variance_factor_lower_bound": 315.71870894737685,
+        "Neff_for_3percent_instantaneous_force_rms": 17465.23216375199
+      }
+    ],
+    "scope": "Exact two-pole noise-delay inequality; tracking estimate is adiabatic. Temporal averaging can reduce measured noise. No observed noise likelihood."
+  },
+  "receiver": {
+    "max_f_times_force_enhancement": 0.0001275186748750647,
+    "redshift_at_max": 2.422998273468877,
+    "rows": [
+      {
+        "receiver_fraction_of_capacity_enthalpy": 0.001,
+        "max_unscreened_stock_force_enhancement": 0.1275186748750647,
+        "max_product_residual": 5.421010862427522e-20,
+        "background_density_identity_max_relerr": 2.220446049250313e-16,
+        "background_pressure_identity_max_abserr": 5.551115123125783e-17
+      },
+      {
+        "receiver_fraction_of_capacity_enthalpy": 0.005,
+        "max_unscreened_stock_force_enhancement": 0.025503734975012942,
+        "max_product_residual": 6.776263578034403e-20,
+        "background_density_identity_max_relerr": 2.220446049250313e-16,
+        "background_pressure_identity_max_abserr": 2.2193618470778276e-16
+      },
+      {
+        "receiver_fraction_of_capacity_enthalpy": 0.01,
+        "max_unscreened_stock_force_enhancement": 0.01275186748750647,
+        "max_product_residual": 6.776263578034403e-20,
+        "background_density_identity_max_relerr": 2.220446049250313e-16,
+        "background_pressure_identity_max_abserr": 4.4398078963281407e-16
+      },
+      {
+        "receiver_fraction_of_capacity_enthalpy": 0.03,
+        "max_unscreened_stock_force_enhancement": 0.004250622495835491,
+        "max_product_residual": 8.131516293641283e-20,
+        "background_density_identity_max_relerr": 2.220446049250313e-16,
+        "background_pressure_identity_max_abserr": 1.7762467251171074e-15
+      }
+    ],
+    "scope": "Constant-f canonical family and unscreened subhorizon force. Scalar mass, screening and observational transfer functions remain relevant."
+  },
+  "new_empirical_fit": false
+}

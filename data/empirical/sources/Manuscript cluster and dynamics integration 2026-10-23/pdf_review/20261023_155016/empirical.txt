@@ -1,0 +1,2502 @@
+EMPIRICAL RESULTS AND THEIR PHYSICAL INTERPRETATION
+History-dependent gravity
+and cosmological release
+Galaxy, cluster, and cosmological tests
+Galaxy accelerations across cosmic time
+The Large Magellanic Cloud and inherited gravity
+Crater II under Galactic tides
+Dark energy from the loss of source identity
+Conservative cluster dynamics and lensing
+Prepared for Jacob Chinitz
+Research synthesis and numerical review, 23 October 2026
+Based on the Entropic Scalar EFT manuscript, its Lean proof package, the archived galaxy calculations,
+and the tied-abundance cosmological release calculations. The comparisons use specified source histories,
+transport models, and observational likelihoods; their mathematical premises and numerical domains are
+stated with each result.
+
+
+History-dependent gravity and cosmological release
+Empirical results
+Contents
+1
+The empirical picture
+1
+2
+The common microscopic coefficients
+2
+2.1
+Capacity, matter, and an observable gravitational field . . . . . . . . . . . . . . . .
+2
+2.2
+Why the selected face has seven transmitted and nine retained states . . . . . . . .
+2
+2.3
+The finite sum that fixes the entropy . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+2.4
+Two coefficients inherited by the astrophysical branches
+. . . . . . . . . . . . . . .
+3
+3
+Result 1: the acceleration scale changes with cosmic expansion
+5
+3.1
+What is measured
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3.2
+Why a cosmological acceleration enters . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+3.3
+The response law and its limits . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+6
+3.4
+Why the fitted intercept lies below the local value . . . . . . . . . . . . . . . . . . .
+7
+3.5
+A joint cosmological test . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+3.6
+Catalogue tests and the direction of a relaxation correction
+. . . . . . . . . . . . .
+8
+4
+Result 2: the LMC retains a massive gravitational profile
+9
+4.1
+From an acceleration law to an enclosed mass . . . . . . . . . . . . . . . . . . . . .
+9
+4.2
+Why the budget refers to ancestral baryons
+. . . . . . . . . . . . . . . . . . . . . .
+9
+4.3
+Persistence, transport, and tidal stripping . . . . . . . . . . . . . . . . . . . . . . .
+10
+4.4
+The external-field comparison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+4.5
+The reflex motion tests inertia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+4.6
+Tidal dwarfs test which source owns the response . . . . . . . . . . . . . . . . . . .
+12
+5
+Result 3: Crater II becomes cold through tidal loss of stock
+13
+5.1
+Why size and dispersion must be explained together
+. . . . . . . . . . . . . . . . .
+13
+5.2
+Initial conditions and the physical stock profile . . . . . . . . . . . . . . . . . . . .
+13
+5.3
+The orbit and the LMC perturbation . . . . . . . . . . . . . . . . . . . . . . . . . .
+14
+5.4
+What the numerical experiment actually resolves . . . . . . . . . . . . . . . . . . .
+14
+5.5
+Tail counts and the measurement procedure . . . . . . . . . . . . . . . . . . . . . .
+15
+5.6
+The strength and the scope of the model comparison . . . . . . . . . . . . . . . . .
+15
+5.7
+Antlia 2: a recently disturbed system still requires a successful mock observation .
+16
+5.8
+What the Crater II result changes
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+6
+Result 4: dark energy from assembly and mixing
+18
+6.1
+What the expansion measurements constrain
+. . . . . . . . . . . . . . . . . . . . .
+18
+6.2
+The record that mixing can destroy . . . . . . . . . . . . . . . . . . . . . . . . . . .
+18
+i
+
+
+History-dependent gravity and cosmological release
+Empirical results
+6.3
+From retained wells to a release history
+. . . . . . . . . . . . . . . . . . . . . . . .
+19
+6.4
+Energy transfer and the vacuum density . . . . . . . . . . . . . . . . . . . . . . . .
+20
+6.5
+A covariant effective description . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+6.6
+The matched linear-lensing likelihood . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+6.7
+Accumulation at high redshift and dominance at late time . . . . . . . . . . . . . .
+22
+6.8
+What the hydrodynamic measurement finds . . . . . . . . . . . . . . . . . . . . . .
+22
+6.9
+Equation of state, vacuum energy, and decisive tests . . . . . . . . . . . . . . . . .
+23
+6.10 A self-limiting local completion and its coupling . . . . . . . . . . . . . . . . . . . .
+24
+7
+Clusters: conservative dynamics and observed targets
+26
+7.1
+A common mass budget and a conservative encounter
+. . . . . . . . . . . . . . . .
+26
+7.2
+X-COP profiles and independent weak-lensing masses
+. . . . . . . . . . . . . . . .
+26
+7.3
+What the outliers require
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+27
+7.4
+The Bullet Cluster supplies a spatial target
+. . . . . . . . . . . . . . . . . . . . . .
+28
+8
+Independent checks across scales
+29
+8.1
+Local galaxies and weak lensing . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+8.2
+CMB spectra, lensing, and velocity comparisons . . . . . . . . . . . . . . . . . . . .
+29
+8.3
+Stellar systems, constants, and tensor modes
+. . . . . . . . . . . . . . . . . . . . .
+29
+8.4
+Common-normalization disk and dwarf checks . . . . . . . . . . . . . . . . . . . . .
+30
+9
+Joint interpretation
+31
+9.1
+The derivation has identifiable physical commitments . . . . . . . . . . . . . . . . .
+31
+9.2
+Which conventional assumptions are challenged . . . . . . . . . . . . . . . . . . . .
+32
+9.3
+A joint test of the same construction . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+A Provenance and numerical verification
+33
+A.1 Scope of the verification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+33
+A.2 Local source key
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+A.3 Reproduction commands . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+B Notation
+36
+References
+37
+ii
+
+
+History-dependent gravity and cosmological release
+Empirical results
+1 The empirical picture
+A galaxy’s gravitational field may depend on how its matter assembled and what happened to it
+afterward. In the model reviewed here, baryons support a persistent stock of committed substrate
+capacity. That stock carries gravitating mass and inertia, survives a change in the surrounding
+field, and can be stripped by tides. A related cosmological process transfers a small share of
+committed capacity into a homogeneous vacuum component when the supporting baryonic source
+loses its recoverable progenitor identity. These proposals connect galaxy dynamics with the
+expansion history.
+Galaxy, cosmological, and cluster results test different parts of this account. They do not have
+equal evidential status. The LMC comparison begins with a short analytic mass calculation.
+Crater II requires a numerical history. The redshift test compares a calculated function with a
+published fitted relation. The cosmological result joins a physical assembly-and-mixing history to
+the CMB, baryon acoustic oscillations, and supernova distances.
+Test
+Quantitative result
+What the comparison
+establishes
+Acceleration scale
+The stated H(z) curve has linear projection
+(1.003, 1.226) over 0.33 ≤z ≤1.44, compared
+with published (1.03 ± 0.05, 1.20 ± 0.10), in
+units of 10−10 m s−2.
+Agreement with the Appendix
+E inference; the coefficients
+depend on the redshift weights
+and the kinematic analysis.
+LMC and
+inheritance
+M(< 30 kpc) = 5.03 × 1010M⊙and
+M(< 50 kpc) = 8.29 × 1010M⊙. The tested
+external-field QUMOND models give
+(1.54–1.68) × 1010M⊙at 30 kpc.
+The retained-profile calculation
+agrees with the cited mass
+inferences. The smaller
+tidal-dwarf test favors the
+parent-carrier rule.
+Crater II
+With the LMC included, a stock trajectory
+gives (σ, Rh, M∗) =
+(2.36 km s−1, 0.86 kpc, 3.2 × 105M⊙) and a tail
+fraction of 0.23. The extended NFW
+comparison gives B = 2.62 × 105 at 0.5-dex
+halo scatter and 10% model error.
+A successful tidal trajectory
+and a strong preference within
+the stated prior, force solver,
+and error model.
+Cosmological release
+The geodesic-clock, exponential-allocation fit
+gives χ2 = 2227.801, versus 2228.316 for
+ΛCDM, with five versus six cosmological
+parameters.
+Near-equal fit quality with
+matched linear lensing. The
+mixing time is fitted; nonlinear
+spatial evolution and the
+independent release
+normalization remain open.
+Table 1: The principal galaxy and cosmological comparisons. Detailed qualifications and provenance
+accompany each result below. A Bayes factor compares specified models and priors; it is not the probability
+that a theory is true.
+The common physical idea is that present baryonic mass need not completely specify the present
+excess gravity. An isolated system, a satellite stripped by its host, and a galaxy assembled from
+tidal debris can have different stock distributions even when they contain similar visible matter.
+The proposal assigns that difference to a retained physical state of the substrate. Conventional
+dark-matter halos also retain assembly history; the distinctive claim here is the capacity origin
+and constrained normalization of the additional mass.
+The cosmological construction ties the initial committed-to-baryon abundance to the microscopic
+coefficient, includes primary CMB spectra and matched linear lensing, and calculates release from
+assembly and mixing. A self-gravitating hydrodynamic run provides a first measurement of that
+mixing history. The fit is competitive. The physical retention gate and the definition of progenitor
+1
+
+
+History-dependent gravity and cosmological release
+Empirical results
+information still matter appreciably.
+Cluster encounters now use an explicit energy and momentum ledger, with a contact that switches
+off at its work floor. Twelve X-COP profiles, five independent lensing masses, and the public
+Bullet map provide quantitative targets. The coextensive prescription is close to several targets;
+A1795 and A2029 require relative baryon–stock segregation under their central lensing masses. A
+completed shared-coupling fit remains open. [CL1–CL3]
+Relation to the theory and CDT accounts.
+The effective astrophysical calculations use the
+framework of Entropic Scalar EFT. Its Lean 4.35.0 library verifies finite identities and conditional
+field equations. The companion CDT account distinguishes the electron-anchored scale G∗, the
+selected bare coefficient G0 ≃1.03002G∗, and an interacting response GR. The measured Newton
+constant remains the effective input here. These comparisons leave the matter response and
+continuum phase of the α = 7 CDT branch to their own tests. [T1–T4]
+2 The common microscopic coefficients
+2.1 Capacity, matter, and an observable gravitational field
+The starting hypothesis assigns finite entanglement capacity to a tetrahedral substrate. Matter
+consists of persistent defects that commit some of this capacity. Mass measures the commitment
+in energy units. The ordinary gravitational branch identifies a capacity deficit with the weak-field
+metric potential. In the manuscript’s convention,
+δS
+S∞
+= −2Φ
+c2 .
+(1)
+For a negative Newtonian potential, the corresponding capacity deficit is positive. The ordinary
+metric branch uses the measured Newton constant. Varying the specified two-potential action
+independently in Φ and Ψ gives
+∇2Ψ = 4πGρ,
+∇2(Φ −Ψ) = 0.
+(2)
+For smooth isolated sources with Φ −Ψ →0 at infinity, the maximum principle gives Φ = Ψ.
+These steps have kernel-checked proofs, connecting the reduced action to the Newtonian force and
+the leading no-slip metric. The physical selection of that action and its normalization retain their
+stated premises. [T4]
+A stellar velocity, a stream deflection, and a gravitational lens measure the field generated by the
+effective stress-energy. They do not directly identify the microscopic material carrying that stress.
+The galaxy runs represent retained capacity by collisionless particles. Those numerical particles
+sample a positive mass distribution; the theory interprets their mass as substrate commitment.
+Thus the model contains an additional gravitating component even though it proposes no new
+species of dark-matter particle. Its physical origin and relation to baryons are the claims under
+test. [T1, sections 1, 15, 20 and O.3]
+2.2 Why the selected face has seven transmitted and nine retained states
+Each side of a shared face carries a primitive spin-3/2 representation, which has four states. Its
+paired space has dimension sixteen. Angular momentum addition gives
+V3/2 ⊗V3/2 = V0 ⊕V1 ⊕V2 ⊕V3,
+16 = 1 + 3 + 5 + 7.
+(3)
+2
+
+
+History-dependent gravity and cosmological release
+Empirical results
+The selected positive matching operator transmits the maximal-spin sector V3. Its orthogonal
+complement has dimensions 1 + 3 + 5 = 9 and supplies the retained marked register.
+The
+present/history response has the same representation content, V1 ⊗V1 = V0 ⊕V1 ⊕V2. An explicit
+equivariant map identifies the marked register with the retained complement. Its uniqueness is
+proved up to one scalar factor on each spin block; equivariant unitary freedom consists of block
+phases. The result fixes the allowed identification within the selected vertex. [T4]
+The numbers describe dimensions of state spaces. They do not say that seven sixteenths of the
+physical energy passes and nine sixteenths becomes dark energy. An energy fraction requires an
+energy operator and an identified state. The release fraction derived below is about three percent,
+not 9/16.
+There are four distinguishable face ports. Single-copy occupancy makes their seven-letter assign-
+ments injective. Including the two cell orientations gives
+Nstates = 2P(7, 4) = 2 (7 · 6 · 5 · 4) = 1680.
+(4)
+Uniform weights would give entropy ln 1680 = 7.4265490724. The theory weights these states by
+their closure defect, producing a slightly smaller entropy. [T1, sections 5–6 and B.2]
+2.3 The finite sum that fixes the entropy
+Let mi ∈{−3, −2, −1, 0, 1, 2, 3} be the four distinct face labels. The tetrahedral face normals
+satisfy bni · bnj = −1/3 for i̸ = j. On the product-state boundary realization the expectation of the
+squared closure operator is
+K2 = 48 −1
+3
+
+
+ X
+i
+mi
+!2
+−
+X
+i
+m2
+i
+
+.
+(5)
+The constant 48 = 4j(j + 1) uses the transmitted spin j = 3. The Gibbs weights and their
+partition sum are
+pη(b) = e−ηK2(b)
+Z(η)
+,
+Z(η) =
+1680
+X
+b=1
+e−ηK2(b).
+(6)
+Three closure components supply the determinant factor η3/2. Stationarity of the normalized
+closure evidence gives
+0 = d
+dη
+
+ln Z + 3
+2 ln η
+
+= −⟨K2⟩η + 3
+2η.
+(7)
+Direct enumeration and a one-dimensional root solve yield
+η∗= 0.0298668443935,
+⟨K2⟩∗= 50.2229154254,
+(8)
+g = −
+X
+b
+p∗(b) ln p∗(b) = 7.41980002357.
+(9)
+Finite enumeration and the closure root have kernel-checked proofs and certified numerical bounds.
+Independent floating-point evaluation supplies the additional displayed digits; the verification
+records distinguish the two forms of calculation. [T4] The word “fixed” means fixed after the
+ensemble, matching rule, closure invariant, and evidence measure have been specified. It does not
+claim that finite capacity uniquely determines that microscopic model.
+2.4 Two coefficients inherited by the astrophysical branches
+The transverse galactic branch places one sharing entropy in a cell with two compact phase angles.
+Its Haar volume is (2π)2, giving the selected dimensionless loading
+ϵ =
+g
+4π2 = 0.1879457302,
+ϵ−1 = 5.320684854.
+(10)
+3
+
+
+History-dependent gravity and cosmological release
+Empirical results
+Reversible horizon contact then gives
+a0(z) = ϵcH(z).
+(11)
+At H0 = 67.4 km s−1 Mpc−1, a0(0) = 1.23072924 × 10−10 m s−2. This coefficient is obtained by
+evaluating a fixed prescription. The phase loading and horizon coupling are physical matching
+assumptions of that prescription. [T1, section 15]
+In the cosmological branch, the committed state has mean energy εK⟨K2⟩∗, while the three
+normalized record coordinates carry mean energy 3εξ/2. Their ratio is
+η = εξ
+εK
+3
+2⟨K2⟩∗
+.
+(12)
+The common-conversion choice εξ = εK makes η = η∗. This identification also uses the manuscript’s
+post-refresh energy accounting. The exact closure identity and the physical equality of conversion
+scales have different logical roles. [T1, O.4 and O.13]
+Here g is the sharing entropy denoted gshare in the CDT account and gshare,eff in Astra. The
+galactic ϵ is distinct from the electron rest gap ϵe ≃4.18546 × 10−23.
+The same pair (g, η∗) therefore enters the galactic scale, the initial commitment budget, and the
+release fraction. The observational calculations test those connections together with the effective
+dynamics that takes them from a cell to a galaxy or an expanding universe.
+4
+
+
+History-dependent gravity and cosmological release
+Empirical results
+3 Result 1: the acceleration scale changes with cosmic expansion
+The model predicts an acceleration scale proportional to the cosmic expansion rate, with its
+coefficient fixed by equation (10). Using the background specified for this comparison gives
+a0(z)
+10−10 m s−2 = 1.23072924
+q
+0.315(1 + z)3 + 0.685.
+(13)
+Its linear projection over 0.33 ≤z ≤1.44 is
+aline
+0
+(z)
+10−10 m s−2 = 1.002784 + 1.225645z.
+(14)
+The published MOND-based kinematic analysis in Appendix E of Ciocan et al. gives an intercept
+1.03 ± 0.05 and slope 1.20 ± 0.10 in these units. The main-text dark-halo decomposition gives a
+larger slope, about 1.59. These are distinct inferences from the kinematic analysis and must be
+compared separately. [1]
+3.1 What is measured
+For a nearly circular stellar or gas orbit, the inferred centripetal acceleration is
+gobs(r) = v2
+c(r)
+r
+.
+(15)
+A baryonic model supplies the acceleration gb generated by the observed stars and gas. The radial
+acceleration relation, or RAR, describes how gobs depends on gb. In the galaxy outskirts gb is
+small and the inferred attraction exceeds the Newtonian baryonic value. The parameter a0 locates
+the transition.
+At intermediate redshift, the rotation field, pressure support, inclination, gas profile, and stellar
+mass must be inferred together. Ciocan et al. explicitly describe the resulting RAR as model
+dependent. Their Appendix E refits the kinematics within a MOND framework and then estimates
+the redshift dependence. The coefficient comparison here uses that inference; it does not treat the
+measurements as a direct model-independent measurement of the substrate. [1]
+3.2 Why a cosmological acceleration enters
+The Unruh temperature associated with proper acceleration a is
+kBTU = ℏa
+2πc.
+(16)
+For a de Sitter horizon, the corresponding temperature is
+kBTH = ℏH
+2π .
+(17)
+Equating these two scales gives a = cH. This relation motivates a cosmological acceleration
+scale. Applying a horizon temperature to an evolving cosmological background requires the chosen
+horizon-contact prescription. Neither detector thermality nor dimensional analysis alone fixes the
+coefficient of the galactic law. [2, 3]
+The capacity model supplies that coefficient through a particular contact: two transverse compact
+phase modes have phase-cell volume 4π2, and one admissibility-weighted sharing entropy loads that
+cell. This gives ϵ = g/(4π2) and hence a0 = ϵcH. The construction connects the galaxy’s transition
+scale to an external cosmological state without adjusting a coefficient for the high-redshift sample.
+5
+
+
+History-dependent gravity and cosmological release
+Empirical results
+Its microscopic thermal Hamiltonian and coupling still require the matching described in the
+theory. [T1, section 15 and N.8]
+The thermal variable is the occupation energy of the transverse response. The construction assigns
+no ordinary radiation temperature to an orbiting star.
+3.3 The response law and its limits
+The effective occupation energy is prescribed by
+E = kBTHx,
+x =
+q
+gb/a0.
+(18)
+For a bosonic occupation number n = 0, 1, 2, . . ., the single-mode partition sum is a geometric
+series:
+ZB =
+∞
+X
+n=0
+e−nx =
+1
+1 −e−x .
+(19)
+The mean occupation follows by differentiation,
+⟨n⟩= −d ln ZB
+dx
+=
+1
+ex −1 = nB(x).
+(20)
+Identifying the excess gravitational response with this occupation gives, in spherical symmetry,
+gobs = gb[1 + nB(x)] =
+gb
+1 −e−√
+gb/a0 .
+(21)
+The Bose sum and spherical response are proved for the chosen mode energy and readout. The
+carrier-action field equations also follow from compactly supported variations for a smooth
+interpolating function. For this response its derivative is singular at zero baryonic field, so the
+classical derivation applies on the regular nonzero-field branch; extension through field zeros
+requires a weak or regularized treatment. The square-root energy mapping and horizon contact
+remain physical matching conditions. [T4]
+At gb ≫a0, the occupation is exponentially small and gobs ≃gb. At gb ≪a0, expansion of the
+denominator gives
+gobs = √a0gb + 1
+2gb + O
+ 
+g3/2
+b
+√a0
+!
+.
+(22)
+For a pointlike baryonic source, gb = GMb/r2, so the leading term implies
+v4
+c = GMba0.
+(23)
+This is the baryonic Tully–Fisher scaling. In the proposed contact branch, its normalization evolves
+with H(z). The isolated equilibrium response uses the cosmological contact at the epoch being
+modeled. A previously formed, subsequently stripped stock evolves through its own transport
+history.
+A positive finite update can relax radial occupation while preserving each retained angular-bin
+mass. Lean verifies this separation, so radial adjustment need not erase angular memory. In a
+spherical numerical example with a chosen 0.5 Gyr relaxation time, the force differs from the
+evolving target by at most 2.21% today and 12.89% earlier. Separate live tilted-stock realizations
+retain stellar tilt for eight Gyr at a fixed radial target. A common evolution with changing a0, the
+required energy exchange, and converged nonspherical forces remains to be tested. [T1, O.3; G7]
+6
+
+
+History-dependent gravity and cosmological release
+Empirical results
+3.4 Why the fitted intercept lies below the local value
+The numerical curve in equation (13) has a0(0)
+=
+1.230729 10−10 m s−2 and a0(1)
+=
+2.203315 10−10 m s−2. The intercept of a line fitted over a positive-redshift interval is a different
+quantity from the value of the curved function at zero.
+For points (zi, fi) with equal weights, minimizing P
+i[fi −(A + Bzi)]2 gives
+B =
+P
+i(zi −¯z)(fi −¯f)
+P
+i(zi −¯z)2
+,
+A = ¯f −B¯z.
+(24)
+Using zi = 0.33, 0.34, . . . , 1.44 gives equation (14). The resulting intercept is 1.003 and the slope
+is 1.226; both are within the published marginal errors.
+The curvature follows analytically. Write u = 1 + z and E =
+p
+Ωmu3 + ΩΛ. Then
+d2E
+dz2 = 3Ωmu [Ωmu3 + 4ΩΛ]
+4E3
+> 0.
+(25)
+Across the stated interval, a single straight line averages the increasing slope and extrapolates
+below the true value at z = 0. The lower intercept therefore has a direct mathematical explanation
+within the proposed curve. Its precise size depends on the interval and weights.
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+Redshift z
+1.0
+1.5
+2.0
+2.5
+3.0
+a0 [10−10 m s−2]
+Acceleration and its linear projection
+Published redshift range
+a0(0) H(z)/H0
+Uniform-grid linear projection
+Published Appendix E line
+Intercept
+Slope
+0.9
+1.0
+1.1
+1.2
+1.3
+Units of 10−10 m s−2
+Coefficient comparison
+Calculated projection
+Published marginal errors
+Figure 1: The calculated acceleration curve and its linear projection. The published line summarizes
+the Appendix E inference. The right panel shows marginal coefficient errors, with no assumption of
+independence. The uniform-grid projection is not a refit to the original galaxy data.
+The individual coefficient differences are −0.54 and +0.26 times the quoted marginal errors. A
+joint significance requires the fitted intercept–slope covariance and the survey’s effective redshift
+weighting. The two agreements are consequences of one curve, not independent probabilities to
+multiply.
+3.5 A joint cosmological test
+The prediction fixes the absolute function, including normalization and curvature. This comparison
+uses Ωm = 0.315 and ΩΛ = 0.685. A joint test must use the release model’s fitted H(z) in
+equation (11), propagate its uncertainty, and fit the individual galaxies with their correlated
+baryonic and kinematic errors. Galaxy formation can also produce an evolving RAR in conventional
+halo models, so evolution alone does not distinguish the mechanisms.
+7
+
+
+History-dependent gravity and cosmological release
+Empirical results
+3.6 Catalogue tests and the direction of a relaxation correction
+The common cosmology was propagated to 73 KMOS3D, 21 KGES, and 169 KROSS objects at
+three radii. At the KMOS3D outer radius, the log-acceleration residual slope is −0.245 dex per
+unit redshift with constant a0 and −0.313 with the common H(z) law. The latter has median
+log-velocity residual −0.087 dex. The reference z = 2.3 example gives acceleration boosts about
+2.02 versus 1.39 for the compared evolving and fixed scales. These are catalogue central-value
+diagnostics with specified baryon force models; they do not constitute raw-cube likelihoods. The
+112-point reference projection remains distinct from a regression on the actual 79-object MUSE
+selection. The common cosmology has not removed the high-redshift residual trend. [U1, S01]
+Passive relaxation cannot automatically supply a reduction. If ˙n = Γ(q −n) with Γ > 0, ˙q ≤0,
+and initially n ≥q, then n remains above the target. At fixed baryons a lag behind declining H
+therefore has the wrong sign to suppress an initially equilibrated response. Underoccupied assembly
+states require their own history. Relabeling an unchanged stock leaves its total stress unchanged;
+the tested adiabatic cosmological mass loss gives an inferred scale ratio 0.9183 from z = 2.3,
+compared with H0/H(2.3) = 0.2972. These constraints identify the contact and preparation
+history as physical requirements. [D1]
+For the selected two-pole quantum response, the noise enhancement F and mean delay ¯τ obey
+FH¯τ ≥4. The illustrative three-percent tracking condition at occupation argument x = 1 gives
+F ≳158, requiring about 6.47×104 independent cells for three-percent force rms. Actual windows,
+correlations, and gravitational coupling remain unspecified, so this is a contact-model constraint.
+[D1; T1, N.8]
+8
+
+
+History-dependent gravity and cosmological release
+Empirical results
+4 Result 2: the LMC retains a massive gravitational profile
+For 3 × 109M⊙of LMC baryons, the retained-stock prescription gives
+M(< 30 kpc) = 5.0348 × 1010M⊙,
+M(< 50 kpc) = 8.2896 × 1010M⊙.
+(26)
+Warren et al. infer (4.7–5.1) × 1010M⊙inside 30 kpc from the Orphan–Chenab stream. Brooks
+et al. infer 8.76+1.94
+−1.77 × 1010M⊙inside 50 kpc from outer-halo kinematics. The calculated masses
+agree with both quoted results. [4, 5]
+In the same baryonic configuration, the tested QUMOND external-field calculations give only (1.54–
+1.68) × 1010M⊙of effective enclosed LMC mass inside 30 kpc. The difference comes from whether
+the system retains its previously established stock when it enters the Milky Way environment.
+[G1, G2]
+4.1 From an acceleration law to an enclosed mass
+Outside most of the LMC’s baryons, use the spherical point-source approximation
+gb(r) = GMb
+r2 ,
+rM =
+s
+GMb
+a0
+.
+(27)
+Equation (21) then gives
+gobs(r) =
+GMb
+r2[1 −e−rM/r].
+(28)
+The effective enclosed mass is defined through gobs = GM(< r)/r2, so
+M(< r) =
+Mb
+1 −e−rM/r ,
+MR(< r) = M(< r) −Mb.
+(29)
+The baryonic term and the extra stock are counted once each.
+With G = 4.30091 × 10−6 kpc (km/s)2M−1
+⊙, a0 = 3798.47 (km/s)2kpc−1, and the stated baryonic
+mass, rM = 1.84305 kpc. At 30 kpc the exponent is rM/r = 0.061435, and
+M(< 30) =
+3 × 109
+1 −e−0.061435 M⊙= 5.0348 × 1010M⊙.
+(30)
+At 50 kpc the exponent is 0.036861, giving the second mass in equation (26). A Plummer baryonic
+profile with scale 1.5 kpc changes these outer values only slightly.
+In the deep regime,
+M(< r) =
+s
+Mba0
+G
+r + Mb
+2 + O(rM/r).
+(31)
+The enclosed mass grows approximately linearly with radius, giving an approximately flat circular
+speed before the finite stock budget limits the profile. This also shows the main sensitivity:
+M(< r) ∝M1/2
+b
+a1/2
+0
+r. A fractional baryonic-mass error contributes about half as much fractional
+mass error at these radii. The central numbers do not imply negligible uncertainty in the baryons.
+4.2 Why the budget refers to ancestral baryons
+The initial commitment is bounded by Mb,L/ϵ, where Mb,L is the baryonic content of the Lagrangian
+source whose history is followed. In the linear-depletion benchmark used for the saved galaxy
+calculations, a full release removes the share η∗. Its carrier budget is
+MR ≤1 −η∗
+ϵ
+Mb,L,
+CR ≡MR,max
+Mb,present
+.
+(32)
+9
+
+
+History-dependent gravity and cosmological release
+Empirical results
+Loss of gas or redistribution of baryons can make CR much larger than 1/ϵ. A large present
+stock-to-star ratio is compatible with a finite initial commitment per ancestral baryon.
+Writing Mb,L = fbMh gives the manuscript’s useful parameterization
+CR ≃(1 −η∗)(1 −fb)
+Mh
+Mb,present
+,
+(33)
+when fb/(1 −fb) ≃ϵ. Here Mh identifies the ancestral assembly mass used for the budget. It is
+an astrophysical history input. Its use does not follow from the cell count alone.
+The numerical LMC model uses CR = 33, so the total mass cap is (1 + CR)Mb = 1.02 × 1011M⊙.
+Equation (29) reaches that cap at
+rcap = −
+rM
+ln[1 −(1 + CR)−1] = 61.74 kpc.
+(34)
+The quoted 30 and 50 kpc predictions lie inside the cap. Their values are insensitive to its exact
+location. The composition-preserving allocation replaces 1 −η∗by e−η∗for complete ensemble
+release, increasing this budget by 0.0455%. The reported masses and satellite trajectories retain
+their original benchmark convention. [T1, O.3; G1]
+4.3 Persistence, transport, and tidal stripping
+Retained stock has a positive density and an advected mass. A collisionless description uses a
+phase-space distribution fR(x, v, t) obeying
+∂fR
+∂t + v · ∇xfR −∇Φ · ∇vfR = 0,
+ρR =
+Z
+fR d3v,
+(35)
+between formation, release, and carrier-reorganization events. Integrating over velocity gives a
+continuity equation for ρR. A change in the host’s gravitational field can move the stock, distort
+it, or remove some of it from the satellite. It does not algebraically erase its mass.
+A spatially uniform external acceleration mainly accelerates the carrier as a whole. Tides arise
+from the field gradient, represented locally by ∂i∂jΦhost. They can unbind the extended stock
+because its outer orbits are weakly bound. This is the physical difference between losing stock
+through transport and reducing a static effective gravity law because the external field changed.
+The theory’s equilibrium contact and its persistent-stock dynamics are different stages of the same
+proposed mechanism. The contact specifies a target profile for a coherent carrier; collisionless
+evolution follows that profile after infall. The manuscript also allows mass-conserving relaxation
+toward carrier-resolved equilibrium.
+The available satellite runs use retained stock with no
+subsequent contact relaxation. Its rate and its derivation from the native microscopic dynamics
+remain to be fixed.
+4.4 The external-field comparison
+In QUMOND, the field equation contains the nonlinear flux ν(|gN|/a0)gN, where the Newtonian
+field includes both host and satellite. The local calculation estimates the LMC’s equivalent
+enclosed mass by subtracting the host-only flux:
+MQ
+LMC(< r) = −
+1
+4πG
+I
+Sr
+h
+ν
+|gN,L + gN,MW |
+a0
+
+(gN,L + gN,MW )
+−ν
+|gN,MW |
+a0
+
+gN,MW
+i
+· dA.
+(36)
+10
+
+
+History-dependent gravity and cosmological release
+Empirical results
+This is an effective gravitational mass, not a count of extra matter particles. The host subtraction
+matters because the flux is nonlinear.
+The computation uses a 1010M⊙Hernquist bulge, a 5×1010M⊙Miyamoto–Nagai disk, a 3×109M⊙
+Plummer LMC, and a 50 kpc separation. Direct angular quadrature uses 96 Gauss–Legendre
+points and 192 azimuthal points. Re-execution gives
+Response prescription
+M(< 30 kpc)/[1010M⊙]
+Retained spherical stock
+5.035
+QUMOND, exponential RAR function
+1.679
+QUMOND, simple function
+1.681
+QUMOND, standard function
+1.539
+The tested external-field models fall a factor of roughly three below the cited 30 kpc inference.
+The difference persists across these three interpolation choices. A complete comparison would
+evolve the observed stream in each time-dependent model and compare its positions and velocities
+directly. The published mass posterior was inferred using gravitational models; it is not a raw
+model-free datum.
+0
+10
+20
+30
+40
+50
+60
+70
+Radius [kpc]
+0
+2
+4
+6
+8
+10
+M( < r) [1010M ⊙]
+LMC enclosed gravitational mass
+Retained profile; stated cap
+Warren et al. range
+Brooks et al. inference
+0
+1
+2
+3
+4
+5
+M( < 30 kpc) [1010M ⊙]
+Stock
+QUMOND: RAR
+QUMOND: simple
+QUMOND: standard
+External-field comparison
+Figure 2: The retained LMC mass profile, its finite budget, and the recomputed QUMOND flux comparison.
+The 30 kpc bar represents the reported range of stream inferences, not a Gaussian one-sigma interval. The
+50 kpc bar uses the published asymmetric uncertainties.
+4.5 The reflex motion tests inertia
+An extended gravitating component should also accelerate the Milky Way. Brooks et al. infer a
+reflex speed 38.6+8.3
+−7.8 km s−1 relative to halo stars at 100 kpc, jointly with the LMC and Milky
+Way masses. That observable tests the dynamical interaction, including the response of the outer
+halo. [5]
+The available moving-LMC calculation produces a Milky Way acceleration corresponding to about
+35 km s−1 over the last gigayear. This establishes the relevant scale. A direct comparison requires
+the same halo reference population, spatial selection, and velocity estimator as the observation.
+The present calculation also uses the usual asymmetric pair-force approximation, while the theory
+requires reciprocal forces from its joint source action. These distinctions prevent a precise reflex
+likelihood claim from being assigned to the saved run. [G4]
+The physical implication of a successful reflex calculation would be strong: the extra gravity would
+participate in the momentum balance of the system. Agreement of an isolated rotation curve
+11
+
+
+History-dependent gravity and cosmological release
+Empirical results
+alone cannot establish that property.
+4.6 Tidal dwarfs test which source owns the response
+A tidal dwarf forms from material pulled out of a larger galaxy. Its gas and stars already belong to
+an ancestral source. The carrier rule assigns them to that inherited record while the parent remains
+dynamically coherent. Applying a new isolated equilibrium law to the dwarf’s own baryons would
+count a new independent response at the wrong stage of its history.
+Exact projectors act on disjoint active record labels. Smooth spatial weights used to distribute an
+effective source form a separate partition of unity; they carry no projector-idempotence requirement.
+If P is the active parent, its descendants contribute to the parent source before the nonlinear
+response is evaluated. Parent and child are not simultaneously counted as independent sources
+of an extra halo. A descendant in the parent’s retained response also inherits its director, the
+orientation field that controls the transverse flux. [T1, section 15 and N.8]
+The director’s stiffness controls its response to a local tilt of the source. In the linearized description,
+a mode of wavenumber k has transfer factor
+δn(k)
+δneq(k) =
+1
+1 + k2ξ2 ,
+(37)
+where ξ is the director coherence length fixed by the effective stiffness. A descendant samples the
+parent’s coherent director. A separate carrier has its own stiffness and director. The inherited
+orientation suppresses the local transverse response that the independent-carrier calculation would
+allow. [G5]
+The numerical proxy converts each resulting force field into a virial dispersion. For a stationary
+tracer distribution of mass M, define
+W = −
+Z
+ρ(r) r · ∇Φ d3r.
+(38)
+The scalar virial relation 2K +W = 0 gives the direction-averaged one-dimensional dispersion σ2 =
+−W/(3M), and hence the boost σ2/σ2
+N = W/WN. The force calculation, inherited orientation, and
+tracer profile determine this ratio. The observed gas rotation still requires a separate geometrical
+and dynamical interpretation.
+The available NGC 5291 comparison uses three dynamical-to-baryonic mass ratios, 1.5 ± 0.7,
+1.3±0.5, and 1.2±0.7, and a parent of 2×1011M⊙at 60 kpc. The inherited response gives modest
+enhancements. Treating the dwarfs as separate isolated carriers gives much larger enhancements.
+[G1, G5][6]
+Prescription
+Mass enhancement
+Reported χ2 for three objects
+Parent-carrier inheritance
+1.5–2.0
+0.5
+Separate isolated carriers
+3.6–4.9
+48
+Newtonian baryons
+1.0
+1.0
+The calculation uses a virial-response proxy, with the enhancement read through σ2/σ2
+N. It does
+not supply a resolved, non-equilibrium gas-dynamical fit to every dwarf. Its evidential force is the
+rejection of the separate-carrier prescription within this test. Newtonian baryons also fit these
+ratios, so these three objects do not uniquely select the capacity model or exclude conventional
+tidal dwarfs.
+12
+
+
+History-dependent gravity and cosmological release
+Empirical results
+5 Result 3: Crater II becomes cold through tidal loss of stock
+Crater II combines a large projected half-light radius with a small stellar velocity dispersion. The
+moving-Milky-Way-plus-LMC calculation produces a surviving stock remnant with
+σlos = 2.36 km s−1,
+Rh = 0.86 kpc,
+M∗= 3.2 × 105M⊙,
+ftail = 0.23.
+(39)
+A second well-ranked state gives (2.18 km s−1, 1.24 kpc, 4.4 × 105M⊙, 0.38). The comparison data
+used by the likelihood are (2.7 ± 0.3 km s−1, 1.066 ± 0.084 kpc, 3.2 ± 1.0 × 105M⊙, 0.23 ± 0.08). The
+first state matches the dispersion, mass, and adopted tail statistic well, while its radius is about
+19% low. The second is larger and has more stellar debris. [G3, G4]
+Against the specified NFW halo ensemble, the moving-LMC comparison gives B = 1.98 × 108 for
+0.3-dex halo-mass scatter and B = 2.62 × 105 for 0.5-dex scatter when the fractional model error
+is 10%. These values have been recomputed from the saved run outputs for this document. They
+quantify a preference for the stock construction within this numerical experiment.
+5.1 Why size and dispersion must be explained together
+In a dispersion-supported system, random stellar velocities provide support against gravity. Under
+equilibrium and approximate spherical symmetry, a useful scale estimate is
+M(< r1/2) ≃3r1/2σ2
+los
+G
+≃4Rhσ2
+los
+G
+,
+(40)
+where r1/2 ≃4Rh/3 is the three-dimensional half-light radius. For the adopted Crater II values
+this gives roughly 7.2 × 106M⊙. The estimate is a guide to the required depth of the central
+potential; a tidally disturbed galaxy requires direct modeling. [7]
+Reducing a halo’s central mass can cool the stars, but its tidal response can also contract or
+destroy the stellar distribution. A successful model must retain a diffuse body while reducing
+its binding potential, and must leave the right amount of visible debris. A dispersion fit at an
+incorrect radius addresses only part of the problem.
+5.2 Initial conditions and the physical stock profile
+The stellar progenitor is a Plummer sphere,
+ρ∗(r) = 3M∗
+4πb3
+ 
+1 + r2
+b2
+!−5/2
+,
+(41)
+M∗(< r) = M∗
+r3
+(r2 + b2)3/2 .
+(42)
+Its projected half-light radius is b. The progenitor’s isolated stock is initialized from
+MR(< r) = min
+
+M∗(< r)
+
+ν
+GM∗(< r)
+a0r2
+
+−1
+
+, CRM∗
+
+,
+(43)
+with ν(y) = (1 −e−√y)−1 and CR = 3000. The differentiated density is tapered by e−(r/12 kpc)2.
+The cap and taper are specified modeling inputs tied to the proposed history and its numerical
+realization. They are not independently measured halo properties of Crater II.
+The central form explains why stock responds differently from a cusp. For r ≪b, the Plummer
+mass scales as r3, so gb ∝r. In the low-acceleration limit, ν −1 ∝r−1/2. Consequently
+MR(< r) ∝r5/2,
+ρR(r) ∝r−1/2.
+(44)
+13
+
+
+History-dependent gravity and cosmological release
+Empirical results
+This is shallower than the r−1 inner density of an NFW halo. The outer stock is extended and
+weakly bound. Tides can remove substantial stock and lower the stellar velocity scale without
+forcing the same stellar contraction as in the tested NFW models.
+Both stars and stock are initialized through isotropic Eddington distribution functions in the
+combined potential. This matters because the initial density profile alone does not specify stellar
+velocities. For relative potential Ψ = −Φ + Φ(∞) and relative energy E = Ψ −v2/2, the inversion
+can be written
+f(E) =
+1
+√
+8 π2
+d
+dE
+Z E
+0
+dρ/dΨ
+√
+E −Ψ dΨ.
+(45)
+At a sampled radius, speeds are drawn with probability proportional to v2f(Ψ −v2/2). The
+code evaluates the inversion on a finite radial grid and clips negative numerical values of f to
+zero; equilibrium and resolution controls are needed to assess this approximation. Equilibrium
+phase-space sampling avoids using an arbitrary initial velocity dispersion as a hidden fit parameter.
+[G1, G3]
+5.3 The orbit and the LMC perturbation
+The calculation uses the present position, distance, radial velocity, and proper motion to infer
+a past orbit in each gravitational model. The adopted Crater II inputs are D = 117.5 kpc,
+vlos = 87.5 km s−1, and (µα∗, µδ) = (−0.07, −0.11) mas yr−1. The stock Milky Way contains
+6 × 1010M⊙of baryons and a retained profile with CR = 14.
+The moving LMC carries 3 × 109M⊙of Plummer baryons and its retained profile, capped at
+1.02 × 1011M⊙in total. The trajectory includes a specified Chandrasekhar friction term and the
+acceleration of the Milky Way. In this calculation Crater II’s latest pericentre is 25.3 kpc, 1.68
+Gyr before the present, in the stock host; the NFW comparison gives 24.9 kpc. The models use
+the same observed phase-space inputs, but their host potentials give distinct orbits. [G4]
+Only first-pericentre stock progenitors survive in the sampled moving-LMC grid. Its best state
+begins with twice today’s stellar mass and 0.7Rh,obs. The next state begins with four times today’s
+mass and Rh,obs. The agreement includes inference over progenitor mass, size, and infall age
+within a prior-weighted grid.
+A rough tidal-radius estimate makes the mechanism clear. For a small satellite on a circular orbit
+of radius R in a spherical host,
+rt ≃R
+
+m(< rt)
+[3 −d ln MH/d ln R]MH(< R)
+1/3
+.
+(46)
+The real orbit is eccentric and the LMC makes the potential time dependent, so the simulation
+integrates the forces directly. Near pericentre, the strongest differential field removes the weakly
+bound outer stock. The retained stellar body then responds to a shallower potential. Its final
+dispersion is an output of this evolution.
+5.4 What the numerical experiment actually resolves
+The shared solver follows 40,000 stock or dark particles and 10,000 stellar particles with a one-Myr
+leapfrog step and 0.03 kpc softening. Self-gravity is computed through a monopole about the
+density centre. The external Milky Way and LMC fields are applied to the particles. This is a
+collisionless particle experiment with spherical internal force resolution, not a full unrestricted
+tree-gravity calculation.
+The comparison uses NFW subhalos with a Moster stellar-to-halo mass prior and the Dutton–
+Macciò median concentration relation. Progenitor masses are one, two, or four times today’s
+14
+
+
+History-dependent gravity and cosmological release
+Empirical results
+stellar mass; sizes are 0.7, 1.0, or 1.5 times the observed half-light radius, weighted by the stated
+size–mass prior. The infall-age grid counts pericentric passages. The enlarged halo grid includes
+masses far below the central abundance-matching expectation. [G3, G4][8, 9]
+The NFW models approach the observed dispersion at inferred infall masses around 107.4–107.7M⊙,
+about two dex below the reference abundance-matching relation. Their radii then lie near 0.76–0.78
+kpc and their dispersions near 3.2–3.5 km s−1. The two-dex statement describes the required
+prior displacement in this model family. It is not a universal proof that a galaxy could never have
+formed in such an object: gas retention, early cooling, concentration, and assembly history also
+matter.
+5.5 Tail counts and the measurement procedure
+The MAGIC photometric sample contains 162 candidate red-giant members, 37 of them in the
+tails, giving 37/162 = 0.2284. The reported stream width is about 0.8◦, and the tails extend
+beyond the observed footprint. These are population- and selection-dependent measurements. A
+candidate count is not automatically a complete fraction of all stellar mass. [10]
+The grid likelihood uses ftail = 0.23 ± 0.08 and a statistic counting stars beyond 3Rh,obs within
+a three-dimensional radius of about 14.4 kpc. The central dispersion is measured from bound
+stars within 1.5Rh in projection. These definitions can be reproduced from the simulation, but
+the observing program does not have direct access to a bound-particle label or a spherical three-
+dimensional membership cut. A final comparison needs the photometric footprint, candidate
+selection, velocity errors, gradient subtraction, and foreground model applied to mock observations.
+Independent spectroscopy now confirms cold central kinematics and provides a stream-to-body
+dispersion ratio. Limberg et al. report 2.51+0.33
+−0.30 km s−1 for the body and 5.74+0.98
+−0.83 km s−1 for the
+stream. Their own simulations find the dispersion ratio difficult for standard-concentration cusps,
+while cored or low-concentration halos can reproduce it. The stock model should predict this ratio
+and the stream width as additional observables. [11]
+5.6 The strength and the scope of the model comparison
+For an observable Oj, the grid uses an effective error s2
+j = σ2
+j,obs + (fmodOj,model)2 for dispersion
+and radius. Its Gaussian likelihood includes the 1/sj normalization. With fixed observational
+errors for stellar mass and tail fraction,
+L(θ) ∝
+Y
+j
+1
+sj
+exp
+"
+−(Oj,model(θ) −Oj,obs)2
+2s2
+j
+#
+.
+(47)
+Destroyed states receive zero likelihood.
+The evidence is a discrete prior average,
+Z = P
+i wiLi/ P
+i wi for the normalized grid, with the documented Gaussian mass-prior
+quadrature for the extended halo tail. The Bayes factor is B = Zstock/ZNFW.
+Fractional model error
+With LMC, 0.3-dex mass scatter
+With LMC, 0.5 dex
+10%
+1.98 × 108
+2.62 × 105
+20%
+2.99 × 103
+9.26 × 102
+30%
+1.55 × 102
+9.42 × 101
+The preference remains in the same direction throughout these sensitivity checks, while its
+numerical magnitude changes by several orders of magnitude. The quoted large factors require
+15
+
+
+History-dependent gravity and cosmological release
+Empirical results
+0.7
+0.8
+0.9
+1.0
+1.1
+1.2
+1.3
+Rh [kpc]
+2.0
+2.5
+3.0
+3.5
+4.0
+σlos [km s−1]
+Joint size and dispersion test
+Stock: highest likelihood
+Stock: next candidate
+NFW: highest likelihood
+Adopted comparison data
+10
+20
+30
+Assumed fractional model error [%]
+102
+103
+104
+105
+106
+107
+108
+Bayes factor: stock / tested NFW
+Evidence depends on model error
+With LMC, 0.3 dex
+With LMC, 0.5 dex
+Figure 3: The moving-LMC Crater II comparison and its dependence on the assumed model error. The
+left panel emphasizes the joint size and dispersion constraint. The evidence calculation also uses stellar
+mass and the adopted tail fraction. The two halo priors use the same saved particle trajectories.
+the 10% model-error assumption. The numerical errors, force approximation, orbit uncertainty,
+and observation mapping should determine that error budget independently.
+The archived record describes a hash-locked core protocol preceding the comparison campaign.
+The moving-LMC extension and enlarged mass priors are documented follow-ups. The present file
+hash matches the stored registration hash. A matching hash verifies file identity; by itself it does
+not independently certify the historical ordering of executions. [G3, G4, G6]
+The tested alternative consists of cuspy halos at a prescribed concentration relation. It does not
+cover the full range of concentration scatter, feedback-induced cores, or every dark-matter model.
+Crater II therefore favors the stock model strongly over this specified alternative. It does not
+establish odds against the entire ΛCDM framework.
+5.7 Antlia 2: a recently disturbed system still requires a successful mock
+observation
+Antlia 2 has a measured dispersion 5.98+0.37
+−0.36 km s−1 after fitting a velocity gradient. The gradient
+is 5.72+0.60
+−0.56 km s−1 per degree. Ji et al. find evidence of tidal disturbance and show that its orbital
+interpretation requires the LMC-induced reflex of the Milky Way. [12]
+In the available moving-LMC stock runs, five of the 27 states survive. The best bound remnant
+has σ = 3.48 km s−1, Rh = 2.41 kpc, and M∗= 9.4 × 105M⊙. Its most recent pericentre is about
+0.79 Gyr ago. The NFW comparison can approach the adopted observables using low-mass halos;
+on the original bound-star likelihood it is favored over the stock by about 50–140. [G4]
+The suggestion that Antlia 2 has not had enough time to reveal a settled internal dispersion can
+be made quantitative. Using its observed radius and dispersion,
+tcross ∼Rh
+σ ≃0.978 2.92
+5.98 Gyr ≃0.48 Gyr.
+(48)
+The elapsed time is only about 1.6 such crossing times; using the best stock remnant gives a
+crossing time near 0.68 Gyr. A dynamically disturbed state is plausible. This concerns time since
+disturbance, not the age of its stellar population.
+The available approximate mock analyses show that unbound members and velocity-mixture
+choices can move the inferred dispersion substantially. They even change the relative ranking of
+the tested models. That is a reason to use the observed selection and membership procedure. A
+16
+
+
+History-dependent gravity and cosmological release
+Empirical results
+quantitative explanation of the measured 6 km s−1 remains to be established. The collisionless
+integrations already contain the tidal evolution; a successful non-equilibrium account must show
+how that evolution produces the measured dispersion, gradient, density profile, and membership
+sample together. Antlia 2 remains an unresolved test of the current construction. [G6]
+5.8 What the Crater II result changes
+The successful stock trajectories show that a diffuse cold remnant can emerge from a specified
+positive mass component tied to baryonic history. This challenges the assumption that the excess
+gravity of such a dwarf must be recalculated from its present stars, or must be supplied by a
+standard-concentration NFW subhalo with the adopted abundance prior. The mechanism is
+explicit: outer stock is stripped, the central potential weakens, and a substantial stellar body
+survives.
+The next discriminants are the full stream structure, the velocity distribution including unbound
+stars, and an independently controlled model-error budget. They test the same history that
+produced the central dispersion, so they can constrain the model without introducing a new halo
+normalization for each observable.
+17
+
+
+History-dependent gravity and cosmological release
+Empirical results
+6 Result 4: dark energy from assembly and mixing
+The geodesic-clock release model fits the documented combination of Planck primary CMB
+spectra, DESI DR2 baryon acoustic oscillations, and DES supernova distances with χ2 = 2227.801,
+against 2228.316 for ΛCDM. Both calculations use linear lensing with AL = 1. The release
+fit has five cosmological parameters, compared with six for ΛCDM, and uses the exponential
+positive-allocation background defined below. Its conversion fraction is η∗= 0.0298668, its initial
+commitment abundance is tied to baryons, and one parameter sets the mixing time. [C4, C5]
+The comparison supports a competitive effective release model in this likelihood. The composition-
+preserving allocation supplies a positive background law used by this matched likelihood. Hy-
+drodynamic measurements test the release normalization independently; their sensitivity to gas
+retention and progenitor labels remains substantial.
+6.1 What the expansion measurements constrain
+In a homogeneous universe, the scale factor a(t) measures relative expansion and H = ˙a/a.
+Nonrelativistic matter of conserved comoving mass has density proportional to a−3. A vacuum
+component with pressure pΛ = −ρΛ has constant density when it exchanges no energy with other
+components. Throughout this section, energy-density equations use c = 1.
+The observations constrain this expansion through complementary physical scales. Supernovae
+supply relative luminosity distances,
+DL(z) = (1 + z)c
+Z z
+0
+dz′
+H(z′)
+(49)
+in a spatially flat universe. Their absolute magnitude and calibration must be inferred along
+with the cosmology. Baryon acoustic oscillations compare the transverse distance DM and radial
+distance DH = c/H with the sound horizon rd. The CMB fixes the early baryon and gravitating
+matter densities, the primordial fluctuation spectrum, and the angular size of the acoustic scale. A
+competitive joint fit must reproduce the early acoustic physics as well as the late distance relation.
+[13, 14]
+In the capacity model, committed material exists before the acoustic epochs and acts approximately
+as collisionless matter. Subsequent structure formation transfers part of its energy into the vacuum
+sector. This timing allows an early gravitating component and a late accelerating component to
+share an origin. The theory specifies an effective formation map and pre-acoustic epoch in O.15.
+Its microscopic formation vertex remains open; the abundance and subsequent release retain the
+stated ledger assumptions.
+6.2 The record that mixing can destroy
+An assembled baryonic object has a collective source identity: its constituents can be associated
+with a particular progenitor. Let A denote that progenitor label and Yt a physically specified
+resolution of the baryonic state at time t. The mutual information
+I(A; Yt) =
+X
+A,Y
+p(A, Y ; t) ln p(A, Y ; t)
+p(A)p(Y ; t)
+(50)
+measures how much the resolved state tells us about the progenitor. For a fixed cohort and label
+alphabet, the normalized identity loss is
+Kmix(t) = 1 −I(A; Yt)
+H(A)
+= H(A | Yt)
+H(A)
+.
+(51)
+18
+
+
+History-dependent gravity and cosmological release
+Empirical results
+It is zero when the progenitor can be recovered perfectly and approaches one when the resolved
+state carries no information about that label.
+Irreversible mixing gives this definition a dynamical basis. Suppose the mass fraction cA(x, t) of
+each label is advected by the same velocity field and diffuses with the same positive semidefinite
+tensor D. For a closed cohort of gas mass Mg, fixed label fractions, and vanishing boundary flux,
+the resolved continuum information obeys
+dI
+dt = −1
+Mg
+X
+A
+Z
+ρ
+cA
+(∇cA)T D(∇cA) d3x ≤0.
+(52)
+For the resolved continuum,
+I =
+1
+Mg
+X
+A
+Z
+ρcA ln(cA/¯cA) d3x.
+(53)
+Inserting the advection–diffusion equation into its time derivative and integrating the diffusion
+term by parts gives Eq. (52). Advection transports labels; diffusion reduces the gradients that
+distinguish their origins.
+The theory identifies this loss of a collective baryonic source label with the release of its associated
+commitment. Histories exported to other registers can persist: the relevant loss is the supporting
+label in the baryonic carrier. A permutation of identical streams supplies no distinguishable
+source record by itself. The release trigger therefore depends on resolved source identity and an
+irreversible physical process. Equation (52) establishes monotonicity under its stated transport
+assumptions. Measurements in changing spatial bins also contain coarse-graining effects, which
+must be separated from irreversible mixing. [T1, O.7–O.14]
+6.3 From retained wells to a release history
+The assembly calculation follows the fraction FZ(t) of matter that has first entered a well able
+to retain its baryons. At virial radius R, define V 2 = GM/R and M = (4π/3)∆virρcritR3, with
+ρcrit = 3H2/(8πG). Eliminating R gives
+Mcrit(z) =
+V 3
+crit
+GH(z)
+p
+∆vir(z)/2,
+tdyn(z) = R
+V =
+1
+H(z)
+p
+∆vir(z)/2.
+(54)
+The current saved assembly calculation uses Vcrit = 17 km s−1 before zre = 7.66 and 30 km s−1
+afterward. These thresholds represent gas retention before and after photoheating. They are
+astrophysical inputs to the present construction.
+The excursion-set approximation represents the smoothed initial density contrast by a stochastic
+trajectory δ(S), where S(M) = σ2(M) increases toward smaller masses. Collapse requires crossing
+B(z) = 1.686/D(z), with growth factor D(0) = 1. If M(S) = maxs≤S δ(s), the absorbed first-entry
+fraction is
+FZ(z) = Pr
+
+max
+z′≥z
+M[S(Mcrit(z′))] −B(z′)
+	 ≥0
+
+.
+(55)
+The maximum over earlier times retains a successful entry even if the retention threshold subse-
+quently rises. Each trajectory contributes once. The saved implementation uses 3×105 trajectories,
+Brownian-bridge crossing corrections, and an Eisenstein–Hu variance normalized to σ8 = 0.810. It
+gives FZ = 0.0694 at z = 6, 0.2411 at z = 3, and 0.6700 today. [C2]
+A cohort entering at tf then loses its label over a finite time. The fitted kernel is
+Kmix(t −tf; tf) = 1 −exp
+"
+−
+t −tf
+f tdyn(tf)
+#
+,
+t ≥tf.
+(56)
+19
+
+
+History-dependent gravity and cosmological release
+Empirical results
+Summing over cohorts gives
+Frel(t) =
+Z t
+Kmix(t −tf; tf) dFZ(tf).
+(57)
+The dimensionless f is the sole release-history parameter in the cosmological fit. The exponential
+approximates unresolved transport. The closure calculation fixes η∗under the common energy-
+conversion matching. The mixing time, retention thresholds, and physical label resolution require
+separate inputs.
+6.4 Energy transfer and the vacuum density
+Let ρwb
+c0 be the present density the committed component would have under dust dilution without
+release. The linear-depletion benchmark used in the likelihood has
+ρC(a) = ρwb
+c0 a−3 [1 −η∗Frel(a)] .
+(58)
+The transfer rate per physical volume is Q = η∗ρwb
+c0 a−3 ˙Frel. Conservation gives
+˙ρC + 3HρC = −Q,
+(59)
+˙ρΛ = Q,
+pΛ = −ρΛ.
+(60)
+With zero initial vacuum term, integration yields
+ρΛ(a) = η∗ρwb
+c0
+Z a
+ai
+ea−3 dFrel(ea).
+(61)
+The combined stress-energy is conserved. The a−3 weighting gives early release a larger contribution
+to the present vacuum density.
+The history is an ensemble expectation in the statistically
+homogeneous state, evaluated on the local source clock. A realized local mixing event does not
+instantaneously update that prescribed expectation.
+Composition-preserving allocation instead gives
+ρ+
+C(a) = ρwb
+c0 a−3e−η∗Frel(a),
+(62)
+ρ+
+Λ(a) = η∗ρwb
+c0
+Z a
+ai
+ea−3e−η∗Frel(ea) dFrel(ea).
+(63)
+Its internal components stay nonnegative on the domain of positive total stock. A prescribed
+homogeneous drain can still exhaust an underdense region; this total-stock boundary requires a
+physical completion. At the reference history, the homogeneous comoving loss is 1.9618%, compared
+with 1.9813% in the linear benchmark. The weighted vacuum integral and its perturbations
+require a separate matched fit. [T1, O.3; T4]
+The total capacity budget ties the would-be committed abundance to the baryons. The bare
+coefficient is 1/ϵ = 5.32068; the formation prescription’s free-nucleon mass convention, including
+its helium correction, gives the adopted ρwb
+c0 /ρb0 = 5.333. This tie assumes that the relevant charge
+and commitment were established before the CMB acoustic epochs. Release slightly reduces the
+actual present dust-to-baryon ratio. [T1, O.3 and O.13; C3]
+Write ωi = Ωih2, with H0 = 100h in km s−1 Mpc−1. For the linear-depletion benchmark, spatial
+flatness gives
+h2 = ωr + ωb + ωwb
+c [1 −η∗Frel(1)] + η∗ωwb
+c Irel,
+Irel =
+Z 1
+ai
+a−3 dFrel.
+(64)
+Here h is calculated from the release history and densities. The six-parameter reference model
+fits ωb, ωc, h, As, ns, τ. The tied release model fits ωb, f, As, ns, τ. Shared supernova calibration
+nuisance parameters are handled identically in both models.
+20
+
+
+History-dependent gravity and cosmological release
+Empirical results
+6.5 A covariant effective description
+The current theory supplies a constrained clock field ϕ whose gradient follows the committed dust.
+With signature (−, +, +, +), define X = −1
+2∇µϕ∇µϕ and
+SCΛ =
+Z
+d4x√−g
+h
+λ
+
+X −1
+2
+
+−VF (ϕ)
+i
+.
+(65)
+Variation of λ imposes a unit timelike clock gradient. Writing uµ = −∇µϕ gives
+T CΛ
+µν = λuµuν −VF gµν,
+ρC = λ,
+ρΛ = VF .
+(66)
+The prescribed potential is the integrated release history in Eq. (61), expressed as a function of
+the background clock and fixed before variation. The clock equation produces the energy exchange
+between dust and vacuum. It also specifies perturbations: in Newtonian gauge the constraint
+gives δ ˙ϕ = Ψ, and δρΛ = ˙VF δϕ.
+The action fixes a local effective evolution for the prescribed history. In the geodesic clock’s
+comoving synchronous gauge, δρΛ = 0 and
+˙δC = −1
+2 ˙hs + ˙ρΛ
+ρC
+δC,
+(67)
+where hs is the synchronous metric trace. An exact linear fluid representation subtracts conserved
+reference dust ρref ∝a−3 on the same flow and defines
+ρD = ρC −ρref + ρΛ,
+pD = −ρΛ,
+c2
+s,D = 0.
+(68)
+The conserved components reproduce the physical clock stress and metric perturbations. Choosing
+ρref < ρC keeps the residual enthalpy positive. Numerical changes of this arbitrary split leave
+lensing power invariant to 1.16 × 10−7 in the tested range; an independent subhorizon growth
+calculation agrees within 9.2 × 10−7 in the tested power ratio. These are saved numerical checks.
+The full cosmological perturbation derivation is outside the current Lean proofs. [C4; T4]
+6.6 The matched linear-lensing likelihood
+The saved release fit has
+ωb = 0.02237932,
+f = 0.27424478,
+h = 0.68938856,
+(69)
+ln(1010As) = 3.04585067,
+ns = 0.96662931,
+τ = 0.05661582.
+(70)
+Both local optimizations converged. Higher-accuracy evaluations of their endpoints give
+Model
+CMB
+BAO
+Supernovae
+Total χ2
+Geodesic release
+589.078
+11.707
+1627.016
+2227.801
+ΛCDM
+590.215
+11.191
+1626.909
+2228.316
+The release and reference fits have H0 = 68.9389 and 68.6558 km s−1 Mpc−1, respectively. Their
+difference ∆χ2 = −0.515 indicates near-equal fit quality. Counting five versus six cosmological
+parameters gives ∆AIC = −2.515. This conditional parameter-count comparison supplies neither
+a posterior odds ratio nor a penalty for the choice of release prescription. The saved searches
+establish local optima. [C4, C5]
+The archived PPF calculation with a fixed lensing rescaling gave 2227.329 against its matched
+2226.77 reference. Within that pipeline, fixing f = 0.5 or 0.75 raised χ2 by 45.87 or 189.62 relative
+21
+
+
+History-dependent gravity and cosmological release
+Empirical results
+to its reference, and the reported width was f ≃0.28 ± 0.03. Those sensitivity results belong
+to that pipeline; the absolute statistics cannot be compared across the two lensing treatments.
+Its weighted-integral target Irel ≃94.2 remains the reference for the archived hydrodynamic
+comparison below. [C1, C2]
+The likelihood uses Planck 2018 plik_lite high-ℓTT, TE, and EE, supplemented by two low-ℓ
+temperature bins and a Gaussian optical-depth prior τ = 0.0506 ± 0.0086. Calibration ycal = 1 is
+fixed. The BAO piece uses thirteen distance measurements from seven DESI DR2 tracer/redshift
+samples, retaining the tabulated within-sample correlations. The sound horizon and distances are
+computed by CAMB. [C1, C2, C4]
+The supernova archive used by the pipeline contains the DES-Dovekie recalibration data and
+covariance. The code profiles a common magnitude offset and an additional offset for z < 0.1.
+Explicitly, if r is the residual vector, W the inverse covariance, and X = (1, 1z<0.1), the minimized
+statistic is
+χ2
+SN = rT Wr −(XT Wr)T (XT WX)−1(XT Wr).
+(71)
+Both cosmologies receive the same freedom. The present best-fit record does not save the fitted
+low-redshift offset, so a numerical offset is not assigned to it here. Supernova calibration remains
+part of the joint inference. [15, 16][C1]
+6.7 Accumulation at high redshift and dominance at late time
+The fitted exponential-allocation history gives
+Frel(0) = 0.6635663,
+z1/2 = 7.9278,
+(72)
+ρΛ(2)
+ρΛ(0) = 0.9682403,
+e−η∗Frel(0) = 0.9803765.
+(73)
+Here z1/2 is the epoch at which the vacuum density first reaches half its present value. About
+65.8% is present by z = 6. The remaining stock has lost 1.96235% of its initial comoving mass,
+and the drain between z = 1 and today is only 0.49347% of that initial stock. The vacuum integral
+weights release by a−3, so early release contributes disproportionately to the accumulated density.
+These values condition on the fitted kernel and reference assembly table used in the history figure
+below. [C5]
+Early accumulation is compatible with late dynamical importance. Matter density was much
+larger at high redshift and continues to dilute as the universe expands. A vacuum density already
+close to its final value can therefore remain a small fraction of the total for a long interval. The
+coincidence problem becomes a question about the normalization and timing of assembly, retention,
+and release. Equation (61) connects these quantities quantitatively.
+6.8 What the hydrodynamic measurement finds
+The archived Gadget-4 calculation measures progenitor information during self-gravitating assembly.
+It follows 2 × 963 particles in a 0.75 h−1 comoving Mpc box, from initial conditions at z = 63 to
+z = 6, with 48 analysis snapshots between z = 15 and 6. Primordial hydrogen/helium cooling and
+a star-formation prescription are included. The cohort consists of the gas particles in a host at
+first entry. Progenitor labels come from group membership one dynamical time earlier; ungrouped
+gas is divided into spatial octants. Several partitions of the current host measure the remaining
+label information. [C2]
+Approximately half of the resolved label information is already lost at entry. The measured kernels
+are fitted by
+Kmix(τ) = 1 −(1 −K0)e−τ/τmix,
+K0 ≃0.5.
+(74)
+22
+
+
+History-dependent gravity and cosmological release
+Empirical results
+0
+2
+4
+6
+8
+10
+12
+14
+Redshift z
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Fraction
+Exponential-allocation history
+Frel: released fraction
+ρΛ(z)/ρΛ(0)
+0
+1
+2
+3
+4
+5
+6
+Redshift z
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Fraction of critical density
+Accumulation and eventual dominance
+ΩΛ(z)
+Ωmatter(z)
+Figure 4: The fitted exponential-allocation release history from the table. The released fraction counts
+cohorts; the vacuum density weights their release by the physical matter density at that epoch. The right
+panel shows why a substantial early vacuum density becomes dynamically important only much later.
+These curves condition on the fitted kernel and fixed reference assembly history.
+The subsequent decay takes a few dynamical times. Because this kernel includes an immediate
+component, its fitted tail time cannot be directly equated with the pure-exponential f in the
+cosmological fit. The appropriate comparison convolves each measured kernel with its corresponding
+first-entry history.
+Retention gate
+Hosts
+Irel across partitions
+Reference target
+17 km s−1
+3
+75.4–75.9
+94.2
+14 km s−1
+10
+93.1–96.7
+94.2
+12 km s−1
+16
+108.0–109.9
+94.2
+Table 2: The measured mixing histories after convolution with assembly. Ranges show changes among
+spatial partitions, not statistical confidence intervals. Retention gates were imposed in the analysis.
+At the reference 17 km s−1 gate, the measured integral is about 20% too small. A 14 km s−1 gate
+brings it into the required range. That agreement identifies a physical possibility, but selecting a
+gate after examining the integral does not independently predict its normalization. At the reference
+gate, changing the lookback time of the labels moves the integral to 82–83; using only grouped
+gas moves it to 57–65. The definition of the retained source record is therefore consequential.
+The run resolves only about 500–2400 gas particles per host, includes three hosts at the reference
+gate, and omits molecular cooling, feedback, and explicit subgrid diffusion. Its spatial partitions
+scale with the evolving halo radius. A physical prediction requires label and resolution rules
+fixed by the theory, gas-retention thresholds measured from the simulation, and convergence
+under improved gas resolution and transport physics. The present run supports a measurable
+assembly-and-mixing mechanism while leaving its absolute release rate unsettled.
+6.9 Equation of state, vacuum energy, and decisive tests
+The vacuum stress has intrinsic wΛ = pΛ/ρΛ = −1. Its density grows because it receives energy. If
+one describes this growing density by a fictitious separately conserved fluid, its inferred equation
+of state is
+weff = −1 −1
+3
+d ln ρΛ
+d ln a = −1 −
+Q
+3HρΛ
+≤−1.
+(75)
+This effective phantom sign comes from energy transfer. A reconstructed decrease of the physical
+vacuum density would contradict the monotone release law, provided the matter transfer and
+23
+
+
+History-dependent gravity and cosmological release
+Empirical results
+−0.6
+−0.4
+−0.2
+0.0
+0.2
+Δχ2 relative to LCDM
+LCDM (6)
+Geodesic release (5)
+0
+-0.515
+AL = 1 in both models
+Matched linear lensing
+12
+14
+17
+Imposed retention gate [km/s]
+60
+70
+80
+90
+100
+110
+Irel = ∫a−3 dFrel
+Hydrodynamic normalization test
+Archived PPF reference target
+Partition range
+Figure 5: Left: the matched linear-lensing likelihood comparison, with cosmological parameter counts in
+parentheses. Right: the archived hydrodynamic kernels compared with the linear-depletion PPF reference
+target Irel = 94.2. The ranges describe partition choices; the positive-allocation model uses a different
+weighted integral.
+observational systematics were modeled consistently. A fitted w0, wa curve under conserved-CDM
+assumptions is a different inference problem; its crossing of −1 cannot alone decide this interacting
+model.
+Normalized microscopic probabilities are unchanged by a common shift of their energy origin.
+Coupling to gravity also requires the absolute stress-energy assigned to that origin. The current
+cosmological construction selects zero initial vacuum density and generates the subsequent density
+through release. Establishing that selection from the microscopic gravitational theory remains
+necessary to claim a solution of the absolute vacuum-energy problem. The empirical fit tests the
+generated component under the selected initial condition.
+The matched calculation evolves the geodesic-clock perturbations with zero rest-frame sound speed
+and AL = 1. Nonlinear lensing corrections are disabled in both models, and the late-radiation
+truncation that introduced reference-split dependence is disabled. The assembly table retains its
+reference power spectrum while cosmological parameters vary. Both models use massless neutrinos
+with Neff = 3.044 and the same simplified low-ℓtreatment. [C4, C5]
+A full test requires a validated nonlinear response, assembly recomputed for the sampled cosmology,
+the full low-ℓlikelihood, and an independently measured release kernel. The selected depletion
+completion below inherits the cold linear fit; its nonlinear spatial predictions require a separate
+test. The present result demonstrates near-equal fit quality with a microscopically tied abundance
+and a physically interpretable release parameter in the specified pipeline.
+6.10 A self-limiting local completion and its coupling
+The unit-clock action is exact above a selected depletion threshold. For X = −∇µϕ∇µϕ/2, a
+covariant continuation is
+P = λX −e −V,
+L = 3(K −V ) > 0,
+e = λ
+2 + 2[L −λ]3
++
+3L2
+,
+λ ≥L/2.
+(76)
+The constant K is a minimum total energy. For λ > L the Lagrangian is exactly λ(X−1/2)−V . On
+the intermediate branch r = λ/L ∈(1/2, 1), define v =
+√
+2X and j = λv. Then X = 1/2−2(1−r)2
+and
+˙j = −
+
+θ + VϕA(r)j
+λ2
+
+j,
+A(r) = 1 + 2r −2r2
+3 −2r
+∈[3/4, 1].
+(77)
+24
+
+
+History-dependent gravity and cosmological release
+Empirical results
+For regular flow with K −V bounded away from zero, the current stays nonnegative. Its depleted
+homogeneous endpoint has j = 0, ρ = K, p = −K. The regular sound speed lies between zero and
+one. The constant minimum removes the scalar force at rest. This slows the source field relative
+to proper time; no universal atomic-clock effect has been established. The cubic and floor are
+constitutive choices. [D1]
+For the fitted history, the choice K = V (1) + B[e−η∗F(1) −e−η∗] bounds all remaining future
+release under the stated monotonicity assumptions. The saved value is K = 0.3369964 in units
+3H2
+100/(8πG), with maxa≤1 L/ ¯C = 0.0299937. The background and a neighborhood of its linear
+perturbations stay on the original branch. Hence the completion inherits the fitted cold adiabatic
+linear cosmology. Deep voids enter a pressure regime with a changed minimum energy and require
+new expansion, profile, and lensing predictions. Nonzero-null-gradient interfaces and nonlinear
+caustics remain unresolved.
+A finite-work contact extends this mechanism to redistribution. For a transition E →E′ toward
+target h, let Q = Θ ln(h′/h), W = E′ −E +Q, U′ = U −W, and E′
+B = EB +Q. Their total energy
+is conserved. A symmetric gate v(U)v(U −W) allows only admissible endpoints and vanishes at
+the floor. Central pair impulses give reciprocal momentum exchange. The target and physical
+rate require selection beyond detailed balance. [D2]
+A warm fluid stress stores heat as eT = znγ ≥0 with 1 < γ ≤2 and ρ = R0(n, ϕ) + eT ,
+p = p0 + (γ −1)eT . Its sound speed is an enthalpy-weighted average of the cold speed squared and
+γ −1, preserving the causal local bound and energy floor. The gate g = nµ/(λ0 + γeT ) ∈[0, 1]
+retains a regular signed power gBc and reduces to the cold v2
+0 gate. In the selected γ = 4/3
+compression test, five resolutions up to 2048 cells conserve mean total energy to 4.9 × 10−15
+and keep positive current. Generated heat falls from 0.0641 to 0.0140 under refinement, so
+physical dissipation has not converged. A separate particle-feedback test has fractional energy
+error 1.02 × 10−5 and stops short of the target when available work is insufficient. These tests
+establish a conservative effective implementation; the coupled spatial and multistream evolution
+remains to be validated. [D2]
+25
+
+
+History-dependent gravity and cosmological release
+Empirical results
+7 Clusters: conservative dynamics and observed targets
+The cluster calculation uses positive, inertial stock, gas, and stars in one gravitational potential.
+Gas pressure and shocks can separate the gas from the weakly coupled stock and galaxies during
+an encounter. The observed lensing map measures their total projected mass. This construction
+supplies a transport mechanism and quantitative targets; the present comparisons do not constitute
+a fitted cluster population. [CL1–CL3]
+7.1 A common mass budget and a conservative encounter
+For a fully released closed cohort, the adopted normalization is
+kC = e−η∗/ϵ = 5.1760752,
+C0 = kCB0.
+(78)
+If its baryons and stock remain coextensive, the baryon fraction is 1/(1 + kC) = 0.1619151. More
+generally, an aperture retains different fractions of the ancestral components. The measured target
+can be expressed as
+Creq = Mgrav −B,
+ηret = kCB
+Creq
+= fret
+b
+fret
+C
+.
+(79)
+This distinguishes the common cohort normalization from the distribution produced by assembly.
+A positive inventory exists for Creq > 0: B0 = max(B, Creq/kC) leaves nonnegative exterior
+baryons B0 −B and stock kCB0 −Creq. It does not determine a realizable transport history or
+its energy cost.
+The encounter model uses central pair impulses with opposite momentum changes. If w is the
+radial relative velocity and µ the reduced mass, the kinetic change is ∆K = µ(w′2−w2)/2. Explicit
+work and heat registers balance that change, and a symmetric gate suppresses transitions with an
+endpoint at the energy floor. Gas and stars from either progenitor can be local partners. The
+target distribution, rate, range, and initial work reserves are selected effective inputs. [D2, CL1]
+Fourteen encounters and three isolated controls test a common Plummer mass ratio of 0.3, with
+1344 particles at baseline and 2688 in the resolution control. Weak contact leaves stock near
+the galaxies while gas lags. A floor-state run permits no events and reproduces the no-contact
+evolution; a low-work run permits 61 events against 7114 with the larger reserve. The largest
+energy drift is below 0.007% of the binding energy; pair momentum conservation holds at roundoff.
+The strongest tested contact changes the isolated stock median radius by −27% and gas median
+radius by +46% in six dynamical time units. That control prevents interpreting a higher contact
+rate as an established cluster solution. The particle encounters test the finite-work coupling; they
+do not evolve the full spatial stress of the depleted scalar.
+7.2 X-COP profiles and independent weak-lensing masses
+The public X-COP archive supplies twelve hydrostatic radial profiles, seven with stellar mass data.
+Five overlap the MENeaCS lensing catalogue. The comparison adopts the observational distance
+convention H0 = 70 km s−1 Mpc−1 and Ωm = 0.3. Projected stellar masses are approximately
+deprojected using the stated profile model. Unmeasured intracluster light, hydrostatic departures,
+triaxiality, and profile covariance remain relevant. [18, 19][CL2]
+All nominal NFW hydrostatic targets admit positive cumulative stock and positive stock in fifteen
+tested shells. At the hydrostatic R500, the coextensive-to-hydrostatic total-mass ratios for A1795,
+A2029, A2142, A2319, A644, A85, and ZW1215 are respectively 0.903, 0.912, 1.023, 1.213, 0.851,
+0.952, and 0.679. These reconstructed totals are inputs to a target audit, rather than stock profiles
+predicted from the observed baryons.
+26
+
+
+History-dependent gravity and cosmological release
+Empirical results
+Cluster
+Coextensive M500
+Lensing M500
+ηret
+A1795
+3.96–4.23
+9.3 ± 2.2
+0.518
+A2029
+7.46–8.07
+12.1 ± 2.5
+0.704
+A2142
+9.29–10.02
+9.7 ± 2.3
+0.969
+A85
+5.20–5.43
+5.7 ± 2.2
+0.937
+ZW1215
+4.19–4.46
+3.5 ± 2.2
+1.143
+Table 3: Masses in 1014M⊙. The coextensive prescription solves its own overdensity radius; its range
+doubles the nominal stellar mass and is a sensitivity interval. Retention ratios use the nominal baryons
+within each central lensing target’s radius. Lensing errors are the published NFW marginal errors. No
+combined exclusion significance is assigned.
+Figure 6: The common coextensive prescription and two mass estimators from the same lensing data.
+Their errors are correlated. A1795 and A2029 require a transport or reconstruction explanation; A2142 and
+A85 are useful normalization controls. ZW1215 is sensitive to the estimator.
+7.3 What the outliers require
+The central A1795 and A2029 lensing targets require respectively 48.2% and 29.6% of the minimal
+cohort’s initial baryons outside the aperture; for A1795 this is 7.87 × 1013M⊙. Twelve finite
+transport maps preserve positive marginals for the seven hydrostatic and five lensing targets. This
+inventory construction leaves the assembly time and work requirement undetermined. [CL3]
+The gas must obey the same total potential,
+ag = −g −P ′
+th + P ′
+nt
+ρg
++ fCg
+ρg
+.
+(80)
+Segregation, acceleration, and reciprocal contact are possible contributions. Passive drag vanishes
+at zero drift, so stationary contact support requires its own physical law. XRISM’s low turbulent
+support in A1795 and A2029 constrains a purely turbulent explanation. [21, 22] The conditional
+pressure audit also depends on inner lensing extrapolation and thermal reconstruction; a joint fit
+remains open.
+A644’s 58-knot forward profile contains 11 negative total-mass increments and 15 negative
+stock increments. A monotone reconstruction requires 2.156 marginal error units of maximum
+27
+
+
+History-dependent gravity and cosmological release
+Empirical results
+displacement; absent joint covariance, this is not an exclusion significance. Positive parametric
+profiles require comparison with the underlying gas data. For ZW1215, at 1320 kpc the correlated
+NFW-lensing, aperture-lensing, and hydrostatic estimates are 4.32, 7.0, and 7.41 × 1014M⊙. Both
+systems retain reconstruction uncertainty rather than a new gravity coefficient.
+7.4 The Bullet Cluster supplies a spatial target
+The CANUCS Bullet v1 best-fit maps separate a total lens reconstruction from a supplied
+gas component.
+At lens redshift 0.296 and Dls/Ds = 1, their normalization gives Σcrit =
+1.8268761 × 109M⊙kpc−2 and 1′′ = 4.41302 kpc. Registered apertures around BCG3 give
+Radius
+Mtotal/1013M⊙
+Mg/1013M⊙
+Gas fraction
+60 kpc
+2.151
+0.099
+0.046
+150 kpc
+8.511
+0.618
+0.073
+The released subcluster halo centre lies 3.92 kpc from BCG3. The supplied gas-density map peaks
+about 169 kpc away within the specified search region, with an 8.68 kpc gas pixel. This is a
+density-map diagnostic, rather than an X-ray brightness peak or an offset posterior. Subtracting
+gas leaves a component that still includes stars. [20][CL2]
+Figure 7: Observed targets from the released Bullet v1 lens model. The red contours show its supplied
+gas component. Both panels are derived from the public reconstruction; no simulated map is fitted here.
+Aperture masses change by at most 0.214% under pixel coarsening; this is a numerical check and
+excludes observational uncertainty. Under an illustrative 1015M⊙, 300 kpc scaling, the encounter
+calculations have 24–30 kpc force softening and roughly 90 kpc map smoothing. They cannot
+establish agreement with the few-kiloparsec halo–galaxy alignment. A successful forward test
+must preserve isolated cluster profiles and then reproduce lensing, gas morphology, and offsets
+using one selected contact law and independently specified assembly conditions.
+28
+
+
+History-dependent gravity and cosmological release
+Empirical results
+8 Independent checks across scales
+The common coefficients connect several additional comparisons. The calculations below retain
+their own selections and covariance treatments; overlapping catalogues and spectra are not
+multiplied into a single significance. The execution register identifies completed diagnostics, open
+likelihoods, and their source files. It is an exploratory local record, rather than an external blind
+preregistration. [U1]
+8.1 Local galaxies and weak lensing
+For 130 selected SPARC galaxies with 2710 radial points, profiling the stated stellar mass-to-light,
+distance, and inclination priors gives a common-a0 penalized score of 11258.0. Adding a 5 km s−1
+velocity floor gives 3433.2, with median per-galaxy χ2 per point of 1.54. The sensitivity to the
+adopted velocity errors is substantial. This is a diagonal-error algebraic-RAR check; it does not
+replace the full director-field calculation or account for all correlated noncircular motions. For 100
+flat-velocity galaxies, the baryonic Tully–Fisher log residual has median 0.020 dex and rms 0.067
+dex. [U1, S03][23]
+The isolated-lens audit distinguishes the older KiDS release with its covariance from the updated
+published table. At the reference a0, the latter gives a diagonal statistic of 10.06 for fifteen bins,
+or 5.99 for seven inner bins, including the tabulated statistical and interpolation/extrapolation
+uncertainties. Its full table covariance was unavailable, and its published H0 = 73 convention was
+retained. The two reductions overlap and provide no independent combined evidence. [U1, S04][24]
+8.2 CMB spectra, lensing, and velocity comparisons
+The positive-allocation cosmology of Section 6 was also evaluated against 135 ACT primary-
+spectrum bins, profiling the stated calibration at fixed cosmological parameters. The score is
+162.73 against 162.02 for the reference ΛCDM fit. The ten-bin ACT lensing comparison gives
+16.21 against 17.86. A higher-accuracy lensing calculation changes the bandpowers by 0.013%.
+These are separate checks; adding their scores to Planck would require the appropriate overlap
+cuts and joint covariance. [U1, S05–S06][25]
+The lensing–velocity statistic EG depends on the Weyl potential and the baryon velocity response.
+The calculation gives 0.4375 at z = 0.316 and 0.3862 at z = 0.555, nearly constant over k = 0.005–
+0.15 Mpc−1. The cited ACT–BOSS estimates are 0.49+0.14
+−0.11 and 0.31+0.06
+−0.05. The no-slip identity
+alone does not determine this observable. In the conserved-fluid implementation, CAMB’s ordinary
+delta_tot omits part of the bookkeeping capacity component; a physical total-matter σ8 must
+be reconstructed independently of the arbitrary reference-dust split. [U1, S09][26]
+The best-fit vacuum density reaches half its present value by z = 7.928 and has ρΛ(2)/ρΛ(0) =
+0.96824. Its effective equation of state today is −1.00054. A conserved-CDM w0, wa inference and
+this interacting release model must be compared through the same distances and perturbations.
+The phantom sign alone does not settle the DESI comparison. [C5]
+8.3 Stellar systems, constants, and tensor modes
+With the parent-carrier rule, a wide binary has no independent capacity halo. A radial Galactic-
+tide estimate for one to two solar masses at 10–30 kAU gives ∆v/v ≃1.1 × 10−5–6 × 10−4. The
+range depends on separation, mass, and orientation; a universal 10−4 ceiling is unwarranted. The
+selected Solar quadrupole Q2 = 0 is 0.89 quoted standard deviations from the Cassini central
+value. No full Gaia selection-and-contamination likelihood has been performed. [U1, S10]
+29
+
+
+History-dependent gravity and cosmological release
+Empirical results
+The selected particle-coefficient route gives G = 6.6742890813 × 10−11 m3 kg−1 s−2, −0.073 quoted
+CODATA standard deviations; the muon ratio is 206.768280237, at −0.535 quoted standard
+deviations. Its tau mass is 1776.9188 MeV against 1776.93 ± 0.09 MeV. Of the 401 tested routing
+integers, only the integer 7 lies within two quoted standard deviations for the stated route;
+of 43 tested Farey candidates, only 2/7 lies within one. These finite-menu uniqueness checks
+do not quantify the historical search over possible formulas. The measured Newton scale and
+marked-formula residuals were known during development. [U1, S11][27]
+For a constant Einstein coefficient and minimally coupled scalar matter, the tensor quadratic
+action has two positive-energy luminal modes. Public GWTC-4 polarization comparisons give
+combined log10 BS/T = −14.72 and log10 BV/T = −5.33 for pure scalar and vector alternatives.
+Mixed tensor–scalar and tensor–vector alternatives have values −0.20 and +0.10, respectively.
+This supports compatibility with the minimal tensor branch and leaves mixed sectors weakly
+constrained; it supplies no distinctive preference over GR. The native tensor continuum and a
+map from higher-curvature operators to propagation or Lorentz-violation bounds remain open.
+[U1, S12; D1][28]
+Three eight-Gyr halo phase realizations retain late stock tilts of 39.58◦–42.36◦and stellar tilts of
+21.38◦–22.33◦. Rounding and precession persist. These are repeatable outcomes of the specified
+kinetic model, with force convergence and stationary formation still unresolved. The aligned-
+branch failure remains part of the comparison. The earlier Crater II, Antlia 2, and tidal-dwarf
+calculations retain their stated selection and dynamical limits. [U1, S13–S14; G3–G7]
+8.4 Common-normalization disk and dwarf checks
+At a0 = 1.2588 × 10−10 m s−2, the reduced old-disk solver gives NGC 628 χ2 = 2.04 for five
+dispersions and a −0.21σ radial–vertical mass offset. The approximate algebraic QUMOND
+comparison gives χ2 = 8.95 and −2.91σ. The small normalization change preserves the earlier
+pattern. Gas-profile, inclination, and scale-height uncertainties remain, and a round conventional
+halo can give similar vertical gravity. [U1, S15]
+The moving-LMC satellite grid was reweighted with ten, twenty, and thirty percent model
+uncertainty. At thirty percent the Crater II stock/NFW evidence falls to 94–155 from 2.6 × 105–
+2.0×108 at ten percent; Antlia 2 rises from 0.007–0.019 to 0.69–0.74. The grid does not implement
+the new conservative joint-stock contact or span broad cored-halo alternatives. Its evidence
+remains conditional on the specified histories, priors, and error budget. [U1, S14]
+30
+
+
+History-dependent gravity and cosmological release
+Empirical results
+9 Joint interpretation
+The empirical contribution is a common prescription that connects a galactic acceleration scale, a
+retained mass distribution, tidal evolution, and cosmological energy transfer. The calculations use
+the same microscopic entropy and conversion fraction in several settings. Their success would
+be more constraining than unrelated curve fits because changing those coefficients would move
+several observables at once.
+The strongest present numerical agreements are the LMC enclosed masses, the two coefficients
+of the published acceleration relation under the stated linear projection, and the near-equal
+cosmological likelihood with a tied abundance. Crater II supplies a concrete dynamical mechanism
+and a favorable comparison with a specified NFW population. Its evidence depends strongly
+on the adopted error budget. The tidal-dwarf calculation tests inheritance at the level of a
+small dynamical-mass sample. Antlia 2 and the independently measured cosmological mixing
+normalization remain active constraints on the model.
+9.1 The derivation has identifiable physical commitments
+Step
+Result supplied
+Physical commitment or
+outstanding test
+Finite face and cell
+ensemble
+16 = 7 + 9; 1680 cell states;
+g = 7.4198000 and η∗= 0.02986684.
+The spin, matching vertex,
+occupancy rule, closure invariant,
+and evidence measure define the
+ensemble.
+Horizon and transverse
+response
+ϵ = g/(2π)2; a0 = ϵcH; Bose
+response.
+Phase loading, horizon contact, and
+the mode-energy mapping connect
+the count to acceleration.
+Retained galactic stock
+An inertial positive mass
+component, inherited by carriers
+and transported by collisionless
+evolution.
+Assembly budgets, carrier
+assignment, profile preparation, and
+relaxation must be specified
+independently of the target
+observables.
+Cosmological conversion
+η = η∗and an initial abundance
+near ϵ−1.
+Common energy conversion, the
+selected pre-acoustic formation map
+(whose microscopic vertex remains
+open), and the absolute vacuum
+matching condition enter the
+physical identification.
+Assembly and mixing
+A cumulative release function and a
+weighted vacuum integral.
+Retention gates, progenitor labels,
+and transport set the normalization;
+the current expansion fit determines
+one mixing parameter.
+Geometry and
+perturbations
+Reduced Newtonian equations and
+no-slip identity proved from the
+specified action; carrier equations
+proved on their regular branch.
+The continuum embedding,
+constrained director dynamics, and
+the physical matching of the
+effective actions remain separate
+requirements.
+Table 4: The logical connection between the microscopic model and the observables. An exact finite
+calculation can coexist with conditional physical identifications and an incomplete continuum derivation.
+This chain explains why the empirical results bear on the microstructure: the model does not
+choose a separate acceleration coefficient for the LMC and the redshift sample, or a separate
+31
+
+
+History-dependent gravity and cosmological release
+Empirical results
+release fraction for each cosmological data combination. It also identifies which steps the data
+cannot determine by themselves. A fit to an effective gravitational field does not uniquely identify
+the microscopic state space that produced it.
+9.2 Which conventional assumptions are challenged
+For the LMC, the comparison challenges the applicability of an instantaneous external-field
+suppression to a previously established gravitating stock. A retained distribution continues to
+contribute after the ambient field changes. The tested QUMOND prescriptions and the stock
+model make different mass predictions with the same stated baryons. Joint stream and reflex
+modeling can test that distinction more directly than comparing scalar enclosed-mass summaries.
+For Crater II, the issue is the central structure and stripping response of the excess gravitating
+mass. The tested capacity profile loses enough support to produce a cold, extended remnant under
+the adopted orbit and initial conditions. Standard-concentration NFW halos under the tested
+abundance prior perform poorly in that comparison. Low-concentration and cored dark-matter
+alternatives require their own matched tests. Assembly history already matters in conventional
+dark-matter dynamics; history dependence alone cannot distinguish the two frameworks.
+For the acceleration scale, the proposed change is a cosmological normalization a0 ∝H. Its observed
+value at one epoch would cease to be an independent constant. The published intermediate-
+redshift relation is consistent with the fixed reference curve under the stated projection. A direct
+galaxy-level likelihood would test both its curvature and its scatter.
+For dark energy, the proposed change is a vacuum density generated by irreversible source-identity
+loss. The microscopic conversion and formation abundance restrict a model that still fits the
+CMB and distance data. The remaining release normalization must be obtained independently
+before the observed vacuum abundance can be called a prediction of the microstructure alone.
+The current evidence supports these mechanisms as testable alternatives; it does not establish
+the elimination of all dark-matter models, all MOND formulations, or the absolute cosmological
+constant problem.
+9.3 A joint test of the same construction
+The galactic comparisons use the reference H0 = 67.4 km s−1 Mpc−1, while the matched linear-
+lensing release fit gives 68.9389. If horizon contact is evaluated at the latter value, the local scale
+rises by about 2.3%. A joint fit must propagate the fitted H(z) into galaxy assembly and the
+acceleration relation, including any finite relaxation time of an existing stock. The reference-curve
+agreement and the cosmological best fit are presently separate calculations.
+The same requirement applies to the Milky Way potential. The available moving-LMC calculations
+use a Galactic mass within 50 kpc about 17% above the Brooks et al. inference in the stock model,
+and about 36% above it in the NFW model. A joint Milky Way–LMC fit would alter the satellite
+pericentres and the stripping histories. Those changes should be propagated to both Crater II
+and Antlia 2 before assigning a combined evidence ratio. [G4][5]
+A decisive program follows from these dependencies:
+1. Infer the Milky Way and LMC jointly using streams, halo reflex kinematics, and a common
+source-conserving force model. Predict additional stream observables from the resulting mass
+distributions.
+2. Evolve the dwarf populations with resolved self-gravity and prespecified progenitor priors.
+Apply the actual stellar selection, velocity-gradient, and membership inference to their mock
+observations. Include concentration scatter and physically motivated cores in the dark-matter
+comparison.
+32
+
+
+History-dependent gravity and cosmological release
+Empirical results
+3. Fit the intermediate-redshift galaxy data directly with the cosmological H(z) from the same
+model.
+Preserve correlations between baryonic masses, pressure support, geometry, and
+acceleration.
+4. Measure retention and source-label loss in converged hydrodynamic runs with a label prescrip-
+tion fixed in advance. Use that release history with the existing positive-allocation perturbation
+implementation and a matched full cosmological likelihood.
+Each step tests an existing physical commitment of the construction.
+A Provenance and numerical verification
+A.1 Scope of the verification
+The integrated Lean 4.35.0 library contains 160 modules and 2,937 audited theorem constants,
+including its legacy sublibrary. The manuscript ledger records 874 statements as proved, 90 in
+part, 153 as physical premises, 64 as data comparisons, and 19 as simulation outputs. Its other
+entries distinguish numerical calculations, definitions, and statements awaiting formalization. The
+saved audit reports only the standard Lean axioms and no admitted proofs. The counts include
+mathematical helper results. [T4]
+For this paper, the relevant proofs cover the finite ensemble and closure root, the restricted freedom
+in the marked-register identification, positive finite allocation, and radial relaxation with preserved
+angular marginals. First variation with compactly supported tests gives the reduced two-potential
+and Newton equations. Decay at infinity gives Φ = Ψ. The carrier-action proof assumes a smooth
+interpolating function; the adopted singular derivative at zero baryonic field limits its direct
+classical application. The constrained director equation, full cosmological perturbations, and
+observational likelihoods retain their separate analytic or numerical status.
+The numerical review independently evaluates the finite ensemble, redshift projection, LMC mass
+profile and QUMOND flux, archived Crater II likelihoods, and a reference release history. The
+current verification record uses the unrounded acceleration coefficient and imports the higher-
+accuracy matched cosmology endpoints. The associated figures use those records. The archived
+release-history and hydrodynamic panels retain their original linear-depletion calibration.
+The dated research records include the exponential-allocation cosmological optimization, finite-
+work and fluid tests, merger controls, observed cluster reductions, and outlier audits. They
+were not rerun to typeset this paper. Six extension modules contribute 119 explicit theorem
+declarations. The integrated 4.35 build, source scan, axiom audit, and ledger citation check pass;
+the six modules also pass standalone Lean/mathlib 4.19 checks. The existing claim ledger retains
+its snapshot scope. [T5] Source inspection and saved audits establish which calculation supports
+each statement. Numerical convergence, selection effects, and physical matching are assessed with
+the relevant empirical result. SHA-256 records preserve the identities of the source and result
+snapshots.
+33
+
+
+History-dependent gravity and cosmological release
+Empirical results
+A.2 Local source key
+Paths below are relative to the supplied Sol and Fable workspace. The source package includes
+the document, figures, numerical review, and verification script; the original simulation archives
+remain in that workspace.
+Key
+Source and use
+T1
+01 Current Papers/Astra Full/Entropic Scalar EFT.tex. Current microscopic
+construction, effective galaxy dynamics, release accounting, and covariant closure; especially
+sections 5–6, 15, 20, N.8, and O.3–O.15. The numerical review records its source snapshot by
+hash.
+T2
+02 Research/Spacetime consolidation 2026-10-16/MICROSTRUCTURE_TO_SPACETIME.
+md. Finite geometry, interaction, matter, and clock construction.
+T3
+01 Current Papers/Microstructure CDT/MICROSTRUCTURE_CDT.tex. Selected CDT
+realization, normalization conventions, and finite geometry–matter–clock tests, with
+conventions aligned to the current Entropic Scalar EFT manuscript.
+T4
+Entropic-EFT-Lean, 23 October 2026 snapshot. Local library:
+02 Research/Unified closure 2026-10-21/formalization. Claim ledger, theorem
+sources, and saved axiom/citation audits.
+G1
+04 Notes and References/Technical Notes/history_gravity_reproduction_
+2026-09-27.md. Analytic galaxy checks and reproducible provenance for the stock model.
+G2
+02 Research/LMC and satellites checks/qumond_flux.py and
+02 Research/LMC and satellites checks/output.txt. External-field QUMOND
+surface-flux comparison.
+G3
+02 Research/Crater II and Antlia 2 vs LCDM/PREREGISTRATION.md,
+PREREGISTRATION.sha256, and analyse_grid.py in that folder. Core observation likelihood,
+priors, and hash identity.
+G4
+02 Research/Crater II and Antlia 2 vs LCDM/RESULTS_with_LMC.md,
+analyse_lmc.py, and lmc_results.zip in that folder. Current moving-LMC trajectories
+and evidence.
+G5
+04 Notes and References/Technical Notes/carrier_hierarchy_calcs_2026-09-26.
+md. The active-carrier inheritance calculation for tidal dwarfs.
+G6
+02 Research/Crater II and Antlia 2 vs LCDM/bf_robustness.txt and
+antlia2_ji_mock/mock_approx_analysis.txt in that folder. Model-error sensitivity and
+approximate observational mocks.
+G7
+02 Research/Stock adjustment resolution 2026-10-21/START HERE.txt;
+02 Research/Halo replication audit 2026-10-21. Radial adjustment, retained angular
+marginals, and fixed-target halo tests.
+C1
+02 Research/Full Planck tied abundance/model.py, RESULTS.md, and
+fits_lenscorr.jsonl in that folder;
+02 Research/Dark energy prediction tests/common.py. Matched likelihood, data
+handling, Boltzmann mapping, and reference ΛCDM result.
+C2
+02 Research/Release zoom/RESULTS.md, zoom_fits.jsonl, zoom_fit.py,
+o12_release.py, Frel_table.npy, FZ_ref.npy, and kmix_summary.txt in that folder.
+Archived PPF release fit, reference history, and hydrodynamic mixing test.
+C3
+02 Research/Formation operator check/RESULTS.md. Formation abundance and the
+5.333 mass convention.
+C4
+02 Research/High leverage closure 2026-10-21/fit_comparison.json,
+fit_physical_geodesic/result.json, fit_physical_lcdm/result.json,
+cosmology_checks.json, and growth_independent_check.json in that folder. Direct
+clock-fluid implementation, matched linear-lensing fits, and numerical checks.
+T5
+02 Research/Manuscript cluster and dynamics integration 2026-10-23. Preserved
+source hashes, integration diffs, six-module manifest, compilation checks and PDF validation.
+The six modules are included in the checked extension snapshot under
+Entropic/Extensions20261023.
+34
+
+
+History-dependent gravity and cosmological release
+Empirical results
+U1
+02 Research/Unified empirical program 2026-10-23/execution_register.json.
+Fifteen-sector evidence register; S01–S15 identify the selected datasets, saved results, source
+URLs, and remaining tests.
+C5
+02 Research/Unified empirical program 2026-10-23/results/cosmology_final.
+json. Exponential-allocation fit, matched reference, and saved observables.
+D1
+02 Research/Connected theory closure 2026-10-23. Depletion action, unchanged linear
+domain, lag and noise bounds, and conditional tensor calculation; 42 Lean declarations.
+D2
+02 Research/Effective dynamics and coupling 2026-10-23. Finite-work contact, warm
+fluid stress, compression and feedback checks; 36 Lean declarations.
+CL1
+02 Research/Conservative cluster merger 2026-10-23. Seventeen encounter/control
+runs, conservation and refinement records; 8 Lean declarations.
+CL2
+02 Research/Observed cluster tests 2026-10-23. X-COP and MENeaCS profiles,
+Bullet v1 targets, source hashes, and 15 numerical/data-handling checks.
+CL3
+02 Research/Cluster outlier closure 2026-10-23. Conditional pressure and transport
+audit, A644 positivity test, twelve finite transport maps, 14 saved checks, and 22 Lean
+declarations.
+A.3 Reproduction commands
+With Python, NumPy, SciPy, and Matplotlib installed, run
+python reproduce_review.py --workspace "PATH/TO/Sol and Fable"
+The script evaluates archived inputs without launching simulation jobs. The supplementary
+refresh_verified_results.py updates the unrounded redshift arithmetic and imports the
+saved exponential-allocation fit. It preserves prior outputs before writing. Its --legacy-linear
+option reproduces the earlier matched benchmark. The broader calculations and source records
+are identified by U1 and C5. Build the publication from the workspace root with
+python .organization/build_pdfs.py --paper empirical
+The build preserves previous PDFs and stores compiler files in the workspace build directory. The
+source archive supplies the figures for standalone typesetting.
+The public dark-energy release and DES data repository are linked in the references. The current
+physical mixing extension is identified by its local archive and hashes; availability of the public
+reproduction bundle does not by itself make every subsequent calculation public.
+35
+
+
+History-dependent gravity and cosmological release
+Empirical results
+B Notation
+Symbol
+Meaning
+g
+Cell sharing entropy in natural-log units.
+ϵ = g/(4π2)
+Transverse response loading.
+η∗
+Closure evidence coefficient; also the release fraction under the common
+energy-conversion prescription.
+a0
+Characteristic galactic acceleration scale.
+gb or gN
+Newtonian acceleration produced by the assigned baryonic source.
+nB
+Occupation of the adopted transverse mode.
+Mb, M L
+b
+Present baryonic mass and ancestral Lagrangian baryonic mass, respectively.
+CR
+Adopted retained-stock cap relative to present baryonic mass.
+Rh
+Projected stellar half-light radius.
+σlos
+Line-of-sight velocity dispersion, with sample and gradient treatment
+specified for each comparison.
+Z, B
+Prior-integrated likelihood and its ratio between two models.
+FZ
+Fraction that has first entered a baryon-retaining well.
+Frel
+Cumulative fraction processed by the source-identity release kernel.
+f
+Mixing time in units of the formation halo dynamical time in the
+pure-exponential fit.
+ρwb
+c0
+Would-be present commitment density before release losses, extrapolated as
+dust.
+Irel
+Linear-benchmark release integral weighted by a−3.
+Iη,rel
+Positive-allocation integral with the additional survival factor e−η∗Frel.
+ωi = Ωih2
+Physical density parameter in the cosmological fit.
+36
+
+
+History-dependent gravity and cosmological release
+Empirical results
+References
+[1] B. I. Ciocan et al. (2026), “MUSE-DARK III: The evolution of the radial acceleration relation
+at intermediate redshifts,” Astronomy & Astrophysics 709, L16. arXiv:2604.22613. The coefficient
+comparison uses Appendix E’s self-consistent inference.
+[2] W.
+G.
+Unruh
+(1976),
+“Notes
+on
+black-hole
+evaporation,”
+Physical
+Review
+D
+14,
+870.
+doi:10.1103/PhysRevD.14.870.
+[3] G. W. Gibbons and S. W. Hawking (1977), “Cosmological event horizons, thermodynamics, and
+particle creation,” Physical Review D 15, 2738. doi:10.1103/PhysRevD.15.2738.
+[4] H. T. Warren et al. (2025), “Estimate of Current Mass of the Large Magellanic Cloud from the
+Orphan-Chenab Tidal Stream.” arXiv:2508.01086.
+[5] R. A. N. Brooks et al. (2026), “Quantifying the Milky Way, LMC and their interaction using all-sky
+kinematics of outer halo stars.” arXiv:2603.08788.
+[6] F. Lelli et al. (2015), “Gas dynamics in tidal dwarf galaxies: disc formation at z = 0.” arXiv:1509.05404.
+[7] J. Wolf et al. (2010), “Accurate masses for dispersion-supported galaxies,” MNRAS 406, 1220.
+arXiv:0908.2995.
+[8] B. P. Moster, T. Naab, and S. D. M. White (2013), “Galactic star formation and accretion histories
+from matching galaxies to dark matter haloes.” arXiv:1205.5807.
+[9] A. A. Dutton and A. V. Macciò (2014), “Cold dark matter haloes in the Planck era: evolution of
+structural parameters for Einasto and NFW profiles.” arXiv:1402.7073.
+[10] K. R. Atzberger et al. (2026), “The DECam MAGIC Survey: Uncovering the Tidal Tails of the Crater
+II Dwarf Galaxy.” arXiv:2602.21283.
+[11] G. Limberg et al. (2025), “S5: Tidal Disruption in Crater 2 and Formation of Diffuse Dwarf Galaxies
+in the Local Group.” arXiv:2512.02177.
+[12] A. P. Ji et al. (2021), “Kinematics of Antlia 2 and Crater 2 from The Southern Stellar Stream
+Spectroscopic Survey (S5).” arXiv:2106.12656.
+[13] DESI Collaboration (2025), “DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations
+and Cosmological Constraints.” arXiv:2503.14738.
+[14] Planck Collaboration (2020), “Planck 2018 results. VI. Cosmological parameters.” arXiv:1807.06209.
+[15] B. Popovic et al. (2025), “The Dark Energy Survey Supernova Program: A Reanalysis Of Cosmology
+Results And Evidence For Evolving Dark Energy With An Updated Type Ia Supernova Calibration.”
+arXiv:2511.07517.
+[16] DES Science, public supernova data and covariance repository. DES-SN5YR on GitHub. The archived
+data version used by the calculations should be preserved when reproducing them.
+[17] J. Chinitz, public dark-energy reproduction release. Dark-Energy release on GitHub. The current
+mixing extension is documented by local sources C1–C3.
+[18] S. Ettori et al., “Hydrostatic mass profiles in X-COP galaxy clusters,” A&A 621, A39 (2019).
+arXiv:1805.00035; public X-COP data.
+[19] R. Herbonnet et al., “CCCP and MENeaCS: (updated) weak-lensing masses for 100 galaxy clusters,”
+MNRAS 497, 4684 (2020), Table A2. arXiv:1912.04414.
+[20] G. Rihtaršič et al., “Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy”
+(2026). arXiv:2601.22245v2; CANUCS Bullet v1 maps.
+[21] A. Sarkar et al., “XRISM Observations of Abell 1795: Evidence for Low Turbulence and Resonant
+Scattering” (2026). arXiv:2606.08097.
+[22] XRISM Collaboration, “Constraining gas motion and non-thermal pressure beyond the core of the
+Abell 2029 galaxy cluster with XRISM” (2025). arXiv:2505.06533.
+[23] SPARC collaboration, public rotation-curve and baryonic-mass data. Selections and nuisance priors
+are recorded in U1, S03.
+[24] KiDS collaboration, public science data; T. Mistele et al., arXiv:2310.15248, updated acceleration
+table. Covariance conventions are recorded in U1, S04.
+[25] ACT collaboration, DR6-ACT-lite and DR6 public products; lensing analysis arXiv:2304.05202 and
+arXiv:2304.05203.
+37
+
+
+History-dependent gravity and cosmological release
+Empirical results
+[26] ACT–BOSS lensing–velocity analysis, arXiv:2405.12795. Band and redshift conventions are recorded
+in U1, S09.
+[27] NIST, CODATA reference values; Particle Data Group, tau mass data. The archived comparison
+values are recorded in U1, S11.
+[28] LIGO–Virgo–KAGRA, public GWTC-4 gravity-test products. The polarization evidence combination
+is recorded in U1, S12.
+38

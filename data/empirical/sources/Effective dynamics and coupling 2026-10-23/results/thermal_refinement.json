@@ -1,0 +1,37 @@
+{
+  "purpose": "Resolve the heat and profile dependence of the conservative thermal extension at finer grids.",
+  "rows": [
+    {
+      "grid": 1024,
+      "dt": 0.007022471910112359,
+      "final_time": 5.0,
+      "gamma": 1.3333333333333333,
+      "minimum_proper_density": 0.2,
+      "minimum_thermal_energy": -9.798162281526858e-12,
+      "max_absolute_mean_energy_drift": 1.3322676295501878e-15,
+      "max_absolute_mean_current_drift": 1.3322676295501878e-15,
+      "final_mean_thermal_energy": 0.019795691739021216,
+      "max_sound_speed_squared": 0.9828287666834286,
+      "minimum_contact_gate": 0.017469891253379513,
+      "maximum_contact_gate": 1.0000000000000002,
+      "min_final_rest_energy_over_floor": 1.146800671191959,
+      "density_or_thermal_clipping": false
+    },
+    {
+      "grid": 2048,
+      "dt": 0.0035137034434293743,
+      "final_time": 5.0,
+      "gamma": 1.3333333333333333,
+      "minimum_proper_density": 0.2,
+      "minimum_thermal_energy": -9.822143098858762e-12,
+      "max_absolute_mean_energy_drift": 4.884981308350689e-15,
+      "max_absolute_mean_current_drift": 4.884981308350689e-15,
+      "final_mean_thermal_energy": 0.014015121455365554,
+      "max_sound_speed_squared": 0.9828287666865441,
+      "minimum_contact_gate": 0.0174698912533667,
+      "maximum_contact_gate": 1.0000000000000002,
+      "min_final_rest_energy_over_floor": 1.1482185762058457,
+      "density_or_thermal_clipping": false
+    }
+  ]
+}

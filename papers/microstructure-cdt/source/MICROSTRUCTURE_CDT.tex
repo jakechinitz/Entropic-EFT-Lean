@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{etoolbox}
+% Local compatibility with the installed pre-2026-Q2 longtable output routine.
+% Finite-shrink correction: https://github.com/latex3/latex2e/issues/1907
+\makeatletter
+\patchcmd{\LT@output}{\vss}{\vskip 0pt plus \maxdimen minus \normalbaselineskip}{}{}
+\patchcmd{\LT@output}{\vss}{\vskip 0pt plus \maxdimen minus \normalbaselineskip}{}{}
+\makeatother
+\usepackage{graphicx,xcolor}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\setcounter{LTchunksize}{100}
+\setlist{itemsep=3pt,topsep=4pt}
+\allowdisplaybreaks[1]
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{definition}[proposition]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[proposition]{Scope}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Inv}{\operatorname{Inv}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Gstar}{G_*}
+\newcommand{\Lstar}{L_*}
+\newcommand{\tstar}{\tau_*}
+\newcommand{\Ach}{A_{\rm ch}}
+\newcommand{\eps}{\epsilon_e}
+\numberwithin{equation}{section}
+\hypersetup{pdftitle={A microscopic realization of causal triangulations with native matter and clock dynamics},pdfauthor={Jacob Chinitz},pdfsubject={Exact constructions, Einstein normalization, conditional phase inheritance, and replication}}
+\author{Jacob Chinitz}
+\title{A microscopic realization of causal triangulations with native matter and clock dynamics\\[0.3em]
+\large Capacity construction, CDT weights, Einstein normalization, and reproducible finite tests}
+\date{October 20, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A finite entanglement-capacity construction is extended to an explicit microscopic realization of a selected causal triangulation measure. The local $1680$-state ensemble retains its closure spectrum, entropy, and charged rest gap. An equivariant encoding exposes four coherent binary bond modes inside the existing capacity states. A specified absolute angular transfer converts their cut entropy into a Regge curvature weight. Connected spin-three geometric patches, normalized by their full Gram matrices, realize all Euclidean tetrahedral interface spaces of an $\alpha=7$ causal regulator. Their tensor contraction equals the selected CDT history weight, including boundary terms and compatible external sources. A paired-cell event-volume calibration gives $G_0/\Gstar=0.10551926870131369\,m_4^{8/3}$, or $1.03002098319$ at the provisional chain constant $m_4=2.35$.
+
+A second construction couples an enumerated two-geometry transfer to retained orbital cochains. Harmonic-preserving polar transport keeps the native rest gap exact after geometry coupling. The mass derivative of the joint Hamiltonian defines a positive integrated proper clock. A cochain retraction yields a positive microscopic metric that intertwines the entire supplied coarse generator, its clock, and transported source operators; the joint intertwining residuals are a few $10^{-13}$ or smaller, while the separate finite-difference clock checks are at the $10^{-10}$ level. The manuscript's Einstein matching, this bare normalization, and an interacting response measurement are compared explicitly. An inheritance theorem states the conditions under which de Sitter observables and a renormalized gravitational response transfer from CDT to the microscopic realization. The finite construction satisfies the algebraic correspondence. At its fixed $\alpha=7$ curvature couplings, the registered volume-stiffness ratio is $G_{\rm vol}/G_0=1.064$, with logarithmic standard error $0.089$, inside the $0.80$--$1.25$ agreement band. This primary result uses one stationary 32k run, with reported-only stationary runs at 16k and 64k supporting the comparison. Start independence remains undetermined. A separate curvature-trace test is inconclusive, and exploratory scalar binding has no stable energy extraction. A common interacting matter cone and the long-distance source response remain open.
+\end{abstract}
+
+\clearpage
+{\small\tableofcontents}
+\clearpage
+\paragraph{Scope and companion papers.}
+Prepared for Jacob Chinitz as a continuation of \emph{Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure}.
+
+The construction starts with the finite capacity ensemble and its retained charged sector. It specifies the additional geometric interactions, proves an exact correspondence with a selected Euclidean CDT state sum, and constructs a finite joint geometry--matter--clock operator. The accompanying replication bundle contains the inputs, executable calculations, reference outputs, and verification records.
+
+The de Sitter and interacting Einstein conclusions have explicit hypotheses: the same coarse ensemble must occupy the required phase, and its physical source response must have the appropriate infrared limit. The exact microscopic correspondence transfers such results when those hypotheses hold.
+The current Astra manuscript incorporates this geometric and matter--clock construction. The connected ensemble has registered finite-volume stiffness agreement, with its matter-source Newton coefficient still unresolved. The comparison and evidence sections state these distinct physical results.
+
+\input{chapters/01_capacity}
+\input{chapters/02_bonds_scale}
+\input{chapters/03_geometry}
+\input{chapters/04_cdt_einstein}
+\input{chapters/05_clock_matter}
+\input{chapters/06_refinement}
+\input{chapters/07_comparison}
+\input{chapters/08_replication}
+\appendix
+\input{chapters/09_appendices}
+\begingroup
+\small
+\setlength{\parskip}{0pt}
+\begin{thebibliography}{20}
+\setlength{\itemsep}{3pt}
+\bibitem{current} J. Chinitz, \emph{Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure}, current companion \texttt{Astra Quantum gravity completion (merged).tex}, 20 October 2026 evidence revision. The connected geometry and finite matter--clock construction appear in C.8, H.12--H.15, J.11--J.13, and Q.11--Q.11b; J.14 records the completed normalization and matter-response tests.
+\bibitem{empirical} \emph{Empirical Results: History-dependent gravity and cosmological release}, companion \texttt{Empirical\_Results.tex}, 16 October 2026. Effective galaxy and cosmology comparisons; these do not measure the interacting response of the new CDT branch.
+\bibitem{main} J. Chinitz, \emph{Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure}, workspace version \texttt{Opus carrier completion (math connections).tex}, 6 October 2026. The comparison and input manifest identify the exact file hash.
+\bibitem{connected} \emph{Connected primitive patches for a causal CDT state sum}, research report, 16 October 2026. Replication reference: \nolinkurl{causal_primitive_realization_2026-10-16/CONNECTED_CDT_CONSTRUCTION.md}.
+\bibitem{clock} \emph{Native rest transfer, causal duration, and coherent renewal}, research report, 16 October 2026. Replication reference: \nolinkurl{clock_matter_bridge_2026-10-16/CLOCK_MATTER_BRIDGE.md}.
+\bibitem{orbital} \emph{Joint geometry orbital and clock completion}, research report, 16 October 2026. Replication reference: \nolinkurl{orbital_transfer_2026-10-16/JOINT_ORBITAL_COMPLETION.md}.
+\bibitem{cdt} J. Ambj{\o}rn, J. Jurkiewicz, and R. Loll, \emph{Dynamically Triangulating Lorentzian Quantum Gravity}, Nucl.\ Phys.\ B \textbf{610}, 347--382 (2001), \href{https://arxiv.org/abs/hep-th/0105267}{arXiv:hep-th/0105267}.
+\bibitem{ds} J. Ambj{\o}rn, A. G{\"o}rlich, J. Jurkiewicz, and R. Loll, \emph{The Nonperturbative Quantum de Sitter Universe}, Phys.\ Rev.\ D \textbf{78}, 063544 (2008), \href{https://arxiv.org/abs/0807.4481}{arXiv:0807.4481}.
+\bibitem{feec} D. N. Arnold, R. S. Falk, and R. Winther, \emph{Finite element exterior calculus: from Hodge theory to numerical stability}, Bull.\ Amer.\ Math.\ Soc.\ \textbf{47}, 281--354 (2010), \href{https://arxiv.org/abs/0906.4325}{arXiv:0906.4325}.
+\end{thebibliography}
+\endgroup
+\end{document}

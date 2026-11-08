@@ -1,0 +1,190 @@
+{
+  "updated_utc": "2026-10-23T20:06:59.865817+00:00",
+  "scope": "Editorial organization and explicit coverage of the existing fifteen-test register; no new simulation, likelihood fit, or Lean proof.",
+  "pages": 42,
+  "previous_pages": 41,
+  "test_families": 15,
+  "parts": {
+    "I": "Distinctive predictions and discriminating tests",
+    "II": "Recovery of established phenomenology"
+  },
+  "coverage": [
+    {
+      "id": "S01",
+      "title": "High-redshift galaxy kinematics",
+      "location_label": "sec:redshift",
+      "part": "I",
+      "status_snapshot": "Residual tension; full likelihood open",
+      "section_resolves": true
+    },
+    {
+      "id": "S02",
+      "title": "CMB-to-galaxy normalization",
+      "location_label": "sec:crossnorm",
+      "part": "I",
+      "status_snapshot": "Conditional relation checked",
+      "section_resolves": true
+    },
+    {
+      "id": "S03",
+      "title": "Local RAR and baryonic Tully\u2013Fisher",
+      "location_label": "sec:localrar",
+      "part": "II",
+      "status_snapshot": "Broad diagnostic completed; discrepancies retained",
+      "section_resolves": true
+    },
+    {
+      "id": "S04",
+      "title": "Galaxy weak lensing",
+      "location_label": "sec:galaxylensing",
+      "part": "II",
+      "status_snapshot": "Updated summary agrees; reduction sensitivity demonstrated",
+      "section_resolves": true
+    },
+    {
+      "id": "S05",
+      "title": "CMB acoustic peaks",
+      "location_label": "sec:cmb",
+      "part": "II",
+      "status_snapshot": "New fit and ACT comparison completed, conditionally",
+      "section_resolves": true
+    },
+    {
+      "id": "S06",
+      "title": "Growth and projected Weyl power",
+      "location_label": "sec:cmb",
+      "part": "II",
+      "status_snapshot": "New ACT lensing test; full-shape growth open",
+      "section_resolves": true
+    },
+    {
+      "id": "S07",
+      "title": "Dark-energy history and distances",
+      "location_label": "sec:distances",
+      "part": "II",
+      "status_snapshot": "Common background refit completed; local exhaustion open",
+      "section_resolves": true
+    },
+    {
+      "id": "S08",
+      "title": "Relaxed and colliding clusters",
+      "location_label": "sec:clusters",
+      "part": "II",
+      "status_snapshot": "Budget audit completed; conservative map prediction open",
+      "section_resolves": true
+    },
+    {
+      "id": "S09",
+      "title": "Gravitational slip and E_G",
+      "location_label": "sec:eg",
+      "part": "II",
+      "status_snapshot": "New transfer prediction compared with data",
+      "section_resolves": true
+    },
+    {
+      "id": "S10",
+      "title": "Wide binaries and the Solar System",
+      "location_label": "sec:binaries",
+      "part": "I",
+      "status_snapshot": "Null benchmarks checked; raw catalogue test open",
+      "section_resolves": true
+    },
+    {
+      "id": "S11",
+      "title": "Newton\u2019s constant and lepton masses",
+      "location_label": "sec:constants",
+      "part": "I",
+      "status_snapshot": "Arithmetic and finite menus reproduced",
+      "section_resolves": true
+    },
+    {
+      "id": "S12",
+      "title": "Gravitational waves and Lorentz tests",
+      "location_label": "sec:tensor",
+      "part": "II",
+      "status_snapshot": "Public null benchmark reproduced; tensor completion open",
+      "section_resolves": true
+    },
+    {
+      "id": "S13",
+      "title": "Milky Way, LMC, streams and halo tilt",
+      "location_label": "sec:lmc",
+      "part": "I",
+      "status_snapshot": "Existing live realizations consolidated; joint fit open",
+      "section_resolves": true
+    },
+    {
+      "id": "S14",
+      "title": "Dwarf satellites and tidal inheritance",
+      "location_label": "sec:crater",
+      "part": "I",
+      "status_snapshot": "Archived grid reanalysis completed; strong model dependence",
+      "section_resolves": true
+    },
+    {
+      "id": "S15",
+      "title": "Old-disk vertical gravity",
+      "location_label": "sec:olddisk",
+      "part": "I",
+      "status_snapshot": "Common-a\u2080 re-evaluation completed",
+      "section_resolves": true
+    }
+  ],
+  "status_snapshot_note": "Status snapshots come from the original program register; subsequent cluster and local-dynamics work is described in the current paper.",
+  "pdf_sha256": "67addb11060f7ddf2aadcd99a5ce8d412488793cb0b9f82821ed1abdd647ed00",
+  "layout": {
+    "pages": 42,
+    "off_page_words": [],
+    "coverage_count": 15,
+    "pdf_sha256": "67addb11060f7ddf2aadcd99a5ce8d412488793cb0b9f82821ed1abdd647ed00",
+    "table_pages": [
+      3
+    ],
+    "part_pages": [
+      7,
+      22
+    ],
+    "render_review": "02 Research\\Empirical fifteen-test structure 2026-10-23\\pdf_review\\20261023_160308",
+    "all_contact_sheets_inspected": true,
+    "detailed_pages_inspected": [
+      3,
+      20,
+      22
+    ],
+    "cross_references_resolve": true,
+    "build_log_problems": []
+  },
+  "build_directory": "05 Build Files\\PDF builds\\empirical\\20261023_160219_890212",
+  "source_changes": [
+    "01_results_and_basis.tex",
+    "02_acceleration.tex",
+    "03_history.tex",
+    "04_dwarfs.tex",
+    "05c_cross_sector.tex",
+    "05d_distinctive.tex",
+    "05_cosmology.tex",
+    "06_interpretation_and_audit.tex",
+    "Empirical_Results.tex"
+  ],
+  "source_sha256": {
+    "01_results_and_basis.tex": "0b9529ff9c25d1a56cb87d0c5a4c89a8e031f4be9392e1a4147be915c37dd93c",
+    "02_acceleration.tex": "20b8bd861a9fc2317b54cbd801f934364c2cbfb2eb12c98597fcdb8a0a424fc7",
+    "03_history.tex": "ff15b6be758589bb747ba5bab0feba7c0a967ddd88804613989670dd010a2082",
+    "04_dwarfs.tex": "cc25f09ded87cf4463c91b31b9a049d951082e147b1432aa707c5727f56950ad",
+    "05b_clusters.tex": "e415fa4c108743eaa18bd30ce153829769885ba462275483c9667ec79742c40a",
+    "05c_cross_sector.tex": "e763ce51b6f9ac0a3962054f23b92b2df7123afe2261e9273e5d4b32f4d9c154",
+    "05d_distinctive.tex": "74e80b3f68e86df6983efba840a9580fbb568edf3f2b8a760ea41dbb41e537f3",
+    "05_cosmology.tex": "a84a096bb2b601d7062e56a48ed44f83e2132238c6a841a94dbd547c11999b00",
+    "06_interpretation_and_audit.tex": "8066590acde48f9757f9095768fd91e6bc47d7a4980d382740fb921faa3d40a6",
+    "07_references.tex": "b2ce3eda5f7d4b843bb9df2c67dea85b6d3490a30f50a83150feb01fa52fda0b",
+    "Empirical_Results.tex": "369f7e78fac0beecc815856711c3f906126d88038e9ede074705d6ee94a8d1f4"
+  },
+  "science_unchanged": {
+    "figure_hashes_unchanged": true,
+    "simulations_rerun": false,
+    "fits_rerun": false,
+    "lean_modified": false
+  },
+  "preserved_originals": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests",
+  "lean_commit_unchanged": "a6552daf39daf83d5159fcbcda698d1801731d24"
+}

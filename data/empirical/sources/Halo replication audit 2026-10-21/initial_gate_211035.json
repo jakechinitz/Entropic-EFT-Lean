@@ -1,0 +1,17 @@
+{
+  "seed": 211035,
+  "gates": {
+    "positive_masses": true,
+    "orbit_mass": true,
+    "phase_fit": true,
+    "total_force": true,
+    "transverse_force": true,
+    "torque_x": true,
+    "torque_y": true,
+    "J_direction": true,
+    "phase_Jacobi": true,
+    "count": true
+  },
+  "passed": true,
+  "seconds_to_initial_gate": 86.33949637413025
+}

@@ -1,0 +1,434 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.88in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,graphicx,booktabs,tabularx}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!50!black]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.4em}
+\setlength{\emergencystretch}{1em}
+\graphicspath{{images/}}
+\title{Conservative cluster encounters with a finite-work stock contact}
+\author{Research calculation for the Entropic Scalar EFT project}
+\date{23 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A three-dimensional encounter evolves kinetic stock, stellar tracers and
+pressure-supported baryonic gas in one gravitational potential. A selected
+local stock--baryon interaction changes relative radial velocities, supplies
+the opposite impulse to the partner, and records work and heat in finite
+internal registers. Its symmetric clock gate is inherited from the preceding
+effective-coupling construction. Seventeen runs test zero, weak and strong
+contact, depleted registers, isolated systems, a collisionless-baryon control,
+particle resolution, timestep, sampling and interaction range. Weak contact
+preserves two total-mass concentrations associated with the stellar populations
+while the gas is displaced. Strong contact changes the encounter and also
+restructures the isolated starting halo. The latter result requires an
+equilibrium-selection calculation before the strong-contact model can be used
+predictively. Mass, linear momentum, angular momentum and the complete
+Newtonian energy ledger are checked. Eight additional Lean certificates verify
+the local impulse, work and gas-energy identities. Initial profiles, contact
+target, physical rate, range and register allocation remain specified effective
+inputs. No observed cluster likelihood has been fitted.
+\end{abstract}
+
+\section{The cluster question}
+The cluster reciprocity audit identified a conservative route in which
+positive inertial stock, stars and gas source a common potential. Its remaining
+dynamical requirement was an explicit redistribution interaction with reaction
+forces, energy transfer and a timescale. The present calculation implements
+one such interaction in a live encounter.
+
+The observational motivation is the separation of gas and lensing mass in
+colliding clusters\cite{Clowe}. A comparison with such data requires evolving
+both collisionless trajectories and gas stresses. Even the relation between a
+gas shock speed and a subcluster speed depends on the encounter dynamics
+\cite{Springel}. The calculation below uses declared idealized initial profiles;
+an observed final mass map supplies none of its initial particle positions,
+velocities or component masses.
+
+The phase label of baryonic gas does not change its gravitational charge.
+All surviving stock is counted once. Changes in projected mass arise from
+transport, and the same total source determines the Newtonian dynamics and
+the projected mass that would enter a weak-field lensing calculation.
+
+\section{Common gravity and baryonic gas}
+For particles of positive fixed mass $m_i$, use
+\begin{equation}
+ U_G=-G\sum_{i<j}\frac{m_i m_j}{\sqrt{|\mathbf x_i-\mathbf x_j|^2+\epsilon_G^2}},
+ \qquad
+ \mathbf a_i=-G\sum_{j\ne i}
+ \frac{m_j(\mathbf x_i-\mathbf x_j)}{(|\mathbf x_i-\mathbf x_j|^2+\epsilon_G^2)^{3/2}}.
+\end{equation}
+This identical softened interaction acts on stock, stars and gas. Stock and
+stellar elements retain separate trajectories and can multistream.
+Cosmological exchange is neglected over this encounter, as in the cluster
+audit's local dynamical limit.
+
+Gas obeys an ideal $\gamma_g=5/3$ pressure law, with conservative smoothed
+particle hydrodynamics (SPH)\cite{Cossins}. For fixed smoothing length $h_g$,
+\begin{align}
+ \rho_i&=\sum_{j\in g}m_jW_{h_g}(r_{ij}),\qquad
+ A_i=\frac{P_i}{\rho_i^2}=\frac{(\gamma_g-1)u_i}{\rho_i},\\
+ \dot{\mathbf v}_i\big|_g
+ &=-\sum_{j\in g}m_j(A_i+A_j+\Pi_{ij})\nabla_iW_{ij},\\
+ \dot u_i&=\sum_{j\in g}m_j(A_i+\Pi_{ij}/2)
+ (\mathbf v_i-\mathbf v_j)\cdot\nabla_iW_{ij}.
+\end{align}
+The cubic-spline kernel has support $2h_g$. The symmetric Monaghan viscosity
+uses $\alpha=1$, $\beta=2$ and acts on approaching pairs. It converts resolved
+kinetic energy into gas heat. The paired pressure and internal-energy terms
+cancel exactly in the instantaneous total-energy derivative.
+
+This gas is baryonic plasma. The $\gamma=4/3$ warm capacity fluid of the
+preceding note is not substituted for the kinetic stock. Keeping the latter
+kinetic permits overlapping streams. The full spatial clock and floor-fluid
+stress are not evolved here; the source-clock connection enters through
+effective internal work registers and their transition gate.
+
+\section{A reciprocal extension to moving carriers}
+The earlier radial contact used one fixed spherical carrier. During an
+encounter, a local baryonic partner moves and must receive the reaction. Let
+$i$ be a stock element and $j$ a baryonic element. Define
+\begin{equation}
+ \mathbf n=\frac{\mathbf x_i-\mathbf x_j}{r_{ij}},\qquad
+ w=(\mathbf v_i-\mathbf v_j)\cdot\mathbf n,\qquad
+ \mu_{ij}=\frac{m_i m_j}{m_i+m_j}.
+\end{equation}
+For a proposed new relative radial speed $w'$, the updates are
+\begin{align}\label{eq:kicks}
+ \mathbf v_i'&=\mathbf v_i+\frac{m_j}{m_i+m_j}(w'-w)\mathbf n,\\
+ \mathbf v_j'&=\mathbf v_j-\frac{m_i}{m_i+m_j}(w'-w)\mathbf n.
+\end{align}
+The centre-of-mass velocity and relative tangential velocity are unchanged.
+The impulse is central, so total linear and angular momenta are unchanged.
+The exact mechanical work is
+\begin{equation}\label{eq:kinetic}
+ \Delta K_{ij}=\frac{\mu_{ij}}2(w'^2-w^2).
+\end{equation}
+The gravitational energy is unchanged during this instantaneous velocity
+update. Locality is implemented with a finite kernel of support $2h_c$;
+the range remains an effective input requiring a continuum or physical
+matching calculation.
+
+Each stock element proposes a contact at rate $\nu$. Available baryonic
+partners are drawn with weights $m_jW_{h_c}(r_{ij})$, normalized over local
+partners. An element with no partner has no event. Both gas and stars are
+eligible, including elements from the other initial cluster. Initial cohort
+labels have no effect on interaction eligibility.
+
+\subsection{Target and clock gate}
+The trial relative-velocity density retains the earlier two-exponential
+shape, now applied to relative kinetic energy:
+\begin{equation}
+ h(q)=0.7e^{-q/0.25}+0.3e^{-q},\qquad
+ q=\frac{|\mathbf v_i-\mathbf v_j|^2}{2e_*},\qquad e_*=0.2.
+\end{equation}
+At fixed relative tangential speed $w_t$, the conditional Gaussian-mixture
+weights for $w'$ are proportional to
+\begin{equation}
+ b_a\sqrt{T_a}\exp[-w_t^2/(2e_*T_a)],
+ \qquad (b_1,b_2)=(0.7,0.3),\quad(T_1,T_2)=(0.25,1).
+\end{equation}
+This is a selected multicarrier target. Its stationary distribution in a
+self-gravitating medium has not been derived. The earlier theorem for an
+orbital density $h(E,\ell)$ around one spherical carrier does not establish
+stationarity of this pair-relative target. Likewise, the conserved angular
+quantity in~\eqref{eq:kicks} is the pair's angular momentum; individual
+orbital angular labels around several different centres need not be fixed.
+
+For a finite event, set
+\begin{equation}
+ Q=\Theta_{ij}\log\frac{h(q')}{h(q)},\qquad
+ \Theta_{ij}=10^{-6}\mu_{ij}e_*,\qquad
+ W=\Delta K_{ij}+Q.
+\end{equation}
+Heat $Q$ enters the bath ledger; work $W$ leaves the stock element's internal
+work register $U_i$. Thus
+\begin{equation}\label{eq:ledger}
+ U_i'=U_i-W,\qquad E_{B,i}'=E_{B,i}+Q,\qquad
+ \Delta(K+U+E_B)=0.
+\end{equation}
+Each register has floor $K_i=m_i e_*$. The homogeneous clock-speed function
+$v_c(y)$ from the preceding action, with $v_c(1)=0$ and $0\le v_c\le1$,
+gives the symmetric acceptance factor
+\begin{equation}\label{eq:gate}
+ g_{ij}=v_c(U_i/K_i)v_c(U_i'/K_i).
+\end{equation}
+Proposals with $U_i'<K_i$ or $E_{B,i}'<0$ are unavailable. No negative
+state is created and subsequently clipped.
+
+The baseline internal allocation is $U_i=K_i(1+1.2)$ and
+$E_{B,i}=10^{-4}K_i$. Separate controls use surplus $10^{-4}K_i$ or exactly
+zero surplus. The small dimensionless $\Theta_{ij}$ is a thermostat choice;
+it is not a conversion of the Gibbons--Hawking temperature to cluster units.
+The finite bath ledger is kept nonnegative. Each pair channel uses its fixed
+effective $\Theta_{ij}$; because this scales with reduced mass, the channels
+do not define one globally equilibrated physical bath. A native bath spectrum,
+common physical temperature and heat capacity remain unmodelled.
+
+The work and bath registers are internal energies of the existing elements.
+No additional rest-mass halo is introduced. Their contribution to gravitational
+mass is neglected at Newtonian order. A covariant identification with the
+capacity medium, including its spatial stress and inertial moments, remains
+required. The present result certifies the classical event accounting under
+this effective identification.
+
+\section{Initial conditions and comparison protocol}
+Units satisfy $G=M_1=a_1=1$. The second cluster has $M_2=0.3$ and
+$a_2=0.3^{1/3}$. Each component begins with a Plummer density profile,
+truncated at $6a_c$. Stock and stars use the isotropic Plummer velocity
+distribution. Gas starts with zero internal bulk flow and specific energy
+\begin{equation}
+ u_g(r)=\frac{GM_c}{4\sqrt{r^2+a_c^2}},
+\end{equation}
+which gives hydrostatic support for a coextensive gas fraction in the
+unsoftened total Plummer potential. Truncation, smoothing and finite sampling
+make this an approximate equilibrium; isolated controls quantify the drift.
+Antipodal phase sampling sets component centre-of-mass position, velocity
+and initial spin exactly to their intended values.
+
+The surviving stock-to-original-baryon ratio is the saved cohort convention
+$k=5.1760752$. The mass fractions are
+\begin{equation}
+ f_C=0.8380849,\qquad f_*=0.02,\qquad f_g=0.1419151.
+\end{equation}
+They are allocations supplied to the encounter, not masses inferred from a
+final lensing map. The initial centre separation is $(8,0.6,0)$ and the
+relative velocity is $(-0.8,0,0)$. The centre of mass is at rest.
+
+The baseline has 384 stock, 96 stellar and 192 gas elements per cluster,
+or 1344 in total. Higher-resolution encounters double all three counts.
+The standard gravity and gas smoothing lengths are $(\epsilon_G,h_g)=(0.1,0.45)$;
+the finer calculation uses $(0.08,0.36)$. The contact scale stays $h_c=0.45$
+during this refinement. One sensitivity run reduces it to $0.3$.
+Time steps are $0.01$ and $0.005$. Implicit final-kick iteration treats
+velocity-dependent gas viscosity, and contact events follow the mechanical
+step. Distinct time steps have distinct random contact histories.
+
+The 17 completed runs comprise 14 encounters and three isolated controls.
+Encounter tests include $\nu=0$, $0.1$ and $1$, the two depletion controls,
+a collisionless-baryon control, two particle samplings, finer time steps,
+particle/smoothing refinement, and the shorter contact range. In the
+collisionless-baryon control, the gas-labelled component starts with isotropic
+velocity support; it is not a pressure switch applied to an identical fluid
+initial state.
+
+The comparison epoch was declared before the runs: first galaxy-core
+pericentre plus two dynamical units. Core centres follow stellar elements
+initially inside their cluster's scale radius. Maps project along $z$ and
+apply the same Gaussian width $0.3a_1$. Tagged-component peaks and centres
+of mass are diagnostic outputs. The observable source map includes all
+particles without cohort labels. A relative gas-emission proxy weights each
+gas element by $m_i\rho_i\sqrt{u_i}$; no instrument response, metallicity,
+source-redshift distribution or measured lensing covariance is included.
+
+For illustration, $M_1=10^{15}M_\odot$ and $a_1=300\,$kpc give
+$v_*=3786\,$km\,s$^{-1}$ and $t_*=77.47\,$Myr. The initial relative speed
+would be $3029\,$km\,s$^{-1}$, and the displayed post-pericentre interval
+$154.9\,$Myr. Rates $\nu=0.1$ and $1$ correspond to $1.291$ and
+$12.91\,$Gyr$^{-1}$. These units supply scale, not a fit to a named cluster.
+
+\section{Conservation and formal checks}
+The complete evolved Newtonian ledger is
+\begin{equation}
+ E_{\rm tot}=\sum_i\frac12m_iv_i^2+U_G+
+ \sum_{i\in g}m_i u_i+\sum_{i\in C}(U_i+E_{B,i}).
+\end{equation}
+The largest error across the completed runs, normalized by initial
+gravitational binding energy, was $6.84\times10^{-5}$, or $0.00684\%$.
+The zero-contact error changed from $2.619\times10^{-5}$ to
+$6.534\times10^{-6}$ when the step was halved, giving convergence order
+$2.003$. Stochastic encounter histories do not permit the same deterministic
+order inference for the nonzero-contact cases.
+
+Maximum total momentum and angular-momentum discrepancies were below
+$3.7\times10^{-15}$ and $4.3\times10^{-16}$ in simulation units.
+An independent 10,000-pair calculation checked recoil, torque and the reduced-mass
+work identity. The gas force and energy derivatives satisfy the instantaneous
+power identity, and the sampled gas entropy
+$\sum_i m_i\log[u_i/\rho_i^{\gamma_g-1}]$ increased in every hydrodynamic run.
+All gas internal energies stayed positive; work and bath boundaries held.
+
+Eight new Lean certificates check the reciprocal velocity update, its relative
+speed and reduced-mass work, central torque cancellation, SPH pair power,
+nonnegative viscous heat under its sign assumptions, register recharge for
+negative work, and the absorbing zero-clock gate. Their axiom audit uses
+standard logical axioms only. They supplement the earlier reciprocity and
+finite-work identities. They do not certify the numerical PDE solution or
+select the physical interaction. The standalone Lean/mathlib 4.19 runtime was
+used; upstream 4.35 was not rebuilt.
+
+\section{Encounter outcomes}
+\begin{figure}[p]
+\centering\includegraphics[width=\textwidth]{merger_maps.png}
+\caption{Synthetic encounter maps at the declared epoch. Cyan contours show
+total projected mass; white points show stellar tracers. Colour is the gas
+emission proxy normalized to each panel's own maximum, so colour brightness
+cannot compare absolute luminosities across panels. The first three panels
+use 2688 elements; the depleted control uses 1344. These are model outputs,
+not reconstructed observations.}
+\end{figure}
+
+The weak-contact encounters retain two separated total-mass concentrations.
+The smaller cluster's stock peak remains close to its stellar peak, while
+its tagged gas is displaced. The feature persists under the tested sampling
+and resolution changes. In contrast, treating the gas-labelled component as
+collisionless leaves it close to the stock.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Case & $t/t_*$ & $d_{C,g}/a_1$ & $d_{C,*}/a_1$ & Core separation/$a_1$\\
+\midrule
+No contact, baseline & 10.0 & 2.136 & 0.112 & 2.507\\
+No contact, finer step & 10.0 & 2.136 & 0.112 & 2.507\\
+No contact, more particles & 9.8 & 1.945 & 0.071 & 2.350\\
+No contact, second sampling & 9.8 & 2.081 & 0.071 & 2.390\\
+Weak contact, baseline & 10.0 & 2.214 & 0.180 & 2.394\\
+Weak contact, more particles & 9.8 & 2.055 & 0.100 & 2.350\\
+Weak contact, second sampling & 10.0 & 2.326 & 0.112 & 2.428\\
+Strong contact, baseline & 10.8 & 3.086 & 0.250 & 1.425\\
+Strong contact, finer step & 10.4 & 3.637 & 0.453 & 1.611\\
+Strong contact, more particles & 10.0 & 2.907 & 0.206 & 1.626\\
+Strong contact, shorter range & 10.8 & 2.780 & 0.212 & 1.379\\
+Nearly depleted, $\nu=1$ & 10.0 & 2.088 & 0.071 & 2.499\\
+Collisionless baryons & 10.0 & 0.071 & 0.050 & 2.577\\
+\bottomrule
+\end{tabular}
+\caption{Distances between projected peaks of the smaller cluster's tagged
+components. These are not measured lensing offsets. Each run uses its own
+first-pericentre time plus the same fixed delay.}
+\end{table}
+
+For the weak-contact cases, $d_{C,g}/a_1=2.06$--$2.33$ and
+$d_{C,*}/a_1=0.10$--$0.18$. With the illustrative length conversion these
+are about $617$--$698\,$kpc and $30$--$54\,$kpc. They show the scale of
+this chosen encounter; they should not be quoted as a prediction for the
+Bullet Cluster. The two samplings and two particle resolutions support the
+qualitative separation, while the map and offset magnitudes remain insufficiently
+converged for an observational likelihood.
+
+Strong contact also leaves separated concentrations in these examples, but
+it changes core trajectories, gas morphology and the register energy much
+more strongly. Its varying peak offsets cannot be read as a monotonic drag
+constraint: halo structure and gas heating change along with momentum exchange.
+
+\subsection{Depletion and recharge}
+At the same $\nu=1$, the baseline active encounter accepts 7114 contacts;
+the nearly depleted case accepts 61. Both preserve the work boundary.
+The latter follows the zero-contact encounter closely at the comparison epoch.
+With every register exactly at its floor, no contact is accepted and all
+saved particle positions are identical to the zero-contact run.
+
+Depletion is not a one-way loss of available work. Negative $W$ in
+\eqref{eq:ledger} stores kinetic energy back in the register. The active
+encounter's net work to mechanical motion is $-0.08490$; its registers gain
+that energy. The nearly depleted case gains $0.003158$ and can reactivate
+some initially slow elements. The exactly resting state remains absorbing
+because the initial factor in~\eqref{eq:gate} vanishes.
+
+These statements concern the specified internal-register implementation.
+The calculation does not establish that real cluster stock begins depleted,
+or that every component of the capacity medium has the same register state.
+
+\section{The isolated controls constrain the target}
+An encounter can retain two mass peaks even when the chosen contact does
+not preserve an equilibrium halo. Isolated tests separate these questions.
+At six dynamical units, the median radii relative to their initial values are
+\begin{center}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Contact & Stock & Stellar tracers & Gas\\
+\midrule
+None & 0.968 & 0.957 & 0.921\\
+Weak, $\nu=0.1$ & 0.920 & 0.969 & 1.024\\
+Strong, $\nu=1$ & 0.727 & 1.269 & 1.464\\
+\bottomrule
+\end{tabular}
+\end{center}
+The zero-contact changes quantify finite sampling, truncation and gas/gravity
+smoothing in the initial construction. Weak contact produces a modest additional
+stock contraction over this interval. Strong contact contracts the stock by
+about $27\%$ and expands the gas by about $46\%$, before any encounter is
+introduced. Its target is therefore not an equilibrium prescription for the
+declared Plummer halo.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{isolated_controls.png}
+\caption{Isolated controls show the structural effect of the specified
+contact. The changes at strong coupling prevent treating the initial profile
+as an established stationary solution of that model.}
+\end{figure}
+
+This result sets a direct requirement on the next target calculation:
+the selected kinetic--fluid interaction must preserve the intended isolated
+equilibrium, or predict its controlled secular evolution, before its merger
+offsets can constrain a universal rate. A small rate can keep changes modest
+during one encounter; it does not by itself establish a galaxy RAR equilibrium
+over an assembly history.
+
+\section{Cohort accounting in a finite aperture}
+Particle masses and parent labels are retained throughout the encounter.
+For one parent cohort with initial baryonic mass $M_{b,L}$ and stock
+$kM_{b,L}$, define retained fractions in an aperture by $b$ and $s$. Its
+own material satisfies
+\begin{equation}
+ \frac{M_C}{M_b}=k\frac{s}{b}.
+\end{equation}
+The global cohort budget remains fixed while a present-aperture baryon
+fraction changes through transport. Material from the other cluster is
+recorded separately and then included in the observable total mass.
+
+An exploratory aperture audit illustrates this in the refined weak-contact
+run. Inside radius $a_1$ around the smaller stellar core, the parent retains
+$b=0.0894$ of its baryons and $s=0.7826$ of its stock. The aperture also
+contains $0.01091$ stock and $0.01325$ baryonic mass from the other cluster,
+in units of $M_1$. Including both cohorts gives baryon fraction $0.0781$.
+At radius $2a_1$, the total baryon fraction is $0.1707$ because the enlarged
+aperture contains more gas and imported material.
+
+These apertures were examined after the encounter calculation as accounting
+diagnostics. They are not $R_{500}$ or $R_{200}$ measurements, and this disturbed
+system supplies no fit to the relaxed X-COP sample. The calculation demonstrates
+explicit transport behind an aperture/cohort distinction without creating
+extra stock or applying a cap per present baryon.
+
+\section{What the calculation establishes}
+The conservative stock route admits a live three-dimensional encounter with
+mass--gas separation, finite local exchange and explicit recoil. Weak contact
+and the tested nearly depleted contact preserve that separation. The work gate
+has its intended absorbing floor, while finite surplus permits energy return
+and reactivation. Strong contact exposes the need to select an equilibrium
+target and its physical rate jointly.
+
+A predictive cluster application still requires the initial stock distribution
+from an assembly model, a physically fixed contact target and rate, matching
+of the work/bath registers to the capacity stress, and substantially higher
+resolution with observational projection and likelihoods. The pair-relative
+target and finite range introduced here are effective assumptions. There is
+no theorem equating them to the manuscript's earlier phase-weighted cluster
+map or to the single-carrier galactic contact. No high-redshift $a_0$ issue is
+resolved by this calculation.
+
+The research directory retains all executed sources, initial states,
+histories, comparisons, formal audits and the interrupted first slow baseline.
+The latter was replaced by an algebraically identical optimized force
+implementation, whose pair forces were checked independently. One early
+source-hash metadata entry was corrected from its saved start-of-run source;
+the original record is retained. The preceding research and all four current
+publication sources were preserved.
+
+\begin{thebibliography}{9}
+\bibitem{Clowe} D. Clowe et al., ``A direct empirical proof of the existence
+of dark matter,'' Astrophys. J. 648, L109 (2006),
+\href{https://arxiv.org/abs/astro-ph/0608407}{arXiv:astro-ph/0608407}.
+\bibitem{Springel} V. Springel and G. R. Farrar, ``The speed of the `bullet'
+in the merging galaxy cluster 1E0657-56,'' Mon. Not. R. Astron. Soc. 380,
+911 (2007), \href{https://arxiv.org/abs/astro-ph/0703232}{arXiv:astro-ph/0703232}.
+\bibitem{Cossins} P. J. Cossins, ``Smoothed Particle Hydrodynamics,''
+\href{https://arxiv.org/abs/1007.1245}{arXiv:1007.1245} (2010).
+\end{thebibliography}
+\end{document}

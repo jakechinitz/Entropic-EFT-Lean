@@ -1,0 +1,181 @@
+{
+  "runs": [
+    {
+      "label": "Original",
+      "time_Gyr": 0,
+      "bulk_rate_vector_rad_Gyr": [
+        0.6089982441548876,
+        2.301586103934174e-08,
+        -0.0
+      ],
+      "rings": [
+        {
+          "radius_kpc": 2.0,
+          "vc_proxy_kms": 190.5039203738694,
+          "ring_rate_vector_rad_Gyr": [
+            1.1027201049073834,
+            0.3237938651832716,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 1.1492754660642823,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.5904267338209211
+        },
+        {
+          "radius_kpc": 4.0,
+          "vc_proxy_kms": 218.6091958908007,
+          "ring_rate_vector_rad_Gyr": [
+            0.716629038867315,
+            -0.058745934760342025,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.7190328672590413,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.12261922983558544
+        },
+        {
+          "radius_kpc": 6.0,
+          "vc_proxy_kms": 221.0115034404586,
+          "ring_rate_vector_rad_Gyr": [
+            0.7550673542764191,
+            4.659335893613335e-08,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.7550673542764206,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.14606911012153345
+        },
+        {
+          "radius_kpc": 8.2,
+          "vc_proxy_kms": 217.52855799185159,
+          "ring_rate_vector_rad_Gyr": [
+            0.6216648106049233,
+            4.38800238993365e-08,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.6216648106049248,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.012666566450052904
+        },
+        {
+          "radius_kpc": 10.0,
+          "vc_proxy_kms": 214.00710421472232,
+          "ring_rate_vector_rad_Gyr": [
+            0.5410649735223866,
+            3.5593388489657866e-08,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.5410649735223878,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.06793327063250215
+        },
+        {
+          "radius_kpc": 15.0,
+          "vc_proxy_kms": 206.2377606935517,
+          "ring_rate_vector_rad_Gyr": [
+            0.3929697540146721,
+            9.415709530117937e-09,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.3929697540146722,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.2160284901402159
+        },
+        {
+          "radius_kpc": 20.0,
+          "vc_proxy_kms": 201.30223760770807,
+          "ring_rate_vector_rad_Gyr": [
+            0.3050652976350703,
+            1.7872621104821602e-09,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.3050652976350703,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.303932946519818
+        }
+      ]
+    },
+    {
+      "label": "Original",
+      "time_Gyr": 8,
+      "bulk_rate_vector_rad_Gyr": [
+        0.4136689974201554,
+        -0.14065651301734033,
+        0.0
+      ],
+      "rings": [
+        {
+          "radius_kpc": 2.0,
+          "vc_proxy_kms": 190.38793021876546,
+          "ring_rate_vector_rad_Gyr": [
+            0.31579496308026495,
+            0.06285367562090467,
+            -0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.32198919740563314,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.225822327234355
+        },
+        {
+          "radius_kpc": 4.0,
+          "vc_proxy_kms": 218.42382220207637,
+          "ring_rate_vector_rad_Gyr": [
+            0.5038921772985723,
+            -0.23685157305480098,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.5567818190289887,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.131885221927947
+        },
+        {
+          "radius_kpc": 6.0,
+          "vc_proxy_kms": 220.83103956017717,
+          "ring_rate_vector_rad_Gyr": [
+            0.5437064496446681,
+            -0.19756801032007035,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.5784892584024715,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.1419459668545784
+        },
+        {
+          "radius_kpc": 8.2,
+          "vc_proxy_kms": 218.76153200181076,
+          "ring_rate_vector_rad_Gyr": [
+            0.466132779018207,
+            -0.1622962903393409,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.4935786194043946,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.056751461145188385
+        },
+        {
+          "radius_kpc": 10.0,
+          "vc_proxy_kms": 214.69421960171627,
+          "ring_rate_vector_rad_Gyr": [
+            0.4239356378359823,
+            -0.13965998359364576,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.44634777477296617,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.010314890998948065
+        },
+        {
+          "radius_kpc": 15.0,
+          "vc_proxy_kms": 206.43864345635302,
+          "ring_rate_vector_rad_Gyr": [
+            0.3049853280908581,
+            -0.1313412720555317,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.3320641204584644,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.10908214195300987
+        },
+        {
+          "radius_kpc": 20.0,
+          "vc_proxy_kms": 200.19088569148585,
+          "ring_rate_vector_rad_Gyr": [
+            0.24382252773889548,
+            -0.11482698977556333,
+            0.0
+          ],
+          "ring_rate_magnitude_rad_Gyr": 0.2695081865433809,
+          "rate_difference_from_rigid_bulk_rad_Gyr": 0.17179926523150393
+        }
+      ]
+    }
+  ],
+  "qualification": "Uncoupled thin test-ring tendency. No live disk, warp amplitude, instability rate or observational exclusion is inferred."
+}

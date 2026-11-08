@@ -1,0 +1,9 @@
+SN       lowz off mnu   tau prior cal    acc NL lens |      LCDM | REL A_L=0.979, calc, 1  -> Delta chi2
+dovekie  0        0     fp        fixed  0   1       |  2235.647 |  +2.21     -       -  
+dovekie  0        0.06  lowE      free   0   1       |  2238.447 |  +2.72   +3.09     -  
+dovekie  1        0     fp        fixed  0   0       |  2228.359 |  +1.01   +1.43   -1.21
+dovekie  1        0     fp        fixed  0   1       |  2226.767 |  +1.06   +1.44   -0.93
+dovekie  1        0     fp        fixed  1   1       |  2226.814 |  +1.07     -       -  
+dovekie  1        0.06  lowE      free   0   1       |  2230.042 |  +2.40     -       -  
+none     0        0.06  lowE      free   0   1       |   603.146 |  +2.42     -       -  
+sn5yr    1        0     fp        fixed  0   1       |  2235.348 |  +1.21     -       -  

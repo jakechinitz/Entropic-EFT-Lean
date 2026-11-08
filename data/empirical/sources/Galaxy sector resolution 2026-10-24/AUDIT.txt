@@ -1,0 +1,26 @@
+Independent checks of this folder (2026-10-24)
+
+First audit (of descent_sim.py, the first version):
+  - no-go 2 (stiff-coupling amplification): confirmed. Both variational accelerations,
+    the linearised BVP and the finite-difference check are correct. Wording fixed: d is the
+    fractional change in sigma^2; a fractional change delta in sigma gives d = 2 delta.
+  - first-version descent: a 6 Gyr snapshot, not converged. The integrator leaked energy,
+    the initial conditions were Gaussian Jeans (not equilibrium), and with a contact rate
+    uniform in time a breathing overshoot appeared after 7-8 Gyr (dwarf to -0.3 dex at 12 Gyr).
+  - "cluster stays a fair sample" held by construction: the gate switched every contact off.
+Fixes: descent2.py (Eddington ICs, KDK with a field rebuild every step, contact rate per
+orbit, stock energy measured directly, carrier-wide gate).
+
+Second check (of descent2.py):
+  - integrator now conserves energy (control drift 0.013 V_f^2 over 12 Gyr).
+  - stock budget normalised before tapering (1.04 instead of 0.84 M200): fixed.
+  - forces held constant beyond the grid: fixed (Keplerian extension, grid to 30 r200).
+  - "converged" was too strong. The stated result is now "statistically stationary, with
+    single-radius excursions up to 0.08 dex (dwarf 0.13)".
+  - register debit and measured stock energy differ by 0.01-0.04 V_f^2. The source is
+    unlocated, so both numbers are reported.
+All results in Research_note/main.pdf come from the corrected runs (runs_v2.tar.gz).
+Superseded runs and scripts are in audit_trail_v1.tar.gz.
+  - static_analysis.py's main block uses the Moster M200 for every case; its saved results
+    (static_results.json) cover MW, dwarf, LSB dwarf and massive, and ignore the M200/dc
+    overrides that descent2.py uses.

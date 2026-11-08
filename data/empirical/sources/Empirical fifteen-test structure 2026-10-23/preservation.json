@@ -1,0 +1,137 @@
+[
+  {
+    "path": "01 Current Papers\\Empirical Results\\01_results_and_basis.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\01_results_and_basis.tex",
+    "sha256": "985ce1bfa6904c3ffc356d6215a807330decd47f86222540d92d0d8eb60715ce"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\02_acceleration.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\02_acceleration.tex",
+    "sha256": "a6e74efe5ad7f0e3153cbef1e854c080f048b3dd75c781b5d78f62b401501e4a"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\03_history.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\03_history.tex",
+    "sha256": "5653bb8ab5ff2c69634b8a064a05001a5096e420116080d620493441f976d84e"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\04_dwarfs.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\04_dwarfs.tex",
+    "sha256": "a82b52fb345c1e072d891cb8601fab2e90b7160d4e4d60cec0c766618c317b28"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\05b_clusters.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\05b_clusters.tex",
+    "sha256": "e415fa4c108743eaa18bd30ce153829769885ba462275483c9667ec79742c40a"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\05c_cross_sector.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\05c_cross_sector.tex",
+    "sha256": "f534431244196b9194c179b5635ce0c987fc259173ae224ab9282c6cbe739708"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\05_cosmology.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\05_cosmology.tex",
+    "sha256": "05673015d57affed4b06c8566ea175c5a59d44704b06e18ca2d1c11b090b1726"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\06_interpretation_and_audit.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\06_interpretation_and_audit.tex",
+    "sha256": "7d5f3f79ea118d81061c3203fdb9913ab76d25c42a4c237c5873a71a8a736bc2"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\07_references.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\07_references.tex",
+    "sha256": "b2ce3eda5f7d4b843bb9df2c67dea85b6d3490a30f50a83150feb01fa52fda0b"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\Build PDF.cmd",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\Build PDF.cmd",
+    "sha256": "99d66521f899ed777eb5abd71647e800aa1da7d8d11a1e2f452c46e6fdf62c5b"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\build_pass2.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\build_pass2.txt",
+    "sha256": "4292e06c31d64344ee58267c3630506f308de00374d855ebd40ba5d6664455e7"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\build_pass3.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\build_pass3.txt",
+    "sha256": "6ba3cd82e980c5ab41a51fa4c30d915300f5bec3c47c0bcdaa33c298ecf68a8c"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\build_pass4.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\build_pass4.txt",
+    "sha256": "16596d30ddf1da8c677f7e9ab9cd9d5a1887b1cbe659d512fe9ac99036609aea"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\build_pass5.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\build_pass5.txt",
+    "sha256": "cfa45833b1f80265e6afe4460f455ddf211b6d0c015587f96c2f19767a4b374d"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\build_pass6.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\build_pass6.txt",
+    "sha256": "ca5a8abf889c811f052014d178912997ebfd7bae36cd0f9da358831a9533b6c6"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\build_pass7.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\build_pass7.txt",
+    "sha256": "ca5a8abf889c811f052014d178912997ebfd7bae36cd0f9da358831a9533b6c6"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\current_verification.json",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\current_verification.json",
+    "sha256": "4ab3a7a65d76072650eb5fc5f4304936c45feef4122655c6f2eb537650271b22"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\Empirical_Results.log",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\Empirical_Results.log",
+    "sha256": "308c9779a5dffb3abd7fb978b32bd71f8d284c4326de86abc22828446e81384f"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\Empirical_Results.pdf",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\Empirical_Results.pdf",
+    "sha256": "1a0fb3fb8c008c2e8f4cf50b9851a546526ecd2dd3f6645c45f39fadd3b381cb"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\Empirical_Results.tex",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\Empirical_Results.tex",
+    "sha256": "f4046e72fd1fb839c5988025601ac6bf45259147cb433d5737f7721d1b0e21bd"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\Empirical_Results_Source.zip",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\Empirical_Results_Source.zip",
+    "sha256": "945fcd5d65345d8ec1f8d06b941995d43736a19a9795add11a9ac215318b945b"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\FOLDER GUIDE.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\FOLDER GUIDE.txt",
+    "sha256": "5ae7112f150805b7d4ec3da34c67dcfdb7e2d6ea6f83388286dd2483679571b1"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\manifest.json",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\manifest.json",
+    "sha256": "7050c81a669512a5c6316fc10b50618199b0d121828a59570a1903084f79bdfe"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\numerical_review.json",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\numerical_review.json",
+    "sha256": "c72579752988bacfac8e7a266a408be14b646d8ae5b746f48da5991eb2a7cb25"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\README.txt",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\README.txt",
+    "sha256": "7e137bd1e42ea8e5a9c56c64a97f4016f0252170188a4cb877b436be30975f31"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\refresh_verified_results.py",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\refresh_verified_results.py",
+    "sha256": "d0fd4c09f75f8534d69121b3096cf9579ad2ca9bd8e5cbdd6c94b07f2f7e2670"
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\reproduce_review.py",
+    "backup": "01 Current Papers\\Empirical Results\\Previous PDFs\\20261023_155659_fifteen_tests\\reproduce_review.py",
+    "sha256": "9fb8bec1a36209078dbb581314e27da95a659301ede3dae2cd07df02fbce5d44"
+  }
+]

@@ -1,0 +1,37 @@
+Read Research note/main.pdf first. This folder is a research supplement;
+it does not alter the four publication papers or the upstream Lean repository.
+
+Inputs are reused read-only from:
+  ../Observed cluster tests 2026-10-23/source_data
+The previous reduction's stellar deprojection and k convention are retained.
+Exact input hashes are in source_records/input_hashes.json.
+Primary XRISM articles and their hashes are in source_records.
+
+Run from the Sol and Fable workspace with Python 3.13:
+  python "02 Research/Cluster outlier closure 2026-10-23/analyze.py"
+  python "02 Research/Cluster outlier closure 2026-10-23/check_lean.py"
+  python "02 Research/Cluster outlier closure 2026-10-23/validate.py"
+
+The analysis needs numpy, scipy, matplotlib, and the previous project's local
+astropy dependency directory. Its paths are set by the analysis. The Lean
+checker uses the preserved Lean/mathlib 4.19 installation under Unified closure
+2026-10-21, not the upstream 4.35 toolchain.
+
+Preserve existing results and figures before rerunning analyze.py or validate.py:
+these scripts write stable result paths. The initial audit, subsequent
+normalizer audit and failed coarse-grid validation have all been retained
+under source_records/before_* during this run. No files were deleted.
+
+Compile the note using the workspace helper:
+  python .organization/build_pdfs.py --tex "02 Research/Cluster outlier closure 2026-10-23/Research note/main.tex"
+Copy changed figures into Research note/images before building.
+
+Interpretation rules:
+- The 12 positive transport maps are constructive inventory witnesses.
+  They do not predict transport, energy cost, timescale or equilibrium.
+- The 22 Lean lemmas verify conditional algebra and finite conservation.
+  They do not verify the observations or close the constitutive dynamics.
+- Common-potential pressure and contact requirements are conditional on the
+  chosen mass reconstructions; none is a fitted interaction force.
+- NFW and aperture masses use the same lensing data. Do not double-count them.
+- The A644 minimax displacement uses marginal error bars, not a likelihood.

@@ -1,0 +1,24 @@
+{
+  "runs": [
+    {
+      "label": "Original",
+      "time_Gyr": 8,
+      "independent_pair_representatives": 3101,
+      "major_tilt_deg": 26.5829715744101,
+      "minor_axis_angle_to_target_after_major_azimuth_alignment_deg": 5.639070758983499,
+      "intermediate_axis_elevation_deg": 4.927637535717198,
+      "tilt_only_D": 0.47229572369638284,
+      "orientation_sensitive_D": 3.5142699513314004,
+      "minor_axis_after_azimuth_alignment": [
+        -0.4454242837482153,
+        -0.09605136842939405,
+        0.8901524263126119
+      ],
+      "pq": [
+        0.8383012159653456,
+        0.7642491174860986
+      ]
+    }
+  ],
+  "qualification": "Final instantaneous snapshot, 6-60 kpc. Overall azimuth is aligned to the stellar major axis because the disk model is axisymmetric. The minor-axis angle additionally sees departure from coplanarity. D remains a summary diagnostic, not a calibrated observational probability."
+}

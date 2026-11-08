@@ -1,0 +1,107 @@
+[
+  {
+    "id": "S01",
+    "title": "High-redshift galaxy kinematics",
+    "location_label": "sec:redshift",
+    "part": "I",
+    "status_snapshot": "Residual tension; full likelihood open"
+  },
+  {
+    "id": "S02",
+    "title": "CMB-to-galaxy normalization",
+    "location_label": "sec:crossnorm",
+    "part": "I",
+    "status_snapshot": "Conditional relation checked"
+  },
+  {
+    "id": "S03",
+    "title": "Local RAR and baryonic Tully\u2013Fisher",
+    "location_label": "sec:localrar",
+    "part": "II",
+    "status_snapshot": "Broad diagnostic completed; discrepancies retained"
+  },
+  {
+    "id": "S04",
+    "title": "Galaxy weak lensing",
+    "location_label": "sec:galaxylensing",
+    "part": "II",
+    "status_snapshot": "Updated summary agrees; reduction sensitivity demonstrated"
+  },
+  {
+    "id": "S05",
+    "title": "CMB acoustic peaks",
+    "location_label": "sec:cmb",
+    "part": "II",
+    "status_snapshot": "New fit and ACT comparison completed, conditionally"
+  },
+  {
+    "id": "S06",
+    "title": "Growth and projected Weyl power",
+    "location_label": "sec:cmb",
+    "part": "II",
+    "status_snapshot": "New ACT lensing test; full-shape growth open"
+  },
+  {
+    "id": "S07",
+    "title": "Dark-energy history and distances",
+    "location_label": "sec:distances",
+    "part": "II",
+    "status_snapshot": "Common background refit completed; local exhaustion open"
+  },
+  {
+    "id": "S08",
+    "title": "Relaxed and colliding clusters",
+    "location_label": "sec:clusters",
+    "part": "II",
+    "status_snapshot": "Budget audit completed; conservative map prediction open"
+  },
+  {
+    "id": "S09",
+    "title": "Gravitational slip and E_G",
+    "location_label": "sec:eg",
+    "part": "II",
+    "status_snapshot": "New transfer prediction compared with data"
+  },
+  {
+    "id": "S10",
+    "title": "Wide binaries and the Solar System",
+    "location_label": "sec:binaries",
+    "part": "I",
+    "status_snapshot": "Null benchmarks checked; raw catalogue test open"
+  },
+  {
+    "id": "S11",
+    "title": "Newton\u2019s constant and lepton masses",
+    "location_label": "sec:constants",
+    "part": "I",
+    "status_snapshot": "Arithmetic and finite menus reproduced"
+  },
+  {
+    "id": "S12",
+    "title": "Gravitational waves and Lorentz tests",
+    "location_label": "sec:tensor",
+    "part": "II",
+    "status_snapshot": "Public null benchmark reproduced; tensor completion open"
+  },
+  {
+    "id": "S13",
+    "title": "Milky Way, LMC, streams and halo tilt",
+    "location_label": "sec:lmc",
+    "part": "I",
+    "status_snapshot": "Existing live realizations consolidated; joint fit open"
+  },
+  {
+    "id": "S14",
+    "title": "Dwarf satellites and tidal inheritance",
+    "location_label": "sec:crater",
+    "part": "I",
+    "status_snapshot": "Archived grid reanalysis completed; strong model dependence"
+  },
+  {
+    "id": "S15",
+    "title": "Old-disk vertical gravity",
+    "location_label": "sec:olddisk",
+    "part": "I",
+    "status_snapshot": "Common-a\u2080 re-evaluation completed"
+  }
+]

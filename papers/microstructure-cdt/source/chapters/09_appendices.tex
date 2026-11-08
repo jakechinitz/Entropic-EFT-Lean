@@ -1,0 +1,338 @@
+\section{Regge conventions and the CDT coupling map}
+\label{app:couplings}
+
+\subsection{Geometry from squared edge lengths}
+
+The Euclidean construction can be reproduced without an embedding chosen by the original code. For a four-simplex with vertices $0,\ldots,4$, set $s_{ij}$ equal to its squared edge lengths and form
+\begin{equation}
+G_{ij}=\frac{s_{0i}+s_{0j}-s_{ij}}2,\qquad i,j=1,\ldots,4.
+\end{equation}
+The matrix is the Gram matrix of four edge vectors. Positive definiteness is the Euclidean simplex condition, and
+\begin{equation}
+V_4=\frac{\sqrt{\det G}}{4!}.
+\end{equation}
+For a triangle $(i,j,k)$,
+\begin{equation}
+A_{ijk}=\frac14
+\sqrt{2(s_{ij}s_{ik}+s_{ij}s_{jk}+s_{ik}s_{jk})
+-s_{ij}^2-s_{ik}^2-s_{jk}^2}.
+\end{equation}
+These formulas determine areas and volumes directly from the intrinsic metric.
+
+One dihedral-angle algorithm factors $G$ to obtain vertex coordinates. For the hinge $(i,j,k)$, project the displacement vectors to the other two vertices onto the two-dimensional orthogonal complement of the hinge plane. Normalize the projected vectors to $u$ and $v$. The interior dihedral angle is $\theta=\arccos(u\cdot v)$. Clipping the scalar product to $[-1,1]$ removes roundoff excursions at the inverse-cosine call. Degenerate projections must be rejected before this step.
+
+At unit spatial edge, the $(4,1)$ coordinates can be chosen as
+\begin{equation}
+x_0,\ldots,x_3=\frac1{\sqrt8}
+\{(1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1)\},
+\end{equation}
+all with fourth coordinate zero, and
+$x_4=(0,0,0,\sqrt{\alpha-3/8})$.
+For $(3,2)$ use an equilateral triangle of circumradius $1/\sqrt3$ in the first two coordinates and the two vertices
+\begin{equation}
+(0,0,\tfrac12,\sqrt{\alpha-7/12}),\qquad
+(0,0,-\tfrac12,\sqrt{\alpha-7/12}).
+\end{equation}
+Every same-slice edge has squared length one and every mixed edge has squared length $\alpha$. Determinants give the two volume formulas in Section \ref{sec:geometric}. The Lorentzian normal heights follow from the corresponding continued metric; their positive proper durations contain $\sqrt{\alpha+3/8}$ or $\sqrt{\alpha+7/12}$.
+
+\subsection{Reduction of the closed action to simplex counts}
+
+For a closed periodic causal triangulation with the usual spherical spatial slices, the counting identities used here are
+\begin{equation}
+N_2^{\rm SL}=N_{41},\qquad
+N_2^{\rm mix}=2N_0+N_{41}+2N_{32}.
+\label{eq:countidentities}
+\end{equation}
+Both time orientations are included in $N_{41}$ and $N_{32}$. Boundaries require their explicit boundary terms; one should not apply \eqref{eq:countidentities} unchanged to an open slab.
+
+Let $\bar A=A/a^2$, $\bar V=V/a^4$, and define
+\begin{equation}
+k=\frac{a^2}{8\pi G_0},\qquad
+\bar\lambda=\lambda a^4,\qquad
+\Sigma_i=\sum_{h\subset i}\bar A_h\theta_{hi}.
+\end{equation}
+The Euclidean curvature sign is
+\begin{equation}
+S_E=-k\sum_h\bar A_h\delta_h
++\bar\lambda\sum_\sigma\bar V_\sigma.
+\end{equation}
+For an Einstein cosmological term in these conventions,
+$\lambda=\Lambda/(8\pi G_0)$. Inserting the deficits and the counting identities gives
+\begin{equation}
+S_E=c_0N_0+c_{41}N_{41}+c_{32}N_{32},
+\end{equation}
+with
+\begin{align}
+c_0&=-4\pi k\bar A_{\rm mix},\\
+c_{41}&=-2\pi k(\bar A_{\rm SL}+\bar A_{\rm mix})
++k\Sigma_{41}+\bar\lambda\bar V_{41},\\
+c_{32}&=-4\pi k\bar A_{\rm mix}
++k\Sigma_{32}+\bar\lambda\bar V_{32}.
+\end{align}
+The conventional count action is
+\begin{equation}
+S_E=-(\kappa_0+6\Delta_{\rm CDT})N_0
++\kappa_4(N_{41}+N_{32})
++\Delta_{\rm CDT}(2N_{41}+N_{32}).
+\end{equation}
+Equating coefficients yields
+\begin{align}
+\Delta_{\rm CDT}&=c_{41}-c_{32},\\
+\kappa_4&=2c_{32}-c_{41},\\
+\kappa_0&=-c_0-6(c_{41}-c_{32}).
+\label{eq:couplingmap}
+\end{align}
+These equations provide an independent implementation of the coupling map.
+
+The angular prescription fixes
+\begin{equation}
+\frac{a^2}{G_0}=\frac{16\log2}{\sqrt3},\qquad
+k=\frac{2\log2}{\pi\sqrt3}.
+\end{equation}
+Consequently the dimensionless curvature couplings at fixed $\alpha$ do not depend on the provisional $m_4$. That constant calibrates the physical lattice scale and $G_0/\Gstar$. At $\alpha=7$ and $\bar\lambda=0$, evaluation of \eqref{eq:couplingmap} gives
+\begin{equation}
+\kappa_0=2.202053115156816,\quad
+\Delta_{\rm CDT}=0.32613832803380927,\quad
+\kappa_4=-0.30477461996038535.
+\end{equation}
+The independent volume values are
+\begin{equation}
+\bar V_{41}=0.07583447801333872,\qquad
+\bar V_{32}=0.09140587903533463.
+\end{equation}
+
+\subsection{Physical volume and numerical volume control}
+
+At $\alpha=7$, fixed $N_4=N_{41}+N_{32}$ does not imply fixed physical volume, since
+\begin{equation}
+V_4=a^4(\bar V_{41}N_{41}+\bar V_{32}N_{32})
+\end{equation}
+depends on the mixture of simplex types. A term $\epsilon(N_4-\bar N_4)^2$ restrains the total count. A term involving $V_4-\bar V_4$ restrains physical volume. Either can define a useful regulated ensemble, but their relative history weights differ.
+
+Varying a physical $\bar\lambda$ at fixed $a$, $G_0$, and $\alpha$ moves all the conventional couplings:
+\begin{align}
+\frac{d\Delta_{\rm CDT}}{d\bar\lambda}
+&=\bar V_{41}-\bar V_{32},\\
+\frac{d\kappa_4}{d\bar\lambda}
+&=2\bar V_{32}-\bar V_{41},\\
+\frac{d\kappa_0}{d\bar\lambda}
+&=-6(\bar V_{41}-\bar V_{32}).
+\end{align}
+Tuning only $\kappa_4$ at fixed $\kappa_0,\Delta_{\rm CDT}$ adds a chemical potential for $N_4$. Within an exactly fixed-$N_4$ sector it is constant. This operation is not generally the same trajectory as varying the physical volume coefficient. Replication of a phase result requires recording which prescription was used.
+
+For an actual simulation, write the complete target probability before implementing moves:
+\begin{equation}
+\pi(T)\propto C_T^{-1}
+\exp[-S_E(T)-S_{\rm control}(T)]\,W_{\rm dyn}(T).
+\end{equation}
+Here $W_{\rm dyn}$ includes any dynamical matter determinant or other retained geometry-dependent factor. For a proposal distribution $q(T'\mid T)$, the Metropolis--Hastings acceptance probability is
+\begin{equation}
+p_{\rm acc}(T\to T')=
+\min\left\{1,\frac{\pi(T')q(T\mid T')}{\pi(T)q(T'\mid T)}\right\}.
+\end{equation}
+Proposal multiplicities, automorphism conventions, and forbidden-move rules must be included consistently. A hard volume window can suppress legal transitions near its boundary. Acceptance, autocorrelation, stationary distributions, and independent starts diagnose the sampler, while a correct local action comparison alone does not.
+
+\section{Sources, Gaussian sewing, and a finite-duration force benchmark}
+\label{app:sources}
+
+\subsection{Integrating an external quadratic probe}
+
+Let a scalar probe on a fixed triangulation have positive quadratic kernel $M_T$ after boundary conditions or zero-mode removal:
+\begin{equation}
+S_{\phi,T}=\frac12\phi^TM_T\phi-J^T\phi.
+\end{equation}
+Its Gaussian integral is
+\begin{equation}
+Z_{\phi,T}(J)=(2\pi)^{n/2}(\det M_T)^{-1/2}
+\exp\left(\frac12J^TM_T^{-1}J\right).
+\label{eq:gaussianprobe}
+\end{equation}
+The action inserted before integration and the determinant after integration are two descriptions of the same probe. Retaining only the exponential response while discarding the geometry-dependent determinant defines a quenched or externally conditioned calculation, whose status should be specified.
+
+Separate the variables into boundary and interior values, $\phi=(\phi_B,\phi_I)$. With
+\begin{equation}
+M=
+\begin{pmatrix}
+M_{BB}&M_{BI}\\
+M_{IB}&M_{II}
+\end{pmatrix},
+\end{equation}
+integration over $\phi_I$ gives the Schur complement
+\begin{equation}
+M_{\rm eff}=M_{BB}-M_{BI}M_{II}^{-1}M_{IB},
+\qquad
+J_{\rm eff}=J_B-M_{BI}M_{II}^{-1}J_I,
+\end{equation}
+the determinant factor $(\det M_{II})^{-1/2}$, and the constant
+$\tfrac12J_I^TM_{II}^{-1}J_I$ in $\log Z$.
+
+When two slabs share the field $\phi_B$, their kernels and source vectors add on that interface. The next integration is another Schur complement. Associativity follows from ordinary Gaussian integration and
+\begin{equation}
+\det M=(\det M_{II})(\det M_{\rm eff}).
+\end{equation}
+This identity is the analytic basis of the finite scalar sewing check. It tests the source bookkeeping as well as the pure geometry contraction.
+
+\subsection{The connected mass derivative}
+
+For held trajectories with preparation independent of their masses, write
+\begin{equation}
+Z(m_1,m_2)=\sum_Tp_0(T)
+\exp[-m_1\ell_1(T)-m_2\ell_2(T)],\qquad
+\sum_Tp_0(T)=1.
+\end{equation}
+Direct differentiation gives
+\begin{align}
+\partial_{m_i}\log Z&=-\langle\ell_i\rangle_{m_1,m_2},\\
+\partial_{m_1}\partial_{m_2}\log Z
+&=\langle\ell_1\ell_2\rangle_{m_1,m_2}
+-\langle\ell_1\rangle_{m_1,m_2}
+\langle\ell_2\rangle_{m_1,m_2}.
+\end{align}
+At small masses the connected ratio therefore has expansion
+\begin{equation}
+\log\mathcal R=m_1m_2\Cov_0(\ell_1,\ell_2)
++O(m_1^2m_2,m_1m_2^2).
+\end{equation}
+Terms depending on one source alone cancel. The preparation must be differentiated if it depends on mass. Varying a mass-dependent path optimizer without including that derivative changes the observable.
+
+If all lengths are in $\Lstar$, masses in $\hbar/(c\Lstar)$, and $T,r$ in tick-length units, the Newtonian target is
+\begin{equation}
+\frac{\Cov_0(\ell_1,\ell_2)}{T}
+\longrightarrow\frac{G_R/\Gstar}{r}.
+\label{eq:dimensionlessforce}
+\end{equation}
+This makes the dimensional conversion explicit. It separates a dimensionless response estimator from the physical value obtained after the electron calibration.
+
+\subsection{A continuum finite-duration target}
+
+A finite-duration test can be compared with the Gaussian Einstein limit before extrapolating $T$. The Euclidean massless Green function in four dimensions is
+\begin{equation}
+D_4(\tau,\mathbf r)=\frac1{4\pi^2(\tau^2+r^2)}.
+\end{equation}
+The two parallel static segments of duration $T$ have integral
+\begin{align}
+I(T,r)
+&=\int_0^Tdt\int_0^Tds\,D_4(t-s,\mathbf r)\\
+&=\frac1{2\pi^2}
+\left[\frac{T}{r}\arctan\frac{T}{r}
+-\frac12\log\left(1+\frac{T^2}{r^2}\right)\right].
+\label{eq:finitegreen}
+\end{align}
+To derive it, write the double integral as
+$2\int_0^T(T-u)D_4(u,\mathbf r)\,du$ and integrate
+$1/(u^2+r^2)$ and $u/(u^2+r^2)$ separately.
+
+For the usual linearized Einstein propagator and conserved nonrelativistic sources, each source vertex carries $m/2$, and the $44,44$ tensor residue is $16\pi G_R$. The connected cross term is consequently
+\begin{equation}
+\log\mathcal R_{\rm Gaussian}=4\pi G_Rm_1m_2\,I(T,r)
+\end{equation}
+in natural units. Since
+\begin{equation}
+\lim_{T/r\to\infty}\frac{I(T,r)}T=\frac1{4\pi r},
+\end{equation}
+the interaction tends to $-G_Rm_1m_2/r$.
+At finite $T/r$ the deviation is known explicitly; a short interval should not be fit directly to an infinite-duration potential.
+
+This benchmark uses the constrained Einstein response with a consistent gravitational Gaussian prescription. It is not a probability measure for the unrestricted conformal mode, and it does not replace the interacting history sum. Endpoint forces or apparatus contributions needed to hold the source are part of the conserved preparation. Finite box Green functions and curvature corrections replace \eqref{eq:finitegreen} when the relevant scales are comparable with the box or background curvature radius.
+
+\section{Stable numerical normalization and the native mass scale}
+\label{app:numerics}
+
+\subsection{Full Gram normalization}
+
+Given a complex $d$-by-$n$ map $R$ with $d\le n$, compute a thin singular-value decomposition
+\begin{equation}
+R=U\Sigma V^\dagger.
+\end{equation}
+The normalized map and its encoding are
+\begin{equation}
+F=UV^\dagger,\qquad I=VU^\dagger.
+\end{equation}
+They equal $(RR^\dagger)^{-1/2}R$ and its adjoint when all $d$ singular values are nonzero. This implementation avoids explicitly squaring the condition number. A singular-value cutoff is a rank decision, not a normalization convention. The retained ranks seven and nineteen must be verified before taking the polar factor.
+
+Changing basis in the microscopic or coarse space conjugates the corresponding projectors. Comparisons should use $F F^\dagger$, $I I^\dagger$, singular values, and invariant contraction errors. Individual singular vectors can change sign or rotate inside degenerate singular subspaces across libraries while representing the same map.
+
+The scalar raw packet norm is insufficient to fix the boundary operator. For two different packets $u,v$, sewing depends on
+$u^\dagger RR^\dagger v$.
+Normalizing just $R^\dagger u$ for one selected $u$ corrects that one vector but leaves the remaining cross terms. The complete Gram inverse fixes the entire target interface.
+
+\subsection{The logarithm and its derivative}
+
+Let $K=U\operatorname{diag}(\lambda_i)U^\dagger$ with $\lambda_i>0$. In that basis the Fréchet derivative is
+\begin{equation}
+\bigl[\mathcal D\log_K(C)\bigr]_{ij}
+=L_{ij}C_{ij},\qquad
+L_{ij}=
+\begin{cases}
+\displaystyle\frac{\log\lambda_i-\log\lambda_j}{\lambda_i-\lambda_j},
+&\lambda_i\ne\lambda_j,\\[6pt]
+1/\lambda_i,&\lambda_i=\lambda_j.
+\end{cases}
+\end{equation}
+Near equal eigenvalues, use a stable divided difference or the continuous limit. The resolvent formula in Theorem \ref{thm:clock} proves positivity for positive $C$, including the noncommuting case. Replacing the derivative by $K^{-1}C$ would in general lose Hermiticity and give the wrong clock.
+
+For the squared two-geometry transfer, its smallest eigenvalue is about $1.86\times10^{-8}$. Computing $\log(A^\dagger A)$ by first squaring can amplify relative roundoff in this eigenvalue. Here $A$ is Hermitian, so diagonalizing $A$ directly and using
+$\log K=U\operatorname{diag}(2\log|\lambda_i(A)|)U^\dagger$
+is stable. A zero eigenvalue would require restricting to a common support before defining the logarithm.
+
+\subsection{Tiny native gaps and controlled tests}
+
+The native electron gap is about $4.19\times10^{-23}$ in tick units. Double precision cannot resolve this by subtracting two order-one energies. The joint rest-gap theorem gives the exact analytic difference. Numerical checks at a control mass $0.23$ test the matrices and the implementation of that theorem.
+
+Likewise, a rest amplitude with duration of order ten is
+$e^{-\eps\ell}=1+O(10^{-22})$. Store its logarithm $-\eps\ell$ rather than subtracting its rounded exponential from one. A connected native source ratio of order $10^{-48}$ should be evaluated through its mass derivatives or cumulants.
+
+These control masses are not changes in the physical electron calibration. They check analytic identities at a numerically resolved point. Predictions for the native mass must follow from the exact identity or a controlled expansion whose remainder is explicitly bounded.
+
+The bare-scale sensitivity follows from
+\begin{equation}
+\frac{G_0}{\Gstar}=C\,m_4^{8/3},\qquad
+C=0.10551926870131369,
+\end{equation}
+so
+\begin{equation}
+\frac{dG_0}{G_0}=\frac83\frac{dm_4}{m_4}.
+\end{equation}
+An exact target $G_0=\Gstar$ would require $m_4=C^{-3/8}$, approximately $2.324$. This is an inverse consistency target. It becomes evidence only when the chain constant is determined independently under the declared event law.
+
+\section{Logical scope of the combined realization}
+\label{app:scope}
+
+\subsection{Existence, physical selection, and effective gravity}
+
+An inverse construction can prove existence. Here the microscopic maps, selected simplex tensors, and source transport give a concrete member of the permitted class whose prepared code reproduces a chosen coarse theory. The construction makes additional dynamical commitments that can be examined as interactions on the substrate.
+
+The original finite capacity measure does not determine every such commitment. The absolute angular offset, global bond coherence, paired volume assignment, normalized geometric vertices, and orbital metric must be stated with the resulting theory. Once fixed, they define predictions. A second microscopic realization with the same infrared action would not invalidate the first.
+
+The following implications separate the mathematical and physical steps:
+\begin{align}
+&\text{native capacity state and chosen interactions}
+\nonumber\\[-2pt]
+&\hspace{1cm}\Longrightarrow
+\text{normalized microscopic maps and bare curvature coefficient},
+\\
+&\text{maps, selected vertices, and matched history measure}
+\nonumber\\[-2pt]
+&\hspace{1cm}\Longrightarrow
+\text{exact selected CDT generating functional},
+\\
+&\text{same ensemble in an Einstein regime with calibrated sources}
+\nonumber\\[-2pt]
+&\hspace{1cm}\Longrightarrow
+\text{the corresponding microscopic effective GR and }G_R.
+\end{align}
+The first two implications are established for the specified construction and finite tests. The final implication is the inheritance theorem. Establishing its phase and response hypotheses for the new branch is the remaining physical calculation.
+
+\subsection{The time requirement}
+
+Three separate time constructions appear. The causal foliation labels allowed coarse simplices. The chain clock calibrates the physical event rate and $\tstar$. The finite transfer Hamiltonian uses a declared reference interval $\Delta t$, while a massive excitation accumulates its own positive integrated proper clock.
+
+The local mass derivative and clock-composition identities have been checked. Equality of observables under different choices of spacetime foliation is stronger. Commuting disjoint replacement channels proves an order identity for those channels; it does not prove the algebra of overlapping gravitational constraints. A large CDT construction can instead supply an effective covariant regime if its observables restore the necessary symmetry. The specified finite matrices do not by themselves decide that limit.
+
+At a zero of the lapse, an inverse-clock coordinate description can become singular. This does not imply that a supplied self-adjoint Hamiltonian ceases to generate unitary evolution in its reference parameter. The physical clock domain must be stated wherever lapse inversion is used. Expansion turning points and clock turning points are also distinct conditions.
+
+\subsection{The deliverable and the physical conclusion}
+
+The executable bundle reproduces the native finite constants, a positive paired parent, coherent bonds, connected geometric interfaces, the causal weight identity, native proper-time insertions, a finite joint operator, and an exact microscopic lift. It also retains counterexamples and limitations that define the usable domains of these constructions.
+
+The selected Einstein parent supplies the classical Newton law and de Sitter solutions. The exact history identity makes a compatible coarse gravitational regime a regime of the microscopic realization. The current finite calculations have not measured the new ensemble's de Sitter phase or its interacting $G_R$. A matched simulation can test those properties without changing the microscopic definitions established here.

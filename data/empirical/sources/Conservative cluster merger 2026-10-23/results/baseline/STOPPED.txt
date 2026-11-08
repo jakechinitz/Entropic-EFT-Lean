@@ -1,0 +1,1 @@
+Stopped the first slow baseline after confirming that allocation-free scalar kernels reproduce its forces. Its initial state, settings and source are preserved. The full replacement is baseline_optimized. No final result is claimed for this interrupted run.

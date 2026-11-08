@@ -1,0 +1,79 @@
+{
+  "checked_utc": "2026-10-23T17:41:08.540544+00:00",
+  "checks_passed": true,
+  "completed_simulations": 17,
+  "publication_check": "4 publications: full=\"Astra Full\", compact=\"Astra Compact\", empirical=\"Empirical Results\", cdt=\"Microstructure CDT\"\nOK: exactly one folder and one current PDF per publication.",
+  "pdf_pages": 8,
+  "visual_review": "All eight pages inspected in Review render 20261023_133849; equations, table, maps and captions checked.",
+  "prior_unchanged_input_hashes": 172,
+  "additional_inputs_checked": 10,
+  "source_snapshots_verified": 17,
+  "exact_floor_position_and_velocity_match": true,
+  "Lean_statements": 8,
+  "Lean_scope": "Local algebra and conditional signs; no whole-simulation theorem.",
+  "runtime_versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "numba": "0.65.1",
+    "matplotlib": "3.10.1",
+    "pymupdf": "1.28.2"
+  },
+  "build_log": "05 Build Files\\PDF builds\\main\\20261023_133843_821644\\main.log",
+  "files": [
+    {
+      "path": "analyze.py",
+      "sha256": "7cd71a96a663757e5eeaef19ce40133e168b63a3c6a00914dc65add03c3648b0"
+    },
+    {
+      "path": "assess.py",
+      "sha256": "7e1dd1c2a231a34f0347a3a15d6cbf1d5b2f73a5d4e3d7471cac5cec1910c309"
+    },
+    {
+      "path": "checks.py",
+      "sha256": "d18909b90bdb1a8feb28858fe0b6d16f83f3e82f35c85b52035dbdc6ae05cff7"
+    },
+    {
+      "path": "check_lean.py",
+      "sha256": "7a4e3c73485b09f739b96a5a39fef310ef5f7b57ce107320e4e300afa84235b9"
+    },
+    {
+      "path": "merger.py",
+      "sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08"
+    },
+    {
+      "path": "package.py",
+      "sha256": "91b6269febc86d4e93fd8c2d27b9fd439e3c3130fdb1143232f972294f2a4ff8"
+    },
+    {
+      "path": "render_note.py",
+      "sha256": "b1bf54097c104cd02dfe93e91d41999f5abe0c7cb91e69abceaaab2b7d09aa69"
+    },
+    {
+      "path": "Research note\\main.tex",
+      "sha256": "38e9cb3ae198f8fa3b17a2d6a2e2f332127d0a1ebb91b8aeae0b727da4e937a6"
+    },
+    {
+      "path": "Research note\\main.pdf",
+      "sha256": "608e81cc63cbe9e3afb7775ef9d57a20f23975798f441e379db1766ee7e3192e"
+    },
+    {
+      "path": "formalization\\MergerContact.lean",
+      "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba"
+    },
+    {
+      "path": "ASSESSMENT.json",
+      "sha256": "d5628d47edc29e3f034083c15441472ec1370612b906d5abac0d1127ac4dbd17"
+    },
+    {
+      "path": "START HERE.html",
+      "sha256": "7bffda2db2ac2ed7cab7c1d3dad229592f8a199450adba6bb29de265bbf7ec3f"
+    },
+    {
+      "path": "REPRODUCE.txt",
+      "sha256": "38d98664d1eef756b16158f5d2f9b19977d37184e871b76041f0ae2ca5b50ffd"
+    }
+  ],
+  "empirical_fit": false,
+  "physical_rate_selected": false,
+  "full_spatial_clock_stress_evolved": false
+}

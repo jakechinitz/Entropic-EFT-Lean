@@ -1,0 +1,102 @@
+[
+  {
+    "run": "live_seed211034_8",
+    "time_Gyr": 8.0,
+    "force_proxies": [
+      {
+        "radius_kpc": 8.2,
+        "speed_proxy_fractional_min": 0.003112236574273508,
+        "speed_proxy_fractional_max": 0.010971182706349447,
+        "speed_proxy_fractional_mean": 0.006538015396666634,
+        "mean_radial_force_fractional_change": 0.013124587312432387
+      },
+      {
+        "radius_kpc": 10.0,
+        "speed_proxy_fractional_min": 0.0021432503594953634,
+        "speed_proxy_fractional_max": 0.014565199071935764,
+        "speed_proxy_fractional_mean": 0.0063896599119996995,
+        "mean_radial_force_fractional_change": 0.012837723041031665
+      },
+      {
+        "radius_kpc": 20.0,
+        "speed_proxy_fractional_min": -0.007536791199303727,
+        "speed_proxy_fractional_max": 0.0030613900768290403,
+        "speed_proxy_fractional_mean": -0.0006556409461119301,
+        "mean_radial_force_fractional_change": -0.0012958732358041322
+      },
+      {
+        "radius_kpc": 40.0,
+        "speed_proxy_fractional_min": -0.003669045371450741,
+        "speed_proxy_fractional_max": 0.006227924130368212,
+        "speed_proxy_fractional_mean": 0.00035149729946736604,
+        "mean_radial_force_fractional_change": 0.0007148204701426812
+      },
+      {
+        "radius_kpc": 60.0,
+        "speed_proxy_fractional_min": -0.002856806779354626,
+        "speed_proxy_fractional_max": 0.006101895014195335,
+        "speed_proxy_fractional_mean": 0.001937957762465115,
+        "mean_radial_force_fractional_change": 0.0038897177595485994
+      }
+    ],
+    "vertical_even_fractional_range_vs_spherical_stock": [
+      -0.0014091080063639572,
+      0.020498800189598265
+    ],
+    "vertical_odd_potential_range_kms_squared": [
+      -216.07721117023902,
+      216.07721117023902
+    ],
+    "qualification": "Compared to the original spherical-stock plus fixed-baryon force. Circular-speed proxy is not a circular orbit in the nonspherical field. No full vertical-equilibrium/director solve is claimed."
+  },
+  {
+    "run": "live_seed211035_8",
+    "time_Gyr": 8.0,
+    "force_proxies": [
+      {
+        "radius_kpc": 8.2,
+        "speed_proxy_fractional_min": -0.0008087240016415587,
+        "speed_proxy_fractional_max": 0.013478871424520422,
+        "speed_proxy_fractional_mean": 0.006687954896025745,
+        "mean_radial_force_fractional_change": 0.013441439751942487
+      },
+      {
+        "radius_kpc": 10.0,
+        "speed_proxy_fractional_min": -0.0005465089684215663,
+        "speed_proxy_fractional_max": 0.01045061974000916,
+        "speed_proxy_fractional_mean": 0.005457307678595026,
+        "mean_radial_force_fractional_change": 0.01095747397141238
+      },
+      {
+        "radius_kpc": 20.0,
+        "speed_proxy_fractional_min": -0.006001357847322586,
+        "speed_proxy_fractional_max": 0.003055774563865077,
+        "speed_proxy_fractional_mean": -0.0015904474570722792,
+        "mean_radial_force_fractional_change": -0.0031683092826418685
+      },
+      {
+        "radius_kpc": 40.0,
+        "speed_proxy_fractional_min": -0.00466148392147725,
+        "speed_proxy_fractional_max": -0.0012334825424997753,
+        "speed_proxy_fractional_mean": -0.0030155689118187496,
+        "mean_radial_force_fractional_change": -0.00602100749889021
+      },
+      {
+        "radius_kpc": 60.0,
+        "speed_proxy_fractional_min": -0.004130757784822414,
+        "speed_proxy_fractional_max": 0.004646033561011009,
+        "speed_proxy_fractional_mean": 0.0007534987696123421,
+        "mean_radial_force_fractional_change": 0.0015156453275315335
+      }
+    ],
+    "vertical_even_fractional_range_vs_spherical_stock": [
+      0.006954314141736528,
+      0.016474817554430254
+    ],
+    "vertical_odd_potential_range_kms_squared": [
+      -185.75349505439226,
+      185.75349505439226
+    ],
+    "qualification": "Compared to the original spherical-stock plus fixed-baryon force. Circular-speed proxy is not a circular orbit in the nonspherical field. No full vertical-equilibrium/director solve is claimed."
+  }
+]

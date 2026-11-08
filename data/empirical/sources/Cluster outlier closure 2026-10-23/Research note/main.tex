@@ -1,0 +1,245 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.85in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,graphicx,booktabs,tabularx}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!50!black]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.4em}
+\setlength{\emergencystretch}{1.5em}
+\graphicspath{{images/}}
+\title{Cluster outliers: conservation, gas support and mass reconstruction}
+\author{Research calculation for the Entropic Scalar EFT project}
+\date{23 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The first resolved cluster comparison contains several distinct discrepancies. A conserved cohort allocation permits the required aperture inventories through positive redistribution, with explicit outside-aperture reservoirs. This statement is demonstrated by twelve finite transport maps. It does not select their dynamics. The forward reconstruction of A644 requires a substantial change before it can represent nonnegative stock density. ZW1215 has inconsistent central mass estimates even after matching apertures. A1795 and A2029 require a joint treatment of gas support and lensing; redistribution alone cannot reconcile their preferred mass profiles. Recent gas-velocity observations restrict a turbulence-only interpretation. Twenty-two conditional Lean lemmas establish the bookkeeping constraints and obstructions used here. No new gravitational charge, allocation constant or cluster-specific interaction is fitted.
+\end{abstract}
+
+\section{Result and scope}
+The fixed surviving stock allocation remains
+\[
+k=5.1760752079627395,\qquad C_{\rm cohort}=kB_{\rm cohort}.
+\]
+The saturated allocation is a stated input, not a proof that every cluster is fully released. The earlier coextensive test $M=(1+k)B(<r)$ imposed a stronger spatial assumption than the cohort law. Relaxing that assumption is legitimate only with a positive density, an explicit conserved inventory, and compatible gas dynamics.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Object & Finding & Consistent treatment\\
+\midrule
+A1795 & Largest lensing versus thermal-mass discrepancy; quiet measured gas & Keep the mass conflict and calculate the support or exchange it requires\\
+A2029 & Older mass profiles and a newer joint XRISM reconstruction differ & Retain the separate reductions and their assumptions\\
+ZW1215 & Lensing estimators give different central masses & Use a shared-aperture, correlated observation model\\
+A644 & Forward cumulative mass turns downward & Enforce positive density when reconstructing the observations\\
+A2319 & Opposite-sign aperture inventory discrepancy & Include outside stock or imported baryons in the cohort ledger\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+These treatments preserve the theory's existing conservation and common-potential commitments. They do not turn the outliers into completed empirical fits. The four publication papers are unchanged.
+
+\clearpage
+\section{One potential and a complete gas momentum equation}
+Let $g=GM(<r)/r^2>0$ be the inward gravitational acceleration and let $a_g$ be the outward material acceleration of the gas. An outward stock-to-gas force density is denoted by $f_{cg}$. For spherical isotropic stresses,
+\begin{equation}
+a_g=-g-\frac{P_{\rm th}'}{\rho_g}
+          -\frac{P_{\rm nt}'}{\rho_g}
+          +\frac{f_{cg}}{\rho_g}.
+\end{equation}
+Consequently,
+\begin{equation}
+M=M_{\rm th}+M_{\rm nt}+M_{\rm contact}-M_{\rm acc},
+\quad
+M_{\rm contact}=\frac{r^2f_{cg}}{G\rho_g},
+\quad
+M_{\rm acc}=\frac{r^2a_g}{G}.
+\label{eq:mass}
+\end{equation}
+Lensing constrains a projection of the same gravitational source. Anisotropic stresses, nonspherical geometry and line-of-sight structure require their full observation operators; they are not silently included as adjustable scalar pressure.
+
+Changing the stock profile changes $M$, and therefore changes the gravity experienced by the gas. It cannot by itself remove a discrepancy between the two mass estimators. The identity in equation~\eqref{eq:mass} must still hold.
+
+A reciprocal contact can in principle support quiet gas. In a static two-component example,
+\[
+P_g'=-\rho_g g+f_{cg},\qquad
+P_c'=-\rho_c g-f_{cg},
+\qquad
+(P_g+P_c)'=-(\rho_g+\rho_c)g.
+\]
+The reaction is carried by the stock. Its pressure cannot also be added to the gas pressure as an independent support term. The mechanical exchange power is
+\[
+f_{cg}u_g-f_{cg}u_c=f_{cg}(u_g-u_c).
+\]
+A passive drag $f_{cg}=\Gamma(u_c-u_g)$ dissipates relative motion and vanishes at equal mean velocity. Symmetric opposite impulses also have zero mean force. Thus neither a passive comoving equilibrium nor the existing conservation proofs supplies an arbitrary persistent outward force. A driven interaction, relative flow or constitutive stress must generate it and account for its reaction and work. The depleted-clock gate suppresses the gated contact at the floor; it does not provide a hidden residual support force.
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Target & Radius [kpc] & Required $f_{cg}/\rho_g$ [m s$^{-2}$] & Fraction of $g$\\
+\midrule
+A1795 & 330 & $3.35\times10^{-11}$ & 0.186\\
+A1795 & 1153 & $2.81\times10^{-11}$ & 0.367\\
+A2029 & 670 & $1.51\times10^{-11}$ & 0.109\\
+A2029 & 1414 & $1.50\times10^{-11}$ & 0.200\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are conditional targets from the central lensing and old X-COP NFW profiles, setting extra gas pressure and acceleration to zero. They are not measured interaction forces. An unbalanced acceleration of the quoted magnitude would change the velocity by hundreds of km s$^{-1}$ over 500 Myr; that is a scale estimate, not an evolved trajectory.
+
+\clearpage
+\section{A positive conserved inventory construction}
+The baryon profiles retain the preceding observed-cluster reduction: gas plus
+the seven available stellar profiles, with their stated approximate spherical
+deprojection (factor 0.75 at $R_{500}$). Unmeasured diffuse stellar light and
+stellar-population uncertainties remain. No new stellar normalization is
+fitted, and no observed baryon profile is extrapolated to fill the reservoir.
+
+For observed aperture baryons $B$ and required stock $C=M-B$, define
+\begin{equation}
+B_0=\max(B,C/k),\qquad
+B_{\rm out}=B_0-B,\qquad C_{\rm out}=kB_0-C.
+\label{eq:cohort}
+\end{equation}
+For $k>0$ and nonnegative $B,C$, both outside quantities are nonnegative and the whole cohort obeys $C+C_{\rm out}=k(B+B_{\rm out})$. Moreover, $B_0$ is the smallest cohort baryon budget satisfying these inequalities. This is the minimum reservoir under the single closed-cohort convention; a mixed aperture needs explicit import labels.
+
+\begin{center}\small
+\begin{tabular}{llrr}
+\toprule
+Object & Target at its $R_{500}$ & $\eta=kB/C$ & Minimal outside fraction\\
+\midrule
+A1795 & Thermal & 0.887 & 11.3\% of baryons\\
+A1795 & Central lensing & 0.518 & 48.2\% of baryons\\
+A2029 & Thermal & 0.897 & 10.3\% of baryons\\
+A2029 & Central lensing & 0.704 & 29.6\% of baryons\\
+A644 & Thermal NFW & 0.827 & 17.3\% of baryons\\
+ZW1215 & Thermal & 0.640 & 36.0\% of baryons\\
+ZW1215 & Central lensing & 1.143 & 12.5\% of stock\\
+A2319 & Thermal & 1.265 & 20.9\% of stock\\
+A2142 & Thermal & 1.027 & 2.7\% of stock\\
+A85 & Thermal & 0.943 & 5.7\% of baryons\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The table uses each target's own overdensity radius and must not be read as a fixed-aperture mass comparison. For A1795's central lensing target, equation~\eqref{eq:cohort} requires $7.87\times10^{13}M_\odot$ in outside baryons in this minimal construction. Their presence, location and transport energy are not established by the calculation.
+
+A finite positive transport witness is constructed as follows. Split the target stock into radial bins and assign initial baryons $s_i=C_i/k$, with the reservoir included. Let $d_j$ be the measured final baryon bins plus their reservoir. These have equal total mass. With cumulative boundaries $S_i,D_j$, set
+\[
+T_{ij}=\left[\min(S_{i+1},D_{j+1})-\max(S_i,D_j)\right]_+.
+\]
+The overlap lengths obey $\sum_jT_{ij}=s_i$ and $\sum_iT_{ij}=d_j$. The twelve saved maps for seven thermal and five lensing targets are nonnegative and conserve their marginals to better than $3\times10^{-16}$ of the cohort mass. The unresolved inner bin and the outside reservoir are retained.
+
+This establishes inventory feasibility, which is a weak but necessary condition. The construction matches specified profiles by design. It does not establish a local trajectory, energy budget, relaxation time, phase-space distribution or stable self-gravitating equilibrium. It cannot be presented as a prediction of the measured radial profiles.
+
+\clearpage
+\section{A1795 and A2029: pressure and profile compatibility}
+The observational NFW target is reconstructed from the published central $M_{200},M_{500}$ pair using
+\[
+M(r)=M_{500}\frac{F(r/r_s)}{F(R_{500}/r_s)},\qquad
+F(x)=\log(1+x)-\frac{x}{1+x}.
+\]
+The pair defines one effective profile; its entries are correlated and receive published calibration corrections. This reconstruction is not the original shear likelihood. In particular, the lensing analysis excludes radii below 0.5 Mpc, so its inner NFW curve is an extrapolation~\cite{herbonnet}. The quoted mass-error paths hold the inferred concentration fixed. Concentration changes of $\pm0.18$ dex are separate sensitivity scenarios, not posterior intervals.
+
+When $a_g=f_{cg}=0$, subtracting the two pressure equations gives
+\begin{equation}
+P_{\rm nt}(r)-P_{\rm nt}(s)=
+\int_r^s \rho_g(x)\frac{G[M_{\rm lens}(x)-M_{\rm th}(x)]}{x^2}\,dx.
+\label{eq:pressure}
+\end{equation}
+Nonnegative pressure at every radius imposes an integral lower bound, even when the mass difference changes sign. This avoids assuming that a pressure fraction equals a mass bias. Equality of those fractions needs an additional pressure-gradient condition.
+
+On a finite interval ending at $R$, define $J(r)$ as the integral from $r$ to $R$. The smallest everywhere nonnegative pressure solving equation~\eqref{eq:pressure} is
+\[
+P_{\rm nt,min}(r)=J(r)-\min\bigl(0,\min_{x\in[r_{\min},R]}J(x)\bigr).
+\]
+The gas density comes from the released X-COP electron-density profile. Electron-equivalent pressures use $\mu=0.60$, with $\rho_g=\mu_e m_p n_e$ and $P_{\rm th}=(\mu_e/\mu)P_e$. The thermal normalization is integrated from the same density and thermal-mass profile, anchored to the released pressure at $R$. This preserves internal gradient consistency; it differs from the independently interpolated pressure table by up to 13.6\% within these intervals.
+
+For A1795 on 100--330 kpc, the central target needs $P_{\rm nt}/P_{\rm th}\geq0.0798$ at 100 kpc and a minimum profile reaching 0.0927. The equivalent isotropic line-of-sight velocity scale at 100 kpc is at least 253 km s$^{-1}$. XRISM instead reports a small velocity-derived pressure contribution in its measured central and northern regions~\cite{sarkar}. This disfavors this particular spherical, stationary, turbulence-only reconciliation; it does not exclude every profile allowed by lensing, anisotropy or a reciprocal force.
+
+For A2029, imposing both old central NFW profiles on 100--670 kpc requires a minimum pressure profile reaching 0.429 of the thermal pressure at the outer boundary. Its inward and outward gradients matter: a lower lensing mass need not lower this requirement when it also makes the inferred inner gravity too small. XRISM's direct joint reconstruction finds small nonthermal support and changes the mass profile itself~\cite{xrism}. A rigorous comparison must use that joint likelihood. These calculations expose incompatibility among fixed reconstructions, not a formal exclusion probability for the theory.
+
+\clearpage
+\begin{center}
+\includegraphics[width=\linewidth]{common_potential.png}
+\end{center}
+{\small Top: masses at common physical radii. Shading marks the interval used for the pressure calculation. Bottom: minimum nonnegative pressure profiles conditional on spherical stationary gas and zero contact force. The dashed mass scenarios and dotted concentration scenario are sensitivity paths, not confidence bands. The 2\% line is a scale for comparison, not a uniform observational upper limit.}
+
+The A2029 joint XRISM analysis gives $M_{200}=(9.5\pm0.3)\times10^{14}M_\odot$ and $c_{200}=5.9\pm0.2$~\cite{xrism}. At 670 kpc this model is about 4.7\% below the archived X-COP NFW mass; at the old $R_{500}$ it is about 13.9\% below. The published lensing central $M_{200}$ is higher by 2.26 of its own quoted errors. That ratio is descriptive: it omits covariance, model uncertainty and the distinction between the observations' radial coverage. The newer core study also finds small velocity-derived support~\cite{uchida}.
+
+At the old thermal $R_{500}$, the central lensing profiles require mass corrections of 36.7\% for A1795 and 20.0\% for A2029. These are smaller than naive comparisons made at different overdensity radii, but remain substantial. They must be attributed to a demonstrated profile or observation effect, gas acceleration or stress, or a calculated reciprocal contact. None is selected by the present audit.
+
+\clearpage
+\section{A644: the positive-density constraint is substantive}
+For $C_i=M_{\rm forward}(r_i)-B(r_i)$, positive stock shells require $C_{i+1}\geq C_i$ and $C_i\geq0$. Over 58 released mass knots from 126.9 to 1798.5 kpc, the forward total mass has eleven decreasing intervals and the inferred stock has fifteen. The total-mass decrease itself is already incompatible with a literal positive spherical density.
+
+Let $e_i$ be the quoted marginal mass error. We compute the smallest $t$ for which a nonnegative nondecreasing sequence $x_i$ exists inside every interval $C_i\pm t e_i$. It is
+\[
+t_*=\max\left(0,\max_i\frac{-C_i}{e_i},
+                 \max_{i\leq j}\frac{C_i-C_j}{e_i+e_j}\right).
+\]
+Necessity follows from interval ordering. Sufficiency follows by taking
+$x_j=\max(0,\max_{i\leq j}[C_i-t_*e_i])$. A separate linear program gives the same answer:
+\[
+t_*=2.15573.
+\]
+The binding pair is 854.4 and 1798.5 kpc, with a stock decrease of $1.33\times10^{14}M_\odot$.
+
+\begin{center}
+\includegraphics[width=.98\linewidth]{A644_admissibility.png}
+\end{center}
+
+The displayed feasible profile has zero stock density in its flat outer part. It is an admissibility witness, not a preferred reconstruction. Smooth strictly positive variants require additional slack. All four supplied physical mass models have positive stock shells on this interval, but their largest differences from the forward curve span 6.56--10.94 of the forward marginal errors. Selecting one is therefore not a small statistical adjustment.
+
+The primary X-COP analysis identifies unusual temperature structure and possible disequilibrium in A644~\cite{ettori}. The appropriate repair is a joint density, temperature and SZ reconstruction with positive mass density and allowance for nonequilibrium. A rescaled gravitational charge cannot repair a decreasing cumulative mass. Unknown covariance prevents interpreting $t_*$ as a Gaussian significance or the 58 samples as independent observations.
+
+\clearpage
+\section{ZW1215 and the economical joint model}
+Matching radii does not remove the estimator dependence. At 1320 kpc, the effective central lensing NFW target gives $4.32\times10^{14}M_\odot$, the published deprojected aperture method gives $7.0\times10^{14}M_\odot$, and the archived thermal NFW target gives $7.41\times10^{14}M_\odot$. The lensing estimates use the same shear data and retain modeling assumptions~\cite{herbonnet}; they are not independent confirmations or independent likelihood terms.
+
+The inventory can accommodate either target, but the required direction of relative redistribution changes. This makes a fitted special depletion fraction for ZW1215 premature. The common analysis should fit one mass distribution to the shear, X-ray and SZ measurements, then infer the aperture inventory. It should preserve the alternative reconstruction assumptions until that fit is available.
+
+A consistent effective model for all objects is
+\begin{align}
+\nabla^2\Phi &=4\pi G(\rho_b+\rho_c),\\
+\partial_t\rho_A+\nabla\cdot(\rho_A\mathbf u_A)&=0,\\
+\rho_g D_t\mathbf u_g&=-\rho_g\nabla\Phi-\nabla\cdot\mathbf P_g+\mathbf f_{cg},\\
+\rho_c D_t\mathbf u_c&=-\rho_c\nabla\Phi-\nabla\cdot\mathbf P_c-\mathbf f_{cg},
+\end{align}
+on a fixed-release interval, with the existing source ledger restored when production or drain is active. Finite-aperture masses obey the associated boundary-flux equations. Whole-cohort allocation and mass conservation do not demand equal aperture retention.
+
+This framework uses the existing physical ingredients. Its remaining constitutive input, $\mathbf f_{cg}$ and the stock stress, cannot be selected separately for each discrepant cluster. The earlier strong-contact isolated-halo drift remains a constraint: a coupling invoked to support A1795 must also preserve isolated halos, respect the finite-work floor and permit the observed separation in mergers.
+
+\section{What is established and what is still open}
+Established here are positive finite inventory witnesses, the minimum outside inventory under the stated convention, an explicit obstruction to the raw A644 forward profile, and quantitative pressure and force targets for the conflicting central mass profiles. These are useful constraints on a future common dynamical fit.
+
+A1795 and A2029 are still open empirical tests. A644 needs a physically admissible reconstruction, and ZW1215 needs the estimator discrepancy propagated. The data do not presently justify calling all four explained, nor do these conditional discrepancies establish failure of the full theory. The next decisive calculation is a shared-potential forward fit with measured gas motions and a globally specified interaction, rather than another cluster-dependent normalization.
+
+\clearpage
+\section{Formal and numerical verification}
+The file \texttt{ClusterOutliers.lean} contains 22 conditional lemmas covering the gas momentum identity, reciprocal force and power, passive-drag limitations, pressure-integral bounds, shell positivity, interval-order obstructions, minimal cohort budgets and conservation of finite transport marginals. All compile in the available Lean/mathlib 4.19 standalone environment, with no \texttt{sorry} or \texttt{sorryAx}. The reported axioms are the standard \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+
+This supplement does not rebuild the upstream 4.35 repository. The lemmas do not certify the FITS data, the continuous pressure equation's derivation, the numerical integrations or the physical selection of a transport kernel. In particular, the finite transport conservation theorem assumes its supplied marginals; the saved matrices are checked numerically. The proof count should not be interpreted as 22 new observational results.
+
+Fourteen saved checks pass. They include recovery of the NFW mass pair, independent SI pressure units, an analytic integration fixture, quadrature refinement, agreement between the A644 minimax formula and linear program, nonnegative saved transport matrices with the required marginals, and the Lean compilation audit. The quadrature grid was refined after a coarse-grid tolerance failed; both earlier and final outputs are preserved. Input hashes, primary XRISM PDFs, source records, scenarios and reproducible calculations accompany this note.
+
+\begin{thebibliography}{9}\small
+\bibitem{herbonnet}
+R. Herbonnet et al., \emph{CCCP and MENeaCS: (updated) weak-lensing masses for 100 galaxy clusters}, Table A2 and Sections 2, 5.
+\href{https://arxiv.org/abs/1912.04414}{arXiv:1912.04414}.
+\bibitem{ettori}
+S. Ettori et al., \emph{Hydrostatic mass profiles in X-COP galaxy clusters}.
+\href{https://arxiv.org/abs/1805.00035}{arXiv:1805.00035}.
+Released data: \href{https://dominiqueeckert.wixsite.com/xcop/data}{X-COP data archive}.
+\bibitem{sarkar}
+A. Sarkar et al., \emph{XRISM Observations of Abell 1795: Evidence for Low Turbulence and Resonant Scattering}.
+\href{https://arxiv.org/abs/2606.08097}{arXiv:2606.08097}.
+\bibitem{xrism}
+XRISM Collaboration, \emph{Constraining gas motion and non-thermal pressure beyond the core of the Abell 2029 galaxy cluster with XRISM}, Section 3.4 and Table 1.
+\href{https://arxiv.org/abs/2505.06533}{arXiv:2505.06533}.
+\bibitem{uchida}
+Y. Uchida et al., \emph{XRISM reveals sloshing-driven gas motions in the core of Abell 2029}.
+\href{https://arxiv.org/abs/2608.14415}{arXiv:2608.14415}.
+\end{thebibliography}
+\end{document}

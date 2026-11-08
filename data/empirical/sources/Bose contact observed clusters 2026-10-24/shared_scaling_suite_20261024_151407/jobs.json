@@ -1,0 +1,142 @@
+[
+  {
+    "cluster": "A85",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 767414.0037989776,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A85",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 767414.0037989776,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A1795",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 663893.96740049,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 663893.96740049,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A2029",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 955977.8021458755,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A2029",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 955977.8021458755,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A2142",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 1055235.6949276724,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A2142",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 1055235.6949276724,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A2319",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 954419.8428869116,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A2319",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 954419.8428869116,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A644",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 706127.2830281366,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "A644",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 706127.2830281366,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 719672.338441907,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 719672.338441907,
+    "dt": 0.1,
+    "softening": 5,
+    "label": "shared_scaling"
+  }
+]

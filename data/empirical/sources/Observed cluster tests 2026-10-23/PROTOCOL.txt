@@ -1,0 +1,15 @@
+OBSERVED CLUSTER TESTS - declared before numerical reduction
+
+Use the public X-COP radial profiles (all available clusters, with stellar-profile coverage explicitly recorded), independent MENeaCS lensing masses where matched, and the public Bullet Cluster lens model and gas components if accessible.
+
+Fixed theory input: saturated surviving stock per original cohort baryon k=5.1760752079627395, with no per-cluster renormalization. This is the existing full-release convention, not a new microphysical derivation or an assertion that every observed cluster has saturated.
+
+Null shortcut to test, NOT a necessary theory prediction: coextensive stock k times the current aperture baryon mass. Compare M_coext=(1+k)(Mgas+Mstar) against the uncorrected hydrostatic mass profiles. Infer the positive stock required, Mreq=Mgrav-Mbar, and eta=k Mbar/Mreq. eta is the relative baryon/stock retention for a conserved initial cohort; eta>1 can mean preferential stock loss/imported baryons, not automatic creation or impossibility. No hydrostatic mass corrected by assuming the cosmic baryon fraction will be treated as an independent test of that fraction.
+
+Use published radial ranges, units and cosmology. No extrapolation of stellar profiles in the primary radial test. Report sensitivity to available mass reconstructions and to stellar-systematic uncertainty; no fitted effective coupling from hydrostatic data alone. Adjacent radial bins are correlated and fitted models smooth them: do not add pointwise residuals into an invented chi-square.
+
+Independent lensing comparison: match overdensity radii using the lensing M500 and the published cosmology; interpolate gas and stars at those radii within coverage. Marginal lensing errors are not a joint likelihood. Aperture radius changes with the lensing mass and must be propagated.
+
+Bullet: downloaded reconstructions are empirical targets, never theory predictions. Separate gas from total convergence where documented; preserve map normalization and source redshift. Galaxy halos are NOT purely stellar mass. Compare any existing merger outputs only as resolution/scale diagnostics, not as a fit to Bullet. Actual simulation initial masses, orbit, shapes, gas profile, physical contact rate and work state remain inputs until independently fixed. Do not report a coupling bound without an adequate forward model.
+
+Save input URLs, checksums, scripts and outputs. Preserve all previous files. Four publication papers are not edited in this experiment.

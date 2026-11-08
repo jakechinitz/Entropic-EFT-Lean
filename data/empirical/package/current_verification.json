@@ -1,0 +1,640 @@
+{
+  "created_utc": "2026-10-23T19:42:49.159308+00:00",
+  "scope": "Arithmetic refresh and saved-result import; no new simulation or cosmological optimization. Integrated proofs pass standalone 4.19 and pinned 4.35 repository checks.",
+  "redshift": {
+    "a0_z0_in_1e10": 1.230729237644181,
+    "a0_z1_in_1e10": 2.2033147148641947,
+    "intercept": 1.0027841274263565,
+    "slope": 1.2256453196424544,
+    "redshift_points": 112,
+    "intercept_marginal_residual_sigma": -0.544317451472871,
+    "slope_marginal_residual_sigma": 0.2564531964245442
+  },
+  "matched_linear_lensing": {
+    "geodesic": {
+      "cmb": 589.0778347292978,
+      "bao": 11.706763006270112,
+      "sn": 1627.016022787648,
+      "total": 2227.800620523216,
+      "H0": 68.93885586416002
+    },
+    "lcdm": {
+      "cmb": 590.2153049612746,
+      "bao": 11.191153694217714,
+      "sn": 1626.9093666150516,
+      "total": 2228.315825270544,
+      "H0": 68.65583121049352
+    },
+    "delta_chi2": -0.5152047473279708,
+    "delta_AIC_conditional_parameter_counts_5_vs_6": -2.515204747327971,
+    "delta_AIC_conditional_five_vs_six": -2.515204747327971
+  },
+  "release_fit": {
+    "model": "geodesic",
+    "allocation": "exponential",
+    "parameters": [
+      0.022379323421948115,
+      0.27424477631205796,
+      3.045850666867355,
+      0.9666293127653468,
+      0.05661581639909799
+    ],
+    "parts_higher_accuracy": {
+      "cmb": 589.0778347292978,
+      "bao": 11.706763006270112,
+      "sn": 1627.016022787648,
+      "total": 2227.800620523216,
+      "H0": 68.93885586416002
+    },
+    "Alens": 1,
+    "nonlinear": "none",
+    "source": "02 Research\\Unified empirical program 2026-10-23\\results\\cosmology_final.json"
+  },
+  "lcdm_fit": {
+    "model": "lcdm",
+    "parameters": [
+      0.022487702684082463,
+      0.11821088767824338,
+      0.6865583121049351,
+      3.04599920147877,
+      0.9691878255040245,
+      0.05796062348377821
+    ],
+    "parts_higher_accuracy": {
+      "cmb": 590.2153049612746,
+      "bao": 11.191153694217714,
+      "sn": 1626.9093666150516,
+      "total": 2228.315825270544,
+      "H0": 68.65583121049352
+    },
+    "Alens": 1,
+    "nonlinear": "none"
+  },
+  "clock_checks": {
+    "split_lens_max_relative_error": 1.154145214954383e-07,
+    "split_weyl_max_relative_error": 5.711739381464298e-07,
+    "positive_vs_signed_lens_max_relative_error": 9.25564758169628e-08,
+    "ell": [
+      10,
+      40,
+      100,
+      400,
+      1000
+    ],
+    "physical_to_ppf_lens_ratio": [
+      0.9858249975386738,
+      0.9893777091519782,
+      0.9920160029152644,
+      0.9944241613911908,
+      0.9953701093893718
+    ],
+    "weyl_z": [
+      0.0,
+      1.0,
+      2.0,
+      5.0,
+      30.0
+    ],
+    "physical_to_ppf_weyl_ratio": [
+      0.9772320706931018,
+      0.9872595145067243,
+      0.9930730264721519,
+      0.9987141235670014,
+      1.0000000285506432
+    ]
+  },
+  "growth_check": {
+    "redshifts": [
+      30,
+      5,
+      2,
+      1,
+      0
+    ],
+    "growth_ode_potential_power_ratio": [
+      1.0,
+      0.9987139656217604,
+      0.9930732924684337,
+      0.9872597314429551,
+      0.9772328013514917
+    ],
+    "camb_ratio_at_kh_0p1": [
+      0.999999707768912,
+      0.9987137193793946,
+      0.9930726087556438,
+      0.9872590181874673,
+      0.9772318905158887
+    ],
+    "max_absolute_ratio_difference": 9.108356030518294e-07,
+    "limits": "Subhorizon check starts at z=30 with equal baryon/capacity contrasts; neglects radiation perturbations and baryon relative modes."
+  },
+  "model_scope": {
+    "fit": "exponential-allocation geodesic-clock background; linear lensing, Alens=1",
+    "positive_allocation_likelihood": "completed; saved exponential fit imported",
+    "archived_release_history_f": 0.282706,
+    "archived_hydro_reference_Irel": 94.2
+  },
+  "lean": {
+    "commit": "432da8c4a8b169a17146b53e4155d6b37915a12f",
+    "saved_axiom_audit": "Entropic: 2812 theorems; 0 with nonstandard axioms\nEntropic.EFT: 727 theorems; 0 with nonstandard axioms\n",
+    "saved_citation_audit": "total 979 unresolved 0\n",
+    "extensions_standalone": {
+      "toolchain": "Lean/mathlib 4.19.0",
+      "passed": true,
+      "records": [
+        {
+          "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+          "theorems": 7,
+          "exit_code": 0,
+          "nonstandard_axioms": [],
+          "success": true,
+          "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_153505\\EmpiricalCertificates.log",
+          "sha256": "17fd847cab53876ea5da0a0f2f7e5bf46c9c1b5907aeb3bd49cc82461856abc1"
+        },
+        {
+          "module": "Entropic.Extensions20261023.MuseProjection",
+          "theorems": 4,
+          "exit_code": 0,
+          "nonstandard_axioms": [],
+          "success": true,
+          "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_152308\\MuseProjection.log",
+          "sha256": "f38af918b9ad232a6ac9aaa4f88241fa7f72a97044b102fcec1b1efc4e1a3641"
+        },
+        {
+          "module": "Entropic.Extensions20261023.ConnectedClosure",
+          "theorems": 42,
+          "exit_code": 0,
+          "nonstandard_axioms": [],
+          "success": true,
+          "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_154035\\ConnectedClosure.log",
+          "sha256": "84b4633f7ec80ddca7843b3c991082432ea9d1fdf5243cb944cf141e29fc17bc"
+        },
+        {
+          "module": "Entropic.Extensions20261023.EffectiveContact",
+          "theorems": 36,
+          "exit_code": 0,
+          "nonstandard_axioms": [],
+          "success": true,
+          "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_153505\\EffectiveContact.log",
+          "sha256": "d8738cfa5aa1dec68546be7a1b08f187c40bec770f9910a7f42e1b939cf8f90a"
+        },
+        {
+          "module": "Entropic.Extensions20261023.MergerContact",
+          "theorems": 8,
+          "exit_code": 0,
+          "nonstandard_axioms": [],
+          "success": true,
+          "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba"
+        },
+        {
+          "module": "Entropic.Extensions20261023.ClusterOutliers",
+          "theorems": 22,
+          "exit_code": 0,
+          "nonstandard_axioms": [],
+          "success": true,
+          "sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c"
+        }
+      ],
+      "note": "MuseProjection numerical certificates completed with decide +kernel; original unsuccessful attempts preserved"
+    },
+    "extensions_pr": "https://github.com/jakechinitz/Entropic-EFT-Lean/pull/4",
+    "extensions_pinned": {
+      "success": true,
+      "commit": "a6552daf39daf83d5159fcbcda698d1801731d24",
+      "toolchain": "Lean 4.35.0; pinned mathlib",
+      "pull_request": "https://github.com/jakechinitz/Entropic-EFT-Lean/pull/4",
+      "workflow_run": "https://github.com/jakechinitz/Entropic-EFT-Lean/actions/runs/40013357154",
+      "run_id": 40013357154,
+      "job_id": 120619069460,
+      "build": "success",
+      "source_scan": "success",
+      "axiom_audit": "success",
+      "citation_check": "success",
+      "independent_python_audit": "success",
+      "library_modules": 160,
+      "extension_explicit_theorems": 119,
+      "audit_summary": [
+        "Entropic: 2937 theorems; 0 with nonstandard axioms",
+        "Entropic.EFT: 727 theorems; 0 with nonstandard axioms"
+      ],
+      "merged": false,
+      "finished_at": "2026-10-23T19:47:39Z",
+      "audited_theorem_constants": 2937,
+      "legacy_theorem_constants": 727,
+      "nonstandard_axioms": 0,
+      "ledger_references": 979,
+      "unresolved_ledger_references": 0
+    },
+    "extensions_source_manifest": [
+      {
+        "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+        "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\EmpiricalCertificates.lean",
+        "path": "Entropic/Extensions20261023/EmpiricalCertificates.lean",
+        "sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+        "theorems": 7,
+        "original_source_sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+        "integrated_sha256": "17fd847cab53876ea5da0a0f2f7e5bf46c9c1b5907aeb3bd49cc82461856abc1",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.MuseProjection",
+        "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\MuseProjection.lean",
+        "path": "Entropic/Extensions20261023/MuseProjection.lean",
+        "sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+        "theorems": 4,
+        "original_source_sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+        "integrated_sha256": "f38af918b9ad232a6ac9aaa4f88241fa7f72a97044b102fcec1b1efc4e1a3641",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.ConnectedClosure",
+        "source": "02 Research\\Connected theory closure 2026-10-23\\formalization\\ConnectedClosure.lean",
+        "path": "Entropic/Extensions20261023/ConnectedClosure.lean",
+        "sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+        "theorems": 42,
+        "original_source_sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+        "integrated_sha256": "84b4633f7ec80ddca7843b3c991082432ea9d1fdf5243cb944cf141e29fc17bc",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.EffectiveContact",
+        "source": "02 Research\\Effective dynamics and coupling 2026-10-23\\formalization\\EffectiveContact.lean",
+        "path": "Entropic/Extensions20261023/EffectiveContact.lean",
+        "sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+        "theorems": 36,
+        "original_source_sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+        "integrated_sha256": "d8738cfa5aa1dec68546be7a1b08f187c40bec770f9910a7f42e1b939cf8f90a",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.MergerContact",
+        "source": "02 Research\\Conservative cluster merger 2026-10-23\\formalization\\MergerContact.lean",
+        "path": "Entropic/Extensions20261023/MergerContact.lean",
+        "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+        "theorems": 8,
+        "original_source_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+        "integrated_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      },
+      {
+        "module": "Entropic.Extensions20261023.ClusterOutliers",
+        "source": "02 Research\\Cluster outlier closure 2026-10-23\\formalization\\ClusterOutliers.lean",
+        "path": "Entropic/Extensions20261023/ClusterOutliers.lean",
+        "sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+        "theorems": 22,
+        "original_source_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+        "integrated_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+        "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+      }
+    ]
+  },
+  "source_hashes": {
+    "01 Current Papers\\Empirical Results\\numerical_review.json": "c72579752988bacfac8e7a266a408be14b646d8ae5b746f48da5991eb2a7cb25",
+    "02 Research\\High leverage closure 2026-10-21\\fit_comparison.json": "16d1f6f8487489f6be09e8fa953b48a982481d2536a0da382897873800558f24",
+    "02 Research\\High leverage closure 2026-10-21\\fit_physical_geodesic\\result.json": "3de4ed6d5372043581bd90c0cab8cc099e866e1f6d598ba6e556fa0b5fa17c43",
+    "02 Research\\High leverage closure 2026-10-21\\fit_physical_lcdm\\result.json": "d664aaf988ff4353998347d66dd9e8b5749f40a63ffc2202179244181df3e14b",
+    "02 Research\\High leverage closure 2026-10-21\\cosmology_checks.json": "44750593e4794c86f52eb2e9086ff765ffd2d99a31ad9e97071f99fcf02d195f",
+    "02 Research\\High leverage closure 2026-10-21\\growth_independent_check.json": "2bc5267a517a3379b4b1e373a1d4ece1e799b77b5e535d328bf73d747e929391",
+    "02 Research\\Unified closure 2026-10-21\\formalization\\verification\\axiom_audit_final_2026-10-23.log": "3add7aa6ece524964586b023e68bd8925f8333d2f380c967eb0342512474e064",
+    "02 Research\\Unified closure 2026-10-21\\formalization\\verification\\citecheck_final_2026-10-23.log": "01fb666f1ff556e52276433c862e9c355def2c14f384edc44487849e52b7dcb7",
+    "02 Research\\Unified closure 2026-10-21\\formalization\\ledger\\LEDGER.md": "f2870e0b45599fe585a87f1cada4ee5e01a40e946759e010eea07a97cd10a5b6",
+    "02 Research\\Release zoom\\Frel_table.npy": "4681b122bcf569b095a5fc378074604e7cda872450e68d5670afc5fa68a513bb",
+    "02 Research\\Release zoom\\zoom_fits.jsonl": "f7cb1ad23fbf3287c07d5b1e9421e75aa1424ccea4b372b5c11498500854d4ac",
+    "02 Research/Unified empirical program 2026-10-23/results/cosmology_final.json": "7cac45172e519a4f9717bbb0275ecdb3461134da7057caead52af0eea438a48f",
+    "02 Research/Unified empirical program 2026-10-23/execution_register.json": "abde27f96e9ff27e8da8f3e6974c54fd436e60b294be75f8adc0fc2d1ff72fb2",
+    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_validation_integrated.json": "59f9b03f1550ef72c9fcd9921a70383b7c84bf6d893b472e8be989a28c3a6c3b",
+    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/pinned_lean_verification.json": "1cf3f232992c23b0d7e21faa5831d009cc11456153be7ba13578a36feb791bfe"
+  },
+  "cross_sector_register": {
+    "created_utc": "2026-10-23T14:03:19.151010+00:00",
+    "scope": "15-family execution and evidence register; partial tests are explicitly partial.",
+    "preregistration": "Exploratory. Existing outcomes were known. This local record is not a blind external preregistration.",
+    "paper_changes": "None: current papers and all prior results preserved.",
+    "sectors": [
+      {
+        "id": "S01",
+        "title": "High-redshift galaxy kinematics",
+        "status": "Residual tension; full likelihood open",
+        "new_work": "Recomputed 73 KMOS3D, 21 KGES and 169 KROSS objects at three radii, under constant a\u2080, reference H tracking and the newly fitted exponential cosmology; repeated resolved-object cuts.",
+        "result": "For KMOS3D outer radii, the log-acceleration residual slope is \u22120.245 dex per unit redshift with constant a\u2080 and \u22120.313 with the common H(z) law. The latter has median log-velocity residual \u22120.087 dex. The new cosmology does not remove this trend. The reference z=2.3 example gives boosts approximately 2.02 versus 1.39.",
+        "scope": "These are catalogue central-value diagnostics using the supplied radius-dependent baryon force models, not raw-cube likelihoods. The 112-point reference projection has intercept 1.002784 and slope 1.225645; it is not the sample-weighted MUSE regression. Main-text halo and Appendix-E MOND inferences must remain separate.",
+        "remaining": "Exact MUSE 79-object selection, MOND fit products/covariance and resolved baryon/pressure-support likelihoods are still needed. No new JWST forward fit was completed. The full numerical C03-163 and composed C03-165 Lean statements remain open.",
+        "result_files": [
+          "highz_final_cosmology.json",
+          "muse_exact_intervals.json"
+        ],
+        "theorem_trail": [
+          "Entropic/Main/Galactic.lean:a0_value",
+          "Entropic/Main/Cosmo.lean:hubble_ratio"
+        ],
+        "external_sources": [
+          "https://arxiv.org/abs/2604.22613",
+          "https://www.mpe.mpg.de/ir/KMOS3D/data"
+        ]
+      },
+      {
+        "id": "S02",
+        "title": "CMB-to-galaxy normalization",
+        "status": "Conditional relation checked",
+        "new_work": "Recomputed the bare, formation-mass and surviving-stock distinctions; tied the actual cosmology fit to the galaxy normalization.",
+        "result": "Bare 1/\u03b5 = 5.320685; the fitted formation convention uses 5.333. H\u2080 = 68.939 implies a\u2080 = 1.2588e-10 m s\u207b\u00b2. This is about 2.3% above the H\u2080=67.4 reference value, with no new a\u2080 fit.",
+        "scope": "The exact reciprocal identity is a pre-release, bare-normalization statement. A mass-convention factor and survival factor multiply its corrected version. Planck-inferred abundance and H\u2080 are model-dependent and correlated; galaxy mass calibration makes the elementary empirical cross relation roughly a 20% test.",
+        "remaining": "Independent phase-loading/normalization evidence and an explicit discovery-history account remain necessary for a strong one-constant evidential claim.",
+        "result_files": [
+          "constants_audit.json",
+          "cosmology_final.json"
+        ],
+        "theorem_trail": [
+          "Entropic/Main/Galactic.lean:acceleration_abundance",
+          "Entropic/EFT/Audit/Connections.lean:galactic_abundance_reciprocity",
+          "NEW:EmpiricalCertificates.lean:corrected_cross_relation"
+        ],
+        "external_sources": []
+      },
+      {
+        "id": "S03",
+        "title": "Local RAR and baryonic Tully\u2013Fisher",
+        "status": "Broad diagnostic completed; discrepancies retained",
+        "new_work": "Profiled distances, inclinations and stellar mass-to-light ratios for 130 SPARC galaxies and 2,710 points, then tested the common a\u2080, flow-distance rescaling and a 5 km/s velocity floor. Also evaluated 100 flat-speed BTFR entries.",
+        "result": "The common-a\u2080 penalized score is 11258.0; with the velocity floor it is 3433.2. Median velocity \u03c7\u00b2 per point is 1.54; some galaxies dominate the sum. The reference BTFR median log-velocity residual is 0.020 dex, RMS 0.067 dex.",
+        "scope": "The exponential shape was motivated by these data. The calculation applies the algebraic law to disk mass models and uses diagonal velocity errors; it is not a full nonspherical field solution or marginalized evidence. The normalization scan prefers smaller values within the tested range, but no global free-a\u2080 optimum was established.",
+        "remaining": "A defensible joint distance, stellar-population and correlated-motion likelihood is needed before assigning significance to the normalization residuals.",
+        "result_files": [
+          "sparc_broad.json",
+          "sparc_sensitivity.json"
+        ],
+        "theorem_trail": [
+          "Entropic/GalacticLaw.lean",
+          "Entropic/Main/Galactic.lean:a0_value"
+        ],
+        "external_sources": [
+          "https://astroweb.case.edu/SPARC/"
+        ]
+      },
+      {
+        "id": "S04",
+        "title": "Galaxy weak lensing",
+        "status": "Updated summary agrees; reduction sensitivity demonstrated",
+        "new_work": "Downloaded the Brouwer/KiDS release and full covariance, evaluated isolation cuts and morphology splits, then separately evaluated Mistele\u2019s updated Table 1.",
+        "result": "The updated table gives a reference-normalization diagonal score 10.06 over 15 bins when its tabulated statistical and interpolation/extrapolation errors are combined; 5.99 over the seven conservative inner bins. The older reduction has appreciable normalization and morphology residuals.",
+        "scope": "The later analysis changes isolation, baryonic masses and deprojection and removes the reported type split. These are two reductions of overlapping data. Table errors are not a supplied full covariance; the lens redshift distribution and published H\u2080=73 calibration were not jointly refit. No calibrated p-value is assigned.",
+        "remaining": "A common-cosmology raw-lens fit and a predicted retained-stock profile remain open. No-slip alone does not predict either profile or morphology dependence.",
+        "result_files": [
+          "galaxy_lensing.json",
+          "lensing_updated.json"
+        ],
+        "theorem_trail": [
+          "Entropic/Pass2/Harmonic.lean:no_slip"
+        ],
+        "external_sources": [
+          "https://kids.strw.leidenuniv.nl/sciencedata.php",
+          "https://arxiv.org/abs/2310.15248"
+        ]
+      },
+      {
+        "id": "S05",
+        "title": "CMB acoustic peaks",
+        "status": "New fit and ACT comparison completed, conditionally",
+        "new_work": "Replaced linear depletion by exponential positive allocation in the existing geodesic perturbation pipeline, optimized five cosmological parameters, checked reference-fluid splits and numerical accuracy, and downloaded/evaluated ACT DR6-lite.",
+        "result": "Planck-lite TTTEEE + BAO + DES SN: \u03c7\u00b2=2227.80, matched \u039bCDM 2228.32; \u0394\u03c7\u00b2=-0.52. On ACT\u2019s 135 bins, fixed cosmology with calibration profiling gives 162.73 versus 162.02. The official ACT scoring method independently reproduces the implementation to numerical precision.",
+        "scope": "This tests acoustic spectra, not just an abundance ratio. Both models use massless neutrinos, linear lensing and A_lens=1. Conditional parameter counts 5 versus 6 give \u0394AIC\u2248\u22122.52; this is not a Bayes factor or strong preference. Absolute scores move slightly with CAMB accuracy, while \u0394\u03c7\u00b2 changes by only about 0.005.",
+        "remaining": "A joint ACT/Planck treatment needs the official overlap cuts/covariance, foreground treatment and broader parameter exploration. No SPT likelihood was run. This fit does not include the alternative scalar receiver for nonlinear exhaustion.",
+        "result_files": [
+          "fit_exponential_v1_geodesic/result.json",
+          "cosmology_validation.json",
+          "cosmology_final.json",
+          "act_dr6_test.json",
+          "observable_validation.json"
+        ],
+        "theorem_trail": [
+          "Entropic/AppO/Release.lean",
+          "Entropic/AppO/Flow.lean"
+        ],
+        "external_sources": [
+          "https://github.com/ACTCollaboration/DR6-ACT-lite",
+          "https://lambda.gsfc.nasa.gov/product/act/act_dr6.02/index.html"
+        ]
+      },
+      {
+        "id": "S06",
+        "title": "Growth and projected Weyl power",
+        "status": "New ACT lensing test; full-shape growth open",
+        "new_work": "Exported linear Weyl spectra and applied the official ACT DR6 lens-only bandpowers, covariance, bin windows and Hartlap correction, with a higher-accuracy lensing calculation.",
+        "result": "Across 10 lensing bins, \u03c7\u00b2=16.21 for release and 17.86 for the matched \u039bCDM baseline. Raising lensing accuracy changes the release bandpowers by at most 0.013%.",
+        "scope": "The observable is Weyl power: CAMB\u2019s ordinary delta_tot does not include the dust placed in the bookkeeping fluid. A na\u00efve sigma\u2088 from that variable would depend on the arbitrary reference split. Linear lensing is used for both models; nonlinear corrections are not established.",
+        "remaining": "DESI full-shape clustering, survey-window convolution, galaxy bias/RSD and nonlinear weak-lensing likelihoods are not completed by this check.",
+        "result_files": [
+          "cmb_lensing_test.json",
+          "final_geodesic_spectra.npz",
+          "final_lcdm_spectra.npz"
+        ],
+        "theorem_trail": [
+          "Entropic/AppO/Release.lean:clock_geodesic"
+        ],
+        "external_sources": [
+          "https://arxiv.org/abs/2304.05202",
+          "https://arxiv.org/abs/2304.05203"
+        ]
+      },
+      {
+        "id": "S07",
+        "title": "Dark-energy history and distances",
+        "status": "Common background refit completed; local exhaustion open",
+        "new_work": "Reoptimized the release-history gate with exponential allocation and recalculated the timing and equation-of-state summaries.",
+        "result": "\u03c1\u039b(2)/\u03c1\u039b(0)=0.968240; half the present vacuum lies at z=7.928, not z\u22486 for this saved release history. The drain since z=1 is 0.4935% of initial comoving stock. The effective bookkeeping vacuum w today is -1.000540; intrinsic vacuum pressure remains p=\u2212\u03c1.",
+        "scope": "An interacting-vacuum effective w is not the same parameter as today\u2019s CPL w\u2080. The direct BAO/SN fit is the relevant check and does not show a simple sign exclusion. The fitted history remains an input, not a uniquely derived local mixing law.",
+        "remaining": "Uniform drain can exhaust local underdensities. The separate positive scalar-receiver construction avoids this conditionally but has extra matching choices and different perturbations; it has not been substituted into this fit. Pantheon+ and Union3 were not separately refit here.",
+        "result_files": [
+          "cosmology_final.json",
+          "predicted_a0_history.csv"
+        ],
+        "theorem_trail": [
+          "Entropic/AppO/Flow.lean:release_positivity",
+          "Entropic/AppO/Flow.lean:stock_integrated",
+          "NEW:EmpiricalCertificates.lean:effective_vacuum_w_le"
+        ],
+        "external_sources": []
+      },
+      {
+        "id": "S08",
+        "title": "Relaxed and colliding clusters",
+        "status": "Budget audit completed; conservative map prediction open",
+        "new_work": "Recomputed all 24 archived X-COP aperture budgets using the formation-mass convention and exponential survival, and reconciled them with the existing reciprocity audit.",
+        "result": "Full cohort release leaves stock/baryon=5.1761; a coextensive cohort has baryon fraction 0.1619. Lower present aperture fractions require differing baryon/stock retention, not an automatic violation of the cohort budget.",
+        "scope": "The old unequal-active-weight, universal-passive-mass interaction is not a closed momentum-conserving merger model. Conservative inertial stock can repair the dynamics, but the old phase-weight fit is not automatically a fit of the repaired theory. A response weight is not the same quantity as stock mass.",
+        "remaining": "A conservative gas+stock merger evolution with specified initial conditions, followed by an actual lens-map likelihood, remains to be done. Bullet/CLASH map predictions cannot honestly be scored as passed. No independent RAR halo may be added on top of the full stock excess.",
+        "result_files": [
+          "cluster_cohort_audit.json"
+        ],
+        "theorem_trail": [
+          "Entropic/Main/Galactic.lean",
+          "02 Research/Cluster reciprocity audit 2026-10-22/CLUSTER_RECIPROCITY_AUDIT.txt"
+        ],
+        "external_sources": [
+          "https://arxiv.org/abs/1805.00034",
+          "https://archive.stsci.edu/prepds/clash/"
+        ]
+      },
+      {
+        "id": "S09",
+        "title": "Gravitational slip and E_G",
+        "status": "New transfer prediction compared with data",
+        "new_work": "Computed E_G directly from the Weyl potential and baryon velocity divergence, checked the \u039bCDM normalization including its baryon/total-density transfer ratio, and compared with ACT\u2013BOSS summaries.",
+        "result": "The release prediction is E_G=0.4375 at z=0.316 and 0.3862 at z=0.555, nearly scale independent over k=0.005\u20130.15 Mpc\u207b\u00b9. ACT\u2013BOSS reports 0.49 (+0.14/\u22120.11) and 0.31 (+0.06/\u22120.05), respectively; neither comparison is a significant discrepancy.",
+        "scope": "Equality of the two potentials is insufficient to fix this statistic: velocity growth and source normalization also enter. The calculation is at effective redshifts and assumes unbiased large-scale velocity tracing.",
+        "remaining": "A joint window-convolved clustering/lensing likelihood, including the observational compression assumptions, is still needed.",
+        "result_files": [
+          "cosmology_final.json",
+          "observable_validation.json"
+        ],
+        "theorem_trail": [
+          "Entropic/Pass2/Harmonic.lean:no_slip",
+          "Entropic/Pass2/Harmonic.lean:two_potential_newton"
+        ],
+        "external_sources": [
+          "https://arxiv.org/abs/2405.12795"
+        ]
+      },
+      {
+        "id": "S10",
+        "title": "Wide binaries and the Solar System",
+        "status": "Null benchmarks checked; raw catalogue test open",
+        "new_work": "Recomputed the smooth-tide scaling over 10\u201330 kAU and 1\u20132 solar masses and checked the zero-quadrupole benchmark against the latest Cassini estimate.",
+        "result": "For \u03a9=28 and A=15 km s\u207b\u00b9 kpc\u207b\u00b9, the illustrative radial-tide speed effect ranges from about 1.1\u00d710\u207b\u2075 to 6.0\u00d710\u207b\u2074. Therefore \u226410\u207b\u2074 is not a universal bound across that separation range. Q\u2082=0 differs from the published Cassini central value by 0.89\u03c3.",
+        "scope": "The tide is ordinary environmental gravity. The distinctive commitment is no large extra internal MOND-like force for nested resolved systems. Carrier assignment and the local projection rule are physical assumptions. Current wide-binary analyses disagree and were not converted into a joint verdict.",
+        "remaining": "A fixed-selection Gaia likelihood with projection, eccentricity, unresolved multiplicity, contamination and selection effects has not been run; future-release predictions are recorded locally, not externally preregistered.",
+        "result_files": [
+          "local_null_tests.json"
+        ],
+        "theorem_trail": [
+          "Entropic/Main/Galactic.lean:nesting"
+        ],
+        "external_sources": [
+          "https://arxiv.org/abs/2602.17884",
+          "https://arxiv.org/abs/2504.07569",
+          "https://arxiv.org/abs/2601.21728"
+        ]
+      },
+      {
+        "id": "S11",
+        "title": "Newton\u2019s constant and lepton masses",
+        "status": "Arithmetic and finite menus reproduced",
+        "new_work": "Downloaded current CODATA tables, recomputed with high precision, reran the routing integer scan and all 43 Farey candidates, and retained the earlier formula-menu audit.",
+        "result": "G*=6.6742890813e-11 (\u22120.073 CODATA \u03c3); muon ratio pull -0.535\u03c3; tau mass 1776.918782 MeV against 1776.93\u00b10.09. Only n=7 survives the stated 401-integer, 2\u03c3 routing scan; only 2/7 survives the stated Farey, 1\u03c3 tau scan.",
+        "scope": "These are precise conditional matches. g\u2019s historical connection to G and the development of the marked formula after residuals were known prevent a blind-prediction interpretation. Finite-menu uniqueness does not define a probability over theories. The electron-calibrated G* and a measured native-ensemble G_R are different checks.",
+        "remaining": "The look-elsewhere objection is not eliminated by proving the selected formula. A constrained action/matching argument or a genuinely prospective observable is needed; no demand for a maximal microscopic derivation is imposed here.",
+        "result_files": [
+          "constants_audit.json",
+          "../logs/numerology_menu.log"
+        ],
+        "theorem_trail": [
+          "Entropic/Main/Core.lean:farey_count",
+          "Entropic/EFT/Marked/CorrectedH9.lean"
+        ],
+        "external_sources": [
+          "https://physics.nist.gov/cuu/Constants/",
+          "https://pdglive.lbl.gov/DataBlock.action?node=S035M"
+        ]
+      },
+      {
+        "id": "S12",
+        "title": "Gravitational waves and Lorentz tests",
+        "status": "Public null benchmark reproduced; tensor completion open",
+        "new_work": "Downloaded the GWTC-4.0 polarization data and reproduced the official combination of pre-O4a and O4a log Bayes factors; checked the GW170817 speed interval and the existing CDT campaign status.",
+        "result": "Pure scalar and pure vector alternatives are disfavored relative to tensor polarization in the released combined benchmark. Mixed tensor-plus-extra-mode alternatives remain much less tightly distinguished. A luminal, tensor-only continuum prediction is compatible with these results.",
+        "scope": "The benchmark cannot distinguish this model from GR. The archived CDT tensor chains failed equilibration; their sealed science payload was not opened or counted as a detection. Scalar Lean results do not prove the graviton or photon/matter Lorentz sector.",
+        "remaining": "An equilibrated tensor measurement and a specified dispersion/polarization/particle-propagation operator map are needed for actual Crab, GRB and GW predictions. No new strain-level likelihood or O5 analysis was run.",
+        "result_files": [
+          "gw_polarization.json",
+          "local_null_tests.json"
+        ],
+        "theorem_trail": [
+          "02 Research/cdt_tt_protocol/production_v2/ANALYSIS_v2c_s2c_failure.md"
+        ],
+        "external_sources": [
+          "https://dcc.ligo.org/LIGO-P2600128/public",
+          "https://arxiv.org/abs/1710.05834"
+        ]
+      },
+      {
+        "id": "S13",
+        "title": "Milky Way, LMC, streams and halo tilt",
+        "status": "Existing live realizations consolidated; joint fit open",
+        "new_work": "Reconciled the older aligned-halo failure with the later tilted-stock run, both independent phase replicas and the stock/director bridge; retained the archived MW/LMC normalization concerns.",
+        "result": "Across the three 8-Gyr realizations, late halo tilts are 39.584\u201342.356\u00b0 and stellar tilts 21.378\u201322.332\u00b0. This demonstrates repeatable conditional retention at the tested particle count. Late precession and rounding persist; a stationary continuum configuration has not been shown.",
+        "scope": "The aligned and tilted branches are different commitments. The later feasibility result does not erase the aligned branch\u2019s failure or supply a population distribution. The older halo-shape evidence ratio depends strongly on the chosen \u039bCDM shape prior and inter-study errors.",
+        "remaining": "A single conservative MW/LMC/stream/tilt fit with the same stock and force model is still required; the archived MW masses at 50 kpc are too high relative to the cited constraint. No new long N-body run was needed merely to repeat already stored realizations.",
+        "result_files": [],
+        "theorem_trail": [
+          "02 Research/Halo replication audit 2026-10-21/START HERE.txt",
+          "02 Research/Halo stock director bridge 2026-10-21/START HERE.txt"
+        ],
+        "external_sources": []
+      },
+      {
+        "id": "S14",
+        "title": "Dwarf satellites and tidal inheritance",
+        "status": "Archived grid reanalysis completed; strong model dependence",
+        "new_work": "Re-evaluated the saved moving-LMC satellite integrations with 10%, 20% and 30% model uncertainty, keeping both cuspy-halo prior widths.",
+        "result": "Antlia 2 stock/NFW evidence rises from 0.007\u20130.019 at 10% uncertainty to 0.69\u20130.74 at 30%. Crater II falls from roughly 2.6\u00d710\u2075\u20132.0\u00d710\u2078 to 94\u2013155. These shifts expose how much of the headline odds come from the restricted grid and uncertainty model.",
+        "scope": "The old grid does not implement the new conservative joint-stock force closure and does not span cored or broader \u039bCDM histories. Its odds are not multiplied into an overall score. Near-Newtonian tidal dwarfs are compatible with conventional tidal formation too; disequilibrium obstructs a clean gravity test.",
+        "remaining": "Updated astrometry, common MW/LMC fitting, conservative tidal evolution and a derived carrier/phase boundary are needed before claiming unique satellite or tidal-dwarf predictions.",
+        "result_files": [
+          "dwarf_grid_sensitivity.json"
+        ],
+        "theorem_trail": [
+          "02 Research/Crater II and Antlia 2 vs LCDM/RESULTS_with_LMC.md"
+        ],
+        "external_sources": [
+          "https://arxiv.org/abs/2106.12656",
+          "https://arxiv.org/abs/1509.05404"
+        ]
+      },
+      {
+        "id": "S15",
+        "title": "Old-disk vertical gravity",
+        "status": "Common-a\u2080 re-evaluation completed",
+        "new_work": "Reused the archived reduced vertical solver for NGC 6946 and NGC 628 at a\u2080=1.20, 1.2307 and 1.2588 \u00d710\u207b\u00b9\u2070 m s\u207b\u00b2.",
+        "result": "At the common-fit a\u2080, NGC 628\u2019s completion fit has \u03c7\u00b2\u22482.04 for five dispersions and a \u22120.21\u03c3 radial/vertical mass offset; the algebraic QUMOND comparison has \u03c7\u00b2\u22488.95 and \u22122.91\u03c3. The small normalization change preserves the earlier pattern.",
+        "scope": "The QUMOND treatment is approximate and the NGC 628 gas profile and inclination introduce real uncertainty. A maximal disk plus a round conventional halo has similar vertical gravity, so this is not an independent rejection of \u039bCDM.",
+        "remaining": "The broader old-population disk programme needs separated stellar tracers, scale-height uncertainties and full nonspherical comparisons. Existing registered per-galaxy predictions are preserved.",
+        "result_files": [
+          "old_disk_reanalysis.json"
+        ],
+        "theorem_trail": [
+          "02 Research/Galactic tests/old_disk_vertical.py"
+        ],
+        "external_sources": []
+      }
+    ]
+  },
+  "release_history_figure": {
+    "allocation": "exponential",
+    "mixing_fraction": 0.27424477631205796,
+    "H0_quadrature": 68.9387290889542,
+    "vacuum_fraction_z2": 0.9682404127564876,
+    "points": 30000,
+    "source": "Saved fit parameters and Frel_table; background quadrature only"
+  },
+  "editorial_organization_20261023": {
+    "updated_utc": "2026-10-23T20:06:59.865817+00:00",
+    "pages": 42,
+    "families": 15,
+    "parts": {
+      "I": "Distinctive predictions and discriminating tests",
+      "II": "Recovery of established phenomenology"
+    },
+    "coverage_record": "02 Research\\Empirical fifteen-test structure 2026-10-23\\coverage.json",
+    "verification_record": "02 Research\\Empirical fifteen-test structure 2026-10-23\\final_verification.json",
+    "pdf_sha256": "67addb11060f7ddf2aadcd99a5ce8d412488793cb0b9f82821ed1abdd647ed00",
+    "scientific_result_scope": "Previously saved verification and evidence retained. This edit reruns no scientific fits, simulations or proofs.",
+    "coverage_status": "All fifteen present; evidence and outstanding tests remain distinguished."
+  },
+  "format_alignment_20261023": {
+    "updated_utc": "2026-10-23T20:19:04.603348+00:00",
+    "pages": 38,
+    "pdf_sha256": "cd4cdd98fbe144df1658c59b1cc181aa43db59cb5aa92499777625fc64001511",
+    "record": "02 Research\\Publication formatting alignment 2026-10-23\\final_verification.json",
+    "scope": "Layout only; all empirical chapter source bytes and figure assets unchanged."
+  }
+}

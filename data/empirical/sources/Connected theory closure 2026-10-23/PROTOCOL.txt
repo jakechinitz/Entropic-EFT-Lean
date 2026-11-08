@@ -1,0 +1,52 @@
+CONNECTED THEORY CLOSURE — 23 OCTOBER 2026
+
+Purpose: try to close the five physical connections identified after the unified
+empirical program. Keep existing manuscripts, data, simulation results and Lean
+sources intact. New results live here until their scope is established.
+
+Inputs: current full manuscript; current GitHub Lean head
+432da8c4a8b169a17146b53e4155d6b37915a12f (checked 23 October);
+local corresponding sources; cluster reciprocity, stock adjustment, vacuum
+exhaustion, and unified empirical calculations.
+
+Questions and planned checks, recorded before numerical results:
+
+1. Conservative stock dynamics: assemble a common covariant action with
+positive inertial stock and derive its energy/momentum ledger. Identify the
+unfixed kinetic equilibrium, constitutive forces and initial data. Check the
+finite stock-budget constraint on an exact spherical exponential RAR.
+
+2. Response selection: derive what finite-time tracking requires and whether
+passive lag can reduce the high-redshift force. Test the sign on fixed-baryon
+histories; distinguish newly forming systems. Use the existing positive
+two-pole response to connect tracking speed to quantum noise. Exhibit the
+rate-scale degeneracy left by detailed balance and equilibrium normalization.
+
+3. Local release: examine both the existing canonical receiver family and a
+new low-density constitutive completion of the capacity-clock action. The
+latter is intended to agree exactly with the original action on an open
+positive-density branch, while adding a positive, causal pressure response
+before local exhaustion. Derive the action, positive energy, characteristic
+speed, and matching conditions before claiming any inheritance of linear
+cosmological results. Explicitly record the new constitutive choice and the
+loss of a universally monotonic source clock below the transition.
+
+4. Tensor sector: expand the effective Einstein action on a homogeneous
+background, connect the existing TT projector algebra to two kinetic modes,
+and check the principal symbol and energy. This does not certify the native
+microscopic continuum, the director covariantization, or absence of additional
+scalar fields in a chosen completion.
+
+5. Matching: identify invariant deformations that preserve the proved
+symmetries but change physical rates or loading. Distinguish selected finite
+action uniqueness from uniqueness among effective actions.
+
+Verification: analytic derivations, numerical convergence/conservation tests,
+and standalone Lean certificates with their exact hypotheses. New empirical
+likelihood claims require an actual implementation, except where identity of
+the actions in a neighborhood proves exact identity of the already-tested
+background and linear equations. No combination of these checks constitutes
+a microscopic derivation or an observational acceptance of nonlinear behavior.
+
+Publication files will not be edited during exploratory derivation. Nothing
+will be deleted. Failure and counterexample results will be retained.

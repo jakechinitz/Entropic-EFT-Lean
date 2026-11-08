@@ -1,0 +1,20 @@
+OBSERVED CLUSTER TESTS
+
+Inputs are in source_data and acquisition/expanded-file hashes in source_records.
+Original source FITS and PDFs have not been edited. The oversized Bullet zip
+was stopped and is retained as .zip.partial; only CRC-verified complete files
+were extracted. The complete convergence map was downloaded separately.
+
+Python 3.13, NumPy, SciPy, Matplotlib; local astropy 8.0.2 for WCS support.
+radial_analysis.py performs the X-COP and independent lensing reductions.
+bullet_analysis.py performs WCS-aligned map/aperture reductions.
+validate.py checks the saved reductions and independent identities.
+The scripts protect radial result tables against accidental overwrites.
+To rerun, use their optional fresh output-directory argument; retain the
+source_data and dependencies folders at their original locations.
+
+Build only the research PDF (does not rerun calculations):
+python .organization/build_pdfs.py --tex "02 Research/Observed cluster tests 2026-10-23/Research note/main.tex"
+
+The four publication papers are unchanged. No new empirical likelihood fit,
+cluster simulation or Lean theorem was asserted by this observational pass.

@@ -1,0 +1,8 @@
+{
+  "force_is_energy_gradient_max_relative_error": 2.7280428880060924e-07,
+  "same_initial_energy_as_archived_relative_error": 1.6653345369377348e-15,
+  "contact_debit_max_abs_error": 2.6645352591003757e-15,
+  "contact_momentum_max_abs_error": 4.440892098500626e-16,
+  "contact_angular_momentum_max_abs_error": 1.7763568394002505e-15,
+  "status": "PASS"
+}

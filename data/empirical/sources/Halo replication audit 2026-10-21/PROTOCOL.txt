@@ -1,0 +1,47 @@
+HALO TILT: FIXED-COUNT PHASE REPLICATION AUDIT
+Written before generating the new phases, 2026-10-21.
+
+Question: Is the retained tilt in the previous 131072-particle live run
+repeatable under independent phase sampling at the same particle count?
+
+Two new seeds: 211034 and 211035. Each uses 65536 base phases and exact
+inversion partners (131072 stock particles); minimum 24 phases per orbit.
+Retain all 1072 positive orbits and their previously fitted mass totals.
+Use the existing entropy phase-quadrature fit, with no altered targets or
+constraints. Keep the same 8192 stellar tracers, a0, rigid disk, stock
+mass, l=0,2,4 force basis, radial grid, eps=0.2 kpc, and dt=0.0005 Gyr.
+Each accepted initial realization runs to 8 Gyr without outcome retuning.
+
+Initial acceptance: total stock-force RMS error <=2%, transverse error
+<=10% at all existing fitted AND unused diagnostic radii; torque x/y
+within 5% of their target scale, J direction within 1 degree, positive
+phase masses, per-orbit mass totals preserved to floating-point accuracy.
+If a gate fails, retain and report it; do not replace a seed with another.
+Live numerical gate: sampled energy error <0.1%, J error/Ldisk <1e-6,
+finite states and no isolated ejection-energy catastrophe.
+
+Primary outcomes: the final 7.5-8 Gyr averaged-moment halo and stellar
+inclinations in the 10-40 kpc cut, and the full half-Gyr trajectories.
+Report together with shape eigenvalue gaps, density mismatch, radial
+anisotropy, mass profiles, disk precession, and final force proxies.
+Also report each final two-Gyr sequence; do not select a favorable epoch.
+
+Descriptive retention flag, not an observational confidence criterion:
+final averaged halo tilt >=35 degrees and stellar tilt >=20 degrees.
+These rounded thresholds describe substantial retention near the prior
+large run (40.8 and 22.2), not precision agreement with targets 43/25.4.
+No population success probability will be inferred from only three seeds.
+
+If both new seeds retain the tilt, this supports repeating the candidate
+at fixed N; continuum, force-basis and physical closure remain unproved.
+If either loses the tilt, report the sensitivity rather than averaging it
+away. Additional resolution runs are then not automatically a solution.
+
+This is a numerical audit of the conditional collisionless stock and
+responding rigid-disk closure. It is not a derivation of that closure
+from the full manuscript action, a live deformable-disk model, or a
+measurement of a universal observational halo-tilt angle.
+
+No manuscript edits. Existing a0=1.230729e-10 m/s^2. No deletions.
+Exact copies of the existing three stage scripts are kept here. Imported
+field/orbit modules remain in the preserved preceding research folders.

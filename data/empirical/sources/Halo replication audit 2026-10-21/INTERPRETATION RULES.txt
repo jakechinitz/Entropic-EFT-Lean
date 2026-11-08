@@ -1,0 +1,55 @@
+INTERPRETING THIS REPLICATION AUDIT
+
+1. Which hypothesis is being tested?
+The aligned static Milky Way solution and the dynamic conserved-stock
+candidate are different claims. The manuscript itself says the aligned
+solution fails the long-lived-tilt test. These runs do not reverse that
+statement. They test an assembly-shaped stock route explicitly named in
+Section 16 and Appendix O.3, with a collisionless stress closure supplied
+as an additional modeling assumption.
+
+2. What counts as progress?
+A complete live calculation with positive mass, reciprocal disk torque,
+accurate conservation, radial stellar motion and appreciable retained
+tilts would establish conditional dynamical feasibility. Independent
+phase repetitions test whether that particular result is fragile to
+sampling. They cannot prove continuum convergence, stability of all
+admissible initial states, or derivation from the full manuscript action.
+
+3. What is fitted or selected?
+The radial stock target and a0 are unchanged. The 43-degree stock tilt,
+A=0.3 density quadrupole, pattern and orbit population were selected in
+earlier exploratory construction. The stellar target also comes from the
+tilted-halo problem. Positive orbit weights were fitted, then held fixed
+here. Initial phase weights are adjusted within each orbit, with the
+same prescribed constraint set for every seed. No final angle is fitted.
+The new runs are independent phase draws conditional on that common
+construction; they are not independent formation histories or orbit fits.
+
+4. What should not be conflated?
+ - Conservation error with physical drift. A conservative Hamiltonian can
+   evolve away from an imperfect or unstable initial relative equilibrium.
+ - Initial force accuracy with future force accuracy. Unfitted phases
+   develop noticeable noise relative to the weak transverse supporting
+   force, even when total acceleration errors remain much smaller.
+ - Radial director stiffness with the stock's density axis. The previously
+   verified elastic radial-director identity does not force the stock
+   density into disk alignment. Full thermal/director response remains.
+ - Position-inertia axis ratios with density-contour or potential ratios.
+ - Raw second moments with streaming-subtracted dispersions. A separate
+   coarse-bin diagnostic now checks the size of that distinction.
+ - Positive phase-space mass with pointwise positivity of a finite
+   multipole/spline reconstruction. A separate Laplacian check measures
+   the latter rather than assuming it.
+
+5. Scope of remaining physical closure
+O.3 supplies positive stock continuity, a budget, and explicitly allows
+velocity stress. It also states that projected transport and common
+variational coupling remain completion data. The collisionless kinetic
+branch is an effective realization, not a unique derivation. The disk is
+a responding rigid gyroscope, not a deformable stellar disk. Finite
+director/polarization response and the odd vertical force remain open.
+No full Milky Way, SPARC, vertical-equilibrium or observational likelihood
+refit is implied by small circular-speed-proxy shifts.
+
+No manuscript or a0 changes are authorized or made by this audit.

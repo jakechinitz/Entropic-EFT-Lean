@@ -1,0 +1,1211 @@
+Publications of the Astronomical Society of Japan, 2026, 00, 1–12
+doi: 10.1093/pasj/xxx000
+Advance access publication date:
+XRISM reveals sloshing-driven gas motions in the core of
+Abell 2029
+Yuusuke UCHIDA,1,2,∗Yuna SAITO,3 Naomi OTA,4,5 Erwin T. LAU,4 Ming SUN,6 Eric D. MILLER,7
+Tommaso BARTALESI,8,9 Stefano ETTORI,9,10 Kotaro FUKUSHIMA,11 Caroline KILBOURNE,12 Lorenzo
+LOVISARI,13,14 Kyoko MATSUSHITA,11 B.R. MCNAMARA,15 Arnab SARKAR,16,7 Kazunori SUDA,11 and
+Irina ZHURAVLEVA17
+1Institute of Space and Astronautical Science (ISAS), Japan Aerospace Exploration Agency (JAXA), Kanagawa 252-5210, Japan
+2Research Center for Space System Innovation, Research Institute for Science and Technology, Tokyo University of Science,
+2641 Yamazaki, Noda, Chiba 278-8510, Japan
+3Faculty of Science and Technology, Tokyo University of Science, Chiba 278-8510, Japan
+4Department of Physics, Nara Women’s University, Kitauoyanishi-machi, Nara, Nara 630-8506, Japan
+5Argelander-Institut für Astronomie (AIfA), Universität Bonn, Auf dem Hügel 71, 53121 Bonn, Germany
+6Department of Physics and Astronomy, The University of Alabama in Huntsville, Huntsville, AL 35899, USA
+7Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+8Dipartimento di Fisica e Astronomia “Augusto Righi” – Alma Mater Studiorum – Università di Bologna, I-40129 Bologna
+9INAF, Osservatorio di Astrofisica e Scienza dello Spazio, via Piero Gobetti 93/3, 40129 Bologna, Italy
+10INFN, Sezione di Bologna, viale Berti Pichat 6/2, 40127 Bologna, Italy
+11Department of Physics, Tokyo University of Science, 1-3 Kagurazaka, Shinjuku-ku, Tokyo 162-8601, Japan
+12NASA / Goddard Space Flight Center Greenbelt MD 20771, USA
+13INAF, Istituto di Astrofisica Spaziale e Fisica Cosmica di Milano, via A. Corti 12, 20133 Milano, Italy
+14Center for Astrophysics | Harvard & Smithsonian, 60 Garden Street, Cambridge, MA 02138, USA
+15Department of Physics & Astronomy, Waterloo Centre for Astrophysics, University of Waterloo, Ontario N2L 3G1, Canada
+16Department of Physics, University of Arkansas, 825 W Dickson st.,Fayetteville, AR 72701, USA
+17Department of Astronomy and Astrophysics, University of Chicago, 5640 S Ellis Ave, Chicago, IL 60637, USA
+∗E-mail: uchida.yuusuke99@jaxa.jp
+ORCID: 0000-0002-7962-4136, 0000-0002-2784-3652, 0000-0001-8914-8885, 0000-0001-5880-0703, 0000-0002-3031-2326, 0009-0004-5838-2213, 0000-0003-
+4117-8617, 0000-0001-8055-7113, 0000-0001-9464-4103, 0000-0002-3754-2415, 0000-0003-2907-0902, 0000-0002-5222-1337, 0009-0003-3920-131X
+Abstract
+We investigate the velocity structure of the intracluster medium (ICM) in the core of the relaxed cool-core cluster Abell 2029 using XRISM Resolve
+spectroscopy. We analyze combined XRISM Resolve observations and divide the central region into several subregions. To account for photon
+mixing caused by the XRISM point spread function, we perform a spatial-spectral mixing analysis. We detect an ordered line-of-sight bulk-velocity
+gradient across the cluster core: the northern regions are blueshifted relative to the brightest cluster galaxy (BCG), while the southern regions are
+close to zero velocity or slightly redshifted. The maximum velocity difference is about 280 kms−1. In contrast, the turbulent velocity dispersion is
+smaller, with measured values and upper limits of <
+∼150 kms−1, implying a non-thermal pressure fraction below ∼2.5%. The velocity pattern is
+consistent with gas sloshing associated with the spiral structure seen in Chandra X-ray images. Averaged over all regions, the inferred turbulent
+heating rate is below the radiative cooling rate, indicating that turbulent dissipation alone is insufficient to offset cooling in the entire core. These
+results reveal that A2029 is not kinematically featureless: sloshing-induced bulk motions are present, while the observed line-of-sight velocity
+dispersion indicates only a limited contribution to pressure support and core heating.
+Keywords: cosmology: observations — galaxies: clusters: individual (Abell 2029) — intergalactic medium — X-rays: galaxies: clusters
+1 Introduction
+Galaxy clusters contain a hot X-ray-emitting intracluster medium
+(ICM) that traces the formation and evolution of the largest grav-
+itationally bound structures in the universe. The dynamical state
+of the ICM provides important information about cluster assem-
+bly, energy transport, and the balance between heating and cool-
+ing in cluster cores. Gas motions in the ICM contribute to the
+non-thermal pressure support and transport kinetic energy, affect-
+ing both the thermodynamic structure of the gas and the accuracy
+of hydrostatic mass measurements (e.g., Lau et al. 2009; Biffi et al.
+2016).
+Recent advances in high-resolution X-ray spectroscopy have en-
+abled direct measurements of gas motions in the ICM (Hitomi
+Collaboration et al. 2016; Hitomi Collaboration et al. 2018;
+Simionescu et al. 2019; Sanders et al. 2020). Observations with
+the XRISM Resolve microcalorimeter (Tashiro et al. 2025; Ishisaki
+et al. 2025; Kelley et al. 2025) have shown that the velocity disper-
+sion of the hot gas in several galaxy clusters is relatively small,
+indicating largely subsonic ICM motions. In particular, the cool-
+Received: , Accepted:
+© 2026. Astronomical Society of Japan.
+arXiv:2608.14415v2  [astro-ph.HE]  17 Aug 2026
+
+2
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+core cluster Abell 2029 (Lewis et al. 2002) exhibits a velocity dis-
+persion of order <∼150 kms−1 and a small non-thermal pressure
+fraction in the central region and at intermediate radii (XRISM
+Collaboration et al. 2025c; XRISM Collaboration et al. 2025a).
+The line-of-sight bulk velocity of the hot gas is also small relative
+to the central galaxy. These results indicate that the ICM in A2029
+is close to hydrostatic equilibrium on global scales, making it an
+excellent laboratory for studying subtle gas motions.
+Despite this apparently quiescent state, deep Chandra observa-
+tions of A2029 reveal a prominent spiral-like surface brightness
+structure extending to about 600 kpc (Watson et al. 2026; Paterno-
+Mahler et al. 2013). Such structures are widely interpreted as sig-
+natures of gas sloshing induced by minor mergers that perturb the
+cluster gravitational potential. Sloshing frequently produces spi-
+ral patterns and cold fronts in cool-core clusters (Markevitch &
+Vikhlinin 2007; Ueda et al. 2020) and is expected to drive large-
+scale bulk motions in the ICM (ZuHone et al. 2010; Roediger &
+Zuhone 2012). The same observations further suggest that the spi-
+ral in A2029 is a relic of an off-axis minor merger several Gyr
+ago (Watson et al. 2026). However, direct measurements of the
+associated velocity field have been difficult because of the limited
+spectral resolution of previous X-ray observatories.
+Spatially resolved XRISM observations are now beginning
+to connect such X-ray structures with gas kinematics.
+In
+the Centaurus cluster, XRISM detected bulk flows of 130 to
+310 kms−1 consistent with sloshing, while the velocity disper-
+sion remains relatively small even near the central active galac-
+tic nucleus (XRISM Collaboration et al. 2025b). In the Perseus
+cluster, XRISM revealed multiple kinematic drivers on different
+spatial scales, with active galactic nucleus feedback dominating
+the inner core and merger-driven motions likely associated with
+sloshing dominating the outer region (XRISM Collaboration et al.
+2026; Zhang et al. 2026). These results highlight the importance
+of spatially resolved velocity measurements for identifying the
+drivers of gas motions in cluster cores.
+A2029 provides a useful opportunity to investigate the coexis-
+tence of a globally quiescent ICM and a large-scale sloshing spi-
+ral. If the spiral is produced by sloshing, coherent line-of-sight
+velocity gradients should be present even when the non-thermal
+pressure support remains small. Spatially resolved velocity mea-
+surements therefore provide a direct kinematic test of the sloshing
+interpretation inferred from Chandra imaging.
+In this paper we carry out such a test using spatially resolved
+spectroscopy with XRISM Resolve. We subdivide the A2029 core
+to map the spatial distributions of bulk velocity and velocity dis-
+persion, and we further use the measured velocity dispersions to
+estimate the turbulent heating rate and compare it with the radia-
+tive cooling rate in the cool core.
+The cosmological parameters are Ωm0 = 0.3, ΩΛ = 0.7, and
+h = 0.7 throughout this paper. Accordingly, 1′ corresponds to
+89 kpc at the redshift of A2029 (z = 0.0787). We report redshifts
+and velocities corrected to the Solar System barycenter. We use
+the proto-solar abundance table from Lodders et al. (2009). The
+quoted errors represent the 1σ statistical uncertainties unless stated
+otherwise.
+This paper is organized as follows.
+Section 2 describes the
+XRISM observations and data reduction. Section 3 presents the
+spectral analysis and measurements of the gas velocity structure.
+Section 4 discusses the implications for sloshing, non-thermal
+pressure support, and the heating and cooling balance. Section
+5 summarizes the main results.
+2 Observations and data reduction
+2.1 XRISM observations
+We analyzed XRISM Resolve observations of the galaxy cluster
+Abell 2029 obtained during the performance verification phase and
+the subsequent GO program. The performance verification data
+include two observations of the central region on 2024 January
+10 and 13 (OBSID 000149000 and 000151000) and one north-
+ern offset pointing, N1, observed on 2024 January 10 (OBSID
+000150000). The GO data include an additional central observa-
+tion obtained on 2025 July 17 (OBSID 201042010). The cleaned
+exposure times are listed in Table 1. The spatially resolved subar-
+ray analysis presented below uses the combined data set, including
+the GO center observation to improve the photon statistics of the
+core regions.
+Barycentric velocity corrections were applied to all Resolve ob-
+servations. The corrections are approximately +26 kms−1 for the
+January 2024 observations and −27 kms−1 for the July 2025 ob-
+servation.
+2.2 Data reduction
+The analysis started from the cleaned event files processed with
+pipeline version 03.00.013.009. In addition to the standard screen-
+ing criteria, we applied the recommended screening in the XRISM
+ABC Guide. We extracted spectra using only high primary grade
+events (ITYPE == 0), which provide the highest spectral resolution
+for Resolve. The calibration pixel (pixel 12) and pixel 27 were ex-
+cluded because pixel 27 has exhibited gain variations distinct from
+other pixels.
+For spatially resolved spectroscopy, we defined six subregions
+as shown in Figure 1. The central pointing was divided into five
+regions: center, north east (NE), north west (NW), south east (SE),
+and south west (SW). We also defined a far north east (FNE) region
+using the N1 pointing to represent emission from the outer part
+of the cluster and evaluate contamination from outside the central
+field of view.
+The redistribution matrix files (RMFs) were generated for each
+region using rslmkrmf in HEASoft version 6.34 with CalDB
+v20250315. We adopted the large-size RMF generated with the
+option whichrmf = L.
+The ancillary response files (ARFs) were produced using
+xaarfgen in HEASoft, with a Chandra X-ray image as the input
+surface brightness distribution. This accounts for the spatial dis-
+tribution of cluster emission within the Resolve field of view. The
+treatment of spatial-spectral mixing caused by the XRISM point
+spread function is described in Section 3.
+The spectral analysis focuses on the energy band above 2 keV,
+where calibration uncertainties associated with the gate valve
+transmission are minimized.
+The systematic uncertainty in the
+Resolve energy scale at 6 keV is approximately 0.3 eV (Eckart
+et al. 2025), corresponding to about 15 kms−1, and the instrumen-
+tal line-width uncertainty corresponds to approximately 3 kms−1.
+These calibration uncertainties are included in the quoted velocity
+uncertainties.
+3 Analysis and results
+Our main goal is to measure the gas kinematics in the central re-
+gion of Abell 2029 using the combined performance-verification
+(PV) and General Observer program (GO) data set.
+Previous
+studies by XRISM Collaboration et al. (2025c) and XRISM
+
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+3
+Table 1. Observation information for each pointing
+Object
+OBSID
+Observation start
+Exposure time [ks]
+RA_NOM [deg]
+DEC_NOM [deg]
+Abell2029_Center
+000149000
+2024-01-10T04:03:46
+15.2
+227.7341
+5.7452
+Abell2029_N1
+000150000
+2024-01-10T16:51:55
+90.6
+227.7635
+5.7850
+Abell2029_Center
+000151000
+2024-01-13T01:50:41
+26.9
+227.7332
+5.7451
+Abell2029_Center
+201042010
+2025-07-17T12:51:00
+118.3
+227.7330
+5.7445
+(a)
+90 kpc
+1’
+SW
+NW
+NE
+Center
+SE
+FNE
+-07
+-4e-07
+-3e-07
+-2e-07
+-1e-07
+4.9e-10
+1e-07
+2e-07
+3e-07
+4e-07
+5e-
+(b)
+1’
+90 kpc
+e-08
+1.09e-07
+3.06e-07
+7.05e-07
+1.49e-06
+3.08e-06
+6.23e-06
+1.25e-05
+2.51e-05
+5.01e-05
+9.99
+Fig. 1. (a) Chandra residual X-ray image of the A2029 core shown in linear color scale. The image is smoothed with a Gaussian kernel of σ = 4 arcsec.
+The spectral extraction regions used in this work are indicated by dashed outlines and labeled as center, NE, NW, SE, SW, and FNE. (b) Region definition
+used for ARF generation. The Chandra image is divided into a central circular region with a radius of 0.5 arcmin and two concentric annuli covering 0.5-1.5
+arcmin and 1.5-2.5 arcmin. The annuli are further subdivided into four azimuthal sectors, resulting in six source regions. Gray contours show the X-ray
+surface brightness in logarithmic spacing with levels starting from 1 × 10−7 and increasing to 1 × 10−4 in units of countss−1cm−2pixel−1. Dashed lines
+indicate the spectral extraction regions shown in panel (a). Alt text: Two panel X-ray images of the A2029 core.
+Collaboration et al. (2025a) reported field-averaged thermody-
+namic properties using the full Resolve array, while here we fo-
+cus on the spatially resolved velocity structure in the cluster core.
+Because the point spread function of XRISM is comparable to
+the Resolve field of view, spatially resolved spectroscopy requires
+careful treatment of photon mixing between regions. We there-
+fore perform the spectral analysis using the spatial-spectral mixing
+method. This section describes the spectral modeling, implemen-
+tation of the spatial-spectral mixing analysis, and resulting velocity
+measurements.
+3.1 Spectral modeling
+We performed spectral modeling and fitting for the Resolve data
+with XSPEC version 12.14.1 (Arnaud 1996).
+The ICM emis-
+sion was modeled using the thermally broadened collisional ion-
+ization equilibrium model with velocity broadening, bapec (Smith
+et al. 2001), based on AtomDB version 3.0.9 (Foster et al. 2012).
+Galactic absorption was represented by TBabs (Wilms et al. 2000),
+with a column density fixed at NH = 3 × 1020 cm−2 (HI4PI
+Collaboration et al. 2016). In the central region analyzed here, the
+cosmic X-ray background is negligible compared with the clus-
+ter emission and is therefore not included in the spectral modeling
+(XRISM Collaboration et al. 2025a; Sarkar et al. 2025). The spec-
+tra were grouped using ftgrouppha to have at least one count per
+bin, and the fitting was performed by reducing the C-statistic (Cash
+1979).
+The non-X-ray background (NXB) spectra were generated for
+each region using rslnxbgen with the archival Resolve night
+Earth database version 21. For each region, we generated the back-
+ground spectrum using rslnxbgen and reproduced it with a model
+consisting of a power-law continuum and Gaussian components
+representing instrumental fluorescent lines. The normalization of
+the background model was determined by fitting the reproduced
+background spectrum and was then fixed in the subsequent ICM
+spectral analysis. An example of the Resolve spectrum and best-fit
+model for the center region is shown in Figure 2.
+3.2 Spatial spectral mixing analysis
+To estimate photon contamination from neighboring regions, we
+performed a spatial-spectral mixing (SSM) analysis. This con-
+tamination was primarily due to the XRISM Resolve XMA point
+spread function (PSF) with a half-power diameter of 1.3 arcmin.
+To account for this effect, we followed the SSM procedure adopted
+in recent XRISM studies of galaxy clusters (XRISM Collaboration
+et al. 2025a; XRISM Collaboration et al. 2025b).
+We assumed that the incoming photons originated from six sky
+regions, corresponding to the six Resolve regions. We defined the
+sky regions as a central circular region with a radius of 0.5 arcmin
+and two concentric annuli covering radii of 0.5–1.5 arcmin and
+1.5–2.5 arcmin. The inner annulus was divided into four azimuthal
+sectors. For the outer annulus, only the northeastern sector was in-
+cluded. This configuration resulted in a total of six source regions
+1 The NXB generation procedure is documented at https://heasarc.gsfc.
+nasa.gov/docs/xrism/analysis/nxb/resolve_nxb_db.html.
+
+4
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+Fig. 2. Resolve spectrum of the center region and the best-fit spectral
+model. Blue, gray, and black crosses represent the spectra from obser-
+vation IDs (OBSIDs) 201042010, 000151000, and 000149000, respec-
+tively.
+The red curve shows the total best-fit model.
+Individual model
+components are also shown, including contributions from the center (yel-
+low), NE (green), NW (blue), SE (cyan), SW (magenta), and FNE (orange)
+regions due to PSF mixing, together with the non-X-ray background com-
+ponent (light green). The solid line represents the best-fit model for GO-
+observation, while the dahsed and the dotted lines represent the best-fit
+model for PV-observations. The results for the other regions are shown in
+Figure 7. Alt text: X-ray spectrum of the A2029 center region. The x-axis
+shows the energy from 2 to 9 keV. The y-axis shows the counts per second
+per keV.
+(Figure 1(b)). For each pair of source and extraction regions, we
+generated an ARF describing the fraction of photons from source
+regions detected in the corresponding extraction region. We pre-
+pared 88 ARFs2 for all combinations of the six source regions ex-
+cept for the combinations of FNE↔SW and FNE↔SE because the
+PSF spillover fraction between those two pairs is at most about one
+percent.
+The spectra from all regions were fitted simultaneously using
+the multiple-response functionality of XSPEC, in which each ob-
+served spectrum is modeled as a linear combination of emission
+from all source regions weighted by the corresponding ARFs. The
+best-fit spectral parameters obtained from the BAPEC model are
+summarized in Table 2.
+3.3 Velocity measurements
+Using the spectral modeling and spatial-spectral mixing analysis
+described above, we derived the temperature, metal abundance,
+bulk velocity, and turbulent velocity in each region.
+From the
+redshift z obtained in each region and the BCG redshift zBCG =
+0.0779 (XRISM Collaboration et al. 2025c), the line-of-sight bulk
+velocity relative to the BCG is calculated as
+vbulk = c(z −zBCG)
+1 + zBCG
+.
+(1)
+The sound speed in each region is derived from the fitted tem-
+2 The central pointing observation consisted of three datasets. For Center, NE,
+NW SE and SW, the total number of source–extraction region ARF was 3×5×
+5 = 75. Since spillover from Center, NE and NW regions to FNE region was
+significant, the related ARFs were 3 × 3 = 9. We also generated (3 × 1 = 3)
+ARFs to account for spillover from the FNE region into the Center, NE, and NW
+regions, because the FNE region had only one dataset. Including the self-ARF
+for the FNE region, the total number of ARFs was 88.
+perature as cs =
+p
+γkBT/µmp, where γ = 5/3 is the adiabatic in-
+dex, kB is the Boltzmann constant, µ = 0.61 is the mean molecular
+weight, and mp is the proton mass. Assuming isotropic turbulence,
+the turbulent Mach number is
+M3D =
+√
+3σv
+cs
+,
+(2)
+where σv is the one-dimensional turbulent velocity dispersion. The
+corresponding non-thermal pressure fraction from turbulent mo-
+tions alone is
+αturb =
+M2
+3D
+M2
+3D + 3/γ .
+(3)
+Following XRISM Collaboration et al. (2025a), we also define the
+effective three-dimensional Mach number including both turbulent
+and bulk motions as
+M3D,eff =
+p
+3σ2v + v2
+bulk
+cs
+,
+(4)
+and the corresponding total non-thermal pressure fraction as
+α = PNT
+Ptot =
+M2
+3D,eff
+M2
+3D,eff + 3/γ .
+(5)
+The SSM analysis of the combined data set is adopted as the
+baseline result below. Comparisons between analyses with and
+without SSM, with the temperature fixed to Chandra values, and
+between data subsets are used to evaluate systematic uncertainties
+and are described in Appendix 1. We also examine the possible ef-
+fect of resonant scattering by repeating the fits after excluding the
+Fe XXV resonance line. These checks show that the bulk velocity
+pattern is robust, while the turbulent velocity is more sensitive to
+PSF mixing and to the treatment of the strongest Fe line.
+Compared to the field-averaged measurements reported by
+XRISM Collaboration et al. (2025c), the temperature shows clear
+spatial variations among the six regions. The center and FNE re-
+gions are cooler than 6.83+0.14
+−0.13 keV, the NE, SE, and SW regions
+are hotter, and the NW region is consistent with this value within
+uncertainties. The metal abundance also varies spatially, with rel-
+atively high values in the center and NE regions and lower val-
+ues in the SE and FNE regions, rather than being uniform around
+0.60+0.02
+−0.02 solar.
+Negative bulk velocities are observed in the NE, NW, and
+FNE regions, indicating blueshifted motions relative to the BCG.
+The FNE region shows the largest blueshift of approximately
+−190 kms−1. In contrast, the SE and SW regions have veloci-
+ties close to zero or slightly positive, reaching about +90 kms−1.
+The maximum velocity difference, between the FNE and SE re-
+gions, is therefore approximately 280 kms−1. To quantify the
+north-south velocity gradient, we computed the inverse-variance
+weighted mean velocities of the northern regions (NE, NW, and
+FNE) and the southern regions (SE and SW). We obtain ⟨vbulk⟩N =
+−151.0 ± 11.3 kms−1 and ⟨vbulk⟩S = 42.4 ± 12.3 kms−1, cor-
+responding to ∆v = 193.3 ± 16.7 kms−1 (11.5σ).
+Even after
+adding the current Resolve energy-scale systematic uncertainty of
+15 kms−1 in quadrature to the velocity uncertainty of each region,
+the significance remains 8.8σ. Thus, the north-south velocity gra-
+dient is robust against the known calibration uncertainty. The non-
+thermal pressure fraction is slightly higher in the central and north-
+ern regions than in the southern regions but remains below 2.5%
+in all regions. The spatial distributions of the best-fit parameters
+are summarized in Figure 3.
+
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+5
+Table 2. Spectral fitting results of the BAPEC model for the six regions and derived non-thermal pressure fractions.
+Region
+kT
+Z
+za
+vbulk
+σv
+normb
+αc
+αturbc
+(keV)
+(solar)
+(km s−1)
+(km s−1)
+(10−4 cm−5)
+FNE
+6.52+0.23
+−0.21
+0.30+0.03
+−0.03
+0.077214+0.000053
+−0.000171
+−191+21
+−50
+90+35
+−59
+0.806 ± 0.020
+1.94+0.65
+−1.16
+0.79+0.61
+−1.02
+NE
+8.74+0.57
+−0.36
+0.78+0.11
+−0.07
+0.077636+0.000081
+−0.000068
+−73+27
+−24
+0+32
+−0
+0.495+0.018
+−0.021
+0.13+0.09
+−0.08
+< 0.07
+NW
+6.55+0.16
+−0.15
+0.54+0.03
+−0.03
+0.077244+0.000049
+−0.000059
+−183+20
+−22
+123+17
+−18
+0.989+0.018
+−0.017
+2.48+0.44
+−0.47
+1.45+0.39
+−0.41
+Center
+5.27+0.15
+−0.23
+0.74+0.03
+−0.05
+0.078050+0.000036
+−0.000052
+42+18
+−21
+131+16
+−21
+1.369+0.047
+−0.035
+2.11+0.48
+−0.64
+2.04+0.48
+−0.64
+SE
+7.81+0.31
+−0.23
+0.43+0.03
+−0.04
+0.078225+0.000093
+−0.000048
+90+30
+−20
+74+40
+−74
+0.752+0.015
+−0.016
+0.66+0.50
+−0.88
+0.44+0.48
+−0.88
+SW
+8.28 ± 0.25
+0.60 ± 0.04
+0.077940+0.000039
+−0.000075
+11+18
+−26
+80+26
+−36
+0.809 ± 0.015
+0.49+0.31
+−0.44
+0.49+0.31
+−0.44
+The best-fit statistic is C-stat/d.o.f. = 20241.01/22134. a The redshift values are corrected for the barycentric motion of the Earth. b Normalization of the
+BAPEC model defined as (10−14/4π[DA(1 + z)]2)R
+nenHdV . c α and αturb denote the non-thermal pressure fractions (in %) estimated from both
+bulk and turbulent motions, and from turbulent motions only, respectively.
+(a) 𝑘𝑇
+(b) Abund.
+(c) 𝑉!"#$ 
+(d) 𝜎%
+(f) 𝑎&"'!
+(e) 𝛼
+Fig. 3. Spatial distribution of the best-fit parameters in the cluster core derived from the spatial spectral mixing analysis. Panels show (a) temperature, (b)
+metal abundance, (c) bulk velocity relative to the BCG, (d) turbulent velocity dispersion, (e) non-thermal pressure fraction, and (f) non-thermal pressure
+fraction from turbulent motions alone. The color scale in each panel represents the best-fit value of the corresponding parameter. The numbers shown in
+each sector indicate the best-fit values with their 1σ statistical uncertainties. Black contours show the 0 level of the Chandra residual X-ray image shown
+in Figure 1. Alt text: Six parameter maps of the A2029 core using the same sector regions.
+4 Discussion
+We discuss the physical implications of the velocity structure mea-
+sured in the core of A2029. We first interpret the observed line-of-
+sight velocity gradient as sloshing-induced gas motion and com-
+pare it with numerical simulations. We then examine the small
+non-thermal pressure support inferred from the velocity disper-
+sion and discuss the possible role of gas motions in the heating
+and cooling balance of the cool core.
+4.1 Sloshing-induced gas motions in the core of A2029
+A key result of this work is the detection of a coherent north-south
+line-of-sight velocity gradient across the core of A2029. As re-
+ported in Section 3.3, Table 2, and Figure 3, the northern regions
+are blueshifted relative to the BCG, whereas the southern regions
+are consistent with zero velocity or slightly redshifted, giving a
+maximum contrast of ∆vbulk ∼280 kms−1 across the central few
+hundred kiloparsecs. This systematic pattern indicates that the hot
+gas is not completely at rest in the cluster potential, even though
+A2029 has often been regarded as a dynamically relaxed cool-core
+cluster.
+Deep Chandra observations have revealed a large-scale spiral
+in the ICM of A2029, extending several hundred kiloparsecs from
+the center and interpreted as the imprint of a past off-axis minor
+merger (Watson et al. 2026). The velocity gradient measured with
+XRISM is naturally explained in this context: the opposite signs
+of vbulk between the northern and southern regions indicate a co-
+herent line-of-sight component of the same gas motion. This sign
+change is difficult to ascribe to a uniform calibration offset, and the
+same north–south pattern is recovered in the independent without-
+SSM fits (Appendix 1, Figure 6), confirming that it is not an arti-
+fact of the mixing correction.
+The velocity contrast should not be interpreted as the velocity
+of a single gas element, but rather as the difference in emission-
+weighted projected velocities between different parts of the core.
+The observed line-of-sight bulk velocities are well below the adia-
+batic sound speed of cs ∼1300–1500 kms−1 for gas temperatures
+of kT ∼7–8 keV, corresponding to bulk Mach numbers of only
+
+6
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+Mbulk ∼0.1–0.15. Even using the full velocity difference as a
+characteristic amplitude, the motion remains clearly subsonic, in-
+dicating gentle bulk motion rather than a violent merger or shock-
+dominated flow.
+The observed velocity gradient supports the interpretation that
+the spiral structure in A2029 is accompanied by coherent gas mo-
+tions, although a one-to-one spatial correspondence between the
+Chandra surface-brightness residuals and the XRISM velocity ex-
+trema is not expected.
+This picture is also consistent with the
+thermodynamic and chemical structure reported in previous stud-
+ies. The Chandra data show that the inner spiral excess is asso-
+ciated with relatively cool gas and enhanced metallicity, as ex-
+pected if low-entropy, metal-rich core gas has been displaced from
+the center (Watson et al. 2026). In addition, the XRISM multi-
+temperature analysis found cooler gas components in the central
+and inner northern regions, possibly tracing the same displaced
+cool gas (Sarkar et al. 2025). We compare this interpretation with
+numerical simulations in the next section.
+4.2 Comparison with numerical simulations of sloshing
+Idealized simulations of off-axis minor mergers show that a per-
+turbing subcluster can displace the cool core from the bottom
+of the gravitational potential and excite sloshing motions, pro-
+ducing spiral cold fronts and organized gas flows (ZuHone et al.
+2010; ZuHone 2011).
+Synthetic microcalorimeter observations
+further show that the observed line-of-sight velocity gradient de-
+pends on viewing angle, with larger velocities expected when the
+sloshing plane is viewed closer to edge-on and smaller projected
+velocities for more face-on geometries (Zuhone & Roediger 2016).
+The observed north-south velocity gradient in A2029 therefore
+suggests that the sloshing plane is not exactly in the plane of the
+sky, but has a finite inclination such that the northern side of the
+flow is moving partly toward the observer.
+The observed velocity amplitude is modest and consistent with
+the sloshing interpretation. The largest line-of-sight contrast is
+∆vbulk ∼280 kms−1, while the absolute bulk velocities are about
+200 kms−1 or less. Since this contrast is measured between oppo-
+site sides of the core, the characteristic one-sided projected veloc-
+ity is of order ∼100–150 kms−1. For a true sloshing velocity of
+a few 100 kms−1, such a projected amplitude can be produced if
+the sloshing plane is inclined by several tens of degrees from the
+plane of the sky. For example, vtrue ∼300 kms−1 gives i∼20–30◦
+for vlos = vtrue sini. This estimate is illustrative, and tighter con-
+straints would require tailored simulations. Thus, the observed ve-
+locity field can be understood as gentle, subsonic sloshing viewed
+at moderate inclination.
+This interpretation is supported by the deep Chandra study
+of A2029 by Watson et al. (2026). They found that the large-
+scale spiral, southeastern splash feature, and possible northwestern
+shock are qualitatively reproduced by a 1:10 mass-ratio off-axis
+merger with an impact parameter of 500 kpc, originally presented
+by ZuHone (2011). In this scenario, the observed structures cor-
+respond to an epoch about 0.2 Gyr after the second core passage,
+or about 4.3 Gyr after the start of the merger. The XRISM veloc-
+ity gradient provides complementary dynamical evidence that the
+spiral structure traces sloshing-induced gas motions.
+A similar picture has recently emerged from XRISM observa-
+tions of the Centaurus cluster. In Centaurus, line-of-sight bulk ve-
+locities of 130–310 kms−1 were detected within the central ∼30
+kpc and interpreted as sloshing of the core gas, while the velocity
+dispersion is low, σv <∼120 kms−1, even near the central AGN
+(XRISM Collaboration et al. 2025b). A2029 shows a similar com-
+bination of ordered bulk motion and modest velocity dispersion,
+supporting the view that sloshing can produce measurable line-of-
+sight velocity gradients without generating large turbulence. The
+main difference is likely the viewing geometry and spatial scale:
+Centaurus appears to be viewed closer to edge-on with respect
+to the sloshing plane, whereas A2029 shows a large-scale spiral
+mostly in projection, with a finite but more modest line-of-sight
+component in the Resolve pointings.
+4.3 Non-thermal pressure support
+The spatially resolved analysis allows us to test whether local-
+ized gas motions in the A2029 core introduce non-thermal pres-
+sure support missed by field-averaged measurements. Although
+the bulk velocity field shows a clear north-south gradient, the mea-
+sured velocity dispersion is modest in all regions. As shown in
+Table 2 and Figure 3, σv is below about 150 kms−1. For gas
+temperatures of kT ∼5–10 keV, this corresponds to a three-
+dimensional turbulent Mach number of only M3D ∼0.1–0.2, giv-
+ing a turbulent non-thermal pressure fraction, αturb, of a few per-
+cent or less.
+Including the ordered line-of-sight bulk velocity does not
+change this conclusion. When both σv and the bulk velocity rel-
+ative to the BCG are included in the effective kinetic-to-thermal
+pressure proxy, the resulting non-thermal pressure fraction α stays
+below about 2.5% across the core. The largest value is found in the
+NW region, where both the velocity dispersion and the blueshifted
+bulk velocity contribute, while the center also shows a value of
+about 2%. Thus, even though the bulk velocities are detected at
+high significance, their contribution to the pressure budget is small.
+This low kinetic pressure level can be compared with cosmolog-
+ical simulations. A forward-modeling comparison with the TNG-
+Cluster simulation suite (Nelson et al. 2024) by Lau et al. (sub-
+mitted) shows that projection and azimuthal sampling can partly
+reduce the inferred turbulent pressure fraction, but that including
+ordered bulk motions still leaves A2029 below the simulated dis-
+tribution. The discrepancy therefore appears to reflect the unusu-
+ally low amplitudes of both turbulent and bulk motions in A2029.
+Thus, XRISM indicates that A2029 hosts sloshing-driven bulk
+flows while being dynamically quiescent in terms of turbulent
+pressure support.
+This result provide a direct constraint on the turbulent contri-
+bution to hydrostatic mass bias in the central region of A2029.
+If non-thermal pressure support is ignored, the hydrostatic mass
+can be biased low by an amount comparable to the non-thermal
+pressure fraction, with additional dependence on its radial gra-
+dient. The present measurements show that, even after dividing
+the core into multiple regions and including ordered bulk motions,
+the kinetic pressure contribution is only a few percent, compara-
+ble to that inferred from the field-averaged XRISM measurements
+reported by XRISM Collaboration et al. (2025a). Thus, the re-
+solved velocity structure shows that the core is not kinematically
+featureless, but it does not imply a large departure from hydro-
+static equilibrium. This conclusion is also consistent with the small
+hydrostatic-mass correction inferred by Bartalesi et al. (2026); al-
+though the XRISM data sets are not independent, the two analyses
+provide complementary views of the low level of kinetic pressure
+support in A2029.
+The NE region requires some caution because its best-fit ve-
+locity dispersion is close to zero but the systematic uncertainty is
+not small (Appendix 1). Since the line counts in this region are
+
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+7
+smaller than those in the bright center, the inferred intrinsic line
+width can be more sensitive to PSF spillover and statistical fluctu-
+ations. However, this does not affect the main conclusion that the
+data do not require a large turbulent pressure component. The de-
+rived non-thermal pressure fractions should therefore be regarded
+as estimates under the assumption that the measured velocity dis-
+persion represents isotropic random motions. Within this frame-
+work, the current data do not indicate significant hydrostatic mass
+bias in the core of A2029.
+4.4 Implications for ICM heating and cooling
+The small non-thermal pressure fraction does not by itself imply
+that gas motions are irrelevant for the thermal balance of the cool
+core. Gas motions may dissipate kinetic energy and redistribute
+heat through mixing and sloshing-driven transport. We therefore
+estimate the turbulent heating rate and compare it with the radiative
+cooling rate in the core of A2029.
+Following recent XRISM studies of the Perseus cluster (XRISM
+Collaboration et al. 2026), we estimate the turbulent heating rate
+as
+Qheat = C0ρv3
+l ,
+(6)
+with C0 = 5, using the measured line-of-sight velocity dispersion
+σv as v (Zhuravleva et al. 2014). This assumes that the line broad-
+ening represents isotropic random motions, although unresolved
+bulk shear may also contribute. The coefficient C0 already in-
+cludes the three-dimensional isotropic correction. The radiative
+cooling rate is computed as
+Qcool = neniΛ(T,Z),
+(7)
+using the X-COP electron density profile (Eckert et al. 2017;
+Ghirardini et al. 2019)3 and Λ = 2.5 × 10−23 erg cm3 s−1, fol-
+lowing XRISM Collaboration et al. (2026). For the length scale,
+we use the effective line-of-sight scale leff enclosing half of the
+emission measure (Zhuravleva et al. 2012; XRISM Collaboration
+et al. 2026). The density, density squared, and leff are averaged
+with projected emission-measure weights over 0.0–0.5 arcmin for
+the Center region, 0.5–1.5 arcmin for the NE, NW, SE, and SW
+regions, and 1.5–2.5 arcmin for the FNE region. The leff values
+are 69.7+3.3
+−3.2 kpc for the Center region, 109.0+0.9
+−0.8 kpc for the NE,
+NW, SE, and SW regions, and 195.8±1.5 kpc for the FNE region.
+Figure 4 compares the turbulent heating rate with the radiative
+cooling rate. The cooling rate is computed from the X-COP den-
+sity profile, while the heating rate uses the measured σv values
+in Table 2. Because Qheat ∝σ3
+v, the statistical uncertainties are
+highly asymmetric where the intrinsic line width is weakly con-
+strained.
+The estimated turbulent heating rate is lower than the radiative
+cooling rate in all regions when using leff. The largest ratios are
+found in the Center and NW regions, where Qheat/Qcool is ap-
+proximately 0.2. The ratio is approximately 0.1 in FNE, below
+0.1 in SE and SW, and close to zero for the NE best-fit value be-
+cause its velocity dispersion is consistent with zero. Using leff as
+the characteristic scale, turbulent dissipation alone appears insuf-
+ficient to offset radiative cooling throughout the A2029 core. This
+conclusion is unchanged by excluding the Fe XXV resonance line;
+the detailed test is described in Appendix 1. In the central region,
+spatial scales associated with σv could be lower than leff if motions
+are driven by the AGN feedback activity. Radio and X-ray obser-
+vations of A2029 have revealed the presence of bubbles with the
+3 https://dominiqueeckert.wixsite.com/xcop/a2029
+estimated sizes of ∼10 −20 kpc (Timmerman et al. 2022). Such
+scales bring heating rate closer to the cooling rate (gray point in
+Fig. 4). This cooling-heating trend is consistent with the results of
+gas density fluctuation analysis (Zhuravleva et al. 2018).
+This result differs from, but does not directory contradict, the
+buoyancy-driven turbulent heating model presented in McNamara
+et al. (2026), primarily because the measured velocity amplitude
+here is slightly lower than than their adoped value taken from
+XRISM Collaboration et al. (2025c), and the smaller character-
+istic scales predicted by their model. Their calculation for A2029
+uses the higher, field-averaged, single-temperature velocity disper-
+sion of 165 km s−1 over the entire cooling volume and considers
+radio lobes rising at half the sound speed, where the sound speed
+is high because of the unusually high temperature of the A2029
+atmosphere. These assumptions lead to higher inferred turbulent
+heating rates than those obtained from our local velocity disper-
+sions and leff values. These optimistic assumptions used to test the
+model would imply injection scales of only a few kpc within 10
+kpc and roughly 20 kpc at the 100 kpc cooling radius. These val-
+ues lie far below leff and thus imply larger heating rates. Because
+the relevant driving scale is likely to vary spatially, with AGN bub-
+bles affecting the central region and sloshing dominating much
+of the remaining cool core, a direct comparison with buoyancy-
+driven models requires a more detailed treatment than attempted
+here. These and other issues are discussed in detail in McNamara
+et al. (2026) and Rose et al. (2025).
+The cooler gas components reported by Sarkar et al. (2025), in-
+cluding a ∼2.85 keV component in the core, may indicate that
+the thermal balance is not perfectly static, although this does not
+by itself imply an unimpeded classical cooling flow. The observed
+bulk-velocity pattern shows sloshing-driven gas motion, which can
+redistribute thermal energy through advection, mixing, and trans-
+port of higher-entropy gas from larger radii. Recent simulations by
+Fujita et al. (2026) suggest that sloshing can either help suppress
+cooling or reduce the effectiveness of central heating, depending
+on how it redistributes dense core gas relative to the AGN heating
+region. In a related interpretation, Soker (2025) argued that the
+field-integrated XRISM velocity dispersion of A2029 is compati-
+ble with a mixing-heating scenario, in which turbulence promotes
+mixing of hot shocked jet material with the ambient ICM rather
+than directly supplying the full cooling losses. Our spatially re-
+solved analysis separates sloshing-induced bulk motions from the
+modest unresolved velocity dispersion. Although these results do
+not directly test the mixing-heating scenario, gas motions may still
+contribute to thermal redistribution through mixing and sloshing-
+driven transport. The efficiency of these processes over the full
+cooling volume, however, remains uncertain.
+5 Summary
+We investigated the spatially resolved gas velocity structure in the
+central region of the relaxed cool-core cluster Abell 2029 using
+XRISM Resolve observations. By dividing the core into six re-
+gions (NE, NW, SE, SW, center, and FNE) and accounting for
+spatial-spectral mixing caused by the XRISM point-spread func-
+tion, we measured the line-of-sight bulk velocities, velocity dis-
+persions, and non-thermal pressure fractions of the ICM. Our main
+results are summarized as follows.
+• We detect clear spatial variations in the line-of-sight bulk
+velocity across the cluster core.
+The northern regions are
+blueshifted relative to the brightest cluster galaxy (BCG), with
+
+8
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+101
+102
+Radius (kpc)
+10
+29
+10
+28
+10
+27
+10
+26
+10
+25
+Heating, Cooling Rate (erg cm
+3 s
+1)
+Cooling
+Heating (FNE)
+Heating (CENTER)
+Heating (NW)
+Heating (SE)
+Heating (SW)
+Cooling (binned)
+Heating (l=20kpc)
+Fig. 4. Turbulent heating rate versus radiative cooling rate in the A2029
+core (see Section 4.4). The blue curve is the cooling rate from the X-COP
+density profile, with the shaded band showing the 1σ interval; sky-blue
+crosses show the same cooling rate binned into radial annuli. Symbols
+show Qheat from the Resolve σv values (Table 2): black and green circles
+for the Center and NW regions, and magenta, cyan, and orange downward
+triangles for FNE, SE, and SW, the latter close to upper limits. The NE
+point lies below the plotted range. Vertical error bars reflect the statistical
+uncertainties of σv. The gray square point represents the heating rate
+estimated using injection length associated with AGN feedback, assuming
+radio/X-ray cavity size (l = 20kpc). Alt text: The figure compares turbulent
+heating rates with the radiative cooling rate as a function of radius.
+the largest blueshifts of about −190 kms−1 in the NW and
+FNE regions, whereas the southern regions are close to zero or
+slightly redshifted, reaching about +90 kms−1 in the SE re-
+gion. The largest north-south velocity contrast is approximately
+280 kms−1.
+• The observed velocity pattern is consistent with gas sloshing
+inferred from the spiral-like surface brightness and tempera-
+ture structures seen in previous Chandra observations.
+The
+Resolve measurements provide spectroscopic evidence for or-
+dered sloshing-induced gas motions in the core of A2029.
+• The velocity dispersion is highly subsonic, with measured val-
+ues and upper limits below about 150 kms−1.
+We find no
+clear evidence for strongly enhanced turbulence associated with
+the sloshing pattern, and this conclusion is not sensitive to the
+choice of data set or spectral modeling assumption.
+• The inferred non-thermal pressure fraction is below about 2.5%
+in all regions, even when the measured bulk motions are in-
+cluded. Thus, departures from hydrostatic equilibrium due to
+gas motions are small in the observed core region.
+• Assuming that the measured velocity dispersion represents
+isotropic turbulence, the estimated average turbulent heating
+rate is below the radiative cooling rate. Turbulent dissipation
+alone is therefore insufficient to offset cooling, although gas
+motions may still contribute to thermal-energy redistribution
+through mixing and sloshing-driven transport. In the central
+region, the conclusion on the cooling-heating balance strongly
+depends on the size of the driving scale of turbulence.
+These results show that the core of A2029 contains subsonic
+bulk flows naturally explained by sloshing, while the velocity dis-
+persion and pressure support from gas motions are small. A2029
+therefore provides an example of a relaxed cool-core cluster in
+which sloshing can be spectroscopically detected without substan-
+tially compromising the hydrostatic approximation.
+Acknowledgments
+We thank the XRISM project and the mission operations team
+for the operation of the satellite and their support of the obser-
+vations.
+This work was supported in part by the Fund for the
+Promotion of Joint International Research, JSPS KAKENHI Grant
+Number 25K01026, 23H00121 (NO). NO acknowledges partial
+support by the Organization for the Promotion of Gender Equality
+at Nara Women’s University. EDM acknowledges support from
+NASA grants 80NSSC25K7538 and 80NSSC24K0678. SE ac-
+knowledges the financial contribution from Theory Grant / Bando
+INAF per la Ricerca Fondamentale 2024 on “Constraining the
+non-thermal pressure in galaxy clusters with high-resolution X-ray
+spectroscopy” (1.05.24.05.10). BRM acknowledges the Canadian
+Space Agency for generous support.
+Appendix 1 Systematic uncertainties in the
+gas velocity measurements
+We examined possible systematic effects on the spectral parame-
+ters, focusing on the gas velocity measurements. Since the line-of-
+sight velocity dispersion is only marginally constrained in some
+regions, we tested whether the results depend on the choice of
+data set, calibration uncertainty, treatment of spatial-spectral mix-
+ing caused by the broad point-spread function of XRISM, line-
+modeling effects such as resonant scattering, or thermal modeling.
+We also show the best-fit spectra for all regions to demonstrate the
+quality of the baseline fits.
+Comparison among different data sets
+We compared the results obtained from the PV, GO, and com-
+bined PV+GO data sets.
+Figure 5 shows that the temperature,
+metal abundance, bulk velocity, and velocity dispersion are gen-
+erally consistent within the statistical uncertainties. In the PV-only
+analysis, the velocity dispersion in some regions tends to reach the
+lower boundary of the fit. When the GO data are included, the con-
+straint no longer strongly favors the boundary solution, although it
+remains dominated by the upper limit. We therefore interpret the
+boundary solution in the PV-only fit as a consequence of limited
+photon statistics rather than evidence for an intrinsically vanishing
+line width. The combined PV+GO data provide the most stable
+constraints and are adopted as the baseline results.
+Dependence on spectral modeling assumptions
+We also examined how the spectral parameters depend on the mod-
+eling assumptions. Figure 6 compares several alternative fits, de-
+noted as A1, A2, B1, B2, C1, C2, D1, and D2. In all these fits,
+the ICM emission was modeled with TBabs*bapec, the Galactic
+absorption column density was fixed at NH = 3.0 × 1020 cm−2,
+the abundance table was set to lpgs, and the C-statistic was used.
+Case A fixes the velocity of the NE region to zero, motivated by
+the near-zero best-fit velocity in some fits. Case B allows all pa-
+rameters except for NH to vary. Case C uses only the PV data set.
+Case D uses the GO data for the central region and the PV data
+for the northern region. The suffix 1 denotes fits without SSM, in
+which each region is fitted independently, whereas suffix 2 denotes
+fits with SSM. Thus, A1 and A2 are fits with the NE velocity fixed
+
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+9
+to zero without and with SSM, respectively, B1 and B2 are fits
+with all parameters except for NH free without and with SSM, re-
+spectively, C1 and C2 are the PV-only fits without and with SSM,
+respectively, and D1 and D2 are the GO-center plus PV-north fits
+without and with SSM, respectively.
+Because the half-power diameter of the XRISM mirror is com-
+parable to the size of the subregions analyzed in this work, pho-
+tons from neighboring regions can contribute significantly to each
+extracted spectrum. We therefore adopt the SSM correction in
+the baseline analysis, in which each observed spectrum is repre-
+sented as a linear combination of emission from all source regions
+weighted by the corresponding ancillary response files. As shown
+in Figure 6, the velocity parameters are generally consistent among
+the alternative models within the statistical uncertainties. Some
+thermodynamic parameters, especially the temperature and nor-
+malization, show larger model dependence, as expected from their
+sensitivity to photons scattered from neighboring regions and to
+the assumed thermal structure. These checks indicate that the SSM
+correction should be included, but it does not change the main con-
+clusions on the gas velocity structure.
+As an additional check of possible line-modeling effects, we
+repeated the spectral fits after excluding the Fe XXV resonance
+line. The resulting redshifts were systematically shifted by about
+∆z ∼−0.0001, corresponding to a line-of-sight velocity shift of
+about −30 kms−1 at the redshift of A2029. The velocity disper-
+sion decreased from 131 to 83 kms−1 in the Center region and
+from 123 to 29 kms−1 in the NW region, while it increased from
+90 to 128 kms−1 in the FNE region. These changes indicate some
+dependence of the inferred σv on the treatment of the strongest
+Fe line. Even for the increased FNE value, the turbulent heating
+rate remains below the radiative cooling rate. Thus, this diagnostic
+test does not change the qualitative north-south bulk-velocity pat-
+tern or the conclusion that turbulent heating alone is insufficient to
+offset cooling.
+Comparison with Chandra temperatures and
+abundances
+As an additional check of the thermal modeling, we compared the
+XRISM temperatures and metal abundances with those obtained
+from Chandra spectra extracted from the same sky regions. The
+Chandra spectra were extracted from ObsID 4977 and analyzed
+with CIAO 4.15. Since the point-spread function of Chandra is
+much smaller than the region size, photon mixing between regions
+is negligible for this comparison. The spatial temperature trends
+are broadly consistent between XRISM and Chandra. The aver-
+age XRISM-to-Chandra temperature ratio over the six regions is
+0.94 ± 0.14, where the uncertainty represents the standard devia-
+tion among the regions. Although the Chandra temperatures are
+higher in four of the six regions, the offset is modest and does not
+indicate a problem in the XRISM spectral modeling. The metal
+abundances show a clearer offset, with an average XRISM-to-
+Chandra ratio of 0.82 ± 0.20, indicating that the XRISM abun-
+dances tend to be lower than the Chandra values.
+This trend
+is qualitatively consistent with recent International Astronomical
+Consortium for High Energy Calibration (IACHEC) studies of
+cluster cross-calibration4. We therefore do not regard the thermal-
+parameter differences as evidence for a problem in the velocity
+analysis. Fits with the temperature fixed to the Chandra values
+also give velocity parameters consistent with the baseline results
+4 https://iachec.org/wp-content/presentations/2026/IACHEC_
+Itsuki_Cluster_Cross-cal.pdf
+within the statistical uncertainties.
+Energy-scale and line-spread-function uncertainties
+We further considered calibration uncertainties in the energy scale
+and the line-spread function. The residual uncertainty in the en-
+ergy scale around the Fe-K band corresponds to about 15 km s−1
+in bulk velocity, which is smaller than the statistical uncertainties
+of most regional velocity measurements and does not affect the
+detected north-south velocity pattern. The full width at half max-
+imum (FWHM) estimated from the calibration data is typically
+4.4–4.6 eV, with an uncertainty of about 0.15 eV. Its effect on the
+derived velocity dispersion is expected to be only a few km s−1 and
+is therefore negligible for the present analysis. These calibration
+uncertainties are not included in the statistical error bars shown in
+the figures, but they do not alter the conclusions of this work.
+Fit quality
+Figure 7 shows the observed spectra and best-fit models for all re-
+gions. The spectra are well reproduced by the adopted model in the
+Fe-K band (Figure 8), where the gas redshift and velocity disper-
+sion are mainly constrained. The model includes emission com-
+ponents originating from all source regions and redistributed by
+the XRISM point-spread function, as well as the non-X-ray back-
+ground component. The good agreement supports the adequacy of
+the baseline spectral model for the velocity measurements.
+Summary of the systematic checks
+The comparison among the PV, GO, and PV+GO data sets shows
+that the spectral parameters are mutually consistent and that the ap-
+parent zero-width solutions in some subsets are most likely caused
+by limited photon statistics. Alternative spectral models confirm
+that the SSM correction affects some thermodynamic parame-
+ters but does not change the main velocity results. The Fe XXV
+resonance-line test suggests some sensitivity of σv to line mod-
+eling, especially in the brighter regions, but does not change the
+qualitative bulk-velocity pattern. The Chandra comparison and
+calibration checks further support the robustness of the measured
+velocity structure. We therefore conclude that the low velocity
+dispersion and north-south bulk-velocity pattern are not driven by
+a particular data set, calibration uncertainty, or spectral modeling
+assumption.
+References
+Arnaud, K. A., in G. H. Jacoby & J. Barnes, eds., Astronomical Data
+Analysis Software and Systems V (1996), vol. 101 of Astronomical
+Society of the Pacific Conference Series, p. 17
+Bartalesi, T., Simionescu, A., Ettori, S., Nipoti, C., Ghirardini, V., Sarkar,
+A., & Sun, M. 2026, A&A, 709, A155
+Biffi, V. et al. 2016, ApJ, 827, 2, 112
+Cash, W. 1979, ApJ, 228, 939
+Eckart, M. E. et al. 2025, Journal of Astronomical Telescopes, Instruments,
+and Systems, 11, 042018
+Eckert, D., Ettori, S., Pointecouteau, E., Molendi, S., Paltani, S., & Tchernin,
+C. 2017, Astronomische Nachrichten, 338, 293, 293
+Foster, A. R., Ji, L., Smith, R. K., & Brickhouse, N. S. 2012, ApJ, 756, 2,
+128
+Fujita,
+Y.,
+Matsumoto,
+T.,
+&
+Wada,
+K.
+2026,
+arXiv
+e-prints,
+arXiv:2605.20323
+Ghirardini, V. et al. 2019, A&A, 621, A41
+
+10
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+(a) 𝑘𝑇
+(c) 𝑉!"#$
+(d) 𝜎%
+(e) 𝛼
+(f) 𝑎&"'!
+(b) Abund.
+Fig. 5. Comparison of the best-fit spectral parameters obtained from the PV, GO, and combined PV+GO data sets. Panels show the temperature, metal
+abundance, bulk velocity relative to the BCG, velocity dispersion, and non-thermal pressure fraction. The results are generally consistent among the three
+data sets within the statistical uncertainties. Alt text: Six panels compare spectral parameters from the PV, GO, and combined PV plus GO data sets for
+each region. The x-axis represents the source regions, and the y-axis gives the value of the corresponding parameter.
+(a) 𝑘𝑇
+(b) Abund.
+(c) 𝑉!"#$
+(d) 𝜎%
+(e) 𝛼
+(f) 𝑎&"'!
+Fig. 6. Comparison of the best-fit spectral parameters for each region obtained under different spectral modeling assumptions. Panels show the systematic
+differences in the best-fit (a) temperature, (b) abundance, (c) bulk motion velocity, (d) velocity dispersion, (e) non-thermal pressure fraction, and (f) non-
+thermal fraction estimated from turbulent motions alone. The labels A, B, C, and D represent the analysis methods defined in the text: A fixes the NE
+velocity to zero, B allows all parameters except for NH to vary, C uses only the PV data set, and D uses the GO data for the central region and the PV data
+for the northern region. The suffixes 1 and 2 denote analyses without and with SSM, respectively. Alt text: Six panels compare the best-fit temperature,
+abundance, bulk velocity, velocity dispersion, total non-thermal pressure fraction, and turbulent non-thermal pressure fraction among the A1, A2, B1, B2,
+C1, C2, D1, and D2 analyses.
+HI4PI Collaboration et al. 2016, A&A, 594, A116
+Hitomi Collaboration et al. 2016, Nature, 535, 7610, 117
+Hitomi Collaboration et al. 2018, PASJ, 70, 2, 9
+Ishisaki, Y. et al. 2025, Journal of Astronomical Telescopes, Instruments, and
+Systems, 11, 042023
+Kelley, R. L. et al. 2025, Journal of Astronomical Telescopes, Instruments,
+and Systems, 11, 042026
+Lau, E. T., Kravtsov, A. V., & Nagai, D. 2009, ApJ, 705, 2, 1129
+Lewis, A. D., Stocke, J. T., & Buote, D. A. 2002, ApJL, 573, 1, L13
+Lodders, K., Palme, H., & Gail, H.-P. 2009, Landolt Börnstein, 4B, 712
+Markevitch, M. & Vikhlinin, A. 2007, Phys. Rep., 443, 1, 1
+McNamara, B. R., Fabian, A. C., Russell, H. R., Nulsen, P. E. J., Simionescu,
+A., Majumder, A., Miller, E. D., & Sarkar, A. 2026, arXiv e-prints,
+arXiv:2604.19607
+Nelson, D., Pillepich, A., Ayromlou, M., Lee, W., Lehle, K., Rohr, E., &
+Truong, N. 2024, A&A, 686, A157
+Paterno-Mahler, R., Blanton, E. L., Randall, S. W., & Clarke, T. E. 2013,
+ApJ, 773, 2, 114
+Roediger, E. & Zuhone, J. A. 2012, MNRAS, 419, 2, 1338
+Rose, T. et al. 2025, ApJ, 990, 1, 42
+Sanders, J. S. et al. 2020, A&A, 633, A42
+Sarkar, A. et al. 2025, PASJ, 77, S254
+
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+11
+Fig. 7. Observed spectra and best-fit models for each region: (a) NE, (b) NW, (c) SE, (d) SW, (e) center, and (f) FNE. Crosses represent the observed
+spectra. The model includes emission components originating from all source regions and redistributed by the XRISM point-spread function, the non-X-
+ray background component, and their total. For NE, NW, center, SE and SW regions, the solid line represents the best-fit model for the GO observation,
+whereas the dashed and dotted lines represent the best-fit model for the two PV observations. Alt text: Six panels show the observed X-ray spectra
+and best-fit models for the NE, NW, SE, SW, center, and FNE regions. In each panel, the model consists of the total spectrum, point-spread-function
+redistributed emission from all regions, and the non-X-ray background component.
+Fig. 8. Same as Figure 7, but focusing on He-/H-like iron lines. Alt text: Six panels show the observed X-ray spectra and best-fit models for the NE, NW,
+SE, SW, center, and FNE regions focusing on He-/H-like iron lines.
+Simionescu, A. et al. 2019, Space Sci. Rev., 215, 2, 24
+Smith, R. K., Brickhouse, N. S., Liedahl, D. A., & Raymond, J. C. 2001,
+ApJL, 556, 2, L91
+Soker, N. 2025, Research Notes of the American Astronomical Society, 9, 1,
+21
+Tashiro, M. et al. 2025, PASJ, 77, S1
+Timmerman, R., van Weeren, R. J., Botteon, A., Röttgering, H. J. A.,
+McNamara, B. R., Sweijen, F., Bîrzan, L., & Morabito, L. K. 2022, A&A,
+668, A65
+Ueda, S., Ichinohe, Y., Molnar, S. M., Umetsu, K., & Kitayama, T. 2020,
+ApJ, 892, 2, 100
+Watson, C. B., Blanton, E. L., Randall, S. W., Clarke, T. E., & ZuHone, J. A.
+2026, ApJ, 996, 1, 106
+
+12
+Publications of the Astronomical Society of Japan (2026), Vol. 00, No. 0
+Wilms, J., Allen, A., & McCray, R. 2000, ApJ, 542, 2, 914
+XRISM Collaboration et al. 2025a, PASJ, 77, S242
+XRISM Collaboration et al. 2025b, Nature, 638, 8050, 365
+XRISM Collaboration et al. 2025c, ApJL, 982, 1, L5
+XRISM Collaboration et al. 2026, Nature, 650, 8101, 309
+Zhang, C. et al. 2026, A&A, 707, A109
+Zhuravleva, I., Allen, S. W., Mantz, A., & Werner, N. 2018, ApJ, 865, 1, 53
+Zhuravleva, I., Churazov, E., Kravtsov, A., & Sunyaev, R. 2012, MNRAS,
+422, 3, 2712
+Zhuravleva, I. et al. 2014, Nature, 515, 7525, 85
+ZuHone, J. A. 2011, ApJ, 728, 1, 54
+ZuHone, J. A., Markevitch, M., & Johnson, R. E. 2010, ApJ, 717, 2, 908
+Zuhone, J. A. & Roediger, E. 2016, Journal of Plasma Physics, 82, 3,
+535820301

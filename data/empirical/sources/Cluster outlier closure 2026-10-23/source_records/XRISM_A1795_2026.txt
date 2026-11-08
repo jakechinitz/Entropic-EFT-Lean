@@ -1,0 +1,1539 @@
+Draft version June 9, 2026
+Typeset using LATEX twocolumn style in AASTeX7.0.1
+XRISM Observations of Abell 1795: Evidence for Low Turbulence and Resonant Scattering
+Arnab Sarkar,1, 2 Eric D. Miller,2 Brian McNamara,3 Helen Russell,4 Kotaro Fukushima,5 Mark Bautz,2
+Yutaka Fujita,6 Catherine E. Grant,2 Franc¸ois Mernier,7, 8, 9, 10 Michael A. McDonald,2 Naomi Ota,11
+Ays¸eg¨ul T¨umer,12, 8, 9 and Daniel Wik13
+1Department of Physics, University of Arkansas, 825 W Dickson st., Fayetteville, AR 72701, USA
+2Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, 70 Vassar St, Cambridge, MA 02139
+3Department of Physics & Astronomy, Waterloo Centre for Astrophysics, University of Waterloo, Ontario N2L 3G1, Canada
+4School of Physics & Astronomy, University of Nottingham, University Park, Nottingham NG7 2RD, UK
+5Institute of Space and Astronautical Science (ISAS), Japan Aerospace Exploration Agency (JAXA), Kanagawa 252-5210, Japan
+6Department of Physics, Tokyo Metropolitan University, Tokyo 192-0397, Japan
+7Department of Astronomy, University of Maryland, College Park, MD 20742, USA
+8NASA / Goddard Space Flight Center, Greenbelt, MD 20771, USA
+9Center for Research and Exploration in Space Science and Technology, NASA / GSFC (CRESST II), Greenbelt, MD 20771, USA
+10Univ Toulouse, CNES, CNRS, IRAP, Toulouse, France
+11Department of Physics, Nara Women’s University, Nara 630-8506, Japan
+12Center for Space Sciences and Technology, University of Maryland, Baltimore County (UMBC), Baltimore, MD, 21250 USA
+13Department of Physics & Astronomy, University of Utah, 270 South 1400 East, Salt Lake City, UT, 84112, USA
+ABSTRACT
+We present high-resolution X-ray spectroscopic observations of the cool-core galaxy cluster Abell 1795
+obtained with XRISM/Resolve. The cluster was observed with two deep pointings: a 225 ks central
+exposure and a 113 ks northern exposure, extending to a projected radius of 320 kpc from the cluster
+center. Single-temperature fits reveal a clear radial gradient in the line-of-sight velocity dispersion,
+decreasing from
+114 ± 11 km/s in the core to 68 ± 39 km/s at 320 kpc. The bulk velocities in
+the central regions are very low (22 ± 12 and 7 ± 21 km/s), indicating no significant relative motion
+between the brightest cluster galaxy (BCG) and the intracluster medium (ICM). Given that the central
+region includes the southward-extending cool gas tail, this result disfavors the “cooling-wake” scenario
+and instead supports an AGN-uplift origin. We find that the nonthermal pressure fraction decreases
+with radius, from PNT/PT ≈2% in the core to ∼0.6% at 330 kpc, suggesting that the northern ICM
+of A1795 is largely quiescent. Two-temperature and split energy-band (2–4 keV and 6–7 keV) fits
+identify two gas phases within the central < 1.5′ region, providing strong evidence for multiphase gas
+in the cluster core. We detect a ∼14% resonant suppression of the optically thick Fe xxv w line in
+the center. Additionally, we observe a significant excess in the Fe xxv y line-flux relative to models.
+Accounting for uncertainties in the atomic data reduces this discrepancy, suggesting that atomic data
+uncertainties may contribute to the observed residual flux.
+Keywords: Galaxy clusters (573) — Intracluster medium (ICM) (343) — X-ray astrophysics (739)
+1. INTRODUCTION
+Galaxy clusters assemble hierarchically through merg-
+ers and ongoing accretion from the cosmic web.
+The
+resulting gas dynamics play a key role in the cluster en-
+ergy budget, as a substantial fraction of the injected ki-
+netic energy is transferred to the intra-cluster medium
+(ICM), driving bulk motions and turbulence (e.g., F.
+Vazza et al. 2009, 2018; A. Simionescu et al. 2019; A.
+Sarkar et al. 2022, 2023, 2025a). The first direct mea-
+surement of line-of-sight ICM velocities in a relaxed clus-
+ter core provided by Hitomi observations of Perseus in-
+dicates that, despite the rich spatial structure revealed
+by Chandra (J. S. Sanders & A. C. Fabian 2007; J. S.
+Sanders et al. 2016), the ICM is quiescent, with velocity
+dispersion less than 200 km/s within the central 100 kpc
+and non-thermal pressure support of only ∼4%. (e.g.,
+Hitomi Collaboration et al. 2016a, 2018a). These results
+suggest that the velocity broadening is driven by small-
+scale motions, with a turbulent driving scale less than
+100 kpc, consistent with the size of Active Galactic Nu-
+arXiv:2606.08097v1  [astro-ph.CO]  6 Jun 2026
+
+2
+clei (AGN)-driven bubbles; that non-thermal pressure
+accounts for a small fraction of the total pressure in the
+core; and that sloshing can explain a modest bulk veloc-
+ity gradient across the cluster core.
+The launch of the XRISM satellite in 2023 has opened
+up a new opportunity to probe kinematics in other clus-
+ters using an instrument with similar spectral capabil-
+ities to the Hitomi SXS (M. Tashiro et al. 2025; R. L.
+Kelley et al. 2025). In the past year, the Resolve micro-
+calorimeter onboard XRISM has revealed line-of-sight
+(LOS) velocity dispersion measurements in several cool-
+core clusters such as Abell 2029 ( XRISM Collabora-
+tion et al. 2025a,b; A. Sarkar et al. 2025b), Centau-
+rus ( XRISM Collaboration et al. 2025c), Hydra A (T.
+Rose et al. 2025), and the Ophiuchus cluster (Y. Fu-
+jita et al. 2025). Their velocity dispersion estimates lie
+between 120–190 km/s. Even for merging galaxy clus-
+ters like Coma ( XRISM Collaboration et al. 2025d) and
+Abell 3667 (Y. Omiya et al. 2026), the velocity disper-
+sion is ∼200 km/s. These findings, while groundbreak-
+ing, highlight our lack of understanding about how the
+effects of AGN feedback, merger-induced sloshing, and
+other dynamical activity conspire to shape the spatial
+and kinematic structure of clusters on all scales.
+We
+can address this by dramatically expanding the sample
+of clusters with accurate direct velocity measurements.
+Abell 1795 (A1795 hereafter) is a nearby (z = 0.062),
+relatively hot (spatially-averaged kT
+≈5.3 keV; A.
+Vikhlinin et al. 2006; S. L. Snowden et al. 2008; M. W.
+Bautz et al. 2009) cool-core cluster. It is one of a hand-
+ful of clusters with very deep Chandra observations, ex-
+ceeding 3.4 Msec, due to its use as a regular calibration
+source. Several studies have utilized this dataset and ex-
+tensive multiwavelength coverage to paint a picture of a
+complex core of activity within the inner 100 kpc (1.4′)
+as illustrated in Figure 1 (see also: S. A. Walker et al.
+2014; S. Ehlert et al. 2015; G. Kokotanekov et al. 2018a).
+Multiple AGN-blown cavities are seen along with ra-
+dio emission whose spectral signatures suggest several
+episodes of AGN activity. A 50-kpc-long tail of cool X-
+ray-emitting plasma extends south of the Brightest Clus-
+ter Galaxy (BCG), spatially coincident with striking Hα
+filaments and ending in a hook-shaped feature (M. Mc-
+Donald & S. Veilleux 2009; S. Ehlert et al. 2015). This
+tail is thought to arise from a cooling wake left either
+by the fast-moving BCG as it plows through the inner
+ICM, or related to an observed sloshing cold front in the
+inner part of the cluster (M. Markevitch et al. 2001). On
+even smaller scales, ALMA reveals two massive molecu-
+lar gas filaments that trace the edges of the inner radio
+bubbles within 10 kpc of the AGN (H. R. Russell et al.
+2017a). These filaments exhibit a smooth velocity gra-
+dient spanning 450 km/s, and they are thought to result
+from low-entropy X-ray gas that has been entrained by
+the expanding bubbles, become thermally unstable, and
+cooled. A recent study of stellar and nebular emission
+line kinematics suggests a similar range of line-of-sight
+velocities for these populations (P. D. Tamhane et al.
+2023a).
+In this paper we present XRISM/Resolve observations
+of the central and northern region of A1795. We focus on
+the ICM kinematics and resonant scattering of the cool
+core and regions immediately outside of the cool core.
+Throughout the paper, we adopt a ΛCDM cosmology
+with H0 = 70 km s−1 Mpc−1, Ωm = 0.3, and ΩΛ = 0.7.
+At the redshift of A1795 (z = 0.062), 1′ corresponds
+to 69 kpc.
+All reported redshifts and velocities have
+been corrected to the solar system barycenter. We also
+adopt K. Lodders & H. Palme (2009) proto-solar abun-
+dance table. Unless otherwise noted, all uncertainties
+are reported at the 1σ (68%) confidence level.
+2. DATA REDUCTION
+XRISM observed Abell 1795 through two pointings:
+one central pointing on 2025 January 22–27 for 226 ks
+(OBSID 201087010) and one northern pointing on 2025
+January 20–22 for 113 ks (OBSID 201088010). Table
+1 shows a complete observation log. The data were re-
+processed with the xapipeline tool in HEASoft v6.36
+(N. H. E. A. S. A. R. Center 2014), adopting the most
+recent calibration database (CalDB v20250915) for Re-
+solve.
+Following the recommendations in the XRISM
+ABC Guide v1.0§§§, we screened the event data for cross-
+talk events using the specified RISE_TIME, DERIV_MAX,
+and STATUS column filtering criteria.
+For each observation, spectra were extracted from the
+full array and sub-arrays, excluding Pixel 27, which
+has historically exhibited anomalous gain shifts not
+aligned with the timing of the filter wheel 55Fe gain
+fiducial exposures. Pixel 11 also occasionally displays
+similar abrupt scale variations, therefore it is also ex-
+cluded from our analysis (A. Sarkar et al. 2025b).
+Our analysis includes only high-resolution primary (Hp;
+ITYPE=0) events, which comprise more than 99% of
+the 2–10 keV event population in each observation.
+For background, a non-X-ray background (NXB) spec-
+trum was generated for each observation using the
+rslnxbgen tool.
+Instrumental responses were gener-
+ated for each observation using rslmkrmf with the most
+up-to-date calibration database (CalDB v20250915).
+The redistribution matrix file (RMF) was scaled by
+§§§ https://heasarc.gsfc.nasa.gov/docs/xrism/analysis/
+abc guide/xrism abc.html
+
+XRISM observations of A1795
+3
+0.65′
+49 kpc
+Chandra  SB
+0.25′
+19 kpc
+0.25′
+Chandra residual
+Hα
+UV
+Figure 1. Left: Exposure corrected and background subtracted Chandra image of A1795 in the 0.5-10 keV energy band.
+Resolve FoVs are marked with white boxes. Dashed small white boxes show the excluded pixels 11, 12 (calibration pixel),
+and 27. Cyan dashed annuli shows the regions used for ARFs generation. Right: Zoomed in residual image of A1795 after
+subtracting a beta model image. Several substructures including the ‘hook’ are clearly seen. Green contours represent the
+ALMA CO(2–1) contours from H. R. Russell et al. (2017b).
+Table 1. XRISM Observation logs
+Pointing
+Observation ID
+RA
+Decl.
+Observation Date
+Exposure
+(deg)
+(deg)
+(ks)
+Central
+201087010
+207.21837
+26.59235
+2025-01-22–2025-01-27
+225.8
+North 1
+201088010
+207.21804
+26.64328
+2025-01-20–2025-01-22
+113.3
+the fraction of high-resolution primary (Hp) events in
+the 2–10 keV band—excluding low-resolution secondary
+(Ls) events—to properly account for the exclusion of
+medium- and low-resolution events and ensure accurate
+flux normalization.
+3. SPECTRAL FITTING
+Spectral fitting was performed using XSpec 12.15.1
+(K. A. Arnaud 1996).
+We extracted spectra from
+the pixels in the central and northern pointings that
+lie within each annulus with radii of 0′–0.75′, 0.75′–1.5′,
+1.5′–3′, and 3′–4.5′, as shown in Figure 1. Given the
+modest point-spread function of the Resolve X-ray mir-
+ror assembly (Half Power Diameter ∼1.3′, M. Tashiro
+et al. 2025), spatial spectral mixing (SSM) was taken
+into account following A. Sarkar et al. (2025b).
+We
+used four annuli regions, as shown in Figure 1, to model
+the ICM emission corresponding to each extracted Re-
+solve spectrum.
+We generated ancillary response files
+(ARFs) with xaarfgen in image mode, adopting the 2–
+10 keV Chandra image as the input sky brightness distri-
+bution. The xaarfgen task internally calls xrtraytrace
+to ray-trace photons through the X-ray Mirror Assem-
+bly and xaxmaarfgen to compute the net effective area
+for the selected Resolve detector regions, including de-
+tector efficiencies.
+To account for the broad Resolve
+point-spread function and the resulting spatial mixing,
+we computed ARFs for each pairwise combination of in-
+put and extraction regions shown in Figure 1. These
+region-dependent ARFs were then used in XSPEC to
+fold each model component through the appropriate re-
+sponse. For more details on xrtraytrace tool, we refer
+readers to XRISM abc guide¶¶¶.
+The spectrum from each region was fitted with an ab-
+sorbed single-temperature (1T) TBABS × BAPEC model.
+We note that BAPEC model accounts for the thermal
+broadening.
+For each region, the temperature, abun-
+dance, redshift, velocity dispersion (σv), and normal-
+ization were allowed to vary freely. The hydrogen col-
+umn density,
+NH, was fixed to the Galactic value of
+1.2 × 1020 cm−2 ( HI4PI Collaboration et al. 2016).
+¶¶¶ heasarc.gsfc.nasa.gov/docs/xrism/analysis/quickstart
+
+4
+In addition, the spectrum from each region was fit-
+ted with an absorbed two-temperature (2T) TBABS ×
+(BAPEC+BAPEC) model.
+The non–X-ray background
+(NXB) was modeled by fitting the NXB spectrum with a
+power law and multiple Gaussian components represent-
+ing instrumental lines, simultaneously with the source
+emission. Similarly, the unresolved Cosmic X-ray Back-
+ground (CXB) was modeled using a power law with a
+photon index of Γ = 1.41 and a scaled-normalization
+adopted from Suzaku measurements (M. W. Bautz et al.
+2009).
+We ignored the effect of Galactic foreground
+components since our spectral fitting is limited to > 2
+keV. The best-fit parameters and their confidence in-
+tervals for each region were obtained by minimizing the
+C-statistic (W. Cash 1979).
+Table 2 lists the best-fit
+parameters obtained from the 1T and 2T fits, together
+with their 1σ uncertainties. Figure 2 shows the best-fit
+1T models along with the Resolve spectra for each re-
+gion.
+Figure 3 shows the zoomed in version with the
+linear y-axes.
+4. RESULTS AND DISCUSSION
+4.1. ICM velocity structure
+The velocity dispersion measurements from Resolve
+spectra are primarily constrained by the Fe-K line com-
+plexes in the 6–8 keV energy band. Figure 4 presents
+the best-fit velocity dispersion, σv, as a function of ra-
+dius from the cluster center. A1795 exhibits remarkably
+low velocity dispersion (∼50–90 km s−1) just outside
+the central Resolve pointing (≳100 kpc), comparable
+to values reported for A2029 ( XRISM Collaboration
+et al. 2025b; A. Sarkar et al. 2025b). Within the cen-
+tral 100 kpc, the measured σv values (∼115 km s−1) are
+consistent with but on the low end of those observed
+in other clusters, including Ophiuchus (Y. Fujita et al.
+2025), Perseus ( Hitomi Collaboration et al. 2016b),
+Centaurus ( XRISM Collaboration et al. 2025c), and
+A2029 ( XRISM Collaboration et al. 2025a,b; A. Sarkar
+et al. 2025b).
+XRISM Collaboration et al. (2025e) com-
+pared measured velocity dispersions of cool-core cluster
+centers with predictions from cosmological simulations,
+finding systematically lower velocities in the observed
+clusters. Our measurement of a low velocity dispersion
+in A1795’s core further strengthens the possible tension
+between the simulations and measured gas kinematics.
+We adopt a redshift of 0.063001 ± 0.000223 for the
+BCG of A1795.
+This redshift corresponds to an ob-
+served barycentric systematic velocity of cz = 18887±67
+km/s. This value is derived from stellar population syn-
+thesis modeling of XSHOOTER spectra extracted from
+the central region of the BCG (P. D. Tamhane et al.
+2023b). All bulk velocities reported in this paper are
+measured relative to this systemic velocity using the ex-
+pression
+vbulk = c(z −zBCG)
+1 + zBCG
+,
+(1)
+where z and zBCG are the redshift of the hot ICM mea-
+sured by XRISM and the redshift of the BCG, respec-
+tively.
+Figure 5 shows the radial profile of the ICM bulk ve-
+locity in A1795 as a function of distance from the cluster
+center. Within the central 1.5′ (113 kpc), the bulk veloc-
+ity is remarkably close to zero, suggesting no apparent
+motion between the BCG and local ICM. This result
+is in direct contrast to the “cooling-wake” scenario, in
+which the cool gas tail extending to the south is pro-
+duced as the central cluster galaxy oscillates through
+the cluster core (A. C. Fabian et al. 2001). If it is the
+case, a measurable velocity offset between the BCG and
+ICM would be expected. Our results instead support
+the interpretation proposed by R. J. van Weeren et al.
+(2026), in which AGN-driven outflows uplift low-entropy
+gas from the cluster center to larger radii, where it even-
+tually cools and condenses to form the observed tail.
+4.2. Systematic uncertainties
+Systematic uncertainties can alter the reliability of
+the measured ICM bulk velocity and velocity dispersion.
+The most important systematic effects for XRISM Re-
+solve observations arise from calibration uncertainties
+in the energy scale (or “gain”) and the spectral line-
+spread function (LSF). The current in-flight gain cali-
+bration 1-σ uncertainty is estimated to be ±0.3 keV in
+the 5.4–9 keV band, and ±1 keV below 5.4 keV, where
+high-fidelity calibration lines are not available on-orbit
+(M. E. Eckart et al. 2025). The bulk velocities reported
+in the previous section are primarily constrained by the
+He-like and H-like Fe K complexes at 6.2–6.6 keV, there-
+fore we adopt a systematic bulk velocity uncertainty of
+0.3 keV ≈14 km s−1. This is on the order of the lowest
+statistical error in the vbulk measurements in Table 2.
+The LSF calibration uncertainty arises from two
+sources: uncertainty in the intrinsic LSF width for a
+given pixel, and the spread of gain solutions across all
+pixels included in the analysis, which can produce an ef-
+fective broadening in the combined spectrum. The for-
+mer is estimated from results and methods in M. A.
+Leutenegger et al. (2025) to be ±0.16 eV, quoting 1-σ
+uncertainty in the LSF width. When added in quadra-
+ture with the measured line widths, this represents a
+systematic uncertainty of ∼< 4 km s−1 in all velocity dis-
+persions reported in this work, significantly smaller than
+the statistical errors. For the latter effect of pixel-to-
+pixel gain smearing, we follow the lead of A. Simionescu
+
+XRISM observations of A1795
+5
+Chip 1
+Chip 0
+ratio
+0
+0.5
+1
+1.5
+2
+Obs Energy [keV]
+2
+4
+6
+8
+10
+Total model
+Region 1
+Region 2
+Region 3
+NXB
+CXB
+count/s/kev
+10−4
+10−3
+0.01
+0.1
+ratio
+0
+0.5
+1
+1.5
+2
+Obs Energy [keV]
+2
+4
+6
+8
+10
+Total model
+Region 1
+Region 2
+Region 3
+NXB
+CXB
+count/s/kev
+10−4
+10−3
+0.01
+0.1
+Lyα1
+Lyα2
+Fe XXVI Lyα
+z
+y
+x
+w
+Fe XXV Heα
+count/s/kev
+10−3
+0.01
+0.1
+1
+Obs Energy [keV]
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+count/s/kev
+10−4
+10−3
+0.01
+0.1
+1
+Obs Energy [keV]
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+count/s/kev
+10−4
+10−3
+0.01
+0.1
+count/s/kev
+10−4
+10−3
+0.01
+0.1
+Obs Energy [keV]
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+Region 1
+Region 2
+Region 3
+Region 4
+ratio
+0
+0.5
+1
+1.5
+2
+Obs Energy [keV]
+2
+4
+6
+8
+10
+Total model
+Region 1
+Region 2
+Region 3
+Region 4
+NXB
+CXB
+count/s/kev
+10−5
+10−4
+10−3
+0.01
+0.1
+ratio
+0
+0.5
+1
+1.5
+2
+Obs Energy [keV]
+2
+4
+6
+8
+10
+Total model
+Region 2
+Region 3
+Region 4
+NXB
+CXB
+count/s/kev
+10−5
+10−4
+10−3
+0.01
+0.1
+Region 3
+Region 4
+Region 1
+Region 2
+Region 3
+Region 4
+Fe Heα
+Fe Lyα
+S XVI
+Ar XVII
+Ar XVIII Ca XIX
+Ca XX
+Fe Heβ
+Ni XXVII
+Figure 2. Left panels: XRISM/Resolve sub-array counts spectra are shown along with the best-fit 1T models after accounting
+for Spatial-Spectral Mixing. In all four panels, the best-fit model components are
+folded through the relevant instrumental
+response and plotted as follows: red, blue, green, orange, purple, magenta, and cyan for the total model, region 1 (0–0.75′),
+region 2 (0.75′–1.5′), region 3 (1.5′–3′), region 4 (3′–4.5′), NXB, and CXB, respectively. Bottom panels in all four spectra
+represent ratios between data/model. Right panels: Same as left but zoomed into Fe xxv-Heα and Fe xxvi-Lyα line complexes.
+
+6
+Table 2. Best-fit parameters from Resolve spectral fitting
+Model
+Radius
+kT
+Abun
+Redshift∗
+σv
+v‡
+bulk
+norm†
+C-stat/d.o.f
+(keV)
+(solar)
+(km/s)
+(km/s)
+(1012 cm−5)
+1T
+0 −0.75′
+3.92 ± 0.07 0.58 ± 0.03 0.06308 ± 0.00004 114 ± 11
+22 ± 12
+2.2 ± 0.1
+17145/15999
+0.75′ −1.5′
+6.28 ± 0.27 0.61 ± 0.06 0.06302 ± 0.00007 115 ± 23
+7 ± 21
+1.1 ± 0.1
+17121/15999
+1.5′ −3′
+5.53 ± 0.22 0.47 ± 0.05 0.06289 ± 0.00007
+86 ± 25
+−32 ± 21
+1.9 ± 0.1
+14122/15999
+3′ −4.5′
+4.23 ± 0.37 0.28 ± 0.06
+0.06317 ± 0.0002
+68 ± 39
+47 ± 60
+1.2 ± 0.1
+10594/15999
+2T
+0 −0.75′
+2.72 ± 0.67 0.63 ± 0.03 0.06308 ± 0.00004 187 ± 60
+22 ± 12
+0.7 ± 0.3
+17138/15999
+4.65 ± 0.35
+−††
+−
+93 ± 24
+–
+1.5 ± 0.5
+0.75′ −1.5′
+5.12 ± 0.71 0.54 ± 0.04 0.06303 ± 0.00009
+87 ± 34
+10 ± 27
+0.9 ± 0.3
+17115/15999
+6.81 ± 1.22
+−
+−
+175 ± 70
+–
+0.4 ± 0.2
+1.5′ −3′
+1.18 ± 0.76 0.55 ± 0.05 0.06289 ± 0.00007
+−
+−32 ± 21
+0.4 ± 0.3
+14117/15999
+6.08 ± 0.34
+−
+−
+90 ± 24
+–
+1.6 ± 0.1
+3′ −4.5′
+4.30 ± 0.38 0.29 ± 0.06 0.06317 ± 0.00017
+63 ± 30
+47 ± 51
+1.2 ± 0.1
+10588/15999
+−
+−
+−
+−
+–
+−
+∗: Redshift is corrected for solar system barycenter.
+‡: Only statistical fitting uncertainties are shown; BCG redshift uncertainty
+and the instrumental systematic gain uncertainty are not included. †: BAPEC normalizations correspond to the annuli shown in
+Figure 1. ††: parameters are linked between two BAPEC temperature components for each region.
+Lyα1
+Lyα2
+Fe XXVI Lyα
+z
+y
+x
+w
+Fe XXV Heα
+count/s/kev
+0.1
+0.2
+0.3
+0.4
+0.5
+Obs Energy [keV]
+6.2
+6.3
+6.4
+6.5
+6.6
+count/s/kev
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+Obs Energy [keV]
+6.2
+6.3
+6.4
+6.5
+6.6
+count/s/kev
+0.05
+0.1
+0.15
+0.2
+0.25
+Obs Energy [keV]
+6.2
+6.3
+6.4
+6.5
+6.6
+count/s/kev
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+Obs Energy [keV]
+6.2
+6.3
+6.4
+6.5
+6.6
+Region 1
+Region 2
+Region 3
+Region 4
+Figure 3. XRISM/Resolve sub-array counts spectra are shown together with the best-fit total 1T models, as in Figure 2, but
+with linear y-axes and zoomed in on the Fe-band region.
+
+XRISM observations of A1795
+7
+Abell 1795 (this work)
+Abell 2029
+Virgo
+Centaurus
+Hydra-A
+PKS0745-19
+Perseus
+Ophiuchus
+σv [km/s]
+0
+50
+100
+150
+200
+Radius [kpc]
+0
+100
+200
+300
+400
+Figure 4.
+Radial profile of the line-of-sight velocity dis-
+persion in A1795 (red star).
+Velocity dispersion measure-
+ments from other clusters are shown for comparison, includ-
+ing A2029 ( XRISM Collaboration et al. 2025b; A. Sarkar
+et al. 2025b), Virgo ( XRISM Collaboration et al. 2026),
+Centaurus ( XRISM Collaboration et al. 2025c), Hydra A
+(T. Rose et al. 2025), PKS 0745–19 (K. Tanaka et al. 2026),
+Perseus ( The Xrism Collaboration et al. 2026), and Ophi-
+uchus (Y. Fujita et al. 2025).
+Abell 1795 (this work)
+Abell 2029
+Bulk velocity [km/s]
+−200
+−100
+0
+100
+200
+Radius [kpc]
+0
+100
+200
+300
+400
+Figure 5. Bulk velocities in A1795 as a function of distance
+from the cluster center (red star). Grey inverted triangles
+indicate the bulk velocities measured in the A2029 cluster (
+XRISM Collaboration et al. 2025b; A. Sarkar et al. 2025b).
+et al. (2026) and assume that this spread is the same as
+the overall gain uncertainty quoted above, ±0.3 keV at
+5.4–9 keV and ±1 keV below 5.4 keV. This conservative
+assumption produces a systematic uncertainty of ∼< 6
+km s−1 for all reported velocity dispersions except those
+measured in the 2–4 keV band in Section 4.5, which
+have uncertainties of ∼55 km s−1. These systematic un-
+certainties due to energy-related calibration do not alter
+the conclusions in this work.
+Additional sources of systematic uncertainty include
+point-spread-function calibration and the use of SSM;
+the level of the background; the energy range; the
+amount of spectral binning; the presence of multi-
+temperature ICM; the presence of resonant scattering;
+and the versions of software and atomic databases em-
+ployed.
+Several of these effects are explored in the
+following sections.
+For the others, specifically SSM,
+background, binning, and software/atomic database ver-
+sions, we point to the results from XRISM Collabora-
+tion et al. (2025b) and
+XRISM Collaboration et al.
+(2026), who study these effects in detail for Resolve
+galaxy cluster observations and find no significant im-
+pact on their results.
+The observations and velocity
+structure results presented here for A1795 are very sim-
+ilar to those studies, therefore we conclude that these
+other systematic uncertainties should not alter the con-
+clusions from this work.
+4.3. Non-thermal pressure support
+We follow the procedure of
+XRISM Collaboration
+et al. (2025b) to infer the contribution of non-thermal
+pressure from the measured ICM velocity structure. The
+ratio of non-thermal pressure to the total pressure is es-
+timated using
+PNT
+PT
+=
+M2
+3D,eff
+M2
+3D,eff + 3
+γ
+,
+(2)
+where M3D,eff denotes the effective three-dimensional
+Mach number, computed by combining the contribu-
+tions from both the velocity dispersion and the bulk
+velocity components, as
+M3D,eff = σv,eff
+cs
+=
+p
+3σ2v + v2
+bulk
+cs
+,
+(3)
+where cs is the sound speed, estimated as cs =
+q
+γkBT
+µmp .
+Here, γ = 5/3, kBT is the measured X-ray temperature,
+µ is the mean molecular weight, and mp is the proton
+mass. We make two important assumptions in Eqs. 2
+and 3. First, we assume that all non-thermal pressure
+arises from turbulence, and we ignore other possible con-
+tributions like magnetic fields and cosmic rays (e.g., S.
+
+8
+Ettori & D. Eckert 2022). Second, we assume the mea-
+sured velocity dispersion is due fully to isotropic tur-
+bulence, and we include the line-of-sight bulk velocity
+in our estimate of the three-dimensional Mach number.
+These assumptions are consistent with recent XRISM
+studies ( XRISM Collaboration et al. 2025b, e.g.,). We
+note that M3D,eff ranges from 0.1 to 0.2 in the regions
+of our observation, indicating sub-sonic ICM motions.
+Figure 6 shows the radial profile of the derived non-
+thermal–to–total pressure ratio, PNT/PT, in A1795. Be-
+yond ∼200 kpc from the cluster center, A1795 exhibits a
+remarkably low non-thermal pressure fraction (∼0.6%)
+compared to other clusters observed with XRISM, indi-
+cating a quiescent ICM just outside the cluster center.
+This is the lowest non-thermal pressure fraction so far
+recorded in a cluster as measured by XRISM far (at
+∼300 kpc) from cluster core.
+XRISM Collaboration
+et al. (2025b) found a PNT/PT ∼0.9 ± 0.7% near R2500
+of A2029, claiming such low non-thermal pressure is rare
+for a relaxed cluster and does not have a counterpart
+in the simulated cluster sample ( XRISM Collaboration
+et al. 2025e). Our measurements of PNT/PT in A1795
+suggest that this is not rare. The non-thermal pressure
+may have a decreasing trend for relaxed cool-core clus-
+ters reaching below 1% near R2500.
+Within 200 kpc,
+the non-thermal pressure fraction in A1795 (∼1–2%) is
+comparable to that measured in A2029 ( XRISM Collab-
+oration et al. 2025a,b), Perseus ( Hitomi Collaboration
+et al. 2016b), and PKS0745-19 (K. Tanaka et al. 2026).
+We compare our results with that of previous indirect
+velocity measurements. A. Heinrich et al. (2024) exam-
+ined X-ray surface brightness fluctuations within R2500
+for a sample of luminous galaxy clusters observed with
+Chandra. They derived power spectra of density fluctu-
+ations and translated these into velocity power spectra
+under the assumptions of proportionality between two,
+adopting a calibration of the proportionality factor for
+clusters in different dynamical states from I. Zhuravl-
+eva et al. (2023). This analysis derived PNT/PT values
+of ∼0.7–7% within the central R2500 of clusters simi-
+lar to A1795. We measure PNT/PT between 2.1±0.2%
+and 0.6±0.4% within 0–0.5 R2500 (0–320 kpc) of A1795’s
+center, with a median value of ∼1%. These results are
+very close to the PNT/PT derived from indirect measure-
+ments.
+If the non-thermal pressure fraction in A1795 follows
+the decreasing trend up to R2500 (as shown in Fig-
+ure 6), it does not significantly bias cluster mass mea-
+surements. However, our conclusion relies on PNT/PT
+measurements along one azimuthal direction. Simula-
+tions of cluster cores with prominent gas sloshing sug-
+gest that ICM gas velocities can be highly anisotropic,
+Abell 1795 (this work)
+Abell 2029
+Virgo
+Centaurus
+Hydra-A
+PKS0745-19
+Perseus
+Ophiuchus
+PNT/PT
+0
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+0.07
+Radius [kpc]
+0
+100
+200
+300
+400
+Figure 6. Radial profile of the non-thermal pressure frac-
+tion in A1795 measured from the cluster center (red star).
+Other data points show the non-thermal pressure fractions
+measured in other clusters, as indicated in the legend.
+and assuming isotropy can lead to underestimation of
+the overall gas velocity (Y. Fujita et al. 2004). The ICM
+of A1795 is remarkably smooth just outside the central
+∼100 kpc, showing no prominent X-ray substructures,
+implying low non-thermal pressure at larger radii in all
+directions. However, such confirmation needs future ob-
+servations sampling multiple directions of A1795.
+4.4. Turbulent Heating
+A phenomenological turbulent heating model was fit
+to the X-ray luminosity profile of the cluster, where the
+heating power:
+Pturb ≃3
+2M(r)σ3
+v
+l
+(4)
+is assumed to balance cooling from the emission of X-
+rays. M(r) is the atmospheric gas mass subtended by
+the image within the radius that the velocity dispersion
+σv is measured by XRISM. The gas mass M(r) and X-
+ray luminosity Lx(r) are taken from the catalog of clus-
+ter thermodynamic profiles discussed by F. A. Pulido
+et al. (2018) and M. T. Hogan et al. (2017). The turbu-
+lent dissipation timescale is assumed to be ∼l/σv. The
+energy injection scale l cannot be measured by XRISM
+but is expected to be on the order of the X-ray bubbles
+and jets imparting energy into the X-ray atmosphere.
+Those scales are typically a few to a few tens of kpc,
+which is below XRISM’s spatial resolution. In general,
+σv and l must be measured on the same scales. Instead,
+
+XRISM observations of A1795
+9
+Eq. 4 is used to evaluate the radial range of l required
+to instantaneously balance radiative losses, constrained
+by the observed velocity dispersion.
+If turbulent dissipation is the primary mechanism off-
+setting the cooling flow, it must operate over the cool-
+ing radius ∼130 kpc (D. A. Rafferty et al. 2006). The
+inner two velocity dispersion measurements roughly en-
+compass this region. The inner 60 kpc assumes σv =
+114 km s−1 and from 60 kpc to the cooling radius
+σv = 115 km s−1 is assumed. Anchored by the mea-
+sured velocity dispersions, l was allowed to vary with
+radius so that at all radii Pturb ≃Lx(r). A radial trend
+in l lying between ≃2 kpc in the inner 25 kpc rising to
+≃15 kpc at the cooling radius would be required to fit
+the luminosity profile. This equilibrium model between
+energy injection, presumably by the jets and bubbles,
+and heating through a turbulent cascade in turn implies
+a timescale of τ ∼l/σv ∼2 × 107 yr in the inner 25 kpc
+and rising to ∼108 yr at the cooling radius. A complete
+description of this approach is given in T. Rose et al.
+(2025) and B. R. McNamara et al. (2026).
+If the turbulence energy propagates at v ∼114 km/s,
+it would take ∼1.1 × 109 yr to reach the cooling ra-
+dius, roughly 10 times longer than the time scale needed
+for turbulent energy dissipation as heat required to off-
+set cooling.
+However, turbulence diffuses much more
+slowly than the turbulent eddy speed (McNamara et
+al., in preparation), which implies turbulent energy is
+dissipated locally, well before it can be transported
+to larger radii.
+Turbulence is probably an inefficient
+mechanism for redistributing AGN injected energy (via
+jets/bubbles) throughout the cooling volume. Instead,
+these results support a scenario in which heating must
+be spatially distributed, with energy deposited in situ
+across the cooling region. For turbulence to offset cool-
+ing entirely, it must propagate at a speed of ∼1300 km
+s−1, assuming cooling time varies linearly with radius,
+which is roughly a factor of 10 higher than σv.
+Our measurements indicate turbulent heating alone
+struggles to offset cooling in A1795’s core. Similar con-
+clusions have been drawn for Hydra-A, Virgo, and Ophi-
+uchus in previous XRISM studies, suggesting additional
+heating channels, such as weak shocks and cosmic ray,
+are required (e.g., XRISM Collaboration et al. 2026; Y.
+Fujita et al. 2025; T. Rose et al. 2025).
+4.5. Multi-phase ICM
+We examine the presence of multiphase gas in A1795
+by fitting the Resolve spectrum from each region with
+a two-temperature collisional ionization equilibrium (2T
+CIE) model, BVAPEC + BVAPEC. We allow the tempera-
+ture (kT), velocity dispersion (σv), and normalization of
+each component to vary independently, while account-
+ing for SSM using the same fitting procedure described
+in Section 3. The best-fit parameters from the 2T fits
+for each region are listed in Table 2.
+Within the central 0.75′ (∼50 kpc), we detect two dis-
+tinct temperature components: a cooler component at
+∼2.7 keV and a hotter component at ∼4.6 keV. This is
+consistent with the results of T. Tamura et al. (2001),
+who found similar ICM temperatures within the central
+2′ using XMM-Newton. The cooler component shows a
+LOS velocity dispersion that is higher by ∆σv ≈90
+km/s compared to the hotter component.
+A simi-
+larly higher velocity dispersion is also observed in the
+0.75′–1.5′ (∼50–103 kpc) region, with ∆σv = 88 km/s,
+although the two components have consistent temper-
+atures.
+These results indicate the presence of multi-
+phase gas in the central regions of A1795. In the 1.5′–3′
+(103–206 kpc) region, we obtain a cooler temperature
+component of 1.2 keV; however, the velocity dispersions
+of the individual components cannot be constrained. For
+the 3′–4.5′ (206–310 kpc) region, the second tempera-
+ture component is not well constrained when left free
+and is therefore tied to that of the first component. In
+both outer annuli, the jointly fitted σv values are con-
+sistent with that of obtained from the 1T fit.
+To confirm the presence of multi-phase gas at the
+A1795 core, we re-fit the Resolve spectra from the
+0 −0.75′ and 0.75′ −1.5′ annuli in two separate energy
+bins: 2–4 keV and 6–7 keV. The motivation behind this
+is that the 2–4 keV energy band is more sensitive to
+cooler gas, while the 6–7 keV band traces hotter gas,
+in both cases compared to broadband 2–10 keV fitting.
+The resulting best-fit parameters for both regions are
+listed in Table 3. Within the central 0.75′, the 2–4 keV
+band yields significantly lower temperatures and metal-
+licities than those obtained from the 6–7 keV band. The
+cooler gas component also has a higher LOS velocity dis-
+persion than the hotter component. In the 0.75′ −1.5′
+region, both energy bands yield consistent temperatures
+and metallicities. Although we are able to constrain σv
+of ∼100 km/s from the 6–7 keV fit, we cannot constrain
+σv from the 2–4 keV fit due to low statistical quality,
+however a 1σ upper limit of 200 km/s is obtained.
+The split-band results are consistent with the best-
+fit parameters obtained from the 2T broadband fitting
+for both regions.
+These results suggest the presence
+of multiphase gas in the central region of A1795, in
+line with previous Chandra and GMRT observations
+(G. Kokotanekov et al. 2018b).
+The central 80 kpc
+of A1795 is morphologically disturbed, showing multi-
+ple X-ray cavities, surface brightness edges, and a cool
+gas tail extending to the south, as shown in Figure 1.
+
+10
+These features result from multiple episodes of mechan-
+ical feedback from the central AGN, which shock-heat
+the ICM, inject turbulence (M. Gaspari et al. 2012; B. R.
+McNamara & P. E. J. Nulsen 2012), and uplift cool gas
+from the center (R. J. van Weeren et al. 2026), giving
+rise to a multiphase ICM in the core of A1795.
+4.6. Resonant Scattering
+Line intensities of optically thick transitions in the ob-
+served X-ray spectra can be reduced by resonant scatter-
+ing, in which line photons are absorbed and re-emitted
+in different directions, effectively scattering photons out
+of the line of sight and suppressing the observed line
+strength (e.g., E. Churazov et al. 2004; J. S. Sanders
+& A. C. Fabian 2006; D. Nelson et al. 2023). Resonant
+scattering effects are expected to be strongest in the cen-
+tral regions of clusters, where the gas density is highest.
+Because the Resolve gate valve was closed during the
+observations, the only potentially optically thick line re-
+solved in A1795 with XRISM at high significance is the
+Fe xxv w line at 6.7 keV. We estimate the degree of
+resonant line suppression in the central region of A1795
+by fitting Resolve full-array spectra extracted from the
+cluster core with a two-temperature RSAPEC model (P.
+Chakraborty et al. 2023) in XSPEC. The RSAPEC model
+provides a simple, single-step, and computationally ef-
+ficient treatment of resonant scattering, and serves as
+an alternative to the BAPEC model for modeling spectra
+from collisionally ionized plasma. Figure 7 compares the
+best-fit collisional ionization equilibrium (CIE) models
+before and after accounting for resonant scattering, to-
+gether with the observed Resolve spectra from the cen-
+tral region of A1795.
+For both temperature components, we allow the tem-
+perature (kT), abundance, redshift, and normalization
+to vary freely, while the line-of-sight column density (in
+the RSAPEC model) is tied between the two components.
+Because resonant scattering suppression depends sen-
+sitively on velocity broadening, the velocity dispersion
+parameters, σv, are also allowed to vary independently
+for both components during the fitting. Table 4 sum-
+marizes the best-fit parameters obtained for the two-
+temperature models. For the RSAPEC fit, we find best-fit
+temperatures of 3.86 ± 0.19 keV and 6.61 ± 0.59 keV,
+with corresponding velocity dispersions of 98±16 km s−1
+and 130 ± 17 km s−1. These values are consistent with
+those derived from the two-temperature BAPEC model,
+which does not account for resonant scattering effects.
+By comparing the Fe xxv w line flux predicted by the
+best-fit BAPEC model with that from the RSAPEC fit, we
+infer a resonant scattering suppression factor of ∼14%.
+As expected, the suppression is strongest in the cluster
+Central FoV
+2T BAPEC
+2T RSAPEC
+count/s/kev
+0
+0.25
+0.5
+0.75
+1
+1.25
+Obs Energy [keV]
+6.24
+6.26
+6.28
+6.3
+6.32
+Figure 7. Resolve spectrum from the entire central pointing
+(black data points) fitted with single temperature velocity
+broadened CIE model without accounting for resonant scat-
+tering (BAPEC; red) and with accounting resonant scatter-
+ing (RSAPEC; blue). Line flux of optically thick Fe xxv w
+line is suppressed by a factor of ∼14%.
+core. Resonant scattering effects can be even more pro-
+nounced in lower-energy lines in cooler clusters such as
+A1795; however, Resolve lacks sensitivity below 2 keV
+due to the loss of low-energy response. Future X-ray mi-
+crocalorimeter missions, such as NewAthena, will there-
+fore be essential for detailed studies of resonant scatter-
+ing in galaxy clusters. We are unable to constrain reso-
+nant scattering in the northern region because of the low
+ICM surface brightness, and deeper observations will be
+required to improve these constraints.
+4.7. Fe xxv y line anomaly
+We identify a significant positive residual in the
+Fe xxv Heα y intercombination line at 6.668 keV in
+the Resolve spectra of A1795 when fitted with a two-
+temperature collisional ionization equilibrium model
+that includes resonant scattering effects (2T RSAPEC).
+Figure 8 illustrates this anomaly in the full-array Re-
+solve spectrum extracted from the central region of
+A1795. Such enhanced observed flux in the Fe xxv Heα
+y line, compared to that predicted by the best-fit model,
+has also been reported in other clusters, including Ophi-
+uchus (Y. Fujita et al. 2025) and Abell 2029 ( XRISM
+Collaboration et al. 2025a). We investigate possible ori-
+gins of this line anomaly in A1795. In this work, we limit
+our analysis to the central pointing, where the spectral
+quality is significantly higher than in the northern point-
+ing.
+We find that even after accounting for resonant
+scattering and fitting with a 2T CIE model, a substan-
+tial residual in the y line persists, as shown in Figure 8.
+
+XRISM observations of A1795
+11
+Table 3. Best-fit parameters for central two regions fitted in two spectra ranges: 2–4 keV and 6-7 keV
+Radius
+kT
+Abun
+Redshift
+σv
+vbulk
+norm
+(keV)
+(solar)
+(km/s)
+(km/s)
+(1012 cm−5)
+Range: 2–4 keV
+0 −0.75′
+3.40 ± 0.20
+0.47 ± 0.11
+0.06279 ± 0.00022
+189 ± 61
+−60 ± 66
+2.1 ± 0.1
+0.75′ −1.5′
+4.98 ± 0.47
+0.38 ± 0.17
+0.063335 ± 0.00045
+< 200
+98 ± 135
+1.8 ± 0.1
+Range: 6–7 keV
+0 −0.75′
+4.62 ± 0.16
+0.68 ± 0.05
+0.06311 ± 0.00004
+115 ± 12
+30 ± 12
+1.8 ± 0.1
+0.75′ −1.5′
+5.57 ± 0.23
+0.47 ± 0.05
+0.06295 ± 0.00006
+107 ± 19
+−15 ± 18
+1.7 ± 0.1
+Table 4. Best-fit parameters for full-array central FoV fitted with 2T BAPEC and RSAPEC models within 2–10 keV.
+Model
+kT
+Abun
+Redshift
+σv
+Column density
+norm
+(keV)
+(solar)
+(km/s)
+(1022 cm−2)
+(1012 cm−5)
+BAPEC
+4.62 ± 0.16
+0.68 ± 0.05
+0.06311 ± 0.00004
+115 ± 12
+−
+1.8 ± 0.1
+5.57 ± 0.23
+0.47 ± 0.05
+0.06295 ± 0.00006
+107 ± 19
+−
+1.7 ± 0.1
+RSAPEC
+3.86 ± 0.19
+0.59 ± 0.04
+0.06303 ± 0.00006
+98 ± 16
+0.2 ± 0.1
+2.4 ± 0.4
+6.61 ± 0.59
+0.59 ± 0.05
+0.062304 ± 0.00006
+130 ± 17
+−†
+1.6 ± 0.4
+†parameters are linked between the two temperature components
+Atomic data uncertainties
+2T RSAPEC
+Central FOV
+count/s/kev
+0
+0.25
+0.5
+0.75
+1
+1.25
+Obs Energy [keV]
+6.24
+6.26
+6.28
+6.3
+6.32
+Figure 8. Resolve spectrum extracted from the central FOV
+(black data), as shown in Figure 1, fitted with a two-temper-
+ature CIE model (red curve) accounting for resonant scatter-
+ing of optically thick lines. Shaded region shows the variation
+of Fe xxv-Heα y-line emissivity due to atomic data uncer-
+tainties in the transition probability and collision strength.
+P. Chakraborty et al. (2024) demonstrated that the
+physical interpretation of X-ray spectra depends criti-
+cally on the accuracy of the atomic data used in spectral
+synthesis codes (see also
+Hitomi Collaboration et al.
+2018b).
+For collisionally ionized ICM plasma, spec-
+tral line emissivities are particularly sensitive to un-
+certainties in the Einstein A coefficients and the colli-
+sional rate coefficients, which represent the Maxwellian-
+averaged collision cross sections (q values). We investi-
+gate whether the excess y-line flux residual observed in
+A1795 can be explained by uncertainties in the underly-
+ing atomic data. To do this, we use the variableapec
+module within pyatomdb (A. R. Foster & K. Heuer
+2020), as described in P. Chakraborty et al. (2024). The
+variableapec module allows individual atomic param-
+eters, such as Einstein A coefficients and collisional rate
+coefficients, to be varied independently and computes
+the resulting changes in individual line emissivities. The
+modified emissivities are then incorporated into XSPEC
+by updating the apecv3.1.2_line.fits file.
+To isolate the impact of atomic data uncertainties on
+the y-line emissivity, we vary only the Einstein A coef-
+ficients and collisional rate coefficients associated with
+the y transition. Based on Table 3 of Hitomi Collab-
+oration et al. (2018b) and Table 1 of P. Chakraborty
+et al. (2024), we adopt uncertainties of 14% in the Ein-
+stein A coefficients and 18% in the collisional rate co-
+efficients for the y-line. We then use variableapec to
+quantify the resulting changes in the y-line intensity us-
+ing a Markov Chain Monte Carlo chain with 1000 re-
+alizations.
+Figure 8 shows the variation in the y-line
+emissivity as the atomic parameters are varied within
+these uncertainty ranges, with the modified emissivities
+propagated through XSPEC. We find that some sets of
+Einstein A coefficients and collisional rate coefficients
+increases the predicted y-line emissivity (shade region
+in Figure 8), thereby reducing the discrepancy between
+
+12
+the model and the observed spectrum. However, we cau-
+tion that this analysis provides only suggestive evidence
+that uncertainties in the atomic data may contribute to
+the observed excess y-line flux, in combination with the
+physical properties of the ICM. Additional high-quality
+Resolve cluster spectra will be required to robustly de-
+termine the origin of the enhanced y-line emission.
+5. SUMMARY
+We present a total of ∼338 ks XRISM Resolve obser-
+vations of the A1795 galaxy cluster. Our main results
+are summarized below.
+• We split two consecutive Resolve pointings (cen-
+tral and North) into four regions and extracted
+spectra from each region. Single-temperature fits
+reveal a gradient in line-of-sight velocity disper-
+sion, decreasing from 114 km s−1 to 68 km s−1
+from the central to the outermost region at ∼330
+kpc.
+• The measured bulk velocities in the two central re-
+gions are low: −4 and −10 km s−1, suggesting no
+significant relative motion between the BCG and
+ICM. Because the innermost region includes the
+cool gas tail extending to south, such low bulk ve-
+locity directly contradict the “cooling-wake” sce-
+nario for the origin of the tail. Instead, it supports
+the AGN-uplift origin.
+• The non-thermal pressure fraction shows a de-
+creasing trend with radius,
+with PNT/PT
+=
+0.019 ± 0.002 in the core, declining to a remark-
+ably low value of 0.006 ± 0.004 at 330 kpc from
+the cluster center. Such low non-thermal pressure
+indicates that the ICM in the northern region of
+A1795 is largely quiescent.
+• Our
+measurements
+suggest
+turbulent
+heating
+alone struggles to balance the cooling within the
+cooling radius (∼130) of A1795.
+It supports a
+scenario in which heating must be spatially dis-
+tributed, with energy deposited in situ across the
+cooling region.
+• We have identified two gas phases with ∆σv ≈94
+km s−1 and 88 km s−1 within the central < 0.75′
+and 0.75′ −1.5′ regions, respectively, based on a
+two-temperature fit and split energy band fit (2–
+4 keV and 6–7 keV). These results strongly sug-
+gest the presence of multiphase gas in the center
+of A1795.
+• A
+∼14%
+suppression
+of
+the
+optically-thick
+Fe xxv−w line-flux in the central region of A1795
+has been detected, suggesting resonant scattering
+of line-of-sight X-ray photons from the cluster core
+to larger radii.
+• We have identified a significant positive residual in
+the observed flux of the Fe xxv −y line at 6.668
+keV when fitted with CIE models.
+Similar en-
+hancements have been reported in other clusters,
+such as Ophiuchus and A2029. We find that in-
+cluding atomic data uncertainties in the Einstein
+A coefficient and collisional rate of y-line reduces
+the discrepancy between the observation and the
+models.
+Our analysis provides a suggestive evi-
+dence that underlying uncertainties in atomic data
+may (partially) contribute to the observed excess
+y-line flux.
+ACKNOWLEDGEMENT
+We thank the anonymous referee for their helpful com-
+ments. We gratefully acknowledge the dedicated efforts
+of the many engineers and scientists whose hard work
+over the years made the XRISM mission possible. AS ac-
+knowledges support from NASA grant 80NSSC26K0916
+and EDM acknowledges support from NASA grants
+80NSSC25K7538 and 80NSSC24K0678.
+REFERENCES
+Arnaud, K. A. 1996, in Astronomical Society of the Pacific
+Conference Series, Vol. 101, Astronomical Data Analysis
+Software and Systems V, ed. G. H. Jacoby & J. Barnes,
+17
+Bautz, M. W., Miller, E. D., Sanders, J. S., et al. 2009,
+PASJ, 61, 1117, doi: 10.1093/pasj/61.5.1117
+Cash, W. 1979, ApJ, 228, 939, doi: 10.1086/156922
+Center, N. H. E. A. S. A. R. 2014, HEAsoft: Unified Release
+of FTOOLS and XANADU,, Astrophysics Source Code
+Library, record ascl:1408.004 http://ascl.net/1408.004
+Chakraborty, P., Foster, A., Smith, R., Brickhouse, N., &
+Raymond, J. 2023, ApJ, 959, 126,
+doi: 10.3847/1538-4357/acfe10
+Chakraborty, P., Hemmer, R., Foster, A. R., et al. 2024,
+ApJ, 962, 192, doi: 10.3847/1538-4357/ad17be
+Churazov, E., Forman, W., Jones, C., Sunyaev, R., &
+B¨ohringer, H. 2004, MNRAS, 347, 29,
+doi: 10.1111/j.1365-2966.2004.07201.x
+
+XRISM observations of A1795
+13
+Eckart, M. E., Brown, G. V., Chiao, M. P., et al. 2025,
+Journal of Astronomical Telescopes, Instruments, and
+Systems, 11, 042018, doi: 10.1117/1.JATIS.11.4.042018
+Ehlert, S., McDonald, M., David, L. P., Miller, E. D., &
+Bautz, M. W. 2015, ApJ, 799, 174,
+doi: 10.1088/0004-637X/799/2/174
+Ettori, S., & Eckert, D. 2022, A&A, 657, L1,
+doi: 10.1051/0004-6361/202142638
+Fabian, A. C., Sanders, J. S., Ettori, S., et al. 2001,
+MNRAS, 321, L33, doi: 10.1046/j.1365-8711.2001.04243.x
+Foster, A. R., & Heuer, K. 2020, Atoms, 8,
+doi: 10.3390/atoms8030049
+Fujita, Y., Fukushima, K., Sato, K., Fukazawa, Y., &
+Kondo, M. 2025, PASJ, 77, S270,
+doi: 10.1093/pasj/psaf089
+Fujita, Y., Matsumoto, T., & Wada, K. 2004, ApJL, 612,
+L9, doi: 10.1086/424483
+Gaspari, M., Ruszkowski, M., & Sharma, P. 2012, ApJ, 746,
+94, doi: 10.1088/0004-637X/746/1/94
+Heinrich, A., Zhuravleva, I., Zhang, C., et al. 2024,
+MNRAS, 528, 7274, doi: 10.1093/mnras/stae208
+HI4PI Collaboration, Ben Bekhti, N., Fl¨oer, L., et al. 2016,
+A&A, 594, A116, doi: 10.1051/0004-6361/201629178
+Hitomi Collaboration, Aharonian, F., Akamatsu, H., et al.
+2016a, Nature, 535, 117, doi: 10.1038/nature18627
+Hitomi Collaboration, Aharonian, F., Akamatsu, H., et al.
+2016b, Nature, 535, 117, doi: 10.1038/nature18627
+Hitomi Collaboration, Aharonian, F., Akamatsu, H., et al.
+2018a, PASJ, 70, 9, doi: 10.1093/pasj/psx138
+Hitomi Collaboration, Aharonian, F., Akamatsu, H., et al.
+2018b, PASJ, 70, 12, doi: 10.1093/pasj/psx156
+Hogan, M. T., McNamara, B. R., Pulido, F. A., et al. 2017,
+ApJ, 851, 66, doi: 10.3847/1538-4357/aa9af3
+Kelley, R. L., Ishisaki, Y., Costantini, E., et al. 2025,
+Journal of Astronomical Telescopes, Instruments, and
+Systems, 11, 042026
+Kokotanekov, G., Wise, M. W., de Vries, M., & Intema,
+H. T. 2018a, A&A, 618, A152,
+doi: 10.1051/0004-6361/201833222
+Kokotanekov, G., Wise, M. W., de Vries, M., & Intema,
+H. T. 2018b, A&A, 618, A152,
+doi: 10.1051/0004-6361/201833222
+Leutenegger, M. A., Brown, G. V., Chiao, M. P., et al. 2025,
+Journal of Astronomical Telescopes, Instruments, and
+Systems, 11, 042024, doi: 10.1117/1.JATIS.11.4.042024
+Lodders, K., & Palme, H. 2009, Meteoritics and Planetary
+Science Supplement, 72, 5154
+Markevitch, M., Vikhlinin, A., & Mazzotta, P. 2001, ApJL,
+562, L153, doi: 10.1086/337973
+McDonald, M., & Veilleux, S. 2009, ApJL, 703, L172,
+doi: 10.1088/0004-637X/703/2/L172
+McNamara, B. R., Fabian, A. C., Russell, H. R., et al.
+2026, arXiv e-prints, arXiv:2604.19607,
+doi: 10.48550/arXiv.2604.19607
+McNamara, B. R., & Nulsen, P. E. J. 2012, New Journal of
+Physics, 14, 055023, doi: 10.1088/1367-2630/14/5/055023
+Nelson, D., Byrohl, C., Ogorzalek, A., et al. 2023, MNRAS,
+522, 3665, doi: 10.1093/mnras/stad1195
+Omiya, Y., Ichinohe, Y., Nakazawa, K., et al. 2026, ApJL,
+996, L15, doi: 10.3847/2041-8213/ae2a28
+Pulido, F. A., McNamara, B. R., Edge, A. C., et al. 2018,
+ApJ, 853, 177, doi: 10.3847/1538-4357/aaa54b
+Rafferty, D. A., McNamara, B. R., Nulsen, P. E. J., &
+Wise, M. W. 2006, ApJ, 652, 216, doi: 10.1086/507672
+Rose, T., McNamara, B. R., Meunier, J., et al. 2025, ApJ,
+990, 42, doi: 10.3847/1538-4357/adf32d
+Russell, H. R., McNamara, B. R., Fabian, A. C., et al.
+2017a, MNRAS, 472, 4024, doi: 10.1093/mnras/stx2255
+Russell, H. R., McNamara, B. R., Fabian, A. C., et al.
+2017b, MNRAS, 472, 4024, doi: 10.1093/mnras/stx2255
+Sanders, J. S., & Fabian, A. C. 2006, MNRAS, 370, 63,
+doi: 10.1111/j.1365-2966.2006.10497.x
+Sanders, J. S., & Fabian, A. C. 2007, MNRAS, 381, 1381,
+doi: 10.1111/j.1365-2966.2007.12347.x
+Sanders, J. S., Fabian, A. C., Russell, H. R., Walker, S. A.,
+& Blundell, K. M. 2016, MNRAS, 460, 1898,
+doi: 10.1093/mnras/stw1119
+Sarkar, A., Randall, S., Su, Y., et al. 2022, ApJL, 935, L23,
+doi: 10.3847/2041-8213/ac86d4
+Sarkar, A., Randall, S., Su, Y., et al. 2023, ApJ, 944, 132,
+doi: 10.3847/1538-4357/acae9f
+Sarkar, A., McDonald, M., Bleem, L., et al. 2025a, ApJL,
+984, L63, doi: 10.3847/2041-8213/adc676
+Sarkar, A., Miller, E., Ota, N., et al. 2025b, PASJ, 77,
+S254, doi: 10.1093/pasj/psaf093
+Simionescu, A., ZuHone, J., Zhuravleva, I., et al. 2019,
+SSRv, 215, 24, doi: 10.1007/s11214-019-0590-1
+Simionescu, A., Kilbourne, C., Russell, H. R., et al. 2026,
+A&A, 707, A124, doi: 10.1051/0004-6361/202558423
+Snowden, S. L., Mushotzky, R. F., Kuntz, K. D., & Davis,
+D. S. 2008, A&A, 478, 615,
+doi: 10.1051/0004-6361:20077930
+Tamhane, P. D., McNamara, B. R., Russell, H. R., et al.
+2023a, MNRAS, 519, 3338, doi: 10.1093/mnras/stac3803
+Tamhane, P. D., McNamara, B. R., Russell, H. R., et al.
+2023b, MNRAS, 519, 3338, doi: 10.1093/mnras/stac3803
+Tamura, T., Kaastra, J. S., Peterson, J. R., et al. 2001,
+A&A, 365, L87, doi: 10.1051/0004-6361:20000038
+
+14
+Tanaka, K., Eckart, M., Fukushima, K., et al. 2026, PASJ,
+arXiv:2603.16263, doi: 10.1093/pasj/psag028
+Tashiro, M., Kelley, R., Watanabe, S., et al. 2025, PASJ,
+77, S1, doi: 10.1093/pasj/psaf023
+The Xrism Collaboration, Audard, M., Awaki, H., et al.
+2026, Nature, 650, 309, doi: 10.1038/s41586-025-10017-x
+van Weeren, R. J., Osinga, E., Brunetti, G., et al. 2026,
+MNRAS, doi: 10.1093/mnras/stag054
+Vazza, F., Angelinelli, M., Jones, T. W., et al. 2018,
+MNRAS, 481, L120, doi: 10.1093/mnrasl/sly172
+Vazza, F., Brunetti, G., Kritsuk, A., et al. 2009, A&A, 504,
+33, doi: 10.1051/0004-6361/200912535
+Vikhlinin, A., Kravtsov, A., Forman, W., et al. 2006, The
+Astrophysical Journal, 640, 691, doi: 10.1086/500288
+Walker, S. A., Fabian, A. C., & Kosec, P. 2014, MNRAS,
+445, 3444, doi: 10.1093/mnras/stu1996
+XRISM Collaboration, Audard, M., Awaki, H., et al. 2025a,
+ApJL, 982, L5, doi: 10.3847/2041-8213/ada7cd
+XRISM Collaboration, Audard, M., Awaki, H., et al.
+2025b, PASJ, 77, S242, doi: 10.1093/pasj/psaf055
+XRISM Collaboration, Audard, M., Awaki, H., et al. 2025c,
+Nature, 638, 365, doi: 10.1038/s41586-024-08561-z
+XRISM Collaboration, Audard, M., Awaki, H., et al.
+2025d, ApJL, 985, L20, doi: 10.3847/2041-8213/add2f6
+XRISM Collaboration, Audard, M., Awaki, H., et al. 2025e,
+ApJL, 993, L11, doi: 10.3847/2041-8213/ae100c
+XRISM Collaboration, Audard, M., Awaki, H., et al. 2026,
+ApJ, 998, 210, doi: 10.3847/1538-4357/ae2c5c
+Zhuravleva, I., Chen, M. C., Churazov, E., et al. 2023,
+MNRAS, 520, 5157, doi: 10.1093/mnras/stad470

@@ -1,0 +1,159 @@
+\section{Replication from a separate workspace}
+\label{sec:replication}
+
+\subsection{Bundle layout}
+
+The replication directory contains a reference workspace with byte-identical copies of the required research inputs. Relative directories match the original layout. The manifest records each input's original path, copied path, byte count, and SHA-256.
+
+\begin{Verbatim}[fontsize=\small]
+replication/
+  INPUT_MANIFEST.json
+  run_checks.py
+  verify_results.py
+  requirements.txt
+  reference/workspace/
+    Opus carrier completion (math connections).tex
+    Matter sector/
+      dirac kahler/dk.py
+      real complex/complexes.py
+      chain_clock_2026-10-13/
+        working_metric_prototype/
+        microstructure_inverse/
+        unified_micro_model/
+        causal_primitive_realization_2026-10-16/
+        clock_matter_bridge_2026-10-16/
+        orbital_transfer_2026-10-16/
+        force_test/intrinsic_probe.py
+  runs/
+    verification_02/
+      RUN_REPORT.json
+      logs/
+      workspace/
+\end{Verbatim}
+
+The reference workspace also includes source reports and stored numerical fixtures. The calculation wrapper creates a fresh run workspace and executes the scripts there. The original research files and the reference inputs are not output destinations.
+
+\subsection{Environment and commands}
+
+The fresh verification used Python 3.13.2 on 64-bit Windows, NumPy 2.4.6, SciPy 1.17.1, and SymPy 1.13.3. The runner sets each numerical library to one thread and uses Windows Idle priority. The mathematical scripts also support ordinary Python path handling; this delivery's executed platform is Windows.
+
+From the standalone directory, create an environment with the recorded dependencies and run:
+\begin{Verbatim}[fontsize=\small]
+python -m pip install -r replication/requirements.txt
+python -B replication/run_checks.py --name my_replication
+python -B replication/verify_results.py --name my_replication
+\end{Verbatim}
+The run name must be new. Existing run directories are retained, and the wrapper refuses to overwrite them. Each subprocess writes a log. A failed subprocess stops the sequence and leaves the completed outputs for diagnosis.
+
+A targeted invocation can use the shipped dependency fixtures:
+\begin{Verbatim}[fontsize=\small]
+python -B replication/run_checks.py --stage lift --name lift_check
+\end{Verbatim}
+This is a check of the chosen stage against supplied inputs. Running the complete sequence recomputes the upstream blocks and matrices before the final lift.
+
+The paper PDF can be rebuilt separately with pdfLaTeX through \texttt{build.py}. Scientific calculations do not depend on a TeX installation.
+
+\subsection{Calculation order and dependencies}
+
+\begin{longtable}{@{}L{0.15\textwidth}L{0.35\textwidth}L{0.44\textwidth}@{}}
+\toprule Stage & Script & Main result and dependency\\\midrule\endhead
+\midrule\multicolumn{3}{r}{\small Continued on next page}\\\endfoot
+\bottomrule\endlastfoot
+pair & \nolinkurl{block_map.py} & Builds the 49-to-13 normalized pair map.\\
+exact\_parent & \nolinkurl{exact_parent.py} & Rational annihilator calculation using the pair code.\\
+parent & \nolinkurl{parent_hamiltonian.py} & Positive degree-four parent and kernel certificate.\\
+bonds & \nolinkurl{capacity_bonds.py} & Native density matrix, equivariant Fock encoding, and coherent cut factors.\\
+renewal & \nolinkurl{renewal_event.py} & Coherent capacity renewal isometry.\\
+angular & \nolinkurl{corner_model.py} & Shared replica/curvature rule, bare scale, parent pullback.\\
+regge & \nolinkurl{regge_response.py} & Nonlinear variation of the selected metric action.\\
+metric & \nolinkurl{metric_fourier.py} & Gauge identities, low-momentum tensor structure, same-source Newton residue.\\
+volume & \nolinkurl{volume_state.py} & Compatible pair-volume state for the selected calibration.\\
+frames & \nolinkurl{graph_frame.py} & Coherent moving-frame renewal on supplied graph states.\\
+connected & \nolinkurl{connected_patch.py} & Four-cell mixed interface, paired-sector rank and normalization.\\
+cycle & \nolinkurl{cycle_patch.py} & Six-cell nineteen-dimensional interface and held-out contraction checks.\\
+slabs & \nolinkurl{slab_realization.py} & 1920-history weight identity, scalar source and sewing.\\
+clock & \nolinkurl{marked_clock.py} & Native-energy intrinsic curves, duration sewing, free-line response.\\
+coherence & \nolinkurl{renewal_coherence.py} & Reset counterexample and fixed-background repair.\\
+positive\_\allowbreak clock & \nolinkurl{positive_clock_transfer.py} & Fréchet-log clock theorem checks and geometric-code lift.\\
+\nolinkurl{boundary_clock} & \nolinkurl{boundary_clock_diagnostic.py} & Duration cumulants and coherent history compression.\\
+whitney & \nolinkurl{whitney_orbital.py} & Full local metric matrices and flat/regular dispersion controls.\\
+dressing & \nolinkurl{harmonic_dressing.py} & Periodic inverse normalization and residual splitting.\\
+transfer & \nolinkurl{causal_boundary_transfer.py} & Enumerated two-boundary-state transfer at $\alpha=7$.\\
+joint & \nolinkurl{joint_orbital_clock.py} & Normalized physical transport, exact rest gap, joint clock and motion.\\
+cochains & \nolinkurl{cochain_block_completion.py} & Two-step cochain metric completion.\\
+lift & \nolinkurl{joint_microscopic_lift.py} & Complete joint 74-to-102 operator and source lift.\\
+\end{longtable}
+
+The names in this table are relative to their source directories in the reference tree. The wrapper contains the complete relative paths. The computational scripts are preserved byte for byte. The wrapper supplies the copied working environment and controls output paths.
+
+\subsection{Fresh verification}
+
+All twenty-three stages completed with exit code zero in the fresh copied workspace. The summed subprocess runtime was $354.44$ seconds, about six minutes on the shared machine, with one numerical-library thread. Runtime depends on host load. The exact per-stage times and package versions are in \texttt{RUN\_REPORT.json}.
+
+The following are reference values against which the verifier checks physical quantities and numerical residuals. Harmless floating-point differences in orthogonal bases are judged through invariant products, spectra, and residual norms.
+
+\begin{longtable}{L{0.46\textwidth}L{0.46\textwidth}}
+\toprule Quantity & Expected value or acceptance scale\\\midrule\endhead
+Native closure parameter & $0.0298668443935226$\\
+Native entropy & $7.4198000235709$\\
+Electron rest gap & $4.185458795583485\times10^{-23}$\\
+Paired-cell bare ratio at $m_4=2.35$ & $1.0300209831851719$\\
+Connected target dimensions & $7$ and $19$\\
+Causal slab count & $1920$\\
+Primitive/direct log-weight discrepancy & Below $10^{-10}$\\
+Boundary scalar sewing discrepancy & Below $10^{-10}$\\
+Native curve coverage & Every declared history\\
+Joint physical cochain dimensions & $30$ and $44$\\
+Joint reference interval & $13.948466129734529$ ticks\\
+Vacuum transfer and control rest gap & Errors below $10^{-11}$\\
+Clock finite-difference derivative & Error below $10^{-7}$\\
+Joint coarse and fine dimensions & $74$ and $102$\\
+Full generator and source intertwining & Errors below $10^{-10}$\\
+Clock and real-time intertwining & Errors below $10^{-10}$\\
+Reference input hashes & Exact equality to manifest\\
+\bottomrule
+\end{longtable}
+
+The tolerance scales are deliberately looser than the observed roundoff residuals. They test the claimed identities across ordinary numerical-library variation without requiring identical singular-vector signs. The physical scale inputs are compared separately from numerical algebra tolerances.
+
+\subsection{Independent implementation recipes}
+
+\paragraph{Capacity and scale.}
+Enumerate four-element subsets of $\{-3,\ldots,3\}$. Compute \eqref{eq:K2}, solve \eqref{eq:closure}, and form the entropy with the $48$-fold routing-orientation multiplicity. Evaluate \eqref{eq:epsilon} with stable logarithms. Supply the declared $m_4$, then apply \eqref{eq:eventvol}, \eqref{eq:areascale}, and \eqref{eq:G0}. Record the value of every supplied input.
+
+\paragraph{Geometric interfaces.}
+Construct orthonormal intertwiner bases from Clebsch--Gordan coefficients using \eqref{eq:intertwiner}. Contract the specified chain or cycle with invariant edge metrics. Project external bundles with \eqref{eq:fusion3}. Apply the retained pair-code maps. Inspect singular values before inverting the Gram matrix; a map with deficient row rank cannot be repaired by normalizing it. Normalize with \eqref{eq:polar} and test both $F_eF_e^\dagger=I$ and the desired parent support.
+
+\paragraph{Causal weight.}
+Enumerate staircase slabs and deduplicate legal neighbors as sets of ordered simplex vertex tuples. Derive metric Gram matrices directly from the edge-length table. Compute each hinge area and dihedral angle independently of the tensor contraction. Include the half-boundary angle. Compare logarithms, since multiplying many small raw amplitudes obscures their relative discrepancy.
+
+\paragraph{Clock.}
+Fix initial marks independently of mass. Propagate a timelike tangent through intrinsic simplex charts, preserving its norm and future orientation. Add proper durations over segments. Evaluate log transfers at the actual $\eps$, and compute source derivatives analytically. A larger mass can serve as a finite-difference control with its role recorded separately.
+
+\paragraph{Orbital operator.}
+Build incidence matrices from oriented simplices and check $d^2=0$. Compute full Whitney matrices using exact barycentric moments. Cholesky-transform to orthonormal coordinates before comparing Hermiticity or spectra. Find harmonic projectors spectrally with a cutoff well below the nonzero gap. Normalize physical-geometry transport on harmonic and complementary sectors separately.
+
+\paragraph{Microscopic cochain completion.}
+Build barycentric interpolation and signed retraction. Verify \eqref{eq:chainmaps} before defining the metric. Form \eqref{eq:Mf}, check positivity, construct $J$, and evaluate $D_fJ-JD_c$. Functional-calculus identities can then be tested with the same matrices. When lifting the joint geometry coupling, apply the code separately to each physical geometry.
+
+\subsection{Common replication failures}
+
+Omitting orientation entropy changes the rest gap exponentially. Counting both directions of each undirected edge changes the stiffness convention. Adding raw shape norms to the already normalized CDT measure changes its geometry weights. Mixing the old and new $\alpha$ values changes the candidate. A fixed-length edge path gives an identically insensitive source. Subtracting eigenvalues to resolve the native $10^{-23}$ gap loses the signal. A direct matrix logarithm of an ill-conditioned squared transfer can corrupt its smallest eigenvalue. Each failure has a corresponding exact or numerical check in the sequence above.
+
+The archived verifier scripts retain their original absolute-path provenance checks. The portable wrapper does not run those historical verifiers; it uses the bundle manifest and \texttt{verify\_results.py}. This keeps provenance auditing separate from reproducing physical calculations.
+
+
+\subsection{Completed simulation evidence packet}
+
+The original finite-construction replication bundle remains unchanged.
+The additional directory \nolinkurl{evidence/20261020_alpha7_checkpoint}
+preserves the registered connected-host protocol and amendment, all six
+run configurations, the final verdicts and their analysis scripts, and
+the separate trace registration and verdict. It also preserves the
+scalar and variance-diagnostic readouts as development records.
+\nolinkurl{INPUT_MANIFEST.json} identifies each original and copied file
+by path, size and SHA-256. All eighteen alpha-seven frozen inputs were
+verified before the manuscript update. The small evidence packet is
+distinct from a complete raw-data distribution; the original profiles,
+checkpoints and saved source geometries remain at the locations recorded
+in the campaign files. No scientific simulation was rerun for this update.

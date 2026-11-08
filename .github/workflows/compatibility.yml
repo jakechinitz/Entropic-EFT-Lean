@@ -2,7 +2,9 @@ name: compatibility
 
 on:
   push:
+    paths-ignore: ['papers/**', 'data/**', 'docs/**']
   pull_request:
+    paths-ignore: ['papers/**', 'data/**', 'docs/**']
   workflow_dispatch:
 
 concurrency:

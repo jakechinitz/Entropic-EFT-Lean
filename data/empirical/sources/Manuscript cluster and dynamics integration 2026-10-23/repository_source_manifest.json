@@ -1,0 +1,1051 @@
+{
+  "commit": "a6552daf39daf83d5159fcbcda698d1801731d24",
+  "tree": "f7416b2e5b6225ed8e9e6fffcbeda0284dfd7f2c",
+  "files": [
+    {
+      "path": ".github/workflows/build.yml",
+      "sha": "4394a2e28e6e9d96eb37377ddf4024e5460b754d",
+      "size": 2732
+    },
+    {
+      "path": ".gitignore",
+      "sha": "258f47c63fe768c7b23dbf162cae105865b3441c",
+      "size": 333
+    },
+    {
+      "path": "CITATION.cff",
+      "sha": "0f36611c4b8933fe9bf990bcf40d86e348d65ada",
+      "size": 1416
+    },
+    {
+      "path": "Entropic.lean",
+      "sha": "6e53e662115b6acbe58fe453818f44d803827e18",
+      "size": 3592
+    },
+    {
+      "path": "Entropic/AppB/Counts.lean",
+      "sha": "0ab4315d25d505f8d8ce6938f3df3c889f73aa1d",
+      "size": 6856
+    },
+    {
+      "path": "Entropic/AppB/Elementary.lean",
+      "sha": "f02fd9e01c71e7e279bc92853ebe504df7227e82",
+      "size": 13106
+    },
+    {
+      "path": "Entropic/AppB/GibbsCalculus.lean",
+      "sha": "84e69b21f51c5fba921754d437160b0e938b894b",
+      "size": 11636
+    },
+    {
+      "path": "Entropic/AppB/LegacyBridge.lean",
+      "sha": "16b68b934b0739d5c6faab9718a0ef0a378ad85f",
+      "size": 10989
+    },
+    {
+      "path": "Entropic/AppB/Supplement.lean",
+      "sha": "39502fcc8f9e3b9695c6c58c7434274c682345d3",
+      "size": 2431
+    },
+    {
+      "path": "Entropic/AppCDE/Calibration.lean",
+      "sha": "97d98f1c70e8070d371721e6e106764dd6c81a01",
+      "size": 9967
+    },
+    {
+      "path": "Entropic/AppCDE/CausalDiamond.lean",
+      "sha": "0b14d6b0f7884ba0f4243707e62e25956bd6ab87",
+      "size": 4828
+    },
+    {
+      "path": "Entropic/AppCDE/Conditional.lean",
+      "sha": "c37f55cecbb011eadd1d9ee1eed20993f5d4601c",
+      "size": 4900
+    },
+    {
+      "path": "Entropic/AppCDE/Continuum.lean",
+      "sha": "79b8520ca7974931ae19b4edb3ed8bf462602982",
+      "size": 9191
+    },
+    {
+      "path": "Entropic/AppCDE/Defect.lean",
+      "sha": "b14f0aaab59c3906803081774c1531349641fe8c",
+      "size": 14129
+    },
+    {
+      "path": "Entropic/AppCDE/ElectronNumerics.lean",
+      "sha": "1c74aaddf6b1abdbf61d2898c5f64997cb22230c",
+      "size": 18911
+    },
+    {
+      "path": "Entropic/AppCDE/Frame.lean",
+      "sha": "367c2feab4d725c7dff697d9a3d3d163816ef169",
+      "size": 6021
+    },
+    {
+      "path": "Entropic/AppCDE/GibbsNumerics.lean",
+      "sha": "e74f334dbb8d7d3fb2e8c1eb70a9101f5ff92917",
+      "size": 6853
+    },
+    {
+      "path": "Entropic/AppCDE/History.lean",
+      "sha": "ab61c679aa25ae8715c939bb45c5c456c0403862",
+      "size": 5261
+    },
+    {
+      "path": "Entropic/AppCDE/Information.lean",
+      "sha": "ebdc96e3a0c87c7756f19873b98b294bae011ec4",
+      "size": 10215
+    },
+    {
+      "path": "Entropic/AppCDE/Lattice.lean",
+      "sha": "bf008d0eb48b9a1a2c28a1c922c6c3f7f0ff2d1b",
+      "size": 5072
+    },
+    {
+      "path": "Entropic/AppCDE/MoveGraph.lean",
+      "sha": "5898edba653a70d17f8461c10486c7b0cdbb5d56",
+      "size": 6348
+    },
+    {
+      "path": "Entropic/AppCDE/Sprinkling.lean",
+      "sha": "f1302d72e99ba78081df63cf80879053f10431e3",
+      "size": 6667
+    },
+    {
+      "path": "Entropic/AppCDE/TiltedMean.lean",
+      "sha": "3985e968a00e0e3cb0fd6b9cad0e6ec02ed0fc52",
+      "size": 4057
+    },
+    {
+      "path": "Entropic/AppCDE/WeakField.lean",
+      "sha": "37c8647b727541dcde45e3f3bc2acb1680dbe0dc",
+      "size": 20037
+    },
+    {
+      "path": "Entropic/AppFG/Born.lean",
+      "sha": "525d8030e615b5dd4944b0ffeac27b140ffa237e",
+      "size": 3777
+    },
+    {
+      "path": "Entropic/AppFG/Histories.lean",
+      "sha": "3d064727408efbc89da4dbcd851de75c00d4c24a",
+      "size": 13933
+    },
+    {
+      "path": "Entropic/AppFG/Horizon.lean",
+      "sha": "1db98a74ab8319ad10acce39b880f6fd47b126d8",
+      "size": 13672
+    },
+    {
+      "path": "Entropic/AppFG/StrongField.lean",
+      "sha": "b986301601ad82146885c56674ce12090c7b3167",
+      "size": 14221
+    },
+    {
+      "path": "Entropic/AppFG/Subadditivity.lean",
+      "sha": "a648faa76cf88991ffa58a683153aa745dff3009",
+      "size": 9193
+    },
+    {
+      "path": "Entropic/AppH1/Algebra.lean",
+      "sha": "8ba00b2e367765040f1e31f95c1e11874100c733",
+      "size": 23046
+    },
+    {
+      "path": "Entropic/AppH1/Kinematics.lean",
+      "sha": "5cd286bf92b2cf6fb6adc51df07ca994b9c73314",
+      "size": 18694
+    },
+    {
+      "path": "Entropic/AppH1/Marked.lean",
+      "sha": "e58625f611307da1f10cf142e1db67c10dfdda31",
+      "size": 20484
+    },
+    {
+      "path": "Entropic/AppH10/Elimination.lean",
+      "sha": "30fc747705d2e523011d7176c99cd9419bfcf310",
+      "size": 6759
+    },
+    {
+      "path": "Entropic/AppH10/Gaussian.lean",
+      "sha": "35a947d28a593a16239d6c2cf5c1a115eaa9bf63",
+      "size": 11111
+    },
+    {
+      "path": "Entropic/AppH10/Legendre.lean",
+      "sha": "1a14bfde21fd01fcf0f4c55627d7c9f157d6726f",
+      "size": 9470
+    },
+    {
+      "path": "Entropic/AppH10/Pullback.lean",
+      "sha": "25face36a5bcdaac77902bb5f097e79415821727",
+      "size": 15946
+    },
+    {
+      "path": "Entropic/AppH10/Spectral.lean",
+      "sha": "1c0d7d4abba31dbd03a4467ea661787167ec14dd",
+      "size": 7200
+    },
+    {
+      "path": "Entropic/AppH10/Symbols.lean",
+      "sha": "985aa6ca9fceeb489ea9d52b53ba587bac473b2a",
+      "size": 17516
+    },
+    {
+      "path": "Entropic/AppH11/Clock.lean",
+      "sha": "6c91345ba7a119382dd7851e097be214a809cc41",
+      "size": 12425
+    },
+    {
+      "path": "Entropic/AppH11/Frame.lean",
+      "sha": "ad42bb435d01f8517b75fc7db266e46e94ab8a0f",
+      "size": 3890
+    },
+    {
+      "path": "Entropic/AppH11/Polar.lean",
+      "sha": "af3d98da20c8fe3088f610fdf7a8e8474cca1d05",
+      "size": 24711
+    },
+    {
+      "path": "Entropic/AppH11/Records.lean",
+      "sha": "bc3bf3c4ab3407103074cf6c8e9626ed25b77a66",
+      "size": 14475
+    },
+    {
+      "path": "Entropic/AppIJ/Cdt.lean",
+      "sha": "ec0b8ee714064cd9899d01e01c0b7f5ac8fb5818",
+      "size": 18028
+    },
+    {
+      "path": "Entropic/AppIJ/Color.lean",
+      "sha": "08f5f866e91e7261baa2dee04f7cf121d7d49ae0",
+      "size": 18712
+    },
+    {
+      "path": "Entropic/AppIJ/Shells.lean",
+      "sha": "75ed1b0ce8958641991f67457a28b917f55575c8",
+      "size": 12679
+    },
+    {
+      "path": "Entropic/AppKN/Fields.lean",
+      "sha": "3a792b402f7cc0c85cf4974c2cba4e3c7e348d27",
+      "size": 7440
+    },
+    {
+      "path": "Entropic/AppKN/Response.lean",
+      "sha": "8c3a83d3b6a43676b1b656c00b9c692fae414c51",
+      "size": 22442
+    },
+    {
+      "path": "Entropic/AppKN/Scalars.lean",
+      "sha": "3f9341eb30475317ffe565a383a58c0a3443d679",
+      "size": 15953
+    },
+    {
+      "path": "Entropic/AppO/Flow.lean",
+      "sha": "40e9586d72024259e6eabcc321c09494e9e1116e",
+      "size": 18224
+    },
+    {
+      "path": "Entropic/AppO/Numerics.lean",
+      "sha": "64bfb410ef57c0963df75a84a3aabec208f9f642",
+      "size": 17390
+    },
+    {
+      "path": "Entropic/AppO/Release.lean",
+      "sha": "a198b13090c2a73c2a05596af9a42309c5bad167",
+      "size": 25780
+    },
+    {
+      "path": "Entropic/AppP/Expansion.lean",
+      "sha": "6562cb683c2890dd559ab880b006526cd1aca394",
+      "size": 12154
+    },
+    {
+      "path": "Entropic/AppP/Numbers.lean",
+      "sha": "9ed5d1dd9224b01b241f92206245f1afb0b7581c",
+      "size": 31333
+    },
+    {
+      "path": "Entropic/AppP/Records.lean",
+      "sha": "b4826a1891ebc32a515796e3b4444e7d6d3643d0",
+      "size": 32166
+    },
+    {
+      "path": "Entropic/AppP/Spin.lean",
+      "sha": "c2abd19113d5234363ffdc2f20369e12948a1694",
+      "size": 42406
+    },
+    {
+      "path": "Entropic/AppQ/Algebra.lean",
+      "sha": "706eb33bc93ccd897a3dca443741055b0507c085",
+      "size": 26108
+    },
+    {
+      "path": "Entropic/AppQ/Fock.lean",
+      "sha": "6b21ac6e501c765b1e19591b85e2c3538d45bcac",
+      "size": 13081
+    },
+    {
+      "path": "Entropic/AppQ/Weights.lean",
+      "sha": "1131d23a20a738e60dee8d5fb80e2bda27e74b83",
+      "size": 7129
+    },
+    {
+      "path": "Entropic/BlackHole.lean",
+      "sha": "3bab08b9f5e9f41887f879fa9dd0283370e8d209",
+      "size": 18277
+    },
+    {
+      "path": "Entropic/CapacityDomain.lean",
+      "sha": "b38a8566804ad4891d7d8a70b4d1c44fc17a5e12",
+      "size": 4333
+    },
+    {
+      "path": "Entropic/ClosureRoot.lean",
+      "sha": "efacc4ce9c1417494163330100cc8c22eba98e43",
+      "size": 25325
+    },
+    {
+      "path": "Entropic/Director.lean",
+      "sha": "2b2ee947bfb64698d919de3e4f2a16f031b710e3",
+      "size": 6484
+    },
+    {
+      "path": "Entropic/EFT.lean",
+      "sha": "ce6dea6e00cc4c56e49fa5a283983e5b887912b3",
+      "size": 2015
+    },
+    {
+      "path": "Entropic/EFT/Audit/ClaimLedger.lean",
+      "sha": "de9c91a2639b5a7047ffeec7978d0a8d53d56e5d",
+      "size": 4897
+    },
+    {
+      "path": "Entropic/EFT/Audit/Connections.lean",
+      "sha": "54512b67a149aaec17bc6fcdfdd4d733e60abc5a",
+      "size": 3944
+    },
+    {
+      "path": "Entropic/EFT/Clusters/Projection.lean",
+      "sha": "4e80be522a5bb49f20e4258ffef82bf1b7f313d2",
+      "size": 1698
+    },
+    {
+      "path": "Entropic/EFT/Core/PhysicalInterfaces.lean",
+      "sha": "f97c26b0a1cdb4f739c3ce05949b74f392aa26a6",
+      "size": 3252
+    },
+    {
+      "path": "Entropic/EFT/Core/Prelude.lean",
+      "sha": "545f143ebb14b9aed630dcd75a4345f5a2c39075",
+      "size": 2024
+    },
+    {
+      "path": "Entropic/EFT/Core/Status.lean",
+      "sha": "0ab66cfb83ad7cc076d4fc087b2f5d635084a2d5",
+      "size": 809
+    },
+    {
+      "path": "Entropic/EFT/Cosmology/FixedMeasureDarkEnergy.lean",
+      "sha": "2cb7032f649c768261d5215c50ab917c6d0b4216",
+      "size": 5643
+    },
+    {
+      "path": "Entropic/EFT/Cosmology/SaturatedDust.lean",
+      "sha": "c9e33366c0078eee6d0f1f3e07c71025e2f25316",
+      "size": 2626
+    },
+    {
+      "path": "Entropic/EFT/Edge/Kernel.lean",
+      "sha": "bb8dbae4a5038dbee4d31a5f554de9c2d8efd674",
+      "size": 1969
+    },
+    {
+      "path": "Entropic/EFT/Edge/SourceProjection.lean",
+      "sha": "acfcc74ff224b6f8f64007cbb833fd0c22995069",
+      "size": 1617
+    },
+    {
+      "path": "Entropic/EFT/Edge/TetrahedralFrame.lean",
+      "sha": "83090c18e1b38ee7287dc42a2d2ee3ff5dba597f",
+      "size": 1891
+    },
+    {
+      "path": "Entropic/EFT/Foundations/Postulates.lean",
+      "sha": "9fc4c81ca8ec062d4520444a09816c79de41cb0a",
+      "size": 1920
+    },
+    {
+      "path": "Entropic/EFT/Gauge/FactorSplit.lean",
+      "sha": "348cb4eeaf40aa8cfc95f50a7ffa5f9196c85399",
+      "size": 5812
+    },
+    {
+      "path": "Entropic/EFT/Gauge/ProjectiveColor.lean",
+      "sha": "de39846260d89194caab91122050de476f9754b1",
+      "size": 3899
+    },
+    {
+      "path": "Entropic/EFT/Gauge/SpinePropagation.lean",
+      "sha": "5933f87633fe39a9b051498fdf96df851efa9a24",
+      "size": 7583
+    },
+    {
+      "path": "Entropic/EFT/Gauge/VertexRealization.lean",
+      "sha": "c0be9f5bb6d1e5264186ce3e45801b994ec9feff",
+      "size": 8502
+    },
+    {
+      "path": "Entropic/EFT/Gaussian/RelativeCovariance.lean",
+      "sha": "6fd19507bf17f1ff594838df16a0340b51d19e8d",
+      "size": 2340
+    },
+    {
+      "path": "Entropic/EFT/Gravity/FieldDefinitions.lean",
+      "sha": "ce7b595afdfbc8e1e3747e58c2862e85ac6a05c8",
+      "size": 1051
+    },
+    {
+      "path": "Entropic/EFT/Gravity/Static.lean",
+      "sha": "20ff5540db937e83329817a882818053ab899769",
+      "size": 3778
+    },
+    {
+      "path": "Entropic/EFT/Gravity/StrongField.lean",
+      "sha": "2d882f663ae6c5da8b847e75241cffd706f20e71",
+      "size": 3066
+    },
+    {
+      "path": "Entropic/EFT/Information/Renewal.lean",
+      "sha": "4508f49d4b602fc894f4496858947b5acbb9c834",
+      "size": 2811
+    },
+    {
+      "path": "Entropic/EFT/Instantiation/ToyCDT.lean",
+      "sha": "56b7123a40aec4d5509992e297fe26a434024ff5",
+      "size": 11652
+    },
+    {
+      "path": "Entropic/EFT/Lattice/FiniteRegulator.lean",
+      "sha": "1f1dffbe86c66c57407f6dfd8abebe861fe1beb6",
+      "size": 2068
+    },
+    {
+      "path": "Entropic/EFT/Marked/CorrectedH9.lean",
+      "sha": "06405d377ba0d3389cec5d04a6c35bc016994810",
+      "size": 5486
+    },
+    {
+      "path": "Entropic/EFT/Marked/EdgeGraph.lean",
+      "sha": "9f8970f0dac596b3d05461a69105d245254ec861",
+      "size": 1245
+    },
+    {
+      "path": "Entropic/EFT/Marked/SingleStrandRecord.lean",
+      "sha": "76bb39d7bc5024d33d52a4c7e4934e0f9e13f44b",
+      "size": 10330
+    },
+    {
+      "path": "Entropic/EFT/Microstructure/Architecture.lean",
+      "sha": "e075f334fc67495dcd64ccc131e39fc2c8a5babb",
+      "size": 1916
+    },
+    {
+      "path": "Entropic/EFT/Numerics/Spine.lean",
+      "sha": "2be89336eb37908f5d084667fe91710ca1f0acfc",
+      "size": 1172
+    },
+    {
+      "path": "Entropic/EFT/OpenProblems/Interfaces.lean",
+      "sha": "34621b33078b7029cfe3e51aad19b324f180d775",
+      "size": 949
+    },
+    {
+      "path": "Entropic/EFT/Quantum/Histories.lean",
+      "sha": "2835dbfb218b3f6bdd74a883170c7aee9ac33297",
+      "size": 1557
+    },
+    {
+      "path": "Entropic/EFT/Quantum/Replacement.lean",
+      "sha": "2ea928d4d942e4676190f8e9f96ae0d2c046fec5",
+      "size": 1911
+    },
+    {
+      "path": "Entropic/EFT/Representation/FusionSpec.lean",
+      "sha": "17e3f7394cd3d092c61e18bb05edff8913b2e3e3",
+      "size": 1867
+    },
+    {
+      "path": "Entropic/EFT/Representation/MarkedComplement.lean",
+      "sha": "afa386e3d0bfa15b26789b40e31f181a11714db6",
+      "size": 1581
+    },
+    {
+      "path": "Entropic/EFT/Representation/SharpTransfer.lean",
+      "sha": "2a773b2643fa518308174f3153b06b7c2a327ca3",
+      "size": 1211
+    },
+    {
+      "path": "Entropic/EFT/Representation/SpinDimensions.lean",
+      "sha": "4615336b5716873e7494fdf3a3910a7689eb3cb5",
+      "size": 1948
+    },
+    {
+      "path": "Entropic/EFT/Scale/Electron.lean",
+      "sha": "4a16fca10f2ed507fb04b5a4222b81fa02c334c4",
+      "size": 2220
+    },
+    {
+      "path": "Entropic/EFT/Scale/Leptons.lean",
+      "sha": "d39e2a69bdc313c20263fc37cd539b2b50cc645d",
+      "size": 2477
+    },
+    {
+      "path": "Entropic/EFT/Structure/Connections.lean",
+      "sha": "c6c4faba564751f81e18e829644ec208b1da93bb",
+      "size": 13329
+    },
+    {
+      "path": "Entropic/EFT/Transport/Telegrapher.lean",
+      "sha": "ffa3b39a18abd6e730153b2a704257fcc1556d4a",
+      "size": 1678
+    },
+    {
+      "path": "Entropic/EFT/Transverse/RankOne.lean",
+      "sha": "9e792825b00eef2cac0bfcf731b32c9fa6fb4874",
+      "size": 2217
+    },
+    {
+      "path": "Entropic/EFT/UV/Admissibility.lean",
+      "sha": "6839c040deb8a45a813b0b74c6f2638878afc0dd",
+      "size": 1898
+    },
+    {
+      "path": "Entropic/EFT/UV/Boundary.lean",
+      "sha": "65726d9b01e103077a572436982d4a431ec68464",
+      "size": 2476
+    },
+    {
+      "path": "Entropic/EFT/UV/BranchAudit.lean",
+      "sha": "be270be457664a507230512dfdada8ff7399b503",
+      "size": 1289
+    },
+    {
+      "path": "Entropic/EFT/UV/ClosureInvariant.lean",
+      "sha": "346dec37cca3f4cb1f4a5823ac453dca0c79c2b0",
+      "size": 3106
+    },
+    {
+      "path": "Entropic/EFT/UV/EtaStar.lean",
+      "sha": "8d9fa18edb34698c8a4bc8d2cf8368c2cfd289f0",
+      "size": 2076
+    },
+    {
+      "path": "Entropic/EFT/UV/EtaUniqueness.lean",
+      "sha": "e444cd6208433c5c649054ea58934d2a5ff49a55",
+      "size": 1465
+    },
+    {
+      "path": "Entropic/EFT/UV/RootExistence.lean",
+      "sha": "578d69b907d35e369f0a706f0361fff4a7f8e3a9",
+      "size": 6259
+    },
+    {
+      "path": "Entropic/EFT/UV/Spectrum.lean",
+      "sha": "f55b8f1c20087c11536cdad461de73503446b58a",
+      "size": 3322
+    },
+    {
+      "path": "Entropic/Extensions20261023/ClusterOutliers.lean",
+      "sha": "74eba504d3f0c602183550f057b60cdbc2282d8d",
+      "size": 4121
+    },
+    {
+      "path": "Entropic/Extensions20261023/ConnectedClosure.lean",
+      "sha": "4f211e794119adaacda5b20c718d0f87fa4c26be",
+      "size": 12423
+    },
+    {
+      "path": "Entropic/Extensions20261023/EffectiveContact.lean",
+      "sha": "15217fd62eb93fc8ae00e9756f7b4ec4156c80ae",
+      "size": 5981
+    },
+    {
+      "path": "Entropic/Extensions20261023/EmpiricalCertificates.lean",
+      "sha": "00003515c525ae68cca6865029a303e0ff8eddf8",
+      "size": 1750
+    },
+    {
+      "path": "Entropic/Extensions20261023/MergerContact.lean",
+      "sha": "a50a6b1baf604262038da2a71c357de691faacb4",
+      "size": 1339
+    },
+    {
+      "path": "Entropic/Extensions20261023/MuseProjection.lean",
+      "sha": "f30e08f2c094d8f2dcb96cf11bb180dd0ea0a287",
+      "size": 4940
+    },
+    {
+      "path": "Entropic/FiniteModel.lean",
+      "sha": "57de05596224cf0a0f9fcaebdcfd086c70a48482",
+      "size": 2693
+    },
+    {
+      "path": "Entropic/FiniteStatistics.lean",
+      "sha": "537f6961b2bcb967ee4f7da2f146e927a6f4e9da",
+      "size": 3002
+    },
+    {
+      "path": "Entropic/GalacticLaw.lean",
+      "sha": "54259f0dce917126704772dfc53ccf9e05ee7f16",
+      "size": 15587
+    },
+    {
+      "path": "Entropic/GaussianSource.lean",
+      "sha": "a802c4fd6ad0a03ee107f926c9059fd92a803372",
+      "size": 1372
+    },
+    {
+      "path": "Entropic/GenerationCutoff.lean",
+      "sha": "4476ce4726a41c14e66fab2ae18ccda99bc8315b",
+      "size": 2842
+    },
+    {
+      "path": "Entropic/HistoryCapacity.lean",
+      "sha": "a992f6294914071aa8ac25105942d58ccbf4a607",
+      "size": 3935
+    },
+    {
+      "path": "Entropic/IsometricReduction.lean",
+      "sha": "34ac8a1a413bf88019b3c40421eedda1ab8a1870",
+      "size": 3686
+    },
+    {
+      "path": "Entropic/Ledger.lean",
+      "sha": "9ae39951060a604cff784fe0ae0fe7832270f985",
+      "size": 4000
+    },
+    {
+      "path": "Entropic/Main/Core.lean",
+      "sha": "cca1be2644c736960419cfe0b79a88eda43fe1a0",
+      "size": 11010
+    },
+    {
+      "path": "Entropic/Main/Cosmo.lean",
+      "sha": "e1cab1156f3f89f2fa8a2664d1df1e79598dfe62",
+      "size": 22793
+    },
+    {
+      "path": "Entropic/Main/Galactic.lean",
+      "sha": "40cea783cab8dec2b895f8a086b507dfbab6242c",
+      "size": 30826
+    },
+    {
+      "path": "Entropic/Pass2/ADM.lean",
+      "sha": "987ab6e82e919d2c08bc1ca9dcc85f8200e4ff3a",
+      "size": 12133
+    },
+    {
+      "path": "Entropic/Pass2/Bridge81.lean",
+      "sha": "7966eff768cfb7558dff12f2e9c98344677f3f50",
+      "size": 2641
+    },
+    {
+      "path": "Entropic/Pass2/Conformal.lean",
+      "sha": "0f6c92614c1641c8385b285809e1a1d3661ec08f",
+      "size": 4681
+    },
+    {
+      "path": "Entropic/Pass2/DiagCommutant.lean",
+      "sha": "1c6356b8a6869d53a6cca68dfe5bf67505640d51",
+      "size": 1875
+    },
+    {
+      "path": "Entropic/Pass2/Fields.lean",
+      "sha": "e948a1de1fba9d49bf9c2edf6155169ab2005f26",
+      "size": 24851
+    },
+    {
+      "path": "Entropic/Pass2/Harmonic.lean",
+      "sha": "513ae9464d07b3bcd41ba7ceb07da0d8183ab676",
+      "size": 10132
+    },
+    {
+      "path": "Entropic/Pass2/IBPForm.lean",
+      "sha": "a821cf681b47f6fd17d099bed47c8d8e298248d7",
+      "size": 1472
+    },
+    {
+      "path": "Entropic/Pass2/Intertwiner.lean",
+      "sha": "0343b4ec8f1918d3b7c52b919856feb7cc0757ed",
+      "size": 36517
+    },
+    {
+      "path": "Entropic/Pass2/Kinetic.lean",
+      "sha": "b4cd9b4bf224c35df1ec1d24ffb553fbf044dbdf",
+      "size": 2989
+    },
+    {
+      "path": "Entropic/Pass2/LieJJ.lean",
+      "sha": "c88c719749a6baf9067d6c33f093b73ad83fb2d7",
+      "size": 107051
+    },
+    {
+      "path": "Entropic/Pass2/LieTensor.lean",
+      "sha": "02448c0af2ee029bf1c01a5010b7e68d549fd799",
+      "size": 19580
+    },
+    {
+      "path": "Entropic/Pass2/Pair.lean",
+      "sha": "3f60962c0f6bc3dcde3ecb0a740ab9fdf4f3fb15",
+      "size": 82831
+    },
+    {
+      "path": "Entropic/Pass2/PairGen.lean",
+      "sha": "df7c5e1d4e5c25b1027ee6027364cd56ad7d5a0b",
+      "size": 60925
+    },
+    {
+      "path": "Entropic/Pass2/RealForms.lean",
+      "sha": "a4c26e7f1eef9b69b3d8a5224a35365bf78599c7",
+      "size": 2626
+    },
+    {
+      "path": "Entropic/Pass2/SU3Form.lean",
+      "sha": "ccc66a989d4067ea574c4c531f7ea3817fb9fed6",
+      "size": 31564
+    },
+    {
+      "path": "Entropic/Pass2/Schur.lean",
+      "sha": "8b6eff140fad95f7a974ffdfe64aad50402a1552",
+      "size": 24281
+    },
+    {
+      "path": "Entropic/Pass2/SlGen.lean",
+      "sha": "e48173435a28453c2c57e2e509d15620a7412d3b",
+      "size": 4168
+    },
+    {
+      "path": "Entropic/Pass2/Var.lean",
+      "sha": "9cced5bd6c0c8ec5e2e9bc699664f954823ba5b2",
+      "size": 12263
+    },
+    {
+      "path": "Entropic/PositiveLedger.lean",
+      "sha": "c8cb75c0c5598eaa0b6334378b9bd3169ad5e49b",
+      "size": 3401
+    },
+    {
+      "path": "Entropic/PositiveReconstruction.lean",
+      "sha": "b532a6e2c052836d534e7bdd95e1444887d127b8",
+      "size": 1975
+    },
+    {
+      "path": "Entropic/Projectors.lean",
+      "sha": "067fb6335767eef335d19c14ae1a8b454875e679",
+      "size": 2400
+    },
+    {
+      "path": "Entropic/Reciprocity.lean",
+      "sha": "cd831184b7a790491e3e5fb7f55436b65c025364",
+      "size": 6697
+    },
+    {
+      "path": "Entropic/Response.lean",
+      "sha": "459d6f845c80fbdf9147c1e3029aa8eae5c858a7",
+      "size": 1708
+    },
+    {
+      "path": "Entropic/RetainedRelaxation.lean",
+      "sha": "e02146e97e325e471d5d0d10b17578d03564e49e",
+      "size": 2864
+    },
+    {
+      "path": "Entropic/ShellLadder.lean",
+      "sha": "1dd8d999f3baf07f8593df6f175c2b6a97fabc32",
+      "size": 3797
+    },
+    {
+      "path": "Entropic/Spherical.lean",
+      "sha": "5b7616d9bba182e6a7f626b2615a354a27c5250d",
+      "size": 3663
+    },
+    {
+      "path": "Entropic/Spine.lean",
+      "sha": "05ee448529c93f562f1e213a1b92b788ebea3ef5",
+      "size": 9600
+    },
+    {
+      "path": "Entropic/Sweep/Algebra.lean",
+      "sha": "f46ab5259a75e059f84587080657aedb00128d42",
+      "size": 25015
+    },
+    {
+      "path": "Entropic/Sweep/Analysis.lean",
+      "sha": "22f8b290cbe656ececdd89f0c5eefed83e86a39d",
+      "size": 19767
+    },
+    {
+      "path": "Entropic/Sweep/Counting.lean",
+      "sha": "c23e2859787aad656832dffd1fb8ad70544beb1d",
+      "size": 3525
+    },
+    {
+      "path": "Entropic/Sweep/Dirac.lean",
+      "sha": "2fb22feb80e06c6949176495b64971ffa8cb8d74",
+      "size": 10209
+    },
+    {
+      "path": "Entropic/Sweep/Gaussian.lean",
+      "sha": "0c3609cdbfc5eeaa1378b35dc2d9c2b21bd10f99",
+      "size": 4665
+    },
+    {
+      "path": "Entropic/Sweep/Information.lean",
+      "sha": "fc5b4bc2ccd44a004a2facbd5b1e00e1a23dd18d",
+      "size": 5585
+    },
+    {
+      "path": "Entropic/Sweep/Legacy.lean",
+      "sha": "a7be6fe9657b34e39e6ff2529cae46b19313a559",
+      "size": 2965
+    },
+    {
+      "path": "Entropic/Sweep/Spin.lean",
+      "sha": "3b9bf5ebd26fa529974fccdc215ecefcac348c0c",
+      "size": 27160
+    },
+    {
+      "path": "Entropic/Sweep/Staggered.lean",
+      "sha": "678580727b30352f888571ce7580d75ddd11ebbe",
+      "size": 5241
+    },
+    {
+      "path": "LICENSE",
+      "sha": "1d5fcb382569b7bf15262d956e8b30761a2a63d6",
+      "size": 11342
+    },
+    {
+      "path": "README.md",
+      "sha": "96e250eebea077e458a14c8e396423c7bb8c4950",
+      "size": 7729
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha": "4a47c30cd488cbe73e768773495f2460d707bb5f",
+      "size": 3140
+    },
+    {
+      "path": "lakefile.toml",
+      "sha": "0d1575e1b2f04243763778035a0e61cf1bc775f7",
+      "size": 219
+    },
+    {
+      "path": "lean-toolchain",
+      "sha": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+      "size": 25
+    },
+    {
+      "path": "ledger/CLAIMS.md",
+      "sha": "1577dc0a3847e78b0d43fcca27d0c6faccfa2718",
+      "size": 39032
+    },
+    {
+      "path": "ledger/LEDGER.md",
+      "sha": "4c780a3c9333089924121c6a465edf25bd2f646d",
+      "size": 174105
+    },
+    {
+      "path": "ledger/OPEN_TRIAGE.md",
+      "sha": "bcd9800eee5ac1f51cfd6aeeebca7a80fa263983",
+      "size": 15636
+    },
+    {
+      "path": "ledger/PLAN.md",
+      "sha": "3a073e3b561a1d3571e63fe0320f4214e1680f59",
+      "size": 7399
+    },
+    {
+      "path": "ledger/RETIREMENT.md",
+      "sha": "df9fe93de3a735837512b54bb304d079278f6ee2",
+      "size": 9579
+    },
+    {
+      "path": "ledger/extraction/C01.md",
+      "sha": "e0355609c75589ed66462862c2fe7f43f99fb723",
+      "size": 39664
+    },
+    {
+      "path": "ledger/extraction/C02.md",
+      "sha": "b5e51cd81eead0f4eaa2b08feabc7622559572c5",
+      "size": 54245
+    },
+    {
+      "path": "ledger/extraction/C03.md",
+      "sha": "086b1eb2c8f49189c4b89ef8ac54570085461716",
+      "size": 78181
+    },
+    {
+      "path": "ledger/extraction/C04.md",
+      "sha": "61cafed465de5f38b9f78dbc147756be21ecba88",
+      "size": 48563
+    },
+    {
+      "path": "ledger/extraction/C05.md",
+      "sha": "ce3575fa22bb7d9c289de2970cfb8b14189e283a",
+      "size": 43365
+    },
+    {
+      "path": "ledger/extraction/C06.md",
+      "sha": "3e5b64a4a8314e4054f2de29925495c233b45754",
+      "size": 35946
+    },
+    {
+      "path": "ledger/extraction/C07.md",
+      "sha": "e02b577a1cb2881d0736982cc5e7a71a86557946",
+      "size": 66582
+    },
+    {
+      "path": "ledger/extraction/C08.md",
+      "sha": "ccacdee697293484c414e344d593d29494649c50",
+      "size": 51857
+    },
+    {
+      "path": "ledger/extraction/C09.md",
+      "sha": "a01ee288c0dcf3cada361db921dc572be781f205",
+      "size": 64579
+    },
+    {
+      "path": "ledger/extraction/C10.md",
+      "sha": "b29d5f940e3a3ec761a416f7f2523d259650e0a9",
+      "size": 61867
+    },
+    {
+      "path": "ledger/extraction/C11.md",
+      "sha": "1ca0b235a67ed2f8c933604816c0153ec68b7ed6",
+      "size": 51074
+    },
+    {
+      "path": "ledger/extraction/C12.md",
+      "sha": "0c6b04b6e0c49726c5d429f60f8a810f22440a94",
+      "size": 59555
+    },
+    {
+      "path": "ledger/extraction/C13.md",
+      "sha": "aa232ec27c1174329796dca766e9910ce7c0d3cd",
+      "size": 57230
+    },
+    {
+      "path": "ledger/extraction/C14.md",
+      "sha": "9aefeb70968ddc70b8069dbd83a3198542c4ca60",
+      "size": 61389
+    },
+    {
+      "path": "ledger/extraction/C15.md",
+      "sha": "da2d38bed7e1dbd8e61f8839b06339e540122ea7",
+      "size": 49355
+    },
+    {
+      "path": "provenance.json",
+      "sha": "551667fed8f1b841b5e86564fd519af2c474412d",
+      "size": 522
+    },
+    {
+      "path": "scripts/AxiomAudit.lean",
+      "sha": "08af2203f8a42dab125554f33b33c797d166bc92",
+      "size": 1173
+    },
+    {
+      "path": "scripts/CiteCheck.lean",
+      "sha": "b5bdddd72f7a3d41164d063aeebdcee4fbef515d",
+      "size": 96605
+    },
+    {
+      "path": "tools/audit.py",
+      "sha": "452d4f8afc132e577847a51f530236dcbdfff2b8",
+      "size": 9115
+    },
+    {
+      "path": "tools/scan_sources.py",
+      "sha": "8dde16782792625d7c747b1b0c13210209d62b20",
+      "size": 1457
+    },
+    {
+      "path": "tools/syntax_sanity.py",
+      "sha": "c809602cee08f9980d8c55520dc7120f204ec6aa",
+      "size": 981
+    },
+    {
+      "path": "verification/axiom_audit_chunk14_2026-10-22.log",
+      "sha": "bbeb1f9787541339f0a156c19ab2a0de57b3859d",
+      "size": 112
+    },
+    {
+      "path": "verification/axiom_audit_chunk16_2026-10-23.log",
+      "sha": "1b79153483c775d5167a6d4de6394390b5027e0c",
+      "size": 116
+    },
+    {
+      "path": "verification/axiom_audit_chunk17_2026-10-23.log",
+      "sha": "2039efc55be97ffe151927aaa9878d4fc5e6c9bc",
+      "size": 105
+    },
+    {
+      "path": "verification/axiom_audit_chunk18_2026-10-23.log",
+      "sha": "3e4774c7681216cf5d6ee856eb2e2d8cb8977b4a",
+      "size": 105
+    },
+    {
+      "path": "verification/axiom_audit_chunk19_2026-10-23.log",
+      "sha": "cce124357567f84ec283597e19c14f59fdb268a9",
+      "size": 105
+    },
+    {
+      "path": "verification/axiom_audit_final_2026-10-23.log",
+      "sha": "cce124357567f84ec283597e19c14f59fdb268a9",
+      "size": 105
+    },
+    {
+      "path": "verification/citecheck_chunk14_2026-10-22.log",
+      "sha": "a1f1e1a825da29f607172899d58d86bdccfb2463",
+      "size": 23
+    },
+    {
+      "path": "verification/citecheck_chunk16_2026-10-23.log",
+      "sha": "eb0a2cc5f264f09e402145c4a8c88fda23eeea60",
+      "size": 23
+    },
+    {
+      "path": "verification/citecheck_chunk17_2026-10-23.log",
+      "sha": "f4c05e57205db18b095c307b96f98b8224a9364f",
+      "size": 23
+    },
+    {
+      "path": "verification/citecheck_chunk18_2026-10-23.log",
+      "sha": "954b7ebc8ab5a4562db9497a41e82f8d39068a06",
+      "size": 23
+    },
+    {
+      "path": "verification/citecheck_chunk19_2026-10-23.log",
+      "sha": "1d57a2afffe708c9eb77265d6665a7e508d302f6",
+      "size": 23
+    },
+    {
+      "path": "verification/citecheck_final_2026-10-23.log",
+      "sha": "1d57a2afffe708c9eb77265d6665a7e508d302f6",
+      "size": 23
+    },
+    {
+      "path": "verification/extensions_2026-10-23.md",
+      "sha": "44fa07d89b233f72191c78a9ff361c7b37ed863f",
+      "size": 3108
+    },
+    {
+      "path": "verify.sh",
+      "sha": "ff9416983027f7c997c656721f21e94ddf676abe",
+      "size": 678
+    }
+  ]
+}

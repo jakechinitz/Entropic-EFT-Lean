@@ -1,0 +1,437 @@
+{
+  "initial": {
+    "label": "Original",
+    "time_Gyr": 0.0,
+    "cuts": [
+      {
+        "radial_cut_kpc": [
+          6,
+          24
+        ],
+        "independent_inversion_representatives": 2264,
+        "beta_raw": 0.9020165852724986,
+        "local_estimates": [
+          {
+            "angular_cells": 8,
+            "minimum_occupancy": 193,
+            "adequate_occupancy": true,
+            "beta_local_central": 0.9025274586628625,
+            "beta_count_corrected": 0.9025287963817563,
+            "streaming_fraction_of_raw_components": [
+              0.0026932815909643908,
+              0.006414898822779485,
+              0.010205780268403186
+            ]
+          },
+          {
+            "angular_cells": 32,
+            "minimum_occupancy": 38,
+            "adequate_occupancy": true,
+            "beta_local_central": 0.9021039531892436,
+            "beta_count_corrected": 0.9021220432946487,
+            "streaming_fraction_of_raw_components": [
+              0.01571817800585666,
+              0.012738044602636445,
+              0.02263130486765856
+            ]
+          }
+        ]
+      },
+      {
+        "radial_cut_kpc": [
+          10,
+          20
+        ],
+        "independent_inversion_representatives": 1277,
+        "beta_raw": 0.9018586091608981,
+        "local_estimates": [
+          {
+            "angular_cells": 8,
+            "minimum_occupancy": 110,
+            "adequate_occupancy": true,
+            "beta_local_central": 0.9027179201313204,
+            "beta_count_corrected": 0.9027265757186573,
+            "streaming_fraction_of_raw_components": [
+              0.0027959115345800585,
+              0.009953468715340663,
+              0.013771323197109287
+            ]
+          },
+          {
+            "angular_cells": 32,
+            "minimum_occupancy": 17,
+            "adequate_occupancy": true,
+            "beta_local_central": 0.903213378893786,
+            "beta_count_corrected": 0.9032815023955052,
+            "streaming_fraction_of_raw_components": [
+              0.0175775474722312,
+              0.032422074700211086,
+              0.029309908534218724
+            ]
+          }
+        ]
+      },
+      {
+        "radial_cut_kpc": [
+          10,
+          40
+        ],
+        "independent_inversion_representatives": 2185,
+        "beta_raw": 0.7986148273170453,
+        "local_estimates": [
+          {
+            "angular_cells": 8,
+            "minimum_occupancy": 177,
+            "adequate_occupancy": true,
+            "beta_local_central": 0.7987027822629293,
+            "beta_count_corrected": 0.7986802680257912,
+            "streaming_fraction_of_raw_components": [
+              0.0024596022863446745,
+              0.0034928681477385073,
+              0.002292387548020616
+            ]
+          },
+          {
+            "angular_cells": 32,
+            "minimum_occupancy": 34,
+            "adequate_occupancy": true,
+            "beta_local_central": 0.7986580820564039,
+            "beta_count_corrected": 0.798581530806369,
+            "streaming_fraction_of_raw_components": [
+              0.011970072069111815,
+              0.011387785555560938,
+              0.012983835383309111
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "final": [
+    {
+      "label": "Original",
+      "time_Gyr": 8.0,
+      "cuts": [
+        {
+          "radial_cut_kpc": [
+            6,
+            24
+          ],
+          "independent_inversion_representatives": 2245,
+          "beta_raw": 0.8784402283952928,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 206,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8787631766041943,
+              "beta_count_corrected": 0.878761002629843,
+              "streaming_fraction_of_raw_components": [
+                0.0018081029972861714,
+                0.0035904960212460157,
+                0.005954734099032982
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 37,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8785577165540939,
+              "beta_count_corrected": 0.8785288552218101,
+              "streaming_fraction_of_raw_components": [
+                0.012101049443423181,
+                0.011809468807547976,
+                0.015198475698889274
+              ]
+            }
+          ]
+        },
+        {
+          "radial_cut_kpc": [
+            10,
+            20
+          ],
+          "independent_inversion_representatives": 1262,
+          "beta_raw": 0.8795648401695825,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 115,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8796856945083577,
+              "beta_count_corrected": 0.8796726620830659,
+              "streaming_fraction_of_raw_components": [
+                0.0032762690022582067,
+                0.0016409758301576423,
+                0.008658981453283353
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 23,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8801101512772425,
+              "beta_count_corrected": 0.880023843168424,
+              "streaming_fraction_of_raw_components": [
+                0.016807286526552608,
+                0.01934462300607878,
+                0.02444246379546947
+              ]
+            }
+          ]
+        },
+        {
+          "radial_cut_kpc": [
+            10,
+            40
+          ],
+          "independent_inversion_representatives": 2187,
+          "beta_raw": 0.7788365462058614,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 188,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.7794451380646726,
+              "beta_count_corrected": 0.7794140447908531,
+              "streaming_fraction_of_raw_components": [
+                0.0016869204531351563,
+                0.0031826707983840367,
+                0.005827079178474587
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 34,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.7808453644242415,
+              "beta_count_corrected": 0.7806871924498662,
+              "streaming_fraction_of_raw_components": [
+                0.006703393611358256,
+                0.011969837333155047,
+                0.019906193945579378
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Replica 1",
+      "time_Gyr": 8.0,
+      "cuts": [
+        {
+          "radial_cut_kpc": [
+            6,
+            24
+          ],
+          "independent_inversion_representatives": 2241,
+          "beta_raw": 0.8834940009038366,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 188,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8839644633796968,
+              "beta_count_corrected": 0.8839625411723556,
+              "streaming_fraction_of_raw_components": [
+                0.0013643219667575928,
+                0.003637086323169091,
+                0.008629561033204712
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 36,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8840934266352964,
+              "beta_count_corrected": 0.8840780313949789,
+              "streaming_fraction_of_raw_components": [
+                0.01213821845680638,
+                0.013472666912093251,
+                0.024105780105259093
+              ]
+            }
+          ]
+        },
+        {
+          "radial_cut_kpc": [
+            10,
+            20
+          ],
+          "independent_inversion_representatives": 1232,
+          "beta_raw": 0.8855289488819198,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 104,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8861141682348532,
+              "beta_count_corrected": 0.8861114152777294,
+              "streaming_fraction_of_raw_components": [
+                0.004833332886178821,
+                0.006686659630344566,
+                0.01574973394949154
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 21,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8872242676022568,
+              "beta_count_corrected": 0.8871277073651732,
+              "streaming_fraction_of_raw_components": [
+                0.021661610837811294,
+                0.03345292216468334,
+                0.041012814922948254
+              ]
+            }
+          ]
+        },
+        {
+          "radial_cut_kpc": [
+            10,
+            40
+          ],
+          "independent_inversion_representatives": 2147,
+          "beta_raw": 0.7898607723092024,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 177,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.7914455693149445,
+              "beta_count_corrected": 0.7914026702843305,
+              "streaming_fraction_of_raw_components": [
+                0.0013751708341281188,
+                0.005664500850748617,
+                0.012588864991693136
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 28,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.7921262506624478,
+              "beta_count_corrected": 0.7918538661603164,
+              "streaming_fraction_of_raw_components": [
+                0.011346276713279204,
+                0.021878880820176052,
+                0.022147824481377972
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Replica 2",
+      "time_Gyr": 8.0,
+      "cuts": [
+        {
+          "radial_cut_kpc": [
+            6,
+            24
+          ],
+          "independent_inversion_representatives": 2251,
+          "beta_raw": 0.880783474910907,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 195,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8812891777984925,
+              "beta_count_corrected": 0.8812847492985256,
+              "streaming_fraction_of_raw_components": [
+                0.002503374222400895,
+                0.004574461422425371,
+                0.010297050137969629
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 35,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8814901647019746,
+              "beta_count_corrected": 0.8814559696442092,
+              "streaming_fraction_of_raw_components": [
+                0.008845458830162392,
+                0.01278220921933215,
+                0.017917804222625604
+              ]
+            }
+          ]
+        },
+        {
+          "radial_cut_kpc": [
+            10,
+            20
+          ],
+          "independent_inversion_representatives": 1258,
+          "beta_raw": 0.8878492518194191,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 111,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8890010389231562,
+              "beta_count_corrected": 0.8889846968941957,
+              "streaming_fraction_of_raw_components": [
+                0.0036646412113602346,
+                0.01343944965079306,
+                0.014642459878367382
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 19,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.8886571124165826,
+              "beta_count_corrected": 0.8885861026416437,
+              "streaming_fraction_of_raw_components": [
+                0.02513202259847258,
+                0.03294669747851418,
+                0.030863362229050034
+              ]
+            }
+          ]
+        },
+        {
+          "radial_cut_kpc": [
+            10,
+            40
+          ],
+          "independent_inversion_representatives": 2151,
+          "beta_raw": 0.7912402277676083,
+          "local_estimates": [
+            {
+              "angular_cells": 8,
+              "minimum_occupancy": 179,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.7918861916052546,
+              "beta_count_corrected": 0.7918501279971107,
+              "streaming_fraction_of_raw_components": [
+                0.002201349202787161,
+                0.0038552995161047123,
+                0.006906257688459113
+              ]
+            },
+            {
+              "angular_cells": 32,
+              "minimum_occupancy": 35,
+              "adequate_occupancy": true,
+              "beta_local_central": 0.7924103601607452,
+              "beta_count_corrected": 0.7922282199508336,
+              "streaming_fraction_of_raw_components": [
+                0.012280300011423823,
+                0.01790495028651239,
+                0.017716978037633026
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "qualification": "Coarse spatial-bin streaming subtraction. Counts exclude duplicated inversion partners. No errors or observational likelihood are inferred from these correlated orbit samples."
+}

@@ -1,0 +1,61 @@
+{
+  "reason": "The original long interface test loses resolved scalar energy as fronts steepen. Test the smooth early interval and refine the late interval before interpreting stability.",
+  "rows": [
+    {
+      "grid": 256,
+      "dt": 0.025,
+      "final_time": 0.1,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 7.991422537478865e-05,
+      "max_absolute_mean_current_change": 4.440892098500626e-16,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 3.585350327739434e-08,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    },
+    {
+      "grid": 512,
+      "dt": 0.014285714285714287,
+      "final_time": 0.1,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 1.9574532335586703e-05,
+      "max_absolute_mean_current_change": 4.440892098500626e-16,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 2.2147305767106218e-08,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    },
+    {
+      "grid": 1024,
+      "dt": 0.0071428571428571435,
+      "final_time": 0.1,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 4.883071880068535e-06,
+      "max_absolute_mean_current_change": 0.0,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 2.765624174116965e-09,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    },
+    {
+      "grid": 2048,
+      "dt": 0.0037481259370314842,
+      "final_time": 5.0,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 0.003189804147805564,
+      "max_absolute_mean_current_change": 4.440892098500626e-16,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 1.5877654746532244e-10,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    }
+  ]
+}

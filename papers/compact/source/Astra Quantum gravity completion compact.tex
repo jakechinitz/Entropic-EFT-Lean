@@ -1,0 +1,2934 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[numbers]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+% Use stretch-only space in longtable output boxes.
+\makeatletter
+\patchcmd{\LT@output}{\vss}{\vfil}{}{\PackageError{compact}{Longtable output patch failed}{}}
+\patchcmd{\LT@output}{\vss}{\vfil}{}{\PackageError{compact}{Longtable output patch failed}{}}
+\makeatother
+\geometry{a4paper,margin=0.85in}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+% Condensed from Opus 5.5 compact.tex and synchronized with the
+% selected constructions in Astra Quantum gravity completion.tex.
+% Opus compact source SHA-256: fe19dfc062fb361f928f46b5a790746ab837f797d97632f877fc9d0015c6335e
+% Integration date: 2026-10-16. Original sources preserved.
+% Closure/empirical synchronization with merged source SHA-256:
+% bf16818bc65ee7def1e545d49deae0c4eefe062983bdba78ec4eae8d8e69bdef
+\setcounter{secnumdepth}{0}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\author{Jacob Chinitz}
+\title{Entropic Scalar EFT\\[0.3em]\large Microstructure, Gravity, and the Retained Quantum Sector\\Compact Derivation}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Spacetime is proposed as the long-wavelength description of finite local entanglement capacity. Matter commits that capacity, mass measures the commitment, and weak gravity measures its fractional depletion.
+
+Positive oriented matching gives a seven-state channel and nine-state record; single-copy routing gives $1680$ boundary states. Their closure spectrum fixes $\eta_*$ and $g_{\rm share,eff}$. Faithful renewal and a selected marked generator give an electron-calibrated cadence, $L_*=c\tau_*$ and $G_*=c^3L_*^2/\hbar$. Coherent bonds supply $\ln2$ per cut. Angular transfer and a Poisson/longest-chain volume calibration give $G_0/G_*=0.1055193m_4^{8/3}$, approximately $1.03$ at the illustrative $m_4=2.35$.
+
+Connected primitive patches realize normalized causal-triangulation histories. Coarse areas reconstruct a metric; selected DeWitt dynamics gives the Einstein quadratic response and a positive homogeneous physical inner product. A finite geometry--orbital operator preserves the native mass gap, clock, and encoded evolution under refinement. Source-aware reduction, positive reconstruction, and Gaussian elimination connect these constructions. A preregistered connected $\alpha=7$ test gives $G_{\rm vol}/G_0=1.064$ with logarithmic standard error $0.089$. Start independence, a universal propagation cone, and a common interacting Newton coefficient remain open.
+
+The matched Einstein branch gives the nonlinear static lapse equation, Newton's law, no slip, and GR post-Newtonian values. The shell model correlates charged-lepton masses. The transverse EFT gives $a_0=[g_{\rm share,eff}/(4\pi^2)]cH_0$ and the spherical exponential radial-acceleration law. Its director completion passes development comparisons and two old-disk checks; a conditional live-stock model retains substantial halo tilt for eight Gyr. Ensemble-clock release with composition-preserving allocation gives exponential depletion and a local exhaustion boundary. Direct geodesic fits of linear depletion and exponential allocation differ from $\Lambda$CDM by less than one in $\chi^2$.
+
+\end{abstract}
+
+\section{1. Inputs, Claims, and Logical Grades}
+
+The derivation begins only after five theory-defining inputs are fixed:
+\begin{enumerate}
+\item \textbf{Finite local capacity.} The vacuum has a bounded local budget of entanglement.
+\item \textbf{Information--geometry equivalence.} Geometry is the continuum description of that substrate; in the weak field the potential is the fractional deficit of available capacity.
+\item \textbf{Mass--entropy equivalence.} Matter is localized committed capacity and
+\[
+ m(\ell)=\kappa_m(\ell)\,\Delta S.
+\]
+For an elementary fermionic exclusion, $\Delta S_f=\ln2$.
+\item \textbf{Many-Pasts.} One realized present is supported by the decoherent past histories compatible with its physical records. Laboratory probabilities remain the ordinary Born probabilities of the retained quantum sector.
+\item \textbf{Tetrahedral UV architecture.} The minimal three-dimensional volumetric cell is tetrahedral; a shared face begins with two primitive half-integer slots, compared by positive oriented matching. Four relational ports draw from one single-copy channel family, and the two global orientations are distinct.
+\end{enumerate}
+
+Faithful full-support resolution maximizes joint entropy at fixed admissibility marginals. Its temporal application is maximum caliber; finite capacity alone does not imply it. The selected realization specifies the closure coordinates, marked routing, determinant-survival action, additive charged generator, shell encoding, and invariant-speed conversion. Its spatial completion adds a coherent bond state, absolute angular transfer, event-to-volume calibration, normalized geometric packets, and choices of metric dynamics and orbital transport. Each choice enters the derivation where it is used. The broad commitments admit other realizations.
+
+Four grades track the logical status of each result. \emph{Closed} means derived within the explicitly named inputs of the relevant branch. \emph{Fixed} means no continuous phenomenological freedom remains once a named branch is adopted. \emph{Conditional} means the conclusion follows from a stated matching or completion premise. \emph{Open} means the construction is specified but a necessary microscopic, continuum, or empirical step remains.
+
+The dependency spine is
+\[
+\begin{gathered}
+\text{selected tetrahedral vertex}\ \longrightarrow\ 7+9\ \longrightarrow\ 1680
+\ \longrightarrow\ \eta_*,g_{\rm share,eff},\\
+\text{faithful renewal + selected charged action + electron}
+\ \longrightarrow\ \tau_*,\qquad L_*=c\tau_*,\\
+G_*:=c^3L_*^2/\hbar,\qquad
+\text{source map + physical matching}\ \longrightarrow\ G=G_*,\\
+\text{bond state + angular transfer + event calibration}
+\ \longrightarrow\ G_0/G_*=0.1055193\,m_4^{8/3},\\
+\text{Einstein parent + static capacity coordinate}
+\ \longrightarrow\ \Phi=\Psi,\quad \mathrm{PPN}_{\rm GR}.
+\end{gathered}
+\]
+The galactic, cluster, cosmological, and dark-energy sectors add their own premises. Covariant formulas use signature $(-,+,+,+)$ and $x^0=ct$ unless $c=1$ is explicitly stated. The causal scale $L_*$ does not by itself determine a graph bond length or a physical tetrahedron's volume.
+
+\section{2. Why the UV Pair Has Seven Transmitted States}
+
+Two cells sharing one face contribute
+\[
+\mathcal H_f=V_{j_0}\otimes V_{j_0}
+=\bigoplus_{J=0}^{2j_0}V_J.
+\]
+Orientation reversal uses the dual spin generators,
+\[
+\widetilde{\mathbf J}_R=\operatorname{Ad}_{g_{LR}}\mathbf J_R^\vee,
+\qquad J_R^{\vee a}=-(J_R^a)^T.
+\]
+These obey the same $\mathfrak{su}(2)$ algebra. After transporting the right slot into the left orientation, exact positive coherent matching is the direction-averaged Gram operator
+\[
+\mathcal G_{\rm sharp}
+=(4j_0+1)\int\frac{d\Omega_{\mathbf n}}{4\pi}
+|j_0,\mathbf n;j_0,\mathbf n\rangle
+\langle j_0,\mathbf n;j_0,\mathbf n|.
+\]
+The coherent-state resolution of the identity on the maximal coupled irrep gives
+\[
+\boxed{\mathcal G_{\rm sharp}=P_{2j_0}}.
+\]
+Thus oriented matching transmits $V_{2j_0}$, not an independently chosen alphabet.
+
+This sharp result is the endpoint of a positive finite-width family rather than an isolated projector. Subtracting the irreducible aligned-spin mismatch floor defines
+\[
+Q_f
+=\frac12\left[(\mathbf J_L-\widetilde{\mathbf J}_R)^2-2j_0I\right].
+\]
+On the coupled irrep $V_J$,
+\[
+Q_f\big|_{V_J}
+=\frac12\left[(2j_0)(2j_0+1)-J(J+1)\right]I_{V_J},
+\]
+so $Q_f\ge0$ and $\ker Q_f=V_{2j_0}$. The positive transfer
+\[
+T_w=e^{-wQ_f},\qquad w>0,
+\]
+therefore converges monotonically to $P_{2j_0}$. At the branch selected below, $j_0=3/2$,
+\[
+\boxed{Q_f=6P_0+5P_1+3P_2},
+\qquad
+\boxed{T_w=e^{-6w}P_0+e^{-5w}P_1+e^{-3w}P_2+P_3}.
+\]
+A minimal homogeneous field action on the complete pair space is
+\[
+\Gamma_f=\int d^dx\left[
+Z|\partial\Phi|^2+r\Phi^\dagger\Phi
++\kappa\Phi^\dagger Q_f\Phi
++\frac u2(\Phi^\dagger\Phi)^2\right],
+\qquad Z,\kappa,u>0.
+\]
+Writing $\rho_J$ for the occupation of $V_J$, its potential is
+\[
+V=r\rho+\frac u2\rho^2+6\kappa\rho_0+5\kappa\rho_1+3\kappa\rho_2.
+\]
+For $r<0$ the unique support of the homogeneous minimum is
+\[
+\boxed{\rho_3=-\frac ru,\qquad \rho_0=\rho_1=\rho_2=0},
+\]
+and the orthogonal fluctuations have positive relative masses
+\[
+\boxed{m_{0|3}^2:m_{1|3}^2:m_{2|3}^2=6:5:3}.
+\]
+Exact coherent matching selects the maximal channel, which is also the unique homogeneous phase of the minimal positive mismatch action. A more fundamental host vertex must reproduce this ordering or pass the corresponding reduced-Hessian inequalities.
+
+The retained marked response consists of one present and one history vector strand. In three spatial dimensions a vector is $V_1$, so
+\[
+\mathcal H_{\rm mark}=V_1^P\otimes V_1^H
+=V_0\oplus V_1\oplus V_2,
+\qquad \dim\mathcal H_{\rm mark}=9.
+\]
+Maximal fusion of two primitive $V_j$ slots leaves the complement
+\[
+Q(j)=\left(V_j\otimes V_j\right)\ominus V_{2j}
+=\bigoplus_{J=0}^{2j-1}V_J.
+\]
+Both decompositions are multiplicity-free, hence
+\[
+\mathcal H_{\rm mark}(s)\cong Q(j)
+\Longleftrightarrow 2s=2j-1
+\Longleftrightarrow
+\boxed{j=s+\frac12}.
+\]
+With the independently fixed spatial-vector response $s=1$,
+\[
+\boxed{j_0=\frac32},\qquad
+\boxed{V_{2j_0}=V_3},\qquad
+\boxed{|M|=7}.
+\]
+The full pair space has dimension $16=7+9$. In the selected sharp reversible vertex, unitarity fixes the retained output to the orthogonal complement:
+\[
+U_{\rm sharp}|\psi\rangle
+=F_3P_3|\psi\rangle|0\rangle_R
++|\varnothing\rangle L|\psi\rangle,
+\]
+with
+\[
+L^\dagger L=P_0+P_1+P_2,
+\qquad
+U_{\rm sharp}^\dagger U_{\rm sharp}=P_3+P_0+P_1+P_2=I_{16}.
+\]
+Therefore the seven-state link and nine-state marked record are complementary outputs of one reversible pair map. The hard-core flags and detailed routing are selected microscopic structure of the displayed vertex; the $7+9$ carrier incidence is forced inside that vertex.
+
+The equal normalization of the retained nine-state carrier also removes the finite matching width in the minimal reversible dilation. At finite $w$, the complementary squared amplitudes on the nonmaximal blocks are
+\[
+\ell_0^2=1-e^{-6w},\qquad
+\ell_1^2=1-e^{-5w},\qquad
+\ell_2^2=1-e^{-3w}.
+\]
+The marked vertex has one common Gram normalization,
+\[
+G_{\rm mark}=I_9=P_0+P_1+P_2.
+\]
+Without inserting compensating $J$-dependent couplings, exact identification of this marked carrier with the canonical environment therefore requires
+\[
+\boxed{w\to\infty,\qquad T_w\to P_3,\qquad I-T_w\to P_0+P_1+P_2}.
+\]
+Thus the sharp $7+9$ split is selected within the minimal equal-weight reversible incidence; a finite physical width would define a different microscopic vertex with additional block-dependent structure.
+
+The four faces are distinguishable ports drawing from one single-copy fermionic channel family, $n_m\in\{0,1\}$. Two ports cannot display the same $m$ because that would require $n_m=2$. Hence the face assignment is injective and ordered. Including the two global orientations,
+\[
+\boxed{\Omega_{\rm tet}=2P(7,4)=1680},
+\qquad
+\boxed{g_{\rm share,max}=\ln1680=7.42654907240}.
+\]
+Full use of the fixed seven-letter alphabet also forces the unconditioned prior to be uniform, because $H(\mu)\le\ln7$ with equality only for $\mu(m)=1/7$.
+
+\paragraph{Resulting branch constraints.}
+Within the selected sharp reversible incidence, the chain
+\[
+d=3\to V_1\to j_0=\tfrac32\to V_3\to7\to 1680
+\]
+contains no continuous parameter and uses no smallest-spin axiom. A different microscopic vertex would define a different discrete branch; the nearby branch audit is therefore a model comparison, not a continuous fit.
+
+\section{3. Exact Admissibility Closure and the Effective Entropy}
+
+For a boundary state $b=(m_1,\ldots,m_4)$ with $m_i\in\{-3,\ldots,3\}$, define
+\[
+S=\sum_i m_i,
+\qquad
+\Sigma^2=\sum_i m_i^2.
+\]
+The tetrahedral normal frame obeys $\hat n_i\cdot\hat n_j=-1/3$ for $i\neq j$. For the product of four $j=3$ face states, the quantum expectation of the squared closure operator is
+\[
+\boxed{
+K^2(b)=48-\frac13(S^2-\Sigma^2)
+}
+=|\mathbf c(b)|^2+
+\sum_i\left[j(j+1)-m_i^2\right].
+\]
+Here $\mathbf c(b)=\sum_i m_i\hat n_i$. This is a \emph{soft admissibility} invariant, not the exact Gauss constraint.
+
+The maximum-entropy family at fixed quadratic closure information is
+\[
+p_\eta(b)=\frac{e^{-\eta K^2(b)}}{Z(\eta)},
+\qquad
+Z(\eta)=\sum_b e^{-\eta K^2(b)}.
+\]
+Because closure failure has three independent components, normalized isotropic evidence carries determinant factor $\eta^{3/2}$:
+\[
+\mathcal F(\eta)=\ln Z(\eta)+\frac32\ln\eta.
+\]
+Hence
+\[
+\mathcal F'(\eta)=0
+\Longleftrightarrow
+\boxed{\langle K^2\rangle_\eta=\frac{3}{2\eta}}.
+\]
+The finite spectrum is
+\[
+\begin{array}{c|cccccc}
+K^2&122/3&134/3&142/3&146/3&152/3&154/3\\ \hline
+n&96&96&96&288&192&144
+\end{array}
+\]
+\[
+\begin{array}{c|ccccc}
+K^2&158/3&54&164/3&166/3&170/3\\ \hline
+n&384&192&48&96&48
+\end{array}
+\]
+with total multiplicity $1680$. Therefore
+\[
+Z(\eta)=\sum_a n_a e^{-\eta K_a^2},
+\qquad
+\langle K^2\rangle_\eta=
+\frac{\sum_a n_a K_a^2e^{-\eta K_a^2}}
+{\sum_a n_a e^{-\eta K_a^2}}.
+\]
+Global uniqueness follows from $x_{\min}=122/3$ and $x_{\max}=170/3$. Every stationary point lies in
+\[
+\mathcal I=\left[\frac{3}{2x_{\max}},\frac{3}{2x_{\min}}\right],
+\]
+because $\mathcal F'$ is positive below and negative above this interval. The bounded-spectrum variance obeys $\operatorname{Var}(K^2)\le64$, so throughout $\mathcal I$,
+\[
+\mathcal F''\le64-\frac23x_{\min}^2=-1038.5185\ldots<0.
+\]
+Since $\mathcal F\to-\infty$ at both endpoints of $\eta\in(0,\infty)$, there is exactly one global maximum,
+\[
+\boxed{\eta_*=0.0298668443935}.
+\]
+At that point
+\[
+\mathrm{Var}_{\eta_*}(K^2)=15.6889750,
+\qquad
+\mathcal F''(\eta_*)
+=15.69-\frac{3}{2\eta_*^2}
+=-1665.9<0,
+\]
+consistent with the global uniqueness proof. The effective sharing entropy is then fixed:
+\[
+\boxed{
+g_{\rm share,eff}
+=-\sum_b p_{\eta_*}(b)\ln p_{\eta_*}(b)
+=7.41980002357.
+}
+\]
+The identity
+\[
+\eta_*\langle K^2\rangle_{\eta_*}=\frac32
+\]
+will also supply the reciprocal transverse factor $2/3$ used downstream.
+
+\paragraph{Parameter status.}
+Once the seven-state tetrahedral ensemble, the quadratic closure operator, and normalized three-component evidence are fixed, $\eta_*$ and $g_{\rm share,eff}$ are evaluations of a finite spectrum. No phenomenological coefficient remains in this step.
+
+\section{4. Faithful Histories Force Renewal}
+
+The closure calculation fixes the one-time marginal $p_*=p_{\eta_*}$. For any joint law $P_n$ with those marginals,
+\[
+D_{\rm KL}(P_n\Vert p_*^{\otimes n})=nH(p_*)-H(P_n)\ge0,
+\]
+with equality only for the product law. Here $D_{\rm KL}$ is the Kullback--Leibler divergence. Applying faithful resolution to every finite temporal block therefore selects independent records. Equivalently, faithful full-support resolution applied to paths requires maximal entropy rate. For any stationary process,
+\[
+h_\mu
+=\lim_{n\to\infty}H(B_0|B_{-1},\ldots,B_{-n})
+\le H(B_0)=g_{\rm share,eff}.
+\]
+Equality holds only if $B_0$ is independent of its entire past. Stationarity then makes the process i.i.d. with the same marginal at every step. For a stationary Markov process,
+\[
+H(B_{t+1}|B_t)
+=H(B_{t+1})-I(B_t;B_{t+1})
+\le g_{\rm share,eff},
+\]
+with equality iff $I(B_t;B_{t+1})=0$. Therefore
+\[
+\boxed{K_*(b,b')=p_{\eta_*}(b')}.
+\]
+Finite capacity by itself does not imply renewal; faithful full-support resolution does.
+
+For seven channel layers with fixed marginal entropy $g_{\rm share,eff}$,
+\[
+H(B_{-3},\ldots,B_3)
+=7g_{\rm share,eff}-\Delta,
+\qquad \Delta\ge0.
+\]
+Within the adopted support-to-mass map, correlation reduces support and raises the recurrence mass, $m\propto e^\Delta$. Fermionic exclusion caps the occupied channel count at seven. Thus the lightest resolved one-bit charged branch is
+\[
+\boxed{k=7,\qquad\Delta_7=0}.
+\]
+The same no-memory endpoint is therefore selected both by maximum path entropy and by minimal recurrence mass.
+
+\section{5. Electron Scale from the Positive Marked-Transfer Spectrum}
+
+The state-weighted determinant of likelihood multiplication by $p_{\eta_*}$ on one renewed layer is
+\[
+\Delta_{\tau_p}(\mathsf R)
+=\exp\!\left(\sum_b p_b\ln p_b\right)
+=e^{-g_{\rm share,eff}}.
+\]
+Across seven independent layers,
+\[
+\boxed{r=e^{-7g_{\rm share,eff}}}.
+\]
+This is a record-conditioned geometric transfer rate, not a collision probability of two independently sampled microstates. The selected determinant-survival action assigns the positive survival transfer
+\[
+T_{\rm surv}^{(0)}=1-r,
+\]
+and hence the exact raw gap
+\[
+E_{\rm raw}^{(0)}
+=-\frac{\hbar}{\tau_*^{(0)}}\ln(1-r).
+\]
+The transverse export factor is $3/2$. Before the finite marked correction, identifying the lightest charged gap with the electron gives
+\[
+m_ec^2
+=-\frac{3\hbar}{2\tau_*^{(0)}}\ln(1-r),
+\]
+so
+\[
+\boxed{
+L_*^{(0)}=c\tau_*^{(0)}
+=-\frac32\lambda_e\ln(1-r),
+\qquad
+\lambda_e=\frac{\hbar}{m_ec}.
+}
+\]
+No measured gravitational quantity enters this calibration.
+
+The selected marked decoration reuses the closure amplitude. To include its quantum variance in a real auxiliary vector, define
+\[
+\mathbf c(b)=\sum_i m_i\hat n_i,\qquad
+\mathbf C(b)=\sqrt{\frac{K^2(b)}{|\mathbf c(b)|^2}}\,\mathbf c(b).
+\]
+Injectivity gives $|\mathbf c|^2=(4\Sigma^2-S^2)/3>0$, so $C^2=K^2$ everywhere. These are auxiliary response coordinates, not three commuting quantum-closure measurements. Tetrahedral symmetry gives
+\[
+\langle C_aC_b\rangle=\frac{\langle K^2\rangle}{3}\delta_{ab}
+=\frac{\delta_{ab}}{2\eta_*}.
+\]
+The Gaussian identity
+\[
+e^{-\eta_*C^2/2}
+=\int\frac{d^3\xi}{(2\pi)^{3/2}}
+\exp\!\left[-\frac12\xi^2+i\sqrt{\eta_*}\,\xi_aC_a\right]
+\]
+makes the amplitude-level incidence $\sqrt{\eta_*}$. For each unordered occupied pair $e=(m,m')$, the two directed scalar returns have row operator
+\[
+R_e=\frac27\left(\langle m\to m'|+\langle m'\to m|\right),
+\]
+so
+\[
+B_eB_e^\dagger
+=2\eta_*\left(\frac27\right)^2
+=\frac{8\eta_*}{49}\equiv u.
+\]
+The canonical unitary dilation contributes $(1-u)^{1/2}$ per pair. Seven channels contain $\binom72=21$ unordered pairs. Present and history each carry three first excitations, giving nine marked states. Therefore
+\[
+\boxed{
+\zeta_*
+=9e^{-g_{\rm share,eff}}
+\left(1-\frac{8\eta_*}{49}\right)^{21/2}
+=0.005123584484947.
+}
+\]
+The finite transfer graph then gives
+\[
+Z_\mu=1+\zeta_*,
+\qquad
+\boxed{Z_e=(1+\zeta_*)(1+7\zeta_*^2)},
+\qquad
+Z_{\tau,2}=1+\frac27\zeta_*.
+\]
+The trace fixes motif weights, not their attachment to charged evolution. With $w=\zeta_*/9$, the electron weights $1,w,w^2,w^3$ have multiplicities $1,9,567,5103$ and sum to $Z_e$. The selected additive-generator rule assigns each weight as an activity: if $a=-(3/2)\ln(1-r)>0$ and $n_e$ is the occupied-sector projector,
+\[
+T(s+t)=T(s)T(t),\qquad T(s)=e^{-as n_e},
+\qquad T_e=e^{-aZ_en_e}.
+\]
+Consequently $E_e=-(3\hbar/2\tau_*)Z_e\ln(1-r)$. The electron fixes $\tau_*$; the continuum speed defines $L_*=c\tau_*$. The finite orbital construction in Section~14.6 preserves this rest gap and position coherence while coupling matter to changing geometry. Its common propagation cone across physical geometries and species, including radiative corrections, remains a continuum requirement. The calibrated scales are
+\[
+\boxed{
+L_*=Z_eL_*^{(0)}
+=-\frac32Z_e\lambda_e
+\ln\!\left(1-e^{-7g_{\rm share,eff}}\right)
+=1.6162537024\times10^{-35}\ {\rm m}.
+}
+\]
+The induced gravitational scale is
+\[
+\boxed{
+G_*:=\frac{c^3L_*^2}{\hbar}
+=\frac94\frac{\hbar c}{m_e^2}
+Z_e^2\ln^2\!\left(1-e^{-7g_{\rm share,eff}}\right)
+=6.6742890813\times10^{-11}\ \mathrm{SI},
+}
+\]
+which is $-0.073\sigma$ from CODATA 2022. The computation uses $\hbar=h/(2\pi)$ with exact SI $h$ and $c$, and the CODATA electron anchor \citep{CODATA2022Astra}.
+
+\paragraph{Finite alternative and mass minimum.}
+Within the fixed seven-channel marginals, marked vertex, and selected logarithmic generator, the KL identity and convexity make the product readout the unique mass minimum. Every $k<7$ competitor that retains the unit unmarked motif is heavier by at least a factor $1659.8886$. A second fully positive finite construction changes the result by only $7.37\times10^{-26}$ relatively, but that agreement does not select the generator: its attachment remains model data.
+
+\paragraph{Historical status.}
+The high-precision marked vertex was constructed after the residual in $G$ and the lepton residuals were known. The numerical agreement is therefore a postdiction. Its nontrivial content is that one finite marked action fixes the electron scale and two different heavier-lepton graph polynomials simultaneously; it is not a blind prediction of $G$.
+
+\section{6. Charged-Lepton Shells as a Correlated Check}
+
+The electron is the $N=0$ charged one-bit ground defect. The generation test deletes $N$ labels and studies the closure response of the remaining alphabet. For $p_{N,\eta}\propto e^{-\eta K_N^2}$,
+\[
+I_N(\eta)=\operatorname{Var}_{N,\eta}(K_N^2)=\langle s_N|s_N\rangle,
+\quad
+|s_N\rangle=\sum_b\sqrt{p_{N,\eta}(b)}
+(K_N^2(b)-\langle K_N^2\rangle)|b\rangle.
+\]
+Every four-label alphabet has $I_3=0$: every injective assignment uses all four labels and $K^2$ is permutation-invariant. Five- and six-label alphabets retain positive dispersion. Identifying one lepton grade with each nonzero closure-response grade yields $N=0,1,2$. Excluding species built from other operators remains part of this particle identification.
+
+The mass register uses a separate specified operation: each shell copies a six-label orthonormal encoding with injective four-port assignments and two orientations,
+\[
+\Omega_1=2P(6,4)=720.
+\]
+A rank-one singlet projector alone does not select that encoding: for $|u\rangle=7^{-1/2}\sum_m|m\rangle$, all seven vectors $(I-|u\rangle\langle u|)|m\rangle$ remain nonzero. The model chooses a six-dimensional register isometry into $u^\perp$ and uses the same encoding at every shell.
+
+Under memoryless renewal, the conditional mean return time to state $b$ is $1/p_b$. A stationary choice $B\sim p$ therefore gives the exact arithmetic recurrence identity \citep{Kac1947}
+\[
+\mathbb E_B\mathbb E[T_B\mid B]=\sum_b p_b/p_b=720.
+\]
+For the full-support $N$-shell register it gives $720^N$, even for correlated stationary weights. The geometric mean of conditional mean returns is instead $e^{H_1}$, with
+\[
+\ln720-H_1\simeq0.00508\text{--}0.00782.
+\]
+Thus $720$ is an arithmetic support statistic, not an approximation to the admissibility Shannon support. Its identification with an inertial mass factor is a matching premise.
+
+For coherent marks $|J_N\rangle=\sum_{r=1}^N|a_r\rangle$, the singlet norm is $\langle J_N|u\rangle\langle u|J_N\rangle=N^2/7$. The selected orientation-summed overlap is $q_s=2/7$. One common centered Gaussian scalar fluctuation $X_s$, with variance $v_s=-2\ln q_s$, realizes the positive overlap
+\[
+\mathbb E[e^{iNX_s}]=e^{-N^2v_s/2}=q_s^{N^2}.
+\]
+Independent shell fluctuations would instead give $q_s^N$. On grades $0,1,2$, the prescribed log-overlap mass operator is
+\[
+\boxed{\widehat M=m_e\exp[\widehat N\ln720+
+\widehat N^2\ln(2/7)+\ln Z_{\widehat N}]},
+\]
+where $Z_0=1$, $Z_1=1+\zeta_*$ and $Z_2=(1+\zeta_*)(1+2\zeta_*/7)$. Its eigenvalues are
+\[
+\frac{m_\mu}{m_e}=720\frac27Z_\mu=206.768280237,
+\qquad (-0.535\sigma),
+\]
+\[
+\frac{m_\tau}{m_e}=720^2\left(\frac27\right)^4Z_\mu Z_{\tau,2}
+=3477.343310,\qquad (-0.125\sigma).
+\]
+The tau comparison is $1776.9188$ MeV against the Particle Data Group (PDG) value $1776.93\pm0.09$ MeV \citep{PDG2026Astra}. Within the specified menu of $43$ rationals in $[0,1]$ with denominator at most eleven, only $2/7$ survives the one-standard-deviation tau window; $3/11$ gives $-1.436\sigma$. This finite menu has no probability measure over microscopic models.
+
+Section~8 embeds $\widehat M$ in a selected covariant matter action. Section~14.6 supplies a finite orbital kinetic operator and native clock for one marked gap, with exact refinement on its encoded subspace. Extending that construction to the shell multiplets, physical fermion pole masses, and radiatively stable ratios remains open. Composite hadrons require a dressed, vacuum-subtracted quantum-chromodynamic (QCD) entanglement budget, $m_H=\kappa_m(\ell_H)S_{\rm ent,H}^{\rm dressed}$; neutrino and quark assignments remain open.
+
+\section{7. Edge Stiffness and the Exact Source Map}
+
+The tetrahedral identity
+\[
+\sum_{i=1}^4\hat n_i\hat n_i^{\mathsf T}=\frac43I_3
+\]
+gives the transverse fraction $2/3$ and hence
+\[
+\boxed{J_{\rm bare}=\frac23\eta_*},
+\qquad
+\boxed{J_{\rm eff}^{\rm tree}=\frac{J_{\rm bare}}{3}=\frac{2\eta_*}{9}}.
+\]
+A minimal finite-return completion takes seven sector-diagonal returns plus one projected singlet,
+\[
+\Sigma_{\rm ret}=7+\frac29=\frac{65}{9},
+\]
+so
+\[
+J_{\rm eff}^{\rm ren}
+=\frac{J_{\rm eff}^{\rm tree}}
+{1+J_{\rm eff}^{\rm tree}\Sigma_{\rm ret}}
+\simeq0.00633348.
+\]
+This loop operator is conditional: its algebraic resummation is fixed once the return operator is chosen, but an independent microscopic graph derivation of the relative diagonal/singlet weights remains an audit task. It cancels from the source-to-stiffness ratio below.
+
+Reading the lattice weight as a Euclidean action and choosing the static graph convention $\Delta V_4=L_*^4/c$ (time in seconds) gives the continuum occupancy stiffness
+\[
+\gamma_Q=\frac{4\hbar c}{3L_*^2}J_{\rm eff}^{\rm ren}.
+\]
+With horizon field normalization $S=\pi Q_{\rm occ}$,
+\[
+\boxed{
+\gamma
+=\frac{4\hbar c}{3\pi^2L_*^2}J_{\rm eff}^{\rm ren}.
+}
+\]
+
+The source side closes independently. Excluding one of seven admissible labels removes exactly one-seventh of the isotropically averaged local partition weight, giving
+\[
+\Delta S_{\rm def}^{\rm ann}=\ln\frac76.
+\]
+This is the annealed benchmark. A fixed excluded face-label type costs $-\ln P(A_{\ell f})$; averaging those costs differs from the benchmark by $5.7353\times10^{-6}$ nats. The face marginal itself is not isotropic to that precision: $\max_m|p_m-1/7|=0.00414405$.
+The on-site Green function of the four-valent diamond adjacency is the exact lattice invariant
+\[
+G_{\rm tet}(0)
+=\frac{3\Gamma(1/3)^6}{2^{14/3}\pi^4}
+=0.4482203943883814\ldots.
+\]
+The same tetrahedral frame gives a local transverse response $G_\perp=(2/3)G_{\rm tet}(0)$. Defining defect-entropy density by
+\[
+\sigma_{\rm def}=\frac{\rho}{\kappa_m(L_*)},
+\]
+the Green-matched continuum equation is
+\[
+\boxed{
+\nabla^2\delta S
+=-\frac{3L_*}{4G_{\rm tet}(0)}\sigma_{\rm def}
+}
+\]
+and therefore
+\[
+\boxed{
+\frac{\kappa}{\gamma}
+=\frac{3L_*}{4G_{\rm tet}(0)\kappa_m(L_*)}.
+}
+\]
+At the cutoff,
+\[
+\kappa_m(L_*)=\frac{\hbar}{cL_*\ln2}.
+\]
+The source theorem and bridge give, in fixed entropy units,
+\[
+G=G_*\frac{S_0}{S_\infty},\qquad
+S_0:=\frac{3\ln2}{32\pi G_{\rm tet}(0)}=0.0461482516\ldots.
+\]
+The selected Einstein/horizon matching imposes $S_\infty^{\rm cell}=S_0$, hence $G=G_*$. A physical background $\beta S_0$ at fixed source coefficients gives $G_*/\beta$. Entropy-unit changes $S'=bS$, $\gamma'=\gamma/b^2$, $\kappa'=\kappa/b$ preserve $\kappa/(\gamma S_\infty)$. Neither this invariance nor the loop cancellation derives the background matching. The graph volume $\Delta V_4=L_*^4/c$ and the angular model's $G_0$ require a common state, volume operator, and action normalization to determine an interacting $G_R$.
+
+Source reduction must retain the complete generating functional. For the quadratic action $\tfrac12x^TAx+x^TBy+\tfrac12y^TDy-j_x^Tx-j_y^Ty$, $D>0$, integrating out $y$ gives
+\[
+\begin{aligned}
+A_{\rm eff}&=A-BD^{-1}B^T,&j_{\rm eff}&=j_x-BD^{-1}j_y,\\
+c_{\rm eff}&=-\tfrac12j_y^TD^{-1}j_y+\tfrac12\log\det D.
+\end{aligned}
+\]
+Source derivatives include $c_{\rm eff}$ and every source-dependent coefficient. Sequential and joint elimination agree. Lean verifies the square-completion algebra; Gaussian integration uses the specified measure. The same requirement applies to source forces, clock response, and curvature normalization.
+
+\section{8. Einstein Gravity Is the Parent of the Closed Static Branch}
+
+The ordinary longitudinal branch has no independently varied scalar-gravity action. Its parent is Einstein--Hilbert plus minimally coupled matter,
+\[
+I_0[g,\psi]
+=\frac{c^3}{16\pi G}\int d^4x\sqrt{-g}(R-2\Lambda)
++I_{\rm GHY}+I_{\rm matter}.
+\]
+Here $I_{\rm GHY}$ is the Gibbons--Hawking--York boundary term.
+In static Newtonian gauge,
+\[
+ds^2
+=-\left(1+\frac{2\Phi}{c^2}\right)(dx^0)^2
++\left(1-\frac{2\Psi}{c^2}\right)\delta_{ij}dx^idx^j,
+\]
+expansion through quadratic order gives
+\[
+I_{0,\rm scal}^{(2)}
+=\int dt\,d^3x
+\left[
+\frac{(\nabla\Psi)^2-2\nabla\Phi\cdot\nabla\Psi}{8\pi G}
+-\rho\Phi
+\right].
+\]
+Varying the lapse and spatial scalar gives
+\[
+\nabla^2\Psi=4\pi G\rho,
+\qquad
+\nabla^2(\Phi-\Psi)=0.
+\]
+For an isolated solution with regular interior matching and no independent harmonic boundary data, asymptotic flatness gives
+\[
+\boxed{\Phi=\Psi},
+\]
+and eliminating $\Psi$ gives the Newton action
+\[
+\boxed{
+I_{\rm Newton}[\Phi]
+=\int dt\,d^3x
+\left[-\frac{(\nabla\Phi)^2}{8\pi G}-\rho\Phi\right].
+}
+\]
+
+The static capacity coordinate is
+\[
+I_{\rm cap}^{\rm static}
+=\int dt\,d^3x
+\left[-\frac\gamma2(\nabla\delta S)^2+\kappa\rho\,\delta S\right].
+\]
+The field redefinition
+\[
+\boxed{
+\delta S=-\frac{2S_\infty}{c^2}\Phi
+}
+\]
+turns this into a field-independent multiple of $I_{\rm Newton}$ provided
+\[
+\boxed{
+G=\frac{c^2\kappa}{8\pi\gamma S_\infty}.
+}
+\]
+Explicitly,
+\[
+I_{\rm cap}^{\rm static}=Z_S I_{\rm Newton},
+\qquad
+Z_S=\frac{2\kappa S_\infty}{c^2}.
+\]
+Thus $\delta S$ is a coordinate on the reduced Einstein constraint surface, not an extra radiative scalar.
+
+\paragraph{Why the ordinary branch cannot be a second canonical scalar.}
+The bridge is linear in the matter source: $\delta S=O(\rho)$ and $\Phi=O(\rho)$. By contrast, the canonical stress of an independent scalar begins quadratically,
+\[
+T_{\mu\nu}^{(\delta S)}\sim
+\partial_\mu\delta S\,\partial_\nu\delta S=O(\rho^2),
+\]
+so it cannot be the origin of the required $O(\rho)$ gravitational response. Nor is an explicit trace coupling $\delta S\,T^\mu{}_{\mu}$ acceptable as the ordinary source: it would fail to source classical radiation in the same universal way and would duplicate the metric response already present in the Einstein equation. The full stress tensor must therefore enter through the one physical metric.
+
+Several simple auxiliary completions fail these requirements. An algebraic Arnowitt--Deser--Misner (ADM) multiplier $\lambda(N^2-q)$ gives $\lambda=0$ when $q$ has no independent bulk dynamics, so it merely renames the lapse. Supplying $q$ with genuine kinetic or higher-derivative dynamics introduces an additional scalar/preferred-foliation mode and a new stability audit. Scalar--tensor or disformal matter coupling likewise adds at least one scalar and generically introduces fifth-force, slip, and PPN obligations absent from the closed branch. Hence, under the stated requirements of universal stress-tensor coupling, no extra radiative degree of freedom, and the exact weak-field action identity, the metric-only/composite-capacity route is the minimal parent. This is a minimality result for the ordinary branch, not a proof that every substrate excitation is metric-only.
+
+After imposing the physical canonical matching of Section~7,
+\[
+\frac{\kappa}{\gamma}
+=\frac{3L_*}{4G_{\rm tet}(0)\kappa_m(L_*)},
+\quad
+\kappa_m(L_*)=\frac{\hbar}{cL_*\ln2},
+\quad
+S_\infty^{\rm cell}=\frac{3\ln2}{32\pi G_{\rm tet}(0)},
+\]
+so the weak-field expression collapses identically to
+\[
+\boxed{
+G=\frac{c^3L_*^2}{\hbar}=G_*.
+}
+\]
+This is one conditional normalization chain: the electron transfer and speed identification fix $L_*$, while the physical matching sets $G=G_*$. The source representation checks that same matching rather than determining it independently.
+
+For a point source,
+\[
+\nabla^2\delta S=-\frac{\kappa}{\gamma}\rho
+\quad\Rightarrow\quad
+\delta S(r)=\frac{\kappa M}{4\pi\gamma r},
+\]
+so the bridge gives
+\[
+\boxed{g(r)=\frac{GM}{r^2}}.
+\]
+Because the parent remains Einstein gravity, the baseline vacuum PPN values are
+\[
+\boxed{\gamma_{\rm PPN}=\beta_{\rm PPN}=1}
+\]
+with the remaining standard PPN parameters zero under the usual assumptions.
+
+\paragraph{Coupled matter and gravity on the selected branch.}
+For the shell multiplet $\Psi=(\psi_0,\psi_1,\psi_2)^T$, a minimal leading completion is
+\[
+I_{\rm matter}=\int d^4x\sqrt{-g}\,
+\bar\Psi(i\hbar c\,\gamma^ae_a{}^\mu D_\mu-c^2\widehat M)\Psi,
+\qquad \{\gamma^\mu,\gamma^\nu\}=-2g^{\mu\nu}I
+\]
+for the $(-,+,+,+)$ signature and displayed $i\gamma^\mu D_\mu$ convention. Each mass eigenstate then has $E_N^2=c^2\mathbf p^2+m_N^2c^4$, while metric variation sources gravity with the same mass operator. This continuum action specifies the relativistic benchmark. The cochain operator in Section~14.6 realizes a finite positive-energy orbital sector and native mass clock. Coupling fermions through the frame oriented by the record order makes the refreshed lift bit inert. Chiral species, a universally selected common speed, and radiative stability remain open.
+
+\section{9. Carrier-Resolved Galactic Branch}
+
+The galactic excess is a coarse response of retained source records. Let $e_P$ be sharp selectors in the retained label algebra, with $e_Pe_Q=\delta_{PQ}e_P$ and $\sum_Pe_P=1$. For support- and source-integral-preserving conditional expectations $E_P$,
+\[
+\Pi_PX=E_P(e_PX),\qquad \Pi_P^2=\Pi_P,\qquad \Pi_P\Pi_Q=0\ (P\ne Q).
+\]
+Active labels form an antichain. Nested expectations obey $E_PE_A=E_P$, and descendant selectors sum to $e_P$. A galaxy and its stars therefore receive only one transverse allocation; the full stress enters Einstein gravity once.
+
+Spatial reconstruction $C$ is a separate positive, mass-preserving map. Its profiles may overlap; smooth $\chi_P\ge0$, $\sum_P\chi_P=1$, weight the constitutive energies. They are not label projectors. Varying the reconstructed source gives the volume-weighted adjoint force $C^\dagger$; moving profiles also contribute derivatives of $C$ and $\chi_P$. The microscopic carrier selection, thermal Hamiltonian, and metric contact remain matching premises.
+
+\subsection{9.1 Acceleration scale and RAR}
+
+The response cell is the tilt mode of the transverse frame. The projected baryonic field is its restoring stiffness and its inertia lever is $\ell=g_{\rm share,eff}\,c/H$, the apparent-horizon radius multiplied by the sharing entropy of the cell, so $\omega=\sqrt{|\nabla\Phi_b|/\ell}$. Thermalized in the apparent-horizon bath at $k_BT_H=\hbar H/2\pi$, the mode has the gap $x=\hbar\omega/k_BT_H=2\pi\omega/H=\sqrt{|\nabla\Phi_b|/a_0}$ with
+\[
+\boxed{
+\epsilon:=\frac{g_{\rm share,eff}}{4\pi^2}=0.187945\ldots,
+\qquad
+a_0=\epsilon cH_0.
+}
+\]
+The standard linear-depletion fit gives $H_0=68.458\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$ and $a_0=1.25005\times10^{-10}\,\mathrm{m\,s^{-2}}$. The exponential-allocation fit with massless neutrinos, linear lensing and a low-redshift supernova offset gives $H_0=68.93885586416\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$ and $a_0=1.25883\times10^{-10}\,\mathrm{m\,s^{-2}}$. The Planck reference value gives $1.23073\times10^{-10}\,\mathrm{m\,s^{-2}}$. For a lever in apparent-horizon radii the factor $4\pi^2$ is the square of the $2\pi$ in $T_H$. The tilt-mode identification, its horizon thermalization, and the lever are the matching inputs of the radial-acceleration relation. The lever coefficient is the ratio of the register enthalpy, $g_{\rm share,eff}k_BT$ at zero chemical potential, to the oriented record of entropy $s$ that a static frame holds at the Unruh temperature $k_BT_U=\hbar g\cos\delta/2\pi c$ of the projected baryonic field, whose free energy $-s\,k_BT_U$ pulls the frame toward the field. The closure condition $\eta_*\langle K^2\rangle=3/2$ gives the transverse pair that the tilt rotates exactly one nat, so the coefficient is $g_{\rm share,eff}$, and the RAR scale requires $0.85<s<1.39$. The Unruh reading of the baryonic part of the field is the premise. The mode is a collective excitation of the frame and carries no committed defect, so ordinary matter keeps equal inertial and gravitational mass and test-body free fall is unchanged. The occupation is a property of the equilibrium state, reached through the stock contacts, and requires no completed oscillation of a mode whose period near $a_0$ is about $4\pi^2/H$; the drift of $H$ during that period would appear as a lag of $a_0(z)$ behind $H(z)$. \citet{Milgrom1999} related the MOND acceleration scale to the de Sitter horizon through the Unruh temperature of accelerated observers, with a different interpolation; the tilt mode gives the exponential interpolation and the coefficient $g_{\mathrm{share,eff}}/4\pi^2$.
+
+For one active carrier, $\Phi_b$ denotes the projected baryonic potential satisfying $\nabla^2\Phi_b=4\pi GC\Pi_P\rho_b$. The total potential is the full Einstein potential $\Phi_N[\rho_b]$ plus the carrier excesses $\sum_P\phi_{\perp,P}$. Define
+\[
+x=\sqrt{\frac{|\nabla\Phi_b|}{a_0}}.
+\]
+The cell Hamiltonian $H_{\rm cell}=\hbar\omega:N:=k_BT_Hx:N:$ has free energy
+\[
+F_{\rm th}=k_BT_H\ln(1-e^{-x}),
+\qquad
+\frac{\partial F_{\rm th}}{\partial E}=n_B(x)=\frac1{e^x-1}.
+\]
+The deep regime is the equipartition limit $n_B\simeq1/x$ of the mode, and the Newtonian regime is its Wien suppression.
+To make the response conservative for nonspherical systems, set
+\[
+z=\frac{|\nabla\Phi_b|^2}{a_0^2},
+\qquad
+\mathcal Q_\perp(z)=\int_0^z\frac{ds}{e^{s^{1/4}}-1},
+\]
+and use the quasilinear modified Newtonian dynamics (QUMOND) auxiliary action. Variation gives
+\[
+\boxed{
+\nabla^2\phi_\perp
+=\nabla\cdot\left[n_B(x)\nabla\Phi_b\right].
+}
+\]
+This slowly varying source-direction truncation fails across a thin-disk midplane. A nematic director $\hat{\mathbf e}\equiv-\hat{\mathbf e}$ gives $\mathbf J_\perp=n_B(\widetilde x)(\hat{\mathbf e}\cdot\nabla\Phi_b)\hat{\mathbf e}$, with $\widetilde x=(|\hat{\mathbf e}\cdot\nabla\Phi_b|/a_0)^{1/2}$. The selected stiffness is $Z_\theta=2c_\theta\Phi_R^2$, where $\Phi_R$ is the carrier's stock potential; the tested baryonic proxy uses $2\Phi_b^2$. Spherical exactness fixes the saddle-splay coefficient to unity:
+\[
+\mathcal S[\hat{\mathbf e}]=|\partial\hat{\mathbf e}|^2+
+\partial_i\hat e^a\partial_a\hat e^i-(\nabla\cdot\hat{\mathbf e})^2
+=(\lambda_1-\lambda_2)^2+|(\hat{\mathbf e}\cdot\nabla)\hat{\mathbf e}|^2.
+\]
+Here $\lambda_{1,2}$ are the principal splays. For a radial director, $\mathcal S=0$ and the transverse elastic variation vanishes even with angularly varying stiffness. Nonspherical thermal forcing still requires a director solution. The baryonic-proxy auxiliary equation is $\nabla^2\phi_\perp=\nabla\cdot\mathbf J_\perp+\Phi_b\mathcal S$; varying the stock stiffness instead gives the mechanical contribution $\nabla^2U_\theta=c_\theta\Phi_R\mathcal S$. A common stock/polarization dynamics and embedded-carrier potential reference remain completion data.
+
+For the unprojected spherical target,
+\[
+\boxed{
+ g_{\rm obs}
+=\frac{g_{\rm bar}}
+{1-\exp[-\sqrt{g_{\rm bar}/a_0}]}
+}
+\]
+with
+\[
+g_{\rm obs}\to g_{\rm bar}\quad(g_{\rm bar}\gg a_0),
+\qquad
+g_{\rm obs}\to\sqrt{a_0g_{\rm bar}}\quad(g_{\rm bar}\ll a_0),
+\]
+and therefore $v^4\to GM_ba_0$.
+
+\subsection{9.2 Metric, lensing, and local limit}
+
+The leading quasistatic no-slip contact is
+\[
+\boxed{
+h_{\mu\nu}^\perp
+=-\frac{2\phi_\perp}{c^2}
+(\bar g_{\mu\nu}+2u_\mu u_\nu),
+}
+\]
+so $\Delta\Phi_\perp=\Delta\Psi_\perp=\phi_\perp$. Dynamics and lensing infer the same excess. In the local source-direction truncation,
+\[
+\rho_{\rm lens}
+=\rho_b+\frac1{4\pi G}\nabla\cdot[n_B(x)\nabla\Phi_b].
+\]
+For a deep-regime point mass, $g=\sqrt{GMa_0}/r$ and
+\[
+\alpha_\infty=\frac{2\pi\sqrt{GMa_0}}{c^2}.
+\]
+
+Carrier nesting makes the Milky Way the active transverse carrier in the Solar System, while the Sun and planets remain resolved Einstein descendants. Hence at leading quasistatic order
+\[
+\boxed{Q_2^{\odot,\perp}=0},
+\]
+and wide binaries remain Newtonian apart from the smooth Galactic tide. Nonlinear covariance of the record projector remains open.
+
+\paragraph{Positive stock and retained angular information.}
+For stock mass $M_R>0$ and a finite-budget target $\varrho_{\rm tar}$ of that total mass, the admissible target is
+\[
+\rho_R^{\rm adm}=\frac{M_R[\varrho_{\rm tar}]_+}{\int[\varrho_{\rm tar}]_+d^3x}.
+\]
+It preserves mass and positivity. For nonincreasing spherical baryonic density and $M_R\ge M_b$, its total-force correction is at most $1.5311\times10^{-4}$. Positive spherical targets admit circular-shell kinetic equilibria; collective stability and formation require further analysis. Kinetic stock and director polarization must share one force law without adding a second full halo.
+
+A finite radial update $w_{ia}^+=(1-s)w_{ia}+sp_i m_a$, with $m_a=\sum_iw_{ia}$, $p_i\ge0$, $\sum_ip_i=1$, and $0\le s\le1$, preserves positivity, mass, and angular-bin marginals while contracting radial deviations. Eight Lean theorems verify these identities. The physical target, rate, and energy transfer remain inputs. Such relaxation can retain orientation; gravitational torques still evolve it.
+
+\paragraph{Stock selection.}
+The response cell has gap $\Theta x$, with $\Theta=k_BT_H$, and mean occupation $n_*=1/(e^x-1)$. With the stock carrying the response, the occupation is the stock field in baryonic units, $n=g_R/g_b$, and the excess free energy of a cell is $\Theta D(n\Vert n_*)$, with
+\[
+D(n\Vert n_*)=n\ln\frac{n}{n_*}-(1+n)\ln\frac{1+n}{1+n_*}\ \ge0 .
+\]
+Equipartition with the excess field, $\mathcal N\Theta=g_b^2n_*(1+n_*)/4\pi G$, makes the Gaussian limit of $\int\mathcal N\Theta D\,d^3x$ equal to the field mismatch $(8\pi G)^{-1}\int|\nabla\Phi_R-\mathbf J|^2$. Local detailed balance with the horizon bath suppresses an uphill orbit change by $\exp(-|\Delta F|/\Theta)$ with $|\Delta F|/\Theta\gg1$, so momentum-conserving pair contacts proceed when they lower the orbit-averaged mismatch. The cell energy $\mathcal N\Theta xn_*$ pays their kinetic change; per unit supported stock it tends to $V_f^2$ in the deep regime. The budget-constrained minimiser is the exponential law inside the budget edge with a Keplerian exterior. Spherical runs from abundance-matched NFW stock lie 0.009--0.032\,dex rms from the law over 5--200\,kpc for Milky-Way models after 8--12\,Gyr, against 0.10\,dex without contacts, and 0.007--0.05\,dex for dwarf and massive-spiral models. The identification $n=g_R/g_b$, equipartition, a pair-kinetic contact rate proportional to local stock density and pair speed, and the record identification of Section~10.2, which coincides with the retained carriers of the release sector, are premises; a microscopic exchange operator and cosmological assembly remain open. Lean checks the relative-entropy positivity, equipartition matching, zero-temperature limit, finite H-theorem, pair-impulse conservation and constrained minimiser.
+
+\paragraph{Resolved-source Milky Way test.}
+The local contact gives $1792.2\ \mathrm{km^2\,s^{-2}}$ at $(8.17,1.055)\,\mathrm{kpc}$ for the flat-inner-disk model of \citet{Wang2026MW}, against $1294.8\pm54.0$. With an RAR-consistent disk the director gives $1401$ or $1302$, depending on stellar surface density; its 43-point $\chi^2=135.7$ or $139.5$ matches NFW controls near $135$. These are development postdictions. Old-disk tests in NGC~6946 and NGC~628 \citep{Aniyan2021,Aniyan2018} give rotation/dispersion mass agreement at $1.0\sigma$ and $0.3\sigma$, versus $2.6\sigma$ and $2.9\sigma$ for QUMOND; a maximal disk with a round halo also passes.
+
+The shape compilation favors near-roundness after allowing inter-study scatter. The aligned potentials erase stellar-debris tilt \citep{DillamoreSanders2025} in $0.15$--$0.25$ Gyr. Three conditional live-stock realizations with 131072 samples, self-gravity and reciprocal torque on a rigid reacting disk retain stock tilts $39.6$--$42.4^\circ$ and stellar tilts $21.4$--$22.3^\circ$ over $10$--$40\,$kpc, averaged over $7.5$--$8\,$Gyr. The matched spherical $6$--$60\,$kpc cut gives $22.6$--$24.7^\circ$ for stars. Initial $43^\circ$ stock tilt, quadrupole and orbit population specify the candidate; $a_0$ is unchanged. The $8\%$ precession difference is relative to its construction rate. Relative-axis drift, force convergence, disk bending, coupled director response, and formation remain open.
+
+\section{10. Causal Transport and Clusters}
+
+\subsection{10.1 Transport}
+
+The telegrapher completion preserves the static limit:
+\[
+\tau_0\ddot\phi_\perp+\dot\phi_\perp-D\nabla^2\phi_\perp=-4\pi GD\rho_\perp,
+\qquad D/\tau_0=c^2,\quad\tau_0^{-1}=H_0.
+\]
+Its Fourier response and poles are
+\[
+F(\omega,k)=\frac{Dk^2}{Dk^2-\tau_0\omega^2-i\omega},\qquad
+s_\pm=\frac{-1\pm\sqrt{1-4\tau_0Dk^2}}{2\tau_0}.
+\]
+For $k>0$, $F(0,k)=1$ and both poles decay; $k=0$ includes a neutral mode. The characteristic speed is $c$. At $\omega\sim vk$, inertial and damping corrections are $O(v^2/c^2)$ and $O[v/(Dk)]$. Underdamped transients decay on $2H_0^{-1}$, so the quasistatic branch requires explicit initial data.
+
+At a common temperature, symmetrized noise and dissipative response obey
+\[
+N(\omega)=\hbar\coth\!\left(\frac{\hbar\omega}{2k_BT}\right)\mathcal D(\omega),
+\qquad \mathcal D=-\operatorname{Im}\chi^R.
+\]
+The classical factor $2k_BT/\omega$ requires $\hbar\omega\ll k_BT$, hence $\omega\ll H/(2\pi)$ at horizon temperature. A finite-bandwidth causal response and its quantum noise must be paired; coupling and independent-cell count remain unspecified. Reconstruction $\chi_c=C\chi_fC^\dagger$, $N_c=CN_fC^\dagger$ preserves this relation and positivity. For a fine generator $L$, autonomous Markov closure requires $CL=L_cC$; unresolved modes generally supply memory.
+
+\subsection{10.2 Cluster stock and carrier support}
+
+Baryons and a positive retained stock move in one potential, $\nabla^2\Phi=4\pi G(\rho_*+\rho_g+\rho_C)$, so lensing and dynamics measure the same inventory. A fully released closed cohort has
+\[
+\boxed{k_C=5.333\,e^{-\eta_*}=5.1760752,\qquad M_{\rm grav}=(1+k_C)B=6.18\,B}
+\]
+for coextensive retention, in the formation mass convention of the cosmological fit; the bare convention gives $e^{-\eta_*}/\epsilon=5.164$. Inside an aperture the retained fractions of baryons and stock can differ, $C/B=k_Cf_C^{\rm ret}/f_b^{\rm ret}$, and their histories require forward evolution.
+
+The stock selection of Section~9 acts through the cells of active carriers, on the stock each carrier carries. A carrier's records are identified with its condensed baryons, stars and cold gas. Shock-heated gas whose cooling time exceeds its dynamical time relaxes to the Gibbs state of its potential and holds no independent record. A carrier's support ends where its records stop dominating the baryonic field. For an isolated carrier this is where they stop dominating the enclosed baryons. A satellite whose host's baryonic field exceeds its own at its half-light radius has no support of its own and keeps its pre-infall stock; for the eight classical Milky-Way dwarfs this assignment gives $\chi^2=10.4$ on their GravSphere central densities, against $17.2$ for retained and $44$ for relaxed stock throughout. Dwarfs whose progenitors never crossed the release gate keep their committed, CDM-like stock; over 22 Local Group dwarfs this combined assignment gives $\chi^2=21.7$ ($25.4$ at a $14\,{\rm km\,s^{-1}}$ gate) for half-light masses, against $24.0$ for $\Lambda$CDM halos with supernova heating, and the gate value is left open by these data. Its cells act on the stock bound to the potential of its records and the stock it carries. Around an isolated lens the support ends where hot gas outweighs the condensed baryons, and the uncarried stock outside it keeps the halo profile; on the KiDS-1000 isolated-lens bins this matches truncated NFW halos within the halo-model nuisances ($\chi^2=140$ against $133$ over 60 points). In the seven X-COP clusters with stellar profiles, condensed baryons are 2.5--5\% of the baryons inside $R_{500}$, and the central galaxy's support ends at $0.04$--$0.07\,R_{500}$. Cluster stock outside that support enters no cell, evolves as collisionless matter, and keeps $1+k_C=6.18$, between the X-COP medians $6.10$ at $R_{200}$ and $6.45$ at $R_{500}$ \citep{Ettori2019Cluster}.
+
+A response acting on cluster stock fails in either direction. At $R_{500}$, where $g_{\rm bar}=0.05$--$0.07\,a_0$, imposing the law on the existing stock removes 20--35\% of it, and adding the law to the cohort stock gives $9.4$--$10.2$. Galaxy outskirts that obey the law lie at the same $g_{\rm bar}/a_0$, so the switch is not a function of acceleration. Contact runs on the seven clusters, started from the observed profiles, keep the mass inside $R_{500}$ within 0.1\% and inside $0.1R_{500}$ within 1.5\% of the no-contact control over 10\,Gyr; the same contacts with cells throughout the cluster leave 55--79\% inside $R_{500}$. The central galaxy's carried stock relaxes toward its galactic-law value while its support holds seven to eleven times that value in uncarried stock, consistent with the observed departure of brightest cluster galaxies and group centrals from the rotating-galaxy relation. The X-ray ellipticals on the radial acceleration relation \citep{Lelli2017RAR} are star-dominated over the fitted radii; in NGC~720 hot gas dominates the baryons only beyond about 200\,kpc \citep{Humphrey2011N720}.
+
+Gas shocks while stars and stock continue through an encounter, so gas and lensing peaks can separate. In the CANUCS Bullet reconstruction the subcluster halo centre lies 3.9\,kpc from its brightest galaxy and the gas peak about 170\,kpc away \citep{Rihtarsic2026Cluster}; controlled encounters at 24--30\,kpc softening cannot yet test that alignment. Resolved member galaxies, cosmological assembly, merger morphology, and the baryon--stock segregation $\eta_{\rm ret}=0.52$--$0.70$ required by the A1795 and A2029 lensing targets remain open.
+
+\section{11. Cosmology: Homogeneous Mode, Saturated Capacity, and Release}
+
+\subsection{11.1 Homogeneous mode}
+
+Write
+\[
+S(x,t)=\bar S(t)+s(x,t),
+\qquad
+S_\infty(t)=\pi\frac{R_A(t)^2}{L_*^2}.
+\]
+The local weak-field branch depends on fractional fluctuations and $\kappa/(\gamma S_\infty)$, while $\bar S(t)$ can affect the background on horizon scales. The proposed Hubble-tension mechanism is that a homogeneous trace-sensitive capacity mode becomes active near matter--radiation equality and reduces the sound horizon. The sign and timing are structurally plausible, but the joint Einstein--Boltzmann evolution has not been completed; this sector remains open/conditional. A fit of a proxy early-energy potential together with the release history, with the onset fixed at equality, $\omega_c=5.333\,\omega_b$ and one added amplitude, gives an early-energy fraction $0.018\pm0.010$, $H_0=69.4\pm0.6\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$ and $r_{\rm drag}=146.4\,$Mpc, with $\chi^2$ below $\Lambda$CDM by $1.0$ at the same parameter count; the tie excludes fractions of $0.05$ and above ($\Delta\chi^2\geq13.5$) and hence $H_0\simeq73$.
+
+\subsection{11.2 Saturated committed-capacity phase}
+
+The adopted source-allocation cap is $1+1/\epsilon\simeq6.32$ including the ordinary unit response. It cannot cap the galactic force ratio: the exponential RAR exceeds it whenever
+\[
+y:=g_{\rm bar}/a_0<[\ln(1+\epsilon)]^2=0.0296616\ldots.
+\]
+The recombination-era estimate $y\lesssim6\times10^{-5}$ gives a formal unsaturated demand above $10^2$. Mapping that demand to a finite committed allocation motivates saturation but is an additional cross-phase recruitment premise. For each Lagrangian baryonic source $A$, define
+\[
+M_{c,A}^{\max}=\frac{M_A}{\epsilon},
+\qquad
+\sigma_A=\epsilon\frac{M_{c,A}}{M_A}\in[0,1].
+\]
+The pinned branch assumes every recruited source reaches $\sigma_A=1$ while its coherent renewal phase remains single-stream. In this cosmological subsection use $c=1$. Let $\phi=\tau_*\theta$ advance once per calibrated tick. Coherence gives $u_\mu=-\nabla_\mu\phi$, and one tick per proper-time tick forces
+\[
+1=\frac{d\phi}{d\tau}=-u^\mu u_\mu
+\quad\Rightarrow\quad
+\boxed{X=-\frac12\nabla_\mu\phi\nabla^\mu\phi=\frac12}.
+\]
+Thus the leading constrained action
+\[
+S_{\rm comm}=\int d^4x\sqrt{-g}\,\lambda(X-1/2)
+\]
+gives a pressureless, zero-sound-speed stress and $\rho_c\propto a^{-3}$ within the pinned coherent branch. The constraint is derived from saturation plus coherent tick normalization; the transition into that branch is not.
+
+Full saturation gives the bare pre-release abundance
+\[
+\boxed{\frac{\Omega_c^{\rm wb}}{\Omega_b}
+=\frac1\epsilon=5.320684854,\qquad
+a_0\frac{\Omega_c^{\rm wb}}{\Omega_b}=cH_0.}
+\]
+At partial formation saturation the ratio is $\bar\sigma/\epsilon$.
+The specified formation map allocates capacity only to unlabelled conserved
+baryonic charge and debits the plasma by $\rho_b/\epsilon$.
+Its proposed interval is between sphaleron freeze-out and the QCD
+crossover, before the relevant modes enter the horizon. The free-nucleon
+and helium conversion gives the formation input $5.333$; the reference release history lowers
+the present dust-to-baryon ratio to about $5.2284$ for the reference exponential allocation.
+The bare identity above must be converted before comparison with that ratio.
+
+The label ledger preserves or merges ancestry and removes cap together
+with released allocation. Once every conserved source is labelled,
+the specified transfer cannot recreate unlabelled charge or recruit
+primordial stock at any later temperature. This no-late-recruitment
+result assumes the ledger rule. A late allocation retains a positive clock deficit;
+relative motion can only increase it.
+The formation map is isometric; its microscopic vertex and the
+independent derivation of its rate remain open.
+
+\subsection{11.3 Collective carrier loss and dark-energy release}
+
+Shell crossing alone cannot release identity-free committed capacity: that register does not encode which identical stream owns it. The selected trigger is irreversible loss of the baryonic progenitor record. For each elementary record block,
+\[
+\mathsf E_A=\mathbf1[\text{the baryonic carrier of }A\text{ loses its record}].
+\]
+A partial-memory family $K_a(b,b')=a\delta_{bb'}+(1-a)p_*(b')$ retains information for every $a>0$. The entropy maximum selects $a=0$. The normalized nine-output isometry then gives unit conditional register transfer, $f_{\rm reroute}=1$, for a failed block. Identifying that register with the full allocated energy is a separate ledger premise.
+
+The physical energy operators must include their conversion factors:
+\[
+H_{\rm comm}=\varepsilon_K\widehat K^2,
+\qquad H_{\rm rec}=\frac{\varepsilon_\xi}{2}\sum_{a=1}^3\widehat\xi_a^2.
+\]
+With the fresh normalized Gaussian record, $\langle\sum_a\xi_a^2/2\rangle=3/2$. Refresh-first independence gives
+\[
+\boxed{\eta_{\rm drain}=\frac{\varepsilon_\xi}{\varepsilon_K}
+\frac{3/2}{\langle K^2\rangle_{\eta_*}}
+=\frac{\varepsilon_\xi}{\varepsilon_K}\eta_*}.
+\]
+The selected common conversion $\varepsilon_\xi=\varepsilon_K$ yields $\eta_{\rm drain}=\eta_*$. Neither equality of energy units nor the refresh-first ordering follows from Hilbert-space dimension alone.
+
+\paragraph{Information stock and the cumulative kernel.}
+For progenitor label $A$ and retained matter observable $Y_\tau$, define
+\[
+K_{\rm mix}(\tau)=1-\frac{I(A;Y_\tau)}{H(A)}.
+\]
+Continuity and additive pricing assign $K_{\rm mix}$ to the reallocated fraction of surviving stock. Source-record identification and pricing are physical premises; the drain below determines the surviving energy. For a closed Lagrangian cohort under common advection and label-independent diffusion, let $\rho$ be the total density, $c_A$ the local mass fraction carrying label $A$, $M_{\rm gas}$ the cohort mass, and $\mathbf D\succeq0$ the common diffusion tensor. The fully resolved position information obeys
+\[
+\dot I(A;X)=-\frac1{M_{\rm gas}}\sum_A\int
+\frac{\rho}{c_A}(\nabla c_A)^T\mathbf D\nabla c_A\,dV\le0,
+\qquad
+K_{\rm mix}^{X}=1-\frac{I(A;X)}{H(A)}.
+\]
+Hence $0\le K_{\rm mix}^{X}\le1$ and $\dot K_{\rm mix}^{X}\ge0$. This does not prove monotonicity for the coarse $Y_\tau$ in the physical stock law: even fixed two-site bins on a four-site cycle with labels $(0,0,1,1)$ give losses $0,1,0$ under successive reversible translations. The actual observable, changing cohort, boundary flux, and selective escape must therefore be checked in the cosmological zoom.
+
+Let $F_Z(t_f)$ be the mass-weighted cumulative fraction entering an eligible retained well for the first time at $t_f$. The delayed release history is
+\[
+\boxed{F_{\rm rel}(t)=\int^tK_{\rm mix}(t-t_f;M,z)\,dF_Z(t_f)}.
+\]
+This is a joint mass-weighted first-entry integral when mass and entry redshift vary. A first self-gravitating progenitor-tagged run gives entry loss $K_0\simeq0.5$ and a $2$--$6$ dynamical-time tail. Its linear-benchmark integral is $I_{\rm rel}=76$ for three hosts at a $17\ {\rm km\,s^{-1}}$ gate and $93$--$97$ for ten hosts at $14\ {\rm km\,s^{-1}}$, near the earlier PPF target $94.2116$. Choosing the gate to match that target supplies no independent normalization. Gas convergence, labels, and retention gates remain physical inputs.
+
+\paragraph{Ensemble clock and positive allocation.}
+The homogeneous law is $Q(\phi)=\dot\rho_\Lambda=\eta_*\mathbb E_{\rm bg}[q](\phi)$ in a statistically homogeneous history state. A large-volume slice average estimates this ensemble quantity. Realized local release changes local records without instantaneously updating the prescribed vacuum at distant events. With $c=1$, the local clock action is \citep{ChamseddineMukhanov2013,ChamseddineMukhanovVikman2014}
+\[
+S_{C\Lambda}=\int\sqrt{-g}\,[\lambda(X-\tfrac12)-V_F(\phi)]\,d^4x,
+\qquad X=-\tfrac12\nabla_\mu\phi\nabla^\mu\phi.
+\]
+It gives $X=1/2$, $u_\mu=-\nabla_\mu\phi$, $C=\lambda$, and $T^{\mu\nu}=Cu^\mu u^\nu-V_Fg^{\mu\nu}$. The unit-gradient flow is geodesic, with $\nabla_\mu T_C^{\mu\nu}=\nabla^\nu V_F$. This is an irrotational single-flow completion; multistream stress needs further specification.
+
+Write $C=\rho_u+R$, with local transfer $q=\Gamma_{\rm rel}\rho_u\ge0$. Requiring the drain to preserve internal composition fixes $d_u=\rho_uQ/C$, $d_R=RQ/C$ uniquely for $C>0$. Thus
+\[
+\dot\rho_u+\theta\rho_u=-q-\rho_uQ/C,\quad
+\dot R+\theta R=q-RQ/C,\quad
+\dot F=\Gamma_{\rm rel}(1-F),\quad F=R/C.
+\]
+Both components remain nonnegative until total-stock exhaustion. The ensemble background has $F=F_{\rm rel}$ and, with $B=\rho_{c,0}^{\rm wb}$,
+\[
+\boxed{a^3\bar C=B e^{-\eta_*F},\qquad
+V_F(\phi)=\rho_{\Lambda,i}+\eta_*B\int_{t_i}^{\phi}a(t')^{-3}e^{-\eta_*F(t')}\,dF(t').}
+\]
+The ensemble solution specifies this potential before variation. The initial condition $\rho_{\Lambda,i}=0$ is adopted independently of vacuum centering. Intrinsically $p_\Lambda=-\rho_\Lambda$; a separately conserved reconstruction gives $w_{\rm eff}=-1-\dot V_F/(3HV_F)\le-1$ during accumulation.
+
+\paragraph{Timing and the local domain.}
+In the reference exponential history, by $z=2$ cumulative comoving release is $52.17\%$ complete and vacuum accumulation is $96.82\%$ complete, owing to the $a^{-3}$ weight. The drain after $z=1$ is $0.4938\%$ of initial stock. Local positivity requires
+\[
+JC=J_iC_i-\int JQ\,dt\ge0,\qquad \dot J=\theta J.
+\]
+Under common baryon--capacity flow, a baryon density floor above $1-e^{-\eta_*F(1)}=0.01961844$ of the mean throughout release suffices. The full paper's O.3 nonlinear spherical histories ending at $\Delta_C=0.2,0.1$ stay positive; its specified growing-mode evacuation exhausts today at $\Delta_b\simeq0.006835$. That endpoint is history-dependent. A density-dependent local shutoff generally produces $h^\mu{}_{\nu}\nabla^\nu V\ne0$ and requires momentum exchange. The uniform-clock branch has zero transverse force and ends at exhaustion.
+
+\paragraph{Linear perturbations and the tested benchmark.}
+The clock fixes $\delta\dot\phi=\psi_g$ and $\delta\rho_\Lambda=\dot V_F\delta\phi$; vacuum is homogeneous on capacity-clock slices. Subtracting conserved reference dust $\rho_{\rm ref}\propto a^{-3}$ on the same flow gives the exact effective fluid $\rho_D=C-\rho_{\rm ref}+V_F$, $p_D=-V_F$, with rest-frame $c_s^2=0$ where its enthalpy is positive.
+
+Direct geodesic perturbations with matched lensing and $A_L=1$ give $\Delta\chi^2=+0.85$ against $\Lambda$CDM for Planck high-$\ell$+DESI DR2+DES-Dovekie with $\sum m_\nu=0.06\,$eV, nonlinear lensing and a free Planck calibration with prior $1\pm0.0025$. This linear-depletion benchmark uses $a^3\bar C=B(1-\eta_*F)$ and $I_{\rm rel}=\int a^{-3}dF$, with five versus six cosmological parameters ($\Delta{\rm AIC}=-1.15$). The configuration with massless neutrinos, fixed calibration, nonlinear lensing and a free supernova offset below $z=0.1$ gives $\Delta\chi^2=-0.39$.
+
+The exponential-allocation fit with massless neutrinos, fixed calibration, linear lensing and the low-redshift offset gives $\chi^2=2227.8006205$ against the matched $\Lambda$CDM value $2228.3158253$, hence $\Delta\chi^2=-0.5152$. Its release fit has $H_0=68.93885586416\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$. These fits use the release histories and likelihood settings given above. With the retention gate taken from the halo occupation of feedback-resolved simulations, the measured mixing kernels and the reionization redshift of the fitted optical depth, the release history has no free parameter. That frozen history gives $\Delta\chi^2=+1.07$ against $\Lambda$CDM in the first configuration and $-0.28$ with massless neutrinos and the low-redshift offset, with four cosmological parameters against six, and $H_0=68.42\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$. An independent abundance test measures the formation and mixing inputs before fitting the cosmology; joint CMB-lensing reconstruction and nonlinear evolution extend the likelihood.
+
+\section{12. Clock Capacity, Strong Fields, and the Boundary}
+
+The surviving fraction \(q=S_{\rm ent}/S_\infty\) lies in
+\([0,1]\). Its weak-field relation is
+\(q=1+2\Phi/c^2+O(c^{-4})\).
+For a static clock, continuous multiplicative composition and
+weak-field matching select \(q_\tau=N^2\), with the Killing
+time normalized at the reference boundary.
+Write
+\[
+ds^2=-N^2c^2dt^2+h_{ij}dx^idx^j,\qquad
+s_\tau=S_\infty(1-N^2).
+\]
+At \(\Lambda=0\), Einstein's static lapse equation is
+\[
+D^2N=\frac{4\pi G}{c^4}N(\mathcal E+\mathcal S),
+\qquad
+\mathcal E=T_{\mu\nu}n^\mu n^\nu,\quad
+\mathcal S=h^{ij}T_{ij}.
+\]
+Here \(n^\mu\) is the unit static normal. Consequently
+\[
+\boxed{D^2s_\tau=
+-\frac{8\pi GS_\infty}{c^4}
+\left(1-\frac{s_\tau}{S_\infty}\right)(\mathcal E+\mathcal S)
+-\frac{|Ds_\tau|^2}{2(S_\infty-s_\tau)}.}
+\]
+Its weak, nonrelativistic limit is
+\(\nabla^2s_\tau=-8\pi GS_\infty\rho/c^2\).
+The spatial metric and matter equilibrium equations complete
+the system. The coefficient identities
+\(\kappa_{\rm phys}=c^2/(2S_\infty)\) and
+\(\gamma_{\rm phys}=c^4/(16\pi GS_\infty^2)\)
+express a supplied Einstein normalization.
+
+Spherical symmetry supplies a separate radial invariant.
+For \(ds^2=h_{ab}dx^adx^b+R^2d\Omega^2\), angular reduction
+of Einstein--Hilbert plus its boundary action gives
+\[
+I_{\rm sph}=\frac{c^3}{4G}\int d^2x\sqrt{-h}
+[R^2{}^{(2)}R+2(\nabla R)^2+2]+I_{\rm matter}^{(2)}+I_\partial .
+\]
+Define
+\[
+\boxed{q_R=(\nabla R)^2=1-\frac{2GM_{\rm MS}}{c^2R}.}
+\]
+The vacuum equations conserve \(M_{\rm MS}\).
+In a connected, normalized, static vacuum exterior,
+\[
+q_R=q_\tau=N^2=1-\frac{2GM}{c^2r}.
+\]
+Inside spherical matter of mass density \(\rho\) and radial
+pressure \(p_r\),
+\[
+\frac{d}{dr}\log\frac{q_\tau}{q_R}
+=\frac{8\pi Gr}{c^2q_R}
+\left(\rho+\frac{p_r}{c^2}\right).
+\]
+Thus the locally flat interior of a supported shell can have
+\(q_R=1\) and a constant \(q_\tau<1\).
+The clock redshift includes boundary reference data.
+The surface \(q_R=0\) is a marginal sphere; equating it with
+substrate saturation during collapse and excluding \(q_R<0\)
+require a separate boundary theory.
+
+For a dynamical ADM slicing, with \(c=1\),
+\(K_{ij}=-\tfrac12\mathcal L_nh_{ij}\) and \(q_N=N^2\),
+\[
+\begin{split}
+D^2q_N={}&2q_N[K_{ij}K^{ij}+4\pi G(\mathcal E+\mathcal S)-\Lambda]\\
+&-2N(\partial_t-\mathcal L_\beta)K+\frac{|Dq_N|^2}{2q_N}.
+\end{split}
+\]
+The lapse depends on slicing and boundary conditions.
+A general capacity observable must specify its relational
+region, quantum state and algebra, clock, and reference data,
+without additional gravitational Cauchy data.
+For smooth perturbations of a faithful reference,
+\(D(\rho_\epsilon\Vert\rho_0)=O(\epsilon^2)\);
+a differentiable function of relative entropy alone cannot
+give a generic linear gravitational response.
+The finite hard-exclusion identities use a different state
+change and remain valid.
+
+The exterior Hawking temperature and Bekenstein--Hawking law
+retain their Einstein form. For coherent maximal fusion of
+\(N\) primitive \(j=3\) faces,
+\[
+A_N=24\pi\gamma_{\rm BI}NL_*^2,\qquad
+S_{\rm cut}=N\ln2.
+\]
+Comparison with \(A_N/(4L_P^2)\) gives
+\[
+\frac{G}{G_*}=\frac{6\pi\gamma_{\rm BI}}{\ln2}.
+\]
+On the matched \(G=G_*\) branch this sets
+\(\gamma_{\rm BI}=\ln2/(6\pi)\) and
+\(a_{\rm ch}=4\ln2\,L_*^2\).
+The independently calibrated angular construction in
+Section~14.2 instead fixes
+\(A_{\rm ch}=4\ln2\,\hbar G_0/c^3\) before any equality
+with \(G_*\). Its cut and bulk coefficients must renormalize
+consistently in one physical state.
+
+For a convex spatial horizon with a Euclidean three-space
+representation, Cauchy's formula gives
+\(\overline A_{\rm proj}=A/4\) \citep{TsukermanVeomett2016}.
+Writing the matched entropy as
+\(\overline A_{\rm proj}/L_*^2\) restates its normalization.
+It does not derive that entropy density or extend the
+projection formula to every dynamical horizon.
+Boundary dynamics, reflectivity, saturation formation, and
+generic rotating or charged capacity observables remain open.
+
+\section{13. Many-Pasts and the Finite Quantum Sector}
+
+For a decoherent history $h$ with class operator $C_h$,
+\[
+\mathcal D(h,h')=\mathrm{Tr}(C_h\rho_0C_{h'}^\dagger),
+\qquad
+p(h,P)=\mathcal D(h,h),
+\qquad
+p(h|P)=\frac{\mathcal D(h,h)}{\sum_{h'\in\mathcal H_P}\mathcal D(h',h')}.
+\]
+Conditioning is performed only after the record $P$ exists; it changes no Hamiltonian or class operator and introduces no retrocausal force.
+
+On the stable retained sector, a positive real quadratic Hamiltonian selects an initial polar complex structure $J_0$. Full symplectic evolution transports it as $J(t)=S(t)J_0S(t)^{-1}$ and preserves the corresponding Hermitian product. The exact transport retains squeezing relative to an instantaneous polarization and the induced Born--Huang term. Within the selected complex-linear control realization, moving frames and a non-common frequency generate $\mathfrak{su}(9)$; the fixed-one-mark response algebra gives $\mathbb C^9$ and pure-state space $\mathbb{CP}^8$. Access to controls on a common polar fiber is an operational premise; general symplectic frame motion can change that fiber. Independent retained factors compose by tensor product. Geometric gauge projection is the identity on the capacity factor, so its bridges survive; adjacent retained marks generate $\mathfrak{su}(81)$. Their bounded finite-range bridge generator, of norm $41/5$, gives a quasi-local infinite-volume algebra, Lieb--Robinson dynamics, and GNS representations on bounded-degree hosts. The physical state and continuum particle interpretation remain open. The physical canonical form is twice the K\"ahler form in action units. The internal spin-$3/2$ leakage coefficient $7/20$ is exact, but its galactic response identification remains open.
+
+For the probability rule, reversible internal equivalence makes a branch weight depend only on its squared norm, $w=f(\|\psi\|^2)$. Complete mutually exclusive physical records add under coarse graining, so
+\[
+f(x+y)=f(x)+f(y),
+\qquad f(x)\ge0,
+\qquad f(1)=1.
+\]
+Finite additivity plus positivity fixes $f(x)=x$ on the physical probability domain. Hence
+\[
+\boxed{p(\Pi|\psi)=\|\Pi\psi\|^2=\langle\psi|\Pi|\psi\rangle}.
+\]
+Reversible system--record coupling then gives the usual Kraus operators and POVMs; tracing a remote complete instrument leaves the local marginal unchanged, giving no-signaling.
+
+Many-Pasts retains one realized present and the ordinary quantum history measure. Renewal replaces the closure register with the fresh state $\rho_*$ each tick, so within one tick it is an exact relative-entropy H-theorem on that register, and the export structure fixes its orientation. The persistent geometry and defect sector evolves unitarily and keeps its superpositions. A recorded subsystem relaxes when an irreducible record-writing coupling acts on it, and on a microcanonical shell its present entropy then increases. The macroscopic second law follows from record growth, the minimal-record root and conditional typicality. Export keeps the global dilation reversible. This finite-network arrow does not set a cosmological relaxation time.
+
+Exact recovery requires $\dim\mathcal H_{\rm hist}(N)\ge\prod_n d_n$ for independent exported alternatives. Finite total present capacity $D_{\rm now}$, including history, with $d_{\min}>1$ and no external archive give $N_{\rm past}\le\ln D_{\rm now}/\ln d_{\min}$ and a minimal-record root. Its gravitational entropy and the physical supply of fresh history capacity remain open. In the specified number-conserving dynamics, $[H,n_m]=0$ makes the released zero-defect sector absorbing. For number-changing completions the thermal re-entry bound is finite, so exact exclusion over an unbounded future needs an additional restriction; the conserved-source ledger still forbids regeneration of primordial stock.
+
+\paragraph{Renewal and spatial coherence.}
+Replacement acts on the fast capacity register, while retained
+position and the marked \(Q\) fiber carry coherent transport.
+A dilation multiplies an unmeasured spatial off-diagonal by
+the overlap of the discarded records. A fresh marginal alone
+does not control this overlap.
+For a specified SWAP-reset dilation, two branches triggering
+\(n,m\) resets give
+\[
+\gamma_{nm}=\operatorname{Tr}\rho_*^{|n-m|+1}.
+\]
+One additional reset gives \(0.0006036303\) for the native
+state. This is a counterexample for that dilation.
+
+A compatible fixed-background realization uses
+\[
+\mathcal E=\operatorname{id}_{X,Q}\otimes\mathcal E_{\rm background}.
+\]
+It renews the background independently of unmeasured particle
+position; proper-time phase accumulation causes no additional
+erasure. Retained-density and disjoint-reset-order errors are
+below \(6\times10^{-17}\) in the finite checks.
+For a graph-dependent bond vacuum
+\(U_g|{\rm ref}\rangle=|\Omega_g\rangle\), the controlled frame
+\[
+D=\sum_g|g\rangle\langle g|\otimes U_g
+\]
+uncomputes to a common renewal frame before retained evolution
+and preparation of the outgoing frame. The encoded transfer
+then intertwines the retained operator exactly.
+Directly exporting \(|\Omega_g\rangle\) would reveal the graph.
+Matching exported records for geometries with different
+numbers of physical events, and full refoliation, remain
+additional requirements.
+
+\section{14. Microscopic Geometry, Dynamics, and the Matter Clock}
+
+\subsection{14.1 Representation factors and geometric transport}
+
+Two structures called ``closure'' must be distinguished. Geometric Gauss closure is an exact redundancy constraint: on a physical gauge-invariant state,
+\[
+\widehat{\mathbf C}_{\rm G}|\psi_{\rm phys}\rangle=0
+\quad\Longrightarrow\quad
+\widehat{\mathbf C}_{\rm G}^{\,2}|\psi_{\rm phys}\rangle=0.
+\]
+Capacity closure is instead a physical statistical weighting of routed states. Its certified spectrum has the strict floor
+\[
+\boxed{K^2\ge\frac{122}{3}>0}
+\]
+on every state of the nonempty $1680$-state ensemble. Therefore the two operators cannot be the same:
+\[
+\boxed{K^2_{\rm admissibility}\neq C^2_{\rm Gauss}}.
+\]
+The distinction changes the ensemble. If the Gibbs factor $e^{-\eta K^2}$ were built from the geometric Gauss Casimir and one projected to physical states, that factor would become unity, erasing the nonuniform ensemble and with it the stationarity equation that fixes $\eta_*$. Thus any microscopic realization that preserves both ordinary geometric gauge invariance and the finite numerical spine must keep the capacity data physical but inert under the geometric gauge redundancy.
+
+The selected minimal completion therefore factorizes one cell as
+\[
+\boxed{
+\mathcal H_{\rm cell}
+=\mathcal H_{\rm geom}\otimes\mathcal H_{\rm cap}
+\otimes\mathbb C^2_{\rm orient}.
+}
+\]
+The geometric gauge action is
+\[
+U_{\rm gauge}(h)=U_{\rm geom}(h)\otimes I_{\rm cap}\otimes I_{\rm orient},
+\]
+so every capacity observable obeys
+\[
+\boxed{[O_{\rm cap},U_{\rm gauge}(h)]=0}.
+\]
+Consequently the injective $1680$ count, $K^2$ spectrum, Gibbs weights, and $\eta_*$ survive geometric gauge projection unchanged.
+
+Relational frame geometry must include genuine transport. For reference links $U_{cc'}$ and local frames $R_c$,
+\[
+g_{cc'}=R_cU_{cc'}R_{c'}^{-1},\qquad
+g_{cc'}\mapsto h_cg_{cc'}h_{c'}^{-1}.
+\]
+Loop holonomy is $R_cU_{\rm loop}R_c^{-1}$ and may carry curvature; a product of endpoint frames alone would be pure gauge.
+
+The two bookkeeping factors nevertheless describe the same relational orientation on the physical branch. An equivariant lock
+\[
+L_3:V_3^{\rm cap}\to V_3^{\rm geom},
+\qquad
+L_3U_{\rm cap}(g)=U_{\rm geom}(g)L_3,
+\]
+identifies their selected $V_3$ representations. Because both are irreducible, Schur's lemma gives
+\[
+\boxed{L_3=e^{i\phi}I}
+\]
+after choosing a common relational basis. The existence of the lock is the selected realization; once it exists, it introduces no continuous physical coupling.
+
+On the selected maximal channel, multiplicity one gives a canonical, tree-independent blocking map
+\[
+\boxed{F_N:V_3^{\otimes N}\to V_{3N}},
+\qquad
+F_N|3,\mathbf n\rangle^{\otimes N}=|3N,\mathbf n\rangle.
+\]
+Proper Engle--Pereira--Rovelli--Livine (EPRL) selection isolates the gravitational asymptotic sector. The selected metric-Regge limit has a reflection-positive Gaussian TT covariance and the bosonic Fock representation over $L^2(\mathbb R^3)\otimes\mathbb C^2$, with two massless helicity-two modes. This closes the free linearized branch; an interacting native phase and one temporal/spatial light cone remain tests. The factorized capacity decoration preserves this spectrum.
+
+For $J^\dagger J=I$ and $H_fJ=JH_c$, the encoding $\iota(A)=JAJ^\dagger$ preserves products, traces, and positivity on the retained image. It carries the identity to $JJ^\dagger$, not the full fine identity. Source-dependent families require
+\[
+\partial_s(J^\dagger H_fJ)=J^\dagger(\partial_sH_f)J
++(\partial_sJ^\dagger)H_fJ+J^\dagger H_f(\partial_sJ).
+\]
+State and discarded-normalization derivatives must also be retained. The finite polynomial identities are Lean-checked; evolution follows by functional calculus. Coherent renewal must hold on the retained state. These relations connect geometry, native clocks, and source response for the supplied operators.
+
+The capacity premises fix neither a unique gluing tensor nor a geometric measure. Absolute angular transfer, normalized connected patches, and metric-dependent reconnection amplitudes define concrete extensions. Each extension has a definite transfer operator whose phase and continuum behavior can be tested. The face-wise lock and the connected patch construction give different ensembles.
+
+\subsection{14.2 Coherent bonds, curvature, and physical calibration}
+
+The capacity and orientation representation admits an equivariant
+encoding
+\[
+\mathcal H_{\rm cap,o}\cong\mathcal F(\mathbb C^4)\otimes\mathbb C^{105},
+\qquad
+\rho_{\rm cell}=\frac{I_{16}}{16}\otimes\sigma.
+\]
+Pair neighboring virtual fermionic ports in
+\((|10\rangle+|01\rangle)/\sqrt2\).
+Every cell retains the original \(1680\)-state marginal, while each
+cut bond carries \(\ln2\) of conditional entropy. The residual
+entropy \(S(\sigma)\) is local. The spatial bond state is selected;
+the local Gibbs weights also admit unentangled global states.
+
+An absolute angular-transfer rule supplies the curvature
+normalization:
+\[
+K_h(\theta)=e^{-\theta\ln2/(2\pi)}I_2,\qquad
+K_h(2\pi)=\rho_h=I_2/2.
+\]
+The same tensor gives the replica trace \(2^{1-n}\) and hinge
+weight \(\exp[(\ln2/2\pi)N_h\delta_h]\). With
+\(A_h=N_hA_{\rm ch}\), comparison with the Regge action gives
+\[
+\boxed{\frac{\hbar G_0}{c^3}=\frac{A_{\rm ch}}{4\ln2}.}
+\]
+The full-turn normalization is microscopic action data.
+Normalized cut entropy alone would leave this bulk coefficient
+undetermined.
+
+Physical area requires an event model. Assume Poisson placement
+in invariant four-volume, mean event volume \(v_{\rm ev}\), and
+a longest-chain clock between interaction endpoints. In four
+flat dimensions,
+\[
+V_4(\tau)=\frac{\pi}{24}(c\tau)^4,\qquad
+L_{\rm chain}\sim m_4(V_4/v_{\rm ev})^{1/4}.
+\]
+Matching its asymptotic cadence to \(1/\tau_*\) gives
+\[
+\frac{v_{\rm ev}}{L_*^4}=\frac{\pi}{24}m_4^4.
+\]
+This event law is additional to renewal of the capacity labels.
+The chain rule is variational and presupposes causal geometry;
+strong confinement can alter the cadence.
+
+Assigning one mean event per paired cell per proper tick and
+using a regular mean tetrahedral area--volume relation gives
+\[
+V_{\rm site}=\frac{v_{\rm ev}}{2L_*},\qquad
+a=(6\sqrt2V_{\rm site})^{1/3},\qquad
+A_{\rm ch}=\frac{\sqrt3}{4}a^2.
+\]
+Hence
+\[
+\boxed{\frac{G_0}{G_*}=0.10551926870131369\,m_4^{8/3}.}
+\]
+At the illustrative finite-size estimate \(m_4=2.35\),
+\[
+\frac{v_{\rm ev}}{L_*^4}=3.99218,\quad
+\frac a{L_*}=2.56812,\quad
+\frac{A_{\rm ch}}{L_*^2}=2.85582,\quad
+\frac{G_0}{G_*}=1.03002.
+\]
+A compatible mixed quantum volume state exists; its mean was
+imposed, so its dynamical selection remains open. Exact equality
+would require \(m_4=2.32408\), a target implied by the calibration.
+The reference \(G_*\), the angular action's bare \(G_0\), and the
+interacting coefficient \(G_R\) have distinct definitions.
+
+\subsection{14.3 Connected primitive geometry and its history measure}
+
+For Euclidean causal dynamical triangulations, the spatial and
+mixed triangle areas obey
+\[
+A_{\rm SL}=\frac{\sqrt3}{4}a^2,\qquad
+A_{\rm mix}=\frac{\sqrt{4\alpha-1}}4a^2,\qquad
+\alpha=\frac{1+3(n/m)^2}{4}
+\]
+when they contain \(m,n\) binary channels. A four-port patch has
+an even number \(4V-2E\) of external ports. Mixed tetrahedral
+bundles \((1,n,n,n)\) therefore require odd \(n\).
+The first nonisotropic choice is \(n=3\), giving \(\alpha=7\).
+The required coarse intertwiner spaces are
+\[
+\operatorname{Inv}(V_3^{\otimes4}),\quad
+\operatorname{Inv}(V_3\otimes V_9^{\otimes3}),\quad
+\operatorname{Inv}(V_9^{\otimes4}),
+\]
+of dimensions \(7,7,19\), respectively.
+Spin nine is the maximal fusion of three primitive facets.
+
+A positive pair parent selects a 13-dimensional subspace of
+the 49-dimensional two-cell intertwiner space. Four cells in
+a chain, with two such pair restrictions, map onto the mixed
+seven-dimensional space. Six cells in a cycle, with three pair
+restrictions, map onto the nineteen-dimensional space.
+Numerical rank and coherent-contraction checks verify these
+maps, with held-out residual \(3.29\times10^{-15}\).
+They are connected spin networks with coarse polyhedral
+observables \citep{AQGBianchi2011}. These patches encode coarse polyhedra and need not be literal
+tetrahedral subdivisions. The tested six- and eight-tetrahedron
+balls reach rank thirteen.
+
+For either surjective patch map \(R_e\), full Gram normalization
+gives
+\[
+I_e=R_e^\dagger(R_eR_e^\dagger)^{-1/2},
+\qquad I_e^\dagger I_e=I.
+\]
+Inside the paired ground space,
+\(\Delta(P_{\rm pair}-I_eI_e^\dagger)\), \(\Delta>0\), is a
+positive parent for the code. The isometry errors are below
+\(2.1\times10^{-14}\).
+Transported coarse observables define the encoded geometry;
+they need not equal sums of unmodified fine volume operators.
+Extending the pair parent indiscriminately over every graph
+edge gives soft modes with a path gap bounded by \(O(n^{-2})\),
+so that interaction alone does not supply relativistic propagation.
+
+Choose normalized coherent boundary packets and simplex factors
+\[
+w_\sigma=\exp\!\left[-b\sum_{h\subset\sigma}N_h\theta_{h\sigma}
+-\lambda V_\sigma\right],\qquad b=\frac{\ln2}{2\pi}.
+\]
+Shared packets contract to one. The boundary half-turn factor
+\[
+B_h(\theta)=\rho_h^{-1/2}K_h(\theta)=e^{b(\pi-\theta)}I_2
+\]
+sews to the full-turn factor. Every allowed coarse history thus has
+\[
+W(\mathcal T)=
+\exp\!\left[b\sum_{h\in{\rm int}}N_h\delta_h
++b\sum_{h\in\partial}N_h\psi_h-\lambda\sum_\sigma V_\sigma\right].
+\]
+On 1,920 causal slabs the maximum log-weight discrepancy is
+\(1.46\times10^{-13}\).
+Raw patch contractions would change this measure through
+shape-dependent norms. The normalized construction is a
+selected Euclidean realization, distinct from the standard
+EPRL vertex and from a Lorentzian representation lift.
+
+The host counting prescription is
+\[
+T(g_1,g_0)=\sum_{[\mathcal T]\in\mathcal C(g_1,g_0)}
+\frac{z_{41}^{N_{41}}z_{32}^{N_{32}}}{C(\mathcal T)}
+W(\mathcal T).
+\]
+Here \(C\) is the automorphism factor; fugacities or fixed
+volumes specify the ensemble. The two-step and orthonormal
+kernels are
+\[
+\begin{split}
+T^{(2)}(g_2,g_0)&=\sum_{g_1}C(g_1)T(g_2,g_1)T(g_1,g_0),\\
+\widetilde T(g',g)&=\sqrt{C(g')C(g)}T(g',g).
+\end{split}
+\]
+At a finite symmetric cutoff its square is positive
+semidefinite. This does not make each one-step eigenvalue
+positive. The encoded transfer \(J\widetilde TJ^\dagger\)
+preserves composition. Sampling move sequences add no
+physical history multiplicity.
+
+\subsection{14.4 Metric counts, ordering, and physical states}
+
+Six directional block cuts reconstruct a spatial metric.
+For normals \(e_i\) and \((e_i+e_j)/\sqrt2\), let
+\(r_A=A_A/A_0\). Then
+\[
+\mathcal C_{ii}=r_i^2,\qquad
+\mathcal C_{ij}=r_{ij,+}^2-\frac{r_i^2+r_j^2}{2},\qquad
+\boxed{g=\sqrt{\det\mathcal C}\,\mathcal C^{-1}}
+\]
+on \(\mathcal C>0\). These are coarse cuts, not additional
+faces of one tetrahedron. Let \(q_A=r_A-1\) and
+\(J_{aA}=\partial g_a/\partial q_A\). The DeWitt mobility
+in count coordinates is
+\[
+K=J^{-1}D(g)J^{-T},\qquad
+D^{ab}=\frac{{\rm tr}(E_agE_bg)
+-\tfrac12{\rm tr}(gE_a){\rm tr}(gE_b)}
+{\sqrt{\det g}},
+\]
+where \(E_a\) is an orthonormal symmetric-matrix basis.
+In this subsection use \(\hbar=c=1\).
+The selected Hamiltonian has
+\[
+H_K=\frac{16\pi G_0}{V_{\rm ref}}p_q^TKp_q,\qquad
+H_R=-\frac{V_{\rm ref}}{16\pi G_0}\sqrt{\det g}\,R[g].
+\]
+For \(M\) binary reconnection switches,
+\(S^+|n\rangle=\sqrt{(n+1)(M-n)}|n+1\rangle\).
+Dividing by this multiplicity implements unit count shifts;
+products give the correlated moves required by \(K\).
+The microscopic amplitudes implement the supplied metric action.
+
+The angular Regge Hessian approaches the Einstein quadratic
+operator. Four gauge directions and one negative off-shell
+conformal direction leave two physical Lorentzian TT modes.
+The same conserved static source gives
+\(h_{44}=-8\pi G_0\rho/k^2\), hence
+\(\nabla^2\Phi=4\pi G_0\rho\).
+Two-momentum extrapolations agree with the angular coefficient
+to better than \(10^{-7}\) relatively on the tested backgrounds.
+The nonlinear mobility also reproduces Kasner evolution with
+exponents \((-1/3,2/3,2/3)\).
+These are saddle and finite-operator tests, without an
+interacting phase determination.
+
+The induced kinematic density and transported metric Weyl ordering are
+\[
+\mu(q)\propto\frac{\prod_A r_A}{(\det\mathcal C)^{5/4}},\qquad
+H_{W,{\rm count}}=H_{{\rm LB},{\rm count}}
+-c_K\frac{21}{16\sqrt{\det g}},
+\qquad c_K=\frac{16\pi G_0}{V_{\rm ref}}.
+\]
+The ordering term is proportional to \(\hbar^2\) when units are
+restored. With continuous metric configurations at fixed spatial
+regulator, the relevant Weyl commutators exactly quantize the
+regulated classical brackets. This preserves their regulator
+defects. On a three-cell probe, increasing mean counts from
+100 to 800 lowers the count-current discrepancy from \(1.04584\%\)
+to \(0.0163828\%\) with second-order convergence. Its separate
+spatial Lie-derivative error is \(8.5389\%\).
+
+A small reflecting count box has no zero Weyl-constraint state.
+The unbounded homogeneous metric domain admits a different
+construction. Write
+\[
+g=e^{2\alpha_{\rm vol}}h,\quad\det h=1,\quad
+d\mu\propto e^{9\alpha_{\rm vol}}d\alpha_{\rm vol}\,d{\rm vol}_{\rm sh},
+\quad h\in SL(3,\mathbb R)/SO(3).
+\]
+After the half-density transform, the congruence with
+\(B=e^{3\alpha_{\rm vol}/2}\) gives
+\[
+\widetilde C=\frac{24}{c_K}BC_{\rm flat}B
+=\partial_{\alpha_{\rm vol}}^2-24\Delta_{\rm sh}-\frac{81}{2}.
+\]
+For a self-adjoint shape Laplacian with spectral value
+\(\lambda>27/16\), put \(\omega_\lambda=\sqrt{24\lambda-81/2}\).
+The spectral form
+\[
+\widetilde\eta(f,g)=
+\sum_{s=\pm}\int_{\lambda>27/16}\frac{d\nu(\lambda,\sigma)}
+{2\omega_\lambda}\,
+\overline{\widehat f(s\omega_\lambda,\lambda,\sigma)}
+\widehat g(s\omega_\lambda,\lambda,\sigma)
+\]
+is positive and annihilates \(\widetilde C\).
+The original constraint has
+\(\eta_C(f,g)=\widetilde\eta(Bf,Bg)\) on compatible test domains
+away from threshold. Quotienting null vectors gives a positive
+homogeneous physical inner product. Domain and rescaling choices
+matter \citep{AQGLouko2011}. A generalized shape mode at
+\(\lambda=5/2\) gives second-order residual convergence in the
+original area stencil. Inhomogeneous local constraints, metricity
+boundaries, and common physical-state refinement remain open.
+
+\subsection{14.5 Histories, constrained response, and an auxiliary clock}
+
+Use \(\hbar=c=1\) in this subsection.
+The finite Hermitian count operator has an ordered-jump history
+expansion with factors \(-H_{yx}\). A triangle product
+\(-0.254534167364\) in the 729-state test is invariant under
+diagonal rephasing, so these histories cannot all have positive
+weights. Even isolating the negative scale direction leaves
+signed cycles in the tested shape stencil.
+The canonical kernel and the positive covariant weight of
+Section~14.3 are distinct specified constructions.
+
+Static density requires the constrained metric components.
+For a Gaussian contour \(h=Ry\), both source and observable
+rotate, giving covariance \(R|\lambda|^{-1}R^T=K^{-1}\).
+The checked static response gives \(G/G_0=1\).
+Deleting the negative direction gives \(4/3\); replacing it
+by its absolute eigenvalue without rotating the source gives
+\(5/3\); keeping only spatial TT waves gives zero.
+
+A conditional nonlinear integration follows for
+\(g_{\mu\nu}=\Omega^2\widehat g_{\mu\nu}\) at \(\Lambda=0\).
+With \(c_R=1/(16\pi G_0)\), the appropriate boundary treatment,
+and proper-length source \(j\),
+\[
+S_E=-c_R\int\sqrt{\widehat g}
+\,[\Omega^2\widehat R+6(\widehat\nabla\Omega)^2]
++\int\sqrt{\widehat g}\,j\Omega .
+\]
+Fix the mean scale and set \(\Omega=1+i\chi\), with zero-mean
+real \(\chi\). If \(P\) removes the constant mode, define
+\[
+A=P(-6\widehat\Delta+\widehat R)P,\qquad
+\eta=P(j-2c_R\widehat R).
+\]
+For \(A>0\) and flat contour measure, integration gives
+\[
+S_{\rm eff}=-c_R\int\sqrt{\widehat g}\,\widehat R
++\int\sqrt{\widehat g}\,j
++\frac{\langle\eta,A^{-1}\eta\rangle}{4c_R}
++\frac12\log\det A
+\]
+up to common normalization. A cosmological or fixed-volume term
+introduces \(\Omega^4\); the flat contour measure is not derived
+from finite count histories. Coordinate density itself cancels
+between a kernel \(K_{xy}=T_{xy}/\sqrt{\mu_x\mu_y}\) and the
+closed-history integration measure. Inserting it again changes
+the model.
+
+A supplied bounded positive lapse \(N\) also permits an
+auxiliary proper-clock construction. Let
+\(H_N=N^{1/2}H_0N^{1/2}\) and
+\(\mathbb H=H_N+NP_\tau\), with self-adjoint count generator
+\(H_0\) and ideal auxiliary momentum \(P_\tau\).
+At fixed momentum \(p\),
+\[
+U_t(p)=e^{-it(H_N+pN)},\qquad
+\mathcal T_t=iU_t^\dagger\partial_pU_t\big|_0
+=\int_0^tU_s^\dagger NU_s\,ds .
+\]
+The fixed-reference-energy equation
+\((H_N-iN\partial_\tau)\Psi=E\Psi\) becomes
+\[
+i\partial_\tau\chi=(H_0-EN^{-1})\chi,\qquad
+\chi=N^{1/2}\Psi.
+\]
+It is unitary on a self-adjoint domain and preserves the scalar
+flux \(\Psi^\dagger N\Psi\). Volume turning points do not stop
+this clock; lapse zeros require a new inverse-lapse domain.
+This auxiliary construction is distinct from the retained native
+clock below. Multiple local clocks must satisfy the normal
+deformation algebra, including its spatial diffeomorphism term.
+
+\subsection{14.6 One finite geometry, orbital, and native-clock operator}
+
+Use geometric cochains for the retained position space and keep
+the internal \(Q\cong\mathbb C^9\) factor.
+With coboundary \(d\) and positive cochain metrics \(M_p\),
+\[
+d_p^*=M_p^{-1}d_p^\dagger M_{p+1},\qquad
+D_g=d+d^*,\qquad
+\Omega_g(m)=\sqrt{D_g^2+m^2I}
+\]
+give a selected positive-energy Dirac--K\"ahler orbital
+completion \citep{AQGBecher1982}.
+In units \(\hbar=c=L_*=1\), the native input is
+\[
+m=\epsilon_e=-\frac32Z_e\log(1-e^{-7g_{\rm share,eff}})
+=4.18545879558\times10^{-23}.
+\]
+Harmonic modes have energy \(m\), and
+\(\partial_m\Omega_g=m(D_g^2+m^2I)^{-1/2}\).
+For positive lapse and mass-independent geometric coupling,
+\[
+H(m)=\widehat H_g+\bigoplus_gN_g^{1/2}\Omega_g(m)N_g^{1/2},
+\qquad
+\mathcal T(t)=iU_t^\dagger\partial_mU_t
+=\int_0^tU_s^\dagger(\partial_mH)U_s\,ds\succeq0.
+\]
+Real-time evolution is unitary. If the spatial symbol is
+\(E=\sqrt{h^{ij}p_ip_j+m^2}\), then \(d\tau/dt=Nm/E\) and the
+worldline action is \(-m\int d\tau\). The clock has no uniform
+positive lower bound as the momentum cutoff grows.
+
+A sufficient Euclidean construction starts from a supplied
+half-transfer \(A_0\), positive duration operator \(N_0\), and
+\(K(m)=A_0^\dagger e^{-mN_0}A_0\).
+On its fixed support, \(C_m=-\partial_mK\succeq0\) and
+\[
+\partial_m\!\left(-\frac{\log K}{\Delta t}\right)
+=\frac1{\Delta t}\int_0^\infty
+(K+sI)^{-1}C_m(K+sI)^{-1}\,ds\succeq0.
+\]
+Bounds \(n_{\min}I\preceq N_0\preceq n_{\max}I\) give the
+same bounds on the clock rate divided by \(\Delta t\).
+Positive entries with assigned lengths alone are insufficient.
+The half-transfer and duration operator are additional data;
+replacing a duration distribution by its mean loses cumulants.
+
+An explicit geometric transfer couples the five-tetrahedron
+boundary of a four-simplex to the boundary obtained by replacing
+one tetrahedron with four regular tetrahedra. These are different
+physical metrics, of cochain dimensions 30 and 44.
+Their four boundary-pair families contain
+\(1920,1992,1992,2064\) causal slabs at \(\alpha=7\).
+The angular sums give
+\[
+A=\begin{pmatrix}0.1169508311&0.3422031803\\
+0.3422031803&1\end{pmatrix},\qquad
+K_g=A^\dagger A,\qquad H_g=-\frac{\log K_g}{\Delta t},
+\quad\Delta t=13.94846613.
+\]
+The duration is a declared synchronization of two boundary-normal
+intervals. Raw stellar interpolation would shift the marked
+geometric ground energy by \(0.131992\), overwhelming the
+native gap. Separate polar normalization of the harmonic and
+excited sectors gives an isometric transport \(R\) that maps
+harmonics to harmonics. The coupled geometric operator is
+\[
+\widehat H_g=
+\begin{pmatrix}
+(H_g)_{00}I&(H_g)_{01}R^\dagger\\
+(H_g)_{10}R&(H_g)_{11}I
+\end{pmatrix}.
+\]
+It acts identically on the internal marked factor.
+Its lower bound is the empty-sector ground energy; harmonic
+modes attain that bound with orbital energy \(m\).
+At unit reference lapse this yields
+\[
+\boxed{E_{{\rm marked},0}(m)-E_{{\rm vacuum},0}=m.}
+\]
+This protects the tiny gap algebraically. At control mass
+\(0.23\), its numerical error is \(4.45\times10^{-16}\);
+clock differentiation and unitarity agree to
+\(2.84\times10^{-10}\) and \(1.76\times10^{-15}\).
+A retained packet moves and changes geometry coherently.
+
+For two descriptions of the same supplied coarse geometry,
+choose cochain maps \(P,R_c\) with \(R_cP=I\), both commuting
+with \(d\), and set \(Q_f=I-PR_c\).
+The inverse fine metric
+\[
+\boxed{M_f=R_c^\dagger M_cR_c+Q_f^\dagger M_aQ_f,\qquad M_a>0}
+\]
+makes the coarse image and complement orthogonal invariant
+subspaces. In orthonormal coordinates,
+\[
+J^\dagger J=I,\quad D_fJ=JD_c,\quad
+\Omega_fJ=J\Omega_c,\quad
+(\partial_m\Omega_f)J=J(\partial_m\Omega_c).
+\]
+Functional calculus also preserves evolution exactly.
+Two refinements \(30\to44\to58\) preserve the two harmonic
+modes with no additional zero modes in the tested complement.
+The complete two-geometry lift \(74\to102\) preserves generator,
+clock, evolution, and transported test sources to about
+\(10^{-13}\) or better. The generally off-diagonal metric
+realizes a supplied operator; it preserves any unwanted coarse
+dispersion or species as well.
+
+Regular-cell weights give
+\[
+v_0=\sqrt{5/6},\qquad v_T=\sqrt{4/5},\qquad v_3=\sqrt{3/4}.
+\]
+The tested inverse coarse-form metric restores the leading periodic cone,
+with a subleading transverse split. On tested closed periodic complexes,
+Dirac--K\"ahler cochains have the torus Betti counts $(1,3,3,1)$,
+two Dirac tastes, and no additional lattice doublers. Flat-realization
+Voronoi--Delaunay Hodge weights give a common leading speed; regular-cell
+weights give each form sector its own cone. The dimension-five term vanishes
+on centrosymmetric complexes and in the mirror-symmetric ensemble, and its
+per-realization coefficient falls as $N^{-1/2}$, far below the Crab bound.
+Constant per-degree rescaling fails across different complexes.
+The refreshed lift is inert when fermions use the record-oriented frame;
+the complex's coherent spatial orientation persists under gluing.
+Selection of the physical Hodge metric, taste and chiral assignments,
+changing-boundary consistency, and radiative stability remain open.
+
+The common low-curvature target is
+\[
+\Gamma[g,\psi]=\frac1{16\pi G_R}\int\sqrt{-g}(R-2\Lambda)
++\Gamma_m[g,\psi]+\Gamma_\partial+\sum_i c_i\mathcal O_i.
+\]
+The finite constructions do not yet fix its renormalized
+coefficients or higher-curvature terms. A spacetime solution
+also requires initial and boundary conditions.
+
+\section{15. Dynamical-Lattice Tests}
+
+Capacity-decorated causal-dynamical-triangulation (CDT) simulations test the local incidence and its coupling to a fluctuating host. The original face-wise campaign, the normalized connected model, and continuous shape interpolations use different geometric measures. Their recorded results apply to their stated ensembles.
+
+At matched volume near $N_{41}\simeq10^5$, turning on the admissibility weighting changes the collision fraction from $0.654$ to $0.077$, while a shuffled-energy control remains at $0.736$; the global host geometry remains stable with measured Hausdorff estimators around $3.55$--$3.59$. Persistent closure-failure defects produce significant local capacity and coordination responses in two independent matched comparisons.
+
+A separate conserved-transport experiment finds exact conservation and an approximately additive maintenance charge,
+\[
+Q-Q(0)=(0.1440\pm0.0025)m,
+\]
+with one shell-one source-to-field ratio across $m=1,2,3,6$,
+\[
+\frac{\Delta f_1-\Delta f_1(0)}{Q-Q(0)}
+=4.9965\pm0.5244.
+\]
+The dressing-subtracted profile stays positive through eight shells and fits $d^{-0.62\pm0.11}$; screening is consistent with zero, giving $\xi>4.6$ steps. The source fit has a maximum relative residual $0.242$, mainly at $m=6$. The finite response therefore shows nonlinear saturation; its continuum $1/r$ limit and absolute junction to $8\pi G_*/c^2$ remain open.
+
+The decorated continuum target requires an extended semiclassical phase with
+\[
+d_H\to4,
+\qquad
+N_3(t)\propto\cos^3(t/s_0),
+\qquad
+\lambda_{\rm TT}(k)=1-c_{\rm TT}k^2a^2+O(k^4).
+\]
+The reference-host volume scaling does not establish these conditions. The original face-wise lock predicts a native point near $(\kappa_0,\Delta)=(2\ln2,0.01)$. Its bare-measure volume-pair test fails while the reference point passes, with seeds sampling extended and concentrated basins. This constrains the original bare measure; the decorated and connected hosts require their own phase tests. The frozen-area shape estimate $L_{\rm block}\simeq3.4L_*$ belongs to that branch, whose shape modes do not supply spatial TT gravitons. A continuous critical surface is a stronger optional cutoff-removal test.
+
+\subsection{15.1 Normalization and distinct geometric ensembles}
+
+A homogeneous blob fit with width \(\widetilde s_0\), kinetic
+coefficient \(k_1\), and \(n_{\rm ev}\) physical events per
+counted simplex gives, under its Einstein minisuperspace
+interpretation and in geometric units,
+\[
+\frac{G}{L_*^2}
+=\frac{\widetilde s_0^2}{3\sqrt6\,k_1}
+\sqrt{n_{\rm ev}\frac{v_{\rm ev}}{L_*^4}}.
+\]
+The spacing, shape, and volume conventions cancel.
+The physical clock, event assignment, and identification of
+this fitted mode with universal gravity remain premises.
+Applying the paired calibration consistently to the earlier
+public pilot gives \(G_{\rm bulk}/G_{\rm cut}=1.5020714592\),
+independent of \(m_4\). That mismatch is not removed by a
+more precise event-volume conversion.
+
+The connected \(\alpha=7\) model has
+\[
+\frac{a^2}{G_0}=\frac{16\ln2}{\sqrt3}=6.40301938055.
+\]
+For
+\[
+S_E=-(\kappa_0+6\Delta)N_0
++(\kappa_4+2\Delta)N_{41}+(\kappa_4+\Delta)N_{32},
+\]
+the curvature map is
+\[
+(\kappa_0,\Delta,\kappa_4^{\rm curv})
+=(2.20205311516,\,0.326138328034,\,-0.304774619960).
+\]
+The continuous interpolation at \(\alpha=11.312\) instead
+gives \((2.70257004,0.43691236,-0.42026496)\).
+These differ from the original face-wise near-unit-asymmetry
+campaign. The curvature contribution to \(\kappa_4\) is not
+its critical tuned value; volume constraints and fugacities
+remain ensemble data. Changing \(m_4\) rescales \(a^2\) and
+\(G_0\) together, without changing their ratio.
+
+With \(r=N_{32}^{\rm slab}/N_{41}^{\rm slab}\), the trapezoidal
+volume-equivalent duration is
+\[
+\frac{c\tau_{\rm vol}^{L,E}}{L_*}
+=\frac{a/L_*}{4\sqrt2}
+\left[\sqrt{8\alpha\mathbin{\pm}3}
++r\sqrt{12\alpha\mathbin{\pm}7}\right],
+\]
+where plus is Lorentzian. At \(\alpha=11.312\), the Lorentzian
+value is \(4.38972153+5.42399632r\).
+A host interval is not one native tick by definition.
+Volume-equivalent duration, geodesic length, and the
+mass-derivative clock are separately calibrated observables.
+The exact normalized tensors permit direct vacuum sampling
+of their CDT weight; existing runs with different measures
+do not test that branch.
+
+\subsection{15.2 Native sources and the interacting force test}
+
+The native rest generator gives the selected proper-time
+attachment
+\[
+T_e[\gamma]=e^{-\epsilon_eP_e\tau_\gamma/\tau_*},
+\qquad
+U_e[\gamma]=e^{-i\epsilon_eP_e\tau_\gamma/\tau_*}.
+\]
+The same energy supplies inertia and the stationary lapse
+coupling. On all 1,920 \(\alpha=7\) slabs, transported normal
+geodesics have durations of roughly \(6.54\)--\(6.99\) ticks,
+and the native transfer-sewing error is
+\(1.72\times10^{-16}\).
+Their free-line covariance is \(-0.00171521593106\), giving
+a leading native connected logarithm of
+\(-3.00472647\times10^{-48}\).
+These freely moving lines do not measure a static force.
+A fixed timelike edge per slice has geometry-independent
+length and gives zero connected rest-mass response.
+
+For held, mass-independent source preparations, let \(L_1,L_2\)
+be Euclidean proper lengths. In units \(\hbar=c=1\),
+\[
+R=\frac{\langle e^{-m_1L_1-m_2L_2}\rangle}
+{\langle e^{-m_1L_1}\rangle\langle e^{-m_2L_2}\rangle},
+\qquad
+Q(r,T)=-\frac{\operatorname{Cov}(L_1,L_2)}{T}.
+\]
+The mixed derivative of \(\log R\) is the covariance.
+An Einstein infrared regime requires \(Q\to-G_R/r\).
+The supplied Gaussian propagator gives the finite-duration
+normalization check
+\[
+Q(r,T)=-\frac{2G}{\pi r}
+\left[\arctan(T/r)-\frac{r}{2T}\log(1+T^2/r^2)\right].
+\]
+This benchmark assumes the propagator; the interacting
+triangulation response remains to be measured.
+
+Intrinsic face transport and a held-separation rule define
+the sources. If \(\dot D=A_D+e\cdot v\), the minimum-norm
+holding velocity is \(v=-A_De\), timelike when
+\(-N^2+A_D^2<0\).
+An explicit path bounds distance above; a continuous slice
+field with \(|\nabla f|\le1\) gives
+\(f(q)-f(p)\le d(p,q)\).
+All 403 sampled points of the four-interval diagnostic pass
+the separation test, without a continuous supremum or
+whole-ensemble coverage theorem.
+
+Normalized initial marks and complete geometric support
+give \(Z_{00}=1\). Filtering out failed source preparations
+would change the ensemble, so incomplete coverage suppresses
+the reported response. Initial-mark covariance also needs
+separation from geometry-induced covariance.
+The saved forty-input \(\alpha=11.312\) diagnostic uses a
+roughly two-percent Lorentzian volume window. It has no
+accepted complete force curve, only about five effective
+samples in the saved action diagnostic, and sub-edge
+separations \(r/a=0.3,0.5,0.7\).
+No infrared \(G_R\) follows from those data.
+The exact two-state estimator check verifies normalization,
+sign, and coverage handling; a physical measurement still
+needs equilibrium, \(a\ll r\ll L_{\rm box}\), and duration
+stability on the chosen microscopic branch.
+
+\subsection{15.3 Completed connected-host normalization test}
+
+The registration and pre-data amendment of 17 October 2026 fix the
+$\alpha=7$ curvature couplings, volume prescription and estimator before
+sampling. Q2 compares $R=G_{\rm vol}/G_0$ with the band $0.80$--$1.25$.
+The primary volume is $N_{41}=32{,}000$, and only runs passing the
+registered blob and stationarity gates enter its verdict.
+
+\begin{center}
+\begin{tabular}{lrrrl}
+\toprule
+Run & $N_{41}$ target & $R$ & $\sigma_{\ln R}$ & Role\\
+\midrule
+A2 & 16,000 & 1.060 & 0.065 & Reported only\\
+A4 & 32,000 & 1.064 & 0.089 & Sole eligible primary\\
+A5 & 64,000 & 0.893 & 0.054 & Reported only\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+All three listed runs have stationary de~Sitter-like profiles. The
+registered Q2 verdict is \textsc{agree} on A4, whose approximate
+two-standard-error interval is $0.89$--$1.27$. Eligibility fails for
+A1, A3 and A6 because of drift; their ratios are retained in the full
+paper's J.14. The separate Q1 start-independence test is
+\textsc{undetermined}, including a $6.1$-standard-error difference
+in largest-slice fraction between A3 and A4. The ratio $R$ is
+independent of $m_4$ and tests the finite-volume stiffness normalization.
+
+A separately registered curvature-trace test gives the diagnostic
+$\gamma_{\rm trace}=1.82\pm1.04$ against $G_0/a^2=0.1562$.
+Its interval is too broad to decide the hypothesis, and both streams
+fail the registered maximum-width gate. Its verdict is
+\textsc{undetermined}. Exploratory scalar correlators on the saved
+geometries do not yield a stable binding energy. Matter-response
+production is deferred pending observable calibration. The full
+account and byte-preserved evidence packet are identified in J.14
+of the main manuscript.
+
+\section{16. Equilibrium Vacuum Normalization}
+
+At fixed regulator, let
+\[
+Z_{\rm cap}[T]
+=\mathbb E\exp\!\left[-\beta\sum_cE_c\right]
+\]
+and define the homogeneous bulk free energy per cell by $\mu_{\rm cap}$. The centered factor is
+\[
+\boxed{
+\widehat Z_{\rm cap}[T]
+=e^{\beta\mu_{\rm cap}N_{\rm cell}(T)}Z_{\rm cap}[T].
+}
+\]
+By construction,
+\[
+-\lim_{N\to\infty}\frac1{\beta N}
+\ln\widehat Z_{\rm cap}^{\rm vac}=0.
+\]
+This identity is invariant under $E_c\mapsto E_c+C$, $\mu_{\rm cap}\mapsto\mu_{\rm cap}+C$. Therefore an arbitrary source-independent microscopic zero-point shift cannot reappear as a capacity-sector observable; only defect- and geometry-dependent differences survive.
+
+The uncentered lattice control verifies the sign and coefficient of the predicted bulk displacement. Exact Euclidean Regge four-volumes fix the volume operator in the Euclidean weight,
+\[
+\mathcal V_4
+=a^4\left[v_{41}(\alpha)N_{41}+v_{32}(\alpha)N_{32}\right],
+\]
+with
+\[
+v_{41}=\frac{\sqrt{8\alpha-3}}{96},
+\qquad
+v_{32}=\frac{\sqrt{12\alpha-7}}{96}.
+\]
+Hence a continuum volume density $\rho_{\rm vol,R}$ couples through
+\[
+t_{41}=a^4v_{41}\rho_{\rm vol,R},
+\qquad
+t_{32}=a^4v_{32}\rho_{\rm vol,R},
+\]
+so the volume normalization is an operator identity. Physical Lorentzian durations use the plus-sign volumes in Section~15.1.
+
+The exact result is zero extensive capacity free-energy density in the centered reference. Calling its mapped capacity contribution zero requires the stated volume operator. It does not fix the total gravitational integration constant. At fixed event count a factor $e^{-CN}$ cancels from normalized weights for every $C$; that invariance cannot determine the coefficient conjugate to volume. A common substrate can also carry several effective operators.
+
+Conditioning a homogeneous Poisson process on total event count $N$ gives a regional count of variance $Nf(1-f)$ for volume fraction $f$; a small region approaches the Poisson law. Fixing a total count leaves these local fluctuations. A pointwise fixed volume form is a stronger variational premise. With conserved stress it gives the trace-free Einstein equation,
+\[
+R_{\mu\nu}-\frac14Rg_{\mu\nu}
+=\frac{8\pi G}{c^4}\left(T_{\mu\nu}-\frac14Tg_{\mu\nu}\right),
+\]
+whose integrability leaves a cosmological integration constant.
+
+The empty-equilibrium cosmological branch separately adopts
+\[
+\boxed{\rho_{\Lambda,i}=0}.
+\]
+A common-parent continuum limit and a physical boundary or matching condition that selects this zero are distinct requirements. Later source-clock release is the conditional nonequilibrium sector of Section~11.
+
+For nonequilibrium fluctuations, the exact Gaussian relative-information functional is
+\[
+\boxed{
+\Gamma_{\rm rel}(C\Vert C_0)
+=\frac12\mathrm{Tr}\left[\mathcal G-I-\ln\mathcal G\right],
+\qquad
+\mathcal G=C_0^{-1/2}CC_0^{-1/2},
+}
+\]
+which is nonnegative and vanishes only at $C=C_0$. It supplies a controlled target class for positive state-dependent energy without reinstating a source-independent vacuum constant.
+
+\section{17. Conditional Gauge and Particle Extensions}
+
+The charged-lepton shell model is specified in Section~6, including its encoding and pole-mass identification. The remaining gauge construction is conditional.
+
+A persistent open three-route record is a reversible qutrit channel. Removing the unphysical common channel phase gives
+\[
+U(3)/U(1)=PU(3),
+\qquad
+\mathrm{Lie}[PU(3)]=\mathfrak{su}(3),
+\]
+with eight traceless endpoint generators and an adjoint Wilson form. In the minimal identity-kernel completion, primitive $j_0=3/2$ recoupling fixes the octet transfer
+\[
+\boxed{t_8=\frac{13}{14}}.
+\]
+This is a projective pure-gauge route construction, not yet QCD. A global $SU(3)$ lift, chiral quark matter, hypercharge, a chiral gauge-covariant fermion action, continuum-scheme matching, confinement, and hadron observables remain open. The existing $SU(2)$ primitive spin action is likewise not yet a derivation of the electroweak matter assignments.
+
+\section{18. Closure Status}
+
+\begingroup
+\setlength{\parskip}{0pt}
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.13}
+\begin{longtable}{L{0.24\textwidth}L{0.22\textwidth}L{0.47\textwidth}}
+\toprule
+\textbf{Result} & \textbf{Grade} & \textbf{Reason}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Result} & \textbf{Grade} & \textbf{Reason}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+$7+9$ split and $1680$ states & Closed in selected vertex & Oriented matching, equal-weight reversible complement, vector response, single-copy routing and orientation.\\
+$\eta_*$ and $g_{\rm share,eff}$ & Closed finite calculation & Exact spectrum and analytic unique global maximum of normalized evidence.\\
+Renewal and finite arrow & One-tick H-theorem closed; macroscopic arrow conditional & Faithful renewal fixes replacement and gives an exact one-tick H-theorem on the closure register; the persistent sector evolves unitarily. Record growth, the record root from exact recoverability and finite total capacity, and conditional typicality give the macroscopic arrow.\\
+Electron cadence and $L_*$ & Fixed within selected transfer and calibration & Marked generator sets the gap; electron calibrates $\tau_*$. Finite orbital transport preserves it; a universal continuum cone remains open.\\
+Seven-channel product minimum & Exact conditional bound & Fixed marginals, unchanged marked vertex, and specified positive-generator class.\\
+Charged-lepton ladder & Selected pole-mass model & Six-label encoding, recurrence, common Gaussian overlap, and species identification. Shell multiplets and radiatively stable physical pole masses remain open.\\
+$G_*$, $G_0$, and $G_R$ & Distinct reference, bare, and infrared coefficients & Canonical static matching sets $G=G_*$. Angular transfer fixes $G_0=A_{\rm ch}c^3/(4\hbar\ln2)$. Universal interacting $G_R$ remains a test.\\
+Source map and static Einstein branch & Closed within canonical graph and matched parent & Green matching and Einstein constraints give Newton, no slip and PPN. Source-aware Gaussian reduction retains contact and determinant terms.\\
+Finite-loop stiffness & Conditional & Return operator needs an independent microscopic audit; it cancels from $\kappa/\gamma$.\\
+$a_0$, spherical RAR, transverse lensing & Conditional EFT equations; RAR derived from the horizon-thermal tilt mode & Tilt-mode identification, the Unruh reading that fixes the lever, projector and metric vertex are premises.\\
+Resolved galactic response & Director action fixed; empirical tests mixed & Positive targets and angular-preserving radial updates exist. Director tests pass; three conditional live-stock realizations retain tilt for eight Gyr. Common dynamics, convergence and formation remain open.\\
+Transport & Specified minimal completion & $D/\tau_0=c^2$, $\tau_0^{-1}=H_0$. Quantum FDT survives reconstruction; Markov closure and initial transients require separate conditions.\\
+Stock selection & Conditional effective dynamics & Bose relative-entropy contacts in the zero-temperature limit of detailed balance descend to the budget-capped exponential law; spherical runs reach it to 0.01--0.05\,dex. Occupation identification, contact rate and exchange operator remain open.\\
+Cluster stock & Fixed cohort budget; record identification conditional & $k_C=5.333\,e^{-\eta_*}$; stock outside record-dominated supports keeps $1+k_C=6.18$; observed-cluster runs keep $R_{500}$ within 0.1\%. Assembly, member galaxies, mergers and lensing segregation remain open.\\
+Formation and abundance & Specified map and ledger; vertex open & Bare pre-release ratio $1/\epsilon$ becomes $5.333$ in the formation mass convention. Release depletes present dust. The specified labelled transfer forbids late recruitment.\\
+Release and clock dynamics & Exact identities inside a conditional model & Ensemble-clock exchange fixes perturbations. Composition-preserving allocation gives exponential depletion, valid only before local exhaustion; physical matching remains conditional.\\
+Mixing and cosmological fit & Direct linear and exponential fits & The standard linear-depletion fit gives $\Delta\chi^2=+0.85$ with one fewer parameter; exponential allocation gives $-0.5152$ with massless neutrinos, linear lensing and a low-redshift offset. The release history supplies the mixing normalization; the frozen history with a feedback-resolved retention gate gives $+1.07$ with two fewer parameters.\\
+Clock and radial capacity & Exact Einstein reductions; observable extension conditional & $q_\tau=N^2$ obeys the static lapse equation; $q_R=1-2GM_{\rm MS}/(c^2R)$. They agree in normalized static vacuum, differ inside matter. Generic relational capacity and boundary dynamics remain open.\\
+Retained quantum sector & Finite reconstruction and infinite-volume algebra & Polar transport, controls and records give Born probabilities and instruments. Capacity bridges survive gauge projection; bounded interactions give quasi-local dynamics and GNS representations. Physical continuum state remains open.\\
+Coherent bonds and angular action & Exact within selected spatial completion & Original cell marginal, $\ln2$ cuts, full-turn normalization and Regge coefficient agree. The state and angular rule are physical inputs.\\
+Event calibration & Conditional physical normalization & Poisson placement, longest-chain clock and paired regular mean cells give $G_0/G_*=0.1055193m_4^{8/3}$. Asymptotic $m_4$ and dynamical volume selection remain open.\\
+Connected primitive host & Finite construction and rank checks & Normalized connected spin networks reproduce CDT weights at $\alpha=7$. Coarse polyhedral geometry requires no literal tetrahedral subdivision of each patch.\\
+Metric dynamics and ordering & Selected action; free TT Fock theory & Six cuts reconstruct the metric; DeWitt mobility and Weyl ordering reproduce the tested Hessian and brackets. Gaussian TT reflection positivity gives two graviton helicities; interacting phase remains open.\\
+Physical constraint states & Homogeneous construction & Positive spectral form on a specified unbounded domain; inhomogeneous constraints and common physical refinement remain open.\\
+Joint orbital and native clock & One finite coupled operator & Polar harmonic transport preserves the native gap. Inverse cochain metrics intertwine generator, clock, evolution and encoded sources through refinement.\\
+Propagation and interaction & Finite controls; universal phase open & Record-oriented fermions are lift-invariant. Flat-realization Hodge weights give the tested common cone; regular-cell weights split it. Physical metric selection and infrared $G_R$ remain open.\\
+Coherent renewal & Exact compatible realization & Background-wide replacement and a common renewal frame preserve retained coherence. Distinct event counts and full refoliation require a common export construction.\\
+Vacuum centering & Exact reference normalization & Removes capacity bulk free energy; it does not select the gravitational integration constant.\\
+\end{longtable}
+\endgroup
+
+\section{19. Sharp Falsifiers}
+
+The linked structure makes failures localizable within each stated model and matching prescription.
+
+\begin{itemize}
+\item \textbf{Static core:} a microscopic calculation that invalidates the $7+9$ incidence, exact closure spectrum, source theorem, or electron transfer gap would break the coefficient chain. Because $G_*$ and both charged-lepton corrections share $\zeta_*$, failure of the marked vertex would move them together.
+\item \textbf{Galactic branch:} the spherical RAR target must follow
+\[
+g_{\rm obs}=g_{\rm bar}/[1-e^{-\sqrt{g_{\rm bar}/a_0}}],
+\]
+while resolved nonspherical maps must satisfy the conservative field equation. The director completion carries two registered tests (SHA-256 \texttt{5a72f3e1a3ae0b65}\ldots). Old-disk vertical dispersions of the DiskMass galaxies, measured apart from the young cold layer, reject it if the median ratio of measured to predicted dispersion falls outside $0.8$--$1.2$; QUMOND predicts about $15\%$ higher values. The persistent tilted stellar debris already challenges the aligned equilibrium solution. A disk-modeled stream population at $20$--$50$ kpc with mean potential flattening below $0.85$ or intrinsic scatter above $0.1$ rejects that branch's nearly round excess, $q_\Phi=0.95$--$0.99$. The live tilted-stock candidate is an additional conditional dynamical state; its population frequency and assembly history remain to be predicted. Persistent low-acceleration gravitational slip or a required Solar anomalous quadrupole would reject the transverse completion.
+\item \textbf{Clusters and groups:} relaxed clusters must hold total-to-baryon ratios near $1+k_C=6.18$ outside the central galaxy's support. Isolated X-ray ellipticals must follow the galactic law out to the radius where their hot gas outweighs their stars. In groups the excess over the law follows the stock not bound to the central galaxy, which reaches the core.
+\item \textbf{Hubble constant from galaxies:} $a_0=\epsilon cH_0$ makes $H_0=a_0/\epsilon c$ a galactic measurement. The standard linear-depletion fit gives $H_0=68.458\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$, which requires $a_0=1.25005\times10^{-10}\,\mathrm{m\,s^{-2}}$; the Cepheid value $73.04$ \citep{Riess2022} requires $1.334\times10^{-10}\,\mathrm{m\,s^{-2}}$. Only absolute distances carry this information. The 44 SPARC galaxies with such distances \citep{Lelli2016} give $a_0=(1.21\pm0.19)\times10^{-10}\,\mathrm{m\,s^{-2}}$, or $H_0=66\pm11$; a $2\%$ determination of $a_0$ separates the two values at $3\sigma$.
+\item \textbf{Redshift evolution:} the branch predicts $a_0(z)=\epsilon cH(z)$. Controlled high-redshift galaxies showing no corresponding evolution would reject the horizon lever. The electromagnetic coupling carries no horizon factor, so $\alpha$ stays fixed while $a_0$ follows $H(z)$. At $z=1.15$, where $a_0$ is predicted to exceed its local value by a factor $1.95$, quasar absorption gives $\Delta\alpha/\alpha=1.3\pm1.3_{\rm stat}\pm0.4_{\rm sys}$ parts per million \citep{Murphy2022ESPRESSO}.
+\item \textbf{Saturated cosmology:} with formation and mixing histories measured independently, the exponential allocation must fit the CMB, BAO and supernova data. Its weighted background and geodesic perturbations use the same formation convention.
+\item \textbf{Release/dark energy:} intrinsic vacuum stress has $p_\Lambda=-\rho_\Lambda$, while its separately conserved effective-fluid reading approaches $w_{\rm eff}=-1$ from below during accumulation. Decreasing physical vacuum density, or $w_{\rm eff}>-1$ for this same component after accounting for matter transfer, rejects the extension. A conserved-CDM $w_0,w_a$ fit is a different reconstruction. Independent gates and kernels must reproduce the required release integral; substantial pre-gate identity loss or a local propagating determinant mode also rejects the model.
+\item \textbf{Strong field:} evidence that the proposed capacity saturation boundary cannot be reconciled with the GR exterior would reject the bounded-domain interpretation, while leaving the exact spherical Einstein reduction itself untouched.
+\item \textbf{Geometry and matter:} one chosen microscopic measure must give a massless TT sector, a common matter cone, and the same infrared Newton coefficient in static sources and curvature response. A volume profile alone cannot establish these properties. Loss of unmeasured position coherence, an unprotected native rest gap, or a persistent species-dependent cone rejects the corresponding matter completion.
+\item \textbf{Constraints and force:} count refinement and spatial refinement must jointly remove their distinct bracket defects on a common physical domain. Held-source measurements need complete support, equilibrium and an infrared separation window; a stable failure of $Q(r,T)\to-G_R/r$ there rejects that interacting branch.
+\end{itemize}
+
+\section{20. Relation to Other Approaches}
+
+The proposal combines a finite capacity and record factor with explicit geometric hosts. The connected construction uses a normalized CDT history measure; the metric-Regge and spin-foam witnesses supply separate semiclassical checks. Capacity labels remain physical degrees of freedom distinct from geometric magnetic indices. Compared with the $\Lambda$ cold-dark-matter model ($\Lambda$CDM), the phenomenological extension replaces particle dark matter with a carrier-resolved response and a conditional saturated early phase. Its inherited phase-cell and thermal matching premises specify the exponential MOND-like response. The ordinary longitudinal branch has an Einstein metric parent and introduces no independent scalar graviton.
+
+Group field theory shares the tetrahedral quantum and the condensate reading of the vacuum \citep{Oriti2009,Oriti2016,Gielen2013,OritiSindoniWilsonEwing2016}. Continuum information-theoretic results recover the Einstein limit from horizon relative entropy \citep{Jacobson1995,DorauMuch2026} and from a geometric relative-entropy action \citep{Bianconi2025,Bianconi2026}. None of these supplies the finite cell or its coefficients, which the present construction fixes.
+
+Many-Pasts is likewise not many-worlds or a collapse theory. It retains one realized present, standard quantum dynamics, and ordinary Born/no-signaling predictions, while interpreting the compatible decoherent pasts as the history support of that present.
+
+\section{21. Conclusion}
+
+The selected vertex and clock give
+\[
+\begin{gathered}
+V_1\ \longrightarrow\ j_0=\tfrac32\ \longrightarrow\ 7+9
+\ \longrightarrow\ 2P(7,4)=1680,\\
+\eta_*=0.0298668\ldots,\qquad g_{\rm share,eff}=7.419800\ldots,\\
+\text{faithful renewal + selected marked generator + electron}
+\ \longrightarrow\ \tau_*,\\
+L_*=c\tau_*=1.6162537\times10^{-35}\ {\rm m},
+\qquad G_*=\frac{c^3L_*^2}{\hbar}.
+\end{gathered}
+\]
+A compatible coherent bond state and absolute angular transfer give
+\[
+\frac{\hbar G_0}{c^3}=\frac{A_{\rm ch}}{4\ln2},\qquad
+\frac{G_0}{G_*}=0.1055192687\,m_4^{8/3}
+\]
+under the Poisson, longest-chain, and paired-cell calibration. The near-unit ratio at $m_4=2.35$ is a conditional bare normalization. Equality with the physical interacting coefficient requires one common geometric state and infrared limit.
+
+Connected patches supply normalized causal histories, coarse areas reconstruct a metric, and selected DeWitt dynamics admits a positive homogeneous constraint inner product. Isometric reduction preserves the encoded geometry--orbital operator, native gap, clock, and source response. The inhomogeneous physical domain, universal cone, coherent export across event counts, and interacting Einstein phase remain open.
+
+The matched ordinary branch gives the Einstein constraints and nonlinear clock-capacity equation. Radial Misner--Sharp capacity agrees with clock capacity in normalized static vacuum and differs inside matter. Generic relational observables and saturation dynamics need specification. The shell model correlates lepton ratios; pole-mass realization and radiative stability remain tests.
+
+The director EFT passes development and two old-disk comparisons. Positive stock and radial updates preserving angular information supply conditional realizations; the live tilted-stock candidate retains substantial tilt for eight Gyr. Its common variational dynamics and formation remain open. Ensemble-clock cosmology gives positive internal allocation, exponential depletion, and a local exhaustion boundary. Direct fits of linear depletion and exponential allocation give $\Delta\chi^2=+0.85$ and $-0.5152$ against $\Lambda$CDM in the likelihoods of Section~11.
+
+\begin{thebibliography}{99}
+
+\bibitem[Mohr et al.(2025)]{CODATA2022Astra}
+P.~J. Mohr, D.~B. Newell, B.~N. Taylor, and E.~Tiesinga,
+``CODATA recommended values of the fundamental physical constants: 2022,''
+\emph{Reviews of Modern Physics} \textbf{97}, 025002 (2025).
+\url{https://physics.nist.gov/cuu/pdf/wall_2022.pdf}.
+
+\bibitem[Takahashi et al.(2026)]{PDG2026Astra}
+F.~Takahashi et al. (Particle Data Group),
+\emph{International Journal of Modern Physics A} \textbf{41}, 2630011 (2026).
+Tau mass listing, accessed 4 September 2026:
+\url{https://pdglive.lbl.gov/Particle.action?node=S035}.
+
+\bibitem[Kac(1947)]{Kac1947}
+M. Kac,
+``On the notion of recurrence in discrete stochastic processes,''
+\emph{Bulletin of the American Mathematical Society} \textbf{53},
+1002--1010 (1947).
+
+\bibitem[Wang et al.(2026)]{Wang2026MW}
+Z.-L. Wang, Y.-L.~S. Tsai, L. Zhang, Y. Wu, H. Li, X.-X. Xue, H. Zhao, and Y.-Z. Fan,
+``Milky Way Dynamics Favor Dark Matter over Modified Gravity Models,''
+arXiv:2605.10857 (2026).
+
+\bibitem[Chamseddine, Mukhanov, and Vikman(2014)]{ChamseddineMukhanovVikman2014}
+A.~H. Chamseddine, V. Mukhanov, and A. Vikman,
+``Cosmology with mimetic matter,''
+\emph{Journal of Cosmology and Astroparticle Physics} \textbf{06}, 017 (2014).
+
+\bibitem[Tsukerman and Veomett(2016)]{TsukermanVeomett2016}
+E. Tsukerman and E. Veomett,
+``A simple proof of Cauchy's surface area formula,''
+arXiv:1604.05815 [math.MG] (2016).
+
+\bibitem[McGaugh et al.(2016)]{McGaugh2016}
+S.~S. McGaugh, F. Lelli, and J.~M. Schombert,
+``Radial acceleration relation in rotationally supported galaxies,''
+\emph{Physical Review Letters} \textbf{117}, 201101 (2016).
+
+\bibitem[Clowe et al.(2006)]{Clowe2006}
+D. Clowe et al.,
+``A direct empirical proof of the existence of dark matter,''
+\emph{The Astrophysical Journal Letters} \textbf{648}, L109--L113 (2006).
+
+\bibitem[Bertotti et al.(2003)]{Bertotti2003}
+B. Bertotti, L. Iess, and P. Tortora,
+``A test of general relativity using radio links with the Cassini spacecraft,''
+\emph{Nature} \textbf{425}, 374--376 (2003).
+
+\bibitem[Tian et al.(2020)]{Tian2020}
+Y. Tian et al.,
+``The radial acceleration relation in CLASH galaxy clusters,''
+arXiv:2001.08340 (2020).
+
+\bibitem[Guttmann(2010)]{Guttmann2010}
+A.~J. Guttmann,
+``Lattice Green functions in all dimensions,''
+\emph{Journal of Physics A: Mathematical and Theoretical} \textbf{43}, 305205 (2010).
+
+\bibitem[Wilson(1974)]{Wilson1974}
+K.~G. Wilson,
+``Confinement of quarks,''
+\emph{Physical Review D} \textbf{10}, 2445--2459 (1974).
+
+\bibitem[Joyce(1994)]{Joyce1994}
+G.~S. Joyce,
+``On the cubic lattice Green functions,''
+\emph{Proceedings of the Royal Society of London A} \textbf{445}, 463--477 (1994).
+
+\bibitem[Arnowitt et al.(1962)]{ADM1962}
+R. Arnowitt, S. Deser, and C.~W. Misner,
+``The dynamics of general relativity,''
+in \emph{Gravitation: An Introduction to Current Research},
+ed. L. Witten (Wiley, New York, 1962).
+
+\bibitem[Bekenstein(1973)]{Bekenstein1973}
+J.~D. Bekenstein,
+``Black holes and entropy,''
+\emph{Physical Review D} \textbf{7}, 2333--2346 (1973).
+
+\bibitem[Hawking(1975)]{Hawking1975}
+S.~W. Hawking,
+``Particle creation by black holes,''
+\emph{Communications in Mathematical Physics} \textbf{43}, 199--220 (1975).
+
+\bibitem[Gibbons and Hawking(1977)]{GibbonsHawking1977}
+G.~W. Gibbons and S.~W. Hawking,
+``Action integrals and partition functions in quantum gravity,''
+\emph{Physical Review D} \textbf{15}, 2752--2756 (1977).
+
+\bibitem[Regge and Wheeler(1957)]{ReggeWheeler1957}
+T. Regge and J.~A. Wheeler,
+``Stability of a Schwarzschild singularity,''
+\emph{Physical Review} \textbf{108}, 1063--1069 (1957).
+
+\bibitem[Zerilli(1970)]{Zerilli1970}
+F.~J. Zerilli,
+``Effective potential for even-parity Regge--Wheeler gravitational perturbation equations,''
+\emph{Physical Review Letters} \textbf{24}, 737--738 (1970).
+
+\bibitem[Sanderson et al.(2003)]{Sanderson2003}
+A.~J.~R. Sanderson, T.~J. Ponman, A. Finoguenov, E.~J. Lloyd-Davies, and M. Markevitch,
+``The Birmingham--CfA cluster scaling project --- I. Gas fraction and the $M$--$T_X$ relation,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{340}, 989--1010 (2003).
+
+\bibitem[Vikhlinin et al.(2006)]{Vikhlinin2006}
+A. Vikhlinin, A. Kravtsov, W. Forman, C. Jones, M. Markevitch, S.~S. Murray, and L. Van Speybroeck,
+``Chandra sample of nearby relaxed galaxy clusters: mass, gas fraction, and mass--temperature relation,''
+\emph{The Astrophysical Journal} \textbf{640}, 691--709 (2006).
+
+\bibitem[Eckert et al.(2022)]{Eckert2022}
+D. Eckert, S. Ettori, E. Pointecouteau, R.~F.~J. van der Burg, and S.~I. Loubser,
+``The gravitational field of X-COP galaxy clusters,''
+\emph{Astronomy \& Astrophysics} \textbf{662}, A123 (2022).
+
+\bibitem[Li et al.(2023)]{Li2023}
+P. Li, Y. Tian, M.~P. J\'ulio, M.~S. Pawlowski, F. Lelli, S.~S. McGaugh, J.~M. Schombert, J.~I. Read, P.-C. Yu, and C.-M. Ko,
+``Measuring galaxy cluster mass profiles into the low-acceleration regime with galaxy kinematics,''
+\emph{Astronomy \& Astrophysics} \textbf{677}, A24 (2023).
+
+\bibitem[Milgrom(1983)]{Milgrom1983}
+M. Milgrom,
+``A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis,''
+\emph{Astrophysical Journal} \textbf{270}, 365 (1983).
+
+\bibitem[Milgrom(1999)]{Milgrom1999}
+M. Milgrom,
+``The modified dynamics as a vacuum effect,''
+\emph{Physics Letters A} \textbf{253}, 273 (1999),
+doi:10.1016/S0375-9601(99)00077-8.
+
+\bibitem[Milgrom(2010)]{Milgrom2010}
+M. Milgrom,
+``Quasi-linear formulation of MOND,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{403}, 886 (2010),
+doi:10.1111/j.1365-2966.2009.16184.x.
+
+\bibitem[Bekenstein(2004)]{Bekenstein2004}
+J.~D. Bekenstein,
+``Relativistic gravitation theory for the modified Newtonian dynamics paradigm,''
+\emph{Physical Review D} \textbf{70}, 083509 (2004).
+
+\bibitem[Famaey and McGaugh(2012)]{FamaeyMcGaugh2012}
+B. Famaey and S.~S. McGaugh,
+``Modified Newtonian dynamics (MOND): observational phenomenology and relativistic extensions,''
+\emph{Living Reviews in Relativity} \textbf{15}, 10 (2012).
+
+\bibitem[Jacobson(1995)]{Jacobson1995}
+T. Jacobson,
+``Thermodynamics of spacetime: the Einstein equation of state,''
+\emph{Physical Review Letters} \textbf{75}, 1260 (1995).
+
+\bibitem[Dorau and Much(2026)]{DorauMuch2026}
+P. Dorau and A. Much,
+``From quantum relative entropy to the semiclassical Einstein equations,''
+\emph{Physical Review Letters} \textbf{136}, 091602 (2026),
+doi:10.1103/lmq8-nsty.
+
+\bibitem[Chandrasekaran et al.(2023)]{ChandrasekaranEtAl2023}
+V. Chandrasekaran, R. Longo, G. Penington, and E. Witten,
+``An algebra of observables for de Sitter space,''
+\emph{Journal of High Energy Physics} \textbf{2023}(2), 082 (2023),
+doi:10.1007/JHEP02(2023)082.
+
+\bibitem[Bianconi(2025)]{Bianconi2025}
+G. Bianconi,
+``Gravity from entropy,''
+\emph{Physical Review D} \textbf{111}, 066001 (2025),
+doi:10.1103/PhysRevD.111.066001.
+
+\bibitem[Bianconi(2026)]{Bianconi2026}
+G. Bianconi,
+``Thermodynamics of the gravity from entropy theory,''
+\emph{Physical Review D} \textbf{114}, 024042 (2026),
+doi:10.1103/26kn-thgp.
+
+\bibitem[Caticha(2021)]{CatichaHK2021}
+A. Caticha,
+``Quantum mechanics as Hamilton--Killing flows on a statistical manifold,''
+\emph{Physical Sciences Forum} \textbf{3}, 12 (2021),
+doi:10.3390/psf2021003012.
+
+\bibitem[Caticha(2025)]{CatichaQED2025}
+A. Caticha,
+``Entropic dynamics approach to quantum electrodynamics,''
+\emph{Entropy} \textbf{27}, 1247 (2025),
+doi:10.3390/e27121247.
+
+\bibitem[Tonomura et al.(1989)]{Tonomura1989}
+A. Tonomura, J. Endo, T. Matsuda, T. Kawasaki, and H. Ezawa,
+``Demonstration of single-electron buildup of an interference pattern,''
+\emph{American Journal of Physics} \textbf{57}, 117--120 (1989),
+doi:10.1119/1.16104.
+
+\bibitem[Verlinde(2011)]{Verlinde2011}
+E. Verlinde,
+``On the origin of gravity and the laws of Newton,''
+\emph{Journal of High Energy Physics} \textbf{2011}(4), 29 (2011).
+
+\bibitem[Verlinde(2017)]{Verlinde2017}
+E. Verlinde,
+``Emergent gravity and the dark universe,''
+\emph{SciPost Physics} \textbf{2}, 016 (2017).
+
+\bibitem[Skordis and Z\l{}o\'snik(2021)]{Skordis2021}
+C. Skordis and T. Z\l{}o\'snik,
+``New relativistic theory for modified Newtonian dynamics,''
+\emph{Physical Review Letters} \textbf{127}, 161302 (2021).
+
+\bibitem[Collins et al.(2004)]{Collins2004}
+J. Collins, A. Perez, D. Sudarsky, L. Urrutia, and H. Vucetich,
+``Lorentz invariance and quantum gravity: an additional fine-tuning problem?,''
+\emph{Physical Review Letters} \textbf{93}, 191301 (2004).
+
+\bibitem[Bombelli et al.(1987)]{Bombelli1987}
+L. Bombelli, J. Lee, D. Meyer, and R.~D. Sorkin,
+``Space-time as a causal set,''
+\emph{Physical Review Letters} \textbf{59}, 521 (1987).
+
+\bibitem[Dowker et al.(2004)]{Dowker2004}
+F. Dowker, J. Henson, and R.~D. Sorkin,
+``Quantum gravity phenomenology, Lorentz invariance and discreteness,''
+\emph{Modern Physics Letters A} \textbf{19}, 1829 (2004).
+
+\bibitem[Pittordis et al.(2025)]{Pittordis2025}
+C. Pittordis, W. Sutherland, and P. Shepherd,
+``Wide binaries from Gaia DR3: testing GR versus MOND with realistic triple modelling,''
+\emph{The Open Journal of Astrophysics} \textbf{8} (2025),
+doi:10.33232/001c.142887.
+
+\bibitem[Chae(2025)]{Chae2025}
+K.-H. Chae,
+``Low-acceleration gravitational anomaly from Bayesian 3D modeling of wide binary orbits: methodology and results with Gaia Data Release 3,''
+\emph{Astrophysical Journal} \textbf{985}, 210 (2025),
+doi:10.3847/1538-4357/adce09.
+
+\bibitem[Chae and Yoon(2026)]{Chae2026}
+K.-H. Chae and Y. Yoon,
+``Revisiting data quality control and multiple-star modeling in wide binary gravity tests: confirmation of MOND-type gravitational anomaly at low acceleration,''
+arXiv:2607.14450 (2026).
+
+\bibitem[Park et al.(2026)]{Park2026}
+R.~S. Park, A. Hees, B. Famaey, H. Desmond, and A. Durakovic,
+``Improved constraints on modified Newtonian gravity from Cassini radio tracking data,''
+\emph{Physical Review D} \textbf{114}, 024066 (2026),
+doi:10.1103/r7n8-kw38.
+
+\bibitem[J\'ulio et al.(2025)]{Julio2025}
+M.~P. J\'ulio, J.~I. Read, M.~S. Pawlowski, P. Li, D. Vaz, J. Brinchmann, M.~P. Rey, O. Agertz, and T. Holmes,
+``The radial acceleration relation at the EDGE of galaxy formation: testing its universality in low-mass dwarf galaxies,''
+\emph{Astronomy \& Astrophysics} \textbf{704}, A330 (2025),
+doi:10.1051/0004-6361/202557106.
+
+\bibitem[Genzel et al.(2017)]{Genzel2017}
+R. Genzel et al.,
+``Strongly baryon-dominated disk galaxies at the peak of galaxy formation ten billion years ago,''
+\emph{Nature} \textbf{543}, 397 (2017).
+
+\bibitem[Prince and Dunkley(2019)]{PrinceDunkley2019}
+H. Prince and J. Dunkley,
+``Data compression in cosmology: A compressed likelihood for Planck data,''
+\emph{Physical Review D} \textbf{100}, 083502 (2019).
+
+\bibitem[Ciocan et al.(2026)]{Ciocan2026}
+B.~I. Ciocan, N.~F. Bouch\'e, J. Fensch, D. Krajnovi\'c, J. Freundlich, H. Desmond, B. Famaey, and R. Techi,
+``MUSE-DARK III: The evolution of the radial acceleration relation at intermediate redshifts,''
+\emph{Astronomy \& Astrophysics} \textbf{709}, L16 (2026).
+
+\bibitem[Varasteanu et al.(2025)]{Varasteanu2025}
+A.~A. V\u{a}r\u{a}\c{s}teanu, M.~J. Jarvis, A.~A. Ponomareva, H. Desmond, I. Heywood, T. Yasin, N. Maddox, M. Glowacki, M. Maksymowicz-Maciata, P.~E.~M. Mancera Pi\~na, and H. Pan,
+``MIGHTEE-HI: The radial acceleration relation with resolved stellar mass measurements,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{541}, 2366 (2025).
+
+\bibitem[Lang et al.(2017)]{Lang2017}
+P. Lang et al.,
+``Falling rotation curves of star-forming galaxies at $0.6<z<2.6$,''
+\emph{Astrophysical Journal} \textbf{840}, 92 (2017).
+
+\bibitem[Lelli et al.(2016)]{Lelli2016}
+F. Lelli, S.~S. McGaugh, and J.~M. Schombert,
+``SPARC: mass models for 175 disk galaxies with Spitzer photometry and accurate rotation curves,''
+\emph{Astronomical Journal} \textbf{152}, 157 (2016).
+
+\bibitem[Brouwer et al.(2021)]{Brouwer2021}
+M.~M. Brouwer et al.,
+``The weak lensing radial acceleration relation: measuring the dark matter law with KiDS-1000,''
+\emph{Astronomy \& Astrophysics} \textbf{650}, A113 (2021).
+
+\bibitem[Mistele et al.(2024)]{Mistele2024}
+T. Mistele, S.~S. McGaugh, F. Lelli, J.~M. Schombert, and P. Li,
+``Radial acceleration relation of galaxies with joint kinematic and weak-lensing data,''
+\emph{Journal of Cosmology and Astroparticle Physics} \textbf{2024}(04), 020 (2024),
+doi:10.1088/1475-7516/2024/04/020.
+
+\bibitem[Unruh(1976)]{Unruh1976}
+W.~G. Unruh,
+``Notes on black-hole evaporation,''
+\emph{Physical Review D} \textbf{14}, 870 (1976).
+
+\bibitem[Tully and Fisher(1977)]{TullyFisher1977}
+R.~B. Tully and J.~R. Fisher,
+``A new method of determining distances to galaxies,''
+\emph{Astronomy \& Astrophysics} \textbf{54}, 661 (1977).
+
+\bibitem[McGaugh et al.(2000)]{McGaugh2000}
+S.~S. McGaugh, J.~M. Schombert, G.~D. Bothun, and W.~J.~G. de Blok,
+``The baryonic Tully--Fisher relation,''
+\emph{Astrophysical Journal Letters} \textbf{533}, L99 (2000).
+
+\bibitem[Planck Collaboration(2020)]{Planck2020}
+Planck Collaboration,
+``Planck 2018 results. VI. Cosmological parameters,''
+\emph{Astronomy \& Astrophysics} \textbf{641}, A6 (2020).
+
+\bibitem[Riess et al.(2022)]{Riess2022}
+A.~G. Riess et al.,
+``A comprehensive measurement of the local value of the Hubble constant with 1 km s$^{-1}$ Mpc$^{-1}$ uncertainty from the Hubble Space Telescope and the SH0ES team,''
+\emph{Astrophysical Journal Letters} \textbf{934}, L7 (2022).
+
+\bibitem[Freedman et al.(2025)]{Freedman2025}
+W.~L. Freedman, B.~F. Madore, I.~S. Jang, et al.,
+``Status report on the Chicago--Carnegie Hubble Program (CCHP): measurement of the Hubble constant using the Hubble and James Webb Space Telescopes,''
+\emph{The Astrophysical Journal} (2025), doi:10.3847/1538-4357/adce78.
+
+\bibitem[Di Valentino et al.(2021)]{DiValentino2021}
+E. Di Valentino et al.,
+``In the realm of the Hubble tension --- a review of solutions,''
+\emph{Classical and Quantum Gravity} \textbf{38}, 153001 (2021).
+
+\bibitem[Will(2014)]{Will2014}
+C.~M. Will,
+``The confrontation between general relativity and experiment,''
+\emph{Living Reviews in Relativity} \textbf{17}, 4 (2014).
+
+\bibitem[Brans and Dicke(1961)]{BransDicke1961}
+C. Brans and R.~H. Dicke,
+``Mach's principle and a relativistic theory of gravitation,''
+\emph{Physical Review} \textbf{124}, 925 (1961).
+
+\bibitem[Adelberger et al.(2003)]{Adelberger2003}
+E.~G. Adelberger, B.~R. Heckel, and A.~E. Nelson,
+``Tests of the gravitational inverse-square law,''
+\emph{Annual Review of Nuclear and Particle Science} \textbf{53}, 77 (2003).
+
+\bibitem[Padmanabhan(2010)]{Padmanabhan2010}
+T. Padmanabhan,
+``Thermodynamical aspects of gravity: new insights,''
+\emph{Reports on Progress in Physics} \textbf{73}, 046901 (2010).
+
+\bibitem[Sanders and McGaugh(2002)]{SandersMcGaugh2002}
+R.~H. Sanders and S.~S. McGaugh,
+``Modified Newtonian dynamics as an alternative to dark matter,''
+\emph{Annual Review of Astronomy and Astrophysics} \textbf{40}, 263 (2002).
+
+\bibitem[Oriti(2009)]{Oriti2009}
+D. Oriti,
+``The group field theory approach to quantum gravity,''
+in \emph{Approaches to Quantum Gravity}, edited by D. Oriti (Cambridge University Press, 2009),
+arXiv:gr-qc/0607032.
+
+\bibitem[Oriti et al.(2016)]{OritiSindoniWilsonEwing2016}
+D. Oriti, L. Sindoni, and E. Wilson-Ewing,
+``Emergent Friedmann dynamics with a quantum bounce from quantum gravity condensates,''
+\emph{Classical and Quantum Gravity} \textbf{33}, 224001 (2016),
+doi:10.1088/0264-9381/33/22/224001.
+
+\bibitem[Oriti(2016)]{Oriti2016}
+D. Oriti,
+``Group field theory as the second quantization of loop quantum gravity,''
+\emph{Classical and Quantum Gravity} \textbf{33}, 085005 (2016).
+
+\bibitem[Gielen et al.(2013)]{Gielen2013}
+S. Gielen, D. Oriti, and L. Sindoni,
+``Cosmology from group field theory formalism for quantum gravity,''
+\emph{Physical Review Letters} \textbf{111}, 031301 (2013).
+
+\bibitem[Barbieri(1998)]{Barbieri1998}
+A. Barbieri,
+``Quantum tetrahedra and simplicial spin networks,''
+\emph{Nuclear Physics B} \textbf{518}, 714 (1998).
+
+\bibitem[Baez and Barrett(1999)]{BaezBarrett1999}
+J.~C. Baez and J.~W. Barrett,
+``The quantum tetrahedron in 3 and 4 dimensions,''
+\emph{Advances in Theoretical and Mathematical Physics} \textbf{3}, 815 (1999).
+
+\bibitem[Rovelli and Smolin(1995)]{RovelliSmolin1995}
+C. Rovelli and L. Smolin,
+``Discreteness of area and volume in quantum gravity,''
+\emph{Nuclear Physics B} \textbf{442}, 593 (1995).
+
+\bibitem[Gleason(1957)]{Gleason1957}
+A.~M. Gleason,
+``Measures on the closed subspaces of a Hilbert space,''
+\emph{Journal of Mathematics and Mechanics} \textbf{6}, 885--893 (1957).
+
+\bibitem[Hartle(2016)]{Hartle2016}
+J.~B. Hartle,
+``Decoherent histories quantum mechanics starting with records of what happens,''
+arXiv:1608.04145 (2016).
+
+\bibitem[Jaynes(1980)]{Jaynes1980}
+E.~T. Jaynes,
+``The minimum entropy production principle,''
+\emph{Annual Review of Physical Chemistry} \textbf{31}, 579--601 (1980),
+doi:10.1146/annurev.pc.31.100180.003051.
+
+\bibitem[Stinespring(1955)]{Stinespring1955}
+W.~F. Stinespring,
+``Positive functions on $C^*$-algebras,''
+\emph{Proceedings of the American Mathematical Society} \textbf{6}, 211--216 (1955),
+doi:10.1090/S0002-9939-1955-0069403-4.
+
+\bibitem[Wyner and Ziv(1989)]{WynerZiv1989}
+A.~D. Wyner and J. Ziv,
+``Some asymptotic properties of the entropy of a stationary ergodic data source with applications to data compression,''
+\emph{IEEE Transactions on Information Theory} \textbf{35}, 1250--1258 (1989).
+
+\bibitem[Ornstein and Weiss(1993)]{OrnsteinWeiss1993}
+D.~S. Ornstein and B. Weiss,
+``Entropy and data compression schemes,''
+\emph{IEEE Transactions on Information Theory} \textbf{39}, 78--83 (1993).
+
+\bibitem[Halliwell(1994)]{Halliwell1994}
+J.~J. Halliwell,
+``A review of the decoherent histories approach to quantum mechanics,''
+arXiv:gr-qc/9407040 (1994).
+
+\bibitem[Eckert et al.(2019)]{Eckert2019}
+D. Eckert et al.,
+``Non-thermal pressure support in X-COP galaxy clusters,''
+\emph{Astronomy \& Astrophysics} \textbf{621}, A40 (2019).
+
+\bibitem[Dupourqu\'e et al.(2023)]{Dupourque2023}
+S. Dupourqu\'e, N. Clerc, E. Pointecouteau, D. Eckert, S. Ettori, and F. Vazza,
+``Investigating the turbulent hot gas in X-COP galaxy clusters,''
+\emph{Astronomy \& Astrophysics} \textbf{673}, A91 (2023).
+
+\bibitem[XRISM Collaboration(2025)]{XRISM2025}
+XRISM Collaboration,
+``XRISM reveals low nonthermal pressure in the core of the hot, relaxed galaxy cluster Abell 2029,''
+\emph{Astrophysical Journal Letters} \textbf{982}, L5 (2025).
+
+\bibitem[Chamseddine \& Mukhanov(2013)]{ChamseddineMukhanov2013}
+A.~H. Chamseddine and V. Mukhanov,
+``Mimetic dark matter,''
+\emph{Journal of High Energy Physics} \textbf{1311}, 135 (2013).
+
+\bibitem[Lewis et al.(2000)]{Lewis2000}
+A. Lewis, A. Challinor, and A. Lasenby,
+``Efficient computation of cosmic microwave background anisotropies in closed Friedmann--Robertson--Walker models,''
+\emph{Astrophysical Journal} \textbf{538}, 473 (2000).
+
+\bibitem[More et al.(2015)]{More2015}
+S. More, B. Diemer, and A. Kravtsov,
+``The splashback radius as a physical halo boundary and the growth of halo mass,''
+\emph{Astrophysical Journal} \textbf{810}, 36 (2015).
+
+\bibitem[Volovik(2005)]{VolovikVacuum2005}
+G.~E. Volovik,
+``Cosmological constant and vacuum energy,''
+\emph{Annalen der Physik} \textbf{14}, 165--176 (2005).
+
+\bibitem[Regge(1961)]{Regge1961}
+T. Regge,
+``General relativity without coordinates,''
+\emph{Il Nuovo Cimento} \textbf{19}, 558--571 (1961).
+
+\bibitem[Ambj{\o}rn et al.(2004)]{AmbjornJurkiewiczLoll2004}
+J. Ambj{\o}rn, J. Jurkiewicz, and R. Loll,
+``Emergence of a 4D world from causal quantum gravity,''
+\emph{Physical Review Letters} \textbf{93}, 131301 (2004).
+
+\bibitem[Ambj{\o}rn et al.(2012)]{AmbjornGJL2012}
+J. Ambj{\o}rn, A. G{\"o}rlich, J. Jurkiewicz, and R. Loll,
+``Nonperturbative quantum gravity,''
+\emph{Physics Reports} \textbf{519}, 127--210 (2012).
+
+\bibitem[Ambj{\o}rn et al.(2001)]{AmbjornJurkiewiczLoll2001}
+J. Ambj{\o}rn, J. Jurkiewicz, and R. Loll,
+``Dynamically triangulating Lorentzian quantum gravity,''
+\emph{Nuclear Physics B} \textbf{610}, 347--382 (2001).
+
+\bibitem[Ambj{\o}rn et al.(2017)]{AmbjornNewPhase2017}
+J. Ambj{\o}rn, J. Gizbert-Studnicki, A. G{\"o}rlich, J. Jurkiewicz, N. Klitgaard, and R. Loll,
+``Characteristics of the new phase in CDT,''
+\emph{European Physical Journal C} \textbf{77}, 152 (2017).
+
+\bibitem[Ambj{\o}rn et al.(2008)]{AmbjornGJL2008dS}
+J. Ambj{\o}rn, A. G{\"o}rlich, J. Jurkiewicz, and R. Loll,
+``The nonperturbative quantum de Sitter universe,''
+\emph{Physical Review D} \textbf{78}, 063544 (2008).
+
+\bibitem[Thoul and Weinberg(1996)]{ThoulWeinberg1996}
+A.~A. Thoul and D.~H. Weinberg,
+``Hydrodynamic simulations of galaxy formation. II. Photoionization and the formation of low-mass galaxies,''
+\emph{Astrophysical Journal} \textbf{465}, 608 (1996).
+
+\bibitem[Okamoto et al.(2008)]{OkamotoGaoTheuns2008}
+T. Okamoto, L. Gao, and T. Theuns,
+``Mass loss of galaxies due to an ultraviolet background,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{390}, 920--928 (2008).
+
+\bibitem[Ambj{\o}rn et al.(2011)]{AmbjornSecondOrder2011}
+J. Ambj{\o}rn, S. Jordan, J. Jurkiewicz, and R. Loll,
+``A second-order phase transition in CDT,''
+\emph{Physical Review Letters} \textbf{107}, 211303 (2011).
+
+\bibitem[Ambj{\o}rn et al.(2019)]{AmbjornCritical2019}
+J. Ambj{\o}rn, D. Coumbe, J. Gizbert-Studnicki, A. G{\"o}rlich, and J. Jurkiewicz,
+``Critical phenomena in causal dynamical triangulations,''
+\emph{Classical and Quantum Gravity} \textbf{36}, 224001 (2019).
+
+\bibitem[Perez(2013)]{PerezSpinFoam2013}
+A. Perez,
+``The spin-foam approach to quantum gravity,''
+\emph{Living Reviews in Relativity} \textbf{16}, 3 (2013).
+
+\bibitem[Han(2019)]{HanSmallSpin2019}
+M. Han,
+``Semiclassical behavior of spinfoam amplitude with small spins and entanglement entropy,''
+\emph{Physical Review D} \textbf{100}, 084049 (2019).
+
+\bibitem[Han(2026)]{HanStack2026}
+M. Han,
+``Summation and triangulation independence of Lorentzian spinfoam amplitudes for all LQG,''
+\emph{Physical Review D} \textbf{113}, 084034 (2026),
+doi:10.1103/n76f-31gf.
+
+\bibitem[Thiemann and Zipfel(2014)]{ThiemannZipfel2014}
+T. Thiemann and A. Zipfel,
+``Linking covariant and canonical LQG II: spin foam projector,''
+\emph{Classical and Quantum Gravity} \textbf{31}, 125008 (2014).
+
+\bibitem[Calcinari and Gielen(2025)]{CalcinariGielen2025}
+A. Calcinari and S. Gielen,
+``Relational dynamics and Page--Wootters formalism in group field theory,''
+\emph{Quantum} \textbf{9}, 1610 (2025).
+
+\bibitem[Han and Ma(2006)]{HanMa2006}
+M. Han and Y. Ma,
+``Master constraint operators in loop quantum gravity,''
+\emph{Physics Letters B} \textbf{635}, 225--231 (2006).
+
+\bibitem[Han and Thiemann(2010)]{HanThiemann2010}
+M. Han and T. Thiemann,
+``On the relation between rigging inner product and master constraint direct integral decomposition,''
+arXiv:0911.3431 (2010).
+
+\bibitem[Fairbairn and Meusburger(2012)]{FairbairnMeusburger2012}
+W.~J. Fairbairn and C. Meusburger,
+``Quantum deformation of two four-dimensional spin foam models,''
+\emph{Journal of Mathematical Physics} \textbf{53}, 022501 (2012).
+
+\bibitem[Han(2017)]{Han2017}
+M. Han,
+``Einstein equation from covariant loop quantum gravity in semiclassical continuum limit,''
+\emph{Physical Review D} \textbf{96}, 024047 (2017).
+
+\bibitem[Han, Huang, and Zipfel(2019)]{HanHuangZipfel2019}
+M. Han, Z. Huang, and A. Zipfel,
+``Emergent four-dimensional linearized gravity from a spin foam model,''
+\emph{Physical Review D} \textbf{100}, 024060 (2019).
+
+\bibitem[Engle(2013)]{EngleProper2013}
+J. Engle,
+``Proposed proper Engle--Pereira--Rovelli--Livine vertex amplitude,''
+\emph{Physical Review D} \textbf{87}, 084048 (2013).
+
+\bibitem[Engle, Vilensky, and Zipfel(2016)]{EngleVilenskyZipfel2016}
+J. Engle, I. Vilensky, and A. Zipfel,
+``The Lorentzian proper vertex amplitude: Asymptotics,''
+\emph{Physical Review D} \textbf{94}, 064025 (2016).
+
+\bibitem[Dittrich and Kogios(2023)]{DittrichKogios2023}
+B. Dittrich and A. Kogios,
+``From spin foams to area metric dynamics to gravitons,''
+\emph{Classical and Quantum Gravity} \textbf{40}, 095011 (2023).
+
+\bibitem[H\"ohn(2015)]{Hoehn2015}
+P.~A. H\"ohn,
+Canonical linearized Regge calculus: Counting lattice gravitons with
+Pachner moves,
+\emph{Physical Review D} \textbf{91}, 124034 (2015).
+
+\bibitem[Ro\v{c}ek and Williams(1981)]{RocekWilliams1981}
+M. Ro\v{c}ek and R.~M. Williams,
+Quantum Regge calculus,
+\emph{Physics Letters B} \textbf{104}, 31--37 (1981).
+
+\bibitem[Dittrich, Kami\'nski, and Steinhaus(2014)]{DittrichKaminskiSteinhaus2014}
+B. Dittrich, W. Kami\'nski, and S. Steinhaus,
+``Discretization independence implies non-locality in 4D discrete quantum gravity,''
+\emph{Classical and Quantum Gravity} \textbf{31}, 245009 (2014).
+
+\bibitem[Lovelock(1971)]{Lovelock1971}
+D. Lovelock,
+``The Einstein tensor and its generalizations,''
+\emph{Journal of Mathematical Physics} \textbf{12}, 498--501 (1971).
+
+\bibitem[Deser(1970)]{Deser1970}
+S. Deser,
+``Self-interaction and gauge invariance,''
+\emph{General Relativity and Gravitation} \textbf{1}, 9--18 (1970).
+
+\bibitem[Borissova et al.(2025)]{BorissovaEtAl2025}
+J. Borissova, B. Dittrich, A. Eichhorn, and M. Schiffer,
+``Renormalization group flows in area-metric gravity,''
+arXiv:2507.02034 [gr-qc] (2025).
+
+\bibitem[Bruno et al.(2026)]{BrunoEtAl2026}
+M. Bruno, E. Colafranceschi, F. M. Mele, and C. Rovelli,
+``The structure of the continuum limit of spin foams,''
+arXiv:2603.16999 [gr-qc] (2026).
+
+\bibitem[Engle et al.(2008)]{EPRL2008}
+J. Engle, E. Livine, R. Pereira, and C. Rovelli,
+``LQG vertex with finite Immirzi parameter,''
+\emph{Nuclear Physics B} \textbf{799}, 136--149 (2008).
+
+\bibitem[Gozzini(2021)]{Gozzini2021}
+F. Gozzini,
+``A high-performance code for EPRL spin foam amplitudes,''
+\emph{Classical and Quantum Gravity} \textbf{38}, 225010 (2021).
+
+
+\bibitem[Unruh(1989)]{Unruh1989}
+W.~G. Unruh,
+``Unimodular theory of canonical quantum gravity,''
+\emph{Physical Review D} \textbf{40}, 1048 (1989).
+
+\bibitem[Henneaux and Teitelboim(1989)]{HenneauxTeitelboim1989}
+M.~Henneaux and C.~Teitelboim,
+``The cosmological constant and general covariance,''
+\emph{Physics Letters B} \textbf{222}, 195 (1989).
+
+\bibitem[Weinberg(1989)]{Weinberg1989}
+S.~Weinberg,
+``The cosmological constant problem,''
+\emph{Reviews of Modern Physics} \textbf{61}, 1 (1989).
+
+\bibitem[Josset et al.(2017)]{JossetPerezSudarsky2017}
+T.~Josset, A.~Perez, and D.~Sudarsky,
+``Dark energy from violation of energy conservation,''
+\emph{Physical Review Letters} \textbf{118}, 021102 (2017).
+
+\bibitem[Perez and Sudarsky(2019)]{PerezSudarsky2019}
+A.~Perez and D.~Sudarsky,
+``Dark energy from quantum gravity discreteness,''
+\emph{Physical Review Letters} \textbf{122}, 221302 (2019).
+
+\bibitem[Ahmed et al.(2004)]{Sorkin2004}
+M.~Ahmed, S.~Dodelson, P.~B. Greene, and R.~D. Sorkin,
+``Everpresent $\Lambda$,''
+\emph{Physical Review D} \textbf{69}, 103523 (2004).
+
+\bibitem[Das et al.(2023)]{DasNasiriYazdi2023}
+S.~Das, A.~Nasiri, and Y.~K. Yazdi,
+``Everpresent $\Lambda$. Part II. Structural stability,''
+\emph{Journal of Cosmology and Astroparticle Physics} \textbf{10}, 047 (2023).
+
+\bibitem[Barrow(2007)]{Barrow2007}
+J.~D. Barrow,
+``A strong constraint on ever-present lambda,''
+\emph{Physical Review D} \textbf{75}, 067301 (2007).
+
+\bibitem[Hsu(2004)]{Hsu2004}
+S.~D.~H. Hsu,
+``Entropy bounds and dark energy,''
+\emph{Physics Letters B} \textbf{594}, 13 (2004).
+
+\bibitem[Li(2004)]{Li2004}
+M.~Li,
+``A model of holographic dark energy,''
+\emph{Physics Letters B} \textbf{603}, 1 (2004).
+
+\bibitem[DESI Collaboration(2025)]{DESI2025}
+DESI Collaboration,
+``DESI DR2 results II: Measurements of baryon acoustic oscillations and cosmological constraints,''
+arXiv:2503.14738 (2025).
+
+\bibitem[Brout et al.(2022)]{Brout2022}
+D.~Brout et al.,
+``The Pantheon+ analysis: Cosmological constraints,''
+\emph{The Astrophysical Journal} \textbf{938}, 110 (2022).
+
+\bibitem[Press and Schechter(1974)]{PressSchechter1974}
+W.~H. Press and P.~Schechter,
+``Formation of galaxies and clusters of galaxies by self-similar gravitational condensation,''
+\emph{The Astrophysical Journal} \textbf{187}, 425 (1974).
+
+\bibitem[Doroshkevich(1970)]{Doroshkevich1970}
+A.~G. Doroshkevich,
+``Spatial structure of perturbations and origin of galactic rotation in fluctuation theory,''
+\emph{Astrophysics} \textbf{6}, 320 (1970).
+
+\bibitem[Eisenstein and Hu(1998)]{EisensteinHu1998}
+D.~J. Eisenstein and W.~Hu,
+``Baryonic features in the matter transfer function,''
+\emph{The Astrophysical Journal} \textbf{496}, 605 (1998).
+
+\bibitem[Ormondroyd et al.(2026)]{Ormondroyd2026}
+A.~N. Ormondroyd, W.~J. Handley, M.~P. Hobson, A.~N. Lasenby, and D.~Yallup,
+``Dynamic or systematic? Bayesian model selection between dark energy and supernova biases,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{548}, stag615 (2026).
+
+\bibitem[DES Collaboration(2026)]{DESReanalysis2026}
+DES Collaboration,
+``Dark Energy Survey supernova program: A reanalysis of cosmology results and evidence for evolving dark energy with an updated Type Ia supernova calibration,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{548}, stag632 (2026).
+
+\bibitem[Lesci et al.(2026)]{Lesci2026}
+G.~F. Lesci, C.~Giocoli, F.~Marulli, M.~Romanello, L.~Moscardini, et al.,
+``AMICO galaxy clusters in KiDS-1000: Splashback radius from weak lensing and cluster--galaxy correlation function,''
+\emph{Astronomy \& Astrophysics} \textbf{710}, A269 (2026).
+
+\bibitem[Hidalgo(2015)]{Hidalgo2015}
+C.~Hidalgo,
+\emph{Why Information Grows: The Evolution of Order, from Atoms to Economies}
+(Basic Books, New York, 2015).
+
+\bibitem[Landauer(1961)]{Landauer1961}
+R.~Landauer,
+``Irreversibility and heat generation in the computing process,''
+\emph{IBM Journal of Research and Development} \textbf{5}, 183--191 (1961).
+
+\bibitem[Bryan and Norman(1998)]{BryanNorman1998}
+G.~L. Bryan and M.~L. Norman,
+``Statistical properties of X-ray clusters: Analytic and numerical comparisons,''
+\emph{The Astrophysical Journal} \textbf{495}, 80 (1998).
+
+\bibitem[Shin et al.(2019)]{Shin2019}
+T.~Shin et al.,
+``Measurement of the splashback feature around SZ-selected galaxy clusters with DES, SPT and ACT,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{487}, 2900 (2019).
+
+\bibitem[Rana et al.(2023)]{Rana2023}
+D.~Rana et al.,
+``The eROSITA Final Equatorial-Depth Survey (eFEDS): Splashback radius of X-ray galaxy clusters using galaxies from HSC survey,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{522}, 4181 (2023).
+
+\bibitem[Rubin et al.(2023)]{Rubin2023}
+D.~Rubin et al.,
+``Union through UNITY: Cosmology with 2,000 SNe using a unified Bayesian framework,''
+arXiv:2311.12098 (2023).
+
+\bibitem[Greif et al.(2008)]{Greif2008FirstGalaxies}
+T.~H. Greif, J.~L. Johnson, R.~S. Klessen, and V. Bromm,
+``The first galaxies: assembly, cooling and the onset of turbulence,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{387},
+1021--1036 (2008).
+
+\bibitem[Barkana and Loeb(1999)]{BarkanaLoeb1999}
+R. Barkana and A. Loeb,
+``The photoevaporation of dwarf galaxies during reionization,''
+\emph{The Astrophysical Journal} \textbf{523}, 54--65 (1999).
+
+\bibitem[Ji et al.(2015)]{JiFrebelBromm2015}
+A.~P. Ji, A. Frebel, and V. Bromm,
+``Preserving chemical signatures of primordial star formation in the first low-mass stars,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{454},
+659--674 (2015).
+
+\bibitem[Griffen et al.(2018)]{GriffenEtAl2018}
+B.~F. Griffen, G.~A. Dooley, A.~P. Ji, B.~W. O'Shea, F.~A. Gomez, and A. Frebel,
+``Tracing the first stars and galaxies of the Milky Way,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{474},
+443--459 (2018).
+
+\bibitem[Bianchi et al.(2011)]{AQGBianchi2011}
+E.~Bianchi, P.~Don\`a, and S.~Speziale,
+\lq\lq Polyhedra in loop quantum gravity,\rq\rq\
+\emph{Phys. Rev. D} \textbf{83}, 044035 (2011),
+\href{https://arxiv.org/abs/1009.3402}{arXiv:1009.3402}.
+
+\bibitem[Louko and Martinez-Pascual(2011)]{AQGLouko2011}
+J.~Louko and E.~Martinez-Pascual,
+\lq\lq Constraint rescaling in refined algebraic quantisation:
+momentum constraint,\rq\rq\
+\emph{J. Math. Phys.} \textbf{52}, 123504 (2011),
+\href{https://arxiv.org/abs/1107.1092}{arXiv:1107.1092}.
+
+\bibitem[Becher and Joos(1982)]{AQGBecher1982}
+P.~Becher and H.~Joos,
+\lq\lq The Dirac--K\"ahler equation and fermions on the lattice,\rq\rq\
+\emph{Z. Phys. C} \textbf{15}, 343--365 (1982),
+\href{https://doi.org/10.1007/BF01614426}{doi:10.1007/BF01614426}.
+
+\bibitem[Aniyan et al.(2021)]{Aniyan2021}
+S. Aniyan, A.~A. Ponomareva, K.~C. Freeman, M. Arnaboldi, O.~E. Gerhard, et al.,
+``Resolving the disc--halo degeneracy -- II: NGC 6946,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{500}, 3579 (2021).
+
+\bibitem[Aniyan et al.(2018)]{Aniyan2018}
+S. Aniyan, K.~C. Freeman, M. Arnaboldi, O.~E. Gerhard, L. Coccato, et al.,
+``Resolving the disc--halo degeneracy -- I: a look at NGC 628,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{476}, 1909--1930 (2018).
+
+\bibitem[Dillamore and Sanders(2026)]{DillamoreSanders2025}
+A.~M. Dillamore and J.~L. Sanders,
+``Geometry of the Milky Way's dark matter from dynamical models of the tilted stellar halo,''
+\emph{Monthly Notices of the Royal Astronomical Society} \textbf{546}, stag226 (2026); arXiv:2510.00095.
+
+\bibitem[Ettori et al.(2019)]{Ettori2019Cluster}
+S. Ettori et al.,
+``Hydrostatic mass profiles in X-COP galaxy clusters,''
+\emph{Astronomy \& Astrophysics} \textbf{621}, A39 (2019), arXiv:1805.00035.
+
+\bibitem[Lelli et al.(2017)]{Lelli2017RAR}
+F. Lelli, S.~S. McGaugh, J.~M. Schombert and M.~S. Pawlowski,
+``One law to rule them all: the radial acceleration relation of galaxies,''
+\emph{Astrophysical Journal} \textbf{836}, 152 (2017), arXiv:1610.08981.
+
+\bibitem[Humphrey et al.(2011)]{Humphrey2011N720}
+P.~J. Humphrey, D.~A. Buote, C.~R. Canizares, A.~C. Fabian and J.~M. Miller,
+``A census of baryons and dark matter in an isolated, Milky Way sized elliptical galaxy,''
+\emph{Astrophysical Journal} \textbf{729}, 53 (2011), arXiv:1010.6078.
+
+\bibitem[Rihtar\v{s}i\v{c} et al.(2026)]{Rihtarsic2026Cluster}
+G. Rihtar\v{s}i\v{c} et al.,
+``Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy,''
+arXiv:2601.22245 (2026).
+
+\bibitem[Murphy et al.(2022)]{Murphy2022ESPRESSO}
+M.~T. Murphy, P. Molaro, A.~C.~O. Leite, G. Cupani, S. Cristiani et al.,
+``Fundamental physics with ESPRESSO: precise limit on variations in the fine-structure constant towards the bright quasar HE 0515$-$4414,''
+\emph{Astronomy \& Astrophysics} \textbf{658}, A123 (2022).
+\end{thebibliography}
+
+\end{document}

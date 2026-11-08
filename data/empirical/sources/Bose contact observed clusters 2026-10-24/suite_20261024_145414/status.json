@@ -1,0 +1,107 @@
+[
+  {
+    "cluster": "A1795",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A1795",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2029",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A85",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2029",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2029",
+    "k": 3,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A85",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2142",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A85",
+    "k": 3,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2319",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2142",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2142",
+    "k": 3,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2319",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A644",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A2319",
+    "k": 3,
+    "exit_code": 0
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 0,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A644",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "A644",
+    "k": 3,
+    "exit_code": 0
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 1,
+    "exit_code": 0
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 3,
+    "exit_code": 0
+  }
+]
