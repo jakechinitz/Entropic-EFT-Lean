@@ -1,0 +1,32 @@
+{
+  "scope": "Periodic 1D wave check of the pressure branch at constant potential.\nIt tests the regular local principal dynamics, not a cosmological void or\nmultistream continuation. RK4 plus spectral differentiation; two resolutions.\n",
+  "rows": [
+    {
+      "grid": 64,
+      "dt": 0.004,
+      "fitted_frequency": 0.7071067786364569,
+      "predicted_frequency": 0.7071067811865476,
+      "frequency_fractional_error": -3.6063728670043815e-09,
+      "max_relative_energy_drift": 4.440892098500626e-16,
+      "max_relative_current_drift": 2.220446049250313e-16,
+      "min_X": 0.3749387665189017,
+      "max_X": 0.37506123348107645,
+      "min_total_energy_over_floor": 2.000000005624999,
+      "amplitude_fit_RMS": 6.098462330421818e-10
+    },
+    {
+      "grid": 128,
+      "dt": 0.002,
+      "fitted_frequency": 0.7071067786352903,
+      "predicted_frequency": 0.7071067811865476,
+      "frequency_fractional_error": -3.6080226584189745e-09,
+      "max_relative_energy_drift": 2.220446049250313e-16,
+      "max_relative_current_drift": 2.220446049250313e-16,
+      "min_X": 0.37493876278883265,
+      "max_X": 0.3750612372111372,
+      "min_total_energy_over_floor": 2.0000000056249996,
+      "amplitude_fit_RMS": 6.14045131309713e-10
+    }
+  ],
+  "frequency_refinement_difference": 1.1666223542761145e-12
+}

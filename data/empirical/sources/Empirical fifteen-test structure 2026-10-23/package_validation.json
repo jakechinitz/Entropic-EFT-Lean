@@ -1,0 +1,9 @@
+{
+  "updated_utc": "2026-10-23T20:06:59.865817+00:00",
+  "source_archive_sha256": "5712792892a4e11f4e2fc9d51e80ca784728332fb61bc3d8b7ea2f6e762cc92d",
+  "pdf_sha256": "67addb11060f7ddf2aadcd99a5ce8d412488793cb0b9f82821ed1abdd647ed00",
+  "zip_crc_passed": true,
+  "manifest_matches_archive": true,
+  "archive_members": 56,
+  "previous_embedded_records_preserved": true
+}

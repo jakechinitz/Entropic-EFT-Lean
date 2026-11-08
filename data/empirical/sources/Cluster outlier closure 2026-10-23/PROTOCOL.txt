@@ -1,0 +1,31 @@
+Cluster outlier audit -- 23 October 2026
+
+Before the new reductions:
+Use the existing observed-cluster data without modifying them. Fix surviving
+cohort allocation k=5.1760752079627395. No cluster-specific gravitational charge,
+slip, a0, or allocation fit. Preserve disagreements between mass estimators.
+
+Targets: A1795, A2029, ZW1215 and A644; include A2319 as the opposite-sign
+inventory case and the other stellar-profile clusters as controls.
+
+1. Compare thermal and lensing mass at identical physical radii. Reconstruct an
+NFW observational target from the published M200/M500 pair. These correlated
+numbers specify one profile, not two independent constraints. Vary M500 by
+the quoted error holding c200 fixed as a sensitivity path, not a posterior.
+Also vary c200 by +/-0.18 dex as a shape sensitivity, not a fitted parameter.
+2. Quantify the minimal extra isotropic pressure required by a positive
+lensing-minus-HSE mass difference on measured radial intervals. Use the
+integrated momentum equation; never equate pressure fraction with mass bias
+without a gradient assumption. Distinguish XRISM's measured region from R500.
+3. Audit A644's forward mass using positivity of stock shells. Compute the
+smallest maximum displacement in quoted marginal-error units needed to reach
+the monotone nonnegative stock cone. Unknown covariance forbids a chi-square
+or joint statistical significance. Compare released physical mass models.
+4. Calculate the minimum outside-aperture inventory required by conservation.
+Construct positive transport witnesses when possible. They establish ledger
+feasibility, not the physical selection or timescale of a transport law.
+5. Formalize the common-potential, pressure, positivity and transport identities
+in the available Lean 4.19 standalone environment. This is not a rebuild of
+upstream Lean 4.35 and does not certify the observational inputs.
+
+Retain unresolved contradictions. No data-dependent new physics is introduced.

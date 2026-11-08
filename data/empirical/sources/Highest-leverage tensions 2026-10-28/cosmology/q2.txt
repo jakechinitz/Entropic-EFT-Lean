@@ -1,0 +1,11 @@
+LCDM sn=dovekie off=1 mnu=0.06 tau=lowE cal=free
+REL sn=dovekie off=1 mnu=0.06 tau=lowE cal=free AL=0.979
+LCDM sn=dovekie off=0 mnu=0 tau=fp cal=fixed
+REL sn=dovekie off=0 mnu=0 tau=fp cal=fixed AL=0.979
+REL sn=dovekie off=1 mnu=0 tau=fp cal=fixed AL=1
+REL sn=dovekie off=1 mnu=0 tau=fp cal=fixed AL=calc
+REL sn=dovekie off=0 mnu=0.06 tau=lowE cal=free AL=calc
+LCDM sn=dovekie off=1 mnu=0 tau=fp cal=fixed acc=1
+REL sn=dovekie off=1 mnu=0 tau=fp cal=fixed AL=0.979 acc=1
+REL sn=none off=0 mnu=0.06 tau=lowE cal=free AL=0.979
+LCDM sn=none off=0 mnu=0.06 tau=lowE cal=free

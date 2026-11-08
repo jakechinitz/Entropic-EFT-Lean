@@ -1,0 +1,9 @@
+budget multiplier k on M_sp budget: chi2 (no env | lin+out per bin)  inner(32)
+k=      1    481.7 |   280.9   inner   93.4
+k=    1.5    375.2 |   219.0   inner   79.9
+k=      2    314.1 |   190.9   inner   79.9
+k=      3    247.9 |   169.1   inner   83.6
+k=      4    213.8 |   160.9   inner   84.3
+k=      6    183.9 |   156.6   inner   84.4
+k=     10    179.0 |   166.2   inner   84.5
+k=  10000    188.0 |   175.9   inner   84.5

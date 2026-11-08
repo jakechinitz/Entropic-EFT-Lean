@@ -1,0 +1,56 @@
+{
+  "scope": "Conservative finite-volume spatial test; no positivity clipping of J.",
+  "rows": [
+    {
+      "grid": 256,
+      "dt": 0.029940119760479042,
+      "final_time": 5.0,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 0.006072738629122054,
+      "max_absolute_mean_current_change": 8.881784197001252e-16,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 7.947139968322858e-08,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    },
+    {
+      "grid": 512,
+      "dt": 0.014970059880239521,
+      "final_time": 5.0,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 0.00439855662101285,
+      "max_absolute_mean_current_change": 4.440892098500626e-16,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 1.1559828205776057e-08,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    },
+    {
+      "grid": 1024,
+      "dt": 0.0074962518740629685,
+      "final_time": 5.0,
+      "minimum_J": 0.2,
+      "minimum_X": 0.008734945626786117,
+      "minimum_energy_over_floor": 1.0132749326243968,
+      "max_fractional_total_energy_change": 0.0035504926088646416,
+      "max_absolute_mean_current_change": 0.0,
+      "max_numerical_tail_outside_unit_cone_plus_three_cells": 3.08190362119376e-10,
+      "source_or_current_clipping": false,
+      "negative_current_seen": false,
+      "spacelike_state_seen": false
+    }
+  ],
+  "mean_state_restriction_changes": [
+    0.013845308566890313,
+    0.008311668551914286
+  ],
+  "limitations": [
+    "Frozen potential and flat metric, planar periodic geometry; not a cosmological void.",
+    "Rusanov flux has numerical viscosity. Energy change and tails require refinement.",
+    "This run is not a proof of global well-posedness, interface stability or absence of dust caustics."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "toolchain": "Lean/mathlib 4.19.0",
+  "passed": true,
+  "records": [
+    {
+      "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+      "theorems": 7,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    },
+    {
+      "module": "Entropic.Extensions20261023.MuseProjection",
+      "theorems": 4,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    },
+    {
+      "module": "Entropic.Extensions20261023.ConnectedClosure",
+      "theorems": 42,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    },
+    {
+      "module": "Entropic.Extensions20261023.EffectiveContact",
+      "theorems": 36,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    },
+    {
+      "module": "Entropic.Extensions20261023.MergerContact",
+      "theorems": 8,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    },
+    {
+      "module": "Entropic.Extensions20261023.ClusterOutliers",
+      "theorems": 22,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    }
+  ],
+  "note": "MuseProjection numerical certificates completed with decide +kernel; original unsuccessful attempts preserved"
+}

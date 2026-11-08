@@ -1,0 +1,11 @@
+23 October 2026
+
+Research note/main.pdf built successfully with the workspace build helper.
+All eight pages rendered with Poppler and visually inspected.
+No clipped text, broken equations, overlapping tables or missing figures found.
+Compiler log has no overfull boxes or undefined references.
+All 14 recorded validation checks pass; 22 conditional Lean lemmas compile.
+
+Four publication folders and upstream formalization were not edited.
+Previous outputs, failed intermediate validation, and source versions preserved.
+The report explicitly retains unresolved empirical and constitutive questions.

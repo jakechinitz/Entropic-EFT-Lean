@@ -1,0 +1,189 @@
+\section{Primitive geometric cells and connected interfaces}
+\label{sec:geometric}
+
+\subsection{Relational geometric data}
+
+A local spatial frame change acts on link transport as
+\begin{equation}
+g_{cc'}\mapsto h_cg_{cc'}h_{c'}^{-1}.
+\end{equation}
+Fluxes at a tetrahedron satisfy the Gauss constraint
+\begin{equation}
+\sum_{f=1}^4\mathbf J_f=0.
+\end{equation}
+The invariant intertwiner space carries shape information after this constraint is imposed. The capacity statistic $K^2$ continues to fluctuate in its separate factor. Setting it equal to a Gauss Casimir would make it vanish on geometric singlets and destroy its defining Gibbs distribution.
+
+The selected one-face capacity--geometry lock is an equivariant map between two copies of $V_3$. Schur's lemma fixes the form of a nonzero map up to a scalar. Its existence as an interaction is a selected realization condition. For $N$ aligned faces, maximal fusion gives the unique normalized equivariant map
+\begin{equation}
+F_N:V_3^{\otimes N}\longrightarrow V_{3N},
+\qquad
+F_N|3,\mathbf n\rangle^{\otimes N}=|3N,\mathbf n\rangle.
+\end{equation}
+The coarse spin grows through blocking while the primitive spin stays fixed.
+
+The coherent area prescription uses the additive flux on this maximal ray. It can be related to the kinematical $\sqrt{J(J+1)}$ area by the finite observable factor
+\begin{equation}
+Z_A(N)=\sqrt{\frac{3N}{3N+1}}.
+\end{equation}
+The state-sum construction uses the resulting assigned coarse areas and normalized shape packets. It does not require simultaneously sharp quantum dihedral-angle eigenstates.
+
+\subsection{The retained paired-cell sector}
+
+Couple two copies of $\mathcal I_3$ through the four-bundle maximal-fusion map
+\begin{equation}
+T:\mathcal I_3\otimes\mathcal I_3\longrightarrow\mathcal I_6,
+\qquad \dim\mathcal I_6=13.
+\end{equation}
+With $F=(TT^\dagger)^{-1/2}T$, the operator $I_{\rm pair}=F^\dagger$ is an isometry from the thirteen-dimensional coarse space into the forty-nine-dimensional pair.
+
+There is an explicit polynomial parent for this subspace. Define
+\begin{align}
+X&=\mathbf J_1\cdot\mathbf J_2,\qquad
+Y=\mathbf J_1\cdot\mathbf J_3,\qquad Z=-12I-X-Y,\\
+u&=(X+4I,Y+4I,Z+4I),\qquad B=\sum_ru_r^2,\qquad Q=i[X,Y],\\
+\mathcal D&=\sum_ru_r\otimes u_r,\\
+\mathcal E&=\sum_r(u_r^2\otimes u_r+u_r\otimes u_r^2),\qquad
+\mathcal T=\sum_ru_r^2\otimes u_r^2.
+\end{align}
+The dimensionless parent is
+\begin{equation}
+\begin{split}
+\widehat H_{\rm pair}=\frac1{13^4}\big[
+&3\,13^4I+13^2(B\otimes I+I\otimes B-8\mathcal D)\\
+&+52\mathcal E+B\otimes B-2\mathcal T-144Q\otimes Q
+\big].
+\end{split}
+\label{eq:pairparent}
+\end{equation}
+The retained exact rational audit gives
+\begin{equation}
+\widehat H_{\rm pair}\succeq0,\qquad
+\ker\widehat H_{\rm pair}=\Ran I_{\rm pair},
+\qquad \dim\ker\widehat H_{\rm pair}=13.
+\end{equation}
+There are $36$ positive eigenvalues and a dimensionless gap about $1.9301241828$. A physical energy scale multiplying the parent remains a separate input.
+
+Within an assigned finite block this parent selects the code. Applying the same parent to overlapping pairs imposes additional correlations. The stored three-cell calculation, included in the reference inputs, gives a nineteen-dimensional common ground space for $H_{12}+H_{23}$ in the $343$-dimensional space, with positive gap about $0.96520$ in parent-energy units. This is a compatibility check for that finite overlap. The present construction uses assigned blocks and separately specifies their geometric gluing.
+
+\subsection{An integer-channel causal regulator}
+
+Euclidean CDT building blocks have spatial squared edges $a^2$ and mixed squared edges $\alpha a^2$. A spatial triangle has area
+\begin{equation}
+A_{\rm SL}=\frac{\sqrt3}{4}a^2,
+\end{equation}
+while a triangle with one spatial and two mixed edges has
+\begin{equation}
+A_{\rm mix}=\frac{\sqrt{4\alpha-1}}4a^2.
+\end{equation}
+Assigning one channel to a spatial triangle and three to a mixed triangle gives
+\begin{equation}
+A_{\rm SL}=\Ach,\qquad A_{\rm mix}=3\Ach,
+\qquad \boxed{\alpha=7}.
+\label{eq:alpha7}
+\end{equation}
+Both Euclidean four-simplex volumes are nondegenerate:
+\begin{equation}
+V_{41}=a^4\frac{\sqrt{8\alpha-3}}{96},\qquad
+V_{32}=a^4\frac{\sqrt{12\alpha-7}}{96}.
+\end{equation}
+The stronger threshold is $\alpha>7/12$.
+
+A four-port patch with $V$ cells and $E$ internal links has $B=4V-2E$ external ports. Hence $B$ is even. A mixed tetrahedron with channel counts $(1,n,n,n)$ requires odd $n$ in this patch architecture. The first anisotropic choice after $n=1$ is $n=3$. This parity argument restricts the specified architecture; it does not prove universal uniqueness of $\alpha=7$.
+
+The three coarse tetrahedral interfaces are
+\begin{center}
+\begin{tabular}{llll}
+\toprule Slice split & Channels & Spins & Dimension\\\midrule
+$4$--$0$ & $(1,1,1,1)$ & $(3,3,3,3)$ & $7$\\
+$3$--$1$ & $(1,3,3,3)$ & $(3,9,9,9)$ & $7$\\
+$2$--$2$ & $(3,3,3,3)$ & $(9,9,9,9)$ & $19$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Explicit invariant tensors}
+
+An orthonormal recoupling basis for $\Inv(V_{j_0}\otimes V_{j_1}\otimes V_{j_2}\otimes V_{j_3})$ is
+\begin{equation}
+B_k(m_0,m_1,m_2,m_3)
+=\sum_M\frac{(-1)^{k-M}}{\sqrt{2k+1}}
+C^{kM}_{j_0m_0,j_1m_1}
+C^{k,-M}_{j_2m_2,j_3m_3}.
+\label{eq:intertwiner}
+\end{equation}
+The allowed $k$ are the common intermediate spins of the two pairs. Internal spin-three edges use
+\begin{equation}
+E_{mm'}=(-1)^{3-m}\delta_{m,-m'}.
+\end{equation}
+The normalized maximal fusion of three spin-three legs into spin nine is particularly simple in occupation coordinates $r_i=m_i+3$:
+\begin{equation}
+(F_3)_{R,r_1r_2r_3}
+=\delta_{R,r_1+r_2+r_3}
+\left[
+\frac{\binom6{r_1}\binom6{r_2}\binom6{r_3}}
+{\binom{18}R}
+\right]^{1/2}.
+\label{eq:fusion3}
+\end{equation}
+The binomial convolution identity gives $F_3F_3^\dagger=I_{19}$. Equations \eqref{eq:intertwiner} and \eqref{eq:fusion3} fix phases and normalization for independent implementations.
+
+\subsection{The four-cell chain}
+
+Take four primitive cells with ports
+\begin{equation}
+(a,b,c,x),\quad(x,d,e,y),\quad(y,f,g,z),\quad(z,h,i,j).
+\end{equation}
+Contract repeated internal labels with $E$. Bundle external ports into
+\begin{equation}
+a;\qquad(b,d,f);\qquad(c,e,h);\qquad(g,i,j).
+\end{equation}
+Apply \eqref{eq:fusion3} to the three bundles. The resulting map is
+\begin{equation}
+R_{31}:\mathcal I_3^{\otimes4}
+\longrightarrow\Inv(V_3\otimes V_9^{\otimes3}).
+\end{equation}
+It has rank seven. Restricting consecutive cell pairs to the retained paired sectors gives a $7$-by-$169$ map with the same rank.
+
+The calculation exploits the maximal-spin selection rule at the tail: both last-cell pair channels must be six in the unrestricted recoupling coordinates. An independent residual check of the forbidden channels is about $5.01\times10^{-17}$. This both reduces the contraction cost and checks the implemented index grouping.
+
+\subsection{The six-cell cycle}
+
+Take six cells around a cycle, each with two internal and two external ports. Assign the external port pairs to coarse faces
+\begin{equation}
+(0,1),(0,2),(1,2),(1,3),(2,3),(0,3).
+\end{equation}
+Each face receives three primitive facets. Maximal fusion gives four spin-nine faces. Retaining three consecutive paired sectors produces
+\begin{equation}
+R_{22}:\C^{13}\otimes\C^{13}\otimes\C^{13}
+\longrightarrow\Inv(V_9^{\otimes4}),
+\end{equation}
+a $19$-by-$2197$ map of full row rank.
+
+The implementation evaluates coherent-state polynomials instead of forming a tensor with twelve free magnetic indices. Eighty evaluations determine the map in the orthonormal target basis; sixteen fresh evaluations test it. The evaluation matrix has condition number about $4.11$, and the largest held-out relative residual is $3.29\times10^{-15}$. These are numerical rank and contraction certificates with ample singular-value separation, rather than exact symbolic rank proofs.
+
+The cycle is a connected spin network with grouped boundary facets. A literal tetrahedral three-ball imposes additional geometric incidence requirements. The tested six-tetrahedron fan and an eight-tetrahedron refinement have rank thirteen for the required nineteen-dimensional boundary space. Their failure limits those particular fine-manifold realizations. The full-rank abstract cycle remains the retained construction.
+
+\subsection{Normalized interfaces and bounded parents}
+
+\begin{proposition}[Normalized interface]
+Let $R_e:\mathcal H_{\rm patch}\to\mathcal H_e$ have full row rank. Then
+\begin{equation}
+F_e=(R_eR_e^\dagger)^{-1/2}R_e,\qquad I_e=F_e^\dagger
+\label{eq:polar}
+\end{equation}
+satisfy $F_eI_e=I_{\mathcal H_e}$ and $I_e^\dagger I_e=I_{\mathcal H_e}$.
+\end{proposition}
+\begin{proof}
+The Gram matrix $R_eR_e^\dagger$ is strictly positive. Multiplying \eqref{eq:polar} by its adjoint gives
+$F_eF_e^\dagger=(R_eR_e^\dagger)^{-1/2}
+(R_eR_e^\dagger)(R_eR_e^\dagger)^{-1/2}=I$.
+\end{proof}
+
+Inside the paired subspace, add
+\begin{equation}
+H_{\rm code}=\Delta_{\rm p}(P_{\rm pair}-P_{\rm code}),
+\qquad P_{\rm code}=I_eI_e^\dagger,\quad \Delta_{\rm p}>0.
+\end{equation}
+Because $P_{\rm code}\le P_{\rm pair}$, this term is positive. Together with the disjoint pair parents, it leaves the desired interface code. The interaction has bounded support, four or six cells in the displayed examples.
+
+The Gram condition numbers are about $9.68$ and $25.81$. Isometry errors are below $2.1\times10^{-14}$. The metric meaning of a code observable is given by transporting the coarse operator through $I_e$. Equality to a sum of unchanged fine-cell volume operators is a further requirement, absent from this construction.

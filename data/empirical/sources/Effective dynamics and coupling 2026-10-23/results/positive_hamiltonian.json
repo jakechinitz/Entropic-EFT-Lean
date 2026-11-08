@@ -1,0 +1,21 @@
+{
+  "scope": "Positive completion of the joint Hamiltonian's exchange edges.\nEnergy conservation alone does not ensure that an arbitrary interaction\npreserves the free lower bound. Each edge is completed to a positive\nrank-one form, with the least equal diagonal shift for its off-diagonal.\n",
+  "dimension": 72,
+  "hermiticity_error": 0.0,
+  "minimum_interaction_eigenvalue": -9.886601217122814e-17,
+  "minimum_full_hamiltonian_eigenvalue": 1.0,
+  "free_floor": 1.0,
+  "bare_energy_commutator_max": 0.0,
+  "angular_commutators_max": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "floor_coupling_max": 0.0,
+  "max_norm_error": 6.661338147750939e-16,
+  "max_bare_energy_drift": 4.440892098500626e-15,
+  "min_mean_clock_energy": 2.0000003137177456,
+  "dissipative_relaxation_claimed": false,
+  "actual_scalar_spectrum_identified": false,
+  "weak_coupling_limitation": "The diagonal completion must be included when matching frequency shifts and finite-coupling rates."
+}

@@ -1,0 +1,838 @@
+[
+  {
+    "path": ".github/workflows/build.yml",
+    "status": "missing"
+  },
+  {
+    "path": ".gitignore",
+    "status": "different"
+  },
+  {
+    "path": "CITATION.cff",
+    "status": "missing"
+  },
+  {
+    "path": "Entropic.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppB/Counts.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppB/Elementary.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppB/GibbsCalculus.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppB/LegacyBridge.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppB/Supplement.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Calibration.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/CausalDiamond.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Conditional.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Continuum.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Defect.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/ElectronNumerics.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Frame.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/GibbsNumerics.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/History.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Information.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Lattice.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/MoveGraph.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/Sprinkling.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/TiltedMean.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppCDE/WeakField.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppFG/Born.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppFG/Histories.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppFG/Horizon.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppFG/StrongField.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppFG/Subadditivity.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH1/Algebra.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH1/Kinematics.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH1/Marked.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH10/Elimination.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH10/Gaussian.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH10/Legendre.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH10/Pullback.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH10/Spectral.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH10/Symbols.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH11/Clock.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH11/Frame.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH11/Polar.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppH11/Records.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppIJ/Cdt.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppIJ/Color.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppIJ/Shells.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppKN/Fields.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppKN/Response.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppKN/Scalars.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppO/Flow.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppO/Numerics.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppO/Release.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppP/Expansion.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppP/Numbers.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppP/Records.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppP/Spin.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppQ/Algebra.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppQ/Fock.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/AppQ/Weights.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/BlackHole.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/CapacityDomain.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/ClosureRoot.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Director.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Audit/ClaimLedger.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Audit/Connections.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Clusters/Projection.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Core/PhysicalInterfaces.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Core/Prelude.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Core/Status.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Cosmology/FixedMeasureDarkEnergy.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Cosmology/SaturatedDust.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Edge/Kernel.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Edge/SourceProjection.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Edge/TetrahedralFrame.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Foundations/Postulates.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gauge/FactorSplit.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gauge/ProjectiveColor.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gauge/SpinePropagation.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gauge/VertexRealization.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gaussian/RelativeCovariance.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gravity/FieldDefinitions.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gravity/Static.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Gravity/StrongField.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Information/Renewal.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Instantiation/ToyCDT.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Lattice/FiniteRegulator.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Marked/CorrectedH9.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Marked/EdgeGraph.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Marked/SingleStrandRecord.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Microstructure/Architecture.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Numerics/Spine.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/OpenProblems/Interfaces.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Quantum/Histories.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Quantum/Replacement.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Representation/FusionSpec.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Representation/MarkedComplement.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Representation/SharpTransfer.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Representation/SpinDimensions.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Scale/Electron.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Scale/Leptons.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Structure/Connections.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Transport/Telegrapher.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/Transverse/RankOne.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/Admissibility.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/Boundary.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/BranchAudit.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/ClosureInvariant.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/EtaStar.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/EtaUniqueness.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/RootExistence.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/EFT/UV/Spectrum.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Extensions20261023/ClusterOutliers.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Extensions20261023/ConnectedClosure.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Extensions20261023/EffectiveContact.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Extensions20261023/EmpiricalCertificates.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Extensions20261023/MergerContact.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Extensions20261023/MuseProjection.lean",
+    "status": "line_endings_only"
+  },
+  {
+    "path": "Entropic/FiniteModel.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/FiniteStatistics.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/GalacticLaw.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/GaussianSource.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/GenerationCutoff.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/HistoryCapacity.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/IsometricReduction.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Ledger.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Main/Core.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Main/Cosmo.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Main/Galactic.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/ADM.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Bridge81.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Conformal.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/DiagCommutant.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Fields.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Harmonic.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/IBPForm.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Intertwiner.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Kinetic.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/LieJJ.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/LieTensor.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Pair.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/PairGen.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/RealForms.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/SU3Form.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Schur.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/SlGen.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Pass2/Var.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/PositiveLedger.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/PositiveReconstruction.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Projectors.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Reciprocity.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Response.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/RetainedRelaxation.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/ShellLadder.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Spherical.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Spine.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Algebra.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Analysis.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Counting.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Dirac.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Gaussian.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Information.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Legacy.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Spin.lean",
+    "status": "exact"
+  },
+  {
+    "path": "Entropic/Sweep/Staggered.lean",
+    "status": "exact"
+  },
+  {
+    "path": "LICENSE",
+    "status": "missing"
+  },
+  {
+    "path": "README.md",
+    "status": "different"
+  },
+  {
+    "path": "lake-manifest.json",
+    "status": "exact"
+  },
+  {
+    "path": "lakefile.toml",
+    "status": "exact"
+  },
+  {
+    "path": "lean-toolchain",
+    "status": "exact"
+  },
+  {
+    "path": "ledger/CLAIMS.md",
+    "status": "exact"
+  },
+  {
+    "path": "ledger/LEDGER.md",
+    "status": "exact"
+  },
+  {
+    "path": "ledger/OPEN_TRIAGE.md",
+    "status": "exact"
+  },
+  {
+    "path": "ledger/PLAN.md",
+    "status": "exact"
+  },
+  {
+    "path": "ledger/RETIREMENT.md",
+    "status": "exact"
+  },
+  {
+    "path": "ledger/extraction/C01.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C02.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C03.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C04.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C05.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C06.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C07.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C08.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C09.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C10.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C11.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C12.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C13.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C14.md",
+    "status": "missing"
+  },
+  {
+    "path": "ledger/extraction/C15.md",
+    "status": "missing"
+  },
+  {
+    "path": "provenance.json",
+    "status": "exact"
+  },
+  {
+    "path": "scripts/AxiomAudit.lean",
+    "status": "exact"
+  },
+  {
+    "path": "scripts/CiteCheck.lean",
+    "status": "exact"
+  },
+  {
+    "path": "tools/audit.py",
+    "status": "missing"
+  },
+  {
+    "path": "tools/scan_sources.py",
+    "status": "exact"
+  },
+  {
+    "path": "tools/syntax_sanity.py",
+    "status": "missing"
+  },
+  {
+    "path": "verification/axiom_audit_chunk14_2026-10-22.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/axiom_audit_chunk16_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/axiom_audit_chunk17_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/axiom_audit_chunk18_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/axiom_audit_chunk19_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/axiom_audit_final_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/citecheck_chunk14_2026-10-22.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/citecheck_chunk16_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/citecheck_chunk17_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/citecheck_chunk18_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/citecheck_chunk19_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/citecheck_final_2026-10-23.log",
+    "status": "exact"
+  },
+  {
+    "path": "verification/extensions_2026-10-23.md",
+    "status": "different"
+  },
+  {
+    "path": "verify.sh",
+    "status": "exact"
+  }
+]

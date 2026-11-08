@@ -1,0 +1,45 @@
+{
+  "prior_verified_unchanged": 172,
+  "inputs": [
+    {
+      "path": "02 Research\\Effective dynamics and coupling 2026-10-23\\Research note\\main.tex",
+      "sha256": "bf6c4f0d628ee16d0651489822248f1d7b17889033f95e4d10356410c0b7a10e"
+    },
+    {
+      "path": "02 Research\\Effective dynamics and coupling 2026-10-23\\Research note\\warm_extension.tex",
+      "sha256": "1272c791188be1761c73050047f86c5f29b6ae22f96bb61decab8f3510a8949b"
+    },
+    {
+      "path": "02 Research\\Effective dynamics and coupling 2026-10-23\\hermitian_contact.py",
+      "sha256": "f6a21a9a8f787f24530fda41eeed12a36dba3967d049a9dcd4be9ba76d61e196"
+    },
+    {
+      "path": "02 Research\\Effective dynamics and coupling 2026-10-23\\formalization\\EffectiveContact.lean",
+      "sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d"
+    },
+    {
+      "path": "02 Research\\Effective dynamics and coupling 2026-10-23\\VALIDATION.json",
+      "sha256": "5ed2b46b0305a43bd048dd55ea44d4c09ba2c1df73036468e804787afec9668c"
+    },
+    {
+      "path": "01 Current Papers/Astra Full/Entropic Scalar EFT.tex",
+      "sha256": "ec5cd61b3d39dd3296fe792c35c5b057c3bb67b8136041d3ad0326cadcbe213b"
+    },
+    {
+      "path": "01 Current Papers/Empirical Results/Empirical_Results.tex",
+      "sha256": "7dedf34a5c6a4f82652ab6fe2f92dc566b6b8e71686b70a8c9bf05844973a067"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Reciprocity.lean",
+      "sha256": "dff093d1740ca54625a08b8dd2ed519c34b9c495c0d87fb11981b69d32ba8ce3"
+    },
+    {
+      "path": "02 Research/Cluster reciprocity audit 2026-10-22/CLUSTER_RECIPROCITY_AUDIT.txt",
+      "sha256": "6e475827a35f96402dba64c9d8455bbd609bff2e4389fb467d341216fbda3cb2"
+    },
+    {
+      "path": "02 Research/Unified empirical program 2026-10-23/results/cluster_cohort_audit.json",
+      "sha256": "ebf04779e805d762456f7a956224849b4bfac52465fa2830a612d546a4a1e8fc"
+    }
+  ]
+}

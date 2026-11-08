@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx,booktabs,tabularx,longtable,array,float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem,parskip}
+\usepackage[obeyspaces]{url}
+\usepackage[hidelinks]{hyperref}
+\definecolor{ink}{gray}{0}
+\definecolor{teal}{gray}{0}
+\hypersetup{
+ pdftitle={Empirical Results: History-Dependent Gravity and Cosmological Release},
+ pdfauthor={Jacob Chinitz}}
+\setcounter{tocdepth}{1}
+\hypersetup{bookmarksdepth=2}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.8}
+\renewcommand{\textfraction}{.1}
+\renewcommand{\floatpagefraction}{.8}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{plain}
+\newcommand{\Msun}{M_\odot}
+\newcommand{\kms}{\mathrm{km\,s^{-1}}}
+\newcommand{\aunit}{10^{-10}\,\mathrm{m\,s^{-2}}}
+\newcommand{\LCDM}{\ensuremath{\Lambda\mathrm{CDM}}}
+\newcommand{\source}[1]{\textcolor{teal}{\small [#1]}}
+\newcommand{\empiricalpart}[2]{%
+  \clearpage
+  \section*{Part #1. #2}%
+  \addcontentsline{toc}{part}{#1. #2}}
+
+\author{Jacob Chinitz}
+\title{History-dependent gravity and cosmological release\\[0.3em]
+\large Galaxy, cluster, and cosmological tests}
+\date{October 24, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Based on the Entropic Scalar EFT manuscript, its Lean proof package,
+the archived galaxy calculations, and the tied-abundance cosmological
+release calculations. The comparisons use specified source histories,
+transport models, and observational likelihoods; their mathematical
+premises and numerical domains are stated with each result.
+
+Fifteen test families, with their evidence and open limits, are organized
+as distinctive predictions and discriminating tests, and recovery of
+established phenomenology. The same retained stock settles onto the
+galactic response law through contacts biased by the response cell's Bose
+statistics. Outside galaxy supports, cluster stock has no active-carrier
+cells and retains the cohort ratio.
+\end{abstract}
+\clearpage
+\tableofcontents
+\clearpage
+\input{01_results_and_basis.tex}
+\empiricalpart{I}{Distinctive predictions and discriminating tests}
+\input{02_acceleration.tex}
+\input{03_history.tex}
+\input{04_dwarfs.tex}
+\input{05d_distinctive.tex}
+\empiricalpart{II}{Recovery of established phenomenology}
+\input{05c_cross_sector.tex}
+\input{05_cosmology.tex}
+\input{05b_clusters.tex}
+\input{06_interpretation_and_audit.tex}
+\input{07_references.tex}
+\end{document}

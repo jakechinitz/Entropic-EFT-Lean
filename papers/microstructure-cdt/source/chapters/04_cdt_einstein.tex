@@ -1,0 +1,288 @@
+\section{The microscopic state sum and its exact CDT correspondence}
+\label{sec:statesum}
+
+\subsection{Causal histories and the coarse measure}
+
+A history is a causal triangulation built from $(4,1)$, $(3,2)$, and their time-reversed four-simplices between adjacent spatial slices. The spatial topology and boundary markings are fixed as part of the ensemble. Standard CDT supplies the causal simplicial history class, its Wick-rotation prescription, and transfer-matrix framework \cite{cdt}. The present construction supplies microscopic tensors whose Euclidean contraction reproduces the chosen weight on that class.
+
+For an unmarked history, write the coarse partition function as
+\begin{equation}
+Z_{\rm CDT}[J]=\sum_{T\in\mathfrak T}
+\frac{1}{C_T}\,e^{-S_E[T]}W_J[T].
+\label{eq:Zcdt}
+\end{equation}
+Here $C_T$ is the appropriate relative automorphism factor, $J$ specifies the source and preparation, and any volume restriction is included in $\mathfrak T$ or in the weight. A labelled enumeration requires its own counting convention; multiplying an additional label degeneracy into an already normalized unlabelled sum changes the measure.
+
+\subsection{Local simplex tensors}
+
+For each coarse tetrahedron $e$, use its CDT edge lengths to construct outward area normals and a normalized coherent intertwiner $u_e$. Its microscopic packet is $\widetilde u_e=I_eu_e$. A spatial tetrahedron uses the one-cell identity map. The mixed tetrahedra use the connected maps of Section \ref{sec:geometric}.
+
+Choose the four-simplex tensor to be the tensor product of its boundary packets multiplied by
+\begin{equation}
+w_\sigma=\exp\left[-b\sum_{h\subset\sigma}N_h\theta_{h\sigma}
+-\lambda V_\sigma\right].
+\end{equation}
+The packet on the other side of a shared tetrahedron is its adjoint in the same ordering. Supply the factor $e^{2\pi bN_h}$ for an interior hinge and $e^{\pi bN_h}$ for a boundary hinge.
+
+\begin{theorem}[Exact Euclidean weight]
+\label{thm:weight}
+For every allowed coarse triangulation, contraction of these normalized microscopic tensors gives
+\begin{equation}
+W_{\rm micro}(T)=
+\exp\left[
+b\sum_{h\in{\rm int}}N_h\delta_h
++b\sum_{h\in\partial}N_h\psi_h
+-\lambda\sum_\sigma V_\sigma
+\right].
+\label{eq:weightidentity}
+\end{equation}
+Here $\delta_h=2\pi-\sum_{\sigma\supset h}\theta_{h\sigma}$ and
+$\psi_h=\pi-\sum_{\sigma\supset h}\theta_{h\sigma}$.
+\end{theorem}
+\begin{proof}
+Each internal tetrahedron contributes
+$\widetilde u_e^\dagger\widetilde u_e
+=u_e^\dagger I_e^\dagger I_eu_e=1$.
+The remaining simplex angle terms collect independently at each hinge. Adding its full-turn or boundary half-turn factor produces the corresponding deficit or exterior angle. Volume terms add over simplices. No step depends on the number of simplices.
+\end{proof}
+
+The rank-one packets fix the shapes to the selected CDT building blocks while allowing connectivity to vary. The theorem is an explicit local tensor realization of that model. It does not identify these chosen tensors with a different spin-foam vertex.
+
+At $A_h=\Ach N_h$, \eqref{eq:weightidentity} is precisely the Regge curvature weight with $G_0$ in \eqref{eq:G0}. The local scalar source check multiplies the same action $W_J[T]$ into both sides before contraction. Thus the equality persists pointwise in the source field. Integrating a dynamical field requires retaining its determinant in both measures.
+
+\subsection{Why the full normalization matters}
+
+Raw packets $R_e^\dagger u_e$ have squared norms about
+\begin{equation}
+\|R_{31}^\dagger u_{31}\|^2=5.3131575762\times10^{-6},\qquad
+\|R_{22}^\dagger u_{22}\|^2=2.1629219768\times10^{-10}.
+\end{equation}
+These factors multiply at internal tetrahedra. Their product depends on the composition and shape of the triangulation. It cannot be removed by one common normalization of $Z$.
+
+The Gram correction in \eqref{eq:polar} removes the entire unwanted matrix factor. This is the operative measure repair. It determines how a selected coarse CDT model is realized in the microscopic patch space. It neither alters prior campaign data nor establishes that a previously simulated raw measure already had this normalization.
+
+\subsection{Boundary sewing and observables}
+
+Let $I_g$ encode an entire boundary state with consistent symmetry factors. If the coarse transfer is $K[g_2,g_1;J]$, the microscopic transfer on its prepared code is
+\begin{equation}
+K_{\rm micro}[J]=I K_{\rm CDT}[J]I^\dagger.
+\label{eq:transferlift}
+\end{equation}
+For two intervals, contraction over an orthonormal encoded intermediate boundary gives
+\begin{equation}
+IK_2I^\dagger IK_1I^\dagger=I(K_2K_1)I^\dagger.
+\end{equation}
+The normalized boundary metric is therefore part of the sewing identity.
+
+\begin{theorem}[Observable and phase inheritance]
+\label{thm:inherit}
+Suppose the two theories use the same causal history set, topology, boundary preparation, symmetry factors, volume treatment, and source functional. Suppose their microscopic contraction satisfies \eqref{eq:weightidentity} and their boundary maps satisfy \eqref{eq:transferlift}. Then every normalized source derivative and every observable transported through $I$ agrees in the two descriptions. Any limit of those observables, including a de Sitter profile or a gravitational pole residue, agrees whenever the corresponding limit exists for that same coarse ensemble.
+\end{theorem}
+\begin{proof}
+Substitution in the history sum gives equal partition functions with equal source dependence, up to a common source-independent normalization. Such a factor cancels in normalized expectations. Differentiating the identical generating functions gives identical connected correlators. The boundary statement follows from isometric sewing. Equal regulated observables have equal limits along the same sequence of ensembles whenever that sequence converges.
+\end{proof}
+
+The theorem gives a precise route from microscopic construction to coarse physics. Its antecedent includes the actual physical ensemble. Proving the equality of weights does not supply a phase measurement at a new coupling point.
+
+\subsection{The finite causal check}
+
+The test family uses the spatial boundary of a four-simplex, with five tetrahedra, and its product with one interval. For each of the $120$ vertex orderings, staircase triangulation produces a causal slab. Legal $2\to4$ moves add $1800$ distinct neighbors, giving $1920$ marked histories.
+
+A proposed move replaces $A*\partial B$ by $\partial A*B$, with $|A|=4$ and $|B|=2$. The new edge $B$ must be absent; the old star must have the required two simplices; new simplices must span adjacent slices; boundary tetrahedra must retain the prescribed boundary. These tests check the local ball replacement and causal slicing. The finite family is a stated restriction of the full history sum.
+
+The primitive tensor log weight agrees with direct Regge evaluation to $1.46\times10^{-13}$. The external scalar action comparison reaches $1.43\times10^{-13}$. Two-slab curvature sewing is zero at displayed precision, the scalar quadratic-kernel sewing error is $1.07\times10^{-14}$, and the sewn source covariance error is $2.22\times10^{-16}$. These checks test the identity on actual nontrivial causal complexes.
+
+\section{From the selected curvature action to Einstein response}
+\label{sec:einstein}
+
+\subsection{Metric variation and collective areas}
+
+For a length-metric Regge complex, the Schläfli identity
+\begin{equation}
+\sum_{h\subset\sigma}A_h\,d\theta_{h\sigma}=0
+\end{equation}
+removes the angle-variation terms in the curvature action. Therefore
+\begin{equation}
+\delta S_E=-\frac1{8\pi G_0}\sum_h\delta_h\,\delta A_h
++\lambda\sum_\sigma\delta V_\sigma+\delta S_{\partial}.
+\end{equation}
+On a controlled refinement of smooth metrics, this is the discretization of the Einstein variational problem. In the fixed-edge CDT model, geometry changes through connectivity. Passing from its sum to a smooth metric effective action is a dynamical coarse-graining question.
+
+Six independent directional areas can reconstruct a positive spatial metric. Let $C$ be the cofactor matrix of $g$:
+\begin{equation}
+C=(\det g)g^{-1},\qquad
+A(n)^2=n^TCn.
+\end{equation}
+Use normals $e_x,e_y,e_z,(e_x+e_y)/\sqrt2,(e_x+e_z)/\sqrt2,(e_y+e_z)/\sqrt2$. The first three areas give the diagonal entries of $C$; for example
+\begin{equation}
+C_{xy}=A((e_x+e_y)/\sqrt2)^2-\frac{C_{xx}+C_{yy}}2.
+\end{equation}
+On $C>0$,
+\begin{equation}
+g=\sqrt{\det C}\,C^{-1},\qquad
+\sqrt{\det g}=(\det C)^{1/4}.
+\end{equation}
+This provides a metric dictionary for collective channels. The dictionary must refer to physical coarse cuts when used in a geometry ensemble.
+
+\subsection{The quadratic metric action}
+
+Expand the selected Lorentzian Einstein action about flat space:
+$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, with signature $(-,+,+,+)$.
+Gauge transformations are
+\begin{equation}
+\delta h_{\mu\nu}=\partial_\mu\xi_\nu+\partial_\nu\xi_\mu.
+\end{equation}
+The Hessian annihilates these directions. After the lapse and shift constraints and residual gauge equivalence are treated, an on-shell null momentum has two transverse-traceless polarizations. In the usual metric perturbation normalization their kinetic action is
+\begin{equation}
+S_{\rm TT}^{(2)}
+=\frac1{64\pi G_0}\int d^4x\,
+\left[(\partial_t h_{ij}^{\rm TT})^2
+-(\partial_kh_{ij}^{\rm TT})^2\right].
+\end{equation}
+The positivity of these physical modes coexists with the familiar indefinite scalar direction before constraint reduction.
+
+The saved Fourier calculation constructs the length-Regge Hessian from twenty-four Kuhn simplices per unit hypercube. It checks flat deficits, gauge null vectors, tensor orientations, and the small-momentum Fierz--Pauli limit. Separate off-shell and on-shell mode counts are retained: the Euclidean off-shell physical tensor block contains more components than the two propagating Lorentzian helicities.
+
+\subsection{The static source and Newton's law}
+
+Use one metric source coupling,
+\begin{equation}
+S_{\rm int}=\frac12\int d^4x\,h_{\mu\nu}T^{\mu\nu}.
+\end{equation}
+Variation of the full parent gives
+\begin{equation}
+G_{\mu\nu}+\Lambda g_{\mu\nu}=8\pi G_0T_{\mu\nu}.
+\label{eq:einstein}
+\end{equation}
+For a weak, nonrelativistic, static source with negligible anisotropic stress,
+\begin{equation}
+ds^2=-(1+2\Phi)dt^2+(1-2\Psi)d\mathbf x^2,\qquad
+\Phi=\Psi,
+\end{equation}
+and the $00$ constraint gives
+\begin{equation}
+\nabla^2\Phi=4\pi G_0\rho.
+\end{equation}
+For a point mass, use $\nabla^2(1/r)=-4\pi\delta^{(3)}(\mathbf x)$:
+\begin{equation}
+\Phi(r)=-\frac{G_0M}{r},\qquad
+\mathbf a=-\nabla\Phi=-\frac{G_0M}{r^2}\widehat{\mathbf r}.
+\label{eq:newton}
+\end{equation}
+The same coefficient multiplies the metric kinetic term and the force.
+
+In the Euclidean conserved-source calculation, write $g_{44}=1+h_{44}^{E}$ and use the insertion $\delta S_m^E=\tfrac12\int \rho h_{44}^{E}$. The static response is
+\begin{equation}
+h_{44}^{E}(\mathbf k)=-\frac{8\pi G_0\rho(\mathbf k)}{|\mathbf k|^2},
+\qquad \Phi=\frac12h_{44}^{E}.
+\end{equation}
+The Lorentzian component $h_{00}^{L}=-2\Phi$ has the opposite sign. The saved small-momentum source calculation uses the Euclidean convention and approaches the predicted residue as the lattice momentum decreases. Its convergence checks validate the selected metric Hessian and source vertex. They do not measure the interacting CDT propagator.
+
+Sampling the two wave polarizations alone gives no static density response. The static potential is carried by the constrained sector. Eliminating constraints must therefore preserve the source before an effective response is inferred.
+
+\subsection{Capacity as a metric observable}
+
+For a static metric $ds^2=-N^2dt^2+h_{ij}dx^idx^j$ with $\Lambda=0$, the Einstein equations imply
+\begin{equation}
+D^2N=4\pi G_0N(E+S),
+\end{equation}
+where $E$ is the energy density measured by the normal observer and $S$ the spatial stress trace. Define $q=N^2$ and $s=S_\infty(1-q)$. Then
+\begin{equation}
+D^2q-\frac{(Dq)^2}{2q}=8\pi G_0q(E+S),
+\end{equation}
+or
+\begin{equation}
+D^2s+\frac{(Ds)^2}{2S_\infty(1-s/S_\infty)}
+=-8\pi G_0S_\infty(1-s/S_\infty)(E+S).
+\label{eq:capacitymetric}
+\end{equation}
+In the weak-field nonrelativistic regime, $s=-2S_\infty\Phi$ and the equation reduces to the manuscript's Poisson bridge.
+
+The lapse depends on clock and boundary normalization. Inside a supported spherical shell, local curvature can vanish while a clock is redshifted relative to infinity. A curvature scalar alone therefore cannot supply this boundary-relative clock deficit. Equation \eqref{eq:capacitymetric} is one constrained metric equation; the spatial equations and matter equilibrium remain part of the same solution.
+
+\section{De Sitter geometry and the phase condition}
+\label{sec:desitter}
+
+\subsection{The classical de Sitter solution of the selected action}
+
+For a homogeneous closed spatial metric,
+\begin{equation}
+ds^2=-dt^2+a_{\rm cos}(t)^2d\Omega_3^2,
+\end{equation}
+the vacuum Einstein equations with $\Lambda>0$ give
+\begin{equation}
+\left(\frac{\dot a_{\rm cos}}{a_{\rm cos}}\right)^2
++\frac1{a_{\rm cos}^2}=\frac{\Lambda}{3}.
+\end{equation}
+Writing $\ell=\sqrt{3/\Lambda}$, the solution is
+\begin{equation}
+a_{\rm cos}(t)=\ell\cosh(t/\ell).
+\end{equation}
+Its regular Euclidean section has
+\begin{equation}
+a_E(\tau)=\ell\cos(\tau/\ell),\qquad
+V_3(\tau)=2\pi^2\ell^3\cos^3(\tau/\ell),
+\label{eq:dsprofile}
+\end{equation}
+with total volume $V_4=8\pi^2\ell^4/3$. These equations follow from the selected continuum action and boundary conditions.
+
+A fixed-volume saddle can produce the same Euclidean geometry through a Lagrange multiplier. The multiplier enforcing volume is different from a claim that the microscopic physical cosmological term has already been derived. Appendix O supplies a separate fixed-event-measure premise and source-clock release construction.
+
+\subsection{What CDT evidence establishes}
+
+CDT simulations have exhibited an extended regime with a macroscopic de Sitter volume profile and reconstructed an effective volume action from fluctuations \cite{ds}. This is evidence for those sampled ensembles and observables. The tensor equality in Theorem \ref{thm:weight} makes the microscopic realization inherit such evidence when its ensemble, parameters, and physical dictionary coincide with the tested CDT model.
+
+For the present $\alpha=7$ branch, the displayed zero-volume-term couplings are
+\begin{equation}
+(\kappa_0,\Delta_{\rm CDT},\kappa_4)
+=(2.20205311516,\;0.326138328034,\;-0.304774619960).
+\end{equation}
+No extended-phase measurement at this point belongs to the current finite construction. The curvature-only $\kappa_4$ is also distinct from a critical or volume-controlled value used in a simulation. Equation \eqref{eq:dsprofile} is a classical target, and Theorem \ref{thm:inherit} is a conditional transfer of ensemble results.
+
+\subsection{Volume stiffness and physical Newton response}
+
+An effective volume action is often fitted in the form
+\begin{equation}
+S_{\rm vol}\simeq k_1\sum_t
+\frac{(n_{t+1}-n_t)^2}{n_{t+1}+n_t}
++\sum_tU(n_t),
+\end{equation}
+with additional factors depending on the stated volume and time conventions. Its Hessian predicts the covariance after volume constraints and alignment modes are handled. Off-diagonal precision-matrix entries can isolate the nearest-neighbor kinetic term if the assumed local form is valid. Finite samples, projection, volume fixing, and nonlocal effective terms require separate checks.
+
+The earlier blob conversion eliminated several conventions and gave
+\begin{equation}
+\frac{G_{\rm vol}}{\Lstar^2}
+=\frac{\widetilde s_0^2}{3\sqrt6\,k_1}
+\sqrt{n_e\,\frac{v_*}{\Lstar^4}},
+\end{equation}
+where $n_e$ is the physical event count per simplex in that dictionary. This formula does not determine $n_e$ or prove that the fitted homogeneous mode has the same residue as a physical mass-source response. In particular, event counting and simplex counting need a physical map.
+
+At finite physical cutoff, the immediate target is an extended regime with a scale window $a\ll r\ll L_{\rm box}$, appropriate metric tensor behavior, and a source response. Removing the cutoff through a critical surface is a stronger possible goal. This distinction agrees with Appendix J.9. A de Sitter average profile alone does not determine all local propagating modes or their coupling to matter.
+
+\input{chapters/04_registered_alpha7_results}
+
+\subsection{The force observable}
+
+For mass-independent held curves with dimensionless Euclidean lengths $\ell_1,\ell_2$, define
+\begin{equation}
+Z(m_1,m_2)=\langle e^{-m_1\ell_1-m_2\ell_2}\rangle_0,\qquad
+\mathcal R=\frac{Z(m_1,m_2)Z(0,0)}{Z(m_1,0)Z(0,m_2)}.
+\end{equation}
+At zero mass,
+\begin{equation}
+\partial_{m_1}\partial_{m_2}\log\mathcal R
+=\Cov_0(\ell_1,\ell_2).
+\label{eq:cov}
+\end{equation}
+If a stable large-duration interaction energy exists,
+\begin{equation}
+V_{\rm int}(r)=-\lim_{T\to\infty}\frac1T\log\mathcal R,
+\qquad
+\frac{V_{\rm int}(r)}{m_1m_2}
+=-\frac{\Cov_0(\ell_1,\ell_2)}{T}+O(m_i).
+\end{equation}
+In an Einstein regime this tends to $-G_R/r$ in compatible physical units.
+
+The preparation must hold relational separation in the fluctuating metric. Fixing each curve's proper length separately removes the covariance in \eqref{eq:cov}. Discarding geometries where source construction fails reweights the ensemble. All requested geometries must therefore have controlled source coverage, or the whole-ensemble estimate must remain unreported.
+
+A small, drifting toroidal sample with sub-edge separations is a finite diagnostic. Its completion would test source machinery at those scales. An infrared $G_R$ requires a resolved distance range, duration stability, mixing, and the specified ensemble. The new normalized $\alpha=7$ construction and older $\alpha=11.312$ runs retain distinct definitions.

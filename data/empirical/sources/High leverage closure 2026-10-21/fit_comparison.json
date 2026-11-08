@@ -1,0 +1,19 @@
+{
+  "geodesic": {
+    "cmb": 589.1849490634687,
+    "bao": 11.707004758859858,
+    "sn": 1627.0184691272832,
+    "total": 2227.9104229496115,
+    "H0": 68.94345405803388
+  },
+  "lcdm": {
+    "cmb": 590.3285480147205,
+    "bao": 11.191153694217714,
+    "sn": 1626.9093666150516,
+    "total": 2228.4290683239897,
+    "H0": 68.65583121049352
+  },
+  "delta_chi2": -0.5186453743781385,
+  "delta_AIC_conditional_five_vs_six": -2.5186453743781385,
+  "warning": "Linear lensing in both models; no nonlinear response or model-selection look-elsewhere penalty."
+}

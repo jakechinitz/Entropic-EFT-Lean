@@ -1,0 +1,68 @@
+{
+  "scope": "Conditional isolated stationary endpoints; fixed completed baryons, finite stock, no escaped particles, no bath energy or other supply. Necessary ledger requirement only. Does not bound internal rearrangement or partial depletion, and does not prove equilibrium DF existence.",
+  "clusters": {
+    "A85": {
+      "initial_stationary_energy_specific": -1150032.443859946,
+      "target_stationary_energy_specific": -885114.4302207978,
+      "required_work_specific_km2_s2": 264918.0136391482,
+      "required_work_over_small_reserve": 17.66120090927655,
+      "required_work_over_large_reserve": 1.7661200909276547,
+      "small_reserve_over_V500_squared": 0.007626059482623092,
+      "target_stock_edge_kpc": 2756.6100243476862
+    },
+    "A1795": {
+      "initial_stationary_energy_specific": -1022090.2198268591,
+      "target_stationary_energy_specific": -751429.6281956666,
+      "required_work_specific_km2_s2": 270660.5916311925,
+      "required_work_over_small_reserve": 18.044039442079498,
+      "required_work_over_large_reserve": 1.8044039442079498,
+      "small_reserve_over_V500_squared": 0.008688240352716826,
+      "target_stock_edge_kpc": 2428.9857701782103
+    },
+    "A2029": {
+      "initial_stationary_energy_specific": -1586654.4336926658,
+      "target_stationary_energy_specific": -1113919.994600839,
+      "required_work_specific_km2_s2": 472734.4390918268,
+      "required_work_over_small_reserve": 31.515629272788452,
+      "required_work_over_large_reserve": 3.1515629272788455,
+      "small_reserve_over_V500_squared": 0.005704989903781152,
+      "target_stock_edge_kpc": 3197.0303940337194
+    },
+    "A2142": {
+      "initial_stationary_energy_specific": -1641872.3207704083,
+      "target_stationary_energy_specific": -1248962.0513280847,
+      "required_work_specific_km2_s2": 392910.2694423236,
+      "required_work_over_small_reserve": 26.194017962821572,
+      "required_work_over_large_reserve": 2.6194017962821574,
+      "small_reserve_over_V500_squared": 0.005551430231362026,
+      "target_stock_edge_kpc": 3262.5214393217707
+    },
+    "A2319": {
+      "initial_stationary_energy_specific": -1546749.5627150312,
+      "target_stationary_energy_specific": -1174667.941942163,
+      "required_work_specific_km2_s2": 372081.62077286816,
+      "required_work_over_small_reserve": 24.80544138485788,
+      "required_work_over_large_reserve": 2.480544138485788,
+      "small_reserve_over_V500_squared": 0.006214471147586273,
+      "target_stock_edge_kpc": 2640.4614293367413
+    },
+    "A644": {
+      "initial_stationary_energy_specific": -1212057.915562832,
+      "target_stationary_energy_specific": -812106.549693598,
+      "required_work_specific_km2_s2": 399951.3658692341,
+      "required_work_over_small_reserve": 26.663424391282273,
+      "required_work_over_large_reserve": 2.6663424391282273,
+      "small_reserve_over_V500_squared": 0.00734112192346341,
+      "target_stock_edge_kpc": 2746.484214164597
+    },
+    "ZW1215": {
+      "initial_stationary_energy_specific": -1278948.1121373766,
+      "target_stationary_energy_specific": -812498.882476296,
+      "required_work_specific_km2_s2": 466449.2296610805,
+      "required_work_over_small_reserve": 31.096615310738702,
+      "required_work_over_large_reserve": 3.10966153107387,
+      "small_reserve_over_V500_squared": 0.006179112580054066,
+      "target_stock_edge_kpc": 4657.354076723949
+    }
+  }
+}

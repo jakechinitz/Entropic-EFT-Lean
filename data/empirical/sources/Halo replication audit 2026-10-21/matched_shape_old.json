@@ -1,0 +1,535 @@
+{
+  "reference": {
+    "source": "https://arxiv.org/html/2510.00095v2#S3.SS4",
+    "radial_cut_kpc": [
+      6,
+      60
+    ],
+    "ellipsoidal_pq": [
+      0.81,
+      0.73
+    ],
+    "fiducial_spherical_cut_pq": [
+      0.8435266160125575,
+      0.7732693460694016
+    ],
+    "mapped_mean_pq": [
+      0.84390993916385,
+      0.7739163797806501
+    ],
+    "mapped_sigma_pq": [
+      0.02568783216507241,
+      0.01820130364014962
+    ],
+    "mapped_covariance_pq": [
+      [
+        0.0006598647213409295,
+        9.039674035291452e-07
+      ],
+      [
+        9.039674035291452e-07,
+        0.00033128745420092393
+      ]
+    ],
+    "tilt_deg": 25.39,
+    "tilt_sigma_deg": 3.16,
+    "uncertainty_draws": 1000,
+    "seed": 211036,
+    "quadrature_change_40_to_80": [
+      7.771561172376096e-16,
+      9.43689570931383e-15
+    ],
+    "qualification": "Fixed profile slopes and breaks; independent Gaussian shape errors as in the cited method. The diagnostic compares the stellar distribution, not the simulated stock inertia axes to a dark-halo density parameter. It is conditional on the parametric stellar target and does not reproduce a full data likelihood."
+  },
+  "runs": [
+    {
+      "label": "Original",
+      "end": 8.0,
+      "history": [
+        {
+          "end": 0.5,
+          "tilt_p_q": [
+            25.6229137362616,
+            0.8548859177093201,
+            0.7665994330361762
+          ],
+          "standardized_residuals": [
+            0.07370687856379776,
+            0.42728317730112025,
+            -0.4020012461268829
+          ],
+          "sum_squared_standardized_residuals": 0.3496086194397257
+        },
+        {
+          "end": 1.0,
+          "tilt_p_q": [
+            25.602020675914986,
+            0.8518576667470068,
+            0.7769739564526909
+          ],
+          "standardized_residuals": [
+            0.06709515060600797,
+            0.30939658637147427,
+            0.16798668559630867
+          ],
+          "sum_squared_standardized_residuals": 0.12844753343079707
+        },
+        {
+          "end": 1.5,
+          "tilt_p_q": [
+            25.652341407157497,
+            0.8559431200143909,
+            0.7723965555469499
+          ],
+          "standardized_residuals": [
+            0.08301943264477732,
+            0.4684389392306245,
+            -0.08350084498055961
+          ],
+          "sum_squared_standardized_residuals": 0.23329965709664088
+        },
+        {
+          "end": 2.0,
+          "tilt_p_q": [
+            28.274779025382486,
+            0.8389185633208273,
+            0.76632077793546
+          ],
+          "standardized_residuals": [
+            0.9129047548678751,
+            -0.19430895573233797,
+            -0.4173108693398842
+          ],
+          "sum_squared_standardized_residuals": 1.0452994234073767
+        },
+        {
+          "end": 2.5,
+          "tilt_p_q": [
+            26.047674424830845,
+            0.826366600797549,
+            0.7631665940903857
+          ],
+          "standardized_residuals": [
+            0.2081248179844444,
+            -0.6829435140172955,
+            -0.5906052611831516
+          ],
+          "sum_squared_standardized_residuals": 0.8585423577365687
+        },
+        {
+          "end": 3.0,
+          "tilt_p_q": [
+            27.86603103946005,
+            0.8313220126633933,
+            0.7691740460564191
+          ],
+          "standardized_residuals": [
+            0.7835541264114083,
+            -0.49003459768677676,
+            -0.26054912428195487
+          ],
+          "sum_squared_standardized_residuals": 0.9219768221104799
+        },
+        {
+          "end": 3.5,
+          "tilt_p_q": [
+            26.59494563695278,
+            0.8404641440038181,
+            0.7731946653281658
+          ],
+          "standardized_residuals": [
+            0.3813119104280946,
+            -0.13414114269701544,
+            -0.03965180004427002
+          ],
+          "sum_squared_standardized_residuals": 0.16496488444513505
+        },
+        {
+          "end": 4.0,
+          "tilt_p_q": [
+            27.39045767256713,
+            0.8520893225709963,
+            0.7788019607295533
+          ],
+          "standardized_residuals": [
+            0.6330562254959272,
+            0.3184147013490597,
+            0.2684192871837104
+          ],
+          "sum_squared_standardized_residuals": 0.5741970204065724
+        },
+        {
+          "end": 4.5,
+          "tilt_p_q": [
+            27.327537144644477,
+            0.8341947911974131,
+            0.787619534251016
+          ],
+          "standardized_residuals": [
+            0.6131446660267331,
+            -0.37820038312328036,
+            0.7528666485261338
+          ],
+          "sum_squared_standardized_residuals": 1.0857901017346032
+        },
+        {
+          "end": 5.0,
+          "tilt_p_q": [
+            27.758207136174182,
+            0.840651037234435,
+            0.7741284663055835
+          ],
+          "standardized_residuals": [
+            0.7494326380298042,
+            -0.12686558789675273,
+            0.011652271129942365
+          ],
+          "sum_squared_standardized_residuals": 0.5778799317591858
+        },
+        {
+          "end": 5.5,
+          "tilt_p_q": [
+            29.073355381614363,
+            0.8482548764989848,
+            0.7769628737222961
+          ],
+          "standardized_residuals": [
+            1.1656187916501146,
+            0.16914379178491096,
+            0.1673777879802998
+          ],
+          "sum_squared_standardized_residuals": 1.415292113656429
+        },
+        {
+          "end": 6.0,
+          "tilt_p_q": [
+            25.453317399802945,
+            0.8512163724739971,
+            0.7931098849550934
+          ],
+          "standardized_residuals": [
+            0.02003715183637473,
+            0.28443168201953345,
+            1.0545126631536992
+          ],
+          "sum_squared_standardized_residuals": 1.193299825941682
+        },
+        {
+          "end": 6.5,
+          "tilt_p_q": [
+            22.454228049821438,
+            0.8518755249563602,
+            0.78261614714689
+          ],
+          "standardized_residuals": [
+            -0.9290417563856209,
+            0.3100917874783114,
+            0.4779749592798059
+          ],
+          "sum_squared_standardized_residuals": 1.1877355634681057
+        },
+        {
+          "end": 7.0,
+          "tilt_p_q": [
+            25.77904235040082,
+            0.8810604807418236,
+            0.7926493822205116
+          ],
+          "standardized_residuals": [
+            0.12311466784836111,
+            1.4462310925749102,
+            1.029212127341201
+          ],
+          "sum_squared_standardized_residuals": 3.1660191976360315
+        },
+        {
+          "end": 7.5,
+          "tilt_p_q": [
+            24.760718628130807,
+            0.8573438318973263,
+            0.7905272815114838
+          ],
+          "standardized_residuals": [
+            -0.19913967464214996,
+            0.5229671638754423,
+            0.9126215385030045
+          ],
+          "sum_squared_standardized_residuals": 1.146029337048096
+        },
+        {
+          "end": 8.0,
+          "tilt_p_q": [
+            24.382669120703213,
+            0.8486599216532396,
+            0.7904723500419238
+          ],
+          "standardized_residuals": [
+            -0.3187755947141734,
+            0.18491176907672408,
+            0.90960354206462
+          ],
+          "sum_squared_standardized_residuals": 0.9631888458649616
+        }
+      ],
+      "last": {
+        "end": 8.0,
+        "tilt_p_q": [
+          24.382669120703213,
+          0.8486599216532396,
+          0.7904723500419238
+        ],
+        "standardized_residuals": [
+          -0.3187755947141734,
+          0.18491176907672408,
+          0.90960354206462
+        ],
+        "sum_squared_standardized_residuals": 0.9631888458649616
+      }
+    },
+    {
+      "label": "Prescribed field",
+      "end": 8.0,
+      "history": [
+        {
+          "end": 0.5,
+          "tilt_p_q": [
+            25.653114586710235,
+            0.8558220079933553,
+            0.7704014676400975
+          ],
+          "standardized_residuals": [
+            0.08326410971842849,
+            0.4637241769938846,
+            -0.19311320826488104
+          ],
+          "sum_squared_standardized_residuals": 0.2592657355022134
+        },
+        {
+          "end": 1.0,
+          "tilt_p_q": [
+            24.298653865352442,
+            0.8484229951205848,
+            0.7800032002170263
+          ],
+          "standardized_residuals": [
+            -0.345362700837835,
+            0.1756884710135706,
+            0.3344167295220273
+          ],
+          "sum_squared_standardized_residuals": 0.2619763829612989
+        },
+        {
+          "end": 1.5,
+          "tilt_p_q": [
+            24.08011874209622,
+            0.8535325590101699,
+            0.7745312125896949
+          ],
+          "standardized_residuals": [
+            -0.4145193854125883,
+            0.3745983617645892,
+            0.033779602890015116
+          ],
+          "sum_squared_standardized_residuals": 0.3132913150909511
+        },
+        {
+          "end": 2.0,
+          "tilt_p_q": [
+            26.420870366001296,
+            0.8351394153583772,
+            0.7678114088948915
+          ],
+          "standardized_residuals": [
+            0.3262247993674985,
+            -0.34142716867319217,
+            -0.3354139355321683
+          ],
+          "sum_squared_standardized_residuals": 0.33549763937973465
+        },
+        {
+          "end": 2.5,
+          "tilt_p_q": [
+            24.633414921037005,
+            0.834890095273552,
+            0.7717945053904727
+          ],
+          "standardized_residuals": [
+            -0.23942565789968212,
+            -0.3511329345479885,
+            -0.11657815462716888
+          ],
+          "sum_squared_standardized_residuals": 0.19420944952125369
+        },
+        {
+          "end": 3.0,
+          "tilt_p_q": [
+            27.72418365006481,
+            0.834748912891965,
+            0.77819885195036
+          ],
+          "standardized_residuals": [
+            0.7386657120458254,
+            -0.35662901458618523,
+            0.23528381561985148
+          ],
+          "sum_squared_standardized_residuals": 0.728169762089516
+        },
+        {
+          "end": 3.5,
+          "tilt_p_q": [
+            23.709734719958732,
+            0.8501652922826471,
+            0.7821823740756263
+          ],
+          "standardized_residuals": [
+            -0.5317295190004014,
+            0.24351424746937064,
+            0.4541429810962848
+          ],
+          "sum_squared_standardized_residuals": 0.5482813173759926
+        },
+        {
+          "end": 4.0,
+          "tilt_p_q": [
+            26.090902445116797,
+            0.8324192641267314,
+            0.7678959782686677
+          ],
+          "standardized_residuals": [
+            0.2218045712394924,
+            -0.44731976459821504,
+            -0.3307675994538194
+          ],
+          "sum_squared_standardized_residuals": 0.3586994444713799
+        },
+        {
+          "end": 4.5,
+          "tilt_p_q": [
+            23.94984694911434,
+            0.8287475109862231,
+            0.7878391553370251
+          ],
+          "standardized_residuals": [
+            -0.45574463635622114,
+            -0.5902572112816581,
+            0.7649328768771945
+          ],
+          "sum_squared_standardized_residuals": 1.1412290551650854
+        },
+        {
+          "end": 5.0,
+          "tilt_p_q": [
+            25.553186589362255,
+            0.838507965481388,
+            0.76032845212977
+          ],
+          "standardized_residuals": [
+            0.05164132574754893,
+            -0.2102930931558764,
+            -0.7465359580567071
+          ],
+          "sum_squared_standardized_residuals": 0.6042059482256762
+        },
+        {
+          "end": 5.5,
+          "tilt_p_q": [
+            24.74064423876742,
+            0.843659698935137,
+            0.7711575144803299
+          ],
+          "standardized_residuals": [
+            -0.20549232950398127,
+            -0.009741586098232757,
+            -0.15157514839950958
+          ],
+          "sum_squared_standardized_residuals": 0.06529702159701545
+        },
+        {
+          "end": 6.0,
+          "tilt_p_q": [
+            23.780244186711926,
+            0.8414382355315184,
+            0.7781232046804366
+          ],
+          "standardized_residuals": [
+            -0.5094163966101503,
+            -0.09622079498371933,
+            0.23112766991628186
+          ],
+          "sum_squared_standardized_residuals": 0.32218350632349857
+        },
+        {
+          "end": 6.5,
+          "tilt_p_q": [
+            24.303337555996983,
+            0.8417749378037694,
+            0.7664873109613941
+          ],
+          "standardized_residuals": [
+            -0.3438805202541196,
+            -0.08311333343977348,
+            -0.40816135844624096
+          ],
+          "sum_squared_standardized_residuals": 0.29175733293439576
+        },
+        {
+          "end": 7.0,
+          "tilt_p_q": [
+            23.115815099834286,
+            0.8531087110505712,
+            0.7650366083045956
+          ],
+          "standardized_residuals": [
+            -0.7196787658752261,
+            0.35809841124813363,
+            -0.48786458660394394
+          ],
+          "sum_squared_standardized_residuals": 0.8841838530523629
+        },
+        {
+          "end": 7.5,
+          "tilt_p_q": [
+            23.96796168939504,
+            0.834724697195353,
+            0.7739588624491892
+          ],
+          "standardized_residuals": [
+            -0.45001212360916487,
+            -0.35757170591398263,
+            0.0023340453727398003
+          ],
+          "sum_squared_standardized_residuals": 0.33037388403326795
+        },
+        {
+          "end": 8.0,
+          "tilt_p_q": [
+            26.821729559889047,
+            0.8462108963949113,
+            0.7839463225497767
+          ],
+          "standardized_residuals": [
+            0.4530789746484323,
+            0.0895738190858266,
+            0.5510562851664048
+          ],
+          "sum_squared_standardized_residuals": 0.5169670557554932
+        }
+      ],
+      "last": {
+        "end": 8.0,
+        "tilt_p_q": [
+          26.821729559889047,
+          0.8462108963949113,
+          0.7839463225497767
+        ],
+        "standardized_residuals": [
+          0.4530789746484323,
+          0.0895738190858266,
+          0.5510562851664048
+        ],
+        "sum_squared_standardized_residuals": 0.5169670557554932
+      }
+    }
+  ],
+  "qualification": "Supplementary 6-60 kpc stellar shape diagnostic. The main retention results remain the registered 10-40 kpc cut. No observational success probability is assigned; finite-tracer noise, shape-systematic uncertainties, noncoplanarity and the full selection function are not modeled."
+}

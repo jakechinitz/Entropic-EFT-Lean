@@ -1,0 +1,23 @@
+FOLLOW-UP BEFORE THE THERMAL RUN — 23 OCTOBER 2026
+
+The scalar-only spatial calculation retains resolved-energy loss at sharp
+fronts. Test a specified perfect-fluid thermal extension of the same cold
+Hamiltonian density R0(n,phi), rather than treating lost energy as absent.
+
+Choose rho=R0+z*n^gamma, z>=0, 1<gamma<=2. The test uses gamma=4/3.
+Its pressure is p=p0+(gamma-1)*rho_th. The adiabatic sound speed is the
+enthalpy-weighted average of the cold sound speed squared and gamma-1.
+Thus positive thermal energy preserves the cold energy floor and causal
+local characteristics. Smooth adiabatic flow transports z; entropy-producing
+shocks increase it. This is a chosen isotropic moment closure, not the full
+collisionless multistream stress or a microscopic derivation of gamma.
+
+The warm chemical clock speed is mu=d rho/d n. Preserve the safe fractional
+drain with P=g*B and g=n*mu/(lambda_cold+n*mu_th). This is in [0,1], reduces
+exactly to v_cold^2 in the cold state, vanishes at rest, and gives P/mu
+=n*B/(lambda_cold+n*mu_th). The cubic/floor choices are unchanged.
+
+Test the same planar depleted/undepleted initial condition using conservative
+relativistic Euler mass, momentum and total-energy equations. Record all
+negative thermal states, energy errors and refinement; do not clip them.
+Keep the previous scalar-only failure as a separate result.

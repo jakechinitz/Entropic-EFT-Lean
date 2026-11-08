@@ -1,0 +1,39 @@
+CONNECTED THEORY CLOSURE — REPRODUCTION
+
+Read START HERE.html and Research note/main.pdf. The closure register grades
+each result. The current papers and upstream Lean were not modified.
+
+All numerical scripts require Python, NumPy, SciPy, SymPy and Matplotlib.
+They reuse the archived Release zoom history and the saved exponential
+cosmology parameters. Input hashes are in source_records/input_manifest.json.
+
+To rerun, copy this research directory to a new research folder and give new
+output names, or preserve existing outputs under a Previous results folder
+before changing code. Scripts refuse to overwrite their named result files.
+Do not delete earlier results. bootstrap.py should be run once in a fresh copy.
+
+From the workspace root:
+  python "02 Research/Connected theory closure 2026-10-23/connected_checks.py"
+  python "02 Research/Connected theory closure 2026-10-23/stock_contact_check.py"
+  python "02 Research/Connected theory closure 2026-10-23/boundary_completion.py" base
+  python "02 Research/Connected theory closure 2026-10-23/adaptive_boundary.py" base
+  python "02 Research/Connected theory closure 2026-10-23/adaptive_boundary.py" refined
+  python "02 Research/Connected theory closure 2026-10-23/wave_check.py"
+  python "02 Research/Connected theory closure 2026-10-23/check_lean.py"
+  python "02 Research/Connected theory closure 2026-10-23/finalize.py"
+
+The first boundary_completion.py run is the preserved constant-cutoff attempt.
+It keeps energy positive but permits clock reversal. adaptive_boundary.py is
+the revised constant-total-energy-floor action. Both are conditional effective
+constructions, not microscopic derivations or new data likelihoods.
+
+check_lean.py uses the available Lean 4.19 executable and mathlib cache under
+Unified closure 2026-10-21. Each invocation writes a distinct audit source and
+log. The latest successful log contains no sorryAx and only standard logical
+axioms. This is not a rebuild of the upstream 4.35 project.
+
+Typeset the note with the workspace-preserving build helper:
+  python .organization/build_pdfs.py --tex "02 Research/Connected theory closure 2026-10-23/Research note/main.tex"
+
+The PDF remains beside main.tex. Build products and previous PDFs are retained
+by the helper. Building does not rerun the scientific calculations.

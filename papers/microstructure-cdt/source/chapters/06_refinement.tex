@@ -1,0 +1,155 @@
+\section{Exact microscopic realization of a supplied matter operator}
+\label{sec:refinement}
+
+\subsection{Cochain interpolation and retraction}
+
+Consider coarse and fine cochain complexes describing the same supplied coarse geometry. Let
+\begin{equation}
+P:C_c\to C_f,\qquad R:C_f\to C_c
+\end{equation}
+satisfy, degree by degree,
+\begin{equation}
+RP=I,\qquad d_fP=Pd_c,\qquad Rd_f=d_cR.
+\label{eq:chainmaps}
+\end{equation}
+Here $P$ interpolates coarse cochains and $R$ integrates refined cochains back over coarse simplices. They are distinct from the normalized transport between physically different geometries in \eqref{eq:physicalR}.
+
+Subcomplexes and commuting projections are standard structural ingredients of compatible discrete differential complexes \cite{feec}. The following choice of microscopic metric uses those identities to preserve the supplied coarse operator exactly.
+
+\begin{theorem}[Positive metric completion]
+\label{thm:metric}
+Given positive metrics $M_c$ and $M_a$, define $Q_f=I-PR$ and
+\begin{equation}
+\boxed{M_f=R^\dagger M_cR+Q_f^\dagger M_aQ_f.}
+\label{eq:Mf}
+\end{equation}
+Then $M_f$ is positive definite, $P$ is isometric from $(C_c,M_c)$ into $(C_f,M_f)$, and
+\begin{equation}
+C_f=\Ran P\oplus^\perp\ker R
+\end{equation}
+is preserved by $d_f$ and its metric adjoint.
+\end{theorem}
+\begin{proof}
+Every $z\in C_f$ decomposes uniquely as $z=Px+y$ with $x=Rz$ and $y=Q_fz\in\ker R$. Since $Q_fP=0$ and $Q_fy=y$,
+\begin{equation}
+z^\dagger M_fz=x^\dagger M_cx+y^\dagger M_ay.
+\end{equation}
+Positivity follows, and the same equation proves isometry and orthogonality. The two chain-map identities in \eqref{eq:chainmaps} show that $d_f$ preserves each summand. In an orthogonal block decomposition its adjoint preserves the same summands.
+\end{proof}
+
+Let $J$ denote $P$ in orthonormal coordinates. The restricted adjoint on the image of $P$ is the transported coarse adjoint, so
+\begin{equation}
+J^\dagger J=I,\qquad D_fJ=JD_c.
+\end{equation}
+For every bounded Borel function on the finite spectrum,
+\begin{equation}
+f(D_f)J=Jf(D_c).
+\end{equation}
+In particular,
+\begin{align}
+\Omega_f(m)J&=J\Omega_c(m),\\
+(\partial_m\Omega_f)J&=J(\partial_m\Omega_c),\\
+e^{-it\Omega_f}J&=Je^{-it\Omega_c}.
+\label{eq:functional}
+\end{align}
+The construction therefore preserves the complete dispersion and clock of the supplied operator.
+
+\subsection{Locality and the interpretation of refined cells}
+
+For a fixed finite subdivision block, the new metric couples cochains inside that block and through the already supplied coarse boundary interactions. It generally contains off-diagonal entries. Assigning the same cells an unchanged raw regular-simplex Hodge metric would define a different operator.
+
+The theorem realizes a coarse orbital theory in a microscopic code subspace. It does not supply the coarse physical symbol or remove unwanted coarse species. A wrong speed or extra low-energy branch is carried into the code along with every correct feature.
+
+Repeated refinements can preserve the chosen operator at each step. Direct and sequential interpolation must satisfy the appropriate composition maps. A refinement identity changes resolution within one selected construction; it does not prove that independent physical local time deformations obey the gravitational constraint algebra.
+
+\subsection{Explicit stellar maps}
+
+For a stellar insertion at the barycenter of one tetrahedron, let $b_v$ be the coarse barycentric coordinate vector of fine vertex $v$. A coarse oriented $p$-simplex $\sigma=(i_0,\ldots,i_p)$ interpolates to a fine simplex $\tau=(v_0,\ldots,v_p)$ with
+\begin{equation}
+P_{\tau\sigma}=\det[b_{v_a}^{\,i_b}]_{a,b=0}^p.
+\end{equation}
+The new vertex has coordinate $1/4$ at each vertex of its parent tetrahedron; old vertices retain their coordinate basis vectors.
+
+For unchanged simplices, $R$ is the identity incidence. On the subdivided parent tetrahedron, $R$ adds the oriented child tetrahedra with signs fixed by the interpolation orientation. Direct multiplication checks all three identities in \eqref{eq:chainmaps}. Construct \eqref{eq:Mf}, factor it by Cholesky, and form $J$ in orthonormal coordinates.
+
+Two refinements of the five-tetrahedron sphere give dimensions $30\to44\to58$. The saved calculation has direct-versus-sequential interpolation difference zero, Dirac intertwining error $5.99\times10^{-15}$, clock error $3.85\times10^{-15}$, and real-time error about $2.1\times10^{-14}$. Both original harmonic modes remain. The tested complementary Dirac spectrum has no extra zero mode and gap about $1.5081$.
+
+\subsection{The full joint generator}
+
+Apply Theorem \ref{thm:metric} separately to each physical geometry in \eqref{eq:jointH}. Lift the physical-geometry transport through the two resulting isometries. The coarse one-particle space has dimension $74$, and the fine one dimension $102$, with the same nine-state internal spectator factor.
+
+On the code,
+\begin{equation}
+H_fJ=JH_c,\qquad C_fJ=JC_c,\qquad
+U_f(t)J=JU_c(t),
+\end{equation}
+where $C=\partial_mH$. Transported source operators obey the same intertwining.
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule Joint check & Reference error\\\midrule
+$J^\dagger J=I$ & $2.23\times10^{-15}$\\
+Complete generator & $1.83\times10^{-13}$\\
+Proper-clock operator & $7.79\times10^{-15}$\\
+Real-time evolution & $3.11\times10^{-14}$\\
+Two external test-source insertions & $1.83\times10^{-13}$\\
+Code-invariance commutator & $2.99\times10^{-14}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+At control mass $0.23$, complementary energies lie between about $1.6451$ and $3.7631$. These states do not mix with the code in the displayed generator. Their energies can overlap energies of excited code states. A global spectral separation above every code state is unnecessary for the stated exact invariance.
+
+The two source insertions in this finite check are specified test operators. The intertwining proves preservation of their response. It does not substitute them for two calibrated held masses in a force experiment.
+
+\section{The matter light cone and the retained limitations}
+\label{sec:cone}
+
+\subsection{The full Whitney metric test}
+
+For barycentric coordinates $\lambda_i$ on one tetrahedron, the Whitney form associated with an oriented $p$-simplex $I=(i_0,\ldots,i_p)$ is
+\begin{equation}
+w_I=p!\sum_{r=0}^p(-1)^r\lambda_{i_r}
+d\lambda_{i_0}\wedge\cdots\widehat{d\lambda_{i_r}}\cdots
+\wedge d\lambda_{i_p}.
+\end{equation}
+The local metric is
+\begin{equation}
+(M_p)_{IJ}=\int_\sigma w_I\cdot w_J\,dV.
+\end{equation}
+Its barycentric second moments are
+\begin{equation}
+\int_\sigma\lambda_i\lambda_j\,dV
+=\frac{V_\sigma}{20}(1+\delta_{ij}).
+\end{equation}
+Using these exact moments retains every off-diagonal entry and avoids a quadrature ambiguity.
+
+On flat embedded periodic BCC and irregular Delaunay controls, the low-momentum speeds converge to one. Keeping the combinatorics but assigning every tetrahedron an intrinsic regular metric leaves a split. For the BCC test,
+\begin{equation}
+v_0=\sqrt{5/6},\qquad v_T=\sqrt{4/5},\qquad v_3=\sqrt{3/4}.
+\end{equation}
+The discrepancy therefore survives the full metric matrix. It is a property of the supplied intrinsic operator in that test.
+
+\subsection{A periodic inverse normalization}
+
+Choose an isotropic coarse metric with the same total intrinsic block volume before measuring dispersion. Match the metric of harmonic representatives to its exterior-form metric, then extend the positive congruence to all cochains and Bloch momenta.
+
+For the BCC block the common target coordinate speed is $0.8908987181$; multiplication by the block length conversion $1.1224620483$ gives physical speed one. The irregular block has target coordinate speed $0.3110324586$ and conversion $3.2150985288$. No measured branch speed enters those normalization matrices.
+
+At successively smaller diagonal momenta, the BCC relative spread is approximately
+\begin{equation}
+1.52358\times10^{-5},\quad3.80915\times10^{-6},\quad
+9.52499\times10^{-7}.
+\end{equation}
+The irregular block gives
+\begin{equation}
+3.73828\times10^{-4},\quad1.86870\times10^{-4},\quad
+9.34294\times10^{-5}.
+\end{equation}
+The leading cones approach the prescribed target. The visible irregular splitting decreases approximately linearly over the tested wave numbers. Its physical suppression and compatibility with arbitrary changing boundaries remain to be established.
+
+\subsection{What one common interacting model still requires}
+
+The finite joint operator, the periodic correction, and the geometric state-sum equality are compatible pieces with stated domains. The same interacting many-boundary construction must carry the desired spatial symbol and species interpretation, satisfy the necessary source and metric constraints, and reach the extended gravitational phase. These are substantive physical tests at the supplied cutoff.
+
+The existence of a microscopic realization does not require uniqueness of its interactions. Its predictions do require fixing those interactions before testing the phase and source response. The refinement theorem supplies an exact way to implement a good coarse operator once that operator and its couplings are specified.

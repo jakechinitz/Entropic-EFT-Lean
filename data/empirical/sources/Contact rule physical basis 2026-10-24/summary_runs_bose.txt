@@ -1,0 +1,5 @@
+MW_k1_reg15000_N4000_sig175_s1_FD          t0 0.099 | 8-12 rms 0.010-0.030 (mean 0.019) maxdev 0.061 | Emis end/start 0.008 rises 5/24 (1.5Gyr-smoothed 4/22) | dE +0.164 W +0.164 | dP 3.0e-17 dL 8.5e-18 | sig 128->121
+MW_k1_reg15000_N4000_sig175_s2_FD          t0 0.095 | 8-12 rms 0.014-0.042 (mean 0.024) maxdev 0.069 | Emis end/start 0.034 rises 7/24 (1.5Gyr-smoothed 6/22) | dE +0.157 W +0.157 | dP 2.4e-17 dL 8.0e-18 | sig 128->117
+dwarf_k3_reg1000_N4000_sig175_s1_FD        t0 0.131 | 8-12 rms 0.018-0.036 (mean 0.025) maxdev 0.069 | Emis end/start 0.610 rises 8/24 (1.5Gyr-smoothed 8/22) | Emis/floor late 1.0-1.1 | dE +0.147 W +0.147 | dP 2.6e-17 dL 1.2e-17 | sig 32->28
+dwarf_k3_reg1000_N4000_sig175_s2_FD        t0 0.123 | 8-12 rms 0.023-0.042 (mean 0.030) maxdev 0.064 | Emis end/start 0.619 rises 10/24 (1.5Gyr-smoothed 8/22) | Emis/floor late 1.0-1.1 | dE +0.143 W +0.143 | dP 3.0e-17 dL 9.7e-18 | sig 32->29
+massive_spiral_k3_reg25700_N4000_sig175_s1_FD t0 0.136 | 8-12 rms 0.045-0.057 (mean 0.051) maxdev 0.134 | Emis end/start 0.069 rises 3/24 (1.5Gyr-smoothed 1/22) | Emis/floor late 3.5-7.4 | dE -0.156 W -0.156 | dP 5.1e-17 dL 8.8e-18 | sig 123->155

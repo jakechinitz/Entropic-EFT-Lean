@@ -1,0 +1,216 @@
+\section{Coherent bonds in the existing capacity states}
+\label{sec:bonds}
+
+\subsection{Equivariant factorization of routing and orientation}
+
+For each unordered four-letter set, routing carries the regular representation $\C[S_4]$. Orientation supplies an additional two-dimensional multiplicity space. The routing-orientation representation admits
+\begin{equation}
+\C[S_4]\otimes\C^2
+\cong\mathcal F(\C^4)\otimes V_{\rm std},
+\label{eq:fockidentity}
+\end{equation}
+where $\mathcal F(\C^4)$ is the fermionic Fock space of four virtual modes and $V_{\rm std}$ is the three-dimensional standard representation of $S_4$.
+
+The identity follows from characters. In the order identity, transposition, double transposition, three-cycle, four-cycle, the Fock character is $(16,0,0,4,0)$ and the standard character is $(3,1,-1,0,-1)$. Their product is $(48,0,0,0,0)$, the character of two regular representations. Equality of finite-group characters proves unitary equivalence.
+
+Including the $35$ unordered sets gives
+\begin{equation}
+\mathcal H_{\rm cap,o}\cong\mathcal F_4\otimes\C^{105}.
+\end{equation}
+The virtual occupations are observables encoded in the existing routing and orientation states. The local Hilbert dimension remains $1680$. The fermionic signs in the port-permutation action are required by the character identity.
+
+The local density matrix becomes
+\begin{equation}
+\rho_{\rm cell}=\frac{I_{16}}{16}\otimes\sigma,\qquad
+\sigma=\bigoplus_{s=1}^{35}\frac{P_s}{3}I_3.
+\label{eq:localfactor}
+\end{equation}
+Because the original routing-orientation block is proportional to the identity for each $s$, this is the original full density operator written in a new basis. Its entropy decomposes as
+\begin{equation}
+g_{\rm share}=4\log2+S(\sigma)
+=2.77258872224+4.64721130133.
+\end{equation}
+
+\subsection{The coherent global state}
+
+Pair each virtual port mode with the mode across its graph link. On a link $e=(L,R)$ choose
+\begin{equation}
+|\omega_e\rangle=\frac{|10\rangle+|01\rangle}{\sqrt2}.
+\end{equation}
+The product over links, with a fixed fermion ordering, is
+\begin{equation}
+|\Omega_\Gamma\rangle=
+\prod_{e=(L,R)}
+\frac{c^\dagger_{L,e}+c^\dagger_{R,e}}{\sqrt2}|0\rangle,
+\qquad
+\rho_{\Gamma,*}=|\Omega_\Gamma\rangle\langle\Omega_\Gamma|
+\otimes\bigotimes_v\sigma_v.
+\end{equation}
+Every cell has the marginal \eqref{eq:localfactor}. A boundary cutting $n$ links has bond entropy $n\log2$. Residual register entropy is a volume contribution and is conditioned out of the geometric cut calculation.
+
+The joint coherence is a physical choice. The separable state
+\begin{equation}
+\rho_{\rm sep}=\tfrac12|10\rangle\langle10|
++\tfrac12|01\rangle\langle01|
+\end{equation}
+has the same one-side marginal as $|\omega\rangle$, but zero entanglement. The finite local probabilities therefore admit both states.
+
+A local bond parent selects the coherent state:
+\begin{equation}
+H_e=U(n_L+n_R-1)^2
++t\left[n_L+n_R-2n_Ln_R
+-(c_L^\dagger c_R+c_R^\dagger c_L)\right],
+\quad U,t>0.
+\label{eq:bondparent}
+\end{equation}
+The zero-energy eigenvector is $|\omega_e\rangle$. The empty and doubly occupied states have energy $U$; the antisymmetric one-particle state has energy $2t$. Equation \eqref{eq:bondparent} provides an explicit interaction realizing the required correlations.
+
+\subsection{Coherent renewal and changing graph frames}
+
+Independent resets of individual cells destroy the intercell bond state. A compatible renewal exports the replaced capacity sector and prepares the entire local bond pattern with the prescribed residual state. For a fixed graph it has a Stinespring isometry.
+
+For a superposition of graphs, a direct export of graph-dependent bond vacua can record which graph was present. Choose preparation unitaries $U_g|\mathrm{ref}\rangle=|\Omega_g\rangle$ and define
+\begin{equation}
+D=\sum_g|g\rangle\langle g|\otimes U_g,\qquad
+J|g\rangle=|g\rangle|\Omega_g\rangle.
+\end{equation}
+The selected moving-frame rule first applies $D^\dagger$, performs renewal in the common reference frame, evolves the retained geometry, then prepares the new graph frame. For a supplied retained operator $U_{\rm geom}$,
+\begin{equation}
+U_{\rm phys}=D(U_{\rm geom}\otimes I)D^\dagger,\qquad
+U_{\rm phys}J=JU_{\rm geom}.
+\label{eq:frame}
+\end{equation}
+The old record remains exported; the frame change acts before export on the current capacity state.
+
+This construction handles a specified common register organization. When geometric alternatives have different numbers of renewal events or different record spaces, a compatible common dilation must also be given. The later finite orbital Hamiltonian does not settle that enlarged record problem.
+
+\section{Proper ticks, event volume, and the bare gravitational scale}
+\label{sec:scale}
+
+\subsection{Causal chains}
+
+Assume a locally Poisson event process with density $\rho=1/v_*$ in invariant four-volume, and identify the physical cadence between interaction endpoints with a longest causal chain. In four-dimensional Minkowski space the causal-diamond volume is
+\begin{equation}
+V_4(\tau)=\frac{\pi}{24}\tau^4
+\end{equation}
+in $c=1$ units. By definition of the asymptotic chain constant,
+\begin{equation}
+L_{\rm chain}\sim m_4(\rho V_4)^{1/4}.
+\end{equation}
+Matching the asymptotic chain rate to $\tau/\tstar$ gives
+\begin{equation}
+\boxed{\frac{v_*}{\Lstar^4}=\frac{\pi}{24}m_4^4.}
+\label{eq:eventvol}
+\end{equation}
+The event-placement law and longest-chain cadence are additional premises. They concern spacetime events; the memoryless capacity replacement law concerns marks on those events.
+
+Conditioning the event process on a fixed total number produces a finite-volume binomial law for subregions. For a region of volume fraction $f$ in a total of $N_e$ events, the local event count has variance $N_ef(1-f)$. A small subregion of a much larger system approaches the Poisson law. This provides a consistent distinction between a fixed total event sector and local fluctuations.
+
+The retained numerical value is $m_4=2.35$, which gives
+\begin{equation}
+v_*/\Lstar^4=3.9921796826723166.
+\end{equation}
+This value is provisional. The construction does not replace it by an unpublished later estimate or treat a finite-size fit as an exact constant.
+
+\subsection{The paired-cell volume calibration}
+
+Assign one event to a pair of primitive spatial cells over one proper tick. The volume per cell is then
+\begin{equation}
+V_{\rm cell}=\frac{v_*}{2\Lstar}
+\end{equation}
+in length units. Select a regular-tetrahedron semiclassical volume reading,
+\begin{equation}
+V_{\rm cell}=\frac{a^3}{6\sqrt2},\qquad
+\Ach=\frac{\sqrt3}{4}a^2.
+\end{equation}
+Consequently
+\begin{align}
+\frac{a}{\Lstar}
+&=\left(3\sqrt2\,\frac{v_*}{\Lstar^4}\right)^{1/3},\\
+\frac{\Ach}{\Lstar^2}
+&=\frac{\sqrt3}{4}
+\left(3\sqrt2\,\frac{v_*}{\Lstar^4}\right)^{2/3}.
+\label{eq:areascale}
+\end{align}
+The two-cell factor is a physical accounting choice. The regular volume is a semiclassical observable assignment. The continuation exhibits compatible block states, but neither item follows from the integer $1680$ alone.
+
+At $m_4=2.35$,
+\begin{equation}
+a/\Lstar=2.56812077553,\qquad
+\Ach/\Lstar^2=2.85582456165.
+\end{equation}
+A host edge therefore spans several proper tick lengths. Monte Carlo updates, causal slice labels, edge lengths, and proper ticks retain different meanings.
+
+\subsection{Absolute angular transfer}
+
+One side of a coherent binary bond has reduced state $\rho_B=I_2/2$. Select a physical angular generator $K_B$ by the \emph{absolute} full-turn condition
+\begin{equation}
+e^{-2\pi K_B}=\rho_B.
+\end{equation}
+It gives
+\begin{equation}
+K_B=bI_2,\qquad b=\frac{\log2}{2\pi}.
+\label{eq:angular}
+\end{equation}
+The absolute condition fixes an otherwise free additive scalar in $K_B$. Normalized density matrices alone are invariant under $K_B\mapsto K_B+\lambda I$, because normalization removes the scalar. An entropy calculation by itself would leave this curvature normalization undetermined.
+
+Let the sum of wedge angles around an interior hinge be $2\pi-\delta_h$. For $N_h$ channels,
+\begin{align}
+\Tr\exp[-(2\pi-\delta_h)K_B]
+&=2e^{-b(2\pi-\delta_h)}
+=e^{b\delta_h},\\
+W_h&=e^{bN_h\delta_h}.
+\end{align}
+The flat full turn has weight one. A replicated cut with total angle $2\pi n$ has
+\begin{equation}
+\log\Tr\rho_B^n=(1-n)\log2.
+\end{equation}
+Thus the selected tensor has both the binary cut entropy and a definite absolute curvature response.
+
+\subsection{The coefficient of the Regge action}
+
+With $A_h=\Ach N_h$, the geometric weight is
+\begin{equation}
+W_{\rm curv}=\exp\left[\frac{b}{\Ach}\sum_hA_h\delta_h\right].
+\end{equation}
+The Regge approximation uses $\int\sqrt g\,R=2\sum_hA_h\delta_h$, including the corresponding boundary term when a boundary is present. Comparing $W=e^{-I_E}$ with
+\begin{equation}
+I_E=-\frac1{16\pi G_0}\int\sqrt g\,R
+\end{equation}
+gives
+\begin{equation}
+\boxed{G_0=\frac{\Ach}{8\pi b}=\frac{\Ach}{4\log2}.}
+\label{eq:G0}
+\end{equation}
+No additional Einstein weight is multiplied into the state sum.
+
+Substituting \eqref{eq:eventvol} and \eqref{eq:areascale},
+\begin{equation}
+\boxed{
+\frac{G_0}{\Gstar}
+=\frac{\sqrt3}{16\log2}
+\left(\frac{\pi\sqrt2}{8}\right)^{2/3}m_4^{8/3}
+=0.10551926870131369\,m_4^{8/3}.}
+\label{eq:Gm4}
+\end{equation}
+At the provisional input this gives $G_0/\Gstar=1.03002098319$. Exact equality in this calibration would require
+\begin{equation}
+m_4=(0.10551926870131369)^{-3/8}\simeq2.32407739.
+\end{equation}
+That inverse value is a target implied by the equality; it is not a measurement of $m_4$.
+
+Logarithmic differentiation gives
+\begin{equation}
+\frac{dG_0}{G_0}=\frac83\frac{dm_4}{m_4}.
+\end{equation}
+A one-percent uncertainty in the asymptotic chain constant produces about a $2.67$-percent uncertainty in this bare coefficient. Numerical roundoff in the finite tensor identities is much smaller than this physical calibration uncertainty.
+
+\subsection{Boundary and bulk consistency}
+
+The cut entropy per physical area is $\log2/\Ach$. With \eqref{eq:G0},
+\begin{equation}
+\frac{S_{\rm cut}}{A}=\frac1{4G_0}.
+\end{equation}
+The agreement follows from the common angular tensor. It supplies a consistency identity within the selected microscopic action. A measurement of a renormalized gravitational coupling can differ from its bare coefficient while retaining a consistent renormalized effective action and boundary law.
+
+The main manuscript's C.5-matched channel area is $4\log2\,\Lstar^2$, obtained after selecting $G=\Gstar$. The paired-cell route supplies $\Ach$ independently of that final equality and obtains the nearby bare ratio \eqref{eq:Gm4}. Both routes cannot be described as independent measurements of the same interacting $G_R$.

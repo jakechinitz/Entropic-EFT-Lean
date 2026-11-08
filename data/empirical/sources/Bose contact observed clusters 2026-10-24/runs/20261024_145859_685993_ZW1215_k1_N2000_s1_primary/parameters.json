@@ -1,0 +1,13 @@
+{
+  "cluster": "ZW1215",
+  "k": 1.0,
+  "N": 2000,
+  "T": 10,
+  "seed": 1,
+  "dt_Myr": 0.5,
+  "contact_interval_Myr": 2,
+  "initial_register_specific_km2_s2": 15000,
+  "gate_sigma_kms": 0,
+  "label": "primary",
+  "force": "archived"
+}

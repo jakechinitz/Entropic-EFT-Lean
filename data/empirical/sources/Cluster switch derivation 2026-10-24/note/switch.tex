@@ -1,0 +1,252 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,parskip}
+\usepackage[hidelinks]{hyperref}
+\title{The cluster switch: reduction to carrier records}
+\author{Research note, 24 October 2026}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Result}
+The switch is not derived from first principles. It reduces exactly, within the theory
+as written, to three questions the theory leaves open: which baryons form an active
+carrier's record, where a carrier's support ends, and which stock it carries. One
+identification answers all three:
+\begin{enumerate}
+\item an active carrier's records are its condensed baryons, stars and cold gas;
+\item a carrier's support ends where those records stop dominating the enclosed baryonic
+mass;
+\item a carrier's cells act on the stock bound to the carrier, with the binding
+potential built from its records and the stock it currently carries.
+\end{enumerate}
+With this identification, and with the contact work drawn from the cells' own energy:
+\begin{itemize}
+\item the seven X-COP clusters keep their mass inside $R_{500}$, $0.3R_{500}$ and
+$0.1R_{500}$ within 1.5\% of the no-contact control over 10\,Gyr; the same contacts with
+cells throughout the cluster leave 55--79\% inside $R_{500}$;
+\item each central galaxy's carried stock relaxes from 1.1--4.3 times its galactic-law
+value to 0.57--0.85 times it, while the total stock in its support, 7--11 times the law
+value, is unchanged within the particle noise;
+\item isolated galaxies reach the law inside their supports as before.
+\end{itemize}
+The cells' energy per unit carried stock tends to $V_f^2$ in the deep regime, so the work
+available to contacts is fixed by the theory where the cells are and vanishes where they
+are not.
+
+\section{What the theory already fixes}
+Section~15 defines the occupation cell per active carrier,
+$H_{{\rm cell},P}=k_BT_Hx_P{:}N_P{:}$ with $x_P=\sqrt{|\nabla\Phi_{b,P}|/a_0}$, and
+specifies the exponential law for equilibrium active carriers. Appendix~O.3 and the
+Milky-Way--LMC analysis assign each carrier a response stock $R_P$ that moves with it.
+The selection functional is therefore a carrier sum,
+\[
+F=\sum_{P\in\mathfrak A}\int_{{\rm supp}\,P}\mathcal N_P\Theta\,
+D\!\left(n_P\,\Vert\,n_{*,P}\right)d^3x,\qquad
+n_P=\frac{g_{R,P}}{g_{b,P}},\qquad
+\mathcal N_P\Theta=\frac{g_{b,P}^2\,n_{*,P}(1+n_{*,P})}{4\pi G}.
+\]
+Stock outside every support, or carried by no active carrier, does not enter $F$. A
+contact that moves only such stock leaves $F$ unchanged and is never accepted, so this
+stock evolves as collisionless matter.
+
+\section{The identification and its costs}
+\textbf{Records.} An active carrier is ``a retained, dynamically coherent source
+record''. Stars and cold gas ($T\ll T_{\rm vir}$) carry their formation history: a
+stellar distribution function is any function of the integrals, and a cold disk is far
+from the Gibbs state of its potential. Shock-heated gas whose cooling time exceeds its
+dynamical time relaxes toward that Gibbs state, and its density and temperature follow
+from the potential and an entropy profile.
+
+This is an identification. The intracluster medium does keep records in another sense:
+metallicity gradients, cold fronts and its entropy history. The cooling criterion marks
+haloes of about $10^{12}M_\odot$, the Milky-Way scale, not the galaxy--group boundary;
+the boundary used here is set by enclosed-mass dominance. The X-ray ellipticals in the
+radial acceleration relation of Lelli et al.\ (2017) count hot gas in the baryonic
+acceleration and lie on the law, so the identification is tested there (Section~8).
+
+\textbf{Support.} Carrier supports already meet at interfaces where one carrier's field
+gives way to another's. The same rule, applied to all baryons, ends a support where
+$M_{\rm rec}(<r)=M_{\rm hot}(<r)$. Hot gas has no support of its own. Enclosed mass,
+rather than local density or acceleration, is a choice.
+
+\textbf{Carried stock.} The response stock moves with its carrier. A particle is carried
+when it is inside the support and bound to the potential of the carrier's records plus
+its currently carried stock, found by iteration from the records alone. Binding to a
+potential that already contains the law stock would presuppose the law; the
+self-consistent potential does not.
+
+\textbf{Work.} The work register is identified with the cell energy of the support.
+This is a fourth identification. The register is refundable, so cooling contacts can
+return energy to it.
+
+\section{The cell reservoir}
+Each cell holds mean energy $\Theta x\,n_*$, so the reservoir density is
+\[
+u=\mathcal N\Theta\,x\,n_*=\frac{g_b^2\,x\,n_*^2(1+n_*)}{4\pi G}.
+\]
+In the Rayleigh--Jeans regime $n_*=1/x$ this is exactly $u=g_ba_0(1+x)/4\pi G$. Its
+leading term integrates to $a_0\int_0^RM_b\,dr\simeq a_0M_bR$. The stock the law supports
+inside $R$ is $V_f^2R/G$ with $V_f^4=GM_ba_0$, so
+\[
+\frac{E_{\rm cell}}{M_{\rm stock}}\;\to\;\frac{G a_0 M_b}{V_f^2}=V_f^2
+\]
+as $R\to\infty$ in the deep regime. Integrated to the budget edge $R_{\rm cap}$, where
+the law stock reaches the galaxy's stock budget:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Model & $R_{\rm cap}$ (kpc) & $E_{\rm cell}/(M_{\rm stock}V_f^2)$ & runs: allowance; spent\\
+\midrule
+Milky Way & 460 & 0.955 & 0.447; 0.15--0.20\\
+Dwarf & 96 & 0.971 & 0.452; 0.15--0.20\\
+Massive spiral, $2.5\times10^{12}M_\odot$ & 166 & 0.850 & 0.450; net negative\\
+Massive spiral, $6\times10^{12}M_\odot$ & 387 & 0.920 & 0.450\\
+\bottomrule
+\end{tabular}
+\end{center}
+The galaxy runs' allowances lie below the reservoir, and their spending lies further
+below it. Inside a finite central-galaxy support the ratio is lower; for the X-COP
+centrals it is about $0.5V_f^2$ per unit law stock.
+
+\section{X-COP clusters}
+Stellar (central galaxy and members) and gas mass profiles from the X-COP release give
+the support radius $r_d$ where projected stellar mass equals gas mass, an upper bound.
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+Cluster & $r_d$ (kpc) & $r_d/R_{500}$ & $f_{\rm rec}(<R_{500})$ & $E_{\rm cell}/M_{\rm stock}$ ((km/s)$^2$)\\
+\midrule
+A85 & 47 & 0.038 & 0.025 & 21\\
+A1795 & 65 & 0.056 & 0.044 & 90\\
+A2029 & 76 & 0.054 & 0.052 & 93\\
+A2142 & 68 & 0.048 & 0.047 & 37\\
+A2319 & 99 & 0.072 & 0.035 & 121\\
+A644 & 87 & 0.069 & 0.051 & 132\\
+ZW1215 & 97 & 0.071 & 0.038 & 55\\
+\bottomrule
+\end{tabular}
+\end{center}
+The galaxy-scaled allowance the audit applied to the whole cluster was
+$6.6$--$10.6\times10^5$\,(km/s)$^2$, and the small reserve that preserved 98--99\% of the
+mass was $1.5\times10^4$. The support cells hold $10^{-4}$ of the first and under 1\% of
+the second. The cell energy uses the projected stellar mass, which overstates it.
+
+\section{Contact runs}
+GPT's observed-cluster setup is used unchanged: the same initial particles, seed,
+conservative softened gravity, timestep, integrator, Claude's archived contact kernel and
+register debit. Only the free energy, the eligible stock and the work allowance change.
+A rerun of GPT's ungated A1795 case gives 0.731 against its 0.725. Ratios are to the
+matched no-contact control, averaged over 8--10\,Gyr, at three contact proposals per
+orbit.
+\begin{center}
+\small
+\begin{tabular}{lccc}
+\toprule
+Rule & $R_{500}$ & $0.3R_{500}$ & $0.1R_{500}$\\
+\midrule
+Cells throughout, galactic allowance (audit, $N=2000$) & 0.547--0.787 & 0.319--0.440 & 0.209--0.366\\
+Support only, galactic allowance ($N=2000$) & 0.976--0.997 & 0.867--0.961 & 0.369--0.731\\
+Support only, cell work ($N=10^4$) & 0.997--1.007 & 0.990--1.019 & 0.563--0.937\\
+Support, carried stock, cell work ($N=1.6\times10^4$) & 0.9998--1.0008 & 0.997--1.002 & 0.985--1.007\\
+\bottomrule
+\end{tabular}
+\end{center}
+\begin{figure}[h]
+\centering\includegraphics[width=\textwidth]{switch_runs.png}
+\caption{Mass inside three radii relative to the matched no-contact control. Circles:
+the audit's runs without a switch. Squares: support only, $N=2000$. Triangles: support
+only with cell work, $N=10^4$. Diamonds: the full rule with self-consistent binding,
+$N=1.6\times10^4$.}
+\end{figure}
+
+Once the support is accepted, the protection at $R_{500}$ follows without a simulation:
+contacts are confined to 4--7\% of $R_{500}$ and the cell energy is $10^{-4}$ of
+$MV_{500}^2$. The runs confirm this; they do not test it. Their content is in the core.
+
+With support only, the central galaxy's cells drain the uncarried cluster stock in the
+support to 7--30\% of the control and remove 6--44\% at $0.1R_{500}$. With carried stock,
+time-averaged over 8--10\,Gyr at $N=1.6\times10^4$:
+\begin{center}
+\small
+\begin{tabular}{lcccc}
+\toprule
+& stock inside $r_d$ & inside $2r_d$ & carried / law, control & carried / law, contacts\\
+\midrule
+Range over 7 clusters & 0.94--1.05 & 0.99--1.01 & 1.1--4.3 & 0.57--0.85\\
+\bottomrule
+\end{tabular}
+\end{center}
+The stock inside $r_d$ is resolved by 52--299 particles in the control, a Poisson error
+of 6--14\%. The carried stock is resolved by about 5--40 particles, so its relaxation is
+qualitative: it falls from above the law value to somewhat below it, by unbinding, and
+the total stock in the support stays 7--11 times the law value. Contacts conserve momentum
+and angular momentum to $2\times10^{-17}$ and the energy ledger closes to $10^{-6}$ of
+$MV_{500}^2$. One seed is used.
+
+\section{Galaxies}
+An isolated galaxy carries all of its stock, so only the support edge can change the
+galaxy runs. Condensed baryons of $6.9\times10^{10}M_\odot$ and a hot halo of
+$2.5$--$15\times10^{10}M_\odot$ inside 250\,kpc put the Milky Way's edge at 115--490\,kpc,
+depending on the halo profile. Runs with deliberately small supports reach the law inside
+them as before (one seed each):
+\begin{center}
+\small
+\begin{tabular}{lccc}
+\toprule
+& support & \multicolumn{2}{c}{rms offset inside the support (dex)}\\
+Model & (kpc) & full support & gated\\
+\midrule
+Milky Way & 150 & 0.011--0.032 & 0.012--0.036\\
+Massive spiral & 110 & 0.006--0.020 & 0.007--0.031\\
+Dwarf (stress test) & 60 & 0.005--0.035 & 0.010--0.043\\
+\bottomrule
+\end{tabular}
+\end{center}
+Beyond a support the law is not enforced. The carried-stock rule and the cell-energy
+register were not run on galaxies; an isolated galaxy carries all of its stock, and its
+reservoir exceeds the allowance the galaxy runs used.
+
+\section{Tests and objections}
+\begin{itemize}
+\item \textbf{X-ray ellipticals (checked).} Lelli et al.\ (2017) place nine X-ray
+ellipticals on the law with hot gas counted, using the four group members (NGC~1407,
+4261, 4472, 4649) only inside $4R_e$ and the others out to about $15R_e$. Over those radii
+stars dominate the enclosed baryons. In NGC~720 hot gas becomes the dominant baryonic
+component only outside about 200\,kpc, beyond the X-ray data at 75--80\,kpc (Humphrey et
+al.\ 2011); the NGC~6482 gas fraction is 0.02 of the total mass at $0.1r_{200}$, inside its
+data; the NGC~4649 analysis treats the gas inside $4R_e$ as negligible. Excluding the
+hot gas from the record source lowers NGC~720's outermost points by 0.03--0.04\,dex
+(gas fractions at 60 and 80\,kpc interpolated), within the scatter. NGC~1521, 1332 and
+4125 lack a published gas profile at the radii used and were not quantified. The
+identification predicts departures from the law beyond the radius where hot gas
+dominates, about 200\,kpc for NGC~720.
+\item \textbf{Weak lensing.} Isolated-lens signals stay on the law to about 1\,Mpc. That
+lies beyond the budget edge with or without the switch and remains an open problem of the
+selection.
+\item \textbf{Groups.} The departure at radius $r$ begins where hot gas outweighs condensed
+baryons inside $r$, so gas-poor groups follow the law further out than X-ray-bright groups
+of the same dispersion.
+\item \textbf{Centrals.} Brightest cluster galaxies and group centrals sit in supports
+holding several times their law stock, consistent with the observed departures; the
+runs keep that excess from the initial condition rather than predict it.
+\item \textbf{History.} Stock reached clusters inside infalling galaxies and gas-rich
+protoclusters. The switch keys on present thermodynamics, and its history dependence is
+not modelled.
+\end{itemize}
+
+\section{Status}
+Exact within the theory: the carrier sum of the selection functional, zero bias and zero
+work for stock outside every support or carried by no carrier, and the reservoir
+identity $E_{\rm cell}/M_{\rm stock}\to V_f^2$. Identified: condensed baryons as records,
+the enclosed-mass dominance boundary, carried stock as stock bound to the self-consistent
+carrier potential, and the register as the cell energy. Measured: X-COP support radii and
+reservoirs. Simulated: the runs above, one seed. Lean
+(\texttt{Entropic.ContactSelection}, Section~4): the Rayleigh--Jeans reservoir density,
+the deep-regime identity and the core-reservoir arithmetic. Checked: the X-ray ellipticals on the
+law sit inside their record-dominated supports. Open: a microscopic reason for the
+record identification, the group regime, resolved member galaxies, and cosmological
+assembly. An independent adversarial review of the first draft found the
+law-potential binding circular, which the self-consistent binding replaces, and
+corrected the work-spending and radial-acceleration-sample statements.
+\end{document}

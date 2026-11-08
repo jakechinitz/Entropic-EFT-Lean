@@ -1,0 +1,257 @@
+\section{Native proper-time sources and coherent renewal}
+\label{sec:clock}
+
+\subsection{Activity along a causal curve}
+
+The retained rest generator attaches to a future timelike curve by the selected H.9a proper-time prescription:
+\begin{equation}
+U_e[\gamma]=\exp[-i\eps P_e\,\tau_\gamma/\tstar].
+\end{equation}
+For consecutive segments, $\tau_{\gamma_2\circ\gamma_1}=\tau_{\gamma_2}+\tau_{\gamma_1}$, so their transfers compose. The same $\eps$ fixes rest energy and the proper-time phase; no additional gravitational charge enters.
+
+An energy eigenstate acquires a phase. Interference of two paths reads their relative proper-time phase. This construction does not require a superposition of charged matter and vacuum or an ideal unbounded clock register.
+
+For the $\alpha=7$ causal slabs, two fixed initial positions and tangents launch future normal geodesics. Intrinsic simplex metrics determine propagation and interface transport. Every one of the $1920$ histories is retained. The first duration ranges from about $6.53686$ to $6.96412$ ticks, and the second from $6.53754$ to $6.98966$. The native logarithmic rest-transfer sewing error is $1.72\times10^{-16}$; the local metric transport error is $5.89\times10^{-15}$.
+
+The local Wick check holds a curve segment fixed while continuing its metric quadratic form. Its endpoint is the principal-root relation between Euclidean and Lorentzian segment lengths. This verifies the local formula used on those segments. A reflection-positivity theorem for the entire marked path-selection rule would also have to control the boundary preparation and the sum over paths.
+
+\subsection{A source that is identically insensitive}
+
+A path following one fixed-length timelike CDT edge per slice has length
+\begin{equation}
+\ell=Ka\sqrt\alpha.
+\end{equation}
+If its mass dependence is only $e^{-m\ell}$, this factor is constant across the geometry ensemble and cancels from the connected two-source ratio. The mixed mass derivative vanishes exactly at every system size.
+
+The intrinsic free curves above have geometry-dependent lengths. Their selected source partition function gives
+\begin{equation}
+\Cov_0(\ell_1,\ell_2)=-0.00171521593106.
+\end{equation}
+At the native gap,
+\begin{equation}
+\log\mathcal R(\eps,\eps)
+=-3.00472647\times10^{-48}+O(\eps^3).
+\end{equation}
+The finite preparation is nonstatic, so this sign describes a free-line covariance. A static Newton force requires the additional held-source limit of Section \ref{sec:desitter}.
+
+\subsection{Branch-dependent resets}
+
+Let the system register and each fresh bath slot initially have state $\rho_*$. One retained particle branch triggers $n$ sequential SWAP resets and another triggers $m$. Composing the two register permutations leaves an unmatched cycle of length $|n-m|+1$. The permutation trace identity gives the coherence multiplier
+\begin{equation}
+\gamma_{nm}=\Tr\rho_*^{|n-m|+1}.
+\label{eq:resetoverlap}
+\end{equation}
+For one extra reset, $\gamma=0.0006036303$ in the full $1680$-state capacity distribution, or $0.00965808$ for the $105$-state residual distribution. The stationary marginal can be correct while the exported records strongly suppress interference.
+
+The free-sector choice renews the background cells according to their own local event schedule, independently of the particle's unmeasured occupancy. Position and the internal mismatch fiber remain retained:
+\begin{equation}
+\mathcal H=\mathcal H_{\rm ren}\otimes\mathcal H_X
+\otimes(\C|0\rangle\oplus Q_{\rm mis}).
+\end{equation}
+For a fixed geometry the renewal channel is
+\begin{equation}
+\mathcal E=\mathcal E_{\rm background}\otimes\operatorname{id}_{X,Q},
+\end{equation}
+and, even for correlated initial states,
+\begin{equation}
+\Tr_{\rm background}\mathcal E(\rho)
+=\Tr_{\rm background}\rho.
+\end{equation}
+The finite check reaches $5.73\times10^{-17}$. Two orders of spacelike-disjoint background resets agree to $3.63\times10^{-17}$. These equalities check the specified local channel. The gravitational deformation algebra and coherence between different geometric event counts remain separate interfaces.
+
+\subsection{A sufficient operator clock}
+
+\begin{theorem}[Positive clock from a half-transfer]
+\label{thm:clock}
+Let $A$ be a finite half-transfer and let
+$0<N_{\min}I\preceq N\preceq N_{\max}I$ on its intermediate space. On the fixed support of
+\begin{equation}
+K(m)=A^\dagger e^{-mN}A,\qquad
+H(m)=-\frac1{\Delta t}\log K(m),
+\end{equation}
+the clock rate obeys
+\begin{equation}
+\frac{N_{\min}}{\Delta t}I
+\preceq\partial_mH
+\preceq\frac{N_{\max}}{\Delta t}I.
+\label{eq:clockbound}
+\end{equation}
+\end{theorem}
+\begin{proof}
+Set $C=-\partial_mK=A^\dagger Ne^{-mN}A$. Functional calculus for $N$ gives $N_{\min}K\preceq C\preceq N_{\max}K$. The Fréchet derivative of the logarithm is
+\begin{equation}
+\mathcal D\log_K(C)=\int_0^\infty
+(K+sI)^{-1}C(K+sI)^{-1}\,ds.
+\end{equation}
+This linear map preserves operator order and sends $K$ to $I$. Since $\partial_mH=\mathcal D\log_K(C)/\Delta t$, the claimed bounds follow.
+\end{proof}
+
+For $U_t=e^{-itH(m)}$, differentiation of the exponential yields
+\begin{equation}
+\mathcal T(t)=iU_t^\dagger\partial_mU_t
+=\int_0^tU_s^\dagger(\partial_mH)U_s\,ds.
+\label{eq:integratedclock}
+\end{equation}
+It is positive for $t\ge0$ and obeys
+\begin{equation}
+\mathcal T(t+s)=\mathcal T(t)+U_t^\dagger\mathcal T(s)U_t.
+\end{equation}
+A supplied constant duration gives the corresponding constant rest-generator shift. A seven-state matrix example checks the formulas through the actual $169$-by-seven geometric encoding.
+
+The operator structure is essential. A retained three-state counterexample has a positive definite transfer with positive assigned entry lengths but a negative eigenvalue of $-\partial_m\log K$. Entrywise positivity therefore does not supply \eqref{eq:clockbound}.
+
+The inverse-lapse clock representation requires a positive lapse on the states where it is used. At zero lapse, that inversion can fail while a self-adjoint reference-time Hamiltonian remains unitary. A turning point of spatial volume alone need not stop the clock.
+
+\subsection{History compression}
+
+A scalar duration mixture satisfies
+\begin{equation}
+-\partial_m\log\sum_Tp_Te^{-m\ell_T}
+=\langle\ell\rangle_m.
+\end{equation}
+Writing the sum as $Z(m)$ gives $\partial_m^2\log Z=\operatorname{Var}_m(\ell)$, or $\partial_m\langle\ell\rangle_m=-\operatorname{Var}_m(\ell)$. Replacing the distribution by one mean length preserves the first derivative at one point but loses the variance. For the first tested curve the mean is $6.72557455$ ticks and the variance $0.00718245784$.
+
+An enlarged duration register can represent the mixture. Its labels must match the physical boundary organization. If $A_{yx}=\sum_h a_h$ is a coherent half-transfer, assigning an orthogonal intermediate state to every history changes
+\begin{equation}
+\sum_y\left|\sum_{h:x\to y}a_h\right|^2
+\quad\text{into}\quad
+\sum_{y,h:x\to y}|a_h|^2.
+\end{equation}
+The removed cross terms change the kernel. The finite orbital construction below supplies its own common Hilbert space and Hamiltonian explicitly.
+
+\section{One finite geometry--orbital--clock operator}
+\label{sec:joint}
+
+\subsection{Cochains and the spatial generator}
+
+Let $C^p(g)$ be the $p$-cochains of a spatial complex and $d_p$ its oriented incidence coboundary. Choose positive metric matrices $M_p$. The metric adjoint is
+\begin{equation}
+d_p^*=M_p^{-1}d_p^\dagger M_{p+1}.
+\end{equation}
+The Dirac--Kähler operator $D=d+d^*$ is self-adjoint in this metric. If $M_p=L_pL_p^\dagger$ is a Cholesky factorization, orthonormal coordinates are $y_p=L_p^\dagger x_p$, and adjacent-degree blocks become
+\begin{equation}
+B_p=L_{p+1}^\dagger d_pL_p^{-\dagger}.
+\end{equation}
+The full matrix is block tridiagonal in degree with $B_p$ and $B_p^\dagger$ off the diagonal. The identity $d_{p+1}d_p=0$ is checked directly from incidence.
+
+Select the positive-energy orbital operator
+\begin{equation}
+\Omega_g(m)=\sqrt{D_g^2+m^2I}.
+\label{eq:omega}
+\end{equation}
+It acts on $\mathcal H_X$ and identically on the retained nine-state fiber in this free example. A harmonic cochain has energy $m$.
+
+The positive square root retains components from both signs of the original Dirac--Kähler spectrum. A physical single-fermion interpretation must resolve taste multiplicity, spin structure, and the particle/antiparticle assignment. Identifying $Q_{\rm mis}$ itself as a Dirac spinor would change its stated role.
+
+\subsection{Proper time from orbital energy}
+
+At $m>0$,
+\begin{equation}
+\partial_m\Omega_g=m(D_g^2+m^2I)^{-1/2}.
+\end{equation}
+The rate is one on harmonic rest modes and lies in $(0,1]$ at finite cutoff. With supplied positive lapse choose
+\begin{equation}
+H_{\rm matter}=N^{1/2}\Omega_gN^{1/2}.
+\end{equation}
+Its mass derivative remains positive even if $N$ and $D$ do not commute.
+
+For the desired smooth metric symbol, set $E=\sqrt{h^{ij}p_ip_j+m^2}$. Then
+\begin{equation}
+H=NE,\qquad
+\dot x^i=\frac{Nh^{ij}p_j}{E},
+\qquad
+\sqrt{N^2-h_{ij}\dot x^i\dot x^j}=\frac{Nm}{E}.
+\end{equation}
+The Legendre transform is
+\begin{equation}
+p_i\dot x^i-NE=-\frac{Nm^2}{E}
+=-m\frac{d\tau}{dt}.
+\end{equation}
+Thus the orbital symbol reproduces $S_m=-m\int d\tau$. It agrees with the native rest insertion when the same spatial operator has the required metric symbol.
+
+The rate lower bound decreases as the momentum cutoff increases: highly relativistic states have $m/E\to0$. Proper time remains positive along each massive timelike trajectory without a common lower bound over arbitrarily high momenta.
+
+\subsection{An enumerated two-geometry transfer}
+
+Let $g_0$ be the five-regular-tetrahedron boundary of a four-simplex. Let $g_1$ replace one tetrahedron by four regular tetrahedra. Their cochain dimensions are $30$ and $44$. The assigned regular metrics make them different physical geometries.
+
+At $\alpha=7$, the restricted boundary-pair families have $1920$, $1992$, $1992$, and $2064$ causal histories. Summing their angular weights and dividing by one common scalar gives
+\begin{equation}
+A=
+\begin{pmatrix}
+0.11695083113895063&0.34220318033747954\\
+0.34220318033747954&1
+\end{pmatrix}.
+\end{equation}
+Its eigenvalues are approximately $-0.0001362342282$ and $1.11708706537$. Use the two-step transfer
+\begin{equation}
+K_g=A^\dagger A,\qquad
+\operatorname{spec}K_g=
+\{1.85597649216\times10^{-8},\,1.24788351161\}.
+\end{equation}
+This is strictly positive in the finite example. A common scalar normalization only changes the energy origin.
+
+Choose
+\begin{equation}
+\Delta t=2a\sqrt{7+3/8}
+=13.9484661297\,\tstar,\qquad
+H_g=-\frac1{\Delta t}\log K_g,
+\end{equation}
+which gives, in inverse-tick units,
+\begin{equation}
+H_g=
+\begin{pmatrix}
+1.14086743423&-0.395787437728\\
+-0.395787437728&0.119545050300
+\end{pmatrix}.
+\label{eq:Hgeo}
+\end{equation}
+The time interval is a declared synchronization to twice a $4$--$1$ boundary-normal duration. A moving particle can accumulate a different proper time.
+
+Because $K_g$ is ill-conditioned, its logarithm is obtained by diagonalizing $A$ and taking twice the logarithm of the absolute eigenvalues. This avoids loss of relative precision in the small eigenvalue after numerical squaring.
+
+\subsection{Normalized transport between physical geometries}
+
+Stellar cochain interpolation supplies a rectangular map between the two spaces. Its maximum singular value in their physical inner products is $1.4832396974$. Inserting this raw map into the off-diagonal block of \eqref{eq:Hgeo} lowers the geometry-only marked ground energy by $0.1319919448$ relative to the vacuum. The effect is a normalization mismatch, much larger than $\eps$.
+
+Let $P_0,P_1$ project onto the harmonic subspaces. Separate the raw map into harmonic and excited parts and take the rectangular polar factor on each full-rank sector. The combined transport $R$ obeys
+\begin{equation}
+R^\dagger R=I,\qquad RP_0=P_1R.
+\label{eq:physicalR}
+\end{equation}
+This retains harmonic rest states and gives an isometry. Excited operators on the two distinct geometries need not intertwine under $R$.
+
+Use
+\begin{equation}
+\widehat H_g=
+\begin{pmatrix}
+(H_g)_{00}I&(H_g)_{01}R^\dagger\\
+(H_g)_{10}R&(H_g)_{11}I
+\end{pmatrix},
+\qquad
+H(m)=\widehat H_g+\Omega_{g_0}(m)\oplus\Omega_{g_1}(m)
+\label{eq:jointH}
+\end{equation}
+at unit reference lapse. The vacuum sector is explicitly $H_g$.
+
+\begin{proposition}[Exact joint rest gap]
+For \eqref{eq:jointH} with \eqref{eq:physicalR}, the marked and vacuum ground energies satisfy
+\begin{equation}
+E_{\rm marked,0}(m)-E_{\rm vacuum,0}=m.
+\end{equation}
+\end{proposition}
+\begin{proof}
+On the image of $R$, $\widehat H_g$ is unitarily equivalent to copies of $H_g$. The unmatched complement has energy $(H_g)_{11}$, which is at least the smallest eigenvalue $E_{g,0}$. Hence $\widehat H_g\ge E_{g,0}I$. Also $\Omega_g(m)\ge mI$. The transported harmonic sectors share rest energy $m$ and support a copy of the geometric ground eigenvector, attaining the lower bound $E_{g,0}+m$.
+\end{proof}
+
+The native value follows from the algebra, since a subtraction of eigenvalues of order one cannot resolve a $10^{-23}$ gap in double precision. At the control mass $m=0.23$, the numerical gap error is $4.45\times10^{-16}$.
+
+\subsection{The joint clock and finite checks}
+
+For a mass-independent geometric coupling and positive lapse, the complete generator has $\partial_mH\succeq0$. Equation \eqref{eq:integratedclock} supplies its integrated clock. The chosen packet both spreads on cochains and changes its geometry component coherently.
+
+The vacuum transfer error is $4.45\times10^{-16}$, the orbital mass-derivative finite-difference error $2.84\times10^{-10}$, the integrated clock derivative error $9.90\times10^{-11}$, the composition error $2.15\times10^{-16}$, and the unitarity error $1.76\times10^{-15}$. The source derivatives are checked at a numerically resolvable control mass.
+
+A local rephasing changes the basis and conjugates the kernel consistently. This verifies covariance under the supplied basis transformation. Electromagnetic link dynamics and its Gauss law would require further action terms and constraints.
+
+The finite construction supplies a common generator for geometry, orbital position, and the clock. Its vacuum comes from an enumerated coarse transfer. Its rest-gap identity and positive clock survive the chosen geometry coupling. These statements are independent of whether the many-boundary model has the desired relativistic dispersion and interacting gravitational phase.

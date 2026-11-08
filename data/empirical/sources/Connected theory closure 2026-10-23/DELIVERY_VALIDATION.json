@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-10-23T15:10:30.551563+00:00",
+  "success": true,
+  "original_inputs_unchanged": 164,
+  "pdf_pages": 10,
+  "pdf_sha256": "debc26f201e115f73c1d5de31651a6ac2ebcf8290f9edf410b6202cb55a3435a",
+  "tex_sha256": "b32e09dba8a5766753b9cc76b1ff20be1658568415310a831f92fa210c458dc2",
+  "local_report_links_checked": 10,
+  "build_record": "05 Build Files\\PDF builds\\main\\20261023_110903_811458\\build_result.json",
+  "visual_review": "All 10 pages inspected as rendered images; equations and figures additionally inspected at larger scale.",
+  "preview_compiler": "Built-in preview unavailable due Windows sandbox preparation error; workspace-preserving pdflatex build succeeded.",
+  "research_validation": "VALIDATION.json",
+  "publication_set_check": "OK: four publications, one folder and one current PDF each.",
+  "scope": "Conditional effective construction and restrictions; no claim that all five physical questions are closed."
+}

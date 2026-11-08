@@ -1,0 +1,51 @@
+{
+  "analytic_density_contours": [
+    {
+      "major_axis_radius_kpc": 6.0,
+      "minor_axis_radius_kpc": 4.377017878031067,
+      "isodensity_axis_ratio": 0.7295029796718445
+    },
+    {
+      "major_axis_radius_kpc": 10.0,
+      "minor_axis_radius_kpc": 7.829432556913277,
+      "isodensity_axis_ratio": 0.7829432556913277
+    },
+    {
+      "major_axis_radius_kpc": 20.0,
+      "minor_axis_radius_kpc": 16.085716153474266,
+      "isodensity_axis_ratio": 0.8042858076737133
+    },
+    {
+      "major_axis_radius_kpc": 30.0,
+      "minor_axis_radius_kpc": 24.215853909776573,
+      "isodensity_axis_ratio": 0.8071951303258857
+    },
+    {
+      "major_axis_radius_kpc": 40.0,
+      "minor_axis_radius_kpc": 32.319285441766986,
+      "isodensity_axis_ratio": 0.8079821360441747
+    },
+    {
+      "major_axis_radius_kpc": 60.0,
+      "minor_axis_radius_kpc": 48.50476037772609,
+      "isodensity_axis_ratio": 0.8084126729621015
+    }
+  ],
+  "spherical_cut_position_inertia_ratios": {
+    "range": [
+      10,
+      40
+    ],
+    "tilt": 43.0,
+    "p": 0.9161253813129042,
+    "q": 0.9161253813129042,
+    "beta": null,
+    "major_axis": [
+      -0.7313537016191705,
+      0.0,
+      -0.6819983600624985
+    ],
+    "eigen_gap": 0.16071428571428586
+  },
+  "qualification": "The A=0.3 density has prolate angular structure. These iso-density intercept ratios are not a global ellipsoid fit, a potential flattening, or the final evolved density. The simulation inertia ratio must not be compared directly with a published density-axis parameter."
+}

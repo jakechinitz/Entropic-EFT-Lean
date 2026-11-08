@@ -1,0 +1,218 @@
+[
+  {
+    "cluster": "A1795",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A1795",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2029",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2029",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2029",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A85",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A85",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A85",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2142",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2142",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2142",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2319",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2319",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A2319",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A644",
+    "k": 0,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A644",
+    "k": 1,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A644",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "label": "refined"
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 150000,
+    "label": "reservoir_sensitivity"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 3,
+    "N": 2000,
+    "seed": 1,
+    "regspec": 150000,
+    "label": "reservoir_sensitivity"
+  },
+  {
+    "cluster": "A1795",
+    "k": 0,
+    "N": 8000,
+    "seed": 2,
+    "regspec": 15000,
+    "label": "resolution_seed_check"
+  },
+  {
+    "cluster": "A1795",
+    "k": 3,
+    "N": 8000,
+    "seed": 2,
+    "regspec": 15000,
+    "label": "resolution_seed_check"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 0,
+    "N": 8000,
+    "seed": 2,
+    "regspec": 15000,
+    "label": "resolution_seed_check"
+  },
+  {
+    "cluster": "ZW1215",
+    "k": 3,
+    "N": 8000,
+    "seed": 2,
+    "regspec": 15000,
+    "label": "resolution_seed_check"
+  }
+]

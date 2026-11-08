@@ -1,0 +1,55 @@
+[
+  {
+    "connection": "Conservative stock dynamics",
+    "result": "Effective conservation framework assembled; equilibrium-selection obstruction identified.",
+    "closed": "Energy/momentum exchange for the specified worldline action; conversion cancellation; controlled adiabatic scaling.",
+    "open": "Physical redistribution/contact operator, common director dynamics, assembly and quantitative merger predictions.",
+    "evidence": [
+      "results/stock_contact.json",
+      "results/connected_checks.json",
+      "formalization/ConnectedClosure.lean"
+    ]
+  },
+  {
+    "connection": "Response and carrier selection",
+    "result": "Passive-lag sign and a two-pole quantum noise-delay inequality established.",
+    "closed": "Positive two-pole tracking comparison; F H mean_delay >= 4 for the stated response and temperature; stationary rate-rescaling freedom.",
+    "open": "Initial occupation, carrier boundary, physical rates and spatial correlation volume. High-redshift tension remains.",
+    "evidence": [
+      "results/connected_checks.json",
+      "figures/response_history.png",
+      "formalization/ConnectedClosure.lean"
+    ]
+  },
+  {
+    "connection": "Local release",
+    "result": "A new selected constitutive completion keeps positive energy/current and reproduces the tested linear cosmological branch.",
+    "closed": "Action-level energy floor, regular-flow current positivity, timelike principal-speed bounds; exact original action for lambda>L(phi).",
+    "open": "Selection of cubic and floor, global inhomogeneous well-posedness, nonlinear void statistics and multistream coupling.",
+    "evidence": [
+      "results/adaptive_boundary_refined.json",
+      "results/local_waves.json",
+      "formalization/ConnectedClosure.lean"
+    ]
+  },
+  {
+    "connection": "Tensor sector",
+    "result": "Leading effective two-mode/luminal result connected to the chosen Einstein action and the existing TT algebra.",
+    "closed": "TT-coordinate spanning and positivity; minimal-action principal symbol. This is conditional effective closure.",
+    "open": "Native continuum, equilibrated tensor measurement, curvature/director/matter operator matching and full detector response.",
+    "evidence": [
+      "results/connected_checks.json",
+      "formalization/ConnectedClosure.lean"
+    ]
+  },
+  {
+    "connection": "Matching and uniqueness",
+    "result": "Explicit deformations show which identities leave coefficients free.",
+    "closed": "Loading reciprocity survives arbitrary positive loading; rate rescaling preserves equilibrium; background-preserving receiver family.",
+    "open": "Physical loading and contact matrix elements; native G_R comparison; historical selection issue.",
+    "evidence": [
+      "results/connected_checks.json",
+      "formalization/ConnectedClosure.lean"
+    ]
+  }
+]

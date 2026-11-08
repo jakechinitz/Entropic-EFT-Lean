@@ -1,0 +1,42 @@
+{
+  "source": "https://arxiv.org/html/2510.00095v2#S3.SS4",
+  "radial_cut_kpc": [
+    6,
+    60
+  ],
+  "ellipsoidal_pq": [
+    0.81,
+    0.73
+  ],
+  "fiducial_spherical_cut_pq": [
+    0.8435266160125575,
+    0.7732693460694016
+  ],
+  "mapped_mean_pq": [
+    0.84390993916385,
+    0.7739163797806501
+  ],
+  "mapped_sigma_pq": [
+    0.02568783216507241,
+    0.01820130364014962
+  ],
+  "mapped_covariance_pq": [
+    [
+      0.0006598647213409295,
+      9.039674035291452e-07
+    ],
+    [
+      9.039674035291452e-07,
+      0.00033128745420092393
+    ]
+  ],
+  "tilt_deg": 25.39,
+  "tilt_sigma_deg": 3.16,
+  "uncertainty_draws": 1000,
+  "seed": 211036,
+  "quadrature_change_40_to_80": [
+    7.771561172376096e-16,
+    9.43689570931383e-15
+  ],
+  "qualification": "Fixed profile slopes and breaks; independent Gaussian shape errors as in the cited method. The diagnostic compares the stellar distribution, not the simulated stock inertia axes to a dark-halo density parameter. It is conditional on the parametric stellar target and does not reproduce a full data likelihood."
+}

@@ -1,0 +1,2 @@
+LCDM sn=dovekie off=0 mnu=0.06 tau=fp cal=free
+GEO sn=dovekie off=0 mnu=0.06 tau=fp cal=free

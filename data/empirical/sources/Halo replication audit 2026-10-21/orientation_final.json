@@ -1,0 +1,62 @@
+{
+  "runs": [
+    {
+      "label": "Original",
+      "time_Gyr": 8,
+      "independent_pair_representatives": 3101,
+      "major_tilt_deg": 26.5829715744101,
+      "minor_axis_angle_to_target_after_major_azimuth_alignment_deg": 5.639070758983499,
+      "intermediate_axis_elevation_deg": 4.927637535717198,
+      "tilt_only_D": 0.47229572369638284,
+      "orientation_sensitive_D": 3.5142699513314004,
+      "minor_axis_after_azimuth_alignment": [
+        -0.4454242837482153,
+        -0.09605136842939405,
+        0.8901524263126119
+      ],
+      "pq": [
+        0.8383012159653456,
+        0.7642491174860986
+      ]
+    },
+    {
+      "label": "Replica 1",
+      "time_Gyr": 8,
+      "independent_pair_representatives": 3105,
+      "major_tilt_deg": 24.766803171589146,
+      "minor_axis_angle_to_target_after_major_azimuth_alignment_deg": 1.5170154713271822,
+      "intermediate_axis_elevation_deg": 1.2558850067182818,
+      "tilt_only_D": 2.3428883022931157,
+      "orientation_sensitive_D": 2.5344603313454193,
+      "minor_axis_after_azimuth_alignment": [
+        -0.4188039938029359,
+        0.024137755414815797,
+        0.9077557951003368
+      ],
+      "pq": [
+        0.8191523490686089,
+        0.7525726047012561
+      ]
+    },
+    {
+      "label": "Replica 2",
+      "time_Gyr": 8,
+      "independent_pair_representatives": 3085,
+      "major_tilt_deg": 22.13401066815838,
+      "minor_axis_angle_to_target_after_major_azimuth_alignment_deg": 3.7635649727592413,
+      "intermediate_axis_elevation_deg": 1.749371333423165,
+      "tilt_only_D": 3.1306881515914804,
+      "orientation_sensitive_D": 3.4874974344702077,
+      "minor_axis_after_azimuth_alignment": [
+        -0.3765695169438314,
+        0.032956252375204435,
+        0.9258019682081431
+      ],
+      "pq": [
+        0.8613842177757306,
+        0.7969844458787252
+      ]
+    }
+  ],
+  "qualification": "Final instantaneous snapshot, 6-60 kpc. Overall azimuth is aligned to the stellar major axis because the disk model is axisymmetric. The minor-axis angle additionally sees departure from coplanarity. D remains a summary diagnostic, not a calibrated observational probability."
+}

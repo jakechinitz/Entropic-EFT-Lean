@@ -1,0 +1,66 @@
+[
+  {
+    "path": "01 Current Papers\\Astra Full\\Entropic Scalar EFT.tex",
+    "old_sha256": "ec5cd61b3d39dd3296fe792c35c5b057c3bb67b8136041d3ad0326cadcbe213b",
+    "new_sha256": "225c5b7fb5ea34ea8246547c106a38d275b7154c692acfd82238858c78517e05",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\01_results_and_basis.tex",
+    "old_sha256": "50cee7ef5cf0643d3b8360aded058507814b5fe3d1be1a086c081dbc5621c885",
+    "new_sha256": "985ce1bfa6904c3ffc356d6215a807330decd47f86222540d92d0d8eb60715ce",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\02_acceleration.tex",
+    "old_sha256": "988d3f84c16af8b29432723e864b9eeaa36f226561e29b17846e5f24e48f7415",
+    "new_sha256": "a6e74efe5ad7f0e3153cbef1e854c080f048b3dd75c781b5d78f62b401501e4a",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\03_history.tex",
+    "old_sha256": "5653bb8ab5ff2c69634b8a064a05001a5096e420116080d620493441f976d84e",
+    "new_sha256": "5653bb8ab5ff2c69634b8a064a05001a5096e420116080d620493441f976d84e",
+    "changed": false
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\04_dwarfs.tex",
+    "old_sha256": "a82b52fb345c1e072d891cb8601fab2e90b7160d4e4d60cec0c766618c317b28",
+    "new_sha256": "a82b52fb345c1e072d891cb8601fab2e90b7160d4e4d60cec0c766618c317b28",
+    "changed": false
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\05_cosmology.tex",
+    "old_sha256": "03a4c4a1a10b6ef0c8052062c547e423c180452f8174a036aa543f00c5a594fc",
+    "new_sha256": "05673015d57affed4b06c8566ea175c5a59d44704b06e18ca2d1c11b090b1726",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\06_interpretation_and_audit.tex",
+    "old_sha256": "c2b6d2535ed840c678c1aed886c08f80d42e4b3a5ba6a7fb9d3f690c16602d55",
+    "new_sha256": "7d5f3f79ea118d81061c3203fdb9913ab76d25c42a4c237c5873a71a8a736bc2",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\07_references.tex",
+    "old_sha256": "595ed010a16ce70bfc7d17cae89d85e6b378b3670416a448daf8d36ced26c8e1",
+    "new_sha256": "b2ce3eda5f7d4b843bb9df2c67dea85b6d3490a30f50a83150feb01fa52fda0b",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers\\Empirical Results\\Empirical_Results.tex",
+    "old_sha256": "7dedf34a5c6a4f82652ab6fe2f92dc566b6b8e71686b70a8c9bf05844973a067",
+    "new_sha256": "f4046e72fd1fb839c5988025601ac6bf45259147cb433d5737f7721d1b0e21bd",
+    "changed": true
+  },
+  {
+    "path": "01 Current Papers/Empirical Results/05b_clusters.tex",
+    "new_file": true,
+    "sha256": "e415fa4c108743eaa18bd30ce153829769885ba462275483c9667ec79742c40a"
+  },
+  {
+    "path": "01 Current Papers/Empirical Results/05c_cross_sector.tex",
+    "new_file": true,
+    "sha256": "f534431244196b9194c179b5635ce0c987fc259173ae224ab9282c6cbe739708"
+  }
+]

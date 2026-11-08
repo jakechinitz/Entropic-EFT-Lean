@@ -1,0 +1,47 @@
+{
+  "scope": "Separate small-bath-temperature check; target orbital scales are unchanged.",
+  "rows": [
+    {
+      "available_initial_clock_energy": 0.15,
+      "dt": 0.005,
+      "particles": 16000,
+      "seed": 28119,
+      "final_clock_energy_above_floor": 2.9236179928116e-06,
+      "minimum_clock_energy_above_floor": 2.9236179928116e-06,
+      "final_clock_speed": 0.001974372286997969,
+      "max_absolute_energy_ledger_error": 2.4952928776578176e-06,
+      "attempted_events": 5666,
+      "rejected_unaffordable_events": 3,
+      "radial_CDF_KS_from_requested_target": 0.5053979451157882,
+      "work_to_orbits": 0.1499970763820042,
+      "heat_to_bath": -1.780593018649621e-07,
+      "initial_orbit_energy": 0.8008031983601533,
+      "final_orbit_energy": 0.9508017429497233,
+      "bath_temperature_in_orbital_energy_units": 1e-06,
+      "no_density_or_energy_clipping": true,
+      "fixed_L": 0.8
+    },
+    {
+      "available_initial_clock_energy": 1.2,
+      "dt": 0.005,
+      "particles": 16000,
+      "seed": 28119,
+      "final_clock_energy_above_floor": 0.23995651061940548,
+      "minimum_clock_energy_above_floor": 0.21954283148063092,
+      "final_clock_speed": 0.5128965340542626,
+      "max_absolute_energy_ledger_error": 1.454827896907318e-05,
+      "attempted_events": 548295,
+      "rejected_unaffordable_events": 0,
+      "radial_CDF_KS_from_requested_target": 0.005659503738632443,
+      "work_to_orbits": 0.9600434893806097,
+      "heat_to_bath": -1.0990221866632433e-06,
+      "initial_orbit_energy": 0.8008031983601533,
+      "final_orbit_energy": 1.7608574143396398,
+      "bath_temperature_in_orbital_energy_units": 1e-06,
+      "no_density_or_energy_clipping": true,
+      "fixed_L": 0.8
+    }
+  ],
+  "interpretation": "Thermal heat is negligible compared with mechanical work in this small-temperature demonstration. No dimensional identification with the actual horizon temperature is made.",
+  "limitation": "The thermostat, target and rate are still selected effective inputs; this is not a quantum-bath derivation."
+}

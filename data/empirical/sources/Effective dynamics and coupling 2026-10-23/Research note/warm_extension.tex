@@ -1,0 +1,123 @@
+\subsection{A warm extension of the same cold energy}
+Let $n$ denote proper current density and let $R_0(n,\phi)$ be the cold
+Hamiltonian obtained from the previous scalar action. Its derivative is
+$\mu_0=\partial R_0/\partial n=v_0$, with
+$n=\lambda_0v_0$, and $p_0=n\mu_0-R_0$. Introduce a nonnegative advected
+coefficient $z$ and choose
+\begin{equation}\label{eq:warm}
+ \rho=R_0(n,\phi)+e_{\rm th},\qquad
+ e_{\rm th}=z n^\gamma,\qquad 1<\gamma\le2.
+\end{equation}
+Then
+\begin{equation}
+ p=p_0+(\gamma-1)e_{\rm th},\qquad
+ \mu=\left.\frac{\partial\rho}{\partial n}\right|_{z,\phi}
+     =\mu_0+\frac{\gamma e_{\rm th}}n,
+ \qquad \rho+p=n\mu.
+\end{equation}
+The new test chooses $\gamma=4/3$, a radiation-like isotropic stress.
+The equation of state is an effective choice, not a derived value of a new
+microscopic parameter. Thermal energy is determined by the conserved
+energy equation from initially cold data; no thermal-density amplitude is
+fitted to the interface.
+
+Writing $h_0=n\mu_0$, $h_T=\gamma e_{\rm th}$ and denoting the cold
+adiabatic sound speed by $c_0$, the warm sound speed is
+\begin{equation}\label{eq:warmsound}
+ c_s^2=\frac{h_0c_0^2+h_T(\gamma-1)}{h_0+h_T}.
+\end{equation}
+It is an enthalpy-weighted average of two numbers in $[0,1]$.
+The energy floor also persists: $\rho\ge K$, and for any observer with
+Lorentz factor $W$, $T_{00}=\rho+(\rho+p)(W^2-1)\ge K$.
+For bounded $z$, the limit $n\to0$ gives
+\begin{equation}
+ \rho\to K,\qquad p\to-K,\qquad \mu\to0.
+\end{equation}
+Thus the warm extension retains the vacuum-like resting state. On the
+exactly cold, irrotational branch it reduces to the previous action.
+Additional entropy modes are possible; inheriting the old linear fit
+requires the same cold adiabatic initial sector, with no separately seeded
+thermal component.
+
+A local ideal-fluid action can use a current $J^\mu=nu^\mu$ and advected
+potentials, in the standard variational fluid framework\cite{Brown}:
+\begin{equation}\label{eq:fluidaction}
+ S=\int\sqrt{-g}\left[-\rho(n,z,\phi)
+ +J^\mu\left(\partial_\mu\phi+
+       \sum_A\beta_A\partial_\mu\alpha_A+\zeta\partial_\mu z\right)\right].
+\end{equation}
+Variation transports $z$ and $\alpha_A$ in smooth adiabatic flow, gives
+$u^\mu\partial_\mu\phi=\mu$ and
+$\nabla_\mu J^\mu=-\rho_\phi$, and supplies
+$T^{\mu\nu}=(\rho+p)u^\mu u^\nu+pg^{\mu\nu}$.
+The explicit $\phi$ dependence is inherited from the cold potential.
+Entropy-producing shocks require the conservative weak equations and their
+entropy condition; they are not smooth extrema of this ideal action.
+This is a fluid stress completion with possible vorticity, not a complete
+collisionless multistream distribution.
+
+\subsection{The safe gate becomes an enthalpy gate}
+The warm clock speed $\mu$ no longer equals $v_0$. For $\gamma<2$,
+using $\mathcal P\propto\mu^2$ alone need not keep the fractional current
+drain bounded near $n=0$. A bounded choice that retains the cold rule is
+\begin{equation}\label{eq:warmgate}
+ g=\frac{n\mu}{\lambda_0+h_T},\qquad
+ \mathcal P=gB,\qquad 0\le g\le1.
+\end{equation}
+Indeed $n\mu=h_0+h_T$ and $h_0=\lambda_0v_0^2\le\lambda_0$.
+When $h_T=0$, $g=v_0^2$ exactly. For positive current,
+\begin{equation}
+ \frac{\mathcal P}{\mu}=\frac{nB}{\lambda_0+h_T},
+ \qquad
+ \dot n=-\left[\theta+
+ \frac{V_\phi A\,n}{\lambda_0^2}+\frac{B}{\lambda_0+h_T}\right]n.
+\end{equation}
+The pressure-branch cold source is unchanged at fixed $n,z$ because the
+thermal term has no explicit $\phi$ dependence. For bounded coefficients
+and $K-V>0$, the fractional current equation remains regular. In the
+Hamiltonian contact, replace $a=v_0^{1/2}$ by $a=g^{1/4}$; the symmetric
+rate factor becomes $\sqrt{g_i g_f}$ and its small-event limit is $g$.
+This is a specified warm extension of the coupling, with no extra fitted
+amplitude. It does not make this rational gate unique among admissible
+positive gates.
+
+For a vortical or nonisentropic fluid, the full potential gradients need
+not be parallel to $u^\mu$. The momentum delivered by generalized forces
+must therefore be retained in the bath ledger; its energy projection
+alone is insufficient. The warm gate establishes the regular energy/current
+balance, not a complete bath-force action.
+
+\subsection{Conservative compression test}
+The same interface was evolved using relativistic Euler variables
+$D=nW$, $M=(\rho+p)W^2v_{\rm flow}$ and
+$\mathcal E=(\rho+p)W^2-p-K$.
+The constant floor is subtracted only from the numerical energy variable.
+The code evolves current, momentum and total energy in conservative form,
+then reconstructs the thermal energy from~\eqref{eq:warm}. It imposes no
+density or thermal-energy clipping.
+
+Across 128, 256, 512, 1024 and 2048 cells, the largest mean energy drift
+was $4.9\times10^{-15}$. The proper density stayed positive. Thermal
+energy was nonnegative within pressure-inversion roundoff, whose most
+negative value was $-9.9\times10^{-12}$. The maximum tested sound speed
+squared was $0.983$, and the warm gate stayed in $[0,1]$ within roundoff.
+A separate entropy diagnostic increased throughout its sampled history.
+For $\gamma=4/3$, one allowed entropy normalization has comoving entropy
+density $e_{\rm th}^{3/4}$.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{thermal_interface_refined.png}
+\caption{A selected isotropic thermal continuation keeps compressive
+energy in the evolved fluid and feeds its pressure back into the motion.
+The finest displayed calculation has 2048 cells.}
+\end{figure}
+
+This closes the resolved-energy ledger within the chosen fluid model.
+It does not yet provide a converged prediction of heat production: the
+mean thermal energy at the five resolutions was $0.0641$, $0.0429$,
+$0.0289$, $0.0198$ and $0.0140$ in test units. Numerical viscosity remains
+material. Its physical replacement and the relation to an anisotropic
+kinetic stock must be matched before using this for a void or halo
+prediction. The warm spatial test and the particle-contact test are
+separate benchmarks of compatible balance laws, not a combined galaxy
+simulation.

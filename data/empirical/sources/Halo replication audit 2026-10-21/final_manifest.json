@@ -1,0 +1,596 @@
+{
+  "manuscript_unchanged": true,
+  "manuscript_sha256": "16daf9d1e7499e49c97ec10efdbaba073e4d8d1359c0bf89aefd7cdad91411ac",
+  "a0_SI": 1.230729e-10,
+  "unchanged_stage_copies": {
+    "seed_exact.py": {
+      "new": "a027c56adb4b3b78805079ecdb3c780739632fadd064d62af1adadf9cff39646",
+      "preserved_source": "a027c56adb4b3b78805079ecdb3c780739632fadd064d62af1adadf9cff39646"
+    },
+    "quiet_fit.py": {
+      "new": "2a320a9a649c86c26094980c0d0cd812b4066093777e1d49d736126b87a514fa",
+      "preserved_source": "2a320a9a649c86c26094980c0d0cd812b4066093777e1d49d736126b87a514fa"
+    },
+    "live_quiet_fast.py": {
+      "new": "e541c716584ba63b2e03bdae53a01bd92b390e4ed4af7d8354919f9cd53f120f",
+      "preserved_source": "e541c716584ba63b2e03bdae53a01bd92b390e4ed4af7d8354919f9cd53f120f"
+    }
+  },
+  "files": {
+    "02 Research\\Halo replication audit 2026-10-21\\analyze_replicas.py": {
+      "sha256": "2bc228af28367f936b30c773be95e9edc039e2a23c0585b849c378be4459de67",
+      "bytes": 8368
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\analyze_replicas.py.final.log": {
+      "sha256": "b84a77e5d6b09a032f8d91dff98dd986de566997208e350660c514451f63123a",
+      "bytes": 730
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\audit_manifest.py": {
+      "sha256": "3c50468fefcd906daeab37800009848d865795e9cd7678dcd42bf58317af32bc",
+      "bytes": 2156
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\build_report.py": {
+      "sha256": "c939ee5f1241843d205148006c9d7062f8a7711cb1823f82b8ffc67debc98154",
+      "bytes": 3475
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\density_reconstruction_final.json": {
+      "sha256": "33c5514a9da371afcdb7a60aba90691f9e1d8af1723d8f42c46f0489c9a074d7",
+      "bytes": 2992
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\density_reconstruction_reference.json": {
+      "sha256": "3c70dd26611902e6b7fcfd021bea48b08ac8d0cc7212912383652369b49a8cb0",
+      "bytes": 3044
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\DIAGNOSTIC ADDENDUM.txt": {
+      "sha256": "af2be0031fb7727b7767b2620742c0496ee25db2d8ba8ec06eb8b03956549ea3",
+      "bytes": 3962
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\disk_torque_final.json": {
+      "sha256": "0ad566f04b2ad7fb570e7d93d648019fc08396ad644653f8ce0bda1389c74e0b",
+      "bytes": 5862
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\disk_torque_profile.py": {
+      "sha256": "1948553363bb88884feb6b22ed4e73590a1f047a0633ae5885dee221f0d326c8",
+      "bytes": 3012
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\disk_torque_profile.py.final.log": {
+      "sha256": "c423a2564884719dbc11160c3bdbef7b82300f47a908200cb98c9f613bf79c7d",
+      "bytes": 5864
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\disk_torque_reference.json": {
+      "sha256": "775e33a8a54b61444108a6905d04258d59a5ed32e059cb425a6e58db3dee8733",
+      "bytes": 5861
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\final_calculation_status.json": {
+      "sha256": "5f9f9daf7cd28d5002c3ac6a9df76c109c1fc68b416204a320c41930a953865f",
+      "bytes": 458
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\final_force_checks.json": {
+      "sha256": "876612c558940f35dfb1e9581f4700af9c1f1e7fa38a95aade8ac537b46b0613",
+      "bytes": 4147
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\finish_calculations.py": {
+      "sha256": "9238354f994be195d7d9991647bcdb1b751d887591a4dd4c84c7c3e66d7fbd3b",
+      "bytes": 1407
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\force_resolution.png": {
+      "sha256": "69416b3dfa469b995fd7c45ec263f088e217049fff02a1be9a2d0a15d3cce002",
+      "bytes": 179282
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\force_resolution.svg": {
+      "sha256": "13c78a4a4936cc12f6a18d8458961e7d1276cdc2fc56162a427dd3addbe3719a",
+      "bytes": 67183
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\Halo tilt - independent phase replication audit.pdf": {
+      "sha256": "2fe81861ce109ffc33dcfc7a371cd6e1721ab299b2896d7a4cfdccf0e35c42ad",
+      "bytes": 1209079
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\higher_multipole_check.py": {
+      "sha256": "56389ea03754b6dc7cac1161ce704f63440f60d471774333df0282127cc9e015",
+      "bytes": 4669
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\higher_multipole_check.py.final.log": {
+      "sha256": "f5e98545532abef5f98815a44ff0ca0140bc66b833ef250d1c3d5adc1f516c87",
+      "bytes": 4129
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\higher_multipole_final.json": {
+      "sha256": "6bd32daa7a2ea0dee8239472e9b294bbfb4d4e103760fbca7dff2dc7ac85a9e7",
+      "bytes": 4127
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\higher_multipole_reference.json": {
+      "sha256": "97890bc53b2dda0022d0a4790b31bcabfbe4f32f9a59e1b46d86a84de12079d2",
+      "bytes": 4121
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\initial_gate_211034.json": {
+      "sha256": "96963d8108f86056601fa8c5eb0de71b730c6e40525bb7b2844ffde6dcf64538",
+      "bytes": 364
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\initial_gate_211035.json": {
+      "sha256": "d1c31286fdcfefe5bb25af0421b35873013318eb7cfe27f72d10ee63328ecbb3",
+      "bytes": 364
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\initial_stationarity.json": {
+      "sha256": "264023a35daae3ba71d18e69575386b1b0ff58843459311eb88a2710b29df86c",
+      "bytes": 31764
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\initial_stationarity.py": {
+      "sha256": "6260d3406423dfb840a11684e98e7db0efb4e92c1bf4e321e8a5e072e4688f57",
+      "bytes": 4003
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\INTERPRETATION RULES.txt": {
+      "sha256": "3103ece8e9a77dcfe5e41090ebc5098cba8b5d85ae2deb4d01b2cb138aac062a",
+      "bytes": 3185
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_quiet_fast.py": {
+      "sha256": "e541c716584ba63b2e03bdae53a01bd92b390e4ed4af7d8354919f9cd53f120f",
+      "bytes": 8082
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\manuscript_before.json": {
+      "sha256": "964cdbfdf635892f0b17d560750ff95690871afb89186bff89b093b11b6b72f2",
+      "bytes": 255
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_assessment.py": {
+      "sha256": "9fae064a64678403696a5ebbecf31778193a3e1241250737fc0bb5f7e263dea2",
+      "bytes": 2341
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_assessment.py.final.log": {
+      "sha256": "d54cfdc894109f94e40a783f0b5924e75599535b137e1b82e5c78d72735a7d05",
+      "bytes": 1390
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_assessment_before_snapshot_extension.py": {
+      "sha256": "76c0485d7775bcd3eba51f2e0ee77f023cc88dc16408965966928be6b5e888db",
+      "bytes": 2168
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_final.json": {
+      "sha256": "69f0f2c8bef82ddf1150843e6d3a1dae14b0a2e785a33e0f4011519ee7be4410",
+      "bytes": 58460
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_old.json": {
+      "sha256": "bfe558f9ce87923eb876d74a4a32a187b359574314f4717f5521f80b379ffbd9",
+      "bytes": 15419
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_old_with_snapshots.json": {
+      "sha256": "8bf121a71ec14a10ee291cb539e7f97e07515dcf5dee5daec8b0124ced191d7a",
+      "bytes": 30015
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_reference.json": {
+      "sha256": "5c3229e17daf75e6457431232659d274479feeee5384890abe5b5eb13597808f",
+      "bytes": 1112
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\matched_shape_reference.py": {
+      "sha256": "691ec98f156754e9cf21df5506be2a37d13f8d2970e0fb50bbeabbc688393372",
+      "bytes": 2832
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\orientation_check.py": {
+      "sha256": "336db871128adf39f016aec1cd445d3d6b03e6f8a610bd8eee62753f2cf48f8f",
+      "bytes": 2704
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\orientation_final.json": {
+      "sha256": "a29777053b32eb11860936f4f64080c8697f7baca8788180f2ff386bebc4e1dc",
+      "bytes": 2222
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\orientation_reference.json": {
+      "sha256": "0672af7a67678226e4c7497853a11ddec51e7826d1c9f2046519dcb693fa4e81",
+      "bytes": 952
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\phase_bank_211034.json": {
+      "sha256": "1172b8d1599fc2c532070664fc00a9bbb21443dd25ec06308ef61abb706f8d30",
+      "bytes": 493
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\phase_bank_211034.npz": {
+      "sha256": "a1e2297c5471eac2a1151e22c1f977e54e5f8f748dbe32a9821a7b3eeb43db6b",
+      "bytes": 3200472
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\phase_bank_211035.json": {
+      "sha256": "e1e155b016a400112da0078083585a6db99577fa6e19b5ef4144914b19af83b1",
+      "bytes": 494
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\phase_bank_211035.npz": {
+      "sha256": "7b892dbe3dcedffbf1cdf9a5297dfb32d1ffb6cb79d322a35d6d658844c2284e",
+      "bytes": 3200428
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\plot_additional.py": {
+      "sha256": "9616491c8535942a93256688423bb5d4e0eb7300bc7a07cb1197fa128dc03879",
+      "bytes": 1749
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\plot_radial_shapes.py": {
+      "sha256": "937db95060614cf82cbe004ae9ca3230d108aaa5e943172df5b27bd8d966a120",
+      "bytes": 1302
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\prepare_report.py": {
+      "sha256": "38475441cb3e2cf47d77c540bcad532187ea3d87cd81f8bda48a75cf1d1229bc",
+      "bytes": 19677
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\PROTOCOL.txt": {
+      "sha256": "98783f7efadce4d47e0c1a6dba285b1e47c811df479bf316353820b13d8cb1ca",
+      "bytes": 2733
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\quiet_fit.py": {
+      "sha256": "2a320a9a649c86c26094980c0d0cd812b4066093777e1d49d736126b87a514fa",
+      "bytes": 6549
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\quiet_fit_211034.json": {
+      "sha256": "bcff9450f501c259105748c3598c2a5808b713e7fae0cdff662bf126399e36c2",
+      "bytes": 5111
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\quiet_fit_211035.json": {
+      "sha256": "ed81dc320893ea46f85366abb8c3ba4e00dcdae49a1bc294f8866925dc69cf07",
+      "bytes": 5116
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\quiet_seed_211034.npz": {
+      "sha256": "21be5a61e774888f1bac8ec53bb8c6e77aa53d6e55b87a2cf8ebf24f8594f7d9",
+      "bytes": 7044684
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\quiet_seed_211035.npz": {
+      "sha256": "32beed76cca086582bfb78ab5914c6f0d7a702c782c9e165c84530d344bb044c",
+      "bytes": 7044106
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\radial_shapes.png": {
+      "sha256": "87f1172c4a2ae551bcbd95027cee9fe0f5641d44dc33c1137d4627380c9ac6fb",
+      "bytes": 169930
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\radial_shapes.svg": {
+      "sha256": "fc096b9446bc345555b2bcc0dde21a6c63ca18b764920fc9c8802cf7811d7d70",
+      "bytes": 79170
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\reconstructed_density_check.py": {
+      "sha256": "a58f18ee3ec832c6f19d6ca66a57fcd9931d7259f0b8ea27580cfad024d69bc3",
+      "bytes": 4653
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\reconstructed_density_check.py.final.log": {
+      "sha256": "c0ac9bb9487b15defcd0cbb36aa2150607ee5212585474d88a5e07ad29587e97",
+      "bytes": 2994
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replication_assessment.json": {
+      "sha256": "31f0101e20a19c41a9f6823b7174739e9991185a364ce5d59e6aeadb86d50a56",
+      "bytes": 53780
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replication_evolution.png": {
+      "sha256": "4472bebeb336964bb9be5259bccab63540b2f89633714d7f4b8017774adebd33",
+      "bytes": 389754
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replication_evolution.svg": {
+      "sha256": "0d6b134209acd4ffc5b5653bc1dc35ebab1b6ea87d98f70554ffd021461d96b9",
+      "bytes": 122952
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replication_shapes.png": {
+      "sha256": "e94aa25f04f6978c74ca49db75b6fd026bbac729e0fac41c6fc2fbf77da1761c",
+      "bytes": 326415
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replication_shapes.svg": {
+      "sha256": "819f1adce7ce53bbe0feb2fac59284ee9e56088b9a1cded34657ea47cd84b514",
+      "bytes": 93657
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replica_211034.log": {
+      "sha256": "fa54bef6d2976a7d3a4763e9ad56d9f251a7daf1a7c0d3c15e8a0af827c92515",
+      "bytes": 6644
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\replica_211035.log": {
+      "sha256": "ae6863bf0bca7d277a7f4f2c84ddeae89a11e5c92856449d7a6666d982ac117f",
+      "bytes": 6672
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\REPORT CONTENT.json": {
+      "sha256": "07a62e9d54de103c62aca0da4a99ed4aaf913bdd102f78a5b997d94f1003c86d",
+      "bytes": 22113
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\rigid_phases_1Gyr_211034.npz": {
+      "sha256": "d30f626a8473b5ed2b86709821f79105dc10a19759b4bf2cea1afc8cf5cb45d8",
+      "bytes": 3511078
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\rigid_phases_1Gyr_211035.npz": {
+      "sha256": "3a8d0f41bee8d5dddad873630d51788c9bb20db0fdf7ae5c5a10a8261585791d",
+      "bytes": 3511055
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\run_replica.py": {
+      "sha256": "5a77bedf386f4e0a6eec0fb345525af048930d8729774140d3f504a285986e11",
+      "bytes": 2471
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\run_stage.py": {
+      "sha256": "f0f3030f1051beb9958700de0cf717de23ecd2bafab23042f739213c83c32240",
+      "bytes": 464
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\seed_exact.py": {
+      "sha256": "a027c56adb4b3b78805079ecdb3c780739632fadd064d62af1adadf9cff39646",
+      "bytes": 3862
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\shape_definition_check.json": {
+      "sha256": "3b3cd9e50a87da23cb0d8834f64b257c043ab1436c8294b457c69fe022db0bfa",
+      "bytes": 1596
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\shape_definition_check.py": {
+      "sha256": "a7c88354bcd0e4b97bda88d0c5bb7fedc6c2799e56962fe069f2e9a2ac3047db",
+      "bytes": 1453
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\START HERE.txt": {
+      "sha256": "787f650e7c182ebcdb2ccc9a523a60be5c909459c429bab431ec1c1886855cad",
+      "bytes": 870
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\stellar_streaming_check.py": {
+      "sha256": "b5264371d26cf21972a8f07bf5bf2c5840e5c9aa1e8c775008e0f6c194055e6b",
+      "bytes": 4146
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\stellar_streaming_check.py.final.log": {
+      "sha256": "a9106d10c070aa088db07bebba1b38ceb3c927542e8bb75dda0845df93514313",
+      "bytes": 14275
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\stellar_streaming_final.json": {
+      "sha256": "ec2b18bfce6830600c9566d19edb79018705186caf6fe41b1f4bc0b2b0bd7b2b",
+      "bytes": 14273
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\stellar_streaming_reference.json": {
+      "sha256": "3a240b5573bedf677832bdca5f2d705f577c13be5be11e9f83bcb6a51f70dd5c",
+      "bytes": 6924
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\temporal_diagnostics.py": {
+      "sha256": "aba267f48aa3fd38cd410d82ced457feae05b1656b5b5d47aec20f1be68ea75b",
+      "bytes": 1757
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\temporal_diagnostics_211034.json": {
+      "sha256": "b379cdd6a158292d2a0647115e612dd25604bcd7238d93f7d5bd590fcb291764",
+      "bytes": 29946
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\temporal_diagnostics_211035.json": {
+      "sha256": "987e644e05c3a0fadf8d28c4ab7da52e4e4145996215ab43421ae8e87a2f3cca",
+      "bytes": 29918
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\results.json": {
+      "sha256": "618c8e5599182175a4e315cc89d2fec397e975c1ef5f105363f052534cd31f3b",
+      "bytes": 209436
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\source.py": {
+      "sha256": "e541c716584ba63b2e03bdae53a01bd92b390e4ed4af7d8354919f9cd53f120f",
+      "bytes": 8082
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_00.0.npz": {
+      "sha256": "e1f03043fdc065e7ed0fae0bf4b68e1415634ac4c7ed2d5a8d2eb173992b4051",
+      "bytes": 3208932
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_00.5.npz": {
+      "sha256": "a99ced731ca1418f0fc52de1a46dd248e59a9f20f68e21d8289f1f024bba1f2f",
+      "bytes": 3208952
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_01.0.npz": {
+      "sha256": "2f780c998313678adb9dfcde73ff965979fa5f0349ced5d2aa698c3f0e3ba079",
+      "bytes": 3208687
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_01.5.npz": {
+      "sha256": "3b4a70e0aa151b05904b23afcc9366e376a160eed11372fb7b869c77b0a71499",
+      "bytes": 3208766
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_02.0.npz": {
+      "sha256": "80af09a28cdd563adc5fc832ebcf22465cc892f454be6592313f22835c16b7a9",
+      "bytes": 3208931
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_02.5.npz": {
+      "sha256": "70c4309a6bb156c7a0a1e68b72aac1c016b59da8a908d14b3fee900845fa8fb2",
+      "bytes": 3208976
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_03.0.npz": {
+      "sha256": "b5cd9f91dca66cdb754e8356e0bb6842ddca423222bbd4f6c4c47b696498b102",
+      "bytes": 3208834
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_03.5.npz": {
+      "sha256": "1f08bc3d0724d9f34d1b23662394456f29b49d41dddfeba1a20a2f63d0291c87",
+      "bytes": 3208745
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_04.0.npz": {
+      "sha256": "819d55bbd61617f2db148a5ed6aa70a364e087b76fd7c54f990de0b8827fc617",
+      "bytes": 3208859
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_04.5.npz": {
+      "sha256": "e308b562388e8c1512f36df5035c1e72261f6cc07f5700e2d8dfa119d9747cac",
+      "bytes": 3209136
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_05.0.npz": {
+      "sha256": "2239ac38ecbfff6de3d694cb2cb39fc72aeea4e7d3dcb2d30fc6d592f1439029",
+      "bytes": 3208797
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_05.5.npz": {
+      "sha256": "b61c71109741cc2e1532b0d85b96e50a2a33470d12534061a13ef498dce13cdc",
+      "bytes": 3208642
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_06.0.npz": {
+      "sha256": "93221afe9c1a109f4166509452d414cf71ef50af4a0dd8a4c98a146c2263dfeb",
+      "bytes": 3208940
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_06.5.npz": {
+      "sha256": "c572293db27f7a774a05174f5df82505eb666a0bb51eb142193aadf7c6d8aeb9",
+      "bytes": 3209080
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_07.0.npz": {
+      "sha256": "d1104158b2452aa521553a49ebb0d7d4501d5d8bd3e6cc3427674d1e37ba3e3e",
+      "bytes": 3208986
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_07.5.npz": {
+      "sha256": "ee37cce936db61bfa9962f3c2330324ddd5abc4e2eeb6b4cc0999f941e0bbddc",
+      "bytes": 3208839
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211034_8\\state_08.0.npz": {
+      "sha256": "a154028a037cbb1403abb7d3dff39e8ce0f323915dbe40122b47a3281760db83",
+      "bytes": 3208948
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\results.json": {
+      "sha256": "074c30a0ddbad36d82b075884f4bbeab03fcecbd51626ab053c6edc8422a218b",
+      "bytes": 209120
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\source.py": {
+      "sha256": "e541c716584ba63b2e03bdae53a01bd92b390e4ed4af7d8354919f9cd53f120f",
+      "bytes": 8082
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_00.0.npz": {
+      "sha256": "ae4815f3660ad8c3fb9bd804a404c75d03e410b78b7f545d60cfbcc04465d9fb",
+      "bytes": 3208737
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_00.5.npz": {
+      "sha256": "2aed278f30df614534d4510ca805bf8f027039417a04ada9cfafe4a3afafff75",
+      "bytes": 3209087
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_01.0.npz": {
+      "sha256": "de7e772852488ba73ecbc03d57bb6f5656a33e5cd692321d73979b27392d4f47",
+      "bytes": 3208967
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_01.5.npz": {
+      "sha256": "2cd18afa689d963e1b06084a9904278111cfd54ab596c08a1f33313c4b6b5499",
+      "bytes": 3208667
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_02.0.npz": {
+      "sha256": "cf7d95165b32fcdc8158bf3bbee3f14454ca988d95ef179a50dc92b3ec21c579",
+      "bytes": 3208829
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_02.5.npz": {
+      "sha256": "b207c8b824da07d383fc885d2e0752342cc085f945b1f5e8ce428b89c3bd6c92",
+      "bytes": 3208857
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_03.0.npz": {
+      "sha256": "0310871d244683d214c9c169c61ce174eec210c541791dfb5d3a18aeb7ab37c6",
+      "bytes": 3208942
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_03.5.npz": {
+      "sha256": "521677c7cbc13802d4843deb1a5f0adef3cd15a68bc1f3426e78cb129b3dc907",
+      "bytes": 3208611
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_04.0.npz": {
+      "sha256": "dbac4888ac22f93d03581643ba608d31a93744df4ea2698c9ed346d7a17f4a0c",
+      "bytes": 3208713
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_04.5.npz": {
+      "sha256": "dac520421f73d162c7222e9c01061f01d3acc34255c0ac65c1e10d1f775cdd1e",
+      "bytes": 3208871
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_05.0.npz": {
+      "sha256": "e397af79177880bde78242b90d8c4b0e121ca29c1d0c1560871159df36867da3",
+      "bytes": 3209008
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_05.5.npz": {
+      "sha256": "2d21fa977bf7a3ffc63e5cbc54b1c626a0dceec2ba48ac1901ded4808466a83c",
+      "bytes": 3208619
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_06.0.npz": {
+      "sha256": "8c28ef6482eb8525bf9e261c4dc8cb7b3d1fb26d94e47aac6e6a2a0c7c64601f",
+      "bytes": 3208994
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_06.5.npz": {
+      "sha256": "2b601bb2bd66d2114be4e85374cfa699e5e9987c6e2bd308677d6c0f96c6009d",
+      "bytes": 3208790
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_07.0.npz": {
+      "sha256": "2067213e4f553fab7175df4f4457e0320f6c537701cc59041091aa7cc07e7b32",
+      "bytes": 3208924
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_07.5.npz": {
+      "sha256": "28ac7caeafd0cd0cd667ac6925f2f92fd3f55a8ea1e5b6e17f3fb1eeea5d161a",
+      "bytes": 3208775
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\live_seed211035_8\\state_08.0.npz": {
+      "sha256": "93a147181b7f55581bd839c512d9dc3744f67adb3345542d36842606dc4ae208",
+      "bytes": 3208905
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\prepare_report_before_clarification.py": {
+      "sha256": "cf98eb829d64097c293810de68f7f1085a7e73f7e7bffcce6450b44b8dec5219",
+      "bytes": 18590
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\Report before interpretation clarification.pdf": {
+      "sha256": "3c5cbc4bb8ad8692d37a756e445f6d8924265a4795329bbfd12501817227be61",
+      "bytes": 1208451
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\REPORT CONTENT before clarification.json": {
+      "sha256": "572a14e835f4e95a14d429482aee5023c17228c1d2f352483d84a638f9c6dc30",
+      "bytes": 20852
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-1.png": {
+      "sha256": "b582c29bed555e09a64a5f2c218ea702a969de748be7a77cc39661fa251020ad",
+      "bytes": 164035
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-2.png": {
+      "sha256": "04b769cdfda52a1dee301055e984a91bb0b8ac564e7af739a1a8c26ff63ab7bc",
+      "bytes": 226199
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-3.png": {
+      "sha256": "72f1a338ffa635bbd9d510dd28de1eb4c7f65b3bc08799d0ac590205f08a4bc3",
+      "bytes": 159551
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-4.png": {
+      "sha256": "ab8d6bd89b2dc04139da38f01b0d8079bef82be0bac52c408005158d6c72e2c1",
+      "bytes": 206412
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-5.png": {
+      "sha256": "00c33f4e34b9216985eb01abd6cba46dfee221fd3c927cab36fa764223a4147a",
+      "bytes": 209191
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-6.png": {
+      "sha256": "d400fb97dcdebcf3b77f6dc25b3f2527748037951fcc27dcc62d21d5025c5a02",
+      "bytes": 183583
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-7.png": {
+      "sha256": "67253a8023bd574a239d23a23485a30a2ca92ab56e40d6fcae01ffda522c26f4",
+      "bytes": 195436
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-8.png": {
+      "sha256": "6812a39fdab276f6a88e669936d0489a1140c3453e80f9861d182bd69d22367c",
+      "bytes": 163311
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-1.png": {
+      "sha256": "13fb2ddeaf2e89cd47b2ca9efd26c454c341e3c01d153bf7e55c9699b9b5d109",
+      "bytes": 175045
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-2.png": {
+      "sha256": "8cadeac47f1e9addbb193767048d0c03dfdd1e898c805a4eeffb1e10cfcc4320",
+      "bytes": 244536
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-3.png": {
+      "sha256": "72f1a338ffa635bbd9d510dd28de1eb4c7f65b3bc08799d0ac590205f08a4bc3",
+      "bytes": 159551
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-4.png": {
+      "sha256": "ab8d6bd89b2dc04139da38f01b0d8079bef82be0bac52c408005158d6c72e2c1",
+      "bytes": 206412
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-5.png": {
+      "sha256": "00c33f4e34b9216985eb01abd6cba46dfee221fd3c927cab36fa764223a4147a",
+      "bytes": 209191
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-6.png": {
+      "sha256": "d400fb97dcdebcf3b77f6dc25b3f2527748037951fcc27dcc62d21d5025c5a02",
+      "bytes": 183583
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-7.png": {
+      "sha256": "67253a8023bd574a239d23a23485a30a2ca92ab56e40d6fcae01ffda522c26f4",
+      "bytes": 195436
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\report-final-8.png": {
+      "sha256": "43e7ec5e7dd77496198790eb2bf61aaa15b1ea5072d0692f0cdba59e7e3cded1",
+      "bytes": 199316
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\START HERE before clarification.txt": {
+      "sha256": "2100b87b7c32d4368cbced4aa996329fc803a613af63669703e35727b88cc49d",
+      "bytes": 751
+    },
+    "02 Research\\Halo replication audit 2026-10-21\\qa\\visual_verification.json": {
+      "sha256": "f7cd862e638538f3c6f679c8bde8e349f10f67d7c9e17597354ed7a84602edff",
+      "bytes": 698
+    }
+  },
+  "preserved_dependencies": {
+    "02 Research\\Halo stock director bridge 2026-10-21\\harmonic_basis_fast.py": "69d4619e93833ca4b7112c9aaa897a9ea24393ea73bfad7593ea1cf16884d8b9",
+    "02 Research\\Halo quiet realization 2026-10-21\\fast_smooth_field.py": "487711bfc1a7e8c50e0218788fadf9891cf5ac1103d4eb69d5396a9dddde64f5",
+    "02 Research\\High leverage closure 2026-10-21\\halo_quadrupole.py": "4803e2e79ffb092e34f45c2d97f679c312adf7554e543e17a8b565f7df43f57c",
+    "02 Research\\Halo and growth followup 2026-10-21\\mesh_replay.py": "0e4e3f6392c0297cecd511a73bea4ee02e7e75c66dee5847fc9478f149a073de",
+    "02 Research\\Halo and growth followup 2026-10-21\\tracer_test.py": "6395c6b67a29f8d31d89735013d203cacc884945d2c9627be20b5d413e66414a",
+    "02 Research\\Halo and growth followup 2026-10-21\\precessing_equilibrium.py": "5ce5e6ae6fc63493ddee2dc9e54d162d930e22a9e64fd69e0724d853fcbbb89b",
+    "02 Research\\High leverage closure 2026-10-21\\live_stock.py": "662c0dbc302d69d802cafc22c922a6cde63193f902ce3c3d706977bdbcb49ee8",
+    "02 Research\\Halo stock director bridge 2026-10-21\\harmonic_field_fast.py": "1758fac328b422ef9f95240c6ce826c8bb5c0fc44c2545945910a2959eafeed7",
+    "02 Research\\Halo stock director bridge 2026-10-21\\harmonic_basis.py": "d4c430ea3dfdd6a65eb4251139ab18277c22670c2911752129c1f4410c88df21",
+    "02 Research\\Halo stock director bridge 2026-10-21\\harmonic_field.py": "000c25a4c44510c4837a45d5e7b4b3cf1562a86edf3a058644ac0b89baa8f123",
+    "02 Research\\Halo stock director bridge 2026-10-21\\fast_external.py": "d8d6d91635c10a0b0938983ebff09062b6f4bfaf3a39b637b9676e5c72256a58",
+    "02 Research\\Halo stock director bridge 2026-10-21\\live_bridge_fast.py": "458f7180e93d8b57444e0c5081f5a7661f1431540ae11b51fddd246da78d8add",
+    "02 Research\\Halo quiet realization 2026-10-21\\live_quiet_fast.py": "e541c716584ba63b2e03bdae53a01bd92b390e4ed4af7d8354919f9cd53f120f",
+    "02 Research\\Halo quiet realization 2026-10-21\\smooth_field.py": "4c52293eb1cc8ab76d7f22dc2cd1426278520bd3b8dc74f4aa87974277a12561",
+    "02 Research\\Halo stock director bridge 2026-10-21\\phase_seed.py": "4bd5ccecb7148efc50f31924764e2765fd28dbc8b7c78923bdc269bbf48793dd",
+    "02 Research\\Halo stock director bridge 2026-10-21\\weak_endpoints.py": "8b8f2660fa58ff8cbae489fa6409b0c11310cb46be957b3d1f8046a86a755fca",
+    "02 Research\\Halo quiet realization 2026-10-21\\quiet_fit.py": "2a320a9a649c86c26094980c0d0cd812b4066093777e1d49d736126b87a514fa",
+    "02 Research\\Halo stock director bridge 2026-10-21\\weak_stationarity_weights.npz": "6c15bc3e1f4c997bcde4eb43d98500d16c9bdf89cac49a72fa9eaa340d2973be",
+    "02 Research\\Halo stock director bridge 2026-10-21\\stars_seed_8192.npz": "80fb951d570a221fab0a6cf23572ea790efcc2ad448bd23b37e30f84ba9a8f39",
+    "02 Research\\Halo and growth followup 2026-10-21\\precession_extension_stock\\library.npz": "45bb28236ece65e8d45d1f67a6e416992b7daaac3c2f31f8307673b2bbf3e2fb",
+    "02 Research\\Halo and growth followup 2026-10-21\\precession_validation\\results.json": "030c781e2a4fdff3cd0732e8717df2d71f03900f7e10f0019dee2215ed63e2d0"
+  }
+}

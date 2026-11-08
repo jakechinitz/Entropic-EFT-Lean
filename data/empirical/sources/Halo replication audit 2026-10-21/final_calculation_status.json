@@ -1,0 +1,26 @@
+[
+  {
+    "script": "analyze_replicas.py",
+    "returncode": 0
+  },
+  {
+    "script": "stellar_streaming_check.py",
+    "returncode": 0
+  },
+  {
+    "script": "matched_shape_assessment.py",
+    "returncode": 0
+  },
+  {
+    "script": "reconstructed_density_check.py",
+    "returncode": 0
+  },
+  {
+    "script": "disk_torque_profile.py",
+    "returncode": 0
+  },
+  {
+    "script": "higher_multipole_check.py",
+    "returncode": 0
+  }
+]

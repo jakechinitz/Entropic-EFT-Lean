@@ -1,0 +1,97 @@
+{
+  "runs": [
+    {
+      "label": "Original",
+      "time_Gyr": 0,
+      "rows": [
+        {
+          "radius_kpc": 8.2,
+          "l4_implementation_relative_error": 1.522167792019001e-10,
+          "l4_to_l6_total_fraction": 0.022376460990569193,
+          "l4_to_l6_transverse_fraction": 0.2040859183609082,
+          "l6_to_l8_total_fraction": 0.01428523910849808,
+          "l6_to_l8_transverse_fraction": 0.14018281657195866
+        },
+        {
+          "radius_kpc": 10.0,
+          "l4_implementation_relative_error": 1.4876390522870493e-10,
+          "l4_to_l6_total_fraction": 0.017293111389966604,
+          "l4_to_l6_transverse_fraction": 0.1669054419175007,
+          "l6_to_l8_total_fraction": 0.013130862965282148,
+          "l6_to_l8_transverse_fraction": 0.14339001485557315
+        },
+        {
+          "radius_kpc": 20.0,
+          "l4_implementation_relative_error": 1.0985272024864267e-10,
+          "l4_to_l6_total_fraction": 0.007589262344394148,
+          "l4_to_l6_transverse_fraction": 0.0918585193068163,
+          "l6_to_l8_total_fraction": 0.009773078730100934,
+          "l6_to_l8_transverse_fraction": 0.13296764349892667
+        },
+        {
+          "radius_kpc": 40.0,
+          "l4_implementation_relative_error": 1.022769445119975e-10,
+          "l4_to_l6_total_fraction": 0.006333268230992024,
+          "l4_to_l6_transverse_fraction": 0.1069993500253215,
+          "l6_to_l8_total_fraction": 0.007025983510048179,
+          "l6_to_l8_transverse_fraction": 0.11436070894050299
+        },
+        {
+          "radius_kpc": 60.0,
+          "l4_implementation_relative_error": 8.869801124798859e-11,
+          "l4_to_l6_total_fraction": 0.0038625839457143932,
+          "l4_to_l6_transverse_fraction": 0.06959543569551753,
+          "l6_to_l8_total_fraction": 0.004025770110737075,
+          "l6_to_l8_transverse_fraction": 0.06612954012842896
+        }
+      ]
+    },
+    {
+      "label": "Original",
+      "time_Gyr": 8,
+      "rows": [
+        {
+          "radius_kpc": 8.2,
+          "l4_implementation_relative_error": 1.6973886212205609e-10,
+          "l4_to_l6_total_fraction": 0.024074655711259933,
+          "l4_to_l6_transverse_fraction": 0.2853382359146095,
+          "l6_to_l8_total_fraction": 0.018192724773230407,
+          "l6_to_l8_transverse_fraction": 0.2187940194146137
+        },
+        {
+          "radius_kpc": 10.0,
+          "l4_implementation_relative_error": 1.351605444541222e-10,
+          "l4_to_l6_total_fraction": 0.01752990077927052,
+          "l4_to_l6_transverse_fraction": 0.23843051666118037,
+          "l6_to_l8_total_fraction": 0.01791158173152083,
+          "l6_to_l8_transverse_fraction": 0.21413451133504974
+        },
+        {
+          "radius_kpc": 20.0,
+          "l4_implementation_relative_error": 1.1472289573769836e-10,
+          "l4_to_l6_total_fraction": 0.010787799471176307,
+          "l4_to_l6_transverse_fraction": 0.1572303376400123,
+          "l6_to_l8_total_fraction": 0.008859442972107142,
+          "l6_to_l8_transverse_fraction": 0.13693563731362138
+        },
+        {
+          "radius_kpc": 40.0,
+          "l4_implementation_relative_error": 9.83326660546606e-11,
+          "l4_to_l6_total_fraction": 0.008258187366144153,
+          "l4_to_l6_transverse_fraction": 0.1647263457963462,
+          "l6_to_l8_total_fraction": 0.006227034326032058,
+          "l6_to_l8_transverse_fraction": 0.12158131231861805
+        },
+        {
+          "radius_kpc": 60.0,
+          "l4_implementation_relative_error": 9.356815883366534e-11,
+          "l4_to_l6_total_fraction": 0.005096458266047989,
+          "l4_to_l6_transverse_fraction": 0.10421086474136661,
+          "l6_to_l8_total_fraction": 0.005665528193985844,
+          "l6_to_l8_transverse_fraction": 0.11635526335079666
+        }
+      ]
+    }
+  ],
+  "qualification": "Frozen snapshots with the same radial smoothing. Higher modes include finite-particle noise and physical deformation. Small instantaneous increments do not prove long-term trajectory convergence."
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+    "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\EmpiricalCertificates.lean",
+    "path": "Entropic\\Extensions20261023\\EmpiricalCertificates.lean",
+    "sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+    "theorems": 7
+  },
+  {
+    "module": "Entropic.Extensions20261023.MuseProjection",
+    "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\MuseProjection.lean",
+    "path": "Entropic\\Extensions20261023\\MuseProjection.lean",
+    "sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+    "theorems": 4
+  },
+  {
+    "module": "Entropic.Extensions20261023.ConnectedClosure",
+    "source": "02 Research\\Connected theory closure 2026-10-23\\formalization\\ConnectedClosure.lean",
+    "path": "Entropic\\Extensions20261023\\ConnectedClosure.lean",
+    "sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+    "theorems": 42
+  },
+  {
+    "module": "Entropic.Extensions20261023.EffectiveContact",
+    "source": "02 Research\\Effective dynamics and coupling 2026-10-23\\formalization\\EffectiveContact.lean",
+    "path": "Entropic\\Extensions20261023\\EffectiveContact.lean",
+    "sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+    "theorems": 36
+  },
+  {
+    "module": "Entropic.Extensions20261023.MergerContact",
+    "source": "02 Research\\Conservative cluster merger 2026-10-23\\formalization\\MergerContact.lean",
+    "path": "Entropic\\Extensions20261023\\MergerContact.lean",
+    "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+    "theorems": 8
+  },
+  {
+    "module": "Entropic.Extensions20261023.ClusterOutliers",
+    "source": "02 Research\\Cluster outlier closure 2026-10-23\\formalization\\ClusterOutliers.lean",
+    "path": "Entropic\\Extensions20261023\\ClusterOutliers.lean",
+    "sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+    "theorems": 22
+  }
+]

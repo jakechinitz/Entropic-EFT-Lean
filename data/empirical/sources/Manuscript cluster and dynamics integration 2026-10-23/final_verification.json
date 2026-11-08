@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-10-23T19:53:22.944527+00:00",
+  "pages": {
+    "main": 360,
+    "empirical": 41
+  },
+  "pdf_review": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\pdf_review\\20261023_155202",
+  "off_page_words": {
+    "main": 0,
+    "empirical": 0
+  },
+  "proofs": {
+    "success": true,
+    "commit": "a6552daf39daf83d5159fcbcda698d1801731d24",
+    "toolchain": "Lean 4.35.0; pinned mathlib",
+    "pull_request": "https://github.com/jakechinitz/Entropic-EFT-Lean/pull/4",
+    "workflow_run": "https://github.com/jakechinitz/Entropic-EFT-Lean/actions/runs/40013357154",
+    "run_id": 40013357154,
+    "job_id": 120619069460,
+    "build": "success",
+    "source_scan": "success",
+    "axiom_audit": "success",
+    "citation_check": "success",
+    "independent_python_audit": "success",
+    "library_modules": 160,
+    "extension_explicit_theorems": 119,
+    "audit_summary": [
+      "Entropic: 2937 theorems; 0 with nonstandard axioms",
+      "Entropic.EFT: 727 theorems; 0 with nonstandard axioms"
+    ],
+    "merged": false,
+    "finished_at": "2026-10-23T19:47:39Z",
+    "audited_theorem_constants": 2937,
+    "legacy_theorem_constants": 727,
+    "nonstandard_axioms": 0,
+    "ledger_references": 979,
+    "unresolved_ledger_references": 0
+  },
+  "source_and_pdf_hashes": {
+    "01 Current Papers/Astra Full/Entropic Scalar EFT.tex": "225c5b7fb5ea34ea8246547c106a38d275b7154c692acfd82238858c78517e05",
+    "01 Current Papers/Astra Full/Entropic Scalar EFT.pdf": "0bd5514859d8c62bc1078d88f442802150e363d8809c37b8de1a1cdb0da67c38",
+    "01 Current Papers/Empirical Results/Empirical_Results.tex": "f4046e72fd1fb839c5988025601ac6bf45259147cb433d5737f7721d1b0e21bd",
+    "01 Current Papers/Empirical Results/Empirical_Results.pdf": "1a0fb3fb8c008c2e8f4cf50b9851a546526ecd2dd3f6645c45f39fadd3b381cb"
+  },
+  "saved_simulations_rerun": false,
+  "new_likelihood_optimization": false,
+  "outlier_explanations": "Possible and conditional; not presented as established solutions"
+}

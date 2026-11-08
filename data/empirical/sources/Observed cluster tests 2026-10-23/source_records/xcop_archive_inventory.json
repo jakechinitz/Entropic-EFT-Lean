@@ -1,0 +1,1086 @@
+[
+  {
+    "name": "A1644",
+    "bytes": 0
+  },
+  {
+    "name": "A1644/A1644_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A1644/mosaic_a1644_asmooth.fits.gz",
+    "bytes": 6687402
+  },
+  {
+    "name": "A1644/A1644_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1644/A1644_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A1644/spectral_results_A1644.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A1644/A1644_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1644/mosaic_a1644_expo.fits.gz",
+    "bytes": 6639172
+  },
+  {
+    "name": "A1644/A1644_entropy.png",
+    "bytes": 86687
+  },
+  {
+    "name": "A1644/A1644_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1644/A1644_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A1644/A1644_fgas_profile.png",
+    "bytes": 82591
+  },
+  {
+    "name": "A1644/A1644_density.png",
+    "bytes": 90204
+  },
+  {
+    "name": "A1644/A1644_pressure.png",
+    "bytes": 94991
+  },
+  {
+    "name": "A1644/mosaic_a1644.fits.gz",
+    "bytes": 206965
+  },
+  {
+    "name": "A1644/a1644_asmooth.png",
+    "bytes": 266740
+  },
+  {
+    "name": "A1644/A1644_mass_profiles.png",
+    "bytes": 181697
+  },
+  {
+    "name": "A1644/A1644_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1644/A1644_temperature.png",
+    "bytes": 93124
+  },
+  {
+    "name": "A1644/A1644_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1644/mosaic_a1644_bkg.fits.gz",
+    "bytes": 12107164
+  },
+  {
+    "name": "A1644/A1644_mass_profiles.pdf",
+    "bytes": 40068
+  },
+  {
+    "name": "A1795",
+    "bytes": 0
+  },
+  {
+    "name": "A1795/A1795_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1795/A1795_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1795/A1795_temperature.png",
+    "bytes": 89277
+  },
+  {
+    "name": "A1795/mosaic_a1795_expo.fits.gz",
+    "bytes": 7272883
+  },
+  {
+    "name": "A1795/A1795_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1795/spectral_results_A1795.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A1795/A1795_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1795/A1795_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A1795/A1795_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A1795/A1795_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A1795/A1795_mstar.fits",
+    "bytes": 40320
+  },
+  {
+    "name": "A1795/A1795_entropy.png",
+    "bytes": 86289
+  },
+  {
+    "name": "A1795/A1795_density.png",
+    "bytes": 91949
+  },
+  {
+    "name": "A1795/mosaic_a1795.fits.gz",
+    "bytes": 316046
+  },
+  {
+    "name": "A1795/A1795_mass_profiles.png",
+    "bytes": 152822
+  },
+  {
+    "name": "A1795/A1795_mass_profiles.pdf",
+    "bytes": 40356
+  },
+  {
+    "name": "A1795/mosaic_a1795_bkg.fits.gz",
+    "bytes": 12968041
+  },
+  {
+    "name": "A1795/mosaic_a1795_asmooth.fits.gz",
+    "bytes": 7182355
+  },
+  {
+    "name": "A1795/A1795_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A1795/A1795_fgas_profile.png",
+    "bytes": 78872
+  },
+  {
+    "name": "A1795/a1795_asmooth.png",
+    "bytes": 384334
+  },
+  {
+    "name": "A1795/A1795_pressure.png",
+    "bytes": 92749
+  },
+  {
+    "name": "A2029",
+    "bytes": 0
+  },
+  {
+    "name": "A2029/A2029_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2029/A2029_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2029/A2029_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A2029/mosaic_a2029_asmooth.fits.gz",
+    "bytes": 6569309
+  },
+  {
+    "name": "A2029/spectral_results_A2029.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2029/A2029_mstar.fits",
+    "bytes": 40320
+  },
+  {
+    "name": "A2029/A2029_fgas_profile.png",
+    "bytes": 79580
+  },
+  {
+    "name": "A2029/A2029_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2029/A2029_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2029/mosaic_a2029_expo.fits.gz",
+    "bytes": 6691416
+  },
+  {
+    "name": "A2029/A2029_entropy.png",
+    "bytes": 89380
+  },
+  {
+    "name": "A2029/A2029_pressure.png",
+    "bytes": 93531
+  },
+  {
+    "name": "A2029/A2029_mass_profiles.pdf",
+    "bytes": 39306
+  },
+  {
+    "name": "A2029/A2029_mass_profiles.png",
+    "bytes": 164647
+  },
+  {
+    "name": "A2029/A2029_density.png",
+    "bytes": 92958
+  },
+  {
+    "name": "A2029/mosaic_a2029.fits.gz",
+    "bytes": 353980
+  },
+  {
+    "name": "A2029/A2029_temperature.png",
+    "bytes": 88129
+  },
+  {
+    "name": "A2029/A2029_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2029/mosaic_a2029_bkg.fits.gz",
+    "bytes": 6805994
+  },
+  {
+    "name": "A2029/A2029_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A2029/A2029_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2029/a2029_asmooth.png",
+    "bytes": 235163
+  },
+  {
+    "name": "A2142",
+    "bytes": 0
+  },
+  {
+    "name": "A2142/mosaic_a2142_asmooth.fits.gz",
+    "bytes": 6068927
+  },
+  {
+    "name": "A2142/A2142_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A2142/A2142_pressure.png",
+    "bytes": 93230
+  },
+  {
+    "name": "A2142/A2142_mass_profiles.pdf",
+    "bytes": 39556
+  },
+  {
+    "name": "A2142/A2142_mass_profiles.png",
+    "bytes": 170518
+  },
+  {
+    "name": "A2142/A2142_entropy.png",
+    "bytes": 87410
+  },
+  {
+    "name": "A2142/A2142_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2142/A2142_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A2142/A2142_mstar.fits",
+    "bytes": 46080
+  },
+  {
+    "name": "A2142/A2142_density.png",
+    "bytes": 93346
+  },
+  {
+    "name": "A2142/A2142_fgas_profile.png",
+    "bytes": 83798
+  },
+  {
+    "name": "A2142/mosaic_a2142_bkg.fits.gz",
+    "bytes": 11001376
+  },
+  {
+    "name": "A2142/A2142_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2142/A2142_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2142/A2142_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2142/mosaic_a2142_expo.fits.gz",
+    "bytes": 6186390
+  },
+  {
+    "name": "A2142/A2142_temperature.png",
+    "bytes": 88332
+  },
+  {
+    "name": "A2142/a2142_asmooth.png",
+    "bytes": 347786
+  },
+  {
+    "name": "A2142/mosaic_a2142.fits.gz",
+    "bytes": 311747
+  },
+  {
+    "name": "A2142/spectral_results_A2142.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2142/A2142_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2142/A2142_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2255",
+    "bytes": 0
+  },
+  {
+    "name": "A2255/a2255_asmooth.png",
+    "bytes": 364307
+  },
+  {
+    "name": "A2255/mosaic_a2255_bkg.fits.gz",
+    "bytes": 12163308
+  },
+  {
+    "name": "A2255/mosaic_a2255_asmooth.fits.gz",
+    "bytes": 6741455
+  },
+  {
+    "name": "A2255/A2255_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A2255/A2255_fgas_profile.png",
+    "bytes": 89666
+  },
+  {
+    "name": "A2255/A2255_density.png",
+    "bytes": 88667
+  },
+  {
+    "name": "A2255/A2255_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2255/A2255_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2255/A2255_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A2255/mosaic_a2255_expo.fits.gz",
+    "bytes": 6651314
+  },
+  {
+    "name": "A2255/A2255_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2255/spectral_results_A2255.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2255/A2255_entropy.png",
+    "bytes": 88115
+  },
+  {
+    "name": "A2255/A2255_pressure.png",
+    "bytes": 95361
+  },
+  {
+    "name": "A2255/A2255_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2255/mosaic_a2255.fits.gz",
+    "bytes": 152871
+  },
+  {
+    "name": "A2255/A2255_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2255/A2255_temperature.png",
+    "bytes": 93152
+  },
+  {
+    "name": "A2255/A2255_mass_profiles.pdf",
+    "bytes": 38980
+  },
+  {
+    "name": "A2255/A2255_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2255/A2255_mass_profiles.png",
+    "bytes": 212714
+  },
+  {
+    "name": "A2319",
+    "bytes": 0
+  },
+  {
+    "name": "A2319/a2319_asmooth.png",
+    "bytes": 365733
+  },
+  {
+    "name": "A2319/mosaic_a2319_expo.fits.gz",
+    "bytes": 9458893
+  },
+  {
+    "name": "A2319/mosaic_a2319_bkg.fits.gz",
+    "bytes": 17120372
+  },
+  {
+    "name": "A2319/A2319_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2319/A2319_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2319/A2319_density.png",
+    "bytes": 94916
+  },
+  {
+    "name": "A2319/A2319_temperature.png",
+    "bytes": 77409
+  },
+  {
+    "name": "A2319/A2319_fgas_profile.png",
+    "bytes": 95267
+  },
+  {
+    "name": "A2319/A2319_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2319/A2319_mstar.fits",
+    "bytes": 31680
+  },
+  {
+    "name": "A2319/A2319_entropy.png",
+    "bytes": 92570
+  },
+  {
+    "name": "A2319/A2319_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A2319/mosaic_a2319_asmooth.fits.gz",
+    "bytes": 9485180
+  },
+  {
+    "name": "A2319/A2319_mass_profiles.pdf",
+    "bytes": 39316
+  },
+  {
+    "name": "A2319/A2319_mass_profiles.png",
+    "bytes": 193716
+  },
+  {
+    "name": "A2319/A2319_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2319/mosaic_a2319.fits.gz",
+    "bytes": 377055
+  },
+  {
+    "name": "A2319/A2319_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A2319/spectral_results_A2319.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A2319/A2319_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2319/A2319_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A2319/A2319_pressure.png",
+    "bytes": 100782
+  },
+  {
+    "name": "A3158",
+    "bytes": 0
+  },
+  {
+    "name": "A3158/A3158_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3158/mosaic_a3158.fits.gz",
+    "bytes": 235586
+  },
+  {
+    "name": "A3158/A3158_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3158/A3158_entropy.png",
+    "bytes": 85934
+  },
+  {
+    "name": "A3158/mosaic_a3158_expo.fits.gz",
+    "bytes": 6635203
+  },
+  {
+    "name": "A3158/A3158_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A3158/A3158_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A3158/A3158_mass_profiles.pdf",
+    "bytes": 39749
+  },
+  {
+    "name": "A3158/mosaic_a3158_asmooth.fits.gz",
+    "bytes": 6818052
+  },
+  {
+    "name": "A3158/A3158_mass_profiles.png",
+    "bytes": 185793
+  },
+  {
+    "name": "A3158/A3158_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3158/A3158_temperature.png",
+    "bytes": 87726
+  },
+  {
+    "name": "A3158/a3158_asmooth.png",
+    "bytes": 357485
+  },
+  {
+    "name": "A3158/mosaic_a3158_bkg.fits.gz",
+    "bytes": 11312147
+  },
+  {
+    "name": "A3158/A3158_fgas_profile.png",
+    "bytes": 88588
+  },
+  {
+    "name": "A3158/A3158_pressure.png",
+    "bytes": 93464
+  },
+  {
+    "name": "A3158/A3158_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3158/spectral_results_A3158.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A3158/A3158_density.png",
+    "bytes": 89035
+  },
+  {
+    "name": "A3158/A3158_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3158/A3158_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A3266",
+    "bytes": 0
+  },
+  {
+    "name": "A3266/A3266_entropy.png",
+    "bytes": 90736
+  },
+  {
+    "name": "A3266/A3266_pressure.png",
+    "bytes": 94412
+  },
+  {
+    "name": "A3266/A3266_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3266/A3266_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3266/A3266_temperature.png",
+    "bytes": 94201
+  },
+  {
+    "name": "A3266/A3266_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3266/A3266_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A3266/A3266_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A3266/A3266_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3266/a3266_asmooth.png",
+    "bytes": 327156
+  },
+  {
+    "name": "A3266/mosaic_a3266_asmooth.fits.gz",
+    "bytes": 4007448
+  },
+  {
+    "name": "A3266/mosaic_a3266_bkg.fits.gz",
+    "bytes": 7263326
+  },
+  {
+    "name": "A3266/A3266_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A3266/A3266_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A3266/A3266_density.png",
+    "bytes": 88786
+  },
+  {
+    "name": "A3266/mosaic_a3266_expo.fits.gz",
+    "bytes": 4208127
+  },
+  {
+    "name": "A3266/A3266_mass_profiles.pdf",
+    "bytes": 40005
+  },
+  {
+    "name": "A3266/A3266_mass_profiles.png",
+    "bytes": 207019
+  },
+  {
+    "name": "A3266/spectral_results_A3266.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A3266/mosaic_a3266.fits.gz",
+    "bytes": 261334
+  },
+  {
+    "name": "A3266/A3266_fgas_profile.png",
+    "bytes": 83729
+  },
+  {
+    "name": "A644",
+    "bytes": 0
+  },
+  {
+    "name": "A644/A644_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A644/spectral_results_A644.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A644/mosaic_a644.fits.gz",
+    "bytes": 224267
+  },
+  {
+    "name": "A644/mosaic_a644_expo.fits.gz",
+    "bytes": 6738840
+  },
+  {
+    "name": "A644/A644_mass_profiles.png",
+    "bytes": 211026
+  },
+  {
+    "name": "A644/A644_density.png",
+    "bytes": 93587
+  },
+  {
+    "name": "A644/A644_mass_profiles.pdf",
+    "bytes": 39650
+  },
+  {
+    "name": "A644/A644_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A644/mosaic_a644_bkg.fits.gz",
+    "bytes": 12295504
+  },
+  {
+    "name": "A644/A644_fgas_profile.png",
+    "bytes": 88531
+  },
+  {
+    "name": "A644/A644_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A644/a644_asmooth.png",
+    "bytes": 342505
+  },
+  {
+    "name": "A644/A644_temperature.png",
+    "bytes": 81465
+  },
+  {
+    "name": "A644/A644_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A644/A644_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A644/A644_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A644/A644_mstar.fits",
+    "bytes": 40320
+  },
+  {
+    "name": "A644/A644_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A644/A644_pressure.png",
+    "bytes": 95024
+  },
+  {
+    "name": "A644/A644_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A644/mosaic_a644_asmooth.fits.gz",
+    "bytes": 6908017
+  },
+  {
+    "name": "A644/A644_entropy.png",
+    "bytes": 88321
+  },
+  {
+    "name": "A85",
+    "bytes": 0
+  },
+  {
+    "name": "A85/A85_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "A85/mosaic_a85_expo.fits.gz",
+    "bytes": 7660673
+  },
+  {
+    "name": "A85/A85_mass_profiles.png",
+    "bytes": 160862
+  },
+  {
+    "name": "A85/A85_mstar.fits",
+    "bytes": 34560
+  },
+  {
+    "name": "A85/A85_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A85/A85_density.png",
+    "bytes": 92082
+  },
+  {
+    "name": "A85/A85_mass_profiles.pdf",
+    "bytes": 39348
+  },
+  {
+    "name": "A85/A85_fgas_profile.png",
+    "bytes": 83149
+  },
+  {
+    "name": "A85/mosaic_a85.fits.gz",
+    "bytes": 391514
+  },
+  {
+    "name": "A85/mosaic_a85_asmooth.fits.gz",
+    "bytes": 7615059
+  },
+  {
+    "name": "A85/mosaic_a85_bkg.fits.gz",
+    "bytes": 13633872
+  },
+  {
+    "name": "A85/spectral_results_A85.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A85/A85_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A85/A85_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A85/a85_asmooth.png",
+    "bytes": 301310
+  },
+  {
+    "name": "A85/A85_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "A85/A85_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "A85/A85_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "A85/A85_pressure.png",
+    "bytes": 93467
+  },
+  {
+    "name": "A85/A85_entropy.png",
+    "bytes": 81099
+  },
+  {
+    "name": "A85/A85_temperature.png",
+    "bytes": 92634
+  },
+  {
+    "name": "A85/A85_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "ZW1215",
+    "bytes": 0
+  },
+  {
+    "name": "ZW1215/ZW1215_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "ZW1215/ZW1215_fgas_profile.png",
+    "bytes": 82793
+  },
+  {
+    "name": "ZW1215/ZW1215_entropy.png",
+    "bytes": 88986
+  },
+  {
+    "name": "ZW1215/spectral_results_Zw1215.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "ZW1215/ZW1215_mass_profiles.png",
+    "bytes": 203952
+  },
+  {
+    "name": "ZW1215/ZW1215_pressure.png",
+    "bytes": 97042
+  },
+  {
+    "name": "ZW1215/ZW1215_mass_profiles.pdf",
+    "bytes": 39267
+  },
+  {
+    "name": "ZW1215/ZwCl1215.1+040_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "ZW1215/mosaic_zw1215_asmooth.fits.gz",
+    "bytes": 6846772
+  },
+  {
+    "name": "ZW1215/mosaic_zw1215_bkg.fits.gz",
+    "bytes": 11437316
+  },
+  {
+    "name": "ZW1215/mosaic_zw1215.fits.gz",
+    "bytes": 204452
+  },
+  {
+    "name": "ZW1215/ZW1215_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "ZW1215/ZW1215_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "ZW1215/ZW1215_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "ZW1215/mosaic_zw1215_expo.fits.gz",
+    "bytes": 6808077
+  },
+  {
+    "name": "ZW1215/ZW1215_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "ZW1215/ZW1215_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "ZW1215/zwcl1215_asmooth.png",
+    "bytes": 376179
+  },
+  {
+    "name": "ZW1215/ZW1215_mstar.fits",
+    "bytes": 40320
+  },
+  {
+    "name": "ZW1215/ZW1215_density.png",
+    "bytes": 91964
+  },
+  {
+    "name": "ZW1215/ZW1215_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "ZW1215/ZW1215_temperature.png",
+    "bytes": 90236
+  },
+  {
+    "name": "RXC1825",
+    "bytes": 0
+  },
+  {
+    "name": "RXC1825/RXC1825_mass_profiles.png",
+    "bytes": 163053
+  },
+  {
+    "name": "RXC1825/mosaic_rxc1825.fits.gz",
+    "bytes": 274971
+  },
+  {
+    "name": "RXC1825/RXC1825_mass_profiles.pdf",
+    "bytes": 40204
+  },
+  {
+    "name": "RXC1825/RXC1825_hydro_mass.fits",
+    "bytes": 20160
+  },
+  {
+    "name": "RXC1825/RXC1825_entropy.png",
+    "bytes": 89067
+  },
+  {
+    "name": "RXC1825/RXC1825_entropy.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "RXC1825/RXCJ1825.3+3026_Y-PROF-COVMAT_P-PROF-COVMAT.20170830.fits",
+    "bytes": 80640
+  },
+  {
+    "name": "RXC1825/RXC1825_temperature.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "RXC1825/mosaic_rxc1825_asmooth.fits.gz",
+    "bytes": 6331158
+  },
+  {
+    "name": "RXC1825/RXC1825_fgas_profile.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "RXC1825/RXC1825_density.png",
+    "bytes": 88080
+  },
+  {
+    "name": "RXC1825/mosaic_rxc1825_expo.fits.gz",
+    "bytes": 6397554
+  },
+  {
+    "name": "RXC1825/RXC1825_pressure.png",
+    "bytes": 96481
+  },
+  {
+    "name": "RXC1825/RXC1825_fgas_profile.png",
+    "bytes": 89771
+  },
+  {
+    "name": "RXC1825/RXC1825_pressure.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "RXC1825/rxc1825_asmooth.png",
+    "bytes": 322735
+  },
+  {
+    "name": "RXC1825/RXC1825_abund.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "RXC1825/spectral_results_RXC1825.fits",
+    "bytes": 11520
+  },
+  {
+    "name": "RXC1825/RXC1825_temperature.png",
+    "bytes": 91172
+  },
+  {
+    "name": "RXC1825/RXC1825_density_L1.fits",
+    "bytes": 14400
+  },
+  {
+    "name": "RXC1825/mosaic_rxc1825_bkg.fits.gz",
+    "bytes": 11579258
+  }
+]

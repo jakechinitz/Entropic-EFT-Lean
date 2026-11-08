@@ -1,0 +1,1460 @@
+     MNRAS 000, 1–20 (2019)                     Preprint 11 December 2019            Compiled using MNRAS LaTEX style ﬁle v3.0
+
+
+  CCCP and MENeaCS: (updated) weak-lensing masses for
+   100 galaxy clusters
+
+     Ricardo Herbonnet1,2⋆, Crist´obal Sif´on3,2, Henk Hoekstra2, Yannick Bah´e2,
+    Remco F. J. van der Burg4, Jean-Baptiste Melin5, Anja von der Linden1,
+    David Sand6, Scott Kay7, David Barnes8
+        1Department of Physics and Astronomy, Stony Brook University, Stony Brook, NY 11794, USA
+        2Leiden Observatory, Leiden University, PO Box 9513, 2300 RA, Leiden, The Netherlands
+          3Instituto de F´ısica, Pontiﬁcia Universidad Cat´olica de Valpara´ıso, Casilla 4059, Valpara´ıso, Chile
+        4European Southern Observatory, Karl-Schwarzschild-Str. 2, 85748, Garching, Germany2019  5IRFU, CEA, Universit´e Paris-Saclay, F-91191 Gif-sur-Yvette, France
+        6Department of Astronomy/Steward Observatory, 933 North Cherry Avenue, Rm. N204, Tucson, AZ 85721-0065, USA
+         7Jodrell Bank Centre for Astrophysics, Department of Physics and Astronomy, The University of Manchester,
+        Manchester M13 9PL, UKDec  8Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology,
+9  Cambridge, MA 02139, USA
+
+
+
+       9 December 2019
+
+
+                      ABSTRACT
+                                 Large area surveys have detected signiﬁcant samples of galaxy clusters that can be
+                                 used to constrain cosmological parameters, provided that the masses of the clusters
+                                     are measured robustly. To improve the calibration of cluster masses using weak gravi-
+                                       tational lensing we present new results for 48 clusters at 0.05 < z < 0.15, observed as
+                                    part of the Multi Epoch Nearby Cluster Survey (MENeaCS), and reevaluate the mass[astro-ph.CO]
+                                    estimates for 52 clusters from the Canadian Cluster Comparison Project (CCCP).
+                              Updated high-ﬁdelity photometric redshift catalogues of reference deep ﬁelds are used
+                                       in combination with advances in shape measurements and state-of-the-art cluster sim-
+                                       ulations, yielding an average systematic uncertainty in the lensing signal below 5%,
+                                       similar to the statistical uncertainty for our cluster sample. We derive a scaling re-
+                                       lation with Planck measurements for the full sample and ﬁnd a bias in the Planck
+                                 masses of 1 −b = 0.84 ± 0.04. We ﬁnd no statistically signiﬁcant trend of the mass                                      bias with redshift or cluster mass, but ﬁnd that diﬀerent selections could change the
+                                      bias by up to 1.5σ. We ﬁnd a gas fraction of 0.139 ± 0.014 for 8 relaxed clusters in our                                   sample, which can also be used to infer cosmological parameters.
+
+                        Key words:   gravitational lensing – galaxy clusters – data analysis – cosmol-
+                                     ogy:observations.arXiv:1912.04414v1
+      1 INTRODUCTION                                  spectrum because they contain large amounts of baryons
+                                                                      that manifest their presence in various ways, such as clusters
+      The growth rate of massive haloes is sensitive to cosmology
+                                                                               of galaxies and hot gas. Studies of the number of clusters as
+        as the gravitational build-up of overdensities in the initial
+                                                                a function of mass and redshift (cluster mass function) have
+        density distribution is counteracted by the expansion of the
+                                                                put tight constraints on the energy density of matter Ωm
+        Universe. Numerical simulations can predict the abundance
+                                                           and normalisation of the matter power spectrum σ8 (e.g.
+        of massive haloes for varying cosmologies and linking these
+                                                                 Borgani & Guzzo 2001; Vikhlinin et al. 2009b; Rozo et al.
+        to such objects in the real Universe allows for cosmological
+                                                                        2010), and the redshift evolution of the mass function can
+        tests (see Allen et al. 2011 for a general review). Although
+                                                                        constrain the abundance and the equation of state of dark
+       the bulk of the mass in these structures is in the form of
+                                                                         energy, as well as the number of neutrino species (e.g. Mantz
+       dark matter, they are observable across the electro-magnetic
+                                                                             et al. 2010b, 2015a; Planck Collaboration et al. 2016b; de
+                                                       Haan et al. 2016; Bocquet et al. 2019).
+
+       ⋆Email: ricardo.herbonnet@stonybrook.edu                      The determination of the cluster mass function  re-
+
+
+       c⃝2019 The Authors
+2   Ricardo Herbonnet et al.
+
+
+quires a large sample of clusters with a well-deﬁned selec-      of clusters. This has been the subject of numerous studies
+tion function and accurate mass estimates of those clus-       (e.g. Okabe et al. 2013; Umetsu et al. 2014; von der Lin-
+ters. The number of observed clusters is steadily increas-     den et al. 2014a; Hoekstra et al. 2015; Okabe & Smith 2016;
+ing thanks to optical searches for overdensities of (red)     Schrabback et al. 2018; McClintock et al. 2018; Miyatake
+galaxies (e.g. Gladders & Yee 2005; Rykoﬀet al. 2016),      et al. 2019; Bellagamba et al. 2019; Nagarajan et al. 2019).
+and X-ray surveys looking for diﬀuse hot intracluster gas
+(e.g. Ebeling  et  al. 1998, 2001; B¨ohringer  et  al. 2004;
+Vikhlinin et al. 2009a). In recent years millimeter wave-         Weak-lensing experiments measure the shear by averag-
+length searches for the signatures of the Sunyaev-Zeldovich      ing the shapes of galaxies behind the clusters, and combine
+eﬀects (Sunyaev & Zeldovich 1972, SZ eﬀect) in the cosmic      these with distance estimates for the background galaxies in
+microwave background (CMB) have added greatly to the      order to reconstruct the mass proﬁle. The background galax-
+number of detected clusters (Planck Collaboration et al.       ies are predominantly faint objects, so their distances are
+2016c; Hilton et al. 2018; Bleem et al. 2019). CMB pho-     computed using photometric redshifts. Systematics are thus
+tons are present at all observable redshifts and the SZ sig-      introduced by biased measurements of the galaxy shapes
+nal scales linearly with gas density, making it observable     and of the galaxy redshifts, a false classiﬁcation of objects
+even for high redshift clusters with relatively low gas den-      as background galaxies, and incorrect assumptions of the
+sity, promising many thousands of newly detected clusters     mass proﬁle of the cluster. Hoekstra et al. (2015,  here-
+in the near future.                                                  after H15) performed a thorough analysis of most of these
+    Another requirement for robust estimates of cosmolog-      systematics for the Canadian Cluster Comparison Project
+ical parameters is a well calibrated relation between survey     (CCCP), ﬁnding agreement with the independent, equally
+observable and mass1. In fact, the lack of a reliable scaling     thoroughly calibrated, pipeline of the Weighing the Giants
+relation is the main limitation for the full exploitation of the    (WtG) project (von der Linden et al. 2014a; Applegate et al.
+already available CMB cluster catalogues. The total mass of     2014) for clusters observed in both surveys.
+clusters can be computed using kinematics of cluster mem-
+bers under the assumption of dynamical equilibrium (e.g.
+Sif´on et al. 2016; Amodeo et al. 2017; Armitage et al. 2018)          In this work, we build on the work of H15 by studying
+or using caustics (Rines et al. 2016). However, these esti-     another sample of clusters, which was also observed with the
+mates generally have large biases and/or large scatter (Old     Canada-France-Hawaii Telescope (CFHT), as was CCCP,
+et al. 2018). X-ray measurements can be connected to mass,     and analyse it with the same pipeline. The Multi Epoch
+but this is usually done under the assumption of hydrostatic     Nearby Cluster Survey (MENeaCS) provides excellent qual-
+equilibrium. This assumption can lead to masses underesti-       ity optical imaging data in the g and r-band for a sample
+mated by ∼10-35% depending on the dynamical state of the      of 58 X-ray selected clusters at 0.05 < z < 0.15. MENeaCS
+cluster (e.g. Henson et al. 2017; Barnes et al. 2017).             presents a signiﬁcant collection of clusters allowing for a pre-
+    Fortunately, a galaxy cluster acts as a lens because its       cise determination of the average cluster mass. The low red-
+gravitational potential distorts the surrounding space-time,       shift range, and hence small volume, in combination with the
+which deﬂects photons from their straight line trajectories.      steepness of the halo mass function at cluster scales, means
+This phenomenon, known as gravitational lensing, intro-      that MENeaCS clusters are on average less massive than
+duces a coherent distortion (shear) in the observed shape of    CCCP clusters, thereby also extending the mass range for
+background galaxies, which scales with cluster mass. Most      the scaling relation analysis. However, the trade-oﬀfor our
+galaxies are only slightly sheared by the cluster and the      large sample size is the lack of colour information required to
+statistical inference of the shear signal from a sample of      estimate photometric redshifts (photo-z’s) for all observed
+background galaxies is known as weak gravitational lensing.      galaxies. Fortunately, new deep high ﬁdelity photo-z cata-
+Weak-lensing thus provides the total mass of a cluster with-      logues of reference ﬁelds have become available to address
+out strict assumptions on the dynamical state of the clus-      this issue. Therefore, in addition to presenting the cluster
+ter. Simulations show that lensing mass estimates are nearly     masses for MENeaCS, we will also update the mass esti-
+unbiased, so other mass proxies can be calibrated against     mates for CCCP clusters in this work.
+it. However, the triaxial distribution of mass introduces a
+scatter of ∼10-30% in lensing masses for individual cluster
+(Becker & Kravtsov 2011; Rasia et al. 2012; Bah´e et al. 2012;        The MENeaCS observations are brieﬂy described in
+Henson et al. 2017; Herbonnet et al. 2019). There is also a      Section 2, where we also present details of the pipeline used
+large statistical uncertainty in the shear, which is obtained      to determine galaxy shapes. In Section 3 we determine a dis-
+by averaging of background galaxy shapes. Moreover, uncor-      tribution of redshifts for the background galaxy population.
+related large scale structure introduces extra scatter in the     Without reliable redshift information for individual objects,
+mass estimates (Hoekstra 2001; Hoekstra et al. 2011a). For      galaxies cannot be separated into a population associated to
+a large sample of clusters these should average out, so reli-      the cluster and a population of gravitationally lensed back-
+able scaling relations can only be produced for large samples     ground galaxies. This is addressed in Section 4. Section 5
+                                                                 describes the determination of the cluster masses, which are
+                                                      compared to other mass estimates in Section 6 and we con-
+1 Because of degeneracies between cosmological and astrophyi-      clude in Section 7. Throughout the paper we assume a ﬂat
+cal parameters in the estimation, the masses and scaling relation    Λ cold dark matter cosmology where H0=70 km/s/Mpc and
+should be inferred simultaneously with cosmological parameters      the current energy densities of matter and dark energy are
+(e.g. Mantz et al. 2010a)                                Ωm(z = 0) = 0.3 and ΩΛ(z = 0) = 0.7, respectively.
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   3
+
+
+2 DATA AND SHEAR ANALYSIS                   an upper limit of 5 pixels on the galaxy half-light radius is
+                                                        imposed to help remove spurious detections, such as blended
+2.1  MENeaCS data
+                                                                    objects, from the object catalogue. A lower limit on the size
+The Multi Epoch Nearby Cluster Survey (MENeaCS) is a        is set by the size of the PSF, which removes stars and small
+deep, wide-ﬁeld imaging survey of a sample of X-ray selected      galaxies that have highly biased shapes.
+clusters with 0.05 < z < 0.15. The data were obtained with         Galaxy magnitudes are corrected for background light
+two main science objectives in mind. The ﬁrst, the study of     by subdividing pixels in an annulus between 16 and 32 pixels
+the dark matter halos of cluster galaxies using weak gravi-      into four quadrants and ﬁtting the quadrants with a plane
+tational lensing, deﬁned the required total integration time      to allow for spatial variation of the background. We found
+and image quality, as well as the redshift range. The re-      that bright neighbouring objects aﬀect this local background
+sults of this analysis are presented in Sif´on et al. (2018a,b).      subtraction, which in turn aﬀects the shape measurement.
+Taking advantage of the queue scheduling of CFHT obser-    When we examined the performance of the algorithm near
+vations, however, the observations were spread over a two-      bright cluster members in image simulations for the purpose
+year period, which enabled a unique survey to study the rate      of studying the lensing signal around such galaxies (Sif´on
+of supernovae in clusters (Sand et al. 2012; Graham et al.      et al. 2018b), there were cases where mdet, the apparent
+2012, 2015), including intra-cluster supernovae (Sand et al.     magnitude as measured by the detection algorithm diﬀered
+2011). To do so, typically two 120s exposures in the g and     from mshape, the magnitude measured by the shape measure-
+r-band were obtained for each epoch (which are a lunation     ment algorithm. This change in magnitude was introduced
+apart). The full sample comprises the 58 most X-ray lumi-     by the background subtraction algorithm. No background
+nous clusters that are observable with the CFHT. A detailed       light was present in the simulations and instead the local
+description of the survey is presented in Sand et al. (2011,     background subtraction was aﬀected by the light of nearby
+2012).                                                           bright cluster galaxies. An empirically derived relation based
+    In this paper we use the r-band data to determine the     on ∆m = mdet −mshape of
+MENeaCS cluster masses using weak gravitational lensing.
+                                   ∆m > 49.0 −7.0mshape + 0.3m2shape −0.005m3shape   (1)
+The individual exposures are pre-processed using the Elixir
+pipeline (Magnier & Cuillandre 2004), and we reﬁne the as-      eﬃciently identiﬁed these problematic objects in the simula-
+trometry using Scamp (Bertin 2010b). Although the CFHT      tions. We therefore apply this cut to the data, which removes
+observations were typically obtained when the seeing was     a few percent of the detected objects.
+below 1′′, some exposures suﬀer from a larger PSF. As this
+is detrimental for accurate shape measurements, these expo-
+sures were excluded when co-adding the data. For each clus-     2.3  Shear measurement
+ter the 20 frames with the best image quality were selected
+                                                  The galaxy polarisations and polarisabilities are measuredand combined into a single deep coadded image using Swarp
+                                                        from the mosaics using the shape measurement algorithm(Bertin 2010a). However, if additional frames had a seeing
+                                                                  detailed  in H15, which  is based on the moment-basedfull width at half maximum less than 0.80′′ they were added
+                                                    method of Kaiser et al. (1995). The polarisation χ is a mea-to the stack. The minimal depth of each coadded image is
+                                                                sure of the galaxy ellipticity and is determined using a weighttherefore 40 minutes of exposure time. The magnitudes we
+                                                                function to reduce the eﬀect of noise, which introduces a bias
+use are corrected for Galactic extinction using the Schlaﬂy &                                                              γ                                                                    in the ﬁnal shear estimate. The shear polarisability P  cor-Finkbeiner (2011) recalibration of the Schlegel et al. (1998)
+                                                                     rects the polarisation for the use of the weight function andinfrared-based dust map. For the analysis presented here,
+                                                                        for the eﬀect of the PSF. Galaxies are assigned a lensingwe exclude 9 clusters based on their r-band Galactic dust
+                                                            weightextinction Ar. The threshold value Ar < 0.2 was chosen to
+reﬂect the range in which we can reliably correct for contam-                                               2 −1                                                                                σχ
+ination (see Section 4 and Appendix B). Finally, the cluster              w =  ⟨ϵ2int⟩+    γ           ,              (2)                                                                   P
+Abell 763 contains no signiﬁcant overdensity of galaxies, nor
+is it part of the Planck cluster catalogue, and was removed     where ⟨ϵ2int⟩= 0.252 is the dispersion in the distribution of
+from the sample. Table A12 lists for all selected clusters their       intrinsic ellipticities and σχ is an estimate of the uncertainty
+properties and for MENeaCS clusters the characteristics of      in the measured value of χ due to noise in the image (Hoek-
+the observations. The coordinates of the brightest cluster      stra et al. 2000). The shear for an ensemble of galaxies is
+galaxy (BCG) are taken as the centre of the cluster. The     computed as the weighted average of the corrected polarisa-
+BCGs were selected based on a visual inspection of the data      tions
+(Bildfell et al. 2008).                                                                                     γ                                     P wnχi,n/P n
+                                                                                                 gi = n                   ,                 (3)
+                                       P wn
+2.2  Source selection                                                              n
+Objects were detected in the coadded images using the     where the index i indicates the two Cartesian components of
+pipeline described in Hoekstra et al. (2012). To measure      the shear and the sum runs over all galaxies in the sample.
+the weak-lensing signal around the clusters we select objects      In practice, we measure the reduced shear gi = γi/(1 −κi),
+with an r-band magnitude 20 ⩽mr ⩽24.5. Following H15     where γ is the true shear of the object and the convergence
+                                                  κ is a measure of the magniﬁcation and change in size of an
+                                                                object due to gravitational lensing (Bartelmann & Schneider
+2 To improve readability we show all large tables in the appendix.      2001). The reduced shear g therefore deviates from the true
+
+
+MNRAS 000, 1–20 (2019)
+4   Ricardo Herbonnet et al.
+
+
+shear γ. However, for most radii of interest κ is very small      to compute the critical surface density for the full source
+and the diﬀerence between g and γ is negligible, although      population. This assumption introduces a bias in our shear
+we take it into account in our analysis. Henceforth, we refer      estimates which can be approximately corrected for by mul-
+to the reduced shear g as the shear. We decompose the shear      tiplying our shear estimates by
+into a cross and tangential component relative to the lens,
+                                                                   ⟨g(β) ⟩          ⟨β2⟩
+where the tangential shear gt can be related to the projected                                                                        ⟨g(⟨β⟩) ⟩≈1 +  ⟨β⟩2 −1  κ            (5)mass of the lens and the cross shear can be used to ﬁnd
+systematic errors (Schneider 2003).                           (Equation 7 in Hoekstra et al. 2000). The numerator ⟨g(β)⟩
+   H15 used extensive image simulations to quantify the        is the average shear using a redshift for each source and the
+multiplicative bias that arises from noise in the data and the     denominator ⟨g(⟨β⟩)⟩is the average shear using an average
+imperfect correction for blurring by the PSF. The MENeaCS      lensing eﬃciency for the whole population of sources ⟨β⟩.
+data are similar in terms of depth and image quality com-     The width of the distribution of the lensing eﬃciency ⟨β2⟩
+pared to the observations of the CCCP that were analysed      corrects the shear for the use of a single value of ⟨β⟩. For
+in H15; therefore we use the same correction scheme. The     our local clusters most sources are so distant that there is
+correction is a function of the signal-to-noise ratio (SNR)        little variation in the value of β. Indeed, we ﬁnd that the
+and the measured size of the galaxies. A potentially im-      ratio ⟨β2⟩/⟨β⟩2 ≈1 for most clusters and so this correction
+portant diﬀerence with the CCCP analysis is that the in-        is very small for our analysis3.
+dividual exposures are oﬀset from one another. This could      A reference sample of ﬁeld galaxies can serve as a proxy
+lead to a complicated PSF pattern in the combined images.      for the source population in our observations in order to
+However, tests on the CCCP data indicate that this results     compute ⟨β⟩. For this we use the COSMOS ﬁeld which has
+in a negligible change in the mass estimates. Moreover, the      received dedicated deep photometric and spectroscopic cov-
+large number of exposures, combined with the smooth PSF      erage so that reliable redshift estimates are available. In our
+pattern results in a smooth PSF when measured from the      analysis we use the latest COSMOS2015 catalogue of Laigle
+mosaics. We applied the selection of Equation 1 to the image      et al. (2016) containing photo-z’s based on over 30 diﬀer-
+simulations studied in H15 and found that the shear biases      ent ﬁlters. This catalogue has two important beneﬁts for
+were unchanged. Consequently, we use the same parame-     our analysis. First, near-infrared data from the UltraVISTA
+ters as they used to correct for the biases in the method.    DR2 are included, so that the Lyman and Balmer/4000 ˚A
+H15 estimated that the systematic uncertainties in the clus-      breaks can be distinguished. The additional knowledge on
+ter masses caused by the shape measurements is less than      these features helps to address the degeneracy between low
+2%, which is also adequate for the results presented here.     and high redshift galaxies. Second, the catalogue also in-
+The image simulations did not have input shears larger than      cludes the CFHT r ﬁlter, so that we can easily match it to
+0.07, so that the calibration is not reliable for larger shears.     our data. Although the objects in the COSMOS2015 cata-
+Therefore we restrict our analysis to data beyond 0.5 Mpc      logue were not selected based on their r-band magnitude, we
+from the cluster centre, where shears are small enough to be     ﬁnd that the catalogue is nearly complete down to mr ≈25,
+reliably calibrated.                                          suﬃcient to cover the full magnitude range 20 ⩽mr ⩽25
+                                                                        for all our clusters. From comparisons to spectroscopic data
+                                                                 Laigle et al. (2016) found that their redshift estimates are
+                                                              accurate to better than a percent, and 2% for high redshift3 PHOTOMETRIC SOURCE REDSHIFT
+                                                                     galaxies, which is suﬃcient for this study. We select galax-  DISTRIBUTION
+                                                                             ies from the matched catalogue using the TYPE parameter,
+Gravitational lensing is a geometric phenomenon and the     which classiﬁes objects as either stars or galaxies.
+amplitude of the eﬀect depends on the distances involved.        The COSMOS2015 catalogue is not representative of
+This dependency is parametrised by the critical surface den-     our lensing catalogues, as the latter are subject to various
+sity                                                             cuts (Section 2). Gruen & Brimioulle (2017) have shown that
+                               c2   1                             these selection eﬀects can introduce a bias in the mass es-
+                       Σcrit =                  ,                  (4)      timates. To account for this, we ran our lensing pipeline on
+                    4πG Dol β
+                                                         r-band observations of the CFHT Legacy Survey (CFHTLS)
+where the lensing eﬃciency β =  max(0, Dls/Dos) con-    D2 ﬁeld which covers ∼1 square degree of the COSMOS ﬁeld
+tains the redshift information about the background galaxy     and matched the lensing catalogue to the COSMOS2015 cat-
+(termed  the  ‘source’). The  angular  diameter  distances      alogue. This enabled us to match the cuts on the lensing
+Dos, Dls, Dol are measured between observer  ‘o’, lens  ‘l’     data to the redshift distribution. We found that applying
+and/or source ‘s’. The deﬁnition of β is such that objects in      the cuts introduces a diﬀerence in the lensing eﬃciency of
+front of the cluster, which are not gravitationally sheared,      only ∼0.5% of ⟨β⟩for all clusters. We use the matched cat-
+do not contribute to the measured signal. For an increasing      alogue for our photo-z analysis, but note that the addition
+source redshift the lensing eﬃciency β rises sharply when      of the cuts does not signiﬁcantly impact our results, nor the
+the source is behind the lens, but it ﬂattens oﬀwhen source      results of H15.
+and lens are far apart.                                      Even after applying the same cuts there may still be
+   We lack photometric information to compute redshifts
+for individual objects in our catalogue and hence we can-
+not determine the critical surface density for each source       3 Applegate et al. (2014) used a slightly diﬀerent expression for
+lens pair. However, as the galaxies are averaged to obtain a       this correction, but given the small impact of Equation 5 changing
+shear estimate, we can use an average lensing eﬃciency ⟨β⟩       this expression should not alter any of our results.
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   5
+
+
+diﬀerences in the distributions of lensing weights, used in     not have lensing measurements for the full COSMOS2015
+the shear estimation, in our data and in the COSMOS ﬁeld      catalogue we only impose the magnitude limits.
+due to diﬀerent seeing conditions. Consequently, directly us-        The previously mentioned photo-z catalogues were all
+ing the photo-z distribution from COSMOS for our lensing      constructed using the LePHARE code (Ilbert et al. 2006). A
+analysis can lead to biases. Therefore we customise our COS-     ﬁnal source of error we investigate is how diﬀerent photo-z
+MOS galaxy population according to the galaxy population      algorithms change the mean lensing eﬃciency. For this we
+in each cluster observation, similar to the procedure in H15.     used the DR3 UltraVISTA catalogue (Muzzin et al., in prep)
+To do this the photo-z catalogue is divided into magnitude      of 1.7 square degrees of the COSMOS ﬁeld, constructed from
+bins. For each magnitude bin i we compute the sum of the      the UltraVISTA survey, where sources were selected in K-
+lensing weights of the COSMOS galaxies in that bin and the     band (see Hill et al. 2017 for a description of the data). In
+mean lensing eﬃciency ⟨β⟩COSMOSi           . Then for the same mag-      the survey area there are stripes with extra deep observa-
+nitude bins we compute the sum of the lensing weights in the      tions covering 0.75 square degrees. The new DR3 catalogue
+cluster data. The lensing weights are used as a reweighting        is made using the same methods described in Muzzin et al.
+factor Ri for the COSMOS magnitude distribution to match      (2013) and photo-z’s are estimated with the EAZY code
+the distribution observed for the cluster. The ﬁnal estimate     (Brammer et al. 2008). We redid our analysis with the DR3
+average lensing eﬃciency for a cluster is                        catalogue and took the diﬀerence between ⟨β⟩and our ⟨β⟩
+                                                        from COSMOS2015 as the estimate for systematic uncer-
+        ⟨β⟩= X ⟨β⟩COSMOSi      Ri  / X (Ri)                   tainties due to the algorithms.
+                             i                                i                  We estimate our ﬁnal uncertainty δβ by summing all
+        Pj wclusterj,i                                       three error sources quadratically, assuming they are inde-
+          Ri =                       ,                         (6)     pendent. Cosmic variance is the dominant source of uncer-
+       Pj wCOSMOSj,i
+                                                                        tainty, slightly higher than the redshift estimation and the
+where the subscript i designates a magnitude bin and j the      Poisson error is negligibly small. The δβ estimates are listed
+objects falling into that bin. For each cluster the value of      in Table A1. The uncertainty δβ is on average ∼2%, but
+⟨β⟩is listed in Table A1. We use ⟨β⟩to compute the aver-      increases to 9% for the highest redshift cluster, because the
+age critical surface density with which we estimate cluster      photo-z’s are more uncertain for the higher redshift objects
+masses. In order to apply Equation 5 we also require ⟨β2⟩,      in the COSMOS catalogue. Also, CCCP clusters have larger
+which is calculated the same way and listed in Table A1. The     δβ values than MENeaCS clusters due to the fainter source
+higher values of β for the CCCP clusters at similar redshifts     sample for CCCP.
+as MENeaCS clusters are due to the diﬀerent magnitude
+range 22-25, compared to 20-24.5 for MENeaCS. Magniﬁ-
+cation by the cluster can change the distribution of mag-
+                                                  4 CONTAMINATION OF THE SOURCE
+nitudes and redshifts of background galaxies compared to a
+                                       POPULATION BY CLUSTER MEMBERS
+reference ﬁeld. We checked the eﬀect of changing the magni-
+tude ranges by 0.02 magnitudes, as an estimate of the eﬀect     The galaxy catalogue from the lensing analysis contains both
+of magniﬁcation by the cluster and found that this has only      ﬁeld galaxies and cluster members. Cluster members are not
+a small eﬀect on ⟨β⟩.                                         sheared by the gravitational potential of the cluster and
+   The redshift distribution in our catalogue is based on 1      keeping them in the sample will alter the shear signal. If
+square degree of the COSMOS ﬁeld and might not be repre-      cluster galaxies are not intrinsically aligned (indeed Sif´on
+sentative for all source populations in our observations. This      et al. 2015 found no alignment), their presence dilutes the
+cosmic variance introduces an uncertainty in the mean lens-      shear signal, biasing the shear estimate low, where the size of
+ing eﬃciency ⟨β⟩. We estimate the impact of cosmic variance      the bias depends on the relative overdensity of cluster mem-
+using the photo-z catalogues of Coupon et al. (2009) for the      bers compared to background galaxies. Galaxies in front of
+four CFHTLS DEEP ﬁelds. Again we analysed these ﬁelds      the cluster also dilute the shear signal, but these are taken
+with our own weak-lensing pipeline and matched these cat-      into account by the average critical surface density.
+alogues to introduce the lensing selections. These photo-z’s        With reliable colours for individual galaxies, cluster
+are based on ﬁve optical bands and hence are not as reliable     members can be identiﬁed and removed from the sample (e.g
+as the COSMOS2015 catalogue. However, because the four     Medezinski et al. 2018a; Varga et al. 2019). However, we lack
+ﬁelds were analysed consistently they may serve as an esti-      the required multi-band observations. Instead, as was done
+mate of the variation in redshift distributions due to cosmic     by H15, we apply a ‘boost correction’ to statistically correct
+variance. For each cluster we compute the weighted average       for cluster member contamination. This approach oﬀsets the
+⟨β⟩for the 4 ﬁelds and use the standard deviation between      dilution of the shear by boosting the shear signal based on
+them as the error due to cosmic variance.                      the fraction of cluster members to background galaxies. The
+    In addition to cosmic variance, there are Poisson errors      application of the boost correction relies on the assumption
+in ⟨β⟩due to ﬁnite statistics. The Poisson errors are esti-      that only cluster members aﬀect the galaxy counts. We in-
+mated by comparing the lensing eﬃciency in the CFHTLS      vestigate the eﬀects that violate this assumption in the next
+D2 ﬁeld with the lensing eﬃciency in the remainder of the      sections and take them into account to obtain a reliable
+COSMOS ﬁeld, where we assume that both regions of COS-      estimate of the density of cluster members relative to the
+MOS have the same underlying distribution of galaxies. We      density of background galaxies, from which we compute the
+compare the lensing eﬃciency for galaxies in the appropriate     boost correction.
+magnitude range for each cluster for both regions and use        As noted in Section 2, close proximity to bright objects
+the diﬀerence as a measure of the Poisson error. As we do     can aﬀect the measured shapes of galaxies, changing the
+
+
+MNRAS 000, 1–20 (2019)
+6   Ricardo Herbonnet et al.
+
+
+                                                   members are large on the sky. To address this issue we use
+      0.8                                                      the results of Sif´on et al. (2018b), who used image simu-
+                                            individual cluster            lations of the MENeaCS clusters to compute the eﬀect of
+      0.7
+                                   A2029                     obscuration. Their cluster image simulations were designed
+                                        ﬁt A2029                  to mimic the observations as closely as possible to accu-      0.6
+                                         average                     rately predict the eﬀect of obscuration. For each simulated
+      0.5                                                            cluster image the seeing and noise level were set to the val-
+                                                             ues measured in the data. Background galaxies were cre-
+      0.4    fobsc                                                        ated with the image simulations pipeline of H15, which is
+                                                          based on the GalSim software (Rowe et al. 2015), and clus-      0.3
+                                                                      ter galaxies were added to the images. Sif´on et al. (2015)
+      0.2                                                        identiﬁed cluster members through spectroscopy or as part
+                                                                       of the red sequence. Where available, the GALFIT (Peng
+      0.1                                                            et al. 2002) measurements of Sif´on et al. (2015) were used to
+                                                                  create surface brightness proﬁles for galaxies. The distribu-
+      0.0
+         0.0     0.5     1.0     1.5     2.0     2.5     3.0        tions of measured GALFIT properties were then modeled
+                     R[h−170 Mpc]                        with parametric curves. Some cluster members did not have
+                                                                        (reliable) GALFIT measurements, and instead their prop-
+                                                                         erties were randomly sampled from these curves to create a
+                                                                  surface brightness proﬁle for the simulated images. We ran
+Figure 1. Obscuration of source galaxies by cluster members in      the analysis pipeline on both the background image and the
+realistic image simulations of MENeaCS clusters as a function of      cluster image producing two lensing catalogues. By match-
+radial distance to the cluster centre. Gray lines show the obscu-      ing these catalogues, all background galaxies can be selected
+ration proﬁle for individual clusters and the black points show
+                                                     and the eﬀect of cluster members on the weight density of
+the average for all clusters. The red line is an example of our ﬁt-
+                                                              the background population can be determined. We deﬁne
+ting function to the obscuration proﬁle of cluster A2029, which
+                                                              obscuration asis shown as the black line. The region of interest for our lensing
+analysis           is beyond 0.5 Mpc, where obscuration is on average only
+                                                                                               fobsc = 1 −ξcl ,                   (7)a few percent.
+                                                                                                   ξbg
+
+                                                        where ξcl and ξbg are the weight densities of all observed
+measured shear signal. We incorporate this eﬀect by quanti-                                                        background galaxies in the cluster simulation and in the
+fying the boost correction in terms of the sum of the lensing                                                        background simulation, respectively.
+weights per square arcminute, which we call the weight den-
+                                                                   In Figure 1 we show the resulting obscuration in bins
+sity ξ. Here we only compute the boost corrections for ME-
+                                                                       of projected cluster centric distance R for individual clus-
+NeaCS clusters and for CCCP cluster we use the corrections
+                                                                       ters in gray, and in black the average for all clusters. The
+calculated in H15.
+                                                              eﬀect of obscuration is greatest close to the cluster centre,
+                                                        which is expected because of the presence of the low redshift
+4.1  Magniﬁcation                                 BCGs. At radii larger than 1 Mpc the obscuration ﬂattens
+                                                           out but does not reach zero, even though we do not expect
+Gravitational lensing near the cluster core magniﬁes the      cluster members to obscure ∼5% of all background galax-
+background sky. This phenomenon increases the observed       ies in these outer regions. Instead, this plateau is caused by
+ﬂux of background galaxies, but it also reduces the actual      ﬁeld galaxies entering the cluster member sample, as Sif´on
+area behind the cluster that is observed. These two features      et al. (2015) showed that their sample of red sequence se-
+counteract each other in their eﬀect on the observed num-      lected cluster members is contaminated at large radii. The
+ber density of sources. The net eﬀect depends on the num-      simulated sample of cluster members lacks faint blue galax-
+ber of galaxies scattered into the magnitude range that we       ies, but we expect that their obscuration is minimal over the
+designate for our lensing study. The observed number of     range of interest: 0.5 < R < 2.0 Mpc. Their addition to the
+galaxies increases with the magniﬁcation µ as µ2.5α−1 (Mel-      obscuration would introduce a negligible contribution to the
+lier 1999). Hence, for a slope of the magnitude distribution     boost correction and we ignore them in our analysis.
+α = dlogNsource/dmshape = 0.40 the net eﬀect is negligible.       We determine an obscuration correction for the back-
+For the MegaCam r-band data H15 computed that the slope     ground weight density in the MENeaCS data by ﬁtting a
+is close to 0.40 and so we can safely ignore the eﬀect of mag-     smooth function to the individual cluster obscuration pro-
+niﬁcation on the source population, especially for the data      ﬁles shown in gray in Figure 1. We ﬁnd that the expression
+beyond 0.5 Mpc from the cluster centre.
+
+                                                                                     1          1
+                                                                      fobsc(R) = n∆+ n0      −                      ,    (8)
+4.2  Obscuration                                           R + Rc   Rmax + Rc
+
+Cluster members are large foreground objects and obscure     worked well to describe the obscuration for R < Rmax = 3
+part of the background sky, thereby reducing the number     Mpc. The obscuration is set to n∆beyond Rmax. On aver-
+density of observed background galaxies. This reduction af-      age, Rc ≈0.04 Mpc and n0 ≈0.04 produce the best ﬁts
+fects our boost correction scheme. This phenomenon is es-      to the obscuration proﬁles. The parameter n∆was ﬁt to
+pecially important for MENeaCS as the low redshift cluster      capture the plateau at large radii. When creating the obscu-
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   7
+
+ration proﬁle to be applied to the data, n∆is set to zero to
+renormalise the data such that fobsc is consistent with zero             1.40
+beyond 1.5 Mpc. The best ﬁts to the obscuration proﬁles to                                                         z < 0.1
+individual clusters were then used to correct the background                                                                                                                        z ≥0.1                                                                          1.30
+galaxy counts in the MENeaCS data.                                                                                                          all
+
+
+                                                                          1.20
+4.3  Excess galaxy weight density
+Now that we have a correction for the decreased weight den-                ⟨ξ/ξﬁeld⟩1.10
+sity due to obscuration, we can determine the excess weight
+density of all sources in the MENeaCS lensing catalogues
+relative to the weight density of background objects as a             1.00
+function of cluster-centric distance. This then provides the
+boost correction for the shear signal to correct for contami-
+nation of the source sample by cluster members.                        0.90
+                                                                                 0.0     0.5     1.0     1.5     2.0     2.5     3.0
+   The ﬁrst step to compute the excess weight density is                          R[h−170 Mpc]to determine the weight density of background objects. H15
+used a halo model prediction to check that at 4 Mpc the
+                                                                        0.04structure associated to the cluster is a negligible contribu-
+tion to the number density of ﬁeld galaxies and used the                                                                        0.03
+area outside that 4 Mpc to estimate the ﬁeld galaxy den-
+sity. The low redshift of the MENeaCS sample means that            0.02
+the ﬁeld of view does not encompass 4 Mpc for all clusters.
+Only the highest redshift clusters have suﬃcient area out-            0.01side 3 Mpc for statistically meaningful estimates. To com-          −fcont⟩
+                                                                        0.00pensate for this lack of data, we use ancillary publicly avail-
+able observations of blank ﬁelds to obtain an estimate of the
+weight density of ﬁeld galaxies ξﬁeld (as was also suggested         −0.01                                                                                                         ⟨ξ/ξﬁeld
+by Schrabback et al. 2018). We selected 41 ﬁelds of deep
+CFHT data that do not contain clusters and have deeper         −0.02                                      z < 0.1
+                                                                                                                    z ≥0.1imaging and have seeing values smaller than our observa-                                                             −0.03                                                  all
+tions. We analysed ∼33 square degrees of those ﬁelds with
+our lensing pipeline and we derive a parametric model for the         −0.040.0     0.5     1.0     1.5     2.0     2.5     3.0
+ﬁeld galaxy weight density ξﬁeld in Appendix B. The value                         R[h−170 Mpc]of ξﬁeld  is a function of the Galactic extinction, depth of
+the observations, and the seeing, and it predicts the mean
+density with an uncertainty of 1%. We use this model to     Figure 2. Top: Excess weight densities of all sources in the mag-
+predict the weight density of ﬁeld galaxies for each cluster      nitude range 20 ⩽mr ⩽24.5 in the lensing catalogues as a
+based on the seeing, depth and the Galactic extinction in      function of radial distance to cluster centre. The excess weights
+the observations (listed in Table A1).                              are determined from the ratio of the weight density ξ corrected
+    In the top panel of Figure 2 we show the excess weight       for obscuration and the average weight density for ﬁeld galaxies.
+density ξ/ξﬁeld (the obscuration corrected weight density      Black points with errorbars show the average excess weight den-
+                                                                                sity for the full MENeaCS sample, the blue (red) shaded area fornormalised to the weight density of ﬁeld galaxies), as a func-
+                                                                                        all z < 0.1 (z ⩾0.1) clusters. The width of the coloured regions
+tion of the distance to the BCG. Points with errorbars show
+                                                          show the uncertainty on the mean excess weight density. The dot-
+the average excess weight density for all clusters and blue                                                                   ted line represents no contamination. The region shown in white
+(red) shaded regions show the average excess weight den-      between 0.5 Mpc and 2 Mpc is used for the lensing analysis in
+sity for clusters at z < 0.1 (z ⩾0.1). The contamination by      Section 5.1, in which the contamination is on average ∼5%. Bot-
+cluster members is benign for the MENeaCS clusters; the      tom: Same as top panel, but showing the average weight density
+excess weight density is higher than 20% only within the       of galaxies after the best ﬁt model for contamination for each
+inner 500 kpc. For the lensing analysis we only use sources      individual cluster has been subtracted.
+beyond 500 kpc (and sources beyond 2 Mpc are excluded
+due to mass modelling issues, see Section 5), so the eﬀect of
+                                                                      local substructure, but any additional uncertainty this intro-
+contamination is small.
+                                                            duces will average out for the full ensemble of clusters. Like
+                                                 H15 we use Equation 8, where the amplitude of the contam-
+                                                                 ination n0 and the cluster core radius Rc are ﬁtted for each
+4.4  Boost correction
+                                                                     cluster individually. The maximum radius Rmax = 3 Mpc is
+The excess weight density per cluster is a noisy measurement      the limit beyond which the function is set to n∆. In Figure
+and using it directly to boost the shear signal can produce     2 the excess weight density already vanishes beyond 2 Mpc,
+a spurious signal. Instead, we assume that the density of      so setting Rmax = 3 Mpc is reasonable for MENeaCS. All
+cluster members is a smooth function of the cluster-centric    CCCP clusters were small enough in angular coordinates so
+radius. This assumption will not be valid if the cluster has      that H15 could set n∆= 1. However, our prediction for ﬁeld
+
+
+MNRAS 000, 1–20 (2019)
+8   Ricardo Herbonnet et al.
+
+
+galaxy weight density has an intrinsic scatter and so we do     where the radial shape of the proﬁle is deﬁned by the scale
+not expect the excess weight density for individual clusters      radius rs 4. The amplitude of the proﬁle is set by the char-
+to converge to 1 at large radii. Therefore we add n∆as a free       acteristic overdensity
+parameter in our analysis. We ﬁnd that the relative spread
+                                             ∆            c3∆
+in n∆is 7.2%, which is in agreement with the 6.4% scatter               δc(∆) =                                    (10)                                                                           3 ln(1 + c∆) + c∆/(1 + c∆),expected from the blank ﬁelds.
+   The ensemble averaged residual, after subtracting the     which depends on the concentration c∆. For a ﬁxed number
+best ﬁt proﬁle for each cluster from its excess weight density,     ∆, the concentration c∆is the ratio of the radius r∆enclos-
+is shown in the bottom panel of Figure 2. Again, we separate      ing a sphere of density ∆ρ0 and the scale radius: c∆= r∆/rs.
+the sample in low redshift (z < 0.1, blue) and high redshift     The mass within this region can be obtained from:
+(z ⩾0.1, red) clusters and the full sample is denoted by                                                                                     4π
+the black points. For most radii the average residual is con-          M∆= M(∆, r∆) = ∆ρ0   r3∆.          (11)
+                                                                                            3
+sistent with zero within the errors, regardless of the mean
+                                                  The density ρ0 is usually set to the critical density of theredshift of the sample. This shows that Equation 8 is a de-
+                                                             Universe ρcrit = 3H(z)2/8πG.cent description of the density of cluster members. At R ≈3
+                                            We follow the deﬁnitions in Wright & Brainerd (2000)Mpc the observed area for z < 0.1 clusters is decreasing
+                                                                to ﬁt a projected NFW proﬁle to our lensing signal. Wewhich greatly increases the errorbars and the crowded clus-
+                                                        combine their expressions for γ and κ to create an NFWter centre is not accurately described by the ﬁtting function.
+                                                               proﬁle for the tangential reduced shear g, again with theHowever, for the lensing analysis in Section 5.1 we restrict
+                                                                 additional terms given in Equation 5. The free parametersourselves to 0.5 - 2 Mpc for which the residual is consistent
+                                                                    in the NFW model are correlated and the concentrationwith zero with an uncertainty of ∼1.5%. The best ﬁt proﬁles
+                                                         depends on redshift. In practice, the concentration is con-will serve as a boost correction for the shear signal of clus-
+                                                                 strained using numerical dark matter simulations. We followters to statistically correct for contamination of the source
+                                                 H15 and use the mass concentration relation found by Dut-population by unlensed cluster members.
+                                                           ton & Macci`o (2014), which is in agreement with later work
+                                                        (Diemer & Kravtsov 2015). With the addition of the mass-
+                                                               concentration relation, our ﬁtting function only has the mass
+5  MENeaCS CLUSTER MASSES               M∆as a free parameter. The scales at which we ﬁt our NFW
+                                                      model are restricted to 0.5 - 2 h−170 Mpc scales, because atIn the previous sections we have computed the corrections
+                                                                   large radii the two-halo term begins to dominate the sig-
+owing to the lack of individual redshift estimates for the
+                                                                       nal. For the nearest clusters the ﬁeld of view is not large
+source galaxies and the presence of cluster members in the
+                                                       enough to reach 2 Mpc and instead we take an outer radius
+source sample. We now apply these corrections to the mea-                                                                       of 1500′′. We compute the mass at overdensities of 200 and
+sured tangential shear and use the resulting shear as a func-
+                                                         500 times ρcrit, M200 and M500, respectively. In Appendix
+tion of cluster-centric distance to estimate the weak-lensing
+                                        C we compute the ratio of our mass estimates from NFW
+masses using two diﬀerent methods. Only data beyond 0.5
+                                                                ﬁtting and the true mass using simulations and ﬁnd it to
+Mpc are used in the mass calculations, because the shear
+                                                        be 0.93 and 0.97 at r200 and r500, respectively. The masses
+calibration was not tested for large shear values (Section 2),
+                                                     computed for the MENeaCS and CCCP cluster masses with
+and the (residual) contamination is small far from the clus-
+                                                           our pipeline are divided by these values and the corrected
+ter centre (Section 4). In addition, this radial cut reduces
+                                                          masses are listed in Table A2.
+the impact of miscentring (see Section 5.3).
+                                                                                 It is instructive to compare our best ﬁt NFW masses
+   The mass modelling pipelines described in the next two
+                                                                to other available mass estimates. We discuss one compar-
+sections may not perfectly recover the cluster mass. We
+                                                                  ison here and discuss other weak-lensing measurements in
+check the accuracy of the pipelines with the state-of-the-
+                                                               Section 6. Rines et al. (2016) have used spectroscopic red-
+art HYDRANGEA cluster simulations (Bah´e et al. 2017;
+                                                                          shifts to identify caustics in the phase-space distribution of
+Barnes et al. 2017), ﬁnding that our masses are underes-
+                                                 member galaxies, which can be related to the escape veloc-
+timated by only 3-5%. The details of this analysis can be
+                                                                         ity in the cluster potential. They provide M200 dynamical
+found in Appendix C. To account for scatter due to uncor-
+                                                          masses for 25 MENeaCS clusters and 15 CCCP clusters and
+related structures along the line of sight (Hoekstra 2001), we
+                                                              the comparison to our lensing estimates is shown in Fig-
+use predictions from Hoekstra et al. (2011a) to incorporate
+                                                              ure 3. It is clear that the weak-lensing masses are generally
+the eﬀect into the errorbars on our weak-lensing masses.
+                                                               higher than the dynamical masses. This discrepancy is con-
+                                                                       sistent for both the MENeaCS and the CCCP sample. H15
+                                                                discussed that the discrepancy could be reduced (but not
+5.1  Navarro-Frenk-White proﬁle
+                                                         removed) for CCCP by excluding outliers that were com-
+An often used proﬁle to describe dark matter haloes is the     mented upon by Rines et al. (2013). The bulk of the ME-
+Navarro-Frenk-White (NFW) proﬁle, which is known to be    NeaCS clusters have consistently higher weak-lensing mass
+a good ﬁt to observational data (e.g. Okabe et al. 2013;     compared to the dynamical mass, making it diﬃcult to ex-
+Umetsu et al. 2014; Viola et al. 2015). In numerical simula-      plain the diﬀerence based on individual clusters. We also
+tions Navarro et al. (1997) found a universal proﬁle for the
+density of dark matter haloes
+                                                                        4 Here the radius r and the scale radius rs are three dimensional
+                 ρ(r)        δc(∆)                                 quantities in contrast to the capitalised two dimensional cluster-
+            =                            ,              (9)
+                 ρ0     (r/rs)(1 + r/rs)2                           centric radius R.
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   9
+
+
+
+
+
+                                                                                       1015
+ M⊙]1015  70                                                     [M⊙][h−1
+                                                                                      500   200                                                                          MNFWMWL
+                                                                                       1014
+
+
+     1014                                                                                            1014                           1015
+        1014                             1015                                  Map500[M⊙]
+                 Mdyn200 [h−170 M⊙]
+
+
+                                                         Figure 4. Comparison of the M500 mass measured with the de-
+Figure 3. Comparison of the weak-lensing masses MWL200 and the      projected aperture method and NFW ﬁtting for MENeaCS clus-
+dynamical caustic masses Mdyn200 from Rines et al. (2016). Black       ters in black and CCCP clusters in gray. The line shows equality.
+points show our results and gray points show the results for CCCP
+clusters from H15. The dashed line shows unity slope.
+
+
+ﬁnd no correlation between the state of relaxedness of the
+clusters (see Section 6) and the diﬀerence in caustic and      spectively. R2 has to be chosen far enough away from R1
+weak-lensing mass. The discrepancy is much larger than the      to reduce the impact of the assumption of an NFW proﬁle
+several percent level systematic errors we have computed for       for κ(R2 < R ⩽Rmax), but it must also not be to close to
+the lensing masses. We could not ﬁnd a satisfactory expla-     Rmax to avoid large uncertainties in the integral from R2 to
+nation for the discrepancy of the mass estimates, but we     Rmax in Eq. 12. We set R2 = 900′′ + 400′′(0.15 −zcl) so that
+note that dynamical masses can suﬀer from large biases and      the lowest redshift clusters at zcl ≈0.05 have the thinnest
+scatter (Old et al. 2015, 2018; Armitage et al. 2018).             annuli, allowing for measurements around R1 =1 Mpc. For
+                                        CCCP we do not alter the R2 and Rmax values from H15:
+                                                                        600′′ to 800′′ for clusters observed with CFH12k and 900′′
+5.2  Aperture masses                                       to 1500′′ for clusters observed with MegaCam. The R2 and
+                                                   Rmax values used for each cluster in physical units are listedAn alternative to ﬁtting density proﬁles to the data is to
+                                                                    in Table A1.directly measure the mean convergence in an aperture of
+                                         A drawback of Eq. 12 is that it only provides a measureradius R1 relative to the density in an annulus at R2 and
+                                                                        for the projected mass, whereas most other mass proxiesRmax using the expression
+                                                                are calculated inside a sphere. To deproject the aperture
+  κ(R ⩽R1) −κ(R2 < R ⩽Rmax) =                       mass estimates we assume that the matter along the line
+    Z R2            R2max   Z Rmax                           of sight is distributed as an NFW proﬁle. In practice we
+   2     ⟨γt⟩dlnR + 2                 ⟨γt⟩dlnR      (12)      ﬁrst ﬁnd the NFW mass M∆(again with the Dutton &
+     R1              R2max −R22  R2                                                                 Macci`o 2014 mass-concentration relation) that reproduces
+(Clowe et al. 1998). This relation gives a direct measurement      the mean convergence κ(R ⩽R1) measured from the data
+of the mean surface mass density, but requires knowledge     with Eq 12. Then for that NFW proﬁle we calculate the
+of the mean convergence in the annulus and the tangential      spherically enclosed mass at R1 as the deprojected aper-
+shear proﬁle, both of which are unknown. Fortunately, these      ture mass. We repeat this for the range of R1 for which
+can be estimated using the convergence proﬁle of the best     we measured the 2D mean convergence. We interpolate be-
+ﬁt NFW proﬁle. Far from the cluster centre the convergence     tween measurements to ﬁnd r500. The radius r200 is larger
+will be small, so the diﬀerence between shear γ and reduced     than the available ﬁeld of view for many clusters and even
+shear g should be negligible, and if R2 is chosen far from the      r500 is barely in view for the nearest clusters. In Appendix
+aperture radius R1, the contribution of the annulus should    C we determine the bias in aperture masses using the HY-
+be modest and any bias from the assumption of the NFW   DRANGEA cluster simulations and ﬁnd that masses are
+proﬁle small.                                                underestimated by ∼2% for most of the sample. The M500
+    In practice, the low redshift of the MENeaCS clusters     and r500 estimates are corrected accordingly and listed in
+limits the physical values of R2 and Rmax that will ﬁt in-     Table A2. The deprojected aperture masses are in reason-
+side the MegaCam ﬁeld of view. We choose an outer radius      able agreement with the NFW masses (see Figure 4) for
+Rmax = 1500′′ based on the degradation of quality of the     our cluster sample. A simple linear ﬁt with bootstrap errors
+observations outside that radius. This corresponds to 1.3     shows that M500NFW /M500=0.98±0.03.ap            This is in good agree-
+Mpc, 2.7 Mpc, and 3.9 Mpc at z = 0.05, 0.10, 0.15, re-     ment with our results from the HYDRANGEA simulations.
+
+
+MNRAS 000, 1–20 (2019)
+10   Ricardo Herbonnet et al.
+
+
+5.3  Systematic error budget                                related to the calibration of X-ray temperature (Mahdavi
+                                                                    et al. 2013; Schellenberger et al. 2015), and possibly by the
+A large part of this work has been devoted to corrections for
+                                                          assumption of a pressure proﬁle. Planck Collaboration et al.
+systematic eﬀects. Here we review their impact on our mass
+                                                            (2016b) ﬁnd that a bias MP lanck/Mtrue ≡1−b = 0.58±0.04
+estimates.
+                                                                                     is required to attain consistency between cosmological pa-
+  • In our analysis we have assumed that the centre of the     rameter constraints obtained with the cluster mass func-
+cluster is given by the location of the BCG. If the BCG is      tion and those obtained using primary CMB measurements
+not at the bottom of the gravitational potential the mass     (Planck Collaboration et al. 2016a). Such a low bias is not
+estimates will be biased. However, Hoekstra et al. (2011b)       fully supported by independent weak-lensing mass measure-
+show that for our conservative choice of 0.5 Mpc as the lower     ments. von der Linden et al. (2014b) ﬁnd 1−b = 0.69±0.07,
+limit of the ﬁt range the bias is only ∼5% if the BCG is 100     which is consistent with 0.58 ± 0.04, but H15 ﬁnd a higher
+kpc from the true cluster centre. If the distance between      value 0.76±0.05(stat)±0.06(syst). Penna-Lima et al. (2017)
+the BCG location and the peak in the X-ray surface bright-     found 0.73 ± 0.10, and Smith et al. (2016) and Gruen et al.
+ness is small, they are a good indicator of the centre of the      (2014) ﬁnd that 1−b is consistent with one. Recent measure-
+gravitational potential of the cluster (George et al. 2012).     ments from the Hyper Suprime-Cam Survey found 1 −b =
+Mahdavi et al. (2013) and Bildfell (2013) found that most      0.80 ± 0.14 (Medezinski et al. 2018b) and 1 −b = 0.74+0.13−0.12
+of the CCCP clusters have a BCG oﬀset smaller than 100     (Miyatake et  al. 2019). The recent re-analysis of Planck
+kpc. Lopes et al. (2018) also ﬁnd the distance between the   CMB cluster lensing has found 1−b = 0.71±0.10 by Zubel-
+X-ray peak and the BCG for a dozen of the MENeaCS clus-      dia & Challinor (2019). However, Battaglia et al. (2016)
+ters to be ≲100 kpc, with only 4 BCGs further than 10 kpc     showed that adding a correction for Eddington bias would
+oﬀfrom the X-ray peak. We thus expect a miscentring bias     move the results of WtG and CCCP more in line with the
+to be negligibly small compared to our statistical errors for      required value for consistency.
+our mass estimates.                                                In Figure 5 we show our weak-lensing aperture mass
+  • The uncertainty in the shear estimates for our pipeline     measurements MWL(R500WL,ap        xBCG) within the weak-lensing
+was tested by H15 and they found an accuracy of ∼1%. They      derived R500WL, centered on the BCG position xBCG, as our
+conservatively assign a 2% uncertainty in their analysis and      best estimate of the total cluster mass, and the SZ masses
+we do the same.                                           MSZ(R500SZ, xSZ) based solely on the Planck measurements
+  • Thanks to the new high-ﬁdelity COSMOS2015 photo-z       of R500 and the cluster center. The Planck SZ masses were
+catalogue, the uncertainty in our source redshift distribution      extracted using the MMF3 pipeline (Planck Collaboration
+is on average 2%. For MENeaCS it is ≲1% and for CCCP it      et al. 2016c). Not shown in the ﬁgure are A115N, A115S,
+is between 2% and 9%, increasing with cluster redshift, due    A223N and A223S from our sample, because A115 and A223
+to the increase in uncertainty for faint and distant galaxies     were measured as single clusters by Planck. Like H15, we
+in our utilized photo-z catalogues.                                also omit A2163 from the sample. We ﬁt 61 clusters to
+  • The boost corrections applied to our tangential shear      constrain 1 −b ≡MSZ/MWL. We use the LRGS R-package
+proﬁles are accurate to ∼1.5%.                            (Mantz 2016) to perform the ﬁt allowing for intrinsic scat-
+  • The uncertainty on the mean mass deduced from cluster       ter. The aperture mass measurements are taken as the weak-
+simulations is ∼3% for NFW masses and ∼2% for aperture      lensing masses, but similar results are obtained when using
+masses.                                                       the NFW masses. The best ﬁt value is 1 −b = 0.84 ± 0.04
+                                                           with an intrinsic scatter of 28 ± 5% in the lensing mass at a
+   We treat these sources of errors as uncorrelated and
+                                                               given SZ mass. This relation is shown in Figure 5 as the red
+we add them quadratically to ﬁnd an average systematic
+                                                                              line. This value of the mass bias is somewhat higher, but
+error of 4.5%. This value decreases for low redshift clusters
+                                                                  consistent with most weak-lensing results from the litera-
+and when using the aperture masses. The dominant error
+                                                                     ture. The intrinsic scatter is expected to be dominated by
+sources are the mass modeling, which can be improved with
+                                                              the scatter in the weak-lensing mass due to the triaxial na-
+more simulations tailored to our selection of clusters, and
+                                                                ture of dark matter haloes (e.g. Herbonnet et al. 2019) and
+the photometric redshift distribution.
+                                                           our result is consistent with the scatter found in simulations
+                                                                           (e.g. Meneghetti et al. 2010; Henson et al. 2017). However,
+                                                  we note that both lensing and SZ measurements are sensi-
+6 COMPARISON WITH SZ AND X-RAY
+                                                                       tive to halo orientation and this correlation will lower the
+The Planck all-sky survey has produced a large catalogue     measured intrinsic scatter.
+of clusters detected through the SZ eﬀect (Planck Collab-          Selection eﬀects can strongly aﬀect the inferred scaling
+oration et al. 2016c). Planck Collaboration et al. (2016b)      relation (e.g. Mantz 2019). However, the selection function
+used 439 clusters to constrain cosmological parameters by      for our combined sample of MENeaCS and CCCP is not
+measuring the cluster mass function. Cluster masses were       trivial and we do not attempt to incorporate selection bi-
+computed using a scaling relation between the hydrostatic      ases into our analysis. To investigate the eﬀect of diﬀerent
+X-ray mass and the SZ observable YSZ (integrated Comp-      selection criteria we introduce various selections and then
+ton y-proﬁle) based on a pressure proﬁle, calibrated using     remeasure the mass bias. Given our large sample these se-
+measurements of 20 nearby relaxed clusters (Arnaud et al.      lections do not result in a signiﬁcant loss of statistical power.
+2010). X-ray mass estimates can be biased because the un-     The results of the diﬀerent selections are summarized in Ta-
+derlying assumption of hydrostatic equilibrium is violated in      ble 1.
+galaxy clusters by bulk gas motions and non-thermal pres-          In our tests with cluster simulations (Appendix C) a
+sure support (e.g. Rasia et al. 2012), or due to uncertainties     massive system of two merging galaxy clusters in the plane
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   11
+
+  selection                 Nc       1 −b          IS
+  all                          61     0.84 ± 0.04    28 ± 5%               15.5
+ no very disturbed clusters      43     0.81 ± 0.05    29 ± 6%
+ SNR YSZ > 7.0               49     0.85 ± 0.04    30 ± 6%
+ SNR YSZ > 8.0               39     0.87 ± 0.05    29 ± 7%
+ SNR YSZ > 10.0              29     0.88 ± 0.06    31 ± 8%
+ SNR YSZ > 13.0              20     0.86 ± 0.06    25 ± 14%
+ FX > 3.0 · 10−12 ergs/s/cm2   54     0.87 ± 0.06    30 ± 7%           xSZ)] 15.0 FX > 4.5 · 10−12 ergs/s/cm2   44     0.88 ± 0.05    27 ± 6%
+ FX > 6.0 · 10−12 ergs/s/cm2   36     0.87 ± 0.06    30 ± 7%
+ FX > 9.0 · 10−12 ergs/s/cm2   24     0.91 ± 0.07    25 ± 8%
+
+  selection                 Nc        fgas           IS                                                                                                                                                                                                                                                  [MSZ(R500SZ,
+  all                          41   0.130 ± 0.006   36 ± 16%
+ no very disturbed clusters      27   0.126 ± 0.007   19 ± 16%                                                                                                     log10 14.5
+  relaxed clusters               8    0.139 ± 0.014   24 ± 21%
+
+Table 1. Results from the scaling relation analysis for diﬀerent
+selections of our cluster sample described in the text and the num-
+ber of clusters in that selection, Nc. Comparison of weak-lensing
+masses and the SZ masses from Planck, 1 −b = MP lanck/MWL,                                                                                            14.0
+shown in the top section, and weak-lensing masses and the gas                 14.0                14.5                15.0                15.5
+masses,, fgas = Mgas/MWL, from (Mantz et al. 2016) in the bot-                               log10 [MapWL(R500WL, xBCG)]
+tom section of the table, together with the intrinsic scatter in the
+weak lensing masses (IS).
+
+                                                         Figure 5. Comparison of the weak-lensing masses M500 and the
+                                                                       re-extracted SZ masses from Planck for 61 clusters. Black points
+of the sky has a total mass underestimated by a factor of     show our results and the red line shows the best ﬁt scaling relation
+∼1.4. To identify such very-unrelaxed systems in our sam-      using a constant hydrostatic mass bias, with 1σ uncertainty shown
+ple we used the symmetry, peakiness, and alignment X-ray      as the orange band. The dotted line shows a one-to-one relation.
+measurements from Mantz et al. (2015b), who used these
+to determine the relaxedness of their clusters. Clusters with
+high values for these parameters are deemed relaxed (see      within the large uncertainties. Alternatively, Smith et al.
+their Figure 8) and we call clusters with low values of sym-      (2016) and Gruen et al. (2014) saw a redshift dependence
+metry and alignment very disturbed; we found no added ben-      of the mass bias in their cluster sample, as did Salvati et al.
+eﬁt from including peakiness measurements for our selection.      (2019) in their cosmological analysis of Planck clusters, pos-
+Known major mergers in our full sample, such as A2163 and      sibly arising due to systematic errors in weak-lensing mea-
+A520, fall within this very disturbed category, but our clas-     surements or departures from self-similar evolution. The se-
+siﬁcation does not capture all known mergers (e.g. A754).      lection of the clusters in our sample is loosely based on a
+We then removed these very disturbed clusters from the full     ﬂux limited survey, so we expect mass and redshift to be
+sample and ﬁnd 1 −b = 0.81 ± 0.05 and an intrinsic scatter      correlated. However, since we see no mass trend, we checked
+of 29 ± 6%. The value of 1 −b is consistent with the results       for a redshift trend. The result is shown in the bottom panel
+from the full sample and surprisingly we see no eﬀect on the      of Figure 6 and there is no signiﬁcant redshift dependence
+intrinsic scatter.                                                     of the bias.
+   We imposed SNR cuts on the measured Y SZ observable.         These tests suggest that diﬀerent selections can lead to
+We ﬁnd that 1 −b increases as we impose higher SNR cuts.     a change of up to 0.07 in 1 −b for our analysis. However,
+Applying SNR cuts to the Planck observable can lead to a     a proper determination of the scaling relations including se-
+change in 1 −b of up to 1σ (of the order of 0.04). We also      lection bias requires a more careful analysis (Mantz et al.
+mimicked an X-ray selected sample by imposing a limit on      2016; Bocquet et al. 2019).
+the X-ray ﬂux FX. For this we matched our results to the       We also determine the scaling relation between gas
+MCXC catalogue (Piﬀaretti et al. 2011), where 7 clusters     mass and weak-lensing mass at r500 to obtain the gas frac-
+were not matched. We ﬁnd a change of 0.03 from 1 −b =      tion fgas = Mgas/MWL, which is a cosmological probe (e.g.
+0.84 ± 0.04 when imposing the ﬂux limit of the REFLEX     Mantz et al. 2014). We use the gas masses presented in
+survey (B¨ohringer et al. 2004) of 3 · 10−12ergs/s/cm2 and a     Mantz et al. (2016) for 42 clusters in our sample and mea-
+maximum shift of 0.07 when increasing this ﬂux limit by a      sure the weak-lensing masses within the r500 estimates from
+factor of 1.5, 2.0 or 3.0.                                 Mantz et al. (2016) and around their assumed centres. We
+    Several observations (von der Linden et al. 2014b; H15;     ﬁnd fgas = 0.130 ± 0.006, consistent with 0.125 ± 0.005
+Mantz et al. 2016; Eckert et al. 2019) and simulations (Hen-     (Mantz et al. 2016). The intrinsic scatter is high, but con-
+son et al. 2017) show that 1 −b changes with cluster mass.      sistent within 1σ with the ∼20% found by other studies
+To investigate any trend of 1 −b with mass, we divide our      (Becker & Kravtsov 2011; Mahdavi et al. 2013; Farahi et al.
+cluster sample into four bins in SZ mass with roughly equal      2018). If we remove the very disturbed clusters, for which
+numbers of clusters and repeat our analysis for each bin.      the weak-lensing masses are most likely to be biased, the
+The resulting mass biases are shown in the top panel of Fig-       intrinsic scatter drops by 1σ to 19 ± 16% in line with expec-
+ure 6. We see no signiﬁcant trend with mass for our clusters      tations from Applegate et al. (e.g. 2016). The best ﬁt fgas
+
+
+MNRAS 000, 1–20 (2019)
+12   Ricardo Herbonnet et al.
+
+
+                                        COSMOS ﬁeld to determine a mean lensing eﬃciency reli-
+        1.0                                                       able to 9% for the highest redshift clusters and on average   xBCG)                                                              accurate to ∼2%. The photometric redshift distribution is
+                                                         one of the largest sources of error in our analysis. For the
+        0.9                                                  low redshift MENeaCS clusters trading oﬀmulti-wavelength
+                                                              information against number of observed clusters has proven      WL(R500WL,                                                         worth-while. However, precision can be increased using red-
+        0.8                                                                shift distributions for individual galaxies (Applegate et al.
+                                                            2014) and our analysis is limited by the depth and area of    xSZ)/Map                                                        the auxiliary redshift catalogues.
+        0.7                                              The radial proﬁles of the corrected tangential shear were
+                                                            ﬁt with parametric models to estimate cluster masses, as well
+                                                                as used to determine aperture masses. Both methods are in
+        0.6                                                 agreement on the masses. We calibrate our mass modelling       MSZ(R500SZ,   14.4     14.5     14.6     14.7     14.8     14.9     15.0
+                       log10 [MSZ(R500SZ, xSZ)]                     pipelines using the state-of-the-art HYDRANGEA numeri-
+                                                                      cal simulations of galaxy clusters. Both methods show only
+                                         ≲4% percent level biases with uncertainties of 2-3% at R500
+                                                                    in the cluster simulations and we corrected for these biases.
+        1.0   xBCG)                                             The overall average systematic uncertainty for our masses is
+                                         ≲5% similar to the statistical uncertainty.
+                                                                           Finally, we  calculated the  scaling  relation between
+        0.9                                                              weak-lensing masses and Planck mass estimates for 61 clus-
+                                                                           ters, resulting in a bias of 1 −b = 0.84 ± 0.04. This value      WL(R500WL,                                                                                     is somewhat higher than the estimate in H15, mainly due
+        0.8                                                                to the use of the updated photometric redshift catalogue.
+                                                  The sample shows no signiﬁcant trend with either mass or    xSZ)/Map
+                                                                        redshift, but simple tests show that our selection of clusters
+        0.7
+                                                        might result in a slightly higher 1 −b up to a maximum
+                                                          change of 0.07. This highlights the importance of modelling
+        0.6                                                     the selection function for cosmological analyses. The gas       MSZ(R500SZ,   0.05    0.10    0.15    0.20    0.25    0.30    0.35    0.40        fraction of clusters relates to the matter density in the Uni-
+                              ⟨z⟩                                 verse,from baryonicand for relaxedprocessesclustersshouldthebeuncertaintysmall. A incomparisonthis relationof
+                                                                  lensing mass and gas mass at r500 produced a gas fraction
+                                               Mgas/MWL = 0.139±0.014 for 8 relaxed clusters. This value
+Figure 6. Best ﬁt SZ mass bias in bins of SZ mass (top) and bins
+                                                                                     is consistent with the value found by Mantz et al. (2016).
+of redshift (bottom) for 61 clusters, both showing no signiﬁcant
+                                                                Weak-lensing calibration of cluster observables is the
+trend within the uncertainties. Each bin contains roughly equal
+                                                                   limiting factor for cluster cosmology and large weak-lensingnumbers of clusters. The red line and area show the best ﬁt results
+and 1σ uncertainty for the full sample.                            surveys are required for this calibration. The combination
+                                                                       of the MENeaCS and CCCP surveys provides such a large
+                                                         sample for the some of the most massive clusters in the Uni-
+changes to fgas = 0.126±0.007 for the remaining 27 clusters.      verse, over a large range of redshifts and cluster masses.
+For the 8 clusters in our sample which Mantz et al. (2015b)     Future improvements of the weak-lensing analysis, in par-
+named relaxed, we ﬁnd a value of 0.139 ± 0.014, consistent      ticular the photometric redshift distribution and calibration
+within the errorbars with our other estimates and the value      of mass modelling with simulations, will further improve our
+of Mantz et al. (2016).                                               ability to constrain the scaling relations.
+
+
+
+7 CONCLUSIONS                     ACKNOWLEDGEMENTS
+
+Galaxy cluster counts have the potential to put tight con-    We would like to thank Adam Muzzin for access to the red-
+straints on cosmological parameters, if large numbers of clus-       shift catalogue, Nick Battaglia for helpful comments and
+ters with accurate mass estimates are observed. The Multi    Adam Mantz for useful feedback on the scaling relation anal-
+Epoch Nearby Cluster Survey and Canadian Cluster Com-       ysis. We thank Melissa Graham for her work on the ME-
+parison Project provide high quality optical imaging data in    NeaCS observations and Claudio Dalla Vecchia for his work
+the g and r ﬁlters observed using the Canada-France-Hawaii     on the HYDRANGEA simulations. This work is based on
+Telescope (CFHT) for a sample of ∼100 galaxy clusters. We      observations obtained with MegaPrime/MegaCam, a joint
+performed a thorough weak-lensing analysis on this sample,      project of CFHT and CEA/IRFU, at the Canada-France-
+excluding some of the clusters because of their very high     Hawaii Telescope (CFHT) which  is operated by the Na-
+Galactic extinction, which prevented us from establishing a      tional Research Council (NRC) of Canada, the Institut Na-
+robust correction for contamination by cluster members for      tional des Science de l’Univers of the Centre National de la
+those clusters. We used updated redshift catalogues of the     Recherche Scientiﬁque (CNRS) of France, and the Univer-
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   13
+
+
+sity of Hawaii. This work is based in part on data products     Gruen D., et al., 2014, MNRAS, 442, 1507
+produced at Terapix available at the Canadian Astronomy    Gwyn S. D. J., 2008, PASP, 120, 212
+Data Centre as part of the Canada-France-Hawaii Telescope     He Q., et al., 2019, arXiv e-prints, p. arXiv:1907.01680
+Legacy Survey, a collaborative project of NRC and CNRS.      Henson M. A., Barnes D. J., Kay S. T., McCarthy I. G., Schaye
+   RH and AvdL are supported by the US Department            J., 2017, MNRAS, 465, 3361
+                                                             Herbonnet R., von der Linden A., Allen S. W., Mantz A. B.,of Energy under award DE-SC0018053. RH, CS, HH ac-
+                                                       Modumudi P., Morris R. G., Kelly P. L., 2019, MNRAS, 490,
+knowledge support from the European Research Council
+                                                                 4889
+FP7 grant number 279396. Research by DJS is supported
+                                                                               Hill A. R., et al., 2017, ApJ, 837, 147
+by NSF grants AST-1821967, 1821987, 1813708, 1813466,                                                                    Hilton M., et al., 2018, ApJS, 235, 20
+and 1908972. YMB acknowledges funding from the EU Hori-      Hoekstra H., 2001, A&A, 370, 743
+zon 2020 research and innovation programme under Marie      Hoekstra H., Franx M., Kuijken K., 2000, ApJ, 532, 88
+Sk lodowska-Curie grant agreement 747645 (ClusterGal) and      Hoekstra H., Hartlap J., Hilbert S., van Uitert E., 2011a, MN-
+the Netherlands Organisation for Scientiﬁc Research (NWO)        RAS, 412, 2095
+through VENI grant 016.183.011.                               Hoekstra H., Donahue M., Conselice C. J., McNamara B. R., Voit
+                                                              G. M., 2011b, ApJ, 726, 48
+                                                               Hoekstra H., Mahdavi A., Babul A., Bildfell C., 2012, MNRAS,
+                                                                          427, 1298
+REFERENCES                                              Hoekstra H., Herbonnet R., Muzzin A., Babul A., Mahdavi A.,
+                                                                       Viola M., Cacciato M., 2015, MNRAS, 449, 685
+Allen S. W., Evrard A. E., Mantz A. B., 2011, ARA&A, 49, 409       Ilbert O., et al., 2006, A&A, 457, 841
+Amodeo S., et al., 2017, The Astrophysical Journal, 844, 101         Jee M. J., et al., 2011, ApJ, 737, 59
+Applegate D. E., et al., 2014, MNRAS, 439, 48                                                                   Kaiser N., Squires G., Broadhurst T., 1995, ApJ, 449, 460
+Applegate D. E., et al., 2016, MNRAS, 457, 1522                                                                       Laigle C., et al., 2016, ApJS, 224, 24
+Armitage T. J., Barnes D. J., Kay S. T., Bah´e Y. M., Dalla Vec-                                                             Lopes P. A., Trevisan M., Lagan´a T. F., Durret F., Ribeiro A. L.,
+    chia C., Crain R. A., Theuns T., 2018, MNRAS, 474, 3746                                                           Rembold S. B., 2018, MNRAS,
+Arnaud M., Pratt G. W., Piﬀaretti R., B¨ohringer H., Croston                                                             Magnier E. A., Cuillandre J.-C., 2004, PASP, 116, 449
+    J. H., Pointecouteau E., 2010, A&A, 517, A92                                                         Mahdavi A., Hoekstra H., Babul A., Bildfell C., Jeltema T., Henry
+Bah´e Y. M., McCarthy I. G., King L. J., 2012, MNRAS, 421, 1073                                                                                   J. P., 2013, ApJ, 767, 116
+Bah´e Y. M., et al., 2017, MNRAS, 470, 4186
+                                                        Mantz A. B., 2016, MNRAS, 457, 1279
+Barnes D. J., et al., 2017, MNRAS, 471, 1088
+                                                        Mantz A. B., 2019, MNRAS, 485, 4863
+Bartelmann M., Schneider P., 2001, Phys. Rep., 340, 291
+                                                        Mantz A., Allen S. W., Ebeling H., Rapetti D., Drlica-Wagner
+Battaglia N., et al., 2016, J. Cosmology Astropart. Phys., 8, 013
+                                                                           A., 2010a, MNRAS, 406, 1773
+Becker M. R., Kravtsov A. V., 2011, ApJ, 740, 25
+                                                        Mantz A., Allen S. W., Rapetti D., 2010b, Monthly Notices of
+Bellagamba F., et al., 2019, Monthly Notices of the Royal Astro-
+                                                                       the Royal Astronomical Society, 406, 1805
+   nomical Society, 484, 1598
+                                                        Mantz A. B., Allen S. W., Morris R. G., Rapetti D. A., Applegate
+Bertin E., 2010a, SWarp: Resampling and Co-adding FITS Im-
+                                                               D. E., Kelly P. L., von der Linden A., Schmidt R. W., 2014,
+    ages Together (ascl:1010.068)
+                                                 MNRAS, 440, 2077
+Bertin E., 2010b, SCAMP: Automatic Astrometric and Photo-
+                                                        Mantz A. B., et al., 2015a, MNRAS, 446, 2205
+    metric Calibration (ascl:1010.063)
+                                                        Mantz A. B., Allen S. W., Morris R. G., Schmidt R. W., von der
+Bildfell C. J., 2013, PhD thesis, University of Victoria (Canada
+                                                                 Linden A., Urban O., 2015b, MNRAS, 449, 199
+Bildfell C., Hoekstra H., Babul A., Mahdavi A., 2008, MNRAS,
+                                                        Mantz A. B., et al., 2016, MNRAS, 463, 3582
+    389, 1637
+                                                              McClintock T., et al., 2018, MNRAS,
+Bleem L. E., et al., 2019, arXiv e-prints, p. arXiv:1910.04121
+                                                                Medezinski E., et al., 2018a, PASJ, 70, 30
+Bocquet S., et al., 2019, The Astrophysical Journal, 878, 55
+                                                                Medezinski E., et al., 2018b, PASJ, 70, S28B¨ohringer H., et al., 2004, A&A, 425, 367
+                                                                        Mellier Y., 1999, ARA&A, 37, 127Borgani S., Guzzo L., 2001, Nature, 409, 39
+                                                               Meneghetti M., Rasia E., Merten J., Bellagamba F., Ettori S.,Brammer G. B., van Dokkum P. G., Coppi P., 2008, ApJ, 686,
+                                                                Mazzotta P., Dolag K., Marri S., 2010, A&A, 514, A93   1503
+                                                              Miyatake H., et al., 2019, ApJ, 875, 63Clowe D., Luppino G. A., Kaiser N., Henry J. P., Gioia I. M.,
+    1998, ApJ, 497, L61                                       Muzzin A., et al., 2013, ApJS, 206, 8
+Coupon J., et al., 2009, A&A, 500, 981                            Nagarajan A., et al., 2019, MNRAS, 488, 1728
+Crain R. A., et al., 2015, MNRAS, 450, 1937                       Navarro J. F., Frenk C. S., White S. D. M., 1997, ApJ, 490, 493
+Diemer B., Kravtsov A. V., 2015, ApJ, 799, 108                  Okabe N., Smith G. P., 2016, MNRAS, 461, 3794
+Dutton A. A., Macci`o A. V., 2014, MNRAS, 441, 3359             Okabe N., Smith G. P., Umetsu K., Takada M., Futamase T.,
+Ebeling H., Edge A. C., Bohringer H., Allen S. W., Crawford          2013, ApJ, 769, L35
+   C. S., Fabian A. C., Voges W., Huchra J. P., 1998, MNRAS,     Old L., et al., 2015, MNRAS, 449, 1897
+    301, 881                                                Old L., et al., 2018, MNRAS, 475, 853
+Ebeling H., Edge A. C., Henry J. P., 2001, ApJ, 553, 668           Peng C. Y., Ho L. C., Impey C. D., Rix H.-W., 2002, AJ, 124,
+Eckert D., et al., 2019, A&A, 621, A40                               266
+Farahi A., Evrard A. E., McCarthy I., Barnes D. J., Kay S. T.,     Penna-Lima M., Bartlett J. G., Rozo E., Melin J. B., Merten J.,
+    2018, MNRAS, 478, 2618                                       Evrard A. E., Postman M., RykoﬀE., 2017, A&A, 604, A89
+George M. R., et al., 2012, ApJ, 757, 2                                Piﬀaretti R., Arnaud M., Pratt G. W., Pointecouteau E., Melin
+Gladders M. D., Yee H. K. C., 2005, ApJS, 157, 1                           J.-B., 2011, A&A, 534, A109
+Graham M. L., et al., 2012, ApJ, 753, 68                           Planck Collaboration et al., 2016a, A&A, 594, A13
+Graham M. L., Sand D. J., Zaritsky D., Pritchet C. J., 2015, ApJ,      Planck Collaboration et al., 2016b, A&A, 594, A24
+    807, 83                                                     Planck Collaboration et al., 2016c, A&A, 594, A27
+Gruen D., Brimioulle F., 2017, MNRAS, 468, 769                    Rasia E., et al., 2012, New Journal of Physics, 14, 055018
+
+
+MNRAS 000, 1–20 (2019)
+14   Ricardo Herbonnet et al.
+
+
+Rines K., Geller M. J., Diaferio A., Kurtz M. J., 2013, ApJ, 767,
+   15
+Rines K. J., Geller M. J., Diaferio A., Hwang H. S., 2016, ApJ,         200
+    819, 63                                                                                              Ar=0.00
+Rowe B. T. P., et al., 2015, Astronomy and Computing, 10, 121                                                Ar=0.10
+Rozo E., et al., 2010, ApJ, 708, 645                                 180                                    Ar=0.20
+RykoﬀE. S., et al., 2016, ApJS, 224, 1
+Salvati L., Douspis M., Ritz A., Aghanim N., Babul A., 2019,
+   A&A, 626, A27                                               160
+Sand D. J., et al., 2011, ApJ, 729, 142Sand D. J., et al., 2012, ApJ, 746, 163                                                                            [arcmin−2]
+Schaye J., et al., 2015, MNRAS, 446, 521                            140
+Schellenberger G., Reiprich T. H., Lovisari L., Nevalainen J.,                                                                                                         ξmodel   David L., 2015, A&A, 575, A30
+Schlaﬂy E. F., Finkbeiner D. P., 2011, ApJ, 737, 103                   120
+Schlegel D. J., Finkbeiner D. P., Davis M., 1998, ApJ, 500, 525
+Schneider P., 2003, A&A, 408, 829
+Schrabback T., et al., 2018, MNRAS, 474, 2635                       100
+Sif´on C., Hoekstra H., Cacciato M., Viola M., K¨ohlinger F., van             1.6       1.8       2.0       2.2       2.4       2.6
+    der      Burg            R. F. J., Sand D. J., Graham M. L., 2015, A&A,                             ⟨r∗h⟩[pixels]    575,      A48
+Sif´on C., et al., 2016, MNRAS, 461, 248
+Sif´on C., van der Burg R. F. J., Hoekstra H., Muzzin A., Herbon-     Figure B1. Weight density ξ as a function of the average PSF size
+    net R., 2018a, MNRAS, 473, 3747                                   in the image, colour coded by Galactic extinction for 41 CFHT
+Sif´on C., Herbonnet R., Hoekstra H., van der Burg R. F. J., Viola      observations homogenised to a noise rms of 1.4 counts/pixel.
+   M., 2018b, MNRAS, 478, 1244                                 Coloured lines show the best ﬁt to the data at three levels of
+Smith G. P., et al., 2016, MNRAS, 456, L74                            extinction, for the same color code as the circles. The black his-
+Sunyaev R. A., Zeldovich Y. B., 1972, Comments on Astrophysics     togram shows the distribution of PSF sizes in the MENeaCS data,
+   and Space Physics, 4, 173                                         covering the same range as the blank ﬁelds.
+Umetsu K., et al., 2014, ApJ, 795, 163
+Varga T. N., et al., 2019, MNRAS, 489, 2511
+Vikhlinin A., et al., 2009a, ApJ, 692, 1033                           targets observed with MegaCam. However, the MENeaCS
+Vikhlinin A., et al., 2009b, ApJ, 692, 1060                            clusters are at lower redshift, and for many targets the data
+Viola M., et al., 2015, MNRAS, 452, 3529                      do not extend that far out. Therefore, we follow a diﬀerent
+Wright C. O., Brainerd T. G., 2000, ApJ, 534, 34                 approach to determine the expected background .
+Zubeldia ´I., Challinor A., 2019, MNRAS, p. 2089                                            We searched the CFHT MegaPipe (Gwyn 2008) archive
+de Haan T., et al., 2016, ApJ, 832, 95
+                                                                        for co-added r-band data with a total integration Texp >
+von der Linden A., et al., 2014a, MNRAS, 439, 2
+                                                            3600s and image quality better than 0.′′9 of pointings thatvon der Linden A., et al., 2014b, MNRAS, 443, 1973
+                                                         appeared to be blank ﬁelds (i.e. not targeting clusters). This
+                                                          query resulted in 46 suitable unique targets, but upon closer
+                                                                 inspection ﬁve ﬁelds had to be rejected because of a high
+APPENDIX A: CLUSTER PROPERTIES                noise level or because the Galactic extinction was too high.
+                                                  The remaining 41 ﬁelds all have an r-band Galactic extinc-Here we document all the cluster properties calculated in
+                                                                  tion Ar less than 0.2 magnitude and were visually inspectedthis work. Table A1 lists general properties of the clusters
+                                                                to mask out obvious artifacts, leaving an eﬀective area ofused in this work, as well as details on the observations,
+                                                           approximately 33 square degrees.which were used to compute the boost correction for indi-
+                                                     The depth varies between the images and do not matchvidual clusters. The calculated lensing eﬃciencies and the
+                                                              the MENeaCS data (MENeaCS images are typically shal-mass ranges used for the weak-lensing analysis are also pre-
+                                                                    lower). To homogenise the auxiliary data we added Gaus-sented. Table A2 lists the results of the weak-lensing analysis
+                                                                  sian noise so that all the blank ﬁelds have the same depth.and the state of the cluster determined using the results of
+                                         We considered four r.m.s. values σnoise = (1.2, 1.4, 1.6, 1.8)Mantz et al. (2015b).
+                                                                 counts/pixel, corresponding to 1σ depths of 26.60, 26.43,
+                                                                   26.28, 26.16 mag/arcsec2, respectively, in a circular aper-
+                                                                ture of 2 pixel=0.370′′ radius at a magnitude zeropoint
+APPENDIX B: BLANK FIELD COUNTS
+                                                                       of 30. This covers a range that matches most of the ME-
+The lack of deep multi-band data for galaxies in the ME-    NeaCS data. Of the blank ﬁelds, ten and two ﬁelds are
+NeaCS observations prevents us from identifying cluster      shallower than 26.60 and 26.43, respectively, so they were
+members. As they are unlensed and have random orienta-     omitted from the sample for the analysis. The remaining
+tions, these galaxies will dilute the shear signal and thus     homogenised images were analysed in exactly the same way
+need to be corrected for. We correct for this contamination      as the MENeaCS data, resulting in catalogs with shape mea-
+using a boost correction, for which we need to model the     surements and corresponding uncertainties. To quantify im-
+excess of galaxies in the cluster compared to the ﬁeld as a     age quality we use the half-light radius of the PSF, r∗h, where
+function of cluster-centric radius. This approach was also      r∗h = 2 pixels corresponds to a seeing of 0.63′′.
+used by H15, who used the observations beyond 4 Mpc from          Figure B1 shows the resulting weight density ξ  for
+the cluster center to estimate the background level for the      galaxies with 20 < mr < 24.5 as a function of the aver-
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   15
+
+
+  (1)        (2)         (3)         (4)            (5)         (6)      (7)      (8)      (9)     (10)        (11)          (12)       (13)
+           cluster       z     RABCG     DecBCG      ⟨β⟩    ⟨β2⟩     δβ    Ar    seeing      depth     R2-Rmax    mr
+                              (J2000)       (J2000)                      mag   arcsec   mag/arcsec2    Mpc
+
+
+ 1    A7           0.106   00:11:45.25   +32:24:56.5   0.783   0.643   0.005    0.09    0.60       26.53        2.0–2.9    20–24.5
+ 2    A21          0.095   00:20:36.97   +28:39:33.0   0.800   0.668   0.004    0.08    0.63       26.49        1.9–2.6    20–24.5
+ 3    A85          0.055   00:41:50.44    –09:18:11.0   0.878   0.786   0.002    0.08    0.62       26.39        1.4–1.6    20–24.5
+ 4    A119         0.044   00:56:16.09    –01:15:19.0   0.901   0.823   0.002    0.08    0.64       26.43        1.2–1.3    20–24.5
+ 5    A133         0.057   01:02:41.70    –21:52:55.2   0.873   0.778   0.002    0.04    0.68       26.42        1.4–1.7    20–24.5
+ 6    A646         0.129   08:22:09.53   +47:05:53.3   0.740   0.584   0.007    0.09    0.68       26.44        2.2–3.5    20–24.5
+ 7    A655         0.127   08:25:29.04   +47:08:00.8   0.744   0.589   0.007    0.08    0.65       26.44        2.2–3.4    20–24.5
+ 8    A754         0.054   09:08:32.36    –09:37:47.2   0.878   0.786   0.002    0.15    0.74       26.49        1.4–1.6    20–24.5
+ 9    A780         0.054   09:18:05.66    –12:05:43.7   0.877   0.783   0.002    0.09    0.80       26.38        1.3–1.6    20–24.5
+ 10   A795         0.136   09:24:05.28   +14:10:21.7   0.721   0.558   0.006    0.06    0.72       26.34        2.3–3.6    20–24.5
+ 11   A961         0.124   10:16:22.80   +33:38:17.7   0.743   0.588   0.006    0.04    0.71       26.33        2.2–3.3    20–24.5
+ 12   A990         0.144   10:23:39.90   +49:08:38.7   0.710   0.544   0.007    0.01    0.78       26.37        2.3–3.8    20–24.5
+ 13   A1033        0.126   10:31:44.32   +35:02:29.1   0.740   0.584   0.006    0.04    0.65       26.27        2.1–3.4    20–24.5
+ 14   A1068        0.138   10:40:44.47   +39:57:11.4   0.724   0.563   0.007    0.05    0.61       26.30        2.2–3.7    20–24.5
+ 15   A1132        0.136   10:58:23.64   +56:47:42.0   0.723   0.561   0.007    0.02    0.68       26.28        2.3–3.6    20–24.5
+ 16   A1285        0.106   11:30:23.80    –14:34:52.2   0.768   0.622   0.003    0.09    0.81       26.29        2.0–2.9    20–24.5
+ 17   A1348        0.119   11:41:24.18    –12:16:38.4   0.747   0.592   0.004    0.07    0.82       26.33        2.1–3.2    20–24.5
+ 18   A1361        0.117   11:43:39.60   +46:21:20.7   0.762   0.614   0.006    0.05    0.61       26.43        2.1–3.2    20–24.5
+ 19   A1413        0.143   11:55:18.00   +23:24:18.1   0.713   0.548   0.008    0.05    0.65       26.41        2.3–3.8    20–24.5
+ 20   A1650        0.084   12:58:41.49    –01:45:41.0   0.819   0.695   0.003    0.04    0.76       26.50        1.8–2.4    20–24.5
+ 21   A1651        0.085   12:59:22.49    –04:11:45.7   0.807   0.677   0.003    0.06    0.90       26.27        1.8–2.4    20–24.5
+ 22   A1781        0.062   13:44:52.54   +29:46:15.6   0.865   0.766   0.002    0.04    0.73       26.60        1.5–1.8    20–24.5
+ 23   A1795        0.062   13:48:52.49   +26:35:34.8   0.864   0.764   0.002    0.03    0.68       26.43        1.5–1.8    20–24.5
+ 24   A1927        0.095   14:31:06.78   +25:38:01.6   0.803   0.673   0.004    0.08    0.62       26.52        1.9–2.6    20–24.5
+ 25   A1991        0.059   14:54:31.48   +18:38:33.3   0.869   0.771   0.002    0.07    0.67       26.38        1.4–1.7    20–24.5
+ 26   A2029        0.077   15:10:56.09   +05:44:41.3   0.834   0.717   0.002    0.08    0.65       26.48        1.7–2.2    20–24.5
+ 27   A2033        0.082   15:11:26.51   +06:20:56.7   0.826   0.706   0.003    0.08    0.61       26.56        1.8–2.3    20–24.5
+ 28   A2050        0.118   15:16:17.92   +00:05:20.9   0.760   0.611   0.006    0.12    0.62       26.51        2.1–3.2    20–24.5
+ 29   A2055        0.102   15:18:45.70   +06:13:56.3   0.788   0.651   0.004    0.08    0.61       26.51        2.0–2.8    20–24.5
+ 30   A2064        0.108   15:20:52.24   +48:39:38.7   0.780   0.639   0.005    0.04    0.69       26.66        2.1–3.0    20–24.5
+ 31   A2065        0.073   15:22:29.16   +27:42:27.7   0.842   0.730   0.002    0.09    0.65       26.57        1.7–2.1    20–24.5
+ 32   A2069        0.116   15:24:07.46   +29:53:20.4   0.765   0.618   0.006    0.05    0.61       26.64        2.1–3.2    20–24.5
+ 33   A2142        0.091   15:58:19.98   +27:14:00.4   0.809   0.680   0.003    0.10    0.62       26.54        1.9–2.5    20–24.5
+ 34   A2420        0.085   22:10:18.76    –12:10:13.9   0.814   0.688   0.002    0.13    0.67       26.26        1.8–2.4    20–24.5
+ 35   A2426        0.098   22:14:31.57    –10:22:26.1   0.785   0.645   0.003    0.13    0.72       26.18        2.0–2.7    20–24.5
+ 36   A2440        0.091   22:23:56.92    –01:34:59.4   0.800   0.667   0.003    0.17    0.69       26.39        1.9–2.5    20–24.5
+ 37   A2443        0.108   22:26:07.92   +17:21:23.7   0.775   0.632   0.005    0.14    0.61       26.47        2.1–3.0    20–24.5
+ 38   A2495        0.078   22:50:19.71   +10:54:12.8   0.832   0.715   0.003    0.17    0.61       26.46        1.7–2.2    20–24.5
+ 39   A2597        0.085   23:25:19.72    –12:07:26.6   0.815   0.689   0.003    0.07    0.66       26.25        1.8–2.4    20–24.5
+ 40   A2627        0.126   23:36:42.07   +23:55:29.4   0.743   0.588   0.006    0.17    0.64       26.46        2.1–3.4    20–24.5
+ 41   A2670        0.076   23:54:13.67    –10:25:08.1   0.832   0.714   0.002    0.10    0.76       26.34        1.7–2.2    20–24.5
+ 42   A2703        0.114   00:05:23.94   +16:13:09.3   0.766   0.620   0.005    0.10    0.59       26.49        2.1–3.1    20–24.5
+ 43  MKW3S      0.045   15:21:51.80   +07:42:31.8   0.901   0.823   0.002    0.08    0.64       26.55        1.1–1.3    20–24.5
+ 44   RXJ0132     0.149   01:32:41.10    –08:04:04.5   0.708   0.542   0.009    0.07    0.60       26.39        2.3–3.9    20–24.5
+ 45   RXJ0736     0.118   07:36:38.08   +39:24:52.8   0.751   0.599   0.005    0.10    0.69       26.41        2.1–3.2    20–24.5
+ 46   RXJ2344     0.079   23:44:18.19    –04:22:48.7   0.829   0.709   0.002    0.08    0.69       26.34        1.7–2.2    20–24.5
+ 47   ZWCL1023   0.143   10:25:57.97   +12:41:08.7   0.707   0.541   0.007    0.10    0.72       26.33        2.3–3.8    20–24.5
+ 48   ZWCL1215   0.075   12:17:41.13   +03:39:21.2   0.833   0.716   0.002    0.04    0.86       26.37        1.7–2.1    20–24.5
+ 49   A68          0.255   00:37:06.90   +09:09:24.0   0.601   0.410   0.023                                     2.4–3.2    22–25.0
+ 50   A209         0.206   01:31:52.50    –13:36:39.9   0.667   0.488   0.019                                     2.0–2.7    22–25.0
+ 51   A267          0.23    01:52:42.00   +01:00:25.9   0.630   0.443   0.021                                     2.2–2.9    22–25.0
+ 52   A370         0.375   02:39:52.69    –01:34:18.0   0.470   0.279   0.027                                     3.1–4.1    22–25.0
+ 53   A383         0.187   02:48:03.40    –03:31:44.0   0.675   0.497   0.017                                     1.9–2.5    22–24.5
+ 54   A963         0.206   10:17:03.79   +39:02:51.0   0.662   0.483   0.019                                     2.0–2.7    22–25.0
+ 55   A1689        0.183   13:11:30.00    –01:20:30.0   0.685   0.510   0.017                                     1.8–2.5    22–24.5
+ 56   A1763        0.223   13:35:20.10   +41:00:03.9   0.633   0.447   0.020                                     2.2–2.9    22–25.0
+ 57   A2218        0.176   16:35:48.79   +66:12:51.0   0.683   0.506   0.016                                     1.8–2.4    22–24.5
+ 58   A2219        0.226   16:40:19.90   +46:42:41.0   0.640   0.455   0.021                                     2.2–2.9    22–25.0
+ 59   A2390        0.228   21:53:36.79   +17:41:44.0   0.642   0.458   0.021                                     2.2–2.9    22–25.0
+ 60   MS0016      0.547   00:18:33.49   +16:26:16.0   0.341   0.173   0.030                                     3.8–5.1    22–25.0
+ 61   MS0906       0.17    09:09:12.60   +10:58:28.0   0.716   0.550   0.016                                     1.7–2.3    22–25.0
+ 62   MS1224      0.326   12:27:13.50   +19:50:56.0   0.518   0.323   0.026                                     2.8–3.8    22–25.0
+ 63   MS1231      0.235   12:33:55.39   +15:25:58.0   0.632   0.446   0.022                                     2.2–3.0    22–25.0
+ 64   MS1358      0.329   13:59:50.59   +62:31:05.0   0.519   0.325   0.026                                     2.8–3.8    22–25.0
+
+
+MNRAS 000, 1–20 (2019)
+16   Ricardo Herbonnet et al.
+
+
+  (1)        (2)         (3)         (4)            (5)         (6)      (7)      (8)      (9)     (10)        (11)          (12)       (13)
+           cluster        z     RABCG     DecBCG      ⟨β⟩    ⟨β2⟩     δβ    Ar    seeing      depth     R2-Rmax    mr
+                                (J2000)       (J2000)                      mag   arcsec   mag/arcsec2    Mpc
+
+
+ 65   MS1455       0.257    14:57:15.10   +22:20:35.0   0.612   0.423   0.023                                     2.4–3.2    22–25.0
+ 66   MS1512       0.373    15:14:22.50   +36:36:20.9   0.484   0.291   0.028                                     3.1–4.1    22–25.0
+ 67   MS1621       0.428    16:23:35.50   +26:34:14.0   0.433   0.245   0.029                                     3.4–4.5    22–25.0
+ 68   CL0024        0.39    00:26:35.59   +17:09:43.9   0.450   0.261   0.027                                     3.2–4.2    22–25.0
+ 69   A115N        0.197    00:55:50.60   +26:24:37.6   0.685   0.513   0.020                                     2.9–4.9    22–25.0
+ 70   A115S        0.197    00:56:00.25   +26:20:32.7   0.685   0.513   0.020                                     2.9–4.9    22–25.0
+ 71   A222          0.213    01:37:34.00    –12:59:29.0   0.661   0.484   0.021                                     3.1–5.2    22–25.0
+ 72   A223N        0.207    01:38:02.20    –12:45:19.6   0.669   0.494   0.020                                     3.0–5.1    22–25.0
+ 73   A223S        0.207    01:37:55.90    –12:49:09.9   0.669   0.494   0.020                                     3.0–5.1    22–25.0
+ 74   A520          0.199    04:54:19.88   +02:57:44.6   0.682   0.509   0.020                                     3.0–4.9    22–25.0
+ 75   A521          0.253    04:54:06.88    –10:13:24.7   0.605   0.419   0.022                                     3.5–5.9    22–25.0
+ 76   A586          0.171    07:32:20.20   +31:38:00.7   0.703   0.535   0.014                                     2.6–4.4    22–25.0
+ 77   A611          0.288    08:00:56.81   +36:03:23.6   0.561   0.371   0.023                                     3.9–6.5    22–25.0
+ 78   A697          0.282    08:42:57.55   +36:21:59.2   0.580   0.391   0.025                                     3.8–6.4    22–25.0
+ 79   A851          0.407    09:42:57.45   +46:58:49.7   0.448   0.261   0.028                                     4.9–8.1    22–25.0
+ 80   A959          0.286    10:17:34.34   +59:33:39.0   0.577   0.388   0.025                                     3.9–6.5    22–25.0
+ 81   A1234        0.166    11:22:29.92   +21:24:21.6   0.723   0.561   0.016                                     2.6–4.3    22–25.0
+ 82   A1246         0.19    11:23:58.75   +21:28:45.2   0.689   0.518   0.018                                     2.9–4.8    22–25.0
+ 83   A1758        0.279    13:32:45.24   +50:32:35.0   0.587   0.399   0.025                                     3.8–6.3    22–25.0
+ 84   A1835        0.2533   14:01:02.04   +02:52:42.7   0.608   0.422   0.023                                     3.6–5.9    22–25.0
+ 85   A1914        0.171    14:25:56.69   +37:48:59.0   0.720   0.558   0.017                                     2.6–4.4    22–25.0
+ 86   A1942        0.224    14:38:21.87   +03:40:13.2   0.650   0.470   0.022                                     3.2–5.4    22–25.0
+ 87   A2104        0.153    15:40:07.90    –03:18:16.0   0.740   0.584   0.014                                     2.4–4.0    22–25.0
+ 88   A2111        0.229    15:39:40.50   +34:25:27.6   0.642   0.461   0.022                                     3.3–5.5    22–25.0
+ 89   A2163        0.203    16:15:33.49    –06:09:16.5   0.658   0.481   0.017                                     3.0–5.0    22–25.0
+ 90   A2204        0.152    16:32:46.93   +05:34:32.9   0.741   0.586   0.014                                     2.4–4.0    22–25.0
+ 91   A2259        0.164    17:20:09.65   +27:40:08.5   0.724   0.563   0.015                                     2.5–4.2    22–25.0
+ 92   A2261        0.224    17:22:27.22   +32:07:57.9   0.649   0.469   0.022                                     3.2–5.4    22–25.0
+ 93   A2537        0.295    23:08:22.21    –02:11:31.6   0.560   0.370   0.024                                     4.0–6.6    22–25.0
+ 94   MS0440        0.19    04:43:09.92   +02:10:19.1   0.683   0.510   0.017                                     2.9–4.8    22–25.0
+ 95   MS0451        0.55    04:54:10.83    –03:00:51.7   0.333   0.166   0.026                                     5.8–9.6    22–25.0
+ 96   MS1008       0.301    10:10:32.30    –12:39:52.9   0.555   0.364   0.025                                     4.0–6.7    22–25.0
+ 97   RXJ1347      0.451    13:47:31.85    –11:45:11.1   0.404   0.223   0.027                                     5.2–8.7    22–25.0
+ 98   RXJ1524      0.516    15:24:44.56   +09:57:57.0   0.355   0.183   0.026                                     5.6–9.3    22–25.0
+ 99   MACS0717    0.548    07:17:35.64   +37:45:17.3   0.327   0.162   0.025                                     5.8–9.6    22–25.0
+ 100   3C295         0.46    14:11:20.59   +52:12:10.0   0.401   0.220   0.027                                     5.2–8.7    22–25.0
+
+
+Table A1. Basic information on the clusters used in this work, parameters governing the quality of our observations, the lensing eﬃciency
+β computed in Section 3 and apertures for the mass analysis in Section 5.2. Columns 9, 10 and 11 are only shown for the MENeaCS
+clusters for which they were used (see Section 4. (2) cluster name; (3) cluster redshift; (4)&(5) right ascension and declination (J2000)
+of the BCG, which is taken to be the cluster centre; (6) the average lensing eﬃciency β used to estimate the critical surface density; (7)
+the average β2 used to correct the shear for the lack of individual source redshifts; (8) the error on the average lensing eﬃciency; (9)
+Galactic extinction in r-band magnitude; (10) seeing of the observations; (11) 1σ depth of the observations; (12) range of the annulus
+used for the aperture mass measurements; (13) magnitude range in r-band of galaxies used for the weak-lensing analysis.
+
+
+
+age PSF half-light radius in the image for a noise level of      of cluster-centric distance is an eﬃcient way to correct for
+1.4 counts/pixel. Using the blanks at all 4 diﬀerent noise     contamination for a large sample of clusters.
+levels we ﬁt a model to the measurements and ﬁnd
+                                                     The blank ﬁelds have been observed with diﬀerent
+                                                                  dither patterns than the MENeaCS data. Consequently, the
+  ξmodel = −40.6σnoise −68.4⟨r∗h⟩−122.8Ar + 364.2.  (B1)      variations in depth will not exactly match the cluster data.
+                                                  To examine whether this leads to a signiﬁcant systematic
+The color of the circles shows the extinction for each blank      uncertainty, we compare the predicted weight density to the
+ﬁeld and the lines show the prediction from the ﬁt for diﬀer-      observations of high redshift clusters beyond the extent of
+ent extinction levels in the same color scheme. For reference      the cluster. H15 found that the contribution from cluster
+we also plot the distribution of PSF half-light radii of the     members and associated structures is less than 0.5% for radii
+MENeaCS observations as a black histogram in the bottom     beyond 4 Mpc and we use this to deﬁne the areas in the ME-
+of the plot. For the full sample we ﬁnd that the r.m.s. vari-    NeaCS observations with mostly ﬁeld galaxies. Due to the
+ation in the mean weight density is 6.4%, which is smaller     low redshift of MENeaCS clusters there is very little area
+than the typical statistical uncertainty in the lensing signal     beyond 4 Mpc, so we check various outer radii for a more
+for an individual cluster. Hence observing clusters with a      robust comparison. Figure B2 shows the distribution of the
+single band and modelling the excess weight as a function      diﬀerence between the weight density in the blank ﬁeld pre-
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   17
+
+
+  (1)        (2)         (3)        (4)          (5)          (6)         (7)       (8)
+           cluster       z    MNFW200    MNFW500       Rap500     Map500     state
+                       1014M⊙    1014M⊙    Mpc    1014M⊙
+
+ 1    A7           0.106    4.4 ± 2.3    3.0 ± 1.6   0.91+0.11−0.06    2.4+1.3−0.9      –
+ 2    A21          0.095    6.1 ± 2.5    4.2 ± 1.7   1.17+0.08−0.08    5.0+1.5−1.3      –
+ 3    A85          0.055    8.4 ± 3.3    5.7 ± 2.2   1.35+0.14−0.14    7.4+2.3−2.3    D
+ 4    A119         0.044    7.8 ± 3.2    5.3 ± 2.2   1.09+0.15−0.15    3.9+1.6−1.6
+ 5    A133         0.057    4.1 ± 2.7    2.8 ± 1.9   0.92+0.11−0.15    2.3+1.3−1.3    R
+ 6    A646         0.129    3.8 ± 2.4    2.6 ± 1.6   1.03+0.28−0.05    3.5+3.9−0.9      –
+ 7    A655         0.127    5.9 ± 2.4    4.0 ± 1.7   1.29+0.16−0.11    6.8+3.0−1.9      –
+ 8    A754         0.054   14.9 ± 3.8   10.0 ± 2.6   1.30+0.17−0.12    6.6+3.2−1.9
+ 9    A780         0.054    6.5 ± 3.0    4.4 ± 2.1   1.08+0.14−0.14    3.8+1.5−1.5    R
+ 10   A795         0.136   16.0 ± 4.1   10.6 ± 2.8   1.55+0.11−0.13   12.2+3.0−3.0    D
+ 11   A961         0.124    7.0 ± 2.6    4.8 ± 1.8   1.18+0.07−0.09    5.3+1.4−1.4      –
+ 12   A990         0.144   14.1 ± 3.4    9.4 ± 2.3   1.26+0.09−0.10    6.6+1.8−1.7      –
+ 13   A1033        0.126    8.5 ± 3.6    5.7 ± 2.5   0.90+0.10−0.08    2.4+1.1−0.9      –
+ 14   A1068        0.138    5.0 ± 2.5    3.4 ± 1.7   0.88+0.09−0.09    2.2+0.9−0.9    R
+ 15   A1132        0.136   11.2 ± 2.7    7.5 ± 1.8   1.38+0.06−0.06    8.4+1.5−1.6
+ 16   A1285        0.106    6.9 ± 2.6    4.7 ± 1.8   1.16+0.11−0.08    4.9+1.8−1.3      –
+ 17   A1348        0.119    3.1 ± 2.1    2.1 ± 1.5   0.84+0.17−0.12    1.9+1.6−1.0      –
+ 18   A1361        0.117    4.8 ± 2.4    3.3 ± 1.6   0.88+0.12−0.12    2.2+1.2−1.0      –
+ 19   A1413        0.143   10.8 ± 3.1    7.2 ± 2.1   1.19+0.10−0.06    5.5+1.7−1.1
+ 20   A1650        0.084   10.5 ± 2.9    7.1 ± 2.0   1.20+0.07−0.08    5.3+1.4−1.4
+ 21   A1651        0.085    8.3 ± 3.5    5.6 ± 2.4   1.30+0.14−0.14    6.7+2.6−2.2
+ 22   A1781        0.062    1.5 ± 1.5    1.1 ± 1.1   0.62+0.27−0.17    0.7+1.5−0.7      –
+ 23   A1795        0.062   13.9 ± 3.3    9.3 ± 2.2   1.45+0.11−0.11    9.2+2.3−2.3
+ 24   A1927        0.095    4.4 ± 2.3    3.0 ± 1.6   1.03+0.07−0.06    3.4+1.2−1.1      –
+ 25   A1991        0.059    3.7 ± 2.9    2.5 ± 2.0   0.94+0.21−0.14    2.5+2.2−1.2      –
+ 26   A2029        0.077   18.1 ± 3.8   12.1 ± 2.5   1.52+0.07−0.10   10.8+1.9−2.3    R
+ 27   A2033        0.082    3.2 ± 2.4    2.2 ± 1.6   0.80+0.09−0.08    1.6+0.9−0.9      –
+ 28   A2050        0.118    4.6 ± 2.3    3.1 ± 1.6   1.08+0.07−0.14    4.0+1.2−1.6      –
+ 29   A2055        0.102    2.9 ± 2.2    2.0 ± 1.6   0.81+0.11−0.09    1.7+1.0−0.9      –
+ 30   A2064        0.108    2.5 ± 2.4    1.7 ± 1.7   0.89+0.09−0.04    2.2+1.0−0.8      –
+ 31   A2065        0.073   12.0 ± 3.1    8.0 ± 2.1   1.37+0.08−0.05    7.9+1.7−1.4    D
+ 32   A2069        0.116    3.2 ± 2.2    2.2 ± 1.6   0.82+0.10−0.06    1.7+1.0−0.7      –
+ 33   A2142        0.091   14.5 ± 3.4    9.7 ± 2.3   1.54+0.07−0.09   11.3+2.1−2.2    D
+ 34   A2420        0.085    8.4 ± 3.0    5.7 ± 2.0   1.24+0.09−0.07    5.9+1.8−1.4    D
+ 35   A2426        0.098    6.8 ± 2.8    4.6 ± 1.9   1.02+0.07−0.05    3.3+1.2−1.0    D
+ 36   A2440        0.091    9.8 ± 3.2    6.6 ± 2.2   1.21+0.06−0.05    5.5+1.3−1.2      –
+ 37   A2443        0.108   13.4 ± 3.3    9.0 ± 2.2   1.29+0.14−0.06    6.8+2.7−1.4      –
+ 38   A2495        0.078    2.1 ± 2.1    1.5 ± 1.5   0.83+0.07−0.16    1.7+0.9−1.1      –
+ 39   A2597        0.085    3.9 ± 2.4    2.7 ± 1.7   0.95+0.15−0.12    2.6+1.7−1.2    R
+ 40   A2627        0.126    3.0 ± 2.3    2.1 ± 1.6   0.91+0.11−0.22    2.4+1.2−1.5      –
+ 41   A2670        0.076    8.8 ± 3.2    5.9 ± 2.2   1.32+0.14−0.21    7.0+2.6−3.0      –
+ 42   A2703        0.114    5.3 ± 2.5    3.6 ± 1.7   0.88+0.20−0.16    2.2+2.0−1.2      –
+ 43  MKW3S      0.045    2.5 ± 2.5    1.8 ± 1.8   0.82+0.32−0.10    1.6+2.8−0.9      –
+ 44   RXJ0132     0.149    2.6 ± 2.1    1.8 ± 1.5   0.64+0.18−0.04    0.9+1.0−0.4      –
+ 45   RXJ0736     0.118    2.3 ± 2.3    1.6 ± 1.6   0.57+0.11−0.06    0.6+0.6−0.4      –
+ 46   RXJ2344     0.079    3.8 ± 2.7    2.6 ± 1.9   0.89+0.14−0.08    2.1+1.4−1.0
+ 47   ZWCL1023   0.143    4.7 ± 2.3    3.2 ± 1.6   1.06+0.12−0.12    3.9+1.6−1.0      –
+ 48   ZWCL1215   0.075    5.1 ± 3.1    3.5 ± 2.2   1.32+0.12−0.06    7.0+2.4−1.4
+ 49   A68          0.255   11.0 ± 2.6    7.4 ± 1.7   1.35+0.08−0.10    9.0+2.1−2.2
+ 50   A209         0.206    8.5 ± 2.4    5.7 ± 1.7   1.28+0.09−0.06    7.3+2.0−1.5    D
+ 51   A267         0.230    6.4 ± 2.5    4.3 ± 1.7   1.18+0.14−0.07    5.9+2.6−1.4    D
+ 52   A370         0.375   24.1 ± 5.7   15.7 ± 3.7   1.61+0.07−0.07   17.5+2.9−2.8      –
+ 53   A383         0.187    4.6 ± 2.6    3.1 ± 1.8   1.12+0.07−0.21    4.9+1.3−2.4    R
+ 54   A963         0.206   10.3 ± 2.6    6.9 ± 1.8   1.16+0.11−0.10    5.4+1.9−1.6
+ 55   A1689        0.183   23.9 ± 4.4   15.7 ± 2.9   1.53+0.07−0.07   12.3+2.3−2.2
+ 56   A1763        0.223   14.1 ± 3.8    9.4 ± 2.5   1.44+0.11−0.06   10.6+3.0−1.9    D
+ 57   A2218        0.176   13.3 ± 4.0    8.9 ± 2.7   1.28+0.15−0.10    7.1+2.9−1.8
+ 58   A2219        0.226    8.2 ± 2.1    5.5 ± 1.4   1.40+0.07−0.07    9.8+2.0−1.9
+ 59   A2390        0.228   16.4 ± 3.0   10.9 ± 2.0   1.27+0.08−0.09    7.3+1.8−1.7
+
+
+MNRAS 000, 1–20 (2019)
+18   Ricardo Herbonnet et al.
+
+
+  (1)        (2)         (3)        (4)          (5)          (6)         (7)       (8)
+           cluster       z    MNFW200    MNFW500       Rap500     Map500     state
+                        1014M⊙    1014M⊙    Mpc    1014M⊙
+
+ 60   MS0016      0.547   23.4 ± 7.4   15.2 ± 4.9   1.52+0.07−0.09   18.0+3.1−3.4
+ 61   MS0906      0.170   10.0 ± 2.4    6.7 ± 1.6   1.35+0.10−0.10    8.3+2.4−2.1    D
+ 62   MS1224      0.326    4.4 ± 2.3    3.0 ± 1.6   0.87+0.10−0.12    2.6+1.2−1.1      –
+ 63   MS1231      0.235    1.2 ± 1.2    0.9 ± 0.9   0.53+0.12−0.07    0.5+0.5−0.3      –
+ 64   MS1358      0.329   11.4 ± 2.6    7.6 ± 1.8   1.28+0.08−0.10    8.4+2.1−2.2
+ 65   MS1455      0.257   10.1 ± 2.1    6.8 ± 1.4   1.11+0.08−0.05    5.0+1.4−1.1    R
+ 66   MS1512      0.373    3.8 ± 2.5    2.6 ± 1.7   0.78+0.26−0.09    2.0+2.8−0.8      –
+ 67   MS1621      0.428   14.8 ± 3.6    9.7 ± 2.4   1.27+0.06−0.06    9.1+1.9−1.7      –
+ 68   CL0024       0.390   19.2 ± 5.3   12.6 ± 3.5   1.40+0.06−0.07   11.7+2.1−2.2      –
+ 69   A115N       0.197    4.3 ± 2.4    3.0 ± 1.7   1.07+0.09−0.16    4.2+1.4−1.8    D
+ 70   A115S        0.197    5.4 ± 2.5    3.7 ± 1.7   1.15+0.12−0.09    5.2+2.0−1.4    D
+ 71   A222         0.213    7.0 ± 2.5    4.7 ± 1.7   1.13+0.11−0.04    5.1+1.9−1.1    D
+ 72   A223N       0.207    8.3 ± 2.9    5.6 ± 2.0   1.19+0.15−0.05    5.9+2.8−1.2    D
+ 73   A223S        0.207    6.4 ± 2.7    4.3 ± 1.9   1.34+0.09−0.07    8.3+2.2−1.8    D
+ 74   A520         0.199   11.5 ± 2.6    7.7 ± 1.7   1.15+0.06−0.06    5.2+1.3−1.2    D
+ 75   A521         0.253    9.1 ± 4.0    6.1 ± 2.7   1.28+0.09−0.07    7.8+2.1−1.7    D
+ 76   A586         0.171    4.0 ± 2.3    2.7 ± 1.6   1.26+0.09−0.25    6.7+1.8−3.4
+ 77   A611         0.288    7.2 ± 2.4    4.8 ± 1.7   1.18+0.06−0.06    6.2+1.4−1.3
+ 78   A697         0.282   11.1 ± 3.9    7.4 ± 2.6   1.41+0.04−0.08   10.7+1.6−2.1
+ 79   A851         0.407   18.8 ± 3.7   12.3 ± 2.5   1.32+0.07−0.08   10.0+2.1−2.1      –
+ 80   A959         0.286   16.5 ± 4.0   10.9 ± 2.6   1.35+0.04−0.04    9.4+1.5−1.5      –
+ 81   A1234        0.166    6.9 ± 2.6    4.6 ± 1.8   1.02+0.06−0.06    3.5+1.0−1.0    D
+ 82   A1246        0.190    6.1 ± 2.5    4.1 ± 1.7   1.05+0.08−0.04    4.0+1.3−0.9    D
+ 83   A1758        0.279   15.0 ± 3.1   10.0 ± 2.1   1.46+0.06−0.08   11.8+2.1−2.2    D
+ 84   A1835        0.253   15.8 ± 4.1   10.5 ± 2.7   1.38+0.06−0.04    9.6+1.7−1.5    R
+ 85   A1914        0.171   11.3 ± 2.8    7.6 ± 1.9   1.26+0.08−0.06    6.8+1.8−1.4    D
+ 86   A1942        0.224   10.7 ± 2.9    7.2 ± 2.0   1.25+0.05−0.05    6.9+1.4−1.3      –
+ 87   A2104        0.153   14.5 ± 3.5    9.6 ± 2.3   1.43+0.09−0.07    9.6+2.4−1.9
+ 88   A2111        0.229    7.9 ± 2.7    5.3 ± 1.9   1.10+0.07−0.09    4.8+1.3−1.3    D
+ 89   A2163        0.203   13.1 ± 3.4    8.7 ± 2.3   1.42+0.11−0.10   10.0+2.8−2.3    D
+ 90   A2204        0.152   16.8 ± 3.3   11.2 ± 2.2   1.47+0.05−0.05   10.5+1.8−1.7    R
+ 91   A2259        0.164    6.7 ± 2.4    4.5 ± 1.6   1.12+0.09−0.15    4.8+1.5−1.9
+ 92   A2261        0.224   18.7 ± 4.3   12.4 ± 2.8   1.69+0.05−0.07   17.3+2.3−2.6
+ 93   A2537        0.295   16.7 ± 3.5   11.0 ± 2.3   1.31+0.06−0.05    8.7+1.7−1.5
+ 94   MS0440      0.190    3.1 ± 2.3    2.1 ± 1.6   0.85+0.06−0.06    2.1+0.7−0.7      –
+ 95   MS0451      0.550   16.3 ± 4.5   10.6 ± 3.0   1.07+0.06−0.08    6.3+1.6−1.7    D
+ 96   MS1008      0.301   12.0 ± 3.0    8.0 ± 2.0   1.19+0.05−0.06    6.4+1.3−1.3      –
+ 97   RXJ1347     0.451   16.1 ± 5.7   10.6 ± 3.8   1.32+0.08−0.14   10.5+2.5−3.2    R
+ 98   RXJ1524     0.516    4.3 ± 4.3    2.9 ± 2.9   0.98+0.14−0.14    4.6+2.4−2.4    D
+ 99   MACS0717   0.548   28.8 ± 8.1   18.6 ± 5.3   1.42+0.07−0.06   14.8+3.0−2.6    D
+ 100   3C295        0.460    8.7 ± 3.8    5.7 ± 2.6   1.12+0.09−0.10    6.6+1.9−1.8    R
+
+Table A2. Physical properties measured from the weak-lensing signal of the MENeaCS clusters. (2) cluster name; (3) cluster redshift;
+(4) & (5) Mass enclosed in a sphere where the cluster is overdense by a factor ∆compared to the critical density of the Universe,
+measured using NFW ﬁtting; (6) Radius of a sphere which encloses a region overdense by a factor 500 compared to the critical density
+of the Universe, measured using the deprojected aperture mass method; (7) Deprojected aperture mass within Rap500. The radius R500
+and all masses scale as h−170 ; (8) State of the cluster as determined from X-ray observations. R indicates a relaxed cluster and D a very
+disturbed cluster. A dash indicates that there was no data for the state of the cluster in Mantz et al. (2015b).
+
+
+
+diction and in the cluster data. For all three outer radii −     good. This again shows that our blank ﬁeld prediction for
+3.0 Mpc, 3.5 Mpc and 4.0 Mpc from left to right respec-      the weight density of ﬁeld galaxies is a reliable tool for the
+tively −the scatter is centered around zero. The coloured      normalisation of the weight density in the cluster data.
+curves show the best ﬁt Gaussian, which can be compared
+to the black curve, which shows the variation expected from
+the blank ﬁelds. We ﬁxed the centre of the Gaussian on   APPENDIX C: RESULTS FROM CLUSTER
+zero, but leaving the centre as a free parameter changes lit-   SIMULATIONS
+tle in the ﬁt. The overall agreement between the scatter
+in the blank ﬁelds and the cluster outskirts is remarkably     Here we compute the systematic oﬀsets in our two mass mea-
+                                                         surement methods: deprojected aperture masses and NFW
+
+
+                                                                 MNRAS 000, 1–20 (2019)
+                                            CCCP and MENeaCS   19
+
+     12
+         RBCG > 3.0h−170 Mpc         RBCG > 3.5h−170 Mpc         RBCG > 4.0h−170 Mpc
+
+      8   clusters
+ of
+
+      4   Number
+
+      0
+         -80     -40     0      40     80   -80     -40     0      40     80   -80     -40     0      40     80
+           ξmodel −ξcluster [arcmin−2]         ξmodel −ξcluster [arcmin−2]         ξmodel −ξcluster [arcmin−2]
+Figure B2. Histogram of the diﬀerence between the predicted weight density from the blank ﬁelds ξmodel and the weight density
+measured outside the cluster ξcluster for the highest redshift MENeaCS clusters. As the full extent of the cluster is unknown we show
+ξcluster for diﬀerent areas corresponding to a radius of 3 Mpc, 3.5 Mpc and 4 Mpc from the BCG, from left to right respectively. The
+decreasing number of clusters shows that only the highest redshift clusters have any area available at large radii and highlights the need
+for the model prediction ξmodel. The black curve has the same width for all three panels and it shows the distribution expected from the
+6% scatter around the best ﬁt for the blank ﬁelds.
+
+
+
+         1.08
+
+               R2  = 1.2                   R2  = 1.5                   R2  = 2.0                   R2  = 3.0
+                Rmax = 1.5                     Rmax = 2.5                     Rmax = 3.0                     Rmax = 4.0
+         1.04             Mtrue,2D
+
+  /
+
+         1.00         Map,2D
+
+
+         0.96
+
+         1.08
+
+
+
+         1.04             Mtrue,3D
+
+  /
+
+         1.00         Map,3D
+
+
+         0.96
+             0.1          0.5   1.0         5   0.1          0.5   1.0         5   0.1          0.5   1.0         5   0.1          0.5   1.0         5
+           R [h−170 Mpc]           R [h−170 Mpc]           R [h−170 Mpc]           R [h−170 Mpc]
+
+
+Figure C1. Mass bias for the projected aperture mass (top) and deprojected aperture mass (bottom) derived from the Hydrangea
+simulations for diﬀerent choices of the annulus as a function of the distance to the true cluster centre. The vertical gray band shows the
+location of the annulus and is speciﬁed in the top panel. The average mass bias is shown in black with the black shaded region showing
+the uncertainty. The median mass bias for the 72 cluster proﬁles (24 clusters viewed from 3 angles) is shown in red, indicating that the
+distributions are highly skewed.
+
+
+                     NFW mass                                              Deprojected aperture mass
+  radial ﬁt range           M200/Mtrue200                   M500/Mtrue500            R2, Rmax           M500/Mtrue500
+     Mpc        average   median   uncertainty   average   median   uncertainty    Mpc      average   median   uncertainty
+  0.5 ⩽R ⩽1.5     0.928     0.935       0.035       0.956     0.961       0.032         1.2, 1.5     1.004     0.970       0.021
+  0.5 ⩽R ⩽2.0     0.926     0.929       0.033       0.955     0.969       0.030         1.5, 2.5     0.977     0.960       0.021
+                                                                                                        2.0, 3.0     0.975     0.965       0.019
+                                                                                                        3.0, 4.0     0.981     0.945       0.021
+
+
+Table C1. Statistics for the distribution of mass bias measured in the 24 Hydrangea clusters viewed along 3 axes for the NFW mass
+estimates (top) and the aperture mass estimates (bottom). The radii R200 and R500 are with respect to the critical density of the
+Universe. As we do not measure the aperture mass at R200 for MENeaCS, M200 is not shown. Diﬀerent physical sizes of the telescope
+ﬁeld of view are explored to evaluate the mass bias for the nearby MENeaCS clusters.
+
+
+
+MNRAS 000, 1–20 (2019)
+20   Ricardo Herbonnet et al.
+
+
+ﬁtting. A bias in the NFW mass comes from forcing the clus-     correspond to our annulus choice at z ≈0.05 and z ≈0.15,
+ter to follow a speciﬁc spherically symmetric model which      respectively. For CCCP the rightmost panels are indicative.
+might not accurately describe its matter distribution. In ad-     As expected if the annulus is placed far from the measure-
+dition, our data does not allow us to ﬁt for concentration     ment radius the 2D aperture mass is almost unbiased, be-
+freely, so we have to reduce the degrees of freedom of the     coming less accurate and less precise as R1 approaches R2.
+NFW model by assuming a mass-concentration relation. The      Fortunately, even for the smallest choice of R2 = 1.2 Mpc
+aperture mass measurements suﬀer from the assumptions      the biases is at most ≈1% around 1 Mpc. In the bottom
+about the convergence in an annulus around the cluster and      panels of Figure C1 we show the deprojected aperture mass
+the mass distribution along the line of sight. Moreover, our      proﬁles for the same choices of annulus. The deprojection
+data puts constraints on the size and location of the annu-      introduces a much larger bias in the mean mass estimate up
+lus, as well as the ﬁtting range for the NFW proﬁle. The      to 5% depending on R1. This shows that near the cluster
+consequences of these choices can only be properly explored      core the NFW is a poor description, but also in regions far-
+with mock data.                                                ther out the deprojection introduces percent level biases. We
+   The Hydrangea cluster simulations (Bah´e et al. 2017;     note that the median bias is very diﬀerent from the mean
+Barnes et al. 2017) provide an excellent test case for our      bias, showing that the distribution of recovered mass is very
+data, as it realistically includes the eﬀects of baryons, in-     asymmetric. Around 1 Mpc both the mean and median bias
+cluding AGN feedback, which can alter the cluster density      are small, which is the range for our measured R500 values.
+proﬁles. The clusters sit at the centre of zoom-in regions       We summarise the mass biases for the 3D mass esti-
+extracted from a (3.2 co-moving Gpc)3 volume, each ex-     mates in Table C1 for all radii which could be measured in
+tending to 10 r200 from the cluster centre and simulated      the MENeaCS data. We ﬁnd good agreement with the lit-
+with the AGNdT9 variant of the EAGLE simulation model      erature. Our estimates of the bias are consistent with the
+(Schaye et al. 2015; Crain et al. 2015). For the 24 simu-     ﬁndings of Schrabback et al. (2018) for their case of no mis-
+lated clusters at z = 0 in the Hydrangea simulations we      centring for M500. We see a slightly larger bias for M200,
+created spherical mass proﬁles, by summing all the mass of     although they are consistent within the errors. Our biases
+all the species in the simulations inside the sphere, and cir-      in M200 and M500 are similar to Henson et al. (2017) and
+cular mass proﬁles, by summing all the mass in cylinders     Becker & Kravtsov (2011), respectively. It is unclear why
+of 16 Mpc in length along each axis of the simulation box.      the aperture mass method performs much better for the 2D
+The clusters are randomly oriented with respect to the box,     mass compared to the results of Meneghetti et al. (2010), as
+so there is no preferential selection, such as of merging sys-     we perform the same operations.
+tems (although sometimes they do happen to lie along the       We repeated these exercises for a snapshot of the Hy-
+line of sight). The cylinders are also long enough to capture     drangea simulations at z = 0.3, roughly the mean redshift
+the correlated structure associated to the cluster (Becker &       for the CCCP clusters. We found very similar results as for
+Kravtsov 2011). The mass proﬁles are computed out to a      the z = 0 clusters, indicating a negligible evolution of the
+radius of 5 Mpc. In total we have 72 cluster proﬁles span-     mass bias. We therefore assign the same bias correction to
+ning a mass range log(M200/M⊙) = 14−15.4, for M200 with      the CCCP clusters as to the MENeaCS clusters. In contrast,
+respect to the critical density of the universe, a similar range      the results of Schrabback et al. (2018) do show evolution in
+to MENeaCS and CCCP.                                      the mass bias between z = 0.5 and z = 1.0. A possible expla-
+   From the 2D mass proﬁles we compute the shear g us-      nation is that this evolution only happens at earlier times in
+ing a dummy value for Σcrit, roughly the average for all      the cluster formation, but our sample of simulated clusters
+MENeaCS clusters, which is taken as known in the mea-        is not large enough to draw a conclusion on this.
+surement. We do not investigate miscentring here and use         There is little diﬀerence between the average mass bi-
+the actual centres of the simulated clusters in our computa-      ases for large and small ﬁelds of view for the NFW mass
+tions. We note that the central galaxies in the simulations      estimates, although the medians show that the distribution
+are consistent with the center of the potential within the        is asymmetric. We use the average mass bias for a radial
+1 kpc resolution of the simulations (He et al. 2019). Using     range out to 2 Mpc to correct all clusters in the data. The
+the BCG as the cluster centre, as we do for the observa-      aperture masses also show small changes for diﬀerent ﬁelds
+tions, would therefore not change the results in this section.      of view, all consistent within the uncertainties. As only a
+Masses are estimated in the same manner as was done for      small fraction of the clusters has the smallest ﬁeld of view,
+the data. First, the NFW proﬁle is ﬁt and M500NFW  is cal-     we correct all measured M500 values in the data by dividing
+culated, and with the NFW mass the 2D aperture mass is     by 0.98.
+computed and then deprojected to ﬁnd M500.ap  In these simu-
+lations the Planck cosmology (ﬂat Universe with H0 = 67.77
+km/s/ Mpc and Ωm = 0.308) was assumed and used in the
+mass measurements. The mass bias is then the measured
+mass within some radius divided by the true mass, which is
+calculated by summing the masses of all the particles inside
+that radius.
+    In the top panels of Figure C1 we show the 2D aper-
+ture mass bias as a function of aperture radius R1 for various
+choices of the annulus, which is shown as the gray shaded
+area. The annuli shown are representative of the range in
+our data; the annulus in the left and right panels roughly
+
+
+                                                                 MNRAS 000, 1–20 (2019)

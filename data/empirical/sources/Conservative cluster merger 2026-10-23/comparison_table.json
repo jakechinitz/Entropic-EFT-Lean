@@ -1,0 +1,93 @@
+[
+  {
+    "tag": "baseline_optimized",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 2.136000936329383,
+    "secondary_stock_stars_offset": 0.11180339887498948,
+    "core_separation": 2.5065719054800937
+  },
+  {
+    "tag": "baseline_fine",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 2.136000936329383,
+    "secondary_stock_stars_offset": 0.11180339887498948,
+    "core_separation": 2.506583675970516
+  },
+  {
+    "tag": "baseline_res2",
+    "t": 9.8,
+    "secondary_stock_gas_offset": 1.9448650338776725,
+    "secondary_stock_stars_offset": 0.07071067811865513,
+    "core_separation": 2.3499958151983273
+  },
+  {
+    "tag": "baseline_seed2",
+    "t": 9.8,
+    "secondary_stock_gas_offset": 2.0814658296498645,
+    "secondary_stock_stars_offset": 0.07071067811865482,
+    "core_separation": 2.389704945934303
+  },
+  {
+    "tag": "weak_nu01",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 2.2135943621178655,
+    "secondary_stock_stars_offset": 0.18027756377319945,
+    "core_separation": 2.393887807352445
+  },
+  {
+    "tag": "weak_res2",
+    "t": 9.8,
+    "secondary_stock_gas_offset": 2.0554804791094465,
+    "secondary_stock_stars_offset": 0.10000000000000009,
+    "core_separation": 2.3495398462861314
+  },
+  {
+    "tag": "weak_seed2",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 2.325940669922601,
+    "secondary_stock_stars_offset": 0.11180339887498908,
+    "core_separation": 2.4280041825588685
+  },
+  {
+    "tag": "active_nu1",
+    "t": 10.8,
+    "secondary_stock_gas_offset": 3.0858548248418947,
+    "secondary_stock_stars_offset": 0.25,
+    "core_separation": 1.4246422034304806
+  },
+  {
+    "tag": "active_fine",
+    "t": 10.4,
+    "secondary_stock_gas_offset": 3.6366193091936365,
+    "secondary_stock_stars_offset": 0.452769256906871,
+    "core_separation": 1.6109273825374015
+  },
+  {
+    "tag": "active_res2",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 2.9068883707497264,
+    "secondary_stock_stars_offset": 0.20615528128088326,
+    "core_separation": 1.6264873590037294
+  },
+  {
+    "tag": "active_short_range",
+    "t": 10.8,
+    "secondary_stock_gas_offset": 2.7802877548915688,
+    "secondary_stock_stars_offset": 0.21213203435596445,
+    "core_separation": 1.3788969064321888
+  },
+  {
+    "tag": "depleted_nu1",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 2.0880613017821097,
+    "secondary_stock_stars_offset": 0.0707106781186545,
+    "core_separation": 2.499285932676175
+  },
+  {
+    "tag": "collisionless_baryons",
+    "t": 10.0,
+    "secondary_stock_gas_offset": 0.07071067811865482,
+    "secondary_stock_stars_offset": 0.04999999999999982,
+    "core_separation": 2.5771739099276236
+  }
+]
