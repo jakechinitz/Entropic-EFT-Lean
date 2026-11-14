@@ -154,3 +154,5 @@ import Entropic.RAR.Pendular
 import Entropic.ContactLedger
 import Entropic.ReleaseLedger
 import Entropic.RAR.Redshift
+-- Inversion gluing: the diamond complex as the development of point inversions.
+import Entropic.InversionGluing

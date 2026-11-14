@@ -1,0 +1,85 @@
+{
+  "runs": [
+    {
+      "label": "Replica 1",
+      "time_Gyr": 8,
+      "shells": [
+        {
+          "radial_range_kpc": [
+            0.2,
+            5.0
+          ],
+          "negative_effective_mass_Msun": 13359018.52647768,
+          "negative_fraction_of_total_stock": 1.659017893131581e-05,
+          "negative_fraction_of_positive_effective_mass": 0.0009363205233048607,
+          "signed_effective_mass_Msun": 14254210893.671268,
+          "minimum_density_Msun_kpc3": -95998361.75501095
+        },
+        {
+          "radial_range_kpc": [
+            5.0,
+            60.0
+          ],
+          "negative_effective_mass_Msun": 0.0,
+          "negative_fraction_of_total_stock": 0.0,
+          "negative_fraction_of_positive_effective_mass": 0.0,
+          "signed_effective_mass_Msun": 420000267892.3868,
+          "minimum_density_Msun_kpc3": 138061.02858643467
+        },
+        {
+          "radial_range_kpc": [
+            60.0,
+            160.0
+          ],
+          "negative_effective_mass_Msun": 0.0,
+          "negative_fraction_of_total_stock": 0.0,
+          "negative_fraction_of_positive_effective_mass": 0.0,
+          "signed_effective_mass_Msun": 372123595447.964,
+          "minimum_density_Msun_kpc3": 17.759149693377402
+        }
+      ],
+      "force_divergence_relative_error_max": 2.557703391361219e-10
+    },
+    {
+      "label": "Replica 2",
+      "time_Gyr": 8,
+      "shells": [
+        {
+          "radial_range_kpc": [
+            0.2,
+            5.0
+          ],
+          "negative_effective_mass_Msun": 8679333.894840857,
+          "negative_fraction_of_total_stock": 1.0778613865580867e-05,
+          "negative_fraction_of_positive_effective_mass": 0.0005848735529132293,
+          "signed_effective_mass_Msun": 14830996441.509056,
+          "minimum_density_Msun_kpc3": -73490699.79026982
+        },
+        {
+          "radial_range_kpc": [
+            5.0,
+            60.0
+          ],
+          "negative_effective_mass_Msun": 0.0,
+          "negative_fraction_of_total_stock": 0.0,
+          "negative_fraction_of_positive_effective_mass": 0.0,
+          "signed_effective_mass_Msun": 420154209209.9364,
+          "minimum_density_Msun_kpc3": 150242.68540077397
+        },
+        {
+          "radial_range_kpc": [
+            60.0,
+            160.0
+          ],
+          "negative_effective_mass_Msun": 0.0,
+          "negative_fraction_of_total_stock": 0.0,
+          "negative_fraction_of_positive_effective_mass": 0.0,
+          "signed_effective_mass_Msun": 371323158173.4802,
+          "minimum_density_Msun_kpc3": 9.73708305722203
+        }
+      ],
+      "force_divergence_relative_error_max": 5.561884847658227e-10
+    }
+  ],
+  "qualification": "Density inferred from the numerical kernel Laplacian, not negative particle mass. Finite l and radial spline errors are included; no central r<0.2 kpc or outer r>160 kpc positivity claim."
+}

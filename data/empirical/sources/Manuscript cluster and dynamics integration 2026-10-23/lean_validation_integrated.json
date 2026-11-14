@@ -1,0 +1,59 @@
+{
+  "toolchain": "Lean/mathlib 4.19.0",
+  "passed": true,
+  "records": [
+    {
+      "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+      "theorems": 7,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true,
+      "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_153505\\EmpiricalCertificates.log",
+      "sha256": "17fd847cab53876ea5da0a0f2f7e5bf46c9c1b5907aeb3bd49cc82461856abc1"
+    },
+    {
+      "module": "Entropic.Extensions20261023.MuseProjection",
+      "theorems": 4,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true,
+      "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_152308\\MuseProjection.log",
+      "sha256": "f38af918b9ad232a6ac9aaa4f88241fa7f72a97044b102fcec1b1efc4e1a3641"
+    },
+    {
+      "module": "Entropic.Extensions20261023.ConnectedClosure",
+      "theorems": 42,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true,
+      "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_154035\\ConnectedClosure.log",
+      "sha256": "84b4633f7ec80ddca7843b3c991082432ea9d1fdf5243cb944cf141e29fc17bc"
+    },
+    {
+      "module": "Entropic.Extensions20261023.EffectiveContact",
+      "theorems": 36,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true,
+      "audit_log": "02 Research\\Manuscript cluster and dynamics integration 2026-10-23\\lean_checks\\20261023_153505\\EffectiveContact.log",
+      "sha256": "d8738cfa5aa1dec68546be7a1b08f187c40bec770f9910a7f42e1b939cf8f90a"
+    },
+    {
+      "module": "Entropic.Extensions20261023.MergerContact",
+      "theorems": 8,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true,
+      "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba"
+    },
+    {
+      "module": "Entropic.Extensions20261023.ClusterOutliers",
+      "theorems": 22,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true,
+      "sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c"
+    }
+  ],
+  "note": "MuseProjection numerical certificates completed with decide +kernel; original unsuccessful attempts preserved"
+}

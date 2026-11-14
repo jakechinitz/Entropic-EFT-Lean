@@ -1,0 +1,74 @@
+SUPPLEMENTARY DIAGNOSTICS ADDED DURING THE REGISTERED LIVE RUNS
+
+The primary experiment, seeds, force law, integration settings, eight-Gyr
+duration and descriptive retention flags remain exactly those in PROTOCOL.txt.
+No new seed was selected and no model was retuned after seeing a trajectory.
+
+These supplemental calculations were added while the runs were underway:
+
+initial_stationarity.py
+  Initial first and second derivatives of global and smoothly localized
+  position moments in rotating coordinates. Shape-flow constraints do not
+  force all higher moments to be stationary. The localized envelopes are
+  not sharp shell cuts, so the derivative includes their radial transport.
+
+temporal_diagnostics.py
+  Same future-phase force diagnostic used in the previous audit, now
+  applied to both new samples in the unchanged analytic potential.
+
+stellar_streaming_check.py
+  Subtract coarse local stellar velocity means in the final snapshots.
+  Independent inversion-pair representatives are counted once. The count
+  correction is a diagnostic, not an uncertainty estimate for correlated
+  orbit phases. Both 8 and 32 angular-cell estimates are saved.
+
+reconstructed_density_check.py
+  Analytic Laplacian of the numerical multipole/spline potential, checked
+  against force divergence. Positive particle masses do not automatically
+  guarantee pointwise positive reconstructed density. This measures the
+  artifact instead of assuming it absent. Radial and angular quadrature
+  coverage and the unchecked domains are disclosed.
+
+shape_definition_check.py
+  Density-contour intercepts of the analytic stock target, to avoid
+  confusing density-axis ratios with spherical-cut inertia-axis ratios.
+
+matched_shape_reference.py and matched_shape_assessment.py
+  The primary observational source, Dillamore & Sanders (2026), Section
+  3.4, uses a 6-60 kpc spherical inertia cut. This supplementary comparison
+  processes the adopted stellar target through the same cut and propagates
+  the quoted independent Gaussian p and q uncertainties. The fixed target
+  slopes and breaks are used. Our scalar tilt statistic uses the major-axis
+  inclination, so it is described as a published-style summary rather than
+  a reproduction of the entire observational likelihood.
+  The registered 10-40 kpc outcomes are not replaced. Final instantaneous
+  values and every averaged epoch are preserved, rather than selecting a
+  particularly favorable time. The original reference-only assessment was
+  saved before adding snapshot outputs; both versions are retained.
+
+orientation_check.py
+  At the final instantaneous snapshot, align the overall stellar azimuth
+  (the disk model is axisymmetric), then compare the minor axis with the
+  target. This detects noncoplanarity omitted by an inclination-only score.
+  It does not incorporate an observational covariance of all orientation
+  angles or transform the summary score into a calibrated probability.
+
+disk_torque_profile.py
+  Torque on thin uncoupled rings divided by their angular momentum proxy.
+  Different local tendencies identify the internal torques needed for a
+  coherent disk. The calculation is not a bending-mode or warp solution.
+
+higher_multipole_check.py
+  Add complete l=6 and l=8 multiplets to frozen snapshots with the same
+  radial kernel. The independent harmonic implementation reproduces the
+  baseline l<=4 force. Omitted modes include both finite-particle noise and
+  real structure; their magnitude cannot be converted into a trajectory
+  error or instability rate without new controlled evolution runs.
+
+All these additions are diagnostics of the current model. They neither
+change a0 nor edit the manuscript. None is used to discard an unfavorable
+registered realization. Final conclusions must retain the force-resolution,
+rigid-disk and full-action limitations even if all phase replicas survive.
+
+Primary method source checked during this audit:
+https://arxiv.org/html/2510.00095v2#S3.SS4

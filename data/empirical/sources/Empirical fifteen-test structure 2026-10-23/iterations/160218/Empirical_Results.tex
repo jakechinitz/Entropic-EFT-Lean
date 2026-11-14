@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{graphicx,booktabs,tabularx,longtable,array,float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem,fancyhdr,titlesec,caption}
+\usepackage[obeyspaces]{url}
+\usepackage{hyperref}
+\definecolor{ink}{HTML}{183C5A}
+\definecolor{teal}{HTML}{127C80}
+\hypersetup{colorlinks=true,linkcolor=ink,urlcolor=teal,citecolor=teal,
+ pdftitle={Empirical Results: History-Dependent Gravity and Cosmological Release},
+ pdfauthor={Research synthesis prepared for Jacob Chinitz}}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{ink}}{\thesubsection}{.7em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection}{.7em}{}
+\setcounter{tocdepth}{2}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5em}
+\setlength{\emergencystretch}{3em}
+\raggedbottom
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlist{nosep,leftmargin=1.5em}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{ink}History-dependent gravity and cosmological release}
+\fancyhead[R]{\small Empirical results}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{.3pt}
+\newcommand{\Msun}{M_\odot}
+\newcommand{\kms}{\mathrm{km\,s^{-1}}}
+\newcommand{\aunit}{10^{-10}\,\mathrm{m\,s^{-2}}}
+\newcommand{\LCDM}{\ensuremath{\Lambda\mathrm{CDM}}}
+\newcommand{\source}[1]{\textcolor{teal}{\small [#1]}}
+\newcommand{\empiricalpart}[2]{%
+  \clearpage\phantomsection
+  \addcontentsline{toc}{part}{#1. #2}%
+  {\Large\bfseries\color{ink}Part #1. #2\par}\vspace{6mm}}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{17mm}
+{\small\sffamily\color{teal}EMPIRICAL RESULTS AND THEIR PHYSICAL INTERPRETATION\par}
+\vspace{9mm}
+{\Huge\bfseries\color{ink}History-dependent gravity\par}
+\vspace{3mm}
+{\Huge\bfseries\color{ink}and cosmological release\par}
+\vspace{11mm}
+{\Large Galaxy, cluster, and cosmological tests\par}
+\vspace{14mm}
+\rule{\textwidth}{.5pt}
+\vspace{4mm}
+{\large Distinctive predictions and discriminating tests\par}
+\vspace{3mm}
+{\large Recovery of established phenomenology\par}
+\vspace{3mm}
+{\normalsize Fifteen test families, with their evidence and open limits\par}
+\vspace{4mm}
+\rule{\textwidth}{.5pt}
+\vfill
+Prepared for Jacob Chinitz\\
+Research synthesis and numerical review, 23 October 2026\\[5mm]
+\small Based on the Entropic Scalar EFT manuscript, its Lean proof package,
+the archived galaxy calculations, and the tied-abundance cosmological
+release calculations. The comparisons use specified source histories,
+transport models, and observational likelihoods; their mathematical
+premises and numerical domains are stated with each result.
+\end{titlepage}
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\input{01_results_and_basis.tex}
+\empiricalpart{I}{Distinctive predictions and discriminating tests}
+\input{02_acceleration.tex}
+\clearpage
+\input{03_history.tex}
+\clearpage
+\input{04_dwarfs.tex}
+\clearpage
+\input{05d_distinctive.tex}
+\empiricalpart{II}{Recovery of established phenomenology}
+\input{05c_cross_sector.tex}
+\clearpage
+\input{05_cosmology.tex}
+\clearpage
+\input{05b_clusters.tex}
+\clearpage
+\input{06_interpretation_and_audit.tex}
+\clearpage
+\input{07_references.tex}
+\end{document}

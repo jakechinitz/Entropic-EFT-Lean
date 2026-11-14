@@ -1,0 +1,560 @@
+\documentclass[11pt]{article}
+\usepackage[margin=.87in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,graphicx,booktabs,tabularx}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!50!black]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.4em}
+\setlength{\emergencystretch}{1em}
+\graphicspath{{images/}}
+\title{An effective contact for stock redistribution and a finite clock-energy supply}
+\author{Research calculation for the Entropic Scalar EFT project}
+\date{23 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A selected effective contact connects the positive depletion completion to
+orbital redistribution. A local radial-velocity kernel preserves particle
+number and angular momentum and relaxes toward a supplied positive orbital
+distribution. Its energy exchange separates mechanical work from bath heat.
+Coupling the work to the source clock with power proportional to the square
+of the clock speed preserves the regular positive-current equation. A
+Hermitian joint transition provides a finite-energy realization: orbital,
+work-register and bath energies change together, and a symmetric amplitude
+suppresses transitions at the clock floor. A finite-dimensional Hamiltonian
+checks that construction. Particle tests with clock feedback reach the
+requested distribution when sufficiently supplied and remain far from it
+when the clock supply is exhausted. The target distribution, physical rate,
+bath spectrum and identification of the work register remain effective inputs.
+Spatial scalar tests converge during smooth early evolution; sharp later
+fronts retain a resolved-energy deficit. A selected thermal fluid extension
+then supplies a conservative continuation with positive energy and causal
+local sound speed. Its warm contact gate reduces exactly to the cold rule.
+The thermal equation of state and its relation to the anisotropic kinetic
+stock remain additional assumptions. The construction is not a new galaxy
+fit or a derivation of the full covariant multistream theory.
+\end{abstract}
+
+\section{What has been connected}
+The preceding research note constructed a positive low-density completion
+of the capacity-clock action. This calculation adds a specified interaction,
+its work and heat ledger, a finite-energy Hamiltonian realization, and tests
+of actual orbital transport. These are effective constructions. The
+microstructure has not selected their target or matrix elements.
+
+The other chat's assessment correctly distinguishes source-clock slowing
+from ordinary proper time. Throughout this note, $v=d\phi/d\tau$ is the
+scalar's speed along its regular flow. It is not the speed of atomic clocks,
+biological processes or all physics in an underdense region.
+
+\begin{table}[ht]
+\small
+\begin{tabularx}{\textwidth}{@{}p{.23\textwidth}XX@{}}
+\toprule
+Part & Supplied here & Still required \\
+\midrule
+Exhaustion and work & A regular gated source and finite supply bound &
+Its microscopic selection and spatial stress completion \\
+Redistribution & Local velocity transitions with a prescribed stationary
+orbital distribution & Selection and nonlinear self-consistency of that distribution \\
+Reaction and heat & Joint energy shifts and opposite radial impulses &
+Dynamics of the bath stress and finite carrier \\
+Hamiltonian contact & A Hermitian energy-conserving work-register construction &
+Identification with the native clock and a bath spectrum giving the rate \\
+Spatial boundary & A conservative thermal fluid option with causal sound
+speed & Selection of its stress closure and realistic void predictions \\
+\bottomrule
+\end{tabularx}
+\caption{The new construction supplies a usable conditional interaction.
+Its physical inputs and unresolved spatial completion remain explicit.}
+\end{table}
+
+\section{The work coupling required near exhaustion}
+Use $(-,+,+,+)$ signature and $X=-\nabla\phi\cdot\nabla\phi/2$. The selected
+matter action from the preceding note has
+\begin{equation}
+ P=\lambda X-e(\lambda,\phi)-V(\phi),\qquad
+ e=\frac{\lambda}{2}+\frac{2[L-\lambda]_+^3}{3L^2},\qquad
+ L=3(K-V)>0,\quad\lambda\ge L/2.
+\end{equation}
+On its regular timelike pressure branch put $v=\sqrt{2X}$,
+$j=\lambda v$, $r=\lambda/L$ and $\theta=\nabla_\mu u^\mu$.
+The existing scalar equation is
+\begin{equation}
+ \dot j+\theta j=-V_\phi A(r)v^2,\qquad
+ A(r)=\frac{1+2r-2r^2}{3-2r}\in[3/4,1].
+\end{equation}
+The dust branch has $v=1$ and source $V_\phi$. It enters the pressure branch
+at $j=L>0$. The local energy density has lower bound $K$.
+
+Suppose a contact takes work power $\mathcal P$ per physical volume from
+the clock sector, measured in this frame. Its source in the current equation
+is $-\mathcal P/v$. A sufficient regularity condition is
+\begin{equation}\label{eq:gate}
+ \mathcal P=v^2 B,\qquad B\ \hbox{finite and continuous near rest}.
+\end{equation}
+Then
+\begin{equation}\label{eq:current}
+ \dot j=-\left[\theta+\frac{V_\phi A(r)j}{\lambda^2}
+                         +\frac{B}{\lambda}\right]j.
+\end{equation}
+The fractional rate remains regular when $K-V$ stays bounded away from
+zero. The integrating-factor positivity argument continues to apply.
+$B$ can have either sign: the interaction may return work to the clock.
+An arbitrary finite power independent of $v$ would reintroduce a singular
+source at rest.
+
+This condition selects a class, not one unique interaction. Powers vanishing
+faster than $v^2$ also work. A source vanishing more slowly may admit a
+different stopping prescription, but does not have the same bounded
+fractional-rate argument. On the spacelike branch the proposed contact is
+switched off; extension through nonzero null gradients remains part of the
+interface problem.
+
+The scalar equation with generalized force is
+\begin{equation}
+ \nabla_\mu(\lambda\nabla^\mu\phi)-e_\phi-V_\phi=Bv.
+\end{equation}
+Its stress divergence is therefore
+\begin{equation}\label{eq:clockforce}
+ \nabla_\mu T_\phi^{\mu\nu}=Bv\nabla^\nu\phi
+                         =-\mathcal P u^\nu.
+\end{equation}
+If $I^\nu$ is the kinetic contact's four-momentum gain, the assignments
+\begin{equation}\label{eq:ledger}
+ \nabla T_{\rm kin}=I^\nu,\qquad
+ \nabla T_{\rm bath}=\mathcal P u^\nu-I^\nu
+\end{equation}
+close total stress conservation together with~\eqref{eq:clockforce}.
+The bath carries the opposite spatial impulse as well as heat. Specifying
+these exchange vectors does not determine its constitutive stress or prove
+a full covariant initial-value problem.
+
+\subsection{A finite activity budget}
+For a homogeneous cell at constant $V$, write its clock Hamiltonian density
+as $R(j)$. Legendre duality gives $R'(j)=v$. Let an internal two-state
+population have upper-state fraction $w$, target $p$, and rate
+\begin{equation}
+ \dot w=\nu v^2(p-w).
+\end{equation}
+If each net upward transition draws work $\mathcal W>0$, then
+\begin{equation}
+ R(j)+\mathcal W w=R(j_0)+\mathcal W w_0.
+\end{equation}
+Consequently
+\begin{equation}\label{eq:budget}
+ w\le w_0+\frac{R(j_0)-K}{\mathcal W}.
+\end{equation}
+Introduce contact activity $s=\int v^2dt$. The exact population is
+$w(s)=p+(w_0-p)e^{-\nu s}$. If the available energy
+$D=R(j_0)-K$ is smaller than $\mathcal W(p-w_0)$, then
+\begin{equation}
+ s_\infty=-\frac1\nu\ln\left[1-\frac{D}{\mathcal W(p-w_0)}\right],
+ \qquad w_\infty=w_0+D/\mathcal W<p.
+\end{equation}
+The current approaches zero and the target is not reached. The mechanism
+does not turn the vacuum-like floor into an unlimited source of work.
+
+The test used $K=1$, $p=0.8$, $w_0=0.1$, a unit excitation gap and bath
+temperature $\Theta=0.05$ in dimensionless energy units. Detailed balance
+below gives $\mathcal W=1+\Theta\ln4=1.0693147$; the required work is
+$0.7485203$. With $D=0.25$, the population ends at $0.3337946$, agreeing
+with~\eqref{eq:budget}. With $D=1$, it reaches $0.8$. The maximum absolute
+energy-ledger error was $2.5\times10^{-11}$. No exhausted state was clipped.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{closed_cell.png}
+\caption{Deterministic finite-supply test. The population relaxes in contact
+activity rather than ordinary time; activity becomes finite when work is
+exhausted. These are dimensionless internal-state tests.}
+\end{figure}
+
+\section{A local transition that redistributes orbital stock}
+In a fixed spherical potential let
+\begin{equation}
+ E=\frac{p_r^2}{2\mu}+\frac{\ell^2}{2\mu r^2}+\mu\Phi(r),
+\end{equation}
+where $\mu$ is a particle or reduced mass. Retain the full angular momentum
+vector $\boldsymbol\ell$, including its orbital plane. Supply a positive
+integrable stationary radial phase density $h(E,\ell)$, with the same radial
+shape for orientations of the same angular-momentum magnitude. At fixed
+$r,\boldsymbol\ell$, define
+\begin{equation}
+ Z(r,\ell)=\int h(E(r,p_r),\ell)\,dp_r,
+ \qquad n(r,\boldsymbol\ell)=\int f(r,p_r,\boldsymbol\ell)\,dp_r.
+\end{equation}
+A selected radial-velocity contact is
+\begin{align}
+ k(p_r\to p_r')&=\nu v^2\frac{h(E',\ell)}{Z},\label{eq:rate}\\
+ C[f]&=\nu v^2\left[\frac{h}{Z}n-f\right].\label{eq:collision}
+\end{align}
+The rate $\nu$ is independent of the incoming and outgoing radial momenta
+within this cell. For the central operator construction it may vary with
+radius and angular-momentum magnitude, with no imposed orientation dependence.
+Equation~\eqref{eq:collision} is the small-work-per-event limit; finite
+clock energies require the symmetric replacement in the next section.
+
+This is a local velocity change. It does not move a particle instantaneously
+between radii or impose a new density profile by hand. Hamiltonian streaming
+between interactions supplies the spatial transport:
+\begin{equation}\label{eq:kinetic}
+ \partial_t f+\{f,E\}=C[f].
+\end{equation}
+The contact preserves positivity, local number and every retained angular
+bin. It obeys detailed balance with respect to $h$ when the clock is held
+fixed. Since $h$ depends on orbital invariants, Hamiltonian streaming also
+leaves it stationary. Relative entropy to that supplied target decreases
+under the contact. On a connected accessible domain with nonzero contact,
+the joint stationary family is $f=a(\boldsymbol\ell)h$, with each
+$a$ fixed by its retained mass. This identifies a transition realizing a
+specified equilibrium; it does not derive the equilibrium itself.
+
+In a self-gravitating implementation, the density of this same $f$ sources
+the stock potential once. A local velocity reset leaves that density
+unchanged at the instant of collision; its later motion changes the density.
+Adding a separate full RAR halo would count the excess twice. The stationary
+distribution must be consistent with its own potential before the fixed-target
+argument can be used. Nonlinear self-gravitating stability does not follow
+from the fixed-potential entropy statement.
+
+\subsection{How this uses the existing orbital construction}
+The saved positive-orbit witness specifies mass per radial energy interval
+at fixed angular momentum. The phase density needed here is related by
+\begin{equation}
+ h(E,\ell)\ \propto\
+ \frac{w_*(E,\ell)}{\mathcal D(E,\ell)},
+ \qquad
+ \mathcal D(E,\ell)=\int dr\,dp_r\,
+       \delta[E-H(r,p_r,\ell)].
+\end{equation}
+With the corresponding fixed-angular normalization, $\mathcal D$ is the
+radial period. Bin widths must be included when the supplied $w_*$ are
+discrete masses. A positive interpolation and treatment of singular circular
+orbits must be specified. The existing feasible endpoint therefore provides
+input for this contact without replacing orbital motion by radial density
+diffusion. Its interpolation and a self-consistent evolving halo have not
+been implemented in this calculation.
+
+\subsection{Momentum and angular reaction}
+A radial relative-coordinate impulse has
+$\mathbf p' =\mathbf p+\alpha\mathbf r$ and thus
+$\mathbf r\times\mathbf p'=\mathbf r\times\mathbf p$ exactly.
+For a finite carrier, opposite particle and carrier impulses conserve total
+linear momentum. The reduced-mass kinetic change accounts for their common
+mechanical work. Stochastic radial impulses preserve angular momentum
+path by path; noise does not merely cancel it on average.
+
+The same property can be stated as a scalar radial operator commuting with
+all angular generators. Gravitational torques in a nonspherical potential
+can still change an orbit's plane. Carrier assignments and their reaction
+stresses must be supplied in a multicarrier system.
+
+The numerical test uses Newtonian orbital motion. A relativistic kinetic
+version can bound streaming speed by replacing the energy with its
+relativistic dispersion; locality of the collision then avoids the
+instantaneous spatial propagation of a diffusion equation. That extension,
+and its gravity, were not simulated here.
+
+\section{Work, heat, and an explicit Hamiltonian contact}
+\subsection{A nonthermal target requires work}
+Let $\Theta=k_BT$ in the same energy units as $E$. The rate ratio is
+\begin{equation}
+ \ln\frac{k(i\to j)}{k(j\to i)}=\ln\frac{h_j}{h_i}.
+\end{equation}
+Using local detailed balance\cite{Seifert}, the bath receives heat
+\begin{equation}\label{eq:heat}
+ Q_{ij}=\Theta\ln(h_j/h_i),\qquad
+ W_{ij}=E_j-E_i+Q_{ij}.
+\end{equation}
+The system gains mechanical energy $W_{ij}-Q_{ij}$.
+Without work, the contact requires $h\propto e^{-E/\Theta}$ within each
+connected angular bin. A general RAR-compatible orbital target need not
+have that form. Calling its contact a passive thermal bath would conceal
+the work term.
+
+At a fixed target define
+\begin{equation}
+ G(E,\ell)=E+\Theta\ln h(E,\ell).
+\end{equation}
+An arbitrary fixed normalization of $h$ only adds a constant to $G$.
+Then $W_{ij}=G_j-G_i$. A work register with energy $U$ changes to
+$U'=U-W_{ij}$; $U+G$ is invariant. For many particles sharing the register,
+the corresponding invariant is $U+\sum_aG_a$ in total-energy units.
+Hamiltonian streaming at fixed spherical potential also preserves each
+$G_a$. A moving target or evolving potential requires additional work
+accounting and is not covered by this invariant.
+
+\subsection{A symmetric interaction with a lower energy boundary}
+Give the effective work register a spectrum $U\ge K$ and let $v(U)$ be
+the homogeneous source-clock speed obtained from the selected action.
+This identification is an additional effective hypothesis about the
+semiclassical register; the native scalar spectrum has not been derived.
+Define $a(U)=\sqrt{v(U)}$. For radial system transition $A_{ji}$, work
+translation $T_{-W_{ij}}$ and bath operator $B_{Q_{ij}}$ that changes bath
+energy by $Q_{ij}$, consider
+\begin{equation}\label{eq:Hint}
+ H_{\rm ex}=\sum_{ij}g_{ij}\,
+ A_{ji}\otimes\bigl[a(\hat U)T_{-W_{ij}}a(\hat U)\bigr]
+ \otimes B_{Q_{ij}}+\text{h.c.}
+\end{equation}
+Translations outside the allowed register spectrum have zero matrix
+elements. Angular-degenerate radial transitions are summed identically
+over magnetic labels, so the contact commutes with each angular generator.
+This construction uses a common scalar register and central radial coupling.
+An arbitrary angular variation of the clock or bath is not covered by this
+angular selection rule.
+
+Each allowed term changes free energy by
+\begin{equation}
+ (E_j-E_i)-W_{ij}+Q_{ij}=0.
+\end{equation}
+Hence the exchange commutes with the joint free Hamiltonian when the stated
+energy-resolved operators exist. The forward and reverse register matrix
+elements are conjugates. Their squared clock factor is
+\begin{equation}\label{eq:edgegate}
+ v(U)v(U-W_{ij}),
+\end{equation}
+which is symmetric between the two endpoint states and vanishes at the
+floor. For an individual event small compared with the available register
+energy, this reduces to $v(U)^2$ and gives~\eqref{eq:gate}.
+
+This symmetric factor matters. Multiplying only the forward rate by the
+initial $v^2$ does not preserve the joint forward/reverse ratio when an
+event appreciably changes the register. The earlier one-sided-gate tests
+are retained as mean-field diagnostics. The final finite-event test uses
+equation~\eqref{eq:edgegate} and rejects only energetically unavailable
+proposals; it never clips a negative energy after a transition.
+
+Energy conservation alone does not guarantee that an interaction preserves
+the free Hamiltonian's lower bound. To enforce that stronger property,
+complete each exchange edge between degenerate joint states $|i\rangle$
+and $|f\rangle$ to the positive form
+\begin{equation}\label{eq:positiveedge}
+ H_c=\sum_e c_e(|i\rangle-|f\rangle)(\langle i|-\langle f|),
+ \qquad c_e=|g_e|\sqrt{v(U_i)v(U_f)}\ge0.
+\end{equation}
+Real edge phases are chosen here; phases can also be included in the
+rank-one vector. The diagonal terms are part of the selected interaction.
+They provide the least-trace positive completion of a fixed two-state
+off-diagonal exchange: a positive block with off-diagonal magnitude $c$
+has diagonal entries satisfying $d_1+d_2\ge2c$, attained by $d_1=d_2=c$.
+Thus $H_0+H_c\ge H_0$ as quadratic forms, while the free-energy and angular
+commutators still vanish. This preserves the free lower bound; it does not
+assert that gravitational binding energy has a universal local lower bound.
+The additional diagonal terms must be included in any finite-coupling
+frequency matching. The rate construction is a weak-coupling effective
+description, not an all-orders derivation that can omit these shifts.
+
+Under a suitable weak-coupling reduction, a thermal bath can supply the
+ratio $\exp(Q_{ij}/\Theta)=h_j/h_i$. Its spectrum and the matrix elements
+$g_{ij}$ determine the absolute rates. At fixed total $U+\sum G_a$, the
+ideal joint equilibrium is the supplied orbital weight restricted to
+configurations with sufficient remaining register energy, subject to the
+chosen energy-normalized register measure. The finite supply therefore
+changes the reachable target near exhaustion. It does not leave a second
+unlimited controller hidden outside the work ledger.
+
+The construction establishes a possible interaction, not its unique
+physical selection. The energy basis and matrix elements, the required
+bath correlations, and validity of a Markov approximation remain to be
+matched. In particular, the two-pole response in the main paper is not
+derived by writing~\eqref{eq:Hint}. Bath KMS symmetry alone also does not
+establish the equilibrium fluctuation--dissipation formula for a driven
+stock observable. Quantum noise must be checked in this coupled model.
+
+\subsection{A finite Hamiltonian witness}
+The positive completion in~\eqref{eq:positiveedge} is used in the final
+Hamiltonian witness. The original exchange-only witness is retained to
+distinguish conservation from the additional positivity requirement.
+A 72-state witness uses two radial states, six work-register levels, two
+bath levels and three magnetic labels. A transition raises orbital energy
+by $2$, lowers work energy by $3$, and raises bath energy by $1$. The
+floor is $U=1$. Hermiticity, the commutator with joint free energy, all
+three angular commutators and the coupling out of the floor were zero
+numerically. Unitary evolution conserved norm to $6.7\times10^{-16}$ and
+free energy to $4.5\times10^{-15}$. The minimum eigenvalue of the full
+Hamiltonian remained $1$, the free ground energy; its interaction was
+positive within eigensolver precision ($10^{-16}$).
+This small closed bath displays coherent exchange. It is not a derivation
+of dissipative relaxation or a measurement of a physical rate.
+
+\section{Orbital and coupled tests}
+\subsection{Local velocity contact in a fixed potential}
+The fixed spherical test uses
+$E=p_r^2/2+r^2/2+\ell^2/(2r^2)$, $\ell=0.8$, and
+\begin{equation}
+ h(E)=0.7e^{-E/0.25}+0.3e^{-E/1}.
+\end{equation}
+The two numbers in the exponential define the chosen orbital distribution;
+they are not both temperatures of the bath. The conditional radial-velocity
+distribution is sampled exactly as a position-dependent Gaussian mixture.
+Forty thousand particles underwent Hamiltonian streaming and local resets
+at common rate $\nu=2$ in dimensionless units.
+
+At steps $0.01$ and $0.005$, the radial cumulative-distribution discrepancies
+from the supplied stationary target were $0.00458$ and $0.00340$.
+Different steps have different random histories; these are sampling checks,
+not deterministic convergence rates. The Hamiltonian integration error
+decreased from $2.08\times10^{-4}$ to $5.43\times10^{-5}$. The eventwise
+work-minus-heat identity held to $3.6\times10^{-15}$.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{local_contact.png}
+\caption{Actual orbital motion plus local radial-velocity transitions.
+The declared stationary target is recovered in a fixed potential. This
+example is not an RAR fit or a self-consistent halo.}
+\end{figure}
+
+\subsection{Finite clock supply with the symmetric contact}
+The final coupled test uses 12,000 particles, the same orbital target, a
+shared clock-energy register, and the symmetric factor~\eqref{eq:edgegate}.
+The bath temperature is $10^{-6}$ in orbital energy units, so thermal heat
+is small compared with mechanical work. This is a dimensionless small-
+temperature test; it is not a dimensional identification with the horizon
+temperature. Earlier higher-temperature tests are also retained.
+
+At the finer step $0.005$, initial work supplies $0.15$ and $1.2$ give:
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Quantity & Limited supply & Sufficient supply \\
+\midrule
+Final energy above floor & $5.04\times10^{-5}$ & $0.2292$ \\
+Final source-clock speed & $0.00820$ & $0.5035$ \\
+Radial CDF discrepancy & $0.5029$ & $0.00758$ \\
+Work transferred & $0.14995$ & $0.97081$ \\
+Heat to bath & $-1.78\times10^{-7}$ & $-1.11\times10^{-6}$ \\
+Maximum energy-ledger error & $2.20\times10^{-6}$ & $1.02\times10^{-5}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The negative heat entries mean the thermostat supplies those small amounts
+of energy. Its energy change is included in the ledger; a finite thermal
+reservoir and its spatial stress were not evolved. The lower step reduced
+the mechanical integration error in both supply cases.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{hermitian_contact.png}
+\caption{The symmetric finite-event contact. The low-supply population
+remains far from its requested equilibrium; the well-supplied population
+approaches it. No negative clock energy is generated and then repaired.}
+\end{figure}
+
+The clock and orbital energies are actually coupled in this test. The
+model includes excitation energy once and does not add a second rest-mass
+halo. It is nevertheless a coarse energy-level construction in a frozen
+potential. Identifying its register, kinetic inertia and bath stress as
+parts of one covariant capacity medium remains an additional derivation.
+Finite stochastic exchange can return energy to the register; the
+near-floor speed need not decline monotonically along every realization.
+
+\section{Spatial boundaries and a conservative thermal continuation}
+For constant $V$ in a flat one-dimensional patch, put
+$s=\partial_x\phi$ and $J=\lambda\partial_t\phi$. The Hamiltonian equations are
+\begin{equation}
+ \partial_tJ=\partial_x(\lambda s),\qquad
+ \partial_ts=\partial_xv,
+\end{equation}
+and the smooth energy balance is
+\begin{equation}
+ \partial_t\mathcal H=\partial_x(Js).
+\end{equation}
+The constitutive inversion uses the dust, pressure and canonical spacelike
+branches from the earlier note. Regular scalar characteristics are those
+of a $P(X,\phi)$ fluid\cite{Garriga}. Unequal clock speeds do not form a
+stationary planar boundary in this setting: continuity of the second flux
+requires equal $v$ for a stationary interface. The interface must evolve.
+
+A compact smooth transition joined $J=0.2$ to $J=3.6$ with initial $s=0$,
+$L=3$ and $K=1$. A conservative finite-volume method evolved both interface
+sides without imposing positive-current clipping. During the early interval
+$t=0.1$, the fractional total-energy errors were
+$7.99\times10^{-5}$, $1.96\times10^{-5}$ and $4.88\times10^{-6}$ at
+256, 512 and 1024 cells. This is approximately second-order convergence.
+
+By $t=5$, compressive fronts were sharp. At 256, 512, 1024 and 2048 cells,
+the resolved scalar energy deficits were respectively $0.607\%$, $0.440\%$,
+$0.355\%$ and $0.319\%$. They have not converged to zero over these grids.
+The minimum current remained $0.2$, the minimum $X$ remained positive,
+and the energy floor held in every tested cell. Mean current was conserved
+to $9\times10^{-16}$. Small numerical tails beyond the unit-speed cone
+decreased with refinement.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{interface.png}
+\caption{The pressure difference drives spatial motion and later compression.
+The scalar-only solver preserves the tested positive states but loses
+resolved energy at sharp fronts. The plot does not establish a conservative
+shock or multistream completion.}
+\end{figure}
+
+This is a useful limitation rather than an accepted nonlinear solution.
+The numerical viscosity can remove resolved energy once gradients become
+sharp. A physical continuation must specify whether that energy enters
+unresolved velocity dispersion, heat or another degree of freedom, and
+include its stress and feedback. The work-and-bath ledger above identifies
+where such energy and momentum would be recorded. The selected thermal
+continuation below provides one concrete option. Realistic compensated
+voids, curved geometry and multistream formation remain untested.
+
+\input{warm_extension.tex}
+
+\section{What remains before applying the contact to galaxies}
+The construction supplies a route from a positive orbital target to local
+redistribution with protected angular data and finite work. Three physical
+choices still control its predictions.
+
+First, the target $h(E,\ell;H)$ must be selected and made
+self-consistent with the evolving potential. The existing positive orbit
+weights give a feasible starting point, not a unique distribution or an
+assembly history. The coupled model has not resolved the high-redshift
+$a_0$ tension.
+
+Second, the matrix elements and bath correlation spectrum must set a
+common rate and its spatial range. Detailed balance fixes a ratio, while
+equation~\eqref{eq:Hint} explicitly leaves $g_{ij}$ free. Choosing a rate
+separately for each galaxy would not produce an independent prediction.
+The required weak-coupling and short-memory assumptions need checking at
+the assumed horizon temperature.
+
+Third, the selected warm fluid stress must be matched to the anisotropic
+kinetic distribution and bath. The fluid and kinetic descriptions are
+different resolutions of the same stock; adding both full energy densities
+would double count it. A combined implementation must identify their
+moments, carry the bath impulse and reproduce the conservative interface
+benchmark without introducing an independent full halo.
+
+The new contact can therefore be stated as an effective completion
+hypothesis with reproducible equations. It should not be described as
+already derived from native microstructure, as a fully established
+quantum gravitational response, or as a successful new empirical fit.
+
+\section{Verification and preservation}
+Thirty-six standalone Lean certificates check the current-rate
+factorization, finite-supply bound, population and impulse identities,
+protected-noise algebra, event admissibility, joint energy shifts and
+symmetric gate bounds, the positive edge completion, and the warm
+enthalpy, floor and sound-speed bounds. Their axiom audit
+uses only standard logical axioms.
+The available Lean/mathlib 4.19 runtime was used; upstream 4.35 was not rebuilt.
+The Hamiltonian, kinetic and spatial simulations have separate verification
+records. The global covariant variation, quantum bath reduction and
+nonlinear PDE existence are not claimed as Lean theorems.
+
+The preceding research, four publication sources and upstream Lean files
+were kept unchanged. New sources, failed checks, earlier gates, numerical
+results and build versions are retained in the dated research directory.
+
+\begin{thebibliography}{9}
+\bibitem{Seifert} U. Seifert, ``Stochastic thermodynamics, fluctuation theorems,
+and molecular machines,'' Rep. Prog. Phys. 75, 126001 (2012),
+\href{https://arxiv.org/abs/1205.4176}{arXiv:1205.4176}.
+\bibitem{Garriga} J. Garriga and V. F. Mukhanov, ``Perturbations in k-inflation,''
+Phys. Lett. B 458, 219 (1999),
+\href{https://arxiv.org/abs/hep-th/9904176}{arXiv:hep-th/9904176}.
+\bibitem{Brown} J. D. Brown, ``Action functionals for relativistic perfect
+fluids,'' Class. Quantum Grav. 10, 1579 (1993),
+\href{https://arxiv.org/abs/gr-qc/9304026}{arXiv:gr-qc/9304026}.
+\end{thebibliography}
+\end{document}

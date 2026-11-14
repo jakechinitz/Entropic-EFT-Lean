@@ -1,0 +1,30 @@
+{
+  "input_repository_head": "432da8c4a8b169a17146b53e4155d6b37915a12f",
+  "existing_to_new": [
+    {
+      "existing": "Entropic/AppO/Release.lean:linear_positivity; Entropic/AppO/Flow.lean:release_positivity",
+      "new": "current_factorization; rate_ratio_bounds; regular_rate_positivity",
+      "meaning": "The selected constitutive completion removes the Q/current singularity for regular future-directed flow."
+    },
+    {
+      "existing": "Entropic/AppKN/Response.lean:two_pole_symbol; Entropic/Sweep/Analysis.lean:static_sum_rule",
+      "new": "logarithmic_mean_bound; noise_delay_bound; two_pole_tracking",
+      "meaning": "Connects the existing response to a delay/noise constraint and fixes the lag sign."
+    },
+    {
+      "existing": "Entropic/Reciprocity.lean:total_force_zero,comoving_exchange; Entropic/AppO/Release.lean:circular_jeans",
+      "new": "relabeling_cancels; adiabatic_stock_scaling",
+      "meaning": "Conservation and existence of an equilibrium do not select the physical RAR relaxation."
+    },
+    {
+      "existing": "Entropic/AppH10/Symbols.lean:tt_trace,tt_projector; Entropic/Pass2/Harmonic.lean:no_slip",
+      "new": "tt_spans; tensor_energy_nonnegative; tensor_luminal_symbol; tensor_speed_deformation",
+      "meaning": "Conditional Einstein tensor kinetics and an explicit operator freedom invisible to the static check."
+    },
+    {
+      "existing": "Entropic/Main/Galactic.lean:acceleration_abundance; Entropic/Main/Core.lean:abundance",
+      "new": "loading_reciprocity; different_loading_changes_acceleration",
+      "meaning": "The cross relation survives a loading change; physical selection of the loading remains separate."
+    }
+  ]
+}

@@ -304,7 +304,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-154 | B | easy | Late-time re-entry bound | proved: AppP.occupation_conserved, AppP.false_record_min, AppP.Num.thermal_thresholds |
 | C03-155 | B | medium | Charged-lepton ratios | proved: Spine.muRatio_bracket, Spine.tauRatio_bracket, AppCDE.residuals |
 | C03-156 | C | hard | Primitive color transfer t_8 = 13/14 | premise (C) |
-| C03-157 | C | medium | Diamond color regulator | premise (C) |
+| C03-157 | C | medium | Diamond color regulator | premise (C): the inversion completion derives the adjacency and loops; product time, transfer law, physical metric and host selection retain their stated assumptions (H.9a, I.2, I.5) |
 | C03-158 | E | n | Lean validation count | premise (E) |
 | C03-159 | D | n | Wide-binary and Solar predictions | data (D) |
 | C03-160 | D | n | Tidal-dwarf boost | data (D) |
@@ -649,13 +649,13 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-98 | A | medium | First-order cone splitting and cubic Dresselhaus vector | proved: AppH1.dresselhaus_bound, AppH1.dresselhaus_extremes |
 | C07-99 | B | hard | Orientation-refresh doubler count | B: simulation |
 | C07-100 | A | easy | Mean edge degree in closed triangulated 3-manifolds | proved: AppH1.edge_degree |
-| C07-101 | A | medium | Diamond girth and balanced-complex zero modes | proved: AppH1.gluing_sum_zero (zero modes); girth part deferred |
+| C07-101 | A | medium | Diamond girth and balanced-complex zero modes | proved: AppH1.gluing_sum_zero (zero modes); InversionGluing.no_two_ring, InversionGluing.no_four_ring, InversionGluing.six_ring_iff (girth) |
 | C07-102 | A | medium | Tetragonal-disphenoid honeycomb edge degrees | partial: 36/7 arithmetic trivial; 2π/arccos(1/3) = 5.1043 recomputed, enclosure deferred |
 | C07-103 | B | hard | BCC honeycomb spectrum and dispersion coefficient | B: simulation |
 | C07-104 | D | easy | Crab Nebula bound comparison | D: external data comparison |
 | C07-105 | B | hard | Generic balanced complexes | B: simulation |
 | C07-106 | A | hard | Dirac–Kähler zero modes and Betti numbers | not formalized: discrete Hodge theory on T³ (second pass, time-boxed: discrete Hodge operator on a triangulated 3-torus not encoded) |
-| C07-107 | A | easy | Reality implies even speeds | proved: AppH1.reality_even_spectrum |
+| C07-107 | A | easy | Reality relates opposite-momentum spectra | proved: AppH1.reality_even_spectrum (unordered spectral identity); branchwise dispersion requires additional control |
 | C07-108 | B | hard | Sector speeds under different Hodge weights | B: simulation |
 | C07-109 | D | easy | Lorentz-violation bound comparison | D: external data comparison |
 | C07-110 | C | easy | Immirzi normalization from channel entropy | proved (existing): AppFG.immirzi_from_matching |
@@ -676,6 +676,12 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C07-125 | C | hard | Newtonian limit and no-slip | premise C; not formalized (linearized Einstein equations) |
 | C07-126 | A | hard | Commutant of the marked fiber | proved: Pass2.Schur.block_commutant, blocks_idem, blocks_diag, commutant_C3 (commutant spanned by three orthogonal block idempotents) |
 | C07-127 | A | easy | Renewal triangularity: no extra persistent pole | proved: AppH1.renewal_triangular, AppH1.renewal_eigen |
+| C07-128 | C | medium | Inversion vacuum completion | Premise; host-action selection and the implication from local port symmetry alone are not formalized. |
+| C07-129 | A | medium | Inversion development, closure and diamond identification | Proved: InversionGluing.develop, InversionGluing.closed_iff_balanced, InversionGluing.six_ring_iff, InversionGluing.Bridge.embed_nbr, InversionGluing.Bridge.embed_injective, InversionGluing.Bridge.embed_walk. Core Lean uses the regular integer frame; the arbitrary affine-frame argument is given in H.9a. |
+| C07-130 | A | easy | Position and frame transport compatibility | Proved: InversionGluing.Bridge.plane_reflection_eq, InversionGluing.Bridge.plane_reflection_det, InversionGluing.Bridge.gluing_sum_zero_inverted, InversionGluing.Bridge.inversion_vacuum_compatible. The product with EffectiveModel asserts joint inhabitation without shared metric or clock variables. |
+| C07-131 | A | easy | Triangular-face exclusion for inversion gluing | Proved: InversionGluing.inversion_moves_face_vertices, InversionGluing.mirror_fixes_face_vertices. The simplicial host and cage realization have distinct geometric face identifications. |
+| C07-132 | A | medium | Inversion cochain spectrum with specified Hodge weights | Exact symbolic Laurent-polynomial verification in diamond_derivation_audit_2026-11-14; not formalized in Lean. The physical Hodge prescription and interacting dispersion remain open. |
+| C07-133 | B | medium | Natural diamond cage realization | External natural-tiling reference plus direct coordinate checks; the centroid-fan realization gives pi/3 hinge angles. Not a regular-tetrahedron tessellation; not formalized in Lean. |
 | C08-01 | A | easy | Whitened Hessian and relative covariance | proved: AppH10.whiten, AppH10.whiten_posDef, AppH10.whiten_inv, AppH10.psqrt_mul_self, AppH10.psqrt_transpose |
 | C08-02 | A | medium | Finite-regulator Gaussian determinant theorem | proved: AppH10.determinant_theorem, AppH10.gaussian_integral, AppH10.det_whiten |
 | C08-03 | A | easy | Trace-log form of the determinant theorem | proved: AppH10.trace_log_form, AppH10.sum_log_eigenvalues |

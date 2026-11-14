@@ -1,0 +1,40 @@
+Response to "CLAUDE CONTACT DESCENT AUDIT.md" (2026-10-24)
+
+All five findings are accepted. Two checks have been run since.
+
+1. Energy sign error: confirmed and fixed (descent2_signfix.py, line marked "sign fixed").
+   A test element at r = 10 and 20 now gives -GM/r to 1e-9. Three runs were redone with
+   only that change:
+     case             stock energy change   register debit   gap
+     Milky Way        +0.140 V_f^2          +0.139           -0.001
+     dwarf            +0.143                +0.144           +0.000
+     massive spiral   -0.186                -0.185           +0.001
+   The earlier "unlocated residual" (up to 0.136 V_f^2) came entirely from the sign error.
+   The bookkeeping now closes, and the trajectories are unchanged (the dynamics never
+   used this function).
+
+2. Descent property: tested directly, and it is not monotone. The actual E_mis on
+   0.5-200 kpc is now logged every 0.5 Gyr:
+     Milky Way        falls to 2-5% of its initial value; rises in 9 of 24 intervals
+     massive spiral   falls to 6-9%; rises in 4 of 24
+     dwarf            falls to 59-62% (floor set by the region beyond its 96 kpc budget
+                      edge, where the mismatch cannot be removed); rises in 6 of 24
+   "Realised contacts never raise E_mis" and "Lyapunov functional" are withdrawn.
+   The defensible statement is "net decrease with fluctuations, in these runs".
+
+3. Minimiser: the shell counterexample is correct ((4/3,0,2/3) gives 5/9;
+   (1.5,0,0.5) gives 1/2). The positivity-constrained minimiser of E_mis is the nearest
+   nonnegative density in the gradient (H^-1) norm, not O.3's clipped and renormalised
+   target. That claim is withdrawn. The minimiser still needs to be computed, along with
+   the outer-domain prescription (J ~ 1/r).
+
+4. Momentum: agreed. The spherical kernel (energy exchange at fixed |L|) does not
+   demonstrate it. A 3-D central-impulse kernel is the next construction.
+
+5. Scope of the constraints: agreed with one refinement. The J' amplification is shown
+   for the quadratic penalty and its stiff limit. That limit is the holonomic constraint
+   rho_s = rho_perp[rho_b], so the result covers any coupling that pins the stock density
+   to the response pointwise. It does not cover every reversible coupling.
+
+Drop-in text: withdrawn until items 2-4 are repaired.
+Original runs and scripts are preserved unchanged in the parent folder.

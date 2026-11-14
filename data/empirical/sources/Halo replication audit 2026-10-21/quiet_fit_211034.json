@@ -1,0 +1,177 @@
+{
+  "success": true,
+  "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "iterations": 9,
+  "retained_rank": 251,
+  "rows": 251,
+  "max_scaled_row_residual": 9.313338984566488e-09,
+  "max_whitened_residual": 8.241708746026255e-09,
+  "orbit_mass_error": 3.469446951953614e-18,
+  "weight_ratio_quantiles": [
+    0.5532535278588945,
+    0.7336892830153399,
+    0.8722011374545345,
+    0.9962853244249235,
+    1.1306934770513268,
+    1.3183858871338447,
+    2.351780401532223
+  ],
+  "KL": 0.005874176494676039,
+  "effective_paired_particles": 118069.55763758546,
+  "before": {
+    "force_errors": [
+      {
+        "r_kpc": 6.0,
+        "total_force_error": 0.05204182734087443,
+        "transverse_force_error": 0.43194599444566434
+      },
+      {
+        "r_kpc": 8.2,
+        "total_force_error": 0.050558657020187386,
+        "transverse_force_error": 0.3507427672128701
+      },
+      {
+        "r_kpc": 10.0,
+        "total_force_error": 0.03326933909545122,
+        "transverse_force_error": 0.333602134766513
+      },
+      {
+        "r_kpc": 12.0,
+        "total_force_error": 0.034617339240186625,
+        "transverse_force_error": 0.2950799264776898
+      },
+      {
+        "r_kpc": 15.0,
+        "total_force_error": 0.02124722545077095,
+        "transverse_force_error": 0.2523488980125379
+      },
+      {
+        "r_kpc": 20.0,
+        "total_force_error": 0.01572950702631708,
+        "transverse_force_error": 0.1894742399074451
+      },
+      {
+        "r_kpc": 28.0,
+        "total_force_error": 0.010982240714467085,
+        "transverse_force_error": 0.08297641280230816
+      },
+      {
+        "r_kpc": 40.0,
+        "total_force_error": 0.006838701452801694,
+        "transverse_force_error": 0.08745333065872922
+      },
+      {
+        "r_kpc": 50.0,
+        "total_force_error": 0.009327566930110743,
+        "transverse_force_error": 0.1121055181548995
+      },
+      {
+        "r_kpc": 60.0,
+        "total_force_error": 0.008196931549874867,
+        "transverse_force_error": 0.13420879257661145
+      },
+      {
+        "r_kpc": 80.0,
+        "total_force_error": 0.013857966735673542,
+        "transverse_force_error": 0.09360813045917797
+      }
+    ],
+    "J_over_Ldisk": [
+      3.9666538540448997,
+      0.005095987509474253,
+      0.024889342159802763
+    ],
+    "J_direction_error_deg": 0.36696375280543087,
+    "torque_over_required": [
+      -0.16770485764209025,
+      0.9140970263442174
+    ],
+    "shape_flow": [
+      -1.187159870888335,
+      17.90047720033793,
+      -12.862513737017906,
+      -5.89842557189938,
+      -14.23702493676047,
+      1.5508345840489905
+    ]
+  },
+  "after": {
+    "force_errors": [
+      {
+        "r_kpc": 6.0,
+        "total_force_error": 2.402269805694003e-08,
+        "transverse_force_error": 1.8698021228681298e-07
+      },
+      {
+        "r_kpc": 8.2,
+        "total_force_error": 2.8059600195562695e-08,
+        "transverse_force_error": 2.7039590490536356e-07
+      },
+      {
+        "r_kpc": 10.0,
+        "total_force_error": 2.6788598859355232e-08,
+        "transverse_force_error": 2.6230290946140164e-07
+      },
+      {
+        "r_kpc": 12.0,
+        "total_force_error": 0.002918915946036577,
+        "transverse_force_error": 0.018460517021337743
+      },
+      {
+        "r_kpc": 15.0,
+        "total_force_error": 1.630893812240524e-08,
+        "transverse_force_error": 1.2450392733942457e-07
+      },
+      {
+        "r_kpc": 20.0,
+        "total_force_error": 8.749881071134155e-09,
+        "transverse_force_error": 7.498787835955339e-08
+      },
+      {
+        "r_kpc": 28.0,
+        "total_force_error": 0.003979499064676085,
+        "transverse_force_error": 0.03856585043064845
+      },
+      {
+        "r_kpc": 40.0,
+        "total_force_error": 3.3525256022251494e-09,
+        "transverse_force_error": 5.283535147580245e-08
+      },
+      {
+        "r_kpc": 50.0,
+        "total_force_error": 0.001391781922315365,
+        "transverse_force_error": 0.010333880911398495
+      },
+      {
+        "r_kpc": 60.0,
+        "total_force_error": 2.834234101881101e-09,
+        "transverse_force_error": 4.846257788912566e-08
+      },
+      {
+        "r_kpc": 80.0,
+        "total_force_error": 2.8684329263070458e-09,
+        "transverse_force_error": 5.010519776691186e-08
+      }
+    ],
+    "J_over_Ldisk": [
+      3.97035936842389,
+      -1.1119523892454937e-08,
+      -1.2589162157183864e-08
+    ],
+    "J_direction_error_deg": 2.423918853456851e-07,
+    "torque_over_required": [
+      -1.0531434443395395e-07,
+      0.999999954961784
+    ],
+    "shape_flow": [
+      -6.660356461907213e-07,
+      -3.6085522339135423e-06,
+      2.1756438126629973e-06,
+      3.4758725666605983e-06,
+      3.4833131512534976e-06,
+      3.4598844118605143e-06
+    ]
+  },
+  "seconds": 11.762065172195435,
+  "qualification": "Initial phase quadrature; per-orbit totals unchanged. Reweighted finite phases are not proven stationary."
+}

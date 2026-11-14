@@ -1,0 +1,92 @@
+\textbf{Result.} This note carries out the three repairs the audit asked for.
+\begin{itemize}
+\item \textbf{Minimiser.} The exact positivity- and budget-constrained minimiser of the spherical mismatch functional is a weighted isotonic regression of the target enclosed-mass curve, clipped at the stock budget. It is unique. It reproduces the audit's counterexample.
+\item \textbf{3-D contacts.} A three-dimensional central-impulse contact kernel conserves total momentum and angular momentum to roundoff ($10^{-17}$). Its energy bookkeeping closes exactly.
+\item \textbf{Runs.} With that kernel, the Milky Way model sits 0.009--0.032\,dex rms from the RAR over 8--12\,Gyr (three seeds, and $N=8000$) at one contact proposal per orbit. The no-contact control sits at 0.10\,dex. The dwarf reaches 0.02--0.04\,dex, with its mismatch 5--10\% above the exact floor.
+\end{itemize}
+The mismatch functional is not monotone. It rises in 5--12 of 24 half-Gyr intervals, against 12--14 for runs without contacts. In the Milky Way model it falls overall to about 1\% of its initial value at one proposal per orbit, which is the particle shot-noise level, and to 6--7\% at three to ten. In the budget-limited massive spiral it is still falling at 12\,Gyr, from 66 to 4 times its floor.
+
+The acceptance rule is chosen to reduce deviation from the Section~15 response, and it is not derived from the action. The result is therefore an approach to an assumed response under a proposed, conservative kinetic rule. It is not a derivation of the RAR.
+
+\section{Scope of the three constraints}
+\begin{itemize}
+\item \textbf{Scale.} Vlasov--Poisson with contacts that carry only a velocity scale cannot select a fixed acceleration independently of its initial and boundary data. The value $\epsilon cH$ must be supplied or derived somewhere. Emergent scales from cosmological assembly or baryonic physics are not excluded by this argument.
+\item \textbf{Stiff coupling.} The $J'$ amplification, a baryon force error of $-dJ'(g_b)$ for a fractional mismatch $d$ in the stock's $\sigma^2$, is derived for the quadratic penalty and its stiff limit. That limit is the holonomic constraint $\rho_s=\rho_\perp[\rho_b]$, so the result covers any coupling that pins the stock density to the response pointwise. It is not a proof about every reversible stock--response coupling.
+\item \textbf{Gate.} A function of $g_{\rm bar}/a_0$ alone cannot separate galaxies from clusters at equal acceleration when their required responses differ. This motivates a second state variable but does not select one.
+\end{itemize}
+
+\section{The exact constrained minimiser}
+On a domain $[r_{\rm in},R]$, write the stock enclosed mass as $Y(r)$ and the target as $T(r)=r^2J(g_b)/G$. The mismatch is
+\begin{equation}
+E_{\rm mis}=\frac{G}{2}\int_{r_{\rm in}}^{R}\frac{(Y-T)^2}{r^2}\,dr .
+\end{equation}
+Positivity of the density is equivalent to $Y$ non-decreasing. Stock outside $R$ exerts no force inside it in spherical symmetry, so unused budget can sit beyond the domain, giving $0\le Y\le M$. The problem is therefore weighted isotonic regression with weight $G/(2r^2)$ under box constraints. For that problem, clipping the unconstrained isotonic solution to the box is optimal, which gives
+\begin{equation}
+Y^\ast=\mathrm{clip}\big(\mathrm{iso}_w(T),\,0,\,M\big).
+\end{equation}
+The minimiser is unique, because the objective is strictly convex in $Y$. Applied to the audit's shells, $T=(2,1,2)$ pools to $(1.5,1.5,2)$, i.e.\ shell masses $(1.5,0,0.5)$ with $E=1/2<5/9$, as the audit found.
+
+Two consequences follow for real systems:
+\begin{itemize}
+\item \textbf{Negative response is negligible.} Negative response density appears only where the response is exponentially small, at peak $x=\sqrt{g_{\rm bar}/a_0}\gtrsim100$. In dense Plummer cores up to $10^{12}M_\odot$ it carries at most $\sim10^{-6}$ of the response mass. In the most negative case found ($10^{12}M_\odot$, $b=2$\,kpc; $1.7\times10^6M_\odot$ negative between 0.28 and 0.88\,kpc), $Y^\ast$ has 3.6 times less mismatch than the clipped profile, and both stay within $10^{-4}$\,dex of the response.
+\item \textbf{The difference is at the budget edge.} When the budget binds, $Y^\ast$ keeps the response exact inside the budget edge and stops there. Renormalising the clipped profile to the budget instead lowers it everywhere. That gives 4.1 times the floor mismatch for the dwarf model (edge at 96\,kpc) and 13 times for the light-halo massive spiral (edge at 166\,kpc). Appendix O.3's "clipped and renormalised" target should be replaced by $Y^\ast$.
+\end{itemize}
+The minimiser needs the finite domain: $J\propto1/r$ in the deep regime while a finite stock field falls as $1/r^2$, so the all-space integral diverges. Here $R=200$\,kpc.
+
+\section{Conservative 3-D contacts}
+The model has $N$ equal-mass stock particles in three dimensions, moving in the monopole field of stock plus static baryons. The integrator is kick--drift--kick with $dt=0.1$\,Myr, with the field rebuilt after every drift. Contacts work as follows:
+\begin{itemize}
+\item Every 2\,Myr each particle pairs with its nearest 3-D neighbour, and makes a Poisson number of proposals with mean $k\,\Omega\,\Delta t/2\pi$ (contacts per orbit $k$).
+\item A proposal is an impulse $\pm\tfrac12\delta w\,\hat{\mathbf n}$ along the pair separation, which conserves $\mathbf P$ and $\mathbf L$ exactly. Its kinetic change $\Delta K=\tfrac m4[(w+\delta w)^2-w^2]$ is paid by, or deposited in, a register.
+\item A proposal is accepted if the pair's orbit-averaged $\psi$ decreases.
+\end{itemize}
+Measured contact changes are $|\Delta\mathbf P|\le5\times10^{-17}MV_f$ and $|\Delta\mathbf L|\le1.2\times10^{-17}MV_fr_{200}$. The stock energy change equals the register debit to $\le0.001V_f^2$.
+
+\begin{center}\scriptsize\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{\begin{tabular}{lcccccc}\toprule
+Case & $t=0$ & rms 8--12\,Gyr (mean) & max $|$offset$|$ & $E_{\rm mis}$ end/start & rises /24 & $\Delta E$ [$V_f^2$]\\\midrule
+MW, no contacts & 0.10 & 0.10--0.11 (0.10) & 0.17 & 1.24 & 13 & 0.000\\
+MW, $k=1$, seeds 1--3 & 0.10 & 0.011--0.032 (0.017--0.022) & 0.05 & 0.008--0.012 & 5--8 & 0.15--0.18\\
+MW, $k=1$, $N=8000$ & 0.09 & 0.009--0.022 (0.016) & 0.05 & 0.009 & 8 & 0.14\\
+MW, $k=3$ & 0.10 & 0.010--0.040 (0.027) & 0.06 & 0.061 & 12 & 0.16\\
+MW, $k=10$ & 0.10 & 0.011--0.051 (0.031) & 0.08 & 0.071 & 10 & 0.15\\
+Dwarf, no contacts & 0.13 & 0.13--0.14 (0.14) & 0.20 & 1.12 (1.7--1.9$\times$ floor) & 14 & 0.000\\
+Dwarf, $k=3$, seeds 1--3 & 0.12--0.15 & 0.021--0.044 (0.029--0.034) & 0.06 & 0.60--0.63 (1.05--1.09$\times$ floor) & 9--11 & 0.14--0.16\\
+Dwarf, $k=10$ & 0.13 & 0.029--0.066 (0.042) & 0.13 & 0.67 (1.1$\times$ floor) & 8 & 0.17\\
+Massive spiral, $M_{200}=6\times10^{12}$ & 0.03 & 0.007--0.043 (0.021) & 0.07 & 0.40 & 9 & 0.004\\
+Massive spiral, $M_{200}=2.5\times10^{12}$ & 0.14 & 0.046--0.053 (0.049) & 0.13 & 0.077 (66$\to$4$\times$ floor) & 1 & $-0.20$\\
+Group, $1.5\times10^{13}$, gate 175 (no contacts) & 0.09 & 0.09--0.11 (0.10) & 0.18 & 1.26 & 12 & gate closed\\
+\bottomrule\end{tabular}}\end{center}
+
+\begin{center}\includegraphics[width=\linewidth]{images/descent3.png}\end{center}
+\vspace{-6pt}
+{\small Left and centre: offset from the RAR at 12\,Gyr, no contacts (orange) and 3-D contact descent (blue, three runs each). Right: the mismatch functional on 0.5--200\,kpc relative to its initial value. The dotted line is the dwarf's exact constrained floor.}
+
+\textbf{What the runs establish:}
+\begin{itemize}
+\item \textbf{Conservation.} With conservative 3-D contacts, the descent still carries equilibrium NFW stock to the response in the Milky Way, dwarf and heavy-halo massive-spiral models.
+\item \textbf{Rate.} One proposal per orbit suffices in 3-D; more proposals increase the late fluctuations.
+\item \textbf{Floor.} In the dwarf the end state sits 5--10\% above the exact constrained floor; the no-contact control sits 70--90\% above it.
+\end{itemize}
+
+\textbf{What they do not establish:}
+\begin{itemize}
+\item \textbf{Monotone descent.} The mismatch rises in a third of the intervals. The cause is that accepted contacts change orbits, and the self-consistent field then moves every other orbit. The first-order rule $\delta E_{\rm mis}=\int\psi\,\delta\rho$ also ignores the positive quadratic term $(8\pi G)^{-1}\!\int|\nabla\delta\Phi_s|^2$. Late-time rises sit at the amplitude of the no-contact fluctuations. The 1\% Milky Way end value matches the binomial shot-noise level of $E_{\rm mis}$ at $N=4000$ (about 1.2\%; 0.6\% at $N=8000$).
+\item \textbf{The binding-budget case.} In the light-halo massive spiral the descent has not converged by 12\,Gyr. The mismatch falls steadily from 66 to 4 times the floor, with one rise in 24 intervals, and contacts are still being accepted. The stock must contract here, and the register gains $0.2V_f^2$.
+\item \textbf{The gate.} The gate stays a model choice. The carrier-wide mean-subtracted dispersion window is 150--198\,km\,s$^{-1}$ (MW 129, heavy massive spiral 150, small group 198, group 292, cluster 668). A gate inside it freezes groups and clusters by construction.
+\end{itemize}
+
+\section{Status}
+\begin{center}\small
+\begin{tabular}{p{0.26\linewidth}p{0.67\linewidth}}\toprule
+Established & exact constrained minimiser (isotonic regression, clipped at the budget); a conservative 3-D contact kernel with exact $\mathbf P$, $\mathbf L$ and energy bookkeeping; approach to the response from equilibrium NFW stock in four spherical-baryon models, reproduced across seeds and $N$\\
+Not established & monotone descent; reaching the floor when the budget binds (still converging at 12\,Gyr); a 3-D baryon distribution and live baryons; cosmological assembly; the physical origin of the acceptance rule, register, rate and gate\\
+Model premises & the Section~15 response law; acceptance by orbit-averaged $\psi$; register of order $0.2V_f^2$ per unit stock mass; about one proposal per orbit; a carrier gate in 150--200\,km\,s$^{-1}$\\
+Manuscript & no insertion yet. The one change supported now is replacing O.3's clipped-and-renormalised target with $Y^\ast$\\
+\bottomrule\end{tabular}\end{center}
+
+\textbf{Note on domains.} The contact bias $\psi$ is integrated to $30r_{200}$, while $E_{\rm mis}$ is logged on 0.5--200\,kpc. With a monotone target the restricted optimum is the same; the larger domain is why the stock fraction beyond $r_{200}$ rises from 17\% to 24--40\%.
+
+\textbf{Independent check.} A referee re-derived the minimiser (it matched a constrained quadratic-program solver on 300 random cases to $3\times10^{-11}$) and verified the impulse algebra, $\mathbf P$ and $\mathbf L$ conservation, register signs and energy closure ($\le6\times10^{-4}V_f^2$). It also verified time reversibility of the integrator (positions return to $6\times10^{-14}$\,kpc) and the floor computation. The corrections it raised are incorporated above.
+
+\textbf{Reproducibility.} \texttt{minimizer.py} (exact minimiser, counterexample, dense cores); \texttt{descent3.py} (3-D kernel; arguments: case, proposals per orbit, register, $N$, time, gate, seed); \texttt{run3.sh}, \texttt{run3b.sh}; \texttt{summarize3.py}; \texttt{figures3.py}. Outputs are in \texttt{d3\_*.json} and \texttt{log3\_*.txt}. Earlier versions and the sign-fix runs are preserved in the parent folder.

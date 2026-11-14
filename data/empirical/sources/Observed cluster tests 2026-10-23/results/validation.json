@@ -1,0 +1,23 @@
+{
+  "all_passed": true,
+  "checks": {
+    "12_clusters_7_stellar_5_independent_lensing": true,
+    "stellar_projection_075_at_R500": true,
+    "projection_fraction_between_zero_and_one": true,
+    "critical_density_independent_astropy": true,
+    "cohort_ratio_matches_prior": true,
+    "no_negative_required_NFW_shells": true,
+    "forward_A644_failure_retained": true,
+    "self_consistent_overdensity_and_budget": true,
+    "NFW_profile_matches_M500_header": true,
+    "bullet_non_gas_is_total_minus_gas": true,
+    "bullet_aperture_pixel_convergence_below_03_percent": true,
+    "bullet_halo_offset_reproduces_published_4kpc_rounding": true,
+    "bullet_WCS_roundtrip": true,
+    "BCGs_inside_map": true,
+    "download_hashes_match": true
+  },
+  "max_M500_header_fraction": 0.0007923237145315287,
+  "max_identity_error": 4.440892098500626e-16,
+  "interpretation": "Numerical/data-handling checks, not validation of the theory or physical equilibrium."
+}

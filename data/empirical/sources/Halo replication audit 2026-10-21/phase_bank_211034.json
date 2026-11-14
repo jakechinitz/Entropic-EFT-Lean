@@ -1,0 +1,21 @@
+{
+  "base_points": 65536,
+  "paired_particles": 131072,
+  "orbits": 1072,
+  "minimum_phases": 24,
+  "orbit_mass_error": 1.9949319973733282e-17,
+  "effective_paired_particles": 119433.81418261938,
+  "jacobi_error_quantiles": [
+    1.625898893165328e-06,
+    8.800054858714096e-05,
+    0.0002648219767340997,
+    0.0012445948512013155
+  ],
+  "seconds": 68.83697175979614,
+  "settings": {
+    "base": 65536,
+    "suffix": "_211034",
+    "minimum": 24,
+    "seed": 211034
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "k": 5.1760752079627395,
+  "mu_for_pressure_conversion": 0.6,
+  "scope": "Conditional profile and conservation diagnostics; no joint likelihood or transport selection.",
+  "lensing_pressure": {
+    "A1795": {
+      "c200_inferred_from_published_pair": 3.426186970928222,
+      "interval_kpc": [
+        100,
+        330
+      ],
+      "scenarios": {
+        "central": {
+          "M500_Msun": 930000000000000.1,
+          "c200": 3.426186970928222,
+          "R500_kpc": 1455.2278469926446,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.3666425363770275,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.07881666023950705,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.10146119437470409,
+          "radius_of_maximum_minimum_support_kpc": 185.79,
+          "required_mass_difference_positive_through_interval": true,
+          "mass_ratio_at_100kpc": 1.0333376859993475,
+          "mass_ratio_at_XRISM_outer_radius": 1.2283511270688914,
+          "equivalent_sigma_los_lower_bound_kms_at100": 253.4463354972417,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0
+        },
+        "mass_minus_1sigma": {
+          "M500_Msun": 710000000000000.0,
+          "c200": 3.426186970928222,
+          "R500_kpc": 1330.013747789653,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.2460134448342265,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.0,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.061298547881763484,
+          "radius_of_maximum_minimum_support_kpc": 292.58666666666664,
+          "required_mass_difference_positive_through_interval": false,
+          "mass_ratio_at_100kpc": 0.92884188491041,
+          "mass_ratio_at_XRISM_outer_radius": 1.0757309871673164,
+          "equivalent_sigma_los_lower_bound_kms_at100": 0.0,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0.0005189949838008825
+        },
+        "mass_plus_1sigma": {
+          "M500_Msun": 1150000000000000.0,
+          "c200": 3.426186970928222,
+          "R500_kpc": 1561.957792030301,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.4466176202672397,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.15833105225836175,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.17466389974294083,
+          "radius_of_maximum_minimum_support_kpc": 179.88666666666666,
+          "required_mass_difference_positive_through_interval": true,
+          "mass_ratio_at_100kpc": 1.1227332840422266,
+          "mass_ratio_at_XRISM_outer_radius": 1.3610000449746782,
+          "equivalent_sigma_los_lower_bound_kms_at100": 359.2196217283387,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0
+        },
+        "lower_concentration": {
+          "M500_Msun": 930000000000000.1,
+          "c200": 2.2636592833412683,
+          "R500_kpc": 1455.2278469926446,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.34074550366876655,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.0,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.640625898167748,
+          "radius_of_maximum_minimum_support_kpc": 330.0,
+          "required_mass_difference_positive_through_interval": false,
+          "mass_ratio_at_100kpc": 0.7282764153733547,
+          "mass_ratio_at_XRISM_outer_radius": 0.9673161589350242,
+          "equivalent_sigma_los_lower_bound_kms_at100": 0.0,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0.005500286388084477
+        },
+        "higher_concentration": {
+          "M500_Msun": 930000000000000.1,
+          "c200": 5.18574382909399,
+          "R500_kpc": 1455.2278469926446,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.3894874882952297,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.4091685169238419,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.4091685169238419,
+          "radius_of_maximum_minimum_support_kpc": 100.0,
+          "required_mass_difference_positive_through_interval": true,
+          "mass_ratio_at_100kpc": 1.517616076131006,
+          "mass_ratio_at_XRISM_outer_radius": 1.5674006067766018,
+          "equivalent_sigma_los_lower_bound_kms_at100": 577.4682447243287,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0
+        }
+      },
+      "contact_targets": [
+        {
+          "r_kpc": 330.0,
+          "outward_acceleration_required_m_s2": 3.350852011345128e-11,
+          "fraction_of_total_gravity": 0.18590053123799055,
+          "velocity_change_if_unbalanced_for_500Myr_km_s": 528.7242371661251
+        },
+        {
+          "r_kpc": 500.0,
+          "outward_acceleration_required_m_s2": 3.605876852954994e-11,
+          "fraction_of_total_gravity": 0.24930578883433763,
+          "velocity_change_if_unbalanced_for_500Myr_km_s": 568.9640968740625
+        },
+        {
+          "r_kpc": 1153.0,
+          "outward_acceleration_required_m_s2": 2.809164579105701e-11,
+          "fraction_of_total_gravity": 0.3666425363770275,
+          "velocity_change_if_unbalanced_for_500Myr_km_s": 443.2524606079304
+        }
+      ]
+    },
+    "A2029": {
+      "c200_inferred_from_published_pair": 3.4137195200693244,
+      "interval_kpc": [
+        100,
+        670
+      ],
+      "scenarios": {
+        "central": {
+          "M500_Msun": 1210000000000000.0,
+          "c200": 3.4137195200693244,
+          "R500_kpc": 1581.3236542259094,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.19976934598246943,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.0,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.42857820772785304,
+          "radius_of_maximum_minimum_support_kpc": 670.0,
+          "required_mass_difference_positive_through_interval": false,
+          "mass_ratio_at_100kpc": 0.9094781705014074,
+          "mass_ratio_at_XRISM_outer_radius": 1.122148044179979,
+          "equivalent_sigma_los_lower_bound_kms_at100": 0.0,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0.0021972233972147475
+        },
+        "mass_minus_1sigma": {
+          "M500_Msun": 960000000000000.0,
+          "c200": 3.4137195200693244,
+          "R500_kpc": 1463.9156544227392,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.06776501790443024,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.0,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 1.7005464289228325,
+          "radius_of_maximum_minimum_support_kpc": 670.0,
+          "required_mass_difference_positive_through_interval": false,
+          "mass_ratio_at_100kpc": 0.8309616277983211,
+          "mass_ratio_at_XRISM_outer_radius": 0.984714995667642,
+          "equivalent_sigma_los_lower_bound_kms_at100": 0.0,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0.008718316363980636
+        },
+        "mass_plus_1sigma": {
+          "M500_Msun": 1460000000000000.0,
+          "c200": 3.4137195200693244,
+          "R500_kpc": 1683.4876284103116,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.291868777441033,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.04567758443243245,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.13099317997216883,
+          "radius_of_maximum_minimum_support_kpc": 305.58000000000004,
+          "required_mass_difference_positive_through_interval": false,
+          "mass_ratio_at_100kpc": 0.9779881803867475,
+          "mass_ratio_at_XRISM_outer_radius": 1.245594412709243,
+          "equivalent_sigma_los_lower_bound_kms_at100": 221.77602401057672,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0
+        },
+        "lower_concentration": {
+          "M500_Msun": 1210000000000000.0,
+          "c200": 2.255422120245438,
+          "R500_kpc": 1581.3236542259094,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.184274622260449,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.0,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 3.762939629257208,
+          "radius_of_maximum_minimum_support_kpc": 670.0,
+          "required_mass_difference_positive_through_interval": false,
+          "mass_ratio_at_100kpc": 0.6381887360732482,
+          "mass_ratio_at_XRISM_outer_radius": 0.969103513561767,
+          "equivalent_sigma_los_lower_bound_kms_at100": 0.0,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0.01929173916598371
+        },
+        "higher_concentration": {
+          "M500_Msun": 1210000000000000.0,
+          "c200": 5.166873578607181,
+          "R500_kpc": 1581.3236542259094,
+          "common_aperture_thermal_bias_at_HSE_R500": 0.21359121960952987,
+          "minimum_Pnt_over_Pth_at_100kpc": 0.29482604170984683,
+          "maximum_minimum_Pnt_over_Pth_in_interval": 0.29732133900908075,
+          "radius_of_maximum_minimum_support_kpc": 109.5,
+          "required_mass_difference_positive_through_interval": true,
+          "mass_ratio_at_100kpc": 1.3441920961357192,
+          "mass_ratio_at_XRISM_outer_radius": 1.2932361640645997,
+          "equivalent_sigma_los_lower_bound_kms_at100": 563.4377609317647,
+          "pressure_boundary_electron_equivalent_keV_cm3": 0
+        }
+      },
+      "contact_targets": [
+        {
+          "r_kpc": 670.0,
+          "outward_acceleration_required_m_s2": 1.5146834498300954e-11,
+          "fraction_of_total_gravity": 0.10885198687775621,
+          "velocity_change_if_unbalanced_for_500Myr_km_s": 238.99887218179109
+        },
+        {
+          "r_kpc": 500.0,
+          "outward_acceleration_required_m_s2": 1.1828673314941379e-11,
+          "fraction_of_total_gravity": 0.07080630389283937,
+          "velocity_change_if_unbalanced_for_500Myr_km_s": 186.64227050179704
+        },
+        {
+          "r_kpc": 1414.0,
+          "outward_acceleration_required_m_s2": 1.5043624436370633e-11,
+          "fraction_of_total_gravity": 0.19976934598246943,
+          "velocity_change_if_unbalanced_for_500Myr_km_s": 237.37034125660495
+        }
+      ],
+      "new_XRISM_model": {
+        "M200_Msun": 950000000000000.0,
+        "c200": 5.9,
+        "new_to_old_mass_at670": 0.9528243461008291,
+        "new_to_old_mass_at_HSE_R500": 0.8607382689924553,
+        "MENeaCS_minus_XRISM_M200_in_MENeaCS_sigma": 2.2631578947368425
+      }
+    }
+  },
+  "inventory": {
+    "A1795": {
+      "HSE": {
+        "radius_kpc": 1153.0,
+        "observed_baryon_Msun": 67704540284605.48,
+        "required_stock_Msun": 395135900869894.75,
+        "eta": 0.8868943360047928,
+        "minimum_initial_cohort_baryon_Msun": 76338902545702.58,
+        "outside_baryon_Msun": 8634362261097.102,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.11310566399520718,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 2.0467938991716084e-16
+      },
+      "lensing_NFW": {
+        "radius_kpc": 1455.2278469926446,
+        "observed_baryon_Msun": 84625255554513.88,
+        "required_stock_Msun": 845374744445486.2,
+        "eta": 0.5181449885051261,
+        "minimum_initial_cohort_baryon_Msun": 163323504871989.44,
+        "outside_baryon_Msun": 78698249317475.56,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.4818550114948739,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 1.4350353317711353e-16
+      }
+    },
+    "A2029": {
+      "HSE": {
+        "radius_kpc": 1414.0,
+        "observed_baryon_Msun": 127656229240453.47,
+        "required_stock_Msun": 736768323590868.1,
+        "eta": 0.896833132148122,
+        "minimum_initial_cohort_baryon_Msun": 142341116384368.4,
+        "outside_baryon_Msun": 14684887143914.938,
+        "outside_stock_Msun": 0.125,
+        "outside_baryon_fraction_of_initial": 0.1031668678518781,
+        "outside_stock_fraction_of_initial": 1.6965984556824302e-16,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 4.9883184539899406e-17
+      },
+      "lensing_NFW": {
+        "radius_kpc": 1581.3236542259094,
+        "observed_baryon_Msun": 144879572408403.88,
+        "required_stock_Msun": 1065120427591596.1,
+        "eta": 0.7040589434370723,
+        "minimum_initial_cohort_baryon_Msun": 205777618136815.8,
+        "outside_baryon_Msun": 60898045728411.94,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.2959410565629277,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 3.796574219653804e-17
+      }
+    },
+    "A644": {
+      "HSE": {
+        "radius_kpc": 1250.0,
+        "observed_baryon_Msun": 81810429061542.92,
+        "required_stock_Msun": 512045845821032.94,
+        "eta": 0.8269902725980728,
+        "minimum_initial_cohort_baryon_Msun": 98925503445799.03,
+        "outside_baryon_Msun": 17115074384256.11,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.1730097274019273,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 6.910187223606488e-17
+      }
+    },
+    "ZW1215": {
+      "HSE": {
+        "radius_kpc": 1358.0,
+        "observed_baryon_Msun": 84301744146608.84,
+        "required_stock_Msun": 682186649522865.8,
+        "eta": 0.6396375070817832,
+        "minimum_initial_cohort_baryon_Msun": 131796123919027.98,
+        "outside_baryon_Msun": 47494379772419.14,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.36036249291821676,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 5.927716056960667e-17
+      },
+      "lensing_NFW": {
+        "radius_kpc": 1045.7992484348788,
+        "observed_baryon_Msun": 63319050354515.52,
+        "required_stock_Msun": 286680949645484.5,
+        "eta": 1.1432366438615724,
+        "minimum_initial_cohort_baryon_Msun": 63319050354515.52,
+        "outside_baryon_Msun": 0.0,
+        "outside_stock_Msun": 41063217086267.625,
+        "outside_baryon_fraction_of_initial": 0.0,
+        "outside_stock_fraction_of_initial": 0.12529045900571747,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 1.2338308860064672e-16
+      },
+      "same_aperture_estimators": {
+        "radius_kpc": 1320.0,
+        "NFW_lensing_Msun": 432290448877339.5,
+        "aperture_lensing_Msun": 700000000000000.0,
+        "HSE_Msun": 740936931531773.1,
+        "NFW_and_aperture_correlated": true
+      }
+    },
+    "A2319": {
+      "HSE": {
+        "radius_kpc": 1368.0,
+        "observed_baryon_Msun": 150741964689478.6,
+        "required_stock_Msun": 616999635246497.9,
+        "eta": 1.2645902876702448,
+        "minimum_initial_cohort_baryon_Msun": 150741964689478.6,
+        "outside_baryon_Msun": 0.0,
+        "outside_stock_Msun": 163252110982307.0,
+        "outside_baryon_fraction_of_initial": 0.0,
+        "outside_stock_fraction_of_initial": 0.20923004885455795,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 2.0730789906031502e-16
+      }
+    },
+    "A2142": {
+      "HSE": {
+        "radius_kpc": 1424.0,
+        "observed_baryon_Msun": 148147246580211.8,
+        "required_stock_Msun": 746471741499443.5,
+        "eta": 1.0272609765661822,
+        "minimum_initial_cohort_baryon_Msun": 148147246580211.8,
+        "outside_baryon_Msun": 0.0,
+        "outside_stock_Msun": 20349548652333.625,
+        "outside_baryon_fraction_of_initial": 0.0,
+        "outside_stock_fraction_of_initial": 0.026537537381501018,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 2.1093878368559634e-16
+      },
+      "lensing_NFW": {
+        "radius_kpc": 1462.586666612524,
+        "observed_baryon_Msun": 152992080201078.34,
+        "required_stock_Msun": 817007919798921.5,
+        "eta": 0.9692666302896396,
+        "minimum_initial_cohort_baryon_Msun": 157843131518270.4,
+        "outside_baryon_Msun": 4851051317192.0625,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.030733369710360513,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 8.661685097407913e-17
+      }
+    },
+    "A85": {
+      "HSE": {
+        "radius_kpc": 1235.0,
+        "observed_baryon_Msun": 87079038359007.48,
+        "required_stock_Msun": 477729052471814.9,
+        "eta": 0.9434796758773365,
+        "minimum_initial_cohort_baryon_Msun": 92295616519808.08,
+        "outside_baryon_Msun": 5216578160800.594,
+        "outside_stock_Msun": 0.0,
+        "outside_baryon_fraction_of_initial": 0.05652032412266334,
+        "outside_stock_fraction_of_initial": 0.0,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 8.464649020815973e-17
+      },
+      "lensing_NFW": {
+        "radius_kpc": 1238.763219814234,
+        "observed_baryon_Msun": 87398382833185.0,
+        "required_stock_Msun": 482601617166815.0,
+        "eta": 0.9373789612530791,
+        "minimum_initial_cohort_baryon_Msun": 93236979328351.58,
+        "outside_baryon_Msun": 5838596495166.578,
+        "outside_stock_Msun": 0.0625,
+        "outside_baryon_fraction_of_initial": 0.06262103874692102,
+        "outside_stock_fraction_of_initial": 1.29506403992004e-16,
+        "transport_nonnegative_with_correct_marginals": true,
+        "transport_relative_error": 1.29506403992004e-16
+      }
+    }
+  },
+  "A644": {
+    "number_of_mass_knots": 58,
+    "radius_range_kpc": [
+      126.87728881835938,
+      1798.4527587890625
+    ],
+    "negative_forward_total_mass_shells": 11,
+    "negative_forward_stock_shells": 15,
+    "minimum_max_marginal_error_displacement": 2.155728807213979,
+    "limiting_pair_radii_kpc": [
+      854.4107666015625,
+      1798.4527587890625
+    ],
+    "limiting_pair_cumulative_mass_difference_Msun": 133017431603451.36,
+    "physical_models": {
+      "NFW": {
+        "negative_stock_shells": 0,
+        "max_deviation_from_forward_in_marginal_sigma": 8.317331758066123
+      },
+      "EIN": {
+        "negative_stock_shells": 0,
+        "max_deviation_from_forward_in_marginal_sigma": 10.944189004028711
+      },
+      "ISO": {
+        "negative_stock_shells": 0,
+        "max_deviation_from_forward_in_marginal_sigma": 7.766688788429684
+      },
+      "BUR": {
+        "negative_stock_shells": 0,
+        "max_deviation_from_forward_in_marginal_sigma": 6.561299229060449
+      }
+    },
+    "interpretation": "Marginal error envelope feasibility only; unknown covariance, no probability or p-value."
+  },
+  "checks": {
+    "A1795_NFW_pair_recovery": true,
+    "A1795_pressure_bound_equivalence": true,
+    "A2029_NFW_pair_recovery": true,
+    "A2029_pressure_bound_equivalence": true,
+    "minimax_LP_matches_pairwise_formula": true,
+    "A644_monotone_witness": true,
+    "all_transport_witnesses_positive_and_conservative": true
+  }
+}

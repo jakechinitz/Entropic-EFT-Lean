@@ -1,0 +1,22 @@
+[
+  {
+    "prior": "ConnectedClosure.current_factorization and regular_rate_positivity",
+    "new": "gated_current_regular; power_gate_factor; insufficient_supply_bound",
+    "scope": "A bounded work coefficient multiplying v squared preserves the regular positive-current form."
+  },
+  {
+    "prior": "Main paper O.3 retained radial update; RetainedRelaxation.lean",
+    "new": "Local velocity kernel and actual Hamiltonian transport; local_population_conserved and central_impulse_angular",
+    "scope": "A supplied orbital target has a local positive velocity transition with protected angular data; no target selection is proved."
+  },
+  {
+    "prior": "ConnectedClosure noise-delay and rate-rescaling results",
+    "new": "Joint work/bath Hamiltonian, symmetric_edge_gate and joint_transition_energy",
+    "scope": "An explicit effective energy-conserving interaction exists. Bath spectrum and physical rate remain open."
+  },
+  {
+    "prior": "Positive scalar floor in the preceding note",
+    "new": "positive_edge_form and least_trace_positive_completion",
+    "scope": "The selected positive Hamiltonian interaction does not lower the free lower bound. Spatial stress completion remains open."
+  }
+]

@@ -1,0 +1,949 @@
+{
+  "seed": 211034,
+  "rows": [
+    {
+      "time_Gyr": 0.0,
+      "quiet": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 2.402269805694003e-08,
+            "transverse_force_error": 1.8698021228681298e-07
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 2.8059600195562695e-08,
+            "transverse_force_error": 2.7039590490536356e-07
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 2.6788598859355232e-08,
+            "transverse_force_error": 2.6230290946140164e-07
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.002918915946036577,
+            "transverse_force_error": 0.018460517021337743
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 1.630893812240524e-08,
+            "transverse_force_error": 1.2450392733942457e-07
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 8.749881071134155e-09,
+            "transverse_force_error": 7.498787835955339e-08
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.003979499064676085,
+            "transverse_force_error": 0.03856585043064845
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 3.3525256022251494e-09,
+            "transverse_force_error": 5.283535147580245e-08
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.001391781922315365,
+            "transverse_force_error": 0.010333880911398495
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 2.834234101881101e-09,
+            "transverse_force_error": 4.846257788912566e-08
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 2.8684329263070458e-09,
+            "transverse_force_error": 5.010519776691186e-08
+          }
+        ],
+        "J_over_Ldisk": [
+          3.97035936842389,
+          -1.1119523892454937e-08,
+          -1.2589162157183864e-08
+        ],
+        "J_direction_error_deg": 2.423918853456851e-07,
+        "torque_over_required": [
+          -1.0531434443395395e-07,
+          0.999999954961784
+        ],
+        "shape_flow": [
+          -6.660356461907213e-07,
+          -3.6085522339135423e-06,
+          2.1756438126629973e-06,
+          3.4758725666605983e-06,
+          3.4833131512534976e-06,
+          3.4598844118605143e-06
+        ]
+      },
+      "prior": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.05204182734087443,
+            "transverse_force_error": 0.43194599444566434
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.050558657020187386,
+            "transverse_force_error": 0.3507427672128701
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.03326933909545122,
+            "transverse_force_error": 0.333602134766513
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.034617339240186625,
+            "transverse_force_error": 0.2950799264776898
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.02124722545077095,
+            "transverse_force_error": 0.2523488980125379
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.01572950702631708,
+            "transverse_force_error": 0.1894742399074451
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.010982240714467085,
+            "transverse_force_error": 0.08297641280230816
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.006838701452801694,
+            "transverse_force_error": 0.08745333065872922
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.009327566930110743,
+            "transverse_force_error": 0.1121055181548995
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.008196931549874867,
+            "transverse_force_error": 0.13420879257661145
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.013857966735673542,
+            "transverse_force_error": 0.09360813045917797
+          }
+        ],
+        "J_over_Ldisk": [
+          3.9666538540448997,
+          0.005095987509474253,
+          0.024889342159802763
+        ],
+        "J_direction_error_deg": 0.36696375280543087,
+        "torque_over_required": [
+          -0.16770485764209025,
+          0.9140970263442174
+        ],
+        "shape_flow": [
+          -1.187159870888335,
+          17.90047720033793,
+          -12.862513737017906,
+          -5.89842557189938,
+          -14.23702493676047,
+          1.5508345840489905
+        ]
+      }
+    },
+    {
+      "time_Gyr": 0.025,
+      "quiet": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.052867391882239385,
+            "transverse_force_error": 0.42981263995928504
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.05429441661747464,
+            "transverse_force_error": 0.30577163204807034
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.027962700250668465,
+            "transverse_force_error": 0.2722077170146845
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.03222346076268543,
+            "transverse_force_error": 0.18948835071018283
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.015836364470473537,
+            "transverse_force_error": 0.11788147550936587
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.011458642258830287,
+            "transverse_force_error": 0.11124113707915867
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.00724747116390622,
+            "transverse_force_error": 0.07432967622665689
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.004546098443557322,
+            "transverse_force_error": 0.04287419578553916
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.002786820160622048,
+            "transverse_force_error": 0.024424819042646165
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.0018167882152115796,
+            "transverse_force_error": 0.02002443579093005
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.001025429072114148,
+            "transverse_force_error": 0.012589650189782918
+          }
+        ],
+        "J_over_Ldisk": [
+          3.969778766177582,
+          -0.0022771938370158315,
+          4.966640736037142e-05
+        ],
+        "J_direction_error_deg": 0.032874529858664694,
+        "torque_over_required": [
+          -0.06696359907274935,
+          1.081293467957545
+        ],
+        "shape_flow": [
+          -4.697119501588559,
+          -1.2970121975502444,
+          -5.936834586252974,
+          1.96514444479938,
+          1.9239589942848812,
+          -2.1321947032548656
+        ]
+      },
+      "prior": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.05490878756495633,
+            "transverse_force_error": 0.4809219317930708
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.06142895876123156,
+            "transverse_force_error": 0.41839766314016363
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.03741386360872892,
+            "transverse_force_error": 0.37113837873927386
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.041114250149033166,
+            "transverse_force_error": 0.27761225036851095
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.022538366756134322,
+            "transverse_force_error": 0.18617535520288767
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.015377826159810124,
+            "transverse_force_error": 0.17309846795339912
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.011911965623444607,
+            "transverse_force_error": 0.10155283060177485
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.007885713383518315,
+            "transverse_force_error": 0.09306012270538597
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.009174095158302363,
+            "transverse_force_error": 0.11000453761913101
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.007908160364254988,
+            "transverse_force_error": 0.1321575317932035
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.013828758100085551,
+            "transverse_force_error": 0.09045348341097896
+          }
+        ],
+        "J_over_Ldisk": [
+          3.9647150220739347,
+          0.0042583030283472175,
+          0.024652452267948877
+        ],
+        "J_direction_error_deg": 0.36153407078265853,
+        "torque_over_required": [
+          -0.08473640986311981,
+          1.0953755605905948
+        ],
+        "shape_flow": [
+          -1.3467854534784802,
+          20.03573977308788,
+          -15.262355904954852,
+          -6.383165303583906,
+          -11.988769494551953,
+          -1.695251986690252
+        ]
+      }
+    },
+    {
+      "time_Gyr": 0.1,
+      "quiet": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.050660598336809734,
+            "transverse_force_error": 0.3639669069058505
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.05274473659710978,
+            "transverse_force_error": 0.2805348394254346
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.029622038749325383,
+            "transverse_force_error": 0.27124751333357194
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.04074165353311387,
+            "transverse_force_error": 0.22309008215335577
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.020310187218846816,
+            "transverse_force_error": 0.17484475169094219
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.014995660294494654,
+            "transverse_force_error": 0.13848209001908646
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.010950855053649372,
+            "transverse_force_error": 0.13112145503717862
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.008294969820483698,
+            "transverse_force_error": 0.10191206805789313
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.009009422064659434,
+            "transverse_force_error": 0.06299372799785034
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.007239695813982411,
+            "transverse_force_error": 0.06977474667228986
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.00617976826793056,
+            "transverse_force_error": 0.05335324945622623
+          }
+        ],
+        "J_over_Ldisk": [
+          3.9711456199419577,
+          -0.006358737941609331,
+          0.0009638339546034214
+        ],
+        "J_direction_error_deg": 0.09279187632922603,
+        "torque_over_required": [
+          -0.15010858738652597,
+          0.8329697107306316
+        ],
+        "shape_flow": [
+          -13.591706663871483,
+          -0.9885990347539217,
+          -14.006344507908395,
+          3.1565715947275725,
+          8.92887967192817,
+          1.5419979857458257
+        ]
+      },
+      "prior": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.05015469448493267,
+            "transverse_force_error": 0.37039757278829105
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.054169830537901295,
+            "transverse_force_error": 0.26347669222474246
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.028340079631488047,
+            "transverse_force_error": 0.23722083203346409
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.03583833953152456,
+            "transverse_force_error": 0.18414739859989665
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.016921660149376454,
+            "transverse_force_error": 0.14603833740317004
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.013312073058245907,
+            "transverse_force_error": 0.12421864594058027
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.010224713963780671,
+            "transverse_force_error": 0.12416157119776061
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.009557188569835886,
+            "transverse_force_error": 0.10750409661867416
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.008986529171652066,
+            "transverse_force_error": 0.09683475234881567
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.006774694556278242,
+            "transverse_force_error": 0.10837962817685265
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.013444434546885998,
+            "transverse_force_error": 0.07993131439924059
+          }
+        ],
+        "J_over_Ldisk": [
+          3.965885992392864,
+          0.0032714438733879854,
+          0.025604293378512444
+        ],
+        "J_direction_error_deg": 0.37291115529946145,
+        "torque_over_required": [
+          -0.16781808519847408,
+          0.8217411190003528
+        ],
+        "shape_flow": [
+          -4.109225537950713,
+          35.404920438973974,
+          -20.954855780119125,
+          -6.744427282051222,
+          -0.0013562980735359886,
+          0.4509946079174263
+        ]
+      }
+    },
+    {
+      "time_Gyr": 0.25,
+      "quiet": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.04042952084255346,
+            "transverse_force_error": 0.3054757248327157
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.038678663158896856,
+            "transverse_force_error": 0.2293565841943358
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.023284369150821414,
+            "transverse_force_error": 0.24510240125206642
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.026573703386578114,
+            "transverse_force_error": 0.20979206579511195
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.01733333220174023,
+            "transverse_force_error": 0.1572122026316363
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.016216692901379195,
+            "transverse_force_error": 0.13659448948259778
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.012432775438053392,
+            "transverse_force_error": 0.13072637328109574
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.010842135945526389,
+            "transverse_force_error": 0.10262357030080584
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.009449810628005702,
+            "transverse_force_error": 0.08551482447362999
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.005500169090993803,
+            "transverse_force_error": 0.07794867216943024
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.014258580209416907,
+            "transverse_force_error": 0.10511751824573011
+          }
+        ],
+        "J_over_Ldisk": [
+          3.9719368728756335,
+          -0.017312798193631473,
+          0.0010476755880942656
+        ],
+        "J_direction_error_deg": 0.25019495219020255,
+        "torque_over_required": [
+          -0.07553466690508484,
+          0.8538142264367972
+        ],
+        "shape_flow": [
+          -34.61812715524205,
+          -15.923590210454798,
+          -27.28517272512411,
+          -3.748824381931706,
+          15.389524463892831,
+          -9.078912600340214
+        ]
+      },
+      "prior": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.04705182320444626,
+            "transverse_force_error": 0.3347735332902234
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.04331206964633826,
+            "transverse_force_error": 0.23550540183989738
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.021863341598273557,
+            "transverse_force_error": 0.23903537930918237
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.033494609658684206,
+            "transverse_force_error": 0.19427234771869212
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.01563774137322828,
+            "transverse_force_error": 0.14365959096290307
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.012342689019215685,
+            "transverse_force_error": 0.13964720632496364
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.011000921654656897,
+            "transverse_force_error": 0.1326238436134319
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.00706954303645206,
+            "transverse_force_error": 0.10477739186938392
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.007673460118482965,
+            "transverse_force_error": 0.08328518798931146
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.005391568796161742,
+            "transverse_force_error": 0.07409810738031025
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.013169842434502314,
+            "transverse_force_error": 0.10338416904956906
+          }
+        ],
+        "J_over_Ldisk": [
+          3.966462363352257,
+          -0.0035105542391606665,
+          0.024127014567191463
+        ],
+        "J_direction_error_deg": 0.3521816122443538,
+        "torque_over_required": [
+          -0.11126556699565433,
+          0.8564072131081676
+        ],
+        "shape_flow": [
+          -13.17280591091337,
+          34.50011498146742,
+          -4.763436773559419,
+          -10.938355353751806,
+          16.48593621843546,
+          -20.406457010117403
+        ]
+      }
+    },
+    {
+      "time_Gyr": 0.5,
+      "quiet": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.04745669507856078,
+            "transverse_force_error": 0.36867344535927654
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.050984785567125816,
+            "transverse_force_error": 0.267642500954682
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.026886596180802556,
+            "transverse_force_error": 0.22484572447056841
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.03302807213089606,
+            "transverse_force_error": 0.16563254105579917
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.01735276790876642,
+            "transverse_force_error": 0.16407826150135352
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.021013566311772487,
+            "transverse_force_error": 0.09806647059045215
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.011533475914593019,
+            "transverse_force_error": 0.07925667217425254
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.012109637557095933,
+            "transverse_force_error": 0.10419881679031745
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.013643018560998105,
+            "transverse_force_error": 0.09294651332007849
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.013230252092109688,
+            "transverse_force_error": 0.1019343702274827
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.018543944721240987,
+            "transverse_force_error": 0.07569191333096209
+          }
+        ],
+        "J_over_Ldisk": [
+          3.9734612921625985,
+          -0.012981378709263637,
+          0.00447925909637803
+        ],
+        "J_direction_error_deg": 0.19801572528274092,
+        "torque_over_required": [
+          0.04643798811703484,
+          1.032178394496391
+        ],
+        "shape_flow": [
+          -23.102339394245,
+          1.3633184073716207,
+          -12.422501571354816,
+          12.596062481145857,
+          -4.505869797870169,
+          -13.667015457472313
+        ]
+      },
+      "prior": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.046044413718568336,
+            "transverse_force_error": 0.3790580308846541
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.05048980408351914,
+            "transverse_force_error": 0.25390196593459297
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.025076617394124177,
+            "transverse_force_error": 0.2261773938419791
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.03103801212644382,
+            "transverse_force_error": 0.16547711131646378
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.015491193642492341,
+            "transverse_force_error": 0.15846820525120087
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.01579341950563146,
+            "transverse_force_error": 0.09115060413444587
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.008349822090776263,
+            "transverse_force_error": 0.0792522923818449
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.007073804400778036,
+            "transverse_force_error": 0.10267627450841335
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.008377819058781143,
+            "transverse_force_error": 0.08688074132805355
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.006576799231899238,
+            "transverse_force_error": 0.09757788186615014
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.013337164668056626,
+            "transverse_force_error": 0.07742606534633337
+          }
+        ],
+        "J_over_Ldisk": [
+          3.969569570647956,
+          0.0031194411987505942,
+          0.0241199919236198
+        ],
+        "J_direction_error_deg": 0.3510370551243616,
+        "torque_over_required": [
+          0.06343571769673897,
+          1.0109595626123071
+        ],
+        "shape_flow": [
+          -23.091204627739444,
+          6.185440111658045,
+          10.013028499888732,
+          10.789627254993814,
+          4.080012791697131,
+          -16.10831389853832
+        ]
+      }
+    },
+    {
+      "time_Gyr": 1.0,
+      "quiet": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.05691233592660742,
+            "transverse_force_error": 0.4244298581304164
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.06154637324878156,
+            "transverse_force_error": 0.28829272835365566
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.031101334101422785,
+            "transverse_force_error": 0.2454272718110442
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.03938183841988691,
+            "transverse_force_error": 0.22021433328313303
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.021013838485527635,
+            "transverse_force_error": 0.2036415969128093
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.013402667693874297,
+            "transverse_force_error": 0.15107589446016026
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.009451524540674125,
+            "transverse_force_error": 0.10100501565694944
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.010670600415293226,
+            "transverse_force_error": 0.11245729071091848
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.010920573730090736,
+            "transverse_force_error": 0.09566829943186432
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.006413090106502484,
+            "transverse_force_error": 0.11995621198922013
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.011812673112110745,
+            "transverse_force_error": 0.09668474055542275
+          }
+        ],
+        "J_over_Ldisk": [
+          3.9660949871250537,
+          0.004819420339757661,
+          0.0048636246684258255
+        ],
+        "J_direction_error_deg": 0.09891463841757393,
+        "torque_over_required": [
+          -0.12479321741433852,
+          0.942279255280393
+        ],
+        "shape_flow": [
+          76.536738546916,
+          17.439925567922,
+          37.71079738279344,
+          -3.799478684159041,
+          5.002120212486416,
+          19.655268454352928
+        ]
+      },
+      "prior": {
+        "force_errors": [
+          {
+            "r_kpc": 6.0,
+            "total_force_error": 0.057147289597771794,
+            "transverse_force_error": 0.4192735761535319
+          },
+          {
+            "r_kpc": 8.2,
+            "total_force_error": 0.06017089645331978,
+            "transverse_force_error": 0.26828484822351334
+          },
+          {
+            "r_kpc": 10.0,
+            "total_force_error": 0.030263537711740743,
+            "transverse_force_error": 0.22363963716111737
+          },
+          {
+            "r_kpc": 12.0,
+            "total_force_error": 0.03892826073292378,
+            "transverse_force_error": 0.20292472357844055
+          },
+          {
+            "r_kpc": 15.0,
+            "total_force_error": 0.021626597618254015,
+            "transverse_force_error": 0.20142594559580737
+          },
+          {
+            "r_kpc": 20.0,
+            "total_force_error": 0.014244922647790762,
+            "transverse_force_error": 0.1523396083267788
+          },
+          {
+            "r_kpc": 28.0,
+            "total_force_error": 0.010253023919975485,
+            "transverse_force_error": 0.11079288416118518
+          },
+          {
+            "r_kpc": 40.0,
+            "total_force_error": 0.009876410625226146,
+            "transverse_force_error": 0.11257797885002653
+          },
+          {
+            "r_kpc": 50.0,
+            "total_force_error": 0.010311286306819585,
+            "transverse_force_error": 0.09095841077822277
+          },
+          {
+            "r_kpc": 60.0,
+            "total_force_error": 0.006252284447524405,
+            "transverse_force_error": 0.11808068542676314
+          },
+          {
+            "r_kpc": 80.0,
+            "total_force_error": 0.013811746575094335,
+            "transverse_force_error": 0.09516569644638445
+          }
+        ],
+        "J_over_Ldisk": [
+          3.968425731312815,
+          0.023601057682787904,
+          0.01665445062308435
+        ],
+        "J_direction_error_deg": 0.41704106164085175,
+        "torque_over_required": [
+          -0.09376058793650077,
+          0.9069155811890417
+        ],
+        "shape_flow": [
+          32.06331307367414,
+          -19.414445234139862,
+          -17.329116997218424,
+          -5.58171596077173,
+          -10.101856933119949,
+          21.81189269144907
+        ]
+      }
+    }
+  ],
+  "seconds": 165.15071749687195,
+  "qualification": "Prescribed-field transport of frozen phase weights. These future times were not used to select phases or fit weights; they are not live trajectories."
+}

@@ -1,0 +1,15 @@
+MW_k0_reg0_N4000_sig0_s1.json                      t0 0.099 | 8-12 Gyr rms 0.097-0.108 mean 0.103 maxdev 0.173 | dE +0.013 W +0.000 | out 0.17 | tob1000 52.52 tob1500 52.52
+MW_k10_reg15000_N4000_sig175_s1.json               t0 0.099 | 8-12 Gyr rms 0.020-0.038 mean 0.027 maxdev 0.067 | dE +0.109 W +0.139 | out 0.29 | tob1000 52.52 tob1500 52.52
+MW_k10_reg15000_N4000_sig175_s2.json               t0 0.095 | 8-12 Gyr rms 0.015-0.042 mean 0.028 maxdev 0.076 | dE +0.099 W +0.134 | out 0.26 | tob1000 52.52 tob1500 52.52
+MW_k10_reg15000_N4000_sig175_s3.json               t0 0.104 | 8-12 Gyr rms 0.012-0.039 mean 0.027 maxdev 0.075 | dE +0.111 W +0.156 | out 0.30 | tob1000 52.52 tob1500 52.52
+MW_k10_reg15000_N8000_sig175_s1.json               t0 0.091 | 8-12 Gyr rms 0.020-0.041 mean 0.027 maxdev 0.065 | dE +0.084 W +0.120 | out 0.32 | tob1000 52.52 tob1500 52.52
+MW_k1_reg15000_N4000_sig175_s1.json                t0 0.099 | 8-12 Gyr rms 0.074-0.086 mean 0.079 maxdev 0.117 | dE +0.042 W +0.037 | out 0.16 | tob1000 52.52 tob1500 52.52
+MW_k3_reg15000_N4000_sig175_s1.json                t0 0.099 | 8-12 Gyr rms 0.026-0.054 mean 0.036 maxdev 0.076 | dE +0.084 W +0.105 | out 0.21 | tob1000 52.52 tob1500 52.52
+cluster_k10_reg500000_N4000_sig175_s1.json         t0 0.250 | 8-12 Gyr rms 0.222-0.275 mean 0.250 maxdev 0.476 | dE +0.015 W +0.000 | out 0.21 | tob1000 5.45 tob1500 4.89
+dwarf_k0_reg0_N4000_sig0_s1.json                   t0 0.131 | 8-12 Gyr rms 0.124-0.140 mean 0.136 maxdev 0.206 | dE +0.001 W +0.000 | out 0.15 | tob1000 165.75 tob1500 165.75
+dwarf_k10_reg1000_N4000_sig175_s1.json             t0 0.131 | 8-12 Gyr rms 0.021-0.039 mean 0.028 maxdev 0.062 | dE +0.128 W +0.144 | out 0.15 | tob1000 165.75 tob1500 165.75
+dwarf_k10_reg1000_N4000_sig175_s2.json             t0 0.123 | 8-12 Gyr rms 0.018-0.077 mean 0.034 maxdev 0.132 | dE +0.123 W +0.136 | out 0.17 | tob1000 165.75 tob1500 165.75
+dwarf_k10_reg1000_N4000_sig175_s3.json             t0 0.146 | 8-12 Gyr rms 0.016-0.040 mean 0.030 maxdev 0.062 | dE +0.148 W +0.161 | out 0.19 | tob1000 165.75 tob1500 165.75
+group_small_k10_reg25700_N4000_sig175_s1.json      t0 0.094 | 8-12 Gyr rms 0.090-0.109 mean 0.098 maxdev 0.171 | dE +0.006 W +0.000 | out 0.18 | tob1000 5.25 tob1500 3.85
+massive_spiral_heavy_k10_reg25700_N4000_sig175_s1.json t0 0.030 | 8-12 Gyr rms 0.015-0.043 mean 0.030 maxdev 0.077 | dE -0.009 W +0.004 | out 0.08 | tob1000 26.22 tob1500 26.21
+massive_spiral_k10_reg25700_N4000_sig175_s1.json   t0 0.136 | 8-12 Gyr rms 0.042-0.055 mean 0.047 maxdev 0.116 | dE -0.049 W -0.185 | out 0.01 | tob1000 11.51 tob1500 11.51

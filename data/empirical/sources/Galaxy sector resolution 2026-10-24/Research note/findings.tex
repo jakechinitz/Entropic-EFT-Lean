@@ -1,0 +1,167 @@
+\textbf{Result.} Three facts fix what the galaxy-sector dynamics can be. A dynamics built to them reaches the RAR from cosmological initial conditions without being given a target profile.
+\begin{enumerate}
+\item The only stock dynamics in the manuscript, Vlasov--Poisson with momentum-conserving pair contacts, has no acceleration scale. It can produce $a_0=\epsilon cH$ only through a coincidence of initial data.
+\item A coupling that \emph{holds} the stock at the RAR density passes the stock's own Jeans imbalance to the baryons, amplified by $J'(g_b)=dJ/dg_b$, which is $\simeq5$ at 100\,kpc in a Milky Way model. The stock must therefore support itself, and the response can only steer it slowly.
+\item A switch keyed to $g_{\rm bar}/a_0$ cannot protect clusters. Their $R_{500}$ regions sit at the same $g_{\rm bar}/a_0$ as galaxy outskirts that obey the RAR, and the RAR would remove 20--35\% of their stock from $R_{500}$.
+\end{enumerate}
+\emph{Selection by contact descent} meets all three. Momentum-conserving stock contacts are biased by the orbit-averaged \emph{mismatch potential} $\psi$. It is built only from the local response law $J(g_b)$ of Section~15 and the stock's own field. The contacts draw on a finite work register and stop when the carrier's stock is hot.
+
+Spherical simulations start from equilibrium NFW stock, use an energy-conserving integrator, and run for 12\,Gyr. The offset from the RAR falls from 0.10--0.15\,dex rms with no contacts to a statistically stationary 0.01--0.04\,dex between 8 and 12\,Gyr. This holds in Milky Way models over three seeds and two particle numbers. Dwarfs reach 0.02--0.08\,dex. Fluctuations at single radii reach $\pm0.08$\,dex (dwarf: 0.13).
+
+Three to ten contact proposals per orbit are needed. The stock gains 0.08--0.15\,$V_f^2$ per unit mass, against a register debit of 0.12--0.16\,$V_f^2$. A gate on the carrier's median stock dispersion, inside the window 135--180\,km\,s$^{-1}$, keeps groups and clusters CDM-like; that part holds by construction.
+
+The RAR thereby becomes a derived equilibrium of a stated dynamics. Five ingredients remain premises: the response law, the contact bias, the register, the rate and the gate.
+
+\section{Three constraints on any galaxy-sector dynamics}
+
+\paragraph{1. Stock-only dynamics has no acceleration scale.}
+Vlasov--Poisson is invariant under $\mathbf x\to\alpha\mathbf x$, $\mathbf v\to\beta\mathbf v$, $t\to(\alpha/\beta)t$, $f\to f/(\alpha^2\beta)$ with $G$ fixed. Masses scale as $\alpha\beta^2$ and accelerations as $\beta^2/\alpha$. Any stationary baryon--stock configuration that follows the RAR with scale $a_0$ therefore maps to one that follows it with scale $a_0\beta^2/\alpha$.
+
+Pair impulses with a work budget per unit mass $D$ add a velocity scale $\sqrt D$, which removes only the $\beta$ freedom. No length is available to form an acceleration. The expansion supplies $H$, but $H\sqrt D\sim4\times10^{-13}$\,m\,s$^{-2}$ for $D\sim(190\,{\rm km\,s^{-1}})^2$, far below $a_0$. The scale $\epsilon cH$ needs $c$, and $c$ enters only through the horizon coupling of Section~15.
+
+Without that coupling the stock is CDM, and the RAR has the status it has in CDM. The emergent scale is near $1.3$--$1.7\times10^{-10}$\,m\,s$^{-2}$, it depends on halo concentrations, and the population scatter is about 0.09--0.13\,dex (Mechanism assessment, sec.~7b).
+
+\paragraph{2. A coupling cannot carry the stock's weight.}
+In spherical symmetry every field is local in the enclosed masses. Write $g_X=GM_X(<r)/r^2$. A quadratic coupling of the stock field to the response law has the energy
+\begin{equation}
+E=\frac1{2G}\int\Big[-(g_b+g_s)^2+\lambda\,(g_s-J(g_b))^2\Big]r^2\,dr,
+\qquad J(g_b)=n_B\big(\sqrt{g_b/a_0}\big)g_b .
+\end{equation}
+Varying the enclosed masses gives the inward accelerations
+\begin{equation}
+a_s=g_b+g_s+\lambda(J-g_s),\qquad
+a_b=g_b+g_s+\lambda(g_s-J)\,J'(g_b).
+\end{equation}
+A finite-difference variation of $E$ reproduces $a_b$ to 0.3\%.
+
+Now give the stock a squared dispersion $(1+d)$ times that of the exact isotropic Jeans equilibrium of the RAR stock. Stock force balance then forces $\lambda(J-g_s)\to d\,g_{\rm RAR}$, so
+\begin{equation}
+\frac{a_b}{g_{\rm RAR}}-1=-\,d\,J'(g_b)\,\frac{\lambda}{\lambda-1}+O(dJ'/\lambda).
+\end{equation}
+A fractional change $\delta$ in $\sigma$ itself gives $d=2\delta$. A finite-difference solution of the linearised boundary-value problem agrees with this to within 2\% for $\lambda\ge100$:
+\begin{center}\small
+\begin{tabular}{lccccc}\toprule
+Milky Way model, $r$ [kpc] & 10 & 20 & 50 & 100 & 150\\\midrule
+$J'(g_b)$ & 0.20 & 0.69 & 2.36 & 5.18 & 8.04\\
+baryon force error, $d=+0.03$, $\lambda=1000$ & $-0.006$ & $-0.021$ & $-0.071$ & $-0.156$ & $-0.242$\\
+\bottomrule\end{tabular}\end{center}
+The stock stays on the RAR to $O(d/\lambda)$, but the baryons do not. A 3\% mismatch in the stock's $\sigma^2$ becomes a 16\% force error on the baryons at 100\,kpc, and stiffening the coupling does not help. In the dwarf model $J'=8$ already at 10\,kpc.
+
+The stock must therefore sit in its own Vlasov--Poisson equilibrium with the RAR density. The response may only select among such equilibria, and the interaction that selects must carry no stress once selection is complete.
+
+\paragraph{3. A switch keyed to acceleration fails clusters.}
+Enforcing the RAR on a cluster's existing stock gives
+\begin{center}\small
+\begin{tabular}{lccc}\toprule
+& $g_{\rm bar}/a_0$ & RAR total/baryon & X-COP median\\\midrule
+$R_{500}$ & 0.05--0.07 & 4.2--5.0 & 6.45\\
+$R_{200}$ & 0.03--0.05 & 5.2--6.2 & 6.10\\\bottomrule
+\end{tabular}\end{center}
+Galaxy outskirts that obey the RAR cover the same range of $g_{\rm bar}/a_0$ and extend lower: 0.03--0.07 at 35--50\,kpc in the Milky Way model. The variable that switches selection off must therefore differ between galaxies and clusters at equal $g_{\rm bar}$.
+
+\section{Selection by contact descent}
+
+Define the mismatch functional and its potential
+\begin{equation}
+E_{\rm mis}[\rho_s;\rho_b]=\frac{1}{8\pi G}\int\big|\nabla\Phi_s-\mathbf J\big|^2d^3x,
+\qquad
+\psi\equiv\frac{\delta E_{\rm mis}}{\delta\rho_s}=\phi_\perp-\Phi_s,
+\qquad \nabla^2\phi_\perp=\nabla\!\cdot\mathbf J ,
+\end{equation}
+with $\mathbf J$ the excess flux of Section~15. In spherical symmetry $d\psi/dr=J-g_s$. Moving stock mass $m$ from $r_1$ to $r_2$ changes $E_{\rm mis}$ by $m[\psi(r_2)-\psi(r_1)]$ to first order.
+
+\textbf{Dynamics.}
+\begin{itemize}
+\item The stock is collisionless and self-gravitating.
+\item Pair contacts between neighbouring stock elements exchange orbital energy. Central impulses conserve momentum.
+\item Each element makes contact proposals at a rate proportional to its orbital frequency. A proposal is realised only if it lowers the pair's orbit-averaged $\psi$.
+\item A contact may draw on, or deposit into, a finite work register.
+\item There are no contacts while the carrier's stock is hot, meaning while its median one-dimensional dispersion inside $r_{200}$ exceeds $\sigma_c$.
+\end{itemize}
+
+\textbf{Properties.}
+\begin{itemize}
+\item[(i)] Realised contacts never raise $E_{\rm mis}$. At fixed stock mass and positivity, the minimiser of $E_{\rm mis}$ is the RAR stock inside the budget edge $R_{\rm cap}$, where $M_\perp(R_{\rm cap})$ equals the available stock. Where the exact response is negative, the minimiser is its positive-part projection (Appendix O.3), reached without being specified.
+\item[(ii)] Between contacts the stock obeys Vlasov--Poisson. At the end state it therefore supports itself, and constraint 2 is met: the contacts carry no stress, and the baryons feel the Newtonian field of real mass.
+\item[(iii)] Lensing and dynamics see the same mass, and the stock carries the inertia that the LMC reflex requires.
+\item[(iv)] $a_0=\epsilon cH$ enters only through $\mathbf J$.
+\item[(v)] No galaxy-specific profile is passed to the evolution. The only input is the local law $J(g_b)$, which is the RAR's functional form as supplied by Section~15.
+\end{itemize}
+
+\textbf{Simulations.} The runs use \texttt{descent2.py}:
+\begin{itemize}
+\item Stock: isotropic Eddington-sampled NFW, tapered beyond $r_{200}$, total $0.84M_{200}$. Dutton--Macci\`o concentration; Moster abundance unless stated.
+\item Baryons: static and spherical-equivalent.
+\item Integrator: kick--drift--kick, with the field rebuilt after every drift; $dt=0.1$\,Myr.
+\item $N=4000$; $k$ proposals per orbit; register $0.45V_f^2$ per unit stock mass.
+\end{itemize}
+The no-contact control conserves the stock energy to $0.013V_f^2$ over 12\,Gyr. The table gives the rms offset from the RAR over 5--200\,kpc (dwarfs: 5--100\,kpc). The 8--12\,Gyr column lists the range over nine snapshots.
+\begin{center}\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}\toprule
+Case & $t=0$ & 8--12\,Gyr (mean) & largest single-radius offset, 8--12\,Gyr & $\Delta E_{\rm stock}$ / register [$V_f^2$]\\\midrule
+Milky Way, no contacts & 0.10 & 0.10--0.11 (0.10) & 0.17 & 0.01 / 0\\
+Milky Way, $k=1$ & 0.10 & 0.07--0.09 (0.08) & 0.12 & 0.04 / 0.04\\
+Milky Way, $k=3$ & 0.10 & 0.03--0.05 (0.04) & 0.08 & 0.08 / 0.11\\
+Milky Way, $k=10$, seeds 1--3 & 0.10 & 0.01--0.04 (0.03) & 0.08 & 0.10--0.11 / 0.13--0.16\\
+Milky Way, $k=10$, $N=8000$ & 0.09 & 0.02--0.04 (0.03) & 0.07 & 0.08 / 0.12\\
+Dwarf, no contacts & 0.13 & 0.12--0.14 (0.14) & 0.21 & 0.00 / 0\\
+Dwarf, $k=10$, seeds 1--3 & 0.12--0.15 & 0.02--0.08 (0.03) & 0.06--0.13 & 0.12--0.15 / 0.14--0.16\\
+Massive spiral, $M_{200}=2.5\times10^{12}$ & 0.14 & 0.04--0.06 (0.05) & 0.12 & $-0.05$ / $-0.19$\\
+Massive spiral, $M_{200}=6\times10^{12}$ & 0.03 & 0.02--0.04 (0.03) & 0.08 & $-0.01$ / $0.00$\\
+\midrule
+Group, $M_{200}=1.5\times10^{13}$, $\sigma_c=175$ & 0.09 & 0.09--0.11 (0.10) & 0.17 & gate closed\\
+Cluster, $M_{200}=6\times10^{14}$, $\sigma_c=175$ & \multicolumn{3}{c}{collisionless input stock, unchanged} & gate closed\\
+\bottomrule\end{tabular}\end{center}
+
+\begin{center}\includegraphics[width=\linewidth]{images/offsets.png}\end{center}
+\vspace{-6pt}
+{\small Left and centre: offset from the RAR at 12\,Gyr without contacts (orange) and with contact descent (blue: three seeds, the darkest is the reference run). The dwarf has stock only out to its budget edge. Right: rms offset against time for 1, 3 and 10 contact proposals per orbit.}
+
+The approach is monotone on average, with excursions of a few hundredths of a dex over Gyr timescales and no sustained overshoot. Contacts continue to be accepted after the plateau, and the stock fraction beyond $r_{200}$ still drifts slowly (Milky Way: 0.26--0.32 at 12\,Gyr). The register debit exceeds the measured energy gain by 0.01--0.04$V_f^2$. Contacts change only kinetic energy, so the two should agree; the residual is an unlocated accounting or integration error, and both numbers are quoted.
+
+Static checks support the end state. An isotropic Eddington distribution for the capped RAR stock in its own potential is non-negative to $4\times10^{-4}$ of its maximum, the residual coming from edge discretisation.
+
+\textbf{The gate.} The carrier-wide median one-dimensional stock dispersion inside $r_{200}$ for the initial stock is:
+\begin{center}\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccccc}\toprule
+& dwarf & Sb & MW & massive & massive & group & group & cluster\\
+$M_{200}$ [$M_\odot$] & $5.9\times10^{10}$ & $3.2\times10^{11}$ & $4.2\times10^{12}$ & $2.5\times10^{12}$ & $6\times10^{12}$ & $1.5\times10^{13}$ & $5\times10^{13}$ & $6\times10^{14}$\\\midrule
+$\sigma$ [km\,s$^{-1}$] & 29 & 52 & 117 & 108 & 134 & 180 & 267 & 615\\\bottomrule
+\end{tabular}\end{center}
+Descent lowers this dispersion slightly as the stock expands, so a gate that starts open stays open. Galaxies with RAR rotation curves need $\sigma_c\gtrsim135$\,km\,s$^{-1}$. Groups that need mass beyond the RAR need $\sigma_c\lesssim180$\,km\,s$^{-1}$, or $\lesssim270$ if only groups above $3\times10^{13}M_\odot$ must stay unrelaxed. A gate inside that window freezes groups and clusters \emph{by construction}, so their fair-sample ratios are those of the input stock and are not an independent result.
+
+Two other gates fail in the first-version runs. A gate on the local dispersion freezes the inner regions of massive spirals. A work budget fixed per unit mass lets the $1.5\times10^{13}M_\odot$ group relax. The carrier-wide criterion has the form of an order--disorder transition of the stock's response director, and the manuscript already states that nematic order melts where carrier records overlap.
+
+\section{Consequences that can be tested}
+\begin{itemize}
+\item \textbf{A sharp transition.} Systems whose carrier stock dispersion lies below $\sigma_c\approx135$--$180$\,km\,s$^{-1}$ ($M_{200}\lesssim10^{13}M_\odot$) follow the RAR. Those above stay CDM-like, independent of $g_{\rm bar}$. Group centrals and BCGs depart from the RAR, as observed. Isolated lensing systems across $M_{200}=5\times10^{12}$--$3\times10^{13}$ are the sharpest test.
+\item \textbf{Relaxation history.} Convergence takes several Gyr even at three to ten proposals per orbit. RAR residuals at fixed $g_{\rm bar}$ should therefore shrink with time since the last major accretion and grow outward, where orbits are long. CDM keeps its concentration scatter, and a field response predicts no dependence on history.
+\item \textbf{Budget edge.} Beyond $R_{\rm cap}$ the isolated signal is Keplerian, and the outer lensing bins measure the surroundings. This is consistent with the lensing-boundary review.
+\item \textbf{Redshift.} $a_0(z)=\epsilon cH(z)$ applies to relaxed systems. Systems younger than the relaxation time lie between the CDM relation and the RAR, so the scale measured at $z\gtrsim1$ mixes the two.
+\item \textbf{External field.} $\mathbf J$ is evaluated on the joint baryonic field, so satellites relax to the relation as modified by the external field.
+\item \textbf{Dispersion-supported dwarfs.} Isolated cold dwarfs are predicted on the RAR. The GravSphere dwarfs above the extrapolated RAR (Julio et al.\ 2025), mostly satellites, are a tension unless tides, inheritance or incomplete relaxation account for them.
+\end{itemize}
+
+\section{Status}
+\begin{center}\small
+\begin{tabular}{p{0.28\linewidth}p{0.65\linewidth}}\toprule
+Established here & the three constraints of Section~1; the descent dynamics, its Lyapunov functional and stress-free end state; statistically stationary approach to the RAR (0.01--0.04\,dex Milky Way, 0.02--0.08\,dex dwarf, 8--12\,Gyr) from equilibrium NFW stock in spherical models\\
+Premises carried over & the response law $J$ and its horizon matching (Section~15); the carrier projector\\
+New premises & contact bias by orbit-averaged $\psi$; a work register of order $0.2V_f^2$ per unit stock mass; a rate of three to ten proposals per orbit (roughly 15 realised contacts per element over 12\,Gyr at ten); a carrier gate $\sigma_c$ of 135--180\,km\,s$^{-1}$\\
+Not yet done & a 3-D contact kernel with central impulses (here, energy exchange at fixed $L$); live baryons; cosmological assembly; the microscopic origin of the bias, register, rate and gate; derivation of $\sigma_c$; the 0.01--0.04$V_f^2$ energy-accounting residual\\
+\bottomrule\end{tabular}\end{center}
+
+\textbf{Audit trail.} An independent audit of the first version found a leaking integrator, non-equilibrium initial conditions, a breathing overshoot after 6\,Gyr when the contact rate was uniform in time, and a cluster result that held by construction. A second check found a stock budget normalised before tapering (1.04 instead of 0.84\,$M_{200}$) and forces frozen beyond the grid. All of these are fixed in the runs above. The by-construction status of the gate is stated in the gate paragraph.
+
+\section*{Drop-in text for Appendix O.3 and Section 15 (Status)}
+\begin{quote}\small
+The response law selects the stock's equilibrium through slow contacts. It does not hold the stock in place. A coupling that held the stock at the response density would transmit a fractional mismatch $d$ in the stock's squared dispersion to the baryons as a fractional force error $-dJ'(g_b)$, with $J'=dJ/dg_b\simeq5$ at $100$\,kpc in the Milky Way model. The stock therefore supports itself through its own Vlasov--Poisson dynamics.
+
+Momentum-conserving stock contacts lower the mismatch functional $E_{\rm mis}=(8\pi G)^{-1}\!\int|\nabla\Phi_s-\mathbf J|^2d^3x$, and its functional derivative $\psi=\phi_\perp-\Phi_s$ biases each contact. At fixed stock mass the minimiser is the positive response stock inside the budget edge. At that minimum the contacts carry no stress, and baryons feel the Newtonian field of real mass. Contacts occur at a rate proportional to the orbital frequency, exchange energy with a finite work register, and stop when the carrier's stock dispersion exceeds $\sigma_c$.
+
+In spherical runs from equilibrium NFW stock with ten proposals per orbit, the offset from the exponential law falls from $0.10$--$0.15$ to $0.01$--$0.04$\,dex in Milky Way models and to $0.02$--$0.08$\,dex in dwarf models. It remains there from $8$ to $12$\,Gyr, while the stock gains about $0.1V_f^2$ per unit mass. Galaxy and group dispersions place $\sigma_c$ between about $135$ and $180\,{\rm km\,s^{-1}}$.
+
+The contact bias, register, rate and gate are premises of this realization. Their microscopic origin and a three-dimensional contact kernel remain to be supplied.
+\end{quote}
+
+\textbf{Reproducibility.} \texttt{static\_analysis.py} (benchmarks, $J'$, energies, Eddington check); \texttt{stiff\_amplification.py} (constraint 2); \texttt{descent2.py} (spherical descent; arguments: case, proposals per orbit, register, $N$, time, gate, seed); \texttt{runall.sh}; \texttt{summarize2.py}; \texttt{figures2.py}. Outputs are \texttt{d2\_*.json} and \texttt{log2\_*.txt}. Superseded runs are in \texttt{v1\_buggy\_budget/}, and the first-version script \texttt{descent\_sim.py} and its outputs are kept for the audit trail.

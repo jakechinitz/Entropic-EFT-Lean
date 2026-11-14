@@ -1,0 +1,17 @@
+CLUSTER SWITCH, 24 October 2026
+
+note/switch.pdf - the derivation attempt, results, objections and status (5 pages).
+REVIEW.md      - independent review of the first draft and what changed.
+scripts/       - make_inputs.py (support radii, cell energies, carrier files, galaxy
+                 reservoirs from X-COP data), gated.py / labeled.py / labeled2.py (rules
+                 run on GPT's evolve.py harness), galgate.py (gated galaxy runs), analysis
+                 and figure scripts.
+results/       - JSON results and a tarball of all accepted runs and core logs.
+
+Runs use GPT's folder "Bose contact observed clusters 2026-10-24" (evolve.py, inputs,
+source_snapshot) unchanged. Copy scripts into a copy of that folder to rerun.
+Bottom line: the switch is reduced to one identification (condensed baryons as carrier
+records, enclosed-mass dominance as the support edge, self-consistently bound stock as
+carried stock, cell energy as the work register). It is sufficient and keeps galaxies on
+the law; it is not derived from first principles. The X-ray elliptical RAR is the
+decisive existing test.

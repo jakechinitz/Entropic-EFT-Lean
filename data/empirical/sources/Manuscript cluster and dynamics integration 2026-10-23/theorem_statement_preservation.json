@@ -1,0 +1,44 @@
+[
+  {
+    "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+    "theorem_statements_unchanged": true,
+    "count": 7,
+    "original_sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+    "integrated_sha256": "17fd847cab53876ea5da0a0f2f7e5bf46c9c1b5907aeb3bd49cc82461856abc1"
+  },
+  {
+    "module": "Entropic.Extensions20261023.MuseProjection",
+    "theorem_statements_unchanged": true,
+    "count": 4,
+    "original_sha256": "8cad19143c1c4c6ad0d94ad11fd9d44096d40a8793ed5de199b80edfd4c5ed9e",
+    "integrated_sha256": "52e45ffa74d53d2adc3b70fd1660763de5a76d9cea53662fc0eb5f75cbde02cf"
+  },
+  {
+    "module": "Entropic.Extensions20261023.ConnectedClosure",
+    "theorem_statements_unchanged": true,
+    "count": 42,
+    "original_sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+    "integrated_sha256": "84b4633f7ec80ddca7843b3c991082432ea9d1fdf5243cb944cf141e29fc17bc"
+  },
+  {
+    "module": "Entropic.Extensions20261023.EffectiveContact",
+    "theorem_statements_unchanged": true,
+    "count": 36,
+    "original_sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+    "integrated_sha256": "d8738cfa5aa1dec68546be7a1b08f187c40bec770f9910a7f42e1b939cf8f90a"
+  },
+  {
+    "module": "Entropic.Extensions20261023.MergerContact",
+    "theorem_statements_unchanged": true,
+    "count": 8,
+    "original_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+    "integrated_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba"
+  },
+  {
+    "module": "Entropic.Extensions20261023.ClusterOutliers",
+    "theorem_statements_unchanged": true,
+    "count": 22,
+    "original_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+    "integrated_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c"
+  }
+]

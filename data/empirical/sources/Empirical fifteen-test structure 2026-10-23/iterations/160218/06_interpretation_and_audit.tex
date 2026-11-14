@@ -1,0 +1,343 @@
+\section{Joint interpretation}
+
+The empirical contribution is a common prescription that connects a
+galactic acceleration scale, a retained mass distribution, tidal evolution,
+and cosmological energy transfer. The calculations use the same
+microscopic entropy and conversion fraction in several settings. Their
+success would be more constraining than unrelated curve fits because
+changing those coefficients would move several observables at once.
+
+The LMC enclosed masses and NGC~628 vertical dispersions support
+the retained-stock prescription against the tested external-field and
+algebraic QUMOND comparisons. Crater II gives a favorable comparison
+with a specified NFW population, with strong dependence on the error
+budget. The reference acceleration-line projection agrees, while the
+high-redshift catalogue test retains a residual trend. The matched
+cosmology recovers CMB and distance data with a tied abundance; ACT
+lensing and $E_G$ add compatible checks. These results establish the
+scope of the particular comparisons summarized in Table~\ref{tab:fifteen}.
+Antlia 2, cluster outliers, Galactic mass, and independent release
+normalization remain active constraints.
+
+\subsection{The derivation has identifiable physical commitments}
+
+\begin{table}[htbp]
+\small
+\begin{tabularx}{\textwidth}{P{.24\textwidth}YY}
+\toprule
+Step & Result supplied & Physical commitment or outstanding test \\
+\midrule
+Finite face and cell ensemble
+& $16=7+9$; 1680 cell states; $g=7.4198000$ and $\eta_*=0.02986684$.
+& The spin, matching vertex, occupancy rule, closure invariant, and
+evidence measure define the ensemble. \\
+Horizon and transverse response
+& $\epsilon=g/(2\pi)^2$; $a_0=\epsilon cH$; Bose response.
+& Phase loading, horizon contact, and the mode-energy mapping connect
+the count to acceleration. \\
+Retained galactic stock
+& An inertial positive mass component, inherited by carriers and
+transported by collisionless evolution.
+& Assembly budgets, carrier assignment, profile preparation, and
+relaxation must be specified independently of the target observables. \\
+Cosmological conversion
+& $\eta=\eta_*$ and an initial abundance near $\epsilon^{-1}$.
+& Common energy conversion, the selected pre-acoustic formation map
+(whose microscopic vertex remains open), and the absolute vacuum
+matching condition enter the physical identification. \\
+Assembly and mixing
+& A cumulative release function and a weighted vacuum integral.
+& Retention gates, progenitor labels, and transport set the normalization;
+the current expansion fit determines one mixing parameter. \\
+Geometry and perturbations
+& Reduced Newtonian equations and no-slip identity proved from the
+specified action; carrier equations proved on their regular branch.
+& The continuum embedding, constrained director dynamics, and the
+physical matching of the effective actions remain separate requirements. \\
+\bottomrule
+\end{tabularx}
+\caption{The logical connection between the microscopic model and the
+observables. An exact finite calculation can coexist with conditional
+physical identifications and an incomplete continuum derivation.}
+\end{table}
+
+This chain explains why the empirical results bear on the microstructure:
+the model does not choose a separate acceleration coefficient for the LMC
+and the redshift sample, or a separate release fraction for each
+cosmological data combination. It also identifies which steps the data
+cannot determine by themselves. A fit to an effective gravitational field
+does not uniquely identify the microscopic state space that produced it.
+
+\subsection{Which conventional assumptions are challenged}
+
+For the LMC, the comparison challenges the applicability of an
+instantaneous external-field suppression to a previously established
+gravitating stock. A retained distribution continues to contribute after
+the ambient field changes. The tested QUMOND prescriptions and the stock
+model make different mass predictions with the same stated baryons.
+Joint stream and reflex modeling can test that distinction more directly
+than comparing scalar enclosed-mass summaries.
+
+For Crater II, the issue is the central structure and stripping response
+of the excess gravitating mass. The tested capacity profile loses enough
+support to produce a cold, extended remnant under the adopted orbit and
+initial conditions. Standard-concentration NFW halos under the tested
+abundance prior perform poorly in that comparison. Low-concentration
+and cored dark-matter alternatives require their own matched tests.
+Assembly history already matters in conventional dark-matter dynamics;
+history dependence alone cannot distinguish the two frameworks.
+
+For the acceleration scale, the proposed change is a cosmological
+normalization $a_0\propto H$. Its observed value at one epoch would cease
+to be an independent constant. The published intermediate-redshift
+relation is consistent with the fixed reference curve under the stated
+projection. A direct galaxy-level likelihood would test both its curvature
+and its scatter.
+
+For dark energy, the proposed change is a vacuum density generated by
+irreversible source-identity loss. The microscopic conversion and
+formation abundance restrict a model that still fits the CMB and distance
+data. The remaining release normalization must be obtained independently
+before the observed vacuum abundance can be called a prediction of the
+microstructure alone. The current evidence supports these mechanisms as
+testable alternatives; it does not establish the elimination of all
+dark-matter models, all MOND formulations, or the absolute cosmological
+constant problem.
+
+\subsection{A joint test of the same construction}
+\label{sec:jointtest}
+
+The galactic comparisons use the reference
+$H_0=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$, while the matched linear-lensing
+release fit gives $68.9389$. If horizon contact is evaluated at the latter
+value, the local scale rises by about $2.3\%$. A joint fit must propagate
+the fitted $H(z)$ into galaxy assembly and the acceleration relation,
+including any finite relaxation time of an existing stock. The catalogue diagnostics and old-disk check already use the common-fit
+normalization; the full galaxy-assembly and cosmological likelihood remains
+a joint inference problem.
+
+The same requirement applies to the Milky Way potential. The available
+moving-LMC calculations use a Galactic mass within 50 kpc about $17\%$
+above the Brooks et al. inference in the stock model, and about $36\%$
+above it in the NFW model. A joint Milky Way--LMC fit would alter the
+satellite pericentres and the stripping histories. Those changes should
+be propagated to both Crater II and Antlia 2 before assigning a combined
+evidence ratio. \source{G4}\cite{brooks}
+
+A decisive program follows from these dependencies:
+\begin{enumerate}
+\item Infer the Milky Way and LMC jointly using streams, halo reflex
+kinematics, and a common source-conserving force model. Predict additional
+stream observables from the resulting mass distributions.
+\item Evolve the dwarf populations with resolved self-gravity and
+prespecified progenitor priors. Apply the actual stellar selection,
+velocity-gradient, and membership inference to their mock observations.
+Include concentration scatter and physically motivated cores in the
+dark-matter comparison.
+\item Fit the intermediate-redshift galaxy data directly with the
+cosmological $H(z)$ from the same model. Preserve correlations between
+baryonic masses, pressure support, geometry, and acceleration.
+\item Measure retention and source-label loss in converged hydrodynamic
+runs with a label prescription fixed in advance. Use that release history
+with the existing positive-allocation perturbation implementation and
+a matched full cosmological likelihood.
+\end{enumerate}
+Each step tests an existing physical commitment of the construction.
+
+\appendix
+\section{Provenance and numerical verification}
+
+\subsection{Scope of the verification}
+
+The integrated Lean 4.35.0 library contains 160 modules and 2,937 audited theorem
+constants, including its legacy sublibrary. The manuscript ledger records
+874 statements as proved, 90 in part, 153 as physical premises, 64 as
+data comparisons, and 19 as simulation outputs. Its other entries
+distinguish numerical calculations, definitions, and statements awaiting
+formalization. The saved audit reports only the standard Lean axioms
+and no admitted proofs. The counts include mathematical helper results.
+\source{T4}
+
+For this paper, the relevant proofs cover the finite ensemble and closure
+root, the restricted freedom in the marked-register identification,
+positive finite allocation, and radial relaxation with preserved angular
+marginals. First variation with compactly supported tests gives the
+reduced two-potential and Newton equations. Decay at infinity gives
+$\Phi=\Psi$. The carrier-action proof assumes a smooth interpolating
+function; the adopted singular derivative at zero baryonic field limits
+its direct classical application. The constrained director equation,
+full cosmological perturbations, and observational likelihoods retain
+their separate analytic or numerical status.
+
+The numerical review independently evaluates the finite ensemble,
+redshift projection, LMC mass profile and QUMOND flux, archived Crater II
+likelihoods, and a reference release history. The current verification
+record uses the unrounded acceleration coefficient and imports the
+higher-accuracy matched cosmology endpoints. The associated figures
+use those records. The archived release-history and hydrodynamic panels
+retain their original linear-depletion calibration.
+
+The dated research records include the exponential-allocation cosmological
+optimization, finite-work and fluid tests, merger controls, observed cluster
+reductions, and outlier audits. They were not rerun to typeset this paper.
+Six extension modules contribute 119 explicit theorem declarations.
+The integrated 4.35 build, source scan, axiom audit, and ledger citation
+check pass; the six modules also pass standalone Lean/mathlib 4.19 checks.
+The existing claim ledger retains its snapshot scope. \source{T5} Source inspection and saved
+audits establish which calculation supports each statement. Numerical
+convergence, selection effects, and physical matching are assessed with
+the relevant empirical result. SHA-256 records preserve the identities
+of the source and result snapshots.
+
+\clearpage
+\subsection{Local source key}
+
+Paths below are relative to the supplied \path{Sol and Fable} workspace.
+The source package includes the document, figures, numerical review, and
+verification script; the original simulation archives remain in that
+workspace.
+
+\small
+\begin{longtable}{P{.065\textwidth}P{.88\textwidth}}
+\toprule
+Key & Source and use \\
+\midrule
+T1 & \path{01 Current Papers/Astra Full/Entropic Scalar EFT.tex}. Current microscopic
+construction, effective galaxy dynamics, release accounting, and
+covariant closure; especially sections 5--6, 15, 20, N.8, and O.3--O.15.
+The numerical review records its source snapshot by hash. \\
+T2 & \path{02 Research/Spacetime consolidation 2026-10-16/MICROSTRUCTURE_TO_SPACETIME.md}.
+Finite geometry, interaction, matter, and clock
+construction. \\
+T3 & \path{01 Current Papers/Microstructure CDT/MICROSTRUCTURE_CDT.tex}.
+Selected CDT realization, normalization conventions, and finite
+geometry--matter--clock tests, with conventions aligned to the current
+Entropic Scalar EFT manuscript. \\
+T4 & \href{https://github.com/jakechinitz/Entropic-EFT-Lean/tree/432da8c4a8b169a17146b53e4155d6b37915a12f}{Entropic-EFT-Lean, 23 October 2026 snapshot}.
+Local library: \path{02 Research/Unified closure 2026-10-21/formalization}.
+Claim ledger, theorem sources, and saved axiom/citation audits. \\
+G1 & \path{04 Notes and References/Technical Notes/history_gravity_reproduction_2026-09-27.md}.
+Analytic galaxy checks and reproducible provenance for the stock model. \\
+G2 & \path{02 Research/LMC and satellites checks/qumond_flux.py} and
+\path{02 Research/LMC and satellites checks/output.txt}.
+External-field QUMOND surface-flux comparison. \\
+G3 & \path{02 Research/Crater II and Antlia 2 vs LCDM/PREREGISTRATION.md},
+\path{PREREGISTRATION.sha256}, and \path{analyse_grid.py} in that folder.
+Core observation likelihood, priors, and hash identity. \\
+G4 & \path{02 Research/Crater II and Antlia 2 vs LCDM/RESULTS_with_LMC.md},
+\path{analyse_lmc.py}, and \path{lmc_results.zip} in that folder.
+Current moving-LMC trajectories and evidence. \\
+G5 & \path{04 Notes and References/Technical Notes/carrier_hierarchy_calcs_2026-09-26.md}.
+The active-carrier inheritance calculation for tidal dwarfs. \\
+G6 & \path{02 Research/Crater II and Antlia 2 vs LCDM/bf_robustness.txt} and
+\path{antlia2_ji_mock/mock_approx_analysis.txt} in that folder.
+Model-error sensitivity and approximate observational mocks. \\
+G7 & \path{02 Research/Stock adjustment resolution 2026-10-21/START HERE.txt};
+\path{02 Research/Halo replication audit 2026-10-21}.
+Radial adjustment, retained angular marginals, and fixed-target halo tests. \\
+C1 & \path{02 Research/Full Planck tied abundance/model.py},
+\path{RESULTS.md}, and \path{fits_lenscorr.jsonl} in that folder;
+\path{02 Research/Dark energy prediction tests/common.py}.
+Matched likelihood, data handling, Boltzmann mapping, and reference
+\LCDM\ result. \\
+C2 & \path{02 Research/Release zoom/RESULTS.md}, \path{zoom_fits.jsonl},
+\path{zoom_fit.py}, \path{o12_release.py}, \path{Frel_table.npy},
+\path{FZ_ref.npy}, and \path{kmix_summary.txt} in that folder.
+Archived PPF release fit, reference history, and hydrodynamic mixing test. \\
+C3 & \path{02 Research/Formation operator check/RESULTS.md}.
+Formation abundance and the $5.333$ mass convention. \\
+C4 & \path{02 Research/High leverage closure 2026-10-21/fit_comparison.json},
+\path{fit_physical_geodesic/result.json}, \path{fit_physical_lcdm/result.json},
+\path{cosmology_checks.json}, and \path{growth_independent_check.json} in that folder.
+Direct clock-fluid implementation, matched linear-lensing fits, and numerical checks. \\
+
+T5 & \path{02 Research/Manuscript cluster and dynamics integration 2026-10-23}.
+Preserved source hashes, integration diffs, six-module manifest, compilation
+checks and PDF validation. The six modules are included in the
+\href{https://github.com/jakechinitz/Entropic-EFT-Lean/tree/a6552daf39daf83d5159fcbcda698d1801731d24}{checked extension snapshot}
+under \path{Entropic/Extensions20261023}. \\
+U1 & \path{02 Research/Unified empirical program 2026-10-23/execution_register.json}.
+Fifteen-sector evidence register; S01--S15 identify the selected datasets,
+saved results, source URLs, and remaining tests. \\
+C5 & \path{02 Research/Unified empirical program 2026-10-23/results/cosmology_final.json}.
+Exponential-allocation fit, matched reference, and saved observables. \\
+D1 & \path{02 Research/Connected theory closure 2026-10-23}.
+Depletion action, unchanged linear domain, lag and noise bounds, and
+conditional tensor calculation; 42 Lean declarations. \\
+D2 & \path{02 Research/Effective dynamics and coupling 2026-10-23}.
+Finite-work contact, warm fluid stress, compression and feedback checks;
+36 Lean declarations. \\
+CL1 & \path{02 Research/Conservative cluster merger 2026-10-23}.
+Seventeen encounter/control runs, conservation and refinement records;
+8 Lean declarations. \\
+CL2 & \path{02 Research/Observed cluster tests 2026-10-23}.
+X-COP and MENeaCS profiles, Bullet v1 targets, source hashes, and
+15 numerical/data-handling checks. \\
+CL3 & \path{02 Research/Cluster outlier closure 2026-10-23}.
+Conditional pressure and transport audit, A644 positivity test, twelve
+finite transport maps, 14 saved checks, and 22 Lean declarations. \\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\subsection{Reproduction commands}
+
+With Python, NumPy, SciPy, and Matplotlib installed, run
+\begin{quote}\ttfamily
+python reproduce\_review.py -{}-workspace "PATH/TO/Sol and Fable"
+\end{quote}
+The script evaluates archived inputs without launching simulation jobs.
+The supplementary \path{refresh_verified_results.py} updates the
+unrounded redshift arithmetic and imports the saved exponential-allocation
+fit. It preserves prior outputs before writing. Its
+\texttt{-{}-legacy-linear} option reproduces the earlier matched benchmark.
+The broader calculations and source records are identified by U1 and C5.
+Build the publication from
+the workspace root with
+\begin{quote}\ttfamily
+python .organization/build\_pdfs.py -{}-paper empirical
+\end{quote}
+The build preserves previous PDFs and stores compiler files in the
+workspace build directory. The source archive supplies the figures for
+standalone typesetting.
+
+The public dark-energy release and DES data repository are linked in the
+references. The current physical mixing extension is identified by its
+local archive and hashes; availability of the public reproduction bundle
+does not by itself make every subsequent calculation public.
+
+\section{Notation}
+\small
+\begin{tabularx}{\textwidth}{P{.23\textwidth}Y}
+\toprule Symbol & Meaning \\
+\midrule
+$g$ & Cell sharing entropy in natural-log units. \\
+$\epsilon=g/(4\pi^2)$ & Transverse response loading. \\
+$\eta_*$ & Closure evidence coefficient; also the release fraction under
+the common energy-conversion prescription. \\
+$a_0$ & Characteristic galactic acceleration scale. \\
+$g_b$ or $g_N$ & Newtonian acceleration produced by the assigned baryonic
+source. \\
+$n_B$ & Occupation of the adopted transverse mode. \\
+$M_b$, $M_b^L$ & Present baryonic mass and ancestral Lagrangian baryonic
+mass, respectively. \\
+$C_R$ & Adopted retained-stock cap relative to present baryonic mass. \\
+$R_h$ & Projected stellar half-light radius. \\
+$\sigma_{\rm los}$ & Line-of-sight velocity dispersion, with sample and
+gradient treatment specified for each comparison. \\
+$Z$, $B$ & Prior-integrated likelihood and its ratio between two models. \\
+$F_Z$ & Fraction that has first entered a baryon-retaining well. \\
+$F_{\rm rel}$ & Cumulative fraction processed by the source-identity
+release kernel. \\
+$f$ & Mixing time in units of the formation halo dynamical time in the
+pure-exponential fit. \\
+$\rho_{c0}^{\rm wb}$ & Would-be present commitment density before release
+losses, extrapolated as dust. \\
+$I_{\rm rel}$ & Linear-benchmark release integral weighted by $a^{-3}$. \\
+$I_{\eta,\rm rel}$ & Positive-allocation integral with the additional
+survival factor $e^{-\eta_*F_{\rm rel}}$. \\
+$\omega_i=\Omega_i h^2$ & Physical density parameter in the cosmological
+fit. \\
+\bottomrule
+\end{tabularx}
+\normalsize

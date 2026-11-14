@@ -1,0 +1,280 @@
+{
+  "A85": {
+    "cluster": "A85",
+    "z": 0.0555,
+    "R500_kpc": 1235.0,
+    "R200_model_kpc": 1918.197133594869,
+    "fit_stock_amplitude_Msun": 960253290370012.2,
+    "fit_stock_rs_kpc": 534.8446446599708,
+    "total_stock_Msun": 949599538508236.4,
+    "NFW_stock_fit_rms_dex": 0.0012597506346845146,
+    "NFW_stock_fit_max_total_mass_error": 0.007307063248507273,
+    "stock_fit_mass_error_at_R500": 0.0023268056071725773,
+    "Eddington_density_recovery_max_relative_error": 0.0003910694610678167,
+    "observed_total_M500": 564803882667142.4,
+    "observed_baryon_M500": 87076401972453.9,
+    "observed_stock_M500": 477727480694688.5,
+    "HSE_header_error_M500": 17836000000000.0,
+    "RAR_total_over_observed_at_R500": 0.6866654671159383,
+    "RAR_stock_over_observed_at_R500": 0.6295533166958108,
+    "observed_to_RAR_offset_dex_rms": 0.3699387426674961,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 1.047252256237803,
+      "outer_added_mass_over_join_mass": 0.5236261281189015
+    },
+    "radial_data_interval_kpc": [
+      123.5,
+      1611.675048828125
+    ],
+    "independent_lensing": {
+      "z": 0.055,
+      "M200": 8.4,
+      "eM200": 3.3,
+      "M500": 5.7,
+      "eM500": 2.2,
+      "Rap500": 1.35,
+      "Map500": 7.4,
+      "eMap_lo": 2.3,
+      "eMap_hi": 2.3,
+      "R500_kpc": 1238.763219814234,
+      "RAR_total_over_published_M500": 0.6836304296068884,
+      "HSE_at_lensing_R500_over_lensing_M500": 0.9939234730998193,
+      "measured_baryons_cover_R500": true
+    }
+  },
+  "A1795": {
+    "cluster": "A1795",
+    "z": 0.0622,
+    "R500_kpc": 1153.0,
+    "R200_model_kpc": 1754.600023009851,
+    "fit_stock_amplitude_Msun": 590380265683451.5,
+    "fit_stock_rs_kpc": 360.70745916553716,
+    "total_stock_Msun": 715517955537473.1,
+    "NFW_stock_fit_rms_dex": 0.0019492091726696422,
+    "NFW_stock_fit_max_total_mass_error": 0.009099078980664643,
+    "stock_fit_mass_error_at_R500": 0.004158514426416238,
+    "Eddington_density_recovery_max_relative_error": 0.0002577044788178995,
+    "observed_total_M500": 462837335636902.06,
+    "observed_baryon_M500": 67705303080332.36,
+    "observed_stock_M500": 395132032556569.75,
+    "HSE_header_error_M500": 14443000000000.0,
+    "RAR_total_over_observed_at_R500": 0.6851684520054061,
+    "RAR_stock_over_observed_at_R500": 0.631222520974941,
+    "observed_to_RAR_offset_dex_rms": 0.3864996409285073,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 0.7648134344247106,
+      "outer_added_mass_over_join_mass": 0.3824067172123553
+    },
+    "radial_data_interval_kpc": [
+      115.30000000000001,
+      1729.5
+    ],
+    "independent_lensing": {
+      "z": 0.062,
+      "M200": 13.9,
+      "eM200": 3.3,
+      "M500": 9.3,
+      "eM500": 2.2,
+      "Rap500": 1.45,
+      "Map500": 9.2,
+      "eMap_lo": 2.3,
+      "eMap_hi": 2.3,
+      "R500_kpc": 1455.2278469926446,
+      "RAR_total_over_published_M500": 0.4748373785559377,
+      "HSE_at_lensing_R500_over_lensing_M500": 0.60598495903936,
+      "measured_baryons_cover_R500": true
+    }
+  },
+  "A2029": {
+    "cluster": "A2029",
+    "z": 0.0766,
+    "R500_kpc": 1414.0,
+    "R200_model_kpc": 2163.70340415107,
+    "fit_stock_amplitude_Msun": 1150874459006238.0,
+    "fit_stock_rs_kpc": 466.41688290352147,
+    "total_stock_Msun": 1353427718759663.2,
+    "NFW_stock_fit_rms_dex": 0.002300121416358564,
+    "NFW_stock_fit_max_total_mass_error": 0.008815462785719985,
+    "stock_fit_mass_error_at_R500": 0.0026739505296200505,
+    "Eddington_density_recovery_max_relative_error": 0.0002634574318356453,
+    "observed_total_M500": 864421248173621.4,
+    "observed_baryon_M500": 127642020315739.16,
+    "observed_stock_M500": 736779227857882.2,
+    "HSE_header_error_M500": 29367000000000.0,
+    "RAR_total_over_observed_at_R500": 0.6262959758817481,
+    "RAR_stock_over_observed_at_R500": 0.5615542800860349,
+    "observed_to_RAR_offset_dex_rms": 0.4013960237693594,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 0.8676517662950266,
+      "outer_added_mass_over_join_mass": 0.4338258831475133
+    },
+    "radial_data_interval_kpc": [
+      141.4,
+      2121.0
+    ],
+    "independent_lensing": {
+      "z": 0.077,
+      "M200": 18.1,
+      "eM200": 3.8,
+      "M500": 12.1,
+      "eM500": 2.5,
+      "Rap500": 1.52,
+      "Map500": 10.8,
+      "eMap_lo": 2.3,
+      "eMap_hi": 1.9,
+      "R500_kpc": 1581.3236542259094,
+      "RAR_total_over_published_M500": 0.5299037089564125,
+      "HSE_at_lensing_R500_over_lensing_M500": 0.788291915426138,
+      "measured_baryons_cover_R500": true
+    }
+  },
+  "A2142": {
+    "cluster": "A2142",
+    "z": 0.09,
+    "R500_kpc": 1424.0,
+    "R200_model_kpc": 2223.3843924460734,
+    "fit_stock_amplitude_Msun": 1589114255574978.0,
+    "fit_stock_rs_kpc": 654.6090115865984,
+    "total_stock_Msun": 1511548495274176.2,
+    "NFW_stock_fit_rms_dex": 0.0008061591274752102,
+    "NFW_stock_fit_max_total_mass_error": 0.003044645579425076,
+    "stock_fit_mass_error_at_R500": 0.0010876548470384328,
+    "Eddington_density_recovery_max_relative_error": 0.00042298431713594375,
+    "observed_total_M500": 894614653627609.6,
+    "observed_baryon_M500": 148158628265123.56,
+    "observed_stock_M500": 746456025362486.1,
+    "HSE_header_error_M500": 26404000000000.0,
+    "RAR_total_over_observed_at_R500": 0.6624962408110725,
+    "RAR_stock_over_observed_at_R500": 0.5955075739683449,
+    "observed_to_RAR_offset_dex_rms": 0.35816403851867856,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 0.9370796923159831,
+      "outer_added_mass_over_join_mass": 0.46853984615799155
+    },
+    "radial_data_interval_kpc": [
+      142.4,
+      2136.0
+    ],
+    "independent_lensing": {
+      "z": 0.091,
+      "M200": 14.5,
+      "eM200": 3.4,
+      "M500": 9.7,
+      "eM500": 2.3,
+      "Rap500": 1.54,
+      "Map500": 11.3,
+      "eMap_lo": 2.2,
+      "eMap_hi": 2.1,
+      "R500_kpc": 1462.586666612524,
+      "RAR_total_over_published_M500": 0.6368008560238462,
+      "HSE_at_lensing_R500_over_lensing_M500": 0.9478339310310111,
+      "measured_baryons_cover_R500": true
+    }
+  },
+  "A2319": {
+    "cluster": "A2319",
+    "z": 0.0557,
+    "R500_kpc": 1368.0,
+    "R200_model_kpc": 2085.0569854867153,
+    "fit_stock_amplitude_Msun": 837947385943583.6,
+    "fit_stock_rs_kpc": 374.9060452411408,
+    "total_stock_Msun": 1102564607797338.9,
+    "NFW_stock_fit_rms_dex": 0.004226608591046648,
+    "NFW_stock_fit_max_total_mass_error": 0.020149972203252098,
+    "stock_fit_mass_error_at_R500": 0.016829919985467123,
+    "Eddington_density_recovery_max_relative_error": 0.00023174089029698308,
+    "observed_total_M500": 767737626512277.1,
+    "observed_baryon_M500": 150745506764750.03,
+    "observed_stock_M500": 616992119747527.1,
+    "HSE_header_error_M500": 28624000000000.0,
+    "RAR_total_over_observed_at_R500": 0.7532000267587797,
+    "RAR_stock_over_observed_at_R500": 0.6929010604591803,
+    "observed_to_RAR_offset_dex_rms": 0.47218641186986976,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 1.377686697406682,
+      "outer_added_mass_over_join_mass": 0.688843348703341
+    },
+    "radial_data_interval_kpc": [
+      136.8,
+      1446.949951171875
+    ]
+  },
+  "A644": {
+    "cluster": "A644",
+    "z": 0.0704,
+    "R500_kpc": 1250.0,
+    "R200_model_kpc": 1884.094022392161,
+    "fit_stock_amplitude_Msun": 645776053210568.4,
+    "fit_stock_rs_kpc": 318.4403192627646,
+    "total_stock_Msun": 881385776896689.6,
+    "NFW_stock_fit_rms_dex": 0.002049592129476767,
+    "NFW_stock_fit_max_total_mass_error": 0.0068521639299320425,
+    "stock_fit_mass_error_at_R500": 0.004914455627250902,
+    "Eddington_density_recovery_max_relative_error": 0.00019779308345624358,
+    "observed_total_M500": 593852351298969.0,
+    "observed_baryon_M500": 81805608422086.83,
+    "observed_stock_M500": 512046742876882.1,
+    "HSE_header_error_M500": 51329000000000.0,
+    "RAR_total_over_observed_at_R500": 0.6373889022849942,
+    "RAR_stock_over_observed_at_R500": 0.5794574304382742,
+    "observed_to_RAR_offset_dex_rms": 0.4649769695404999,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 0.5784421210749473,
+      "outer_added_mass_over_join_mass": 0.28922106053747365
+    },
+    "radial_data_interval_kpc": [
+      125.0,
+      1875.0
+    ]
+  },
+  "ZW1215": {
+    "cluster": "ZW1215",
+    "z": 0.0766,
+    "R500_kpc": 1358.0,
+    "R200_model_kpc": 2173.0491064638554,
+    "fit_stock_amplitude_Msun": 2409372636674424.0,
+    "fit_stock_rs_kpc": 998.4497868501504,
+    "total_stock_Msun": 1614132468971339.2,
+    "NFW_stock_fit_rms_dex": 0.004237778299570676,
+    "NFW_stock_fit_max_total_mass_error": 0.020623215467012845,
+    "stock_fit_mass_error_at_R500": -0.002262865013624049,
+    "Eddington_density_recovery_max_relative_error": 0.0007245422043762328,
+    "observed_total_M500": 766486599393225.9,
+    "observed_baryon_M500": 84300075252953.31,
+    "observed_stock_M500": 682186524140272.6,
+    "HSE_header_error_M500": 52481000000000.0,
+    "RAR_total_over_observed_at_R500": 0.540452665241934,
+    "RAR_stock_over_observed_at_R500": 0.4836648608343035,
+    "observed_to_RAR_offset_dex_rms": 0.3989502953289636,
+    "completion": {
+      "inner_power": 2,
+      "outer_log_slope_at_join": 0.6661545487116886,
+      "outer_added_mass_over_join_mass": 0.3330772743558443
+    },
+    "radial_data_interval_kpc": [
+      135.8,
+      2037.0
+    ],
+    "independent_lensing": {
+      "z": 0.075,
+      "M200": 5.1,
+      "eM200": 3.1,
+      "M500": 3.5,
+      "eM500": 2.2,
+      "Rap500": 1.32,
+      "Map500": 7.0,
+      "eMap_lo": 1.4,
+      "eMap_hi": 2.4,
+      "R500_kpc": 1045.7992484348788,
+      "RAR_total_over_published_M500": 0.8008259696228053,
+      "HSE_at_lensing_R500_over_lensing_M500": 1.5833576688125093,
+      "measured_baryons_cover_R500": true
+    }
+  }
+}

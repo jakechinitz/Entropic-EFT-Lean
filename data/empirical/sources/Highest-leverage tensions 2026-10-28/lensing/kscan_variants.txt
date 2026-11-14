@@ -1,0 +1,28 @@
+== so ss dm = 0.2 0.2 0.0
+budget multiplier k on M_sp budget: chi2 (no env | lin+out per bin)  inner(32)
+k=      1    515.2 |   304.2   inner  102.7
+k=      2    341.9 |   206.8   inner   82.6
+k=      3    270.2 |   179.5   inner   85.2
+k=      4    232.1 |   168.7   inner   86.4
+k=      6    197.2 |   161.9   inner   86.8
+== so ss dm = 0.15 0.15 -0.2
+budget multiplier k on M_sp budget: chi2 (no env | lin+out per bin)  inner(32)
+k=      1    322.7 |   197.2   inner   83.7
+k=      2    205.2 |   148.5   inner   84.2
+k=      3    166.2 |   139.8   inner   86.4
+k=      4    148.4 |   135.8   inner   85.9
+k=      6    137.3 |   133.7   inner   85.6
+== so ss dm = 0.15 0.15 0.2
+budget multiplier k on M_sp budget: chi2 (no env | lin+out per bin)  inner(32)
+k=      1    681.4 |   419.6   inner  160.2
+k=      2    489.1 |   297.4   inner  127.4
+k=      3    404.3 |   260.2   inner  131.4
+k=      4    356.9 |   245.5   inner  133.7
+k=      6    309.1 |   236.2   inner  134.4
+== so ss dm = 0.1 0.1 0.0
+budget multiplier k on M_sp budget: chi2 (no env | lin+out per bin)  inner(32)
+k=      1    453.4 |   262.2   inner   87.5
+k=      2    291.2 |   178.3   inner   78.4
+k=      3    230.9 |   161.9   inner   82.6
+k=      4    200.3 |   156.1   inner   82.6
+k=      6    174.4 |   153.2   inner   82.6

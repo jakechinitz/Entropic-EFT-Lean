@@ -1,0 +1,64 @@
+CONSERVATIVE CLUSTER MERGER — REPRODUCTION
+
+Read Research note/main.pdf and START HERE.html for the scientific scope.
+All four publication projects and the preceding research were preserved.
+
+merger.py runs 3D direct softened gravity, conservative baryonic SPH and a
+selected reciprocal stock--baryon contact. It uses NumPy, SciPy and Numba.
+The clock-speed function is imported from the preceding effective-coupling
+project. These are idealized tests with supplied initial profiles and rates.
+
+Every tag creates a new result folder and refuses to overwrite an old one.
+Each folder contains the source executed at its start, settings, the initial
+state, history arrays and final diagnostics. Use fresh tags for repetition.
+There are 17 completed runs and one interrupted baseline retained in full.
+
+Representative commands from this directory (use NEW tags):
+  python merger.py --tag new_baseline --nu 0 --dt .01 --end 12
+  python merger.py --tag new_weak --nu .1 --dt .01 --end 12
+  python merger.py --tag new_strong --nu 1 --dt .01 --end 12
+  python merger.py --tag new_depleted --nu 1 --available .0001 --end 12
+  python merger.py --tag new_floor --nu 1 --available 0 --end 12
+  python merger.py --tag new_refined --nu .1 --mult 2 --h .36 --eps .08 --dt .005 --end 12
+  python merger.py --tag new_seed --nu .1 --seed 51779 --end 12
+  python merger.py --tag new_isolated --isolated --nu 1 --end 6
+  python merger.py --tag new_collisionless --collisionless-gas --nu 0 --end 12
+  python merger.py --tag new_short_range --nu 1 --contact-h .3 --end 12
+
+Each saved settings.json records every parameter, including seeds and scales.
+The particle counts are 672 per cluster at mult=1. The second cluster has the
+same number of macro-elements and 0.3 times the mass. Macroparticle mass is a
+numerical weight, not an identified microscopic particle mass.
+
+The force kernels were optimized to avoid per-pair array allocation without
+changing their formulas. The first slow baseline was stopped and replaced by
+baseline_optimized. No result is claimed for the interrupted run. One early
+run originally hashed the edited live file at completion; its metadata was
+corrected using its saved start-of-run source. The exact old JSON is retained.
+
+checks.py performs independent numerical force and local-identity checks.
+check_lean.py writes timestamped audits using the existing Lean/mathlib 4.19
+cache. It does not rebuild the upstream 4.35 project. Eight new statements
+have passed with standard logical axioms. There are no simulation theorems.
+
+analyze.py --tag NEW_COMPARISON run1 run2 ... analyzes saved encounters without
+rerunning them. Its fixed comparison epoch is first core pericentre plus two
+dynamical units. assess.py generated the comprehensive saved assessment and
+figures; it refuses to replace its existing output files. Use fresh output
+names or a separately preserved project copy to repeat that reporting stage.
+
+The stock--gas and stock--stars offsets in the table use tagged components.
+The plotted cyan contours include all species and both cohorts exactly once.
+Gas color is a normalized emission proxy, not an instrument-convolved image.
+The exploratory aperture audit uses 3D radii 1, 2, 3 in model units, not R500.
+
+Build from the workspace root:
+  python .organization/build_pdfs.py --tex "02 Research/Conservative cluster merger 2026-10-23/Research note/main.tex"
+Then use render_note.py to create a preserved Review render directory.
+No scientific simulation is run by the build or render scripts.
+
+Open physical inputs: target equilibrium, a common physical relaxation rate,
+contact range, register allocation and bath identification. Pair-channel
+temperature coefficients depend on reduced mass and are not a single global
+KMS bath. The full spatial clock/floor-fluid stress is not evolved. No observed
+cluster likelihood or galaxy/cluster common-rate fit was performed.

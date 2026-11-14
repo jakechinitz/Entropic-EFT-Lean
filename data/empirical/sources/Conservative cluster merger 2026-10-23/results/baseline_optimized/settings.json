@@ -1,0 +1,14 @@
+{
+  "tag": "baseline_optimized",
+  "mult": 1,
+  "seed": 39177,
+  "dt": 0.01,
+  "end": 12.0,
+  "nu": 0.0,
+  "available": 1.2,
+  "h": 0.45,
+  "eps": 0.1,
+  "contact_h": 0.45,
+  "isolated": false,
+  "collisionless_gas": false
+}

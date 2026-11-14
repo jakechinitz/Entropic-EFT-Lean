@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "checks": {
+    "A1795_NFW_pair_recovery": true,
+    "A1795_pressure_bound_equivalence": true,
+    "A2029_NFW_pair_recovery": true,
+    "A2029_pressure_bound_equivalence": true,
+    "minimax_LP_matches_pairwise_formula": true,
+    "A644_monotone_witness": true,
+    "all_transport_witnesses_positive_and_conservative": true,
+    "A1795_SI_pressure_units": true,
+    "A1795_quadrature_resolution": true,
+    "analytic_integral_direction": true,
+    "A2029_SI_pressure_units": true,
+    "A2029_quadrature_resolution": false,
+    "twelve_saved_transport_maps": true,
+    "lean_compiled_without_sorry": true
+  },
+  "transport_maps": 12,
+  "lean_theorems": 22
+}

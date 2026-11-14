@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "theorems": 22,
+  "names": [
+    "gated_current_regular",
+    "power_gate_factor",
+    "resting_gate",
+    "contact_energy_ledger",
+    "work_per_event",
+    "insufficient_supply_bound",
+    "resting_endpoint",
+    "local_rate_nonnegative",
+    "contact_stationary",
+    "local_detailed_balance",
+    "local_population_conserved",
+    "zero_population_inward",
+    "pair_flux_cancels",
+    "pair_quadratic_dissipation",
+    "reciprocal_impulse",
+    "central_impulse_angular",
+    "protected_pair_observable",
+    "protected_noise",
+    "weighted_floor",
+    "admissible_event_floor",
+    "frozen_clock_coupling_zero",
+    "sufficient_residual_energy"
+  ],
+  "compiler": "Lean/mathlib 4.19 standalone supplement; not a rebuild of upstream 4.35",
+  "source_sha256": "8e8acd8100fa97fc90a688c7b4b2c09bf1e6bc17e2fd5f00ca84a12d35342f32",
+  "log": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Effective dynamics and coupling 2026-10-23\\logs\\lean_20261023_120557.log",
+  "audit_source": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Effective dynamics and coupling 2026-10-23\\formalization\\Audit_20261023_120557.lean",
+  "contains_sorry": false
+}

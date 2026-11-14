@@ -1,0 +1,498 @@
+[
+  {
+    "tag": "baseline_optimized",
+    "pericentre_time": 8.0,
+    "evaluation_time": 10.0,
+    "core_separation_at_pericentre": 0.3238947903364617,
+    "core_separation_at_evaluation": 2.5065719054800937,
+    "cohorts": [
+      {
+        "cohort": 0,
+        "projected_peaks_stock_stars_gas": [
+          [
+            0.5750000000000002,
+            0.07500000000000018
+          ],
+          [
+            0.4250000000000007,
+            -0.07499999999999973
+          ],
+          [
+            -0.37499999999999956,
+            -0.17499999999999938
+          ]
+        ],
+        "stock_gas_peak_distance": 0.9823441352194247,
+        "stock_stars_peak_distance": 0.21213203435596384,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            0.5328347302138153,
+            0.05651393350373291,
+            0.0005828933695430523
+          ],
+          [
+            0.5338004828667381,
+            0.004004610521421953,
+            -0.01875223838764795
+          ],
+          [
+            -0.08504925569756197,
+            -0.09491229986342403,
+            -0.0021895193509453756
+          ]
+        ],
+        "stock_mass": 0.8380848732685873,
+        "baryon_mass": 0.16191512673140857
+      },
+      {
+        "cohort": 1,
+        "projected_peaks_stock_stars_gas": [
+          [
+            -1.8749999999999996,
+            -0.32499999999999973
+          ],
+          [
+            -1.8249999999999997,
+            -0.22499999999999964
+          ],
+          [
+            0.1750000000000007,
+            0.27500000000000036
+          ]
+        ],
+        "stock_gas_peak_distance": 2.136000936329383,
+        "stock_stars_peak_distance": 0.11180339887498948,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            -1.811164171299983,
+            -0.20190787581800373,
+            0.0034571624713510703
+          ],
+          [
+            -1.7806679064061073,
+            -0.2686121507151965,
+            -0.04552895121046275
+          ],
+          [
+            0.4906649796110959,
+            0.4322390980643754,
+            -0.009366828499133548
+          ]
+        ],
+        "stock_mass": 0.25142546198057747,
+        "baryon_mass": 0.04857453801942296
+      }
+    ],
+    "global_total_mass_peaks": [
+      [
+        0.5250000000000004,
+        0.07500000000000018
+      ],
+      [
+        -1.8749999999999996,
+        -0.32499999999999973
+      ]
+    ],
+    "contact": {
+      "attempts": 0,
+      "no_partner": 0,
+      "accepted": 0,
+      "cross_cohort": 0,
+      "unaffordable_work": 0,
+      "unaffordable_heat": 0,
+      "event_energy_error": 0.0,
+      "work": 0.0,
+      "heat": 0.0
+    },
+    "max_energy_error": 2.6194458493020782e-05,
+    "max_momentum_error": 2.4121662510693023e-15,
+    "max_angular_error": 2.808174903082428e-16,
+    "minimum_clock_surplus": 1.2000000000000002,
+    "settings": {
+      "tag": "baseline_optimized",
+      "mult": 1,
+      "seed": 39177,
+      "dt": 0.01,
+      "end": 12.0,
+      "nu": 0.0,
+      "available": 1.2,
+      "h": 0.45,
+      "eps": 0.1,
+      "contact_h": 0.45,
+      "isolated": false,
+      "collisionless_gas": false
+    }
+  },
+  {
+    "tag": "baseline_fine",
+    "pericentre_time": 8.0,
+    "evaluation_time": 10.0,
+    "core_separation_at_pericentre": 0.3238940364685453,
+    "core_separation_at_evaluation": 2.506583675970516,
+    "cohorts": [
+      {
+        "cohort": 0,
+        "projected_peaks_stock_stars_gas": [
+          [
+            0.5750000000000002,
+            0.07500000000000018
+          ],
+          [
+            0.4250000000000007,
+            -0.07499999999999973
+          ],
+          [
+            -0.37499999999999956,
+            -0.17499999999999938
+          ]
+        ],
+        "stock_gas_peak_distance": 0.9823441352194247,
+        "stock_stars_peak_distance": 0.21213203435596384,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            0.5328333425999409,
+            0.05652906986121904,
+            0.0005796097169570493
+          ],
+          [
+            0.5338080371588564,
+            0.004008869917458956,
+            -0.018752032552851277
+          ],
+          [
+            -0.08504199795848995,
+            -0.09492543129901573,
+            -0.0021908277071224103
+          ]
+        ],
+        "stock_mass": 0.8380848732685873,
+        "baryon_mass": 0.16191512673140857
+      },
+      {
+        "cohort": 1,
+        "projected_peaks_stock_stars_gas": [
+          [
+            -1.8749999999999996,
+            -0.32499999999999973
+          ],
+          [
+            -1.8249999999999997,
+            -0.22499999999999964
+          ],
+          [
+            0.1750000000000007,
+            0.27500000000000036
+          ]
+        ],
+        "stock_gas_peak_distance": 2.136000936329383,
+        "stock_stars_peak_distance": 0.11180339887498948,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            -1.811159741562134,
+            -0.20194997589494734,
+            0.0034643560179619874
+          ],
+          [
+            -1.780659913205148,
+            -0.268665013471097,
+            -0.045526201011157556
+          ],
+          [
+            0.49063726730347035,
+            0.43223898102283803,
+            -0.009340794243125528
+          ]
+        ],
+        "stock_mass": 0.25142546198057747,
+        "baryon_mass": 0.04857453801942296
+      }
+    ],
+    "global_total_mass_peaks": [
+      [
+        0.5250000000000004,
+        0.07500000000000018
+      ],
+      [
+        -1.8749999999999996,
+        -0.32499999999999973
+      ]
+    ],
+    "contact": {
+      "attempts": 0,
+      "no_partner": 0,
+      "accepted": 0,
+      "cross_cohort": 0,
+      "unaffordable_work": 0,
+      "unaffordable_heat": 0,
+      "event_energy_error": 0.0,
+      "work": 0.0,
+      "heat": 0.0
+    },
+    "max_energy_error": 6.533932590453249e-06,
+    "max_momentum_error": 2.3205499552866778e-15,
+    "max_angular_error": 3.94320595519234e-16,
+    "minimum_clock_surplus": 1.2000000000000002,
+    "settings": {
+      "tag": "baseline_fine",
+      "mult": 1,
+      "seed": 39177,
+      "dt": 0.005,
+      "end": 12.0,
+      "nu": 0.0,
+      "available": 1.2,
+      "h": 0.45,
+      "eps": 0.1,
+      "contact_h": 0.45,
+      "isolated": false,
+      "collisionless_gas": false
+    }
+  },
+  {
+    "tag": "collisionless_baryons",
+    "pericentre_time": 8.0,
+    "evaluation_time": 10.0,
+    "core_separation_at_pericentre": 0.3250580915229126,
+    "core_separation_at_evaluation": 2.5771739099276236,
+    "cohorts": [
+      {
+        "cohort": 0,
+        "projected_peaks_stock_stars_gas": [
+          [
+            0.625,
+            0.125
+          ],
+          [
+            0.5250000000000004,
+            0.025000000000000355
+          ],
+          [
+            0.625,
+            0.125
+          ]
+        ],
+        "stock_gas_peak_distance": 0.0,
+        "stock_stars_peak_distance": 0.141421356237309,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            0.5514531243087718,
+            0.06028996330926387,
+            0.0001351371645835801
+          ],
+          [
+            0.5471374830618583,
+            -0.0001142725190449524,
+            -0.014357085270344844
+          ],
+          [
+            0.5523018385487672,
+            0.04978080801955068,
+            0.01085492780622081
+          ]
+        ],
+        "stock_mass": 0.8380848732685873,
+        "baryon_mass": 0.16191512673140857
+      },
+      {
+        "cohort": 1,
+        "projected_peaks_stock_stars_gas": [
+          [
+            -1.9249999999999994,
+            -0.32499999999999973
+          ],
+          [
+            -1.8749999999999996,
+            -0.32499999999999973
+          ],
+          [
+            -1.9749999999999996,
+            -0.2749999999999999
+          ]
+        ],
+        "stock_gas_peak_distance": 0.07071067811865482,
+        "stock_stars_peak_distance": 0.04999999999999982,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            -1.8353287000182723,
+            -0.18722420826532235,
+            0.0057973143593285864
+          ],
+          [
+            -1.8062529482378185,
+            -0.24990297988507476,
+            -0.0400750393928113
+          ],
+          [
+            -1.8602990561845987,
+            -0.21181955156945628,
+            -0.06068733774238882
+          ]
+        ],
+        "stock_mass": 0.25142546198057747,
+        "baryon_mass": 0.04857453801942296
+      }
+    ],
+    "global_total_mass_peaks": [
+      [
+        0.625,
+        0.07500000000000018
+      ],
+      [
+        -1.9749999999999996,
+        -0.2749999999999999
+      ]
+    ],
+    "contact": {
+      "attempts": 0,
+      "no_partner": 0,
+      "accepted": 0,
+      "cross_cohort": 0,
+      "unaffordable_work": 0,
+      "unaffordable_heat": 0,
+      "event_energy_error": 0.0,
+      "work": 0.0,
+      "heat": 0.0
+    },
+    "max_energy_error": 2.7317929572994215e-05,
+    "max_momentum_error": 5.78655182250588e-16,
+    "max_angular_error": 2.446665623626357e-16,
+    "minimum_clock_surplus": 1.2000000000000002,
+    "settings": {
+      "tag": "collisionless_baryons",
+      "mult": 1,
+      "seed": 39177,
+      "dt": 0.01,
+      "end": 12.0,
+      "nu": 0.0,
+      "available": 1.2,
+      "h": 0.45,
+      "eps": 0.1,
+      "contact_h": 0.45,
+      "isolated": false,
+      "collisionless_gas": true
+    }
+  },
+  {
+    "tag": "active_fine",
+    "pericentre_time": 8.4,
+    "evaluation_time": 10.4,
+    "core_separation_at_pericentre": 0.25219256998853984,
+    "core_separation_at_evaluation": 1.6109273825374015,
+    "cohorts": [
+      {
+        "cohort": 0,
+        "projected_peaks_stock_stars_gas": [
+          [
+            0.4250000000000007,
+            0.27500000000000036
+          ],
+          [
+            0.4250000000000007,
+            0.375
+          ],
+          [
+            -0.17499999999999938,
+            -0.9749999999999996
+          ]
+        ],
+        "stock_gas_peak_distance": 1.3865424623862048,
+        "stock_stars_peak_distance": 0.09999999999999964,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            0.435124161039464,
+            0.1082750959339174,
+            0.014966355045585132
+          ],
+          [
+            0.07516067950817638,
+            0.1453631088161637,
+            -0.02979769877760328
+          ],
+          [
+            -0.3197499485268586,
+            -0.10869417752966248,
+            -0.11020012309156978
+          ]
+        ],
+        "stock_mass": 0.8380848732685873,
+        "baryon_mass": 0.16191512673140857
+      },
+      {
+        "cohort": 1,
+        "projected_peaks_stock_stars_gas": [
+          [
+            -1.6249999999999996,
+            -0.7749999999999999
+          ],
+          [
+            -1.6749999999999994,
+            -0.32499999999999973
+          ],
+          [
+            1.825000000000001,
+            0.375
+          ]
+        ],
+        "stock_gas_peak_distance": 3.6366193091936365,
+        "stock_stars_peak_distance": 0.452769256906871,
+        "centres_of_mass_stock_stars_gas": [
+          [
+            -1.3846132689104518,
+            -0.3856042968183077,
+            0.013142187595021323
+          ],
+          [
+            -1.2620963740028917,
+            -0.028258524733866835,
+            0.0962380373960274
+          ],
+          [
+            0.8198039059136185,
+            0.44380177085809425,
+            -0.004457269120946105
+          ]
+        ],
+        "stock_mass": 0.25142546198057747,
+        "baryon_mass": 0.04857453801942296
+      }
+    ],
+    "global_total_mass_peaks": [
+      [
+        0.375,
+        0.27500000000000036
+      ],
+      [
+        -1.6749999999999994,
+        -0.7749999999999999
+      ]
+    ],
+    "contact": {
+      "attempts": 9180,
+      "no_partner": 388,
+      "accepted": 7124,
+      "cross_cohort": 1675,
+      "unaffordable_work": 45,
+      "unaffordable_heat": 0,
+      "event_energy_error": 6.505213034913027e-19,
+      "work": -0.09498398779286805,
+      "heat": 1.083086363319615e-07
+    },
+    "max_energy_error": 2.3209885342306273e-05,
+    "max_momentum_error": 2.3809146268203476e-15,
+    "max_angular_error": 2.910957816578326e-16,
+    "minimum_clock_surplus": 0.03291501647558892,
+    "settings": {
+      "tag": "active_fine",
+      "mult": 1,
+      "seed": 39177,
+      "dt": 0.005,
+      "end": 12.0,
+      "nu": 1.0,
+      "available": 1.2,
+      "h": 0.45,
+      "eps": 0.1,
+      "contact_h": 0.45,
+      "isolated": false,
+      "collisionless_gas": false
+    }
+  }
+]

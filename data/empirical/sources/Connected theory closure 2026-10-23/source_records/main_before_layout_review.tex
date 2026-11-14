@@ -1,0 +1,566 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.87in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,booktabs,tabularx,graphicx}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{1em}
+\graphicspath{{images/}}
+\input{values.tex}
+\title{Stock evolution, local release, and the remaining matching problem}
+\author{Research calculation for the Entropic Scalar EFT project}
+\date{23 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A low-density constitutive completion of the capacity-clock action preserves
+the tested homogeneous and linear cosmological branch while supplying a
+positive pressure response before local exhaustion. Its total energy has a
+constant lower bound, its regular future-directed current remains nonnegative,
+and its material characteristics are subluminal. The construction uses the
+existing clock and an auxiliary density; its constitutive function and energy
+floor are additional effective assumptions. Independent calculations constrain
+the other proposed connections. Passive relaxation toward a declining
+equilibrium has the wrong sign to suppress an initially equilibrated high-redshift
+galaxy response. The existing two-pole quantum model obeys a noise--delay
+inequality. Relabeling stock and its small cosmological mass loss do not select
+the galactic equilibrium. The minimal Einstein action supplies two luminal
+tensor modes, while the native continuum and the physical contact operator
+remain open. Forty-two standalone Lean certificates check the stated algebra,
+calculus and comparison lemmas. They do not certify an observational likelihood
+or a complete microscopic theory.
+\end{abstract}
+
+\section{Result and scope}
+The five questions from the empirical assessment have different closure
+requirements. Table~\ref{tab:status} records the outcome of this calculation.
+The strongest new construction concerns local release. It avoids changing the
+already-tested linear cosmology by modifying the action only in a separate
+low-density regime. The stock and response calculations identify a common
+missing physical ingredient: the interaction that changes the orbital
+distribution and selects the galactic response.
+
+\begin{table}[h]
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.18\textwidth}XX@{}}
+\toprule
+Connection & Established here & Remaining physical input \\
+\midrule
+Stock evolution & Conservative kinetic/action framework; conversion and
+adiabatic-scaling restrictions & The interaction selecting the RAR equilibrium,
+assembly and director dynamics \\
+Response regimes & Lag sign; quantum noise--delay bound; rate nonuniqueness &
+Carrier assignment, initialization, relaxation and spatial correlation scales \\
+Local release & Selected positive constitutive completion with unchanged
+linear branch & Selection of its constitutive law; nonlinear spatial and
+multistream validation \\
+Tensor sector & Two luminal modes for the specified minimal effective action &
+Native continuum, operator matching and allowed curvature couplings \\
+Matching & Explicit families preserving the relevant identities while changing
+predictions & A physical matrix element or independent observable selecting the
+remaining coefficients \\
+\bottomrule
+\end{tabularx}
+\caption{Effective closure, formal proof and physical selection are recorded separately.}
+\label{tab:status}
+\end{table}
+
+The current manuscripts and upstream Lean files were treated as inputs. The
+GitHub head checked for this work was
+\href{https://github.com/jakechinitz/Entropic-EFT-Lean/commit/432da8c4a8b169a17146b53e4155d6b37915a12f}{\texttt{432da8c4}}.
+The local supplement was checked with the available Lean/mathlib 4.19 runtime;
+the full upstream 4.35 library was not rebuilt. Existing numerical results are
+identified as such. New calculations use the fitted exponential release
+history from the unified empirical program.
+
+\section{A positive local completion that preserves the linear branch}
+\subsection{The action and the depleted regime}
+Use signature $(-,+,+,+)$ and $X=-\nabla_\mu\phi\nabla^\mu\phi/2$.
+The original constrained-clock matter Lagrangian is
+\begin{equation}
+ P_{\rm dust}=\lambda(X-\tfrac12)-V(\phi).
+\end{equation}
+On its unit-clock branch, $\lambda$ is the pressureless capacity density.
+A prescribed positive $V_\phi$ continues to drain a sufficiently empty
+element through $\lambda=0$. The integrating-factor positivity lemma does
+not apply when its fractional rate is $Q/\lambda$ and becomes singular.
+
+Choose a constant $K$ larger than $V$ on the interval of interest, and define
+\begin{equation}
+ L(\phi)=3[K-V(\phi)]>0,\qquad \lambda\ge L(\phi)/2.
+\end{equation}
+Consider the covariant action
+\begin{equation}\label{eq:action}
+ S=\int d^4x\sqrt{-g}\left[\frac{M_{\rm Pl}^2}{2}\mathcal R
+       +\lambda X-e(\lambda,\phi)-V(\phi)\right]+S_b[g],
+\end{equation}
+where
+\begin{equation}\label{eq:e}
+ e(\lambda,\phi)=\frac{\lambda}{2}
+       +\frac{2}{3L(\phi)^2}[L(\phi)-\lambda]_+^3.
+\end{equation}
+The auxiliary variable has no derivative term. The cubic joins the dust
+branch with equal value, first derivative and second derivative at $\lambda=L$.
+It is the lowest-degree nonzero polynomial correction with this $C^2$ join.
+The position of the lower endpoint and the cubic shape are constitutive
+choices. Higher-order smooth corrections are possible.
+
+For $\lambda>L$, variation gives $X=1/2$ and the original action exactly.
+For $L/2<\lambda<L$, put $r=\lambda/L$. Then
+\begin{align}
+ X=e_\lambda&=\tfrac12-2(1-r)^2, & \tfrac12<r<1,\label{eq:X}\\
+ e_{\lambda\lambda}&=\frac{4(1-r)}{L}>0, &
+ P&=\lambda X-e-V.
+\end{align}
+The constrained endpoint gives a regular spacelike continuation. For $X<0$,
+the maximizing auxiliary value is $\lambda=L/2$, hence
+\begin{equation}
+ P=\frac{L(\phi)}{2}X-K.
+\end{equation}
+This branch is a scalar with a positive field-dependent kinetic coefficient
+and constant potential. At $X=0$ it joins continuously with the pressure branch.
+The action is understood with the auxiliary inequality, or through its local
+Hamiltonian. Its dust sector retains the usual potential-flow and caustic
+limitations.
+
+This completion changes the set of admissible low-density states. An empty
+element has total dark energy $K$ even at an early source-clock value; it
+does not retain the original arbitrarily small dust-plus-vacuum energy.
+The extra contribution has vacuum-like stress at rest. Its effect on the
+abundance and evolution of actual underdense regions requires calculation.
+
+\subsection{Positive energy, causal characteristics and current}
+For an observer with field time derivative $v$ and spatial gradient magnitude
+$s$, the energy density is
+\begin{equation}
+ T_{00}=\frac{\lambda}{2}(v^2+s^2)+e+V.
+\end{equation}
+On the intermediate branch,
+\begin{equation}
+ \frac{e}{L}-\frac13=\frac{(2-r)(2r-1)^2}{6}\ge0.
+\end{equation}
+Thus $T_{00}\ge K$. The dust and spacelike branches obey the same lower
+bound. The null contraction is $T_{\mu\nu}k^\mu k^\nu
+=\lambda(k^\mu\nabla_\mu\phi)^2\ge0$.
+
+Eliminating the auxiliary variable gives $P_X=\lambda$ and
+$P_{XX}=1/e_{\lambda\lambda}$ on the regular pressure branch.
+The local sound speed is therefore\cite{Garriga}
+\begin{equation}\label{eq:sound}
+ c_s^2=\frac{\lambda e_{\lambda\lambda}}
+ {\lambda e_{\lambda\lambda}+2X}
+ =\frac{4r(1-r)}{4r(1-r)+2X},\qquad 0\le c_s^2\le1.
+\end{equation}
+It tends to zero at the dust join and to one at $X=0$. These inequalities
+control the local principal symbol. They do not prove global smooth
+existence or prevent caustics and shocks.
+
+For a regular timelike field, choose the future-directed flow and write
+$v=\sqrt{2X}$, $j=\lambda v$ and $\theta=\nabla_\mu u^\mu$.
+The scalar equation becomes
+\begin{equation}\label{eq:current}
+ \dot j+\theta j=-V_\phi F(r),\qquad
+ F(r)=-1+6r^2-4r^3.
+\end{equation}
+The derivative of the moving threshold in $e$ is essential in this equation.
+Direct factorization gives
+\begin{align}
+ F(r)&=(2r-1)(1+2r-2r^2),\\
+ v^2&=(2r-1)(3-2r),\\
+ F(r)&=A(r)v^2,\qquad
+ A(r)=\frac{1+2r-2r^2}{3-2r}\in[\tfrac34,1].
+\end{align}
+Consequently,
+\begin{equation}\label{eq:regular}
+ \dot j=-\left[\theta+\frac{V_\phi A(r)j}{\lambda^2}\right]j.
+\end{equation}
+For regular flow and $K-V$ bounded away from zero, this fractional rate
+remains continuous at $j=0$. Integrating-factor positivity now applies.
+An initially positive future-directed current cannot cross zero in finite
+regular evolution. With $V_\phi\ge0$, $\dot V=V_\phi v\ge0$.
+The scalar slows relative to proper time as depletion approaches. The
+unit-clock condition has been relinquished in this regime.
+
+The constant minimum energy has a specific role. In a homogeneous element
+at zero current, the scalar force is the derivative of the minimum total
+energy. Requiring zero current to be an invariant state sets that derivative
+to zero. A constant density cutoff instead leaves a nonzero force and allows
+the clock to reverse. That unsuccessful alternative and its numerical
+results are preserved in the research directory.
+
+Covariant variation of~\eqref{eq:action} supplies the full stress tensor.
+Its divergence vanishes on the field equations, with the baryon sector
+included. Spatial variations of $V$ in the depleted phase are accompanied
+by the pressure and momentum terms of the same action. A homogeneous vacuum
+with an independently clipped drain is not being assumed there.
+
+\subsection{An explicit choice of floor and inheritance of the fits}
+Write the existing background as
+\begin{equation}
+ C(a)=B a^{-3}e^{-\eta_*F(a)},\qquad
+ V(a)=\eta_* B\int^a a'^{-3}e^{-\eta_*F(a')}\,dF(a').
+\end{equation}
+Assume the future history is monotone with $F\le1$ and set today's scale
+factor to one. Since $a^{-3}\le1$ in the future,
+\begin{equation}
+ V(\infty)-V(1)\le B[e^{-\eta_*F(1)}-e^{-\eta_*}].
+\end{equation}
+The demonstration selects $K$ as $V(1)$ plus this upper bound. This is a
+specified effective choice using the inherited history and stock budget.
+It is not a new fit to voids, and the microscopic theory has not selected it.
+
+With densities in units $3H_{100}^2/(8\pi G)$, the selected value is
+$K\simeq0.3369964$. The largest ratio $L/\bar C$ through today is
+$0.0299937$. The homogeneous solution therefore lies inside the dust
+branch with a substantial open neighborhood. The action and all its
+variations there agree with the original action. The tested background and
+linear perturbation equations, including their initial conditions, are
+identical at these parameters.
+
+This identity carries over the existing conditional linear scores:
+$2227.80$ for Planck-lite TTTEEE+BAO+DES SN, $162.73$ for the separately
+evaluated ACT primary-CMB summary, and $16.21$ for ACT lensing. These are
+inherited results from the earlier implementation, with its massless-neutrino,
+linear-lensing and other stated assumptions. No new likelihood was run.
+Nonlinear structure, lensing and void statistics are not covered by this
+identity, and overlapping likelihood scores must not be added.
+
+\subsection{Numerical checks}
+Five homogeneous curved FRW patches were evolved from $a_i=0.01$ with
+initial contrasts $0,-0.1,-0.35,-0.6,-0.9$. Each patch conserves its own
+baryons and radiation; curvature is fixed from its initial Friedmann
+constraint. These patches test the local equations and are not compensated
+void predictions. Every tested patch retained positive current and energy,
+and its vacuum contribution remained monotone. Doubling the background grid
+and tightening the integration gives a maximum normalized Friedmann residual
+\MaxConstraintError. The largest change in a final reported dimensionless
+state variable is \MaxPatchDifference.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=\textwidth]{adaptive_boundary.png}
+\caption{Selected constitutive completion in the homogeneous patch tests.
+The auxiliary density approaches its positive endpoint and total dark energy
+approaches $K$. Spatial interfaces and a compensating exterior are absent.}
+\end{figure}
+
+A separate periodic one-dimensional field calculation checks the regular
+pressure branch at constant potential. At $r=3/4$, equation~\eqref{eq:sound}
+predicts $c_s^2=1/2$. A perturbation of amplitude $10^{-4}$ gives a fitted
+frequency differing from $1/\sqrt2$ by $3.7\times10^{-9}$ fractionally;
+doubling the grid changes the frequency by $1.2\times10^{-12}$ in the chosen
+units. Total energy and mean current are conserved to floating-point precision
+in this small-amplitude test. Since most of that energy is the homogeneous
+background, the more informative bound on the relative drift of the
+background-subtracted wave energy is $1.6\times10^{-7}$.
+This check does not establish interface stability or nonlinear global
+well-posedness.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=.82\textwidth]{local_wave.png}
+\caption{Regular local wave test. The field evolution and the sound speed
+calculated from the action agree at the tested amplitude and resolutions.}
+\end{figure}
+
+\section{Conservative stock and the interaction still needed}
+\subsection{A common action is available; equilibrium selection is separate}
+A covariant positive-stock realization can use worldlines with
+$m(\varphi)>0$ and a canonical receiver:
+\begin{equation}\label{eq:receiver}
+ S=\int\sqrt{-g}\left[\frac{M_{\rm Pl}^2}{2}\mathcal R
+ -\tfrac12(\nabla\varphi)^2-U(\varphi)\right]+S_b[g]
+ -\sum_i\int m(\varphi)\,ds_i.
+\end{equation}
+This is an effective coupled-scalar construction\cite{Amendola}. With
+$\alpha=d\ln m/d\varphi$, its exchange equations are
+\begin{equation}
+ \nabla_\mu T_C^{\mu\nu}=-\alpha\rho_C\nabla^\nu\varphi,
+ \qquad
+ \nabla_\mu T_\varphi^{\mu\nu}=+\alpha\rho_C\nabla^\nu\varphi.
+\end{equation}
+The receiver carries the missing energy and momentum. Conserved particle
+number and positive mass keep the particle stock positive. The continuum
+kinetic description handles multiple streams. When the scalar exchange and
+additional constitutive forces are negligible, it reduces to Vlasov--Poisson
+evolution in the common baryon-plus-stock potential.
+
+The new low-density action and the canonical worldline action are two
+different effective completions. They have not been identified as one
+multistream theory. A Hamiltonian director coupling can conserve total
+momentum if its reaction forces and field momentum are included by variation
+of a common translation-invariant energy. Its force and inertia terms still
+need specification. Applying the full algebraic RAR enhancement in addition
+to the gravitating stock counts the same excess twice.
+
+Conversion by itself cannot provide the missing force. For a common
+transport operator $\mathcal D$,
+\begin{equation}
+ \mathcal D f_u=-\Gamma f_u,\qquad
+ \mathcal D f_R=+\Gamma f_u
+ \quad\Longrightarrow\quad
+ \mathcal D(f_u+f_R)=0.
+\end{equation}
+The total source and every total kinetic moment are unchanged by this
+relabeling. A physical interaction must change the distribution if conversion
+is to produce a different halo profile. Collisionless evolution alone admits
+many equilibria. The circular-shell realization already given in O.3 can
+support distinct positive spherical targets with equal total stock. For
+example, Plummer stock profiles with scales $10$ and $40$ kpc and the same
+mass give different forces at $20$ kpc. This is a direct nonuniqueness witness;
+collective stability of each witness is a further question.
+
+\subsection{The cosmological drain is insufficient to supply the tracking}
+Consider an isolated, self-gravitating stock halo with fixed particle number,
+slowly varying common particle mass $m$, homologous evolution, and conserved
+canonical orbital actions. The scalings follow from
+\begin{equation}
+ J_{\rm orb}\sim mvr=\text{constant},\qquad
+ v^2\sim\frac{GN m}{r}:
+ \qquad r\propto m^{-3},\quad v\propto m^2.
+\end{equation}
+For fixed baryon mass, the acceleration scale inferred from $v^4/(GM_b)$
+therefore scales as $m^8$. Between $z=2.3$ and today, the saved release history
+gives $m_0/m_{2.3}=0.989398$. This produces an acceleration-scale ratio
+$0.9183$, while $H_0/H(2.3)=0.2972$. Even a full unit of release gives only
+$e^{-8\eta_*}=0.7875$ in this model. Nonadiabatic assembly, scalar gradients
+and additional interactions are outside this restricted calculation. It
+shows that the existing small mass drain is not an automatic explanation
+of the proposed galactic tracking.
+
+\subsection{A finite stock budget restricts the equilibrium domain}
+For a pointlike baryonic mass, put $r_M=\sqrt{GM_b/a_0}$. The exponential
+RAR requires
+\begin{equation}
+ \frac{M_R(<r)}{M_b}=\frac1{e^{r_M/r}-1}.
+\end{equation}
+A total available stock $kM_b$ therefore limits exact agreement to
+\begin{equation}
+ r\le r_{\rm cap}=\frac{r_M}{\ln(1+1/k)}.
+\end{equation}
+Here $k$ refers to the actual Lagrangian cohort and transport history.
+It is not universally $5.1761$ per present baryon. The manuscript's Milky-Way
+benchmark has about $14$ times its present baryonic mass in stock. The cap
+principle is already present in the paper; its consequence is that an exact
+unlimited RAR, a finite isolated budget and no imported source cannot all
+hold. The outer transition and cohort assignment remain physical predictions.
+
+\section{Response history and quantum noise}
+\subsection{Passive lag has a definite sign}
+Let $q(t)$ denote the equilibrium occupation of a fixed baryonic configuration.
+For the first-order response
+\begin{equation}
+ \dot n=\gamma(q-n),\qquad \gamma>0,
+\end{equation}
+the difference $d=n-q$ obeys $\dot d=-\gamma d-\dot q$.
+If $\dot q\le0$ and $d(t_i)\ge0$, integrating-factor positivity gives
+$n(t)\ge q(t)$. The same conclusion holds for two positive relaxation poles
+in cascade, initialized at or above the initial target. More generally a
+positive normalized causal averaging kernel preserves this inequality.
+
+For fixed $g_b$ and $a_0\propto H$ with decreasing $H$,
+$q=[\exp\sqrt{g_b/a_0}-1]^{-1}$ decreases. Ordinary lag therefore raises
+the force relative to instantaneous equilibrium. It cannot suppress the
+high-redshift overprediction under these assumptions. A newly assembled
+system may start below equilibrium, and a changing baryonic profile may
+change the sign of $\dot q$. These cases require an independently specified
+assembly and response history.
+
+\begin{figure}[ht]
+\centering\includegraphics[width=.9\textwidth]{response_history.png}
+\caption{Fixed $g_b=2\times10^{-10}\,\mathrm{m\,s^{-2}}$, formation at $z=6$,
+and two equal poles with the stated time constants. The initially equilibrated
+histories remain above their instantaneous target. An initially empty
+response can lie below it. These are illustrative histories, not galaxy fits.}
+\end{figure}
+
+\subsection{A noise--delay inequality for the existing two-pole model}
+For the susceptibility already used in N.8,
+\begin{equation}
+ \chi^R=-\chi_0\frac{\gamma\Omega}{(\gamma-i\omega)(\Omega-i\omega)},
+ \qquad
+ D=-\operatorname{Im}\chi^R>0\quad(\omega>0),
+\end{equation}
+the normalized response has mean delay
+$\bar\tau=\gamma^{-1}+\Omega^{-1}$.
+Use the symmetrized quantum thermal relation\cite{Clerk} and the horizon
+temperature $\beta\hbar=2\pi/H$:
+\begin{equation}
+ \mathcal F\equiv\frac{\sigma_n^2}{\chi_0/\beta}
+ =\frac{\beta\hbar}{\pi\chi_0}\int_0^\infty
+ D(\omega)\coth(\beta\hbar\omega/2)\,d\omega.
+\end{equation}
+Since $\coth x\ge1$, direct integration gives, for $\Omega>\gamma$,
+\begin{equation}
+ \mathcal F\ge\frac{2\gamma\Omega}{H(\Omega-\gamma)}
+                 \ln\frac\Omega\gamma.
+\end{equation}
+Writing $r=\Omega/\gamma$, the inequality
+$\ln r\ge2(r-1)/(r+1)$ yields
+\begin{equation}\label{eq:noisedelay}
+ \boxed{\mathcal F\,H\bar\tau\ge4.}
+\end{equation}
+The coincident-pole limit gives the same bound. The logarithmic inequality
+and product bound are kernel-checked; numerical quadrature tests the thermal
+integral across eighteen rate pairs. Equation~\eqref{eq:noisedelay} is specific
+to this two-pole response family and the chosen temperature.
+
+For an adiabatically changing target, the fractional occupation lag is
+approximately $\bar\tau|\dot q/q|$. At $x=\sqrt{g_b/a_0}=1$ during matter
+domination, three-percent occupation tracking requires
+$H\bar\tau\lesssim0.0253$. The bound then gives $\mathcal F\gtrsim158$.
+Using the existing independent-cell force formula, three-percent instantaneous
+force rms requires $N_{\rm eff}\gtrsim6.47\times10^4$ in that example.
+These are joint requirements on a proposed contact. Measurement windows and
+spatial covariance change the observable noise. No noise exclusion follows
+without those inputs.
+
+Detailed balance does not select a rate. If $L$ has stationary distribution
+$p$ and satisfies detailed balance, so does $sL$ for every $s>0$. The tests
+include three such generators with identical stationary populations and
+different finite-time responses. The physical interaction is needed to fix
+the rate and the carrier's relaxation regime.
+
+\section{Tensor propagation and the remaining matching freedom}
+\subsection{What the minimal action establishes}
+For the Einstein term in~\eqref{eq:action} or~\eqref{eq:receiver}, constant
+$M_{\rm Pl}$ and homogeneous minimally coupled scalar matter give the tensor
+quadratic action
+\begin{equation}
+ S_T^{(2)}=\frac{M_{\rm Pl}^2}{8}\int dt\,d^3x\,a^3
+ \left[\dot h_{ij}\dot h_{ij}-a^{-2}\partial_kh_{ij}\partial_kh_{ij}\right].
+\end{equation}
+For propagation along the third axis, the symmetric transverse-traceless
+matrix has the unique form
+\begin{equation}
+ h_{ij}=\begin{pmatrix}h_+&h_\times&0\\h_\times&-h_+&0\\0&0&0\end{pmatrix},
+ \qquad h_{ij}h_{ij}=2(h_+^2+h_\times^2).
+\end{equation}
+There are two tensor kinetic coordinates, positive energy for
+$M_{\rm Pl}^2>0$, and luminal principal propagation. The clock/receiver scalar
+remains a material degree of freedom. The statement does not assert that
+the whole theory contains only two degrees of freedom, nor that all possible
+detector responses have been computed.
+
+The minimal action is a sufficient effective choice. The static scalar
+proofs do not force it. A covariant clock defines an extrinsic shear
+$\sigma_{\mu\nu}$; an allowed additional term
+$\frac{s}{2}\sigma_{\mu\nu}\sigma^{\mu\nu}$ vanishes on an exactly homogeneous
+FRW background and in the corresponding static zero-shift limit. It changes
+the tensor kinetic coefficient to $M_{\rm Pl}^2+s$, giving
+\begin{equation}
+ c_T^2=\frac{M_{\rm Pl}^2}{M_{\rm Pl}^2+s}.
+\end{equation}
+Excluding or suppressing such operators requires an action-level premise or
+matching calculation. The importance of the tensor-speed operator map is
+also explicit in scalar-tensor analyses\cite{Ezquiaga}. The failed
+equilibration of the archived native tensor campaign remains unresolved.
+
+\subsection{Why the identities do not select the physical coefficients}
+The reciprocal relation permits the family
+\begin{equation}
+ \epsilon_\ell=\ell\frac{g}{(2\pi)^2},\qquad
+ a_0=\epsilon_\ell cH,\qquad
+ R_{\rm bare}=\epsilon_\ell^{-1},\qquad
+ a_0R_{\rm bare}=cH,
+\end{equation}
+for every positive loading $\ell$. The two-phase symmetry and cancellation
+identity survive while both individual predictions change. The stipulated
+one-entropy loading chooses $\ell=1$. Selecting that loading physically
+requires more than the reciprocal identity. This observation does not
+invalidate the proven uniqueness inside a fully specified finite action.
+
+There is an analogous background degeneracy in the canonical receiver.
+For any smooth $0<W<C$, set
+\begin{equation}
+ D=C-W,\qquad \dot\varphi^2=W,\qquad U=V+W/2,
+ \qquad m(\varphi(a))\propto a^3D(a).
+\end{equation}
+Then $D+\rho_\varphi=C+V$ and $p_\varphi=-V$ exactly.
+The different choices of $W$ generally have different perturbations.
+For the constant-fraction family $W=fC$, writing
+$g=\eta_*dF/d\ln a$ and $\Omega_C=C/(3M_{\rm Pl}^2H^2)$ gives
+\begin{equation}
+ \alpha\equiv M_{\rm Pl}\frac{d\ln m}{d\varphi}
+ =-\frac{g}{\sqrt{3f\Omega_C}},\qquad
+ f(2\alpha^2)=\frac{2g^2}{3\Omega_C}.
+\end{equation}
+The maximum product on the saved history is $1.2752\times10^{-4}$.
+The unscreened stock self-force enhancement is consequently about $12.75\%$
+for $f=0.001$ and $2.55\%$ for $f=0.005$. These are conditional subhorizon
+force factors, not measured total galactic forces. Scalar masses and spatial
+response remain relevant. Sending $f$ to zero does not simultaneously remove
+the receiver and its coupling in this family.
+
+The routing and Farey proofs retain their conditional content. Symmetry,
+equilibrium and background identities leave the physical loading, transition
+matrix elements and some effective operators unselected. Historical
+selection of formulas is an evidential issue that an additional theorem
+cannot retroactively change.
+
+\section{The remaining effective derivation}
+The stock and carrier questions can be addressed by one specified physical
+contact. At the effective level it must provide a Hamiltonian, the operators
+coupling stock to the retained environment, and the environment's spatial and
+temporal correlation functions. A weak-coupling realization would determine
+transition rates from matrix elements and bath spectra. Detailed balance
+would then fix their ratios; the matrix elements would set their scale.
+The same interaction must account for mechanical energy, any protected
+angular observables, and the response to baryonic assembly.
+
+This is a narrower task than deriving every microscopic degree of freedom.
+It still requires a physical choice beyond the supplied static and algebraic
+premises. A useful candidate must recover the admissible RAR target, carry
+the reaction forces, satisfy the stock budget, and predict its departures
+before fitting each galaxy. The present work has not produced that operator.
+It therefore does not resolve the high-redshift empirical tension, predict
+cluster lens maps, or select a population of halo shapes.
+
+For local release, equations~\eqref{eq:action}--\eqref{eq:regular} give a concrete
+effective option with a stated physical cost. The next test is an
+inhomogeneous calculation of interfaces and underdense structure, together
+with a compatible multistream formulation. The selected floor and cubic can
+be presented as a completion hypothesis. They should not be described as
+already forced by the microscopic theory.
+
+The tensor result closes the leading effective propagation calculation once
+the minimal curvature action is chosen. The native geometric continuum,
+its operator matching and its equilibrated numerical evidence remain separate
+requirements. None of these open tasks is equivalent to a few additional
+numerical certificates.
+
+\section{Verification and reproduction}
+The standalone supplement contains 42 kernel-checked theorems with only
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound} in their
+reported axiom dependencies. The checked statements cover energy and sound
+speed inequalities, current-rate factorization, integrating-factor positivity,
+passive lag, the logarithmic bound, receiver identities, matching freedom and
+tensor-coordinate algebra. The full covariant variation and the spectral
+integral are supplied as analytic derivations, with separate symbolic and
+numerical checks.
+
+The research directory contains the input hashes, a proof log, the source
+files used for every run, both the first and refined patch results, wave
+convergence results, and the first constant-cutoff attempt. The four current
+papers and upstream Lean sources were preserved. No new observational
+likelihood, full upstream rebuild, native tensor measurement or joint
+galaxy/cluster simulation is claimed.
+
+\begin{thebibliography}{9}
+\bibitem{Garriga} J. Garriga and V. F. Mukhanov,
+``Perturbations in k-inflation,'' Phys. Lett. B 458, 219 (1999),
+\href{https://arxiv.org/abs/hep-th/9904176}{arXiv:hep-th/9904176}.
+\bibitem{Amendola} L. Amendola, ``Coupled Quintessence,''
+Phys. Rev. D 62, 043511 (2000),
+\href{https://arxiv.org/abs/astro-ph/9908023}{arXiv:astro-ph/9908023}.
+\bibitem{Clerk} A. A. Clerk et al., ``Introduction to Quantum Noise,
+Measurement and Amplification,'' Rev. Mod. Phys. 82, 1155 (2010),
+\href{https://arxiv.org/abs/0810.4729}{arXiv:0810.4729}.
+\bibitem{Ezquiaga} J. M. Ezquiaga and M. Zumalac\'arregui,
+``Dark Energy after GW170817: dead ends and the road ahead,''
+Phys. Rev. Lett. 119, 251304 (2017),
+\href{https://arxiv.org/abs/1710.05901}{arXiv:1710.05901}.
+\end{thebibliography}
+\end{document}

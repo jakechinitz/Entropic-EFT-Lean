@@ -1,0 +1,119 @@
+{
+  "checked_utc": "2026-10-23T16:49:54.066442+00:00",
+  "checks_passed": true,
+  "unchanged_input_hashes": 172,
+  "pdf_pages": 12,
+  "html_local_links_verified": 10,
+  "build_log": "05 Build Files\\PDF builds\\main\\20261023_124900_664926\\main.log",
+  "final_render": "02 Research\\Effective dynamics and coupling 2026-10-23\\Research note\\Review render 20261023_124908",
+  "visual_review": "All twelve pages reviewed in preceding render; only page 6 changed in final numeric synchronization and was reviewed separately.",
+  "changed_render_pages": [
+    6
+  ],
+  "publication_check": "4 publications: full=\"Astra Full\", compact=\"Astra Compact\", empirical=\"Empirical Results\", cdt=\"Microstructure CDT\"\nOK: exactly one folder and one current PDF per publication.",
+  "sources": [
+    {
+      "path": "check_lean.py",
+      "sha256": "68adba33030c994ccc59f03fd8ccc4b1bb6e7b27b6848712b0bfca7326d47e4a"
+    },
+    {
+      "path": "closed_cell.py",
+      "sha256": "536ea6df2ef2b2672febe17d188a571a520a6be2a41f35b8cd01444c7d98e51a"
+    },
+    {
+      "path": "cold_contact_check.py",
+      "sha256": "913896f95fb56a6e959e493a2c2400b9c9c188ca804893c6ab0e750b1fab1765"
+    },
+    {
+      "path": "delivery_check.py",
+      "sha256": "69c95db8b3b5536c1d70d5911f42fd0458a9b39771ec595fa9f0984721095d74"
+    },
+    {
+      "path": "finalize.py",
+      "sha256": "c96c3f3861e3e60dab2ca9d33fe3526d504e1b27a86722c739e048099abfff8d"
+    },
+    {
+      "path": "hamiltonian_check.py",
+      "sha256": "0cbdd9bc3a6f88cba745cab720dde8a5f539373dcfdefef6309ea093bbe92408"
+    },
+    {
+      "path": "hermitian_contact.py",
+      "sha256": "f6a21a9a8f787f24530fda41eeed12a36dba3967d049a9dcd4be9ba76d61e196"
+    },
+    {
+      "path": "interfaces.py",
+      "sha256": "09f73c24902d3652634c709fd971524aa2bd723c8b9df72a454af5fd44c555e6"
+    },
+    {
+      "path": "interface_followup.py",
+      "sha256": "7eb0a16cbcc65ac5fab0da2ff9d32a1a01b6202cea73ab192864db7f7f6d6809"
+    },
+    {
+      "path": "kinetic_feedback.py",
+      "sha256": "271230c5ec2b0af9d2a6d45bc5e23bf94dfb395e01b6c0c17c2fd0c59f4c4ec9"
+    },
+    {
+      "path": "local_contact.py",
+      "sha256": "965c10853176475917ae7ca7d1d8c8c6fbc3645ef2ebcf2a68813a3a22902541"
+    },
+    {
+      "path": "model.py",
+      "sha256": "b36373f440d1cc8025a9a3282ddec737fc1d0255398730f129c22c352d1af07f"
+    },
+    {
+      "path": "plot_thermal_refinement.py",
+      "sha256": "9dcb48ec2be1f8fefd172fa8a2554aa6448506403cec94c13fd19a56b4265c4f"
+    },
+    {
+      "path": "positive_hamiltonian_check.py",
+      "sha256": "9bfeb3380f81a84ec6006d29c5bde81f2c88a043a0f5af0e22ec001b14c39b4d"
+    },
+    {
+      "path": "render_note.py",
+      "sha256": "b1bf54097c104cd02dfe93e91d41999f5abe0c7cb91e69abceaaab2b7d09aa69"
+    },
+    {
+      "path": "thermal_entropy_check.py",
+      "sha256": "5d702a10aa5b274a6705409c03d2e6dbfdb3227ea878f35a8669af9ad862d0ea"
+    },
+    {
+      "path": "thermal_interfaces.py",
+      "sha256": "8e3535f6b2715d090d572344dde865815ca569de7d069ea07400ba3f9e22d479"
+    },
+    {
+      "path": "thermal_refinement.py",
+      "sha256": "b19771792f53ae3382d1e9ce765cd50a063b883a8cf5ca8e29a264ac6d1a6839"
+    },
+    {
+      "path": "Research note\\main.tex",
+      "sha256": "bf6c4f0d628ee16d0651489822248f1d7b17889033f95e4d10356410c0b7a10e"
+    },
+    {
+      "path": "Research note\\warm_extension.tex",
+      "sha256": "1272c791188be1761c73050047f86c5f29b6ae22f96bb61decab8f3510a8949b"
+    },
+    {
+      "path": "formalization\\EffectiveContact.lean",
+      "sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "Research note\\main.pdf",
+      "sha256": "f082e0ed9c2b4876eba2ebbc7a5a0894d4aeb3cf381ff75f52b3d6716d1e5604"
+    },
+    {
+      "path": "START HERE.html",
+      "sha256": "6bb1af6fb6f05e8ec7cf86558051e6e88b009c9be888daf180397bc5b797e83f"
+    },
+    {
+      "path": "VALIDATION.json",
+      "sha256": "5ed2b46b0305a43bd048dd55ea44d4c09ba2c1df73036468e804787afec9668c"
+    },
+    {
+      "path": "REPRODUCE.txt",
+      "sha256": "eb4e7b9426f2ce64d716acea63c2d7a903c45f0b882b460a98408a1c2c600f09"
+    }
+  ],
+  "scope": "Effective construction with conditional algebra certificates and separate numerical benchmarks; not a combined halo/void prediction or native microphysical derivation."
+}

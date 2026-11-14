@@ -1,0 +1,23 @@
+tucana_1           relaxed  obs  6.85 HEAT  7.11 RULE(law)  6.88 RULE(runs)  6.96 | pull HEAT -0.9 RULE -0.3
+cetus_1            relaxed  obs  7.56 HEAT  7.94 RULE(law)  7.66 RULE(runs)  7.59 | pull HEAT -1.7 RULE -0.1
+leo_1              relaxed  obs  7.26 HEAT  7.29 RULE(law)  7.42 RULE(runs)  7.32 | pull HEAT -0.2 RULE -0.3
+andromeda_06       relaxed  obs  7.81 HEAT  7.65 RULE(law)  7.53 RULE(runs)  7.47 | pull HEAT +0.7 RULE +1.5
+leo_2              relaxed  obs  6.89 HEAT  6.78 RULE(law)  6.74 RULE(runs)  6.71 | pull HEAT +0.5 RULE +0.9
+eridanus_2         relaxed  obs  6.90 HEAT  6.86 RULE(law)  6.33 RULE(runs)  6.43 | pull HEAT +0.2 RULE +1.9
+fornax_1           relaxed  obs  7.98 HEAT  8.21 RULE(law)  8.20 RULE(runs)  8.13 | pull HEAT -1.2 RULE -0.7
+canes_venatici_1   relaxed  obs  7.25 HEAT  7.35 RULE(law)  6.91 RULE(runs)  6.84 | pull HEAT -0.5 RULE +2.0
+sculptor_1         relaxed  obs  7.24 HEAT  7.24 RULE(law)  7.18 RULE(runs)  7.08 | pull HEAT -0.0 RULE +0.7
+canes_venatici_2   relaxed  obs  6.13 HEAT  5.72 RULE(law)  5.42 RULE(runs)  5.41 | pull HEAT +1.4 RULE +2.5
+andromeda_02       relaxed  obs  7.73 HEAT  8.30 RULE(law)  7.97 RULE(runs)  7.93 | pull HEAT -2.4 RULE -0.8
+carina_1           retained obs  7.00 HEAT  7.13 RULE(law)  7.27 RULE(runs)  7.27 | pull HEAT -0.5 RULE -1.0
+draco_1            retained obs  7.21 HEAT  6.99 RULE(law)  7.04 RULE(runs)  7.04 | pull HEAT +1.1 RULE +0.8
+andromeda_05       retained obs  7.49 HEAT  7.32 RULE(law)  7.41 RULE(runs)  7.41 | pull HEAT +0.8 RULE +0.3
+leo_4              retained obs  6.00 HEAT  6.26 RULE(law)  6.31 RULE(runs)  6.31 | pull HEAT -0.9 RULE -1.1
+andromeda_13       retained obs  6.50 HEAT  6.48 RULE(law)  6.50 RULE(runs)  6.50 | pull HEAT +0.0 RULE -0.0
+andromeda_03       retained obs  7.33 HEAT  7.21 RULE(law)  7.33 RULE(runs)  7.33 | pull HEAT +0.5 RULE -0.0
+ursa_minor_1       retained obs  7.26 HEAT  7.17 RULE(law)  7.24 RULE(runs)  7.24 | pull HEAT +0.5 RULE +0.1
+hercules_1         retained obs  5.74 HEAT  6.46 RULE(law)  6.48 RULE(runs)  6.48 | pull HEAT -2.2 RULE -2.3
+andromeda_11       retained obs  6.72 HEAT  6.43 RULE(law)  6.45 RULE(runs)  6.45 | pull HEAT +0.6 RULE +0.5
+sextans_1          retained obs  7.45 HEAT  7.66 RULE(law)  7.72 RULE(runs)  7.72 | pull HEAT -0.9 RULE -1.1
+andromeda_01       retained obs  7.86 HEAT  8.13 RULE(law)  8.21 RULE(runs)  8.21 | pull HEAT -1.0 RULE -1.4
+22 dwarfs; chi2 {'NFW': np.float64(30.0), 'HEAT': np.float64(24.0), 'RULE_law': np.float64(31.0), 'RULE_runs': np.float64(30.7)}

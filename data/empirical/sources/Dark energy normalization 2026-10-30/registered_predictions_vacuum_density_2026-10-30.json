@@ -1,0 +1,56 @@
+{
+ "title": "Registered predictions: vacuum density from the atomic-hydrogen cooling threshold (release normalization)",
+ "date": "2026-10-30",
+ "theory": "Entropic Scalar EFT, Appendix O (release of committed capacity on irreversible baryonic mixing); omega_Lambda = eta_* omega_c^wb I_rel with eta_* = 0.0298668, omega_c^wb = 5.333 omega_b",
+ "inputs_not_adjusted_to_Lambda": [
+  "eta_* (closure coefficient)",
+  "formation abundance 5.333",
+  "excursion-set first entry with sigma_8 = 0.810 (Eisenstein-Hu)",
+  "mixing kernels measured in the 2026-10-04 Gadget-4 run (K0 0.53-0.70, f 2.2-4.9)",
+  "retention gate from t_cool = t_dyn for primordial atomic cooling",
+  "post-reionization gate 30 km/s and z_re = 7.66 (literature)"
+ ],
+ "results": {
+  "cooling_gate_T_K": "0.99e4-1.07e4 for z = 30-8 (CIE, mean virial density)",
+  "cooling_gate_V_kms": {
+   "neutral mu=1.22": "11.6-12.0",
+   "ionized mu=0.59": "17"
+  },
+  "run_condensation_gate_V50_kms": {
+   "z11-15": 8.6,
+   "z9-11": 8.9,
+   "z7.5-9": 9.3,
+   "z6-7.5": 10.2
+  },
+  "Omega_Lambda_vs_gate": {
+   "9": "0.766-0.775",
+   "10": "0.752-0.761",
+   "12": "0.725-0.736",
+   "14": "0.702-0.713",
+   "17": "0.673-0.685"
+  },
+  "required_by_likelihood": {
+   "I_rel": "94.2 +- 0.8",
+   "h": 0.689,
+   "Omega_Lambda": 0.707
+  }
+ },
+ "predictions": {
+  "V1_Omega_Lambda": {
+   "value": "0.67-0.74 for retention gates 12-17 km/s (rho_Lambda within -14% / +16% of the required value)",
+   "falsifier": "a feedback-resolved, converged zoom that reads the gate from gas retention and returns I_rel outside 85-105 (gate outside about 12.5-17 km/s)"
+  },
+  "V2_minimum_retaining_halo": {
+   "value": "halos below about 5e7 Msun at z ~ 10 (V_vir < 14 km/s, T_vir < 1.4e4 K neutral) retain no mixed gas carrying source records",
+   "test": "faint-end turnover of the z ~ 8-12 UV luminosity function, reionization history, 21-cm",
+   "falsifier": "galaxies retaining mixed, record-carrying gas in halos well below 5e7 Msun at z ~ 10"
+  }
+ },
+ "caveats": [
+  "kernel from a low-resolution SPH run (~1e3 gas particles per host) without feedback or H2",
+  "premises O.1-O.15 (fixed event measure, rho_Lambda,i = 0, common conversion, record identification)",
+  "reference assembly cosmology",
+  "label definition moves I_rel by about +-20% at the reference gate (2026-10-04)"
+ ],
+ "code": "02 Research/Dark energy normalization 2026-10-30 (cooling_gate.py, gate_from_run.py, irel_gate.py)"
+}

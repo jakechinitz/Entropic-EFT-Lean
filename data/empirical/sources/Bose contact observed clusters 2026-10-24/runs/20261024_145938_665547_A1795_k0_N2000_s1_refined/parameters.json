@@ -1,0 +1,13 @@
+{
+  "cluster": "A1795",
+  "k": 0.0,
+  "N": 2000,
+  "T": 10,
+  "seed": 1,
+  "dt_Myr": 0.1,
+  "contact_interval_Myr": 2,
+  "initial_register_specific_km2_s2": 15000.0,
+  "gate_sigma_kms": 0,
+  "label": "refined",
+  "force": "conservative"
+}

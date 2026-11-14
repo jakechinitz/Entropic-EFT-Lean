@@ -1,0 +1,19 @@
+{
+  "final_run_count": 40,
+  "shared_scaling_R500_ratio_range": [
+    0.5471691140702647,
+    0.8442759807733733
+  ],
+  "restricted_small_reserve_R500_ratio_range": [
+    0.9788851691109157,
+    0.9911443681855056
+  ],
+  "restricted_small_reserve_0p3R500_ratio_range": [
+    0.9174532523067225,
+    1.045546491446342
+  ],
+  "max_mechanical_error_fraction_initial_reserve": 0.0019206716595964342,
+  "max_contact_relative_momentum_error": 3.541089967923134e-17,
+  "max_contact_relative_angular_momentum_error": 1.615854583753464e-17,
+  "analysis_folder": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Bose contact observed clusters 2026-10-24\\analysis_20261024_153135"
+}

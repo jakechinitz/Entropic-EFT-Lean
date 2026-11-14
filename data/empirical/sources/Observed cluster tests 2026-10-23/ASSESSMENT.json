@@ -1,0 +1,55 @@
+{
+  "status": "Completed first observational reduction; full dynamics-to-data likelihood remains open",
+  "clusters": 12,
+  "stellar_profiles": 7,
+  "independent_lensing_overlaps": 5,
+  "merger_targets": [
+    "Bullet Cluster"
+  ],
+  "not_a_fit": [
+    "No per-cluster stock normalization fitted",
+    "No physical contact rate inferred",
+    "No simulated Bullet map likelihood evaluated",
+    "No phase-space or assembly selection theorem added"
+  ],
+  "key_results": {
+    "A2142_coextensive_M500_1e14": 9.285731963458096,
+    "A1795_coextensive_M500_1e14": 3.955729083850619,
+    "A1795_lensing_M500_1e14": 9.3,
+    "A1795_required_relative_retention": 0.5181449885051261,
+    "A644_forward_negative_shells": 4,
+    "Bullet_halo_BCG_offset_kpc": 3.9221282296642803
+  },
+  "validation": {
+    "all_passed": true,
+    "checks": {
+      "12_clusters_7_stellar_5_independent_lensing": true,
+      "stellar_projection_075_at_R500": true,
+      "projection_fraction_between_zero_and_one": true,
+      "critical_density_independent_astropy": true,
+      "cohort_ratio_matches_prior": true,
+      "no_negative_required_NFW_shells": true,
+      "forward_A644_failure_retained": true,
+      "self_consistent_overdensity_and_budget": true,
+      "NFW_profile_matches_M500_header": true,
+      "bullet_non_gas_is_total_minus_gas": true,
+      "bullet_aperture_pixel_convergence_below_03_percent": true,
+      "bullet_halo_offset_reproduces_published_4kpc_rounding": true,
+      "bullet_WCS_roundtrip": true,
+      "BCGs_inside_map": true,
+      "download_hashes_match": true
+    },
+    "max_M500_header_fraction": 0.0007923237145315287,
+    "max_identity_error": 4.440892098500626e-16,
+    "interpretation": "Numerical/data-handling checks, not validation of the theory or physical equilibrium."
+  },
+  "paper_changes": false,
+  "files": {
+    "acquire.py": "064e6645a5c6c579321e420f8a90b1408cd43d8fd552a9149440bd8c901d8b70",
+    "bullet_analysis.py": "f077dac1702ca1d0995cfce1cda9fb536b21616895b08cd13d6e4b0ba656e9a2",
+    "radial_analysis.py": "3d52c1e2910a86ad985085765aef296f2528b03afe7bcf82695f9d99d117331c",
+    "validate.py": "ce952eed2065fe131b9a3b62ae05c7ec8bc0e0791df5c0bcac713f5668e8590f",
+    "Research note\\main.pdf": "2d3ba3c46b664ecba86967b5970463df89602476c17e11289a3df608230d9170",
+    "Research note\\main.tex": "8f5aac9c7921651ad38cc5a544488d3ec7be93cbe7aae71eb8f1cbb9079c74d6"
+  }
+}

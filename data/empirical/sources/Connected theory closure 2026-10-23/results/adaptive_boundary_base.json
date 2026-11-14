@@ -1,0 +1,119 @@
+{
+  "status": "Conditional constitutive completion with action-level positivity and unchanged tested linear branch",
+  "symbolic": {
+    "effective_source": "0",
+    "source_factorization": "0",
+    "velocity_factorization": "0",
+    "source_vanishes_at_rest": "0",
+    "source_matches_dust": "0",
+    "source_over_speed2": "0",
+    "source_derivative": "0"
+  },
+  "selected_energy_floor": 0.33699629104194073,
+  "future_release_upper_bound": 0.0011698228847075304,
+  "today_density_cutoff_over_background_stock": 0.029993693819943833,
+  "max_cutoff_over_background_stock_through_today": 0.029993693819943833,
+  "exact_linear_branch_margin": 0.9700063061800561,
+  "patches": [
+    {
+      "initial_delta": 0.0,
+      "min_lambda_over_local_cutoff": 33.34036311004212,
+      "min_total_dark_energy_over_floor": 1.3437341580493318,
+      "min_clock_velocity": 1.0,
+      "min_current_over_background": 0.999999992851821,
+      "max_cs2": 0.0,
+      "max_friedmann_residual_over_Hbg2": 5.222128906938993e-07,
+      "today_baryon_contrast": 1.0000005254973516,
+      "today_clock_velocity": 1.0,
+      "today_current_over_background_stock": 1.0000006429683537,
+      "today_dark_energy_over_background": 1.0000001661355622,
+      "first_departure_a": null,
+      "vacuum_monotone_in_test": true,
+      "evaluations": 34577
+    },
+    {
+      "initial_delta": -0.1,
+      "min_lambda_over_local_cutoff": 1.5696323453024998,
+      "min_total_dark_energy_over_floor": 1.0128747785805408,
+      "min_clock_velocity": 1.0,
+      "min_current_over_background": 0.04707907197488354,
+      "max_cs2": 0.0,
+      "max_friedmann_residual_over_Hbg2": 1.2309036312284473e-07,
+      "today_baryon_contrast": 0.05402930619002915,
+      "today_clock_velocity": 1.0,
+      "today_current_over_background_stock": 0.04707907197488354,
+      "today_dark_energy_over_background": 0.7537762888497447,
+      "first_departure_a": null,
+      "vacuum_monotone_in_test": true,
+      "evaluations": 34655
+    },
+    {
+      "initial_delta": -0.35,
+      "min_lambda_over_local_cutoff": 0.5033298667553566,
+      "min_total_dark_energy_over_floor": 1.0000508181529375,
+      "min_clock_velocity": 0.11521768514856047,
+      "min_current_over_background": 0.002532256145811776,
+      "max_cs2": 0.986898231422891,
+      "max_friedmann_residual_over_Hbg2": 8.280944120031368e-08,
+      "today_baryon_contrast": 0.006680749482889853,
+      "today_clock_velocity": 0.11521768514856047,
+      "today_current_over_background_stock": 0.002532256145811776,
+      "today_dark_energy_over_background": 0.7442327623409482,
+      "first_departure_a": 0.41943693067294996,
+      "vacuum_monotone_in_test": true,
+      "evaluations": 35261
+    },
+    {
+      "initial_delta": -0.6,
+      "min_lambda_over_local_cutoff": 0.5000059717860742,
+      "min_total_dark_energy_over_floor": 1.0000006197114988,
+      "min_clock_velocity": 0.004887433032573458,
+      "min_current_over_background": 0.0007303816344787772,
+      "max_cs2": 0.9999761135689239,
+      "max_friedmann_residual_over_Hbg2": 7.269063567118859e-08,
+      "today_baryon_contrast": 0.0018193731518688996,
+      "today_clock_velocity": 0.004887433032573458,
+      "today_current_over_background_stock": 0.0007303816344787772,
+      "today_dark_energy_over_background": 0.7441954049146464,
+      "first_departure_a": 0.19709094265467336,
+      "vacuum_monotone_in_test": true,
+      "evaluations": 37040
+    },
+    {
+      "initial_delta": -0.9,
+      "min_lambda_over_local_cutoff": 0.5000000037510683,
+      "min_total_dark_energy_over_floor": 1.000000003409208,
+      "min_clock_velocity": 0.00012249193050530022,
+      "min_current_over_background": 0.00016032074988561547,
+      "max_cs2": 0.9999999849957272,
+      "max_friedmann_residual_over_Hbg2": 3.7261867363817764e-08,
+      "today_baryon_contrast": 0.00024215448138525234,
+      "today_clock_velocity": 0.00012249193050530022,
+      "today_current_over_background_stock": 0.00016032074988561547,
+      "today_dark_energy_over_background": 0.7441949462655979,
+      "first_departure_a": 0.09594006315159331,
+      "vacuum_monotone_in_test": true,
+      "evaluations": 37604
+    }
+  ],
+  "local_current": {
+    "min_current": 1.154331308636992e-05,
+    "min_clock_velocity": 1.5374540279130725e-05,
+    "min_total_energy_over_floor": 1.0000000000591578,
+    "empty_state_rhs": [
+      0.0,
+      -0.0
+    ],
+    "vacuum_monotone": true
+  },
+  "limitations": [
+    "K selection and cubic constitutive response are additional physical premises.",
+    "The phase field slows relative to proper time in the depleted regime.",
+    "No inhomogeneous PDE or multistream existence theorem is supplied.",
+    "The homogeneous curved patches are not compensated void predictions.",
+    "The fixed-clock action is reproduced only where lambda>L(phi).",
+    "If the native theory requires a unit proper clock in all states, this completion changes that requirement."
+  ],
+  "new_likelihood": false,
+  "linear_fit_inheritance": "Exact local action identity on an open neighborhood of the tested homogeneous solution; nonlinear likelihoods are not inherited."
+}

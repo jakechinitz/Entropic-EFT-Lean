@@ -1,0 +1,860 @@
+{
+  "recorded_utc": "2026-10-23T16:28:46.484239+00:00",
+  "prior_inputs_verified": 164,
+  "inputs": [
+    {
+      "path": "01 Current Papers/Astra Full/Entropic Scalar EFT.tex",
+      "bytes": 1209798,
+      "sha256": "ec5cd61b3d39dd3296fe792c35c5b057c3bb67b8136041d3ad0326cadcbe213b"
+    },
+    {
+      "path": "01 Current Papers/Astra Compact/Astra Quantum gravity completion compact.tex",
+      "bytes": 147647,
+      "sha256": "5015c840200ec108eae2ba45d3c1e0f3f971584c3d6c2fb2cadbb234f04014d8"
+    },
+    {
+      "path": "01 Current Papers/Empirical Results/Empirical_Results.tex",
+      "bytes": 3211,
+      "sha256": "7dedf34a5c6a4f82652ab6fe2f92dc566b6b8e71686b70a8c9bf05844973a067"
+    },
+    {
+      "path": "01 Current Papers/Microstructure CDT/MICROSTRUCTURE_CDT.tex",
+      "bytes": 8834,
+      "sha256": "525133eff4fe0f3631a2624705ace5f2884811b35e9e394621be57548120e296"
+    },
+    {
+      "path": "02 Research/Unified empirical program 2026-10-23/execution_register.json",
+      "bytes": 23367,
+      "sha256": "abde27f96e9ff27e8da8f3e6974c54fd436e60b294be75f8adc0fc2d1ff72fb2"
+    },
+    {
+      "path": "02 Research/Unified empirical program 2026-10-23/results/cosmology_final.json",
+      "bytes": 4954,
+      "sha256": "7cac45172e519a4f9717bbb0275ecdb3461134da7057caead52af0eea438a48f"
+    },
+    {
+      "path": "02 Research/Unified empirical program 2026-10-23/cosmology_engine.py",
+      "bytes": 5854,
+      "sha256": "4ba2724df410113ae927771fc016c67b3d7800afa2124b7d6ccdc23f9689fc15"
+    },
+    {
+      "path": "02 Research/Vacuum exhaustion completion 2026-10-22/RESULTS.txt",
+      "bytes": 17471,
+      "sha256": "41e933334690363dbc398e8f2db03b843c2f5be8b27d79b9f070d9013b63e44c"
+    },
+    {
+      "path": "02 Research/Stock adjustment resolution 2026-10-21/START HERE.txt",
+      "bytes": 4395,
+      "sha256": "5bd13794026267862bb40a9d1359bfe9faa10909342cf6b168d5983d3b7e908e"
+    },
+    {
+      "path": "02 Research/Cluster reciprocity audit 2026-10-22/CLUSTER_RECIPROCITY_AUDIT.txt",
+      "bytes": 16029,
+      "sha256": "6e475827a35f96402dba64c9d8455bbd609bff2e4389fb467d341216fbda3cb2"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/BlackHole.lean",
+      "bytes": 18277,
+      "sha256": "ea6555ed617ba9ff7a7b194f02859d33b36577eed46b10169268ea30f8e56ad4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/CapacityDomain.lean",
+      "bytes": 4333,
+      "sha256": "e27560501b451e6ea87b6328f7dd59f8d42785a5f424503499d448d18ce39532"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/ClosureRoot.lean",
+      "bytes": 25325,
+      "sha256": "35c0157a8b35abb9ec0e1384cc65a0813ec8ffc9a9296645b9ee290d4c651a33"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Director.lean",
+      "bytes": 6484,
+      "sha256": "3ab6f867033c5366a6fcf6c91eb4e80f85680b620947ab55769b70ae61686c32"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT.lean",
+      "bytes": 2015,
+      "sha256": "e93317751d1f4a4d80440a29948c3ee6e0d0a4d24003192ddefe1517d118cbb0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/FiniteModel.lean",
+      "bytes": 2693,
+      "sha256": "260d94a9b02d27d4ab2d7d1477e28da8653d14d2918e066095ec0e4eef3d5375"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/FiniteStatistics.lean",
+      "bytes": 3002,
+      "sha256": "7c0146578d526a03abc37f8f2dffd6d1a6aacce8dd4b46081642bf5b222b0780"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/GalacticLaw.lean",
+      "bytes": 15587,
+      "sha256": "0bf1775b8667c3ffc42528fb9fde13d9e7e1e666d372f6ab326e591c451204ae"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/GaussianSource.lean",
+      "bytes": 1372,
+      "sha256": "4c649dd1da3b7269f78799c505cab974b47c167481f433209fa2271d05941187"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/GenerationCutoff.lean",
+      "bytes": 2842,
+      "sha256": "e5b67ac170df31dea7188e9fbe11d8b22193db3c7c264221aca11b8db9bcc466"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/HistoryCapacity.lean",
+      "bytes": 3935,
+      "sha256": "812c3a354d4862c3cce72e344b6f8cf6b04b3c7d686a376367638f9aeeaf9af0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/IsometricReduction.lean",
+      "bytes": 3686,
+      "sha256": "78ebb546083df3d7ede2109e223caaf1ebc6efca5d74754c924d29b45c238c52"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Ledger.lean",
+      "bytes": 4000,
+      "sha256": "5cd670898ac02d8099113974278a68a7db8e85a139de896b82eabc3e8f0de595"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/PositiveLedger.lean",
+      "bytes": 3401,
+      "sha256": "a3f5087b75826f0bcdd4ab30bdafa387704b492a7717635ca6caf2ee835d992f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/PositiveReconstruction.lean",
+      "bytes": 1975,
+      "sha256": "c252648689507294b071134f90f2099109647f6aa52276cbf6277e8966afb1e4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Projectors.lean",
+      "bytes": 2400,
+      "sha256": "9bd5ada4891523633f42a931958ef7618babd2829c5b9653144b363aaaa3e027"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Reciprocity.lean",
+      "bytes": 6697,
+      "sha256": "dff093d1740ca54625a08b8dd2ed519c34b9c495c0d87fb11981b69d32ba8ce3"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Response.lean",
+      "bytes": 1708,
+      "sha256": "c8a5a304e7dca076db4654dd7758f52824d2c348a3d917312c1d571d8d142f4c"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/RetainedRelaxation.lean",
+      "bytes": 2864,
+      "sha256": "0237b1db93adfaca79bee80906cfc89981139de9d32e2918c29c80edd72e94c9"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/ShellLadder.lean",
+      "bytes": 3797,
+      "sha256": "b64b2d73494294264be2be7cb37828a28343ebfedfe3b992d6f01c569e12ad1c"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Spherical.lean",
+      "bytes": 3663,
+      "sha256": "609aef5bd0efa10ebfc3ae62924d648683b19c9e9fdbe549918415f08d3d4cee"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Spine.lean",
+      "bytes": 9600,
+      "sha256": "2337860a49920d42bdfc93c66c0d3e9714c4ee5e76d0a78541a080a5661aa38f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/Counts.lean",
+      "bytes": 6856,
+      "sha256": "1553f6863f64be45f53bd658f669c5c4aa0b4bff44eb1b660f05c6d38970cd33"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/Elementary.lean",
+      "bytes": 13106,
+      "sha256": "8d72b621aa3f9ac3a4469b33993478977f60988445e2ff598af29b2d550ac16d"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/GibbsCalculus.lean",
+      "bytes": 11636,
+      "sha256": "10048ff191b2f0b23ecf66d1e34988acec0f759e26ebb1157ebb812738ccce33"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/LegacyBridge.lean",
+      "bytes": 10989,
+      "sha256": "d0eba972a79ba8e20d683ee3bdb818140c844477bd6a2164587f482b649d9870"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/Supplement.lean",
+      "bytes": 2431,
+      "sha256": "5f0fc14ce71330e6fb955a9938861bf0efabd7e1bd83706b70899b93520bbcb5"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Calibration.lean",
+      "bytes": 9967,
+      "sha256": "f2e5c21f6ca7db0b2e2998f544744b68207f8c19da6986ade5e37bd1a36c7b41"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/CausalDiamond.lean",
+      "bytes": 4828,
+      "sha256": "97be863df79c96e4421f6584c007c90ff74927b9c23628221c729b6a0d63081b"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Conditional.lean",
+      "bytes": 4900,
+      "sha256": "e1e980330dae47334e7c1de3ed2c1439e098d8bea649a51da9bf0dd328fdfed4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Continuum.lean",
+      "bytes": 9191,
+      "sha256": "00bd7f98d322478d2ec85bc7ba323dae1862a3dfaddb89fd91be000290627253"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Defect.lean",
+      "bytes": 14129,
+      "sha256": "5112e8a1a045945ab93b0f7f40993f754fe48f6ac04e865adccef4d33d4b18a1"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/ElectronNumerics.lean",
+      "bytes": 18911,
+      "sha256": "f388206167a561d24c5d3d603cec73e3e1dc582014ff971b4215e06e88be46be"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Frame.lean",
+      "bytes": 6021,
+      "sha256": "84ba92d964ab8f14e7c97fc6d7405db46a89ca5fe980b20f35e6862203f85c54"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/GibbsNumerics.lean",
+      "bytes": 6853,
+      "sha256": "72ae2095b1a5fba886559beacd6ee569ada08f2d18cf67c5e6f0d5541186211e"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/History.lean",
+      "bytes": 5261,
+      "sha256": "a36cce37bc1bbb56fa9c01ecb6eb9caaf67aedd93c7a10e3b8ba42509f929f76"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Information.lean",
+      "bytes": 10215,
+      "sha256": "12ac5f3c04d03b4b0ade27ff6f135569dede4e36f6ef72fe3c8a552f3c98fdbc"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Lattice.lean",
+      "bytes": 5072,
+      "sha256": "bcd86e0288ff8e0e29dc04bd37e9c1a4ce877bddf55564ee3d89099a67c9f59c"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/MoveGraph.lean",
+      "bytes": 6348,
+      "sha256": "6af211d8d23dcb60fda8b0fd1a8a18df4a0a580d7bc39e8d592c8b2bc9266d1e"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Sprinkling.lean",
+      "bytes": 6667,
+      "sha256": "01d42700d1a193a195d1d81afa4c7a148070ae696298dec62d3d1aa93361e4b4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/TiltedMean.lean",
+      "bytes": 4057,
+      "sha256": "39bc9f396176bc7f1ec2e8e202f0f218802d9f5679ac04a5708b6cf063f4081b"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/WeakField.lean",
+      "bytes": 20037,
+      "sha256": "7f9bef8c7a42e2c38bcebf23766d8329e47a5f225101007578512c6634756f89"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Born.lean",
+      "bytes": 3777,
+      "sha256": "4719d3b25f8d835629dda36e24981ddd66564e4088bff2ebedf2a4d39e1d0a1b"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Histories.lean",
+      "bytes": 13933,
+      "sha256": "232874a9ff71457ed2b55474bca42c1741e45137e575cde6fe37ff8e983dde2d"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Horizon.lean",
+      "bytes": 13672,
+      "sha256": "dcc34372019f7c563ba8d6898f240db1436714fe1ae7f8ab454b864d1c539ea4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/StrongField.lean",
+      "bytes": 14221,
+      "sha256": "3d5cf849ecf605ca3ba2e0805a080f2c845169489031cd6b541a0c99ee71b848"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Subadditivity.lean",
+      "bytes": 9193,
+      "sha256": "c3609b73ffb0ef0cb8561dbf34deb191f28fceee7034a5a0a725be7dd7853d0f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH1/Algebra.lean",
+      "bytes": 23046,
+      "sha256": "7aa76d3dc51b2c78a5c6a0a74382f312d1269b45473a1a5033df13b28b6c9b04"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH1/Kinematics.lean",
+      "bytes": 18694,
+      "sha256": "08678a77779f8e45d31f62deae9d2a1c4e4f1dcd046342df2e633bb7ff253080"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH1/Marked.lean",
+      "bytes": 20484,
+      "sha256": "74fc1fca3ca0f008f604e9773af029566c0f773a73e08470e2cdd89ff38efe58"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Elimination.lean",
+      "bytes": 6759,
+      "sha256": "20cf8a478429c0f1557fd7e57bd1215f05a187a1ecc3bc1f6d27282c24aaaa71"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Gaussian.lean",
+      "bytes": 11111,
+      "sha256": "4f1e4f0ba03f87ece06c09701f203c87c911f67c54463553813f75a997028250"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Legendre.lean",
+      "bytes": 9470,
+      "sha256": "2f957b394d95509b09763280bf9eee9809476a3985557b21f442fe101be60c73"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Pullback.lean",
+      "bytes": 15946,
+      "sha256": "bc66f24dba0fb282dd33487f14d05ecb98ef0ea6ecdb7f0241b2bb05bb7e7ed5"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Spectral.lean",
+      "bytes": 7200,
+      "sha256": "2b7f2ea75dfc06f836e473083c135725271ac4f182f12bb6cdfaa369715f76e4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Symbols.lean",
+      "bytes": 17516,
+      "sha256": "310595324570f219cfc018c7a4a1c1e39ccfd17f5238ccf6ded6e02d421b469f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Clock.lean",
+      "bytes": 12425,
+      "sha256": "efd3aeac838b76d5cdcc59a5423f7ba4eb85bb2efa3057e0a9e33aa9bc4ba8cc"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Frame.lean",
+      "bytes": 3890,
+      "sha256": "96a56a7456db170cc6c0b38650520c8ae30dbb847de99b251ae5b8083e73750f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Polar.lean",
+      "bytes": 24711,
+      "sha256": "399ce7e73f8004c1079bfcb283514c706be7d25606b9358e9537687950ddb942"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Records.lean",
+      "bytes": 14475,
+      "sha256": "92303194a24fc43c3480191b9319364858e2c2389aa185f4146ca94facf0cd1d"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppIJ/Cdt.lean",
+      "bytes": 18028,
+      "sha256": "fc210b045a9813168d96b70960c3ae4387a601945611e1d39df69e5006eeaf30"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppIJ/Color.lean",
+      "bytes": 18712,
+      "sha256": "c4e793cc3f2943d4eccf6bdbd816bffc04356d31c37c5a50e86808031138a9ad"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppIJ/Shells.lean",
+      "bytes": 12679,
+      "sha256": "9a2da7650d6f54b3cc1f7b9f4ffb4832557bd3f607665ee4da433c29a7e8078b"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppKN/Fields.lean",
+      "bytes": 7440,
+      "sha256": "a8cb5ad37c19d3247831dbacebd369cef1d14c253d474b2f4efc2223044102ca"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppKN/Response.lean",
+      "bytes": 22442,
+      "sha256": "a060cf3502987a832d523b4f0e676b85de6defeb5b76129b8731e4630f54c5e7"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppKN/Scalars.lean",
+      "bytes": 15953,
+      "sha256": "ca681036d8502bd6dd19d10df04414b18725deaf0ffb0272d4c34e6add303855"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppO/Flow.lean",
+      "bytes": 18224,
+      "sha256": "1280e012736d61280af2086012ecea007d6b9eaae2088cfe200529169cbbe249"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppO/Numerics.lean",
+      "bytes": 17390,
+      "sha256": "4085d22735046249618ae656eae3e5f3ad0466ac204aac03ef4ed5ebd0e47588"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppO/Release.lean",
+      "bytes": 25780,
+      "sha256": "b96a62730ed0667b4bb89725cc6e8eea702bfddf68884a98cb77a875da091f59"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Expansion.lean",
+      "bytes": 12154,
+      "sha256": "516bfb93ea244a32bdb84702b7e9cfddc5cb56d8a5cee693c4f8a01ff9dce10e"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Numbers.lean",
+      "bytes": 31333,
+      "sha256": "28afafe720e96959c9b0bce051f86681628e276bc429eee4978e8753be57b74a"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Records.lean",
+      "bytes": 32166,
+      "sha256": "35cbf4cf047311fd74284cff4551a25754d618b95a5508c807f5805e794e4f26"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Spin.lean",
+      "bytes": 42406,
+      "sha256": "4bf4b519682ebc933992271174ff798248a196c29654f887a6f6dbd2e0927673"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppQ/Algebra.lean",
+      "bytes": 26108,
+      "sha256": "478a85b7cecfd72cb1310030285145a1072e5495accc109b694a0714d4475447"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppQ/Fock.lean",
+      "bytes": 13081,
+      "sha256": "93efbea9967b2e0665c5a9f3fbbd2c80de0a622f03930d221c8ffbead4de6ed1"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppQ/Weights.lean",
+      "bytes": 7129,
+      "sha256": "d4a1569604aecf9b3291e4583777e8db0429d74a192913a952a6f3ac02004bb8"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Main/Core.lean",
+      "bytes": 11010,
+      "sha256": "8b42021e7850f8bafa621337afed4f50d838de19d2228b39af11e5a90b88cb3a"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Main/Cosmo.lean",
+      "bytes": 22793,
+      "sha256": "e3e42e44e8583dee8e9030d5e232406f62edc9f2b29014566e089d3789fcc951"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Main/Galactic.lean",
+      "bytes": 30826,
+      "sha256": "ac31299187281a3ece7c7192312463a6f2c3c9dac7c0219f9fde2c07c5625e47"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/ADM.lean",
+      "bytes": 12133,
+      "sha256": "310b7c7111574eac61cb3de39a985f657aaf62076c0c7bcf570ef1df53814032"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Bridge81.lean",
+      "bytes": 2641,
+      "sha256": "2937d6547136ea2ed365acc7ee94a0517060ba2fbb688541c199a2ca343d8f2f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Conformal.lean",
+      "bytes": 4681,
+      "sha256": "fc2c0ba280e5b6cd9675359fe0989a0e039c078714100ab0a2423f6d24fe46d4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/DiagCommutant.lean",
+      "bytes": 1875,
+      "sha256": "85f1248f81501048237cb5158b9171d5615860f12eba84687b6b62cbaf500cf8"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Fields.lean",
+      "bytes": 24851,
+      "sha256": "85ab96a625368857261a7125dee832043b7f26618fff4a4b0dcafab710318721"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Harmonic.lean",
+      "bytes": 10132,
+      "sha256": "c3ef207804dda64c6cd547f9799fd887a8cda8745376f31a9890a3be91a191ab"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/IBPForm.lean",
+      "bytes": 1472,
+      "sha256": "8ff4c9f22eadd9c1c9f54a667af12140e628b5002fdf86a48ee463811ca3da11"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Intertwiner.lean",
+      "bytes": 36517,
+      "sha256": "03d231213b11d12f579cadc1c728d657366bb3279860e6ee00cb4c0d3d3d38ca"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Kinetic.lean",
+      "bytes": 2989,
+      "sha256": "59e75b2bbd7c69619f27296aaf7c891cfae0e1b854be43853f624450f19322d0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/LieJJ.lean",
+      "bytes": 107051,
+      "sha256": "21ab78b10e4cfc25b81d74cc9f5c2b867107e72aec60d5853c7d19c2396e3618"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/LieTensor.lean",
+      "bytes": 19580,
+      "sha256": "f93ff664011bbce555231959a9c345a72eb0e4e28ab31e7cc64331037b9980c6"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Pair.lean",
+      "bytes": 82831,
+      "sha256": "498d6b536970facd6d7180c1a5b5537ac3c193173d70edf14aa1fb33bee30b35"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/PairGen.lean",
+      "bytes": 60925,
+      "sha256": "4b2c3c2590ae6876d181cfa85e0af2a12bc5c8475c3ce6ef5b5b70db82b29bd8"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/RealForms.lean",
+      "bytes": 2626,
+      "sha256": "9187862edf9904f5675fe0c32d0812675b4342fa7f3003ddeb6b717b5835c32e"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Schur.lean",
+      "bytes": 24281,
+      "sha256": "4026b16eec5d17d9154ce850ba0cc3ebcec5220559dc1287f14747c1166a9b73"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/SlGen.lean",
+      "bytes": 4168,
+      "sha256": "bca0d8d3ccca5662ed5f9da72d90ea103995857eddcf64f0e957119c831c86d0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/SU3Form.lean",
+      "bytes": 31564,
+      "sha256": "f0a409d82eaf3f64f5cf0969076ffc1a209399f3974b96c90aa1639fd7b21c24"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Var.lean",
+      "bytes": 12263,
+      "sha256": "6183d924bc20f08f9b633d13fd41f177d0e1bbc4a2c92c01009407a678182c8d"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Algebra.lean",
+      "bytes": 25015,
+      "sha256": "85340c8d4c0be8356c6842c7422cd22742877f9b28203596d8e9b5e73f506932"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Analysis.lean",
+      "bytes": 19767,
+      "sha256": "eb59238de69d6d12e436a79ee4bbd4dec809c1b2421b065e22ca5a95cef05ac7"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Counting.lean",
+      "bytes": 3525,
+      "sha256": "18d08f0ffb4273908914afec914fb698962890ec1139bed1913e4ba394f17c47"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Dirac.lean",
+      "bytes": 10209,
+      "sha256": "40f16b309c8a731d0a737625dcf2fb741767bdcf64a59a22cb67689f3cd742f1"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Gaussian.lean",
+      "bytes": 4665,
+      "sha256": "32c32d3c845b8aec6b64f64731c8148324e5d55a4def0c8530db286be036f497"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Information.lean",
+      "bytes": 5585,
+      "sha256": "e15ce0476f71a8117cd9669a333ebe34f5b430e6371ece550e5dd7f819e4d0cd"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Legacy.lean",
+      "bytes": 2965,
+      "sha256": "ea3813f180412954468d3c83c2616714baf0f1f2977c18c727846314e7d77733"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Spin.lean",
+      "bytes": 27160,
+      "sha256": "50c5dc76fa589533355583e328fea37397ca5fc4fcc4c405c7b029befd98d3e8"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Staggered.lean",
+      "bytes": 5241,
+      "sha256": "d9625b7e53005df7fc7c292aefde796f1fcb002013931b4ed5c7d857d6ebadbd"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Audit/ClaimLedger.lean",
+      "bytes": 4897,
+      "sha256": "61df84667b343fa8720b949994d7e39a59cacfefbd5d7250c465a771b6abe41a"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Audit/Connections.lean",
+      "bytes": 3944,
+      "sha256": "65ac53aed42a414e7b9557e3b5469e11f5a80fcd53cbcd2409552eae978657c2"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Clusters/Projection.lean",
+      "bytes": 1698,
+      "sha256": "9a583501b48ebd2eae098f74b22345afc2811834c0c69dab5e62e7f505de292c"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Core/PhysicalInterfaces.lean",
+      "bytes": 3252,
+      "sha256": "9513b71f346c56bd96749e81907075e4cbdc66d2c2ee39c75e59a9fd5b536613"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Core/Prelude.lean",
+      "bytes": 2024,
+      "sha256": "244770f6a44d4a24a9fa709359b6a3c6f54f8b27df40936682546746b73fa7d0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Core/Status.lean",
+      "bytes": 809,
+      "sha256": "cf737602005cb03779409eb93d574d4c3b7c8c1d374ae3c4bb30ff4223a49fcd"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Cosmology/FixedMeasureDarkEnergy.lean",
+      "bytes": 5643,
+      "sha256": "45500e592af7d79d9dd64b1d6f1ba19fe591d9124a6afbd722542c16707b8464"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Cosmology/SaturatedDust.lean",
+      "bytes": 2626,
+      "sha256": "257a20609431b34092b69674060c2bd8c746cbaaf8b450c3e0e2d90898dcd720"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Edge/Kernel.lean",
+      "bytes": 1969,
+      "sha256": "da7d39dd30da7083c9fc73b66a8a10119f0a1868fab0e78f586eed6ed8213139"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Edge/SourceProjection.lean",
+      "bytes": 1617,
+      "sha256": "ac61bbc4561c322176e3eb5cc4a94023f735c33d5965461c24e601431c7899ce"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Edge/TetrahedralFrame.lean",
+      "bytes": 1891,
+      "sha256": "051161e17a20c668a46034b3ecb38bc4563b783769cd9511da325747587e2677"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Foundations/Postulates.lean",
+      "bytes": 1920,
+      "sha256": "0c942308ec5155570272b68ca8a1c83d40d78098a7416153dac2573824109788"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/FactorSplit.lean",
+      "bytes": 5812,
+      "sha256": "ce1d8ba3cb47556ff20efc759469e70fb81abc45e93a817b4e69f99d69a1cedd"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/ProjectiveColor.lean",
+      "bytes": 3899,
+      "sha256": "1428437a8a4f3765404a37779b12f309a6b894678f31facbf8a3eea06e98bbda"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/SpinePropagation.lean",
+      "bytes": 7583,
+      "sha256": "ce5b25d4c3d0dd3700e4c03f7d9cccceadf81abb9f38a9e2d1b57d47bd117a2a"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/VertexRealization.lean",
+      "bytes": 8502,
+      "sha256": "6f2698a089c055b72d7898c7c104e2efaf378781880c959fc9293539166e4ef4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gaussian/RelativeCovariance.lean",
+      "bytes": 2340,
+      "sha256": "cdf6553b2964d29fc704916de20ba569fc82c6f7a96a4b2ff06ddbd901cc7bfd"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gravity/FieldDefinitions.lean",
+      "bytes": 1051,
+      "sha256": "a6a8f6e6e275e0286ef6e433c28580b6ab302d17a9f946160e5bfbc83325e6cd"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gravity/Static.lean",
+      "bytes": 3778,
+      "sha256": "c711b1cb59394ea1366097b80471e000bcb273fd7a0391417421fef9ffc8145a"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gravity/StrongField.lean",
+      "bytes": 3066,
+      "sha256": "823d724abbbda16f66b2726f9c9285223831e74d404f7223904d9583132784de"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Information/Renewal.lean",
+      "bytes": 2811,
+      "sha256": "c7741ac0b1912d7d28f2beb5497cc11c4298ea5496b1cc7d72664846b64fe020"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Instantiation/ToyCDT.lean",
+      "bytes": 11652,
+      "sha256": "1ad81f2b4f821ec6df312b5ca76648f3f1e01917d7998c26777f0fe816fa21bb"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Lattice/FiniteRegulator.lean",
+      "bytes": 2068,
+      "sha256": "2b48b909196e6695a79aa07f2b59c6c944f3fc2c6f5ab4c0bec1c89edfbf6c66"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Marked/CorrectedH9.lean",
+      "bytes": 5486,
+      "sha256": "6f72b1c64eb7b109d7b66584a72dd8ed01383c63ba62b0d66cf37365fb1faa9b"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Marked/EdgeGraph.lean",
+      "bytes": 1245,
+      "sha256": "b5c7156a86238b004d5420bf5bb4acee82792ff5e5e488efc67c32a13798aad1"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Marked/SingleStrandRecord.lean",
+      "bytes": 10330,
+      "sha256": "93e9a1cc5e935ce2d674a315e22dd9d1089513b8f19cd50b1e2e8e1cfe46137b"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Microstructure/Architecture.lean",
+      "bytes": 1916,
+      "sha256": "b1c5725a0b1d546eb996575b937b300b4978355ad5ad8ad8df1a82b410cf8bf0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Numerics/Spine.lean",
+      "bytes": 1172,
+      "sha256": "76ad040947f57239f151a22b0dd26461f05305f35f3f3e97f1982600b27cdac3"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/OpenProblems/Interfaces.lean",
+      "bytes": 949,
+      "sha256": "4f2fe53dee2d1fd2b50f5be8aecd1488cdc15be04e42c7cbd631f0a2b5144075"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Quantum/Histories.lean",
+      "bytes": 1557,
+      "sha256": "bb1027bbd7ad76d48cfdb5aa120090fca2a182971a27007674310220037a208f"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Quantum/Replacement.lean",
+      "bytes": 1911,
+      "sha256": "e081f185e450a50aaf162cb5854c234c1a5b5ed4a45da6ac88be3c465c5b24b3"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/FusionSpec.lean",
+      "bytes": 1867,
+      "sha256": "68fffa196fb4773471d0215611891220b7b3ce5de5d4e9dab4f87727092d081e"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/MarkedComplement.lean",
+      "bytes": 1581,
+      "sha256": "350dfa468159885732c8dce0dd904a043bfd54a7a26e0f32c3d3cf0537aa5546"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/SharpTransfer.lean",
+      "bytes": 1211,
+      "sha256": "ca2aad3cf6aa807fe41481406a2537b5ca5a315e72f578595c8bed866aee77a2"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/SpinDimensions.lean",
+      "bytes": 1948,
+      "sha256": "78405bebe0cd78114a41e43e605659ccf7c92be5999f268598a8cf30595acd6d"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Scale/Electron.lean",
+      "bytes": 2220,
+      "sha256": "6418c6378014c8a6713f0bb29c3f1e18c58e13075e02d1cd5088fd9c8378aef7"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Scale/Leptons.lean",
+      "bytes": 2477,
+      "sha256": "b8a3cd22f2ba6e96b71ba6cc76a8aa6ae9872e46fcc0a35e4b4ceee267935796"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Structure/Connections.lean",
+      "bytes": 13329,
+      "sha256": "d108bb7232dcff36789ce3cbe9414d0f6f26cdba0fddb59d60099f313938dfe3"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Transport/Telegrapher.lean",
+      "bytes": 1678,
+      "sha256": "915019891770fe62dc41c8bb8229c505e8bc1708e318b76786e9ad6262b0dbae"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Transverse/RankOne.lean",
+      "bytes": 2217,
+      "sha256": "59d4850335d82ce5c243767b436dacaa34f44e4343976f871e226502d4e74eb2"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/Admissibility.lean",
+      "bytes": 1898,
+      "sha256": "3f4459ff615fd3bf34e81fb2ad4b2ef3d9fbd5b6c89eba218da425b70ab2fa69"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/Boundary.lean",
+      "bytes": 2476,
+      "sha256": "645aa68ed266e61696954cab4f408f0585747d69b13e0512e739ec861550fad4"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/BranchAudit.lean",
+      "bytes": 1289,
+      "sha256": "fe35ef6734fe557f226fbc4487bcae9f2fcbd0469cb58921654b0e5f68a38ec0"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/ClosureInvariant.lean",
+      "bytes": 3106,
+      "sha256": "45d51dff4b39972d3f6a786be1c8254377d4f3dddbb89ecb663938e7d18664b6"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/EtaStar.lean",
+      "bytes": 2076,
+      "sha256": "95d5b46ab385cd4293de7fb14406add1aedc4753bae77fa3039235c62d2ae988"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/EtaUniqueness.lean",
+      "bytes": 1465,
+      "sha256": "13cd864840d71fbf8b9ba63ac2ea548d2c1c7e4104a00642328f5b7cf2f9cb49"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/RootExistence.lean",
+      "bytes": 6259,
+      "sha256": "0f267d5385d862844e11f527c13990ecd6bf4a4df5ab8acb3466f20fd158c57a"
+    },
+    {
+      "path": "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/Spectrum.lean",
+      "bytes": 3322,
+      "sha256": "0a78fa2b9af97aa46dfb1a7ebaac8fa35e53a56cea8d0d102d8a5090f9d38ff9"
+    },
+    {
+      "path": "02 Research\\Connected theory closure 2026-10-23\\Research note\\main.tex",
+      "sha256": "b32e09dba8a5766753b9cc76b1ff20be1658568415310a831f92fa210c458dc2"
+    },
+    {
+      "path": "02 Research\\Connected theory closure 2026-10-23\\Research note\\main.pdf",
+      "sha256": "debc26f201e115f73c1d5de31651a6ac2ebcf8290f9edf410b6202cb55a3435a"
+    },
+    {
+      "path": "02 Research\\Connected theory closure 2026-10-23\\formalization\\ConnectedClosure.lean",
+      "sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7"
+    },
+    {
+      "path": "02 Research\\Connected theory closure 2026-10-23\\results\\adaptive_boundary_refined.json",
+      "sha256": "cf0b0291ce8b0ded357f85c282ae2e217522efd1603ba375801fe7fbc42d40a6"
+    },
+    {
+      "path": "02 Research\\Stock adjustment resolution 2026-10-21\\stock_model.py",
+      "sha256": "b7d46ceb995e63da76c3a93ba698d2a2f18bbfc8d2c5921bb907f5fbdd5a7bd4"
+    },
+    {
+      "path": "02 Research\\Stock adjustment resolution 2026-10-21\\fixed_L_z25_smooth.json",
+      "sha256": "e261078305e824e990935c958b5e9706fcafcc95b6744d421abaf08583b27a78"
+    },
+    {
+      "path": "02 Research\\Stock adjustment resolution 2026-10-21\\fixed_L_z25_smooth.npz",
+      "sha256": "2d85c2451d1ce717426bad903bd216661fa7a768bf9991a38292df37ff5ff15e"
+    },
+    {
+      "path": "02 Research\\Stock adjustment resolution 2026-10-21\\smooth_independent_results.json",
+      "sha256": "d3e800c2bd7a207975bae5981775e189c5bed9e56c5a1639f9a4759b6771dc61"
+    }
+  ],
+  "other_chat_read": "01a15c78-1f27-77c1-87c4-38214489f51b; latest assessment of the source-clock floor",
+  "upstream_head_from_prior_audit": "432da8c4a8b169a17146b53e4155d6b37915a12f"
+}

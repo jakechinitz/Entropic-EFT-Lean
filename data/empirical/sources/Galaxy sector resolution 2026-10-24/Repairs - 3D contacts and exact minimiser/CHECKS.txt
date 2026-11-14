@@ -1,0 +1,23 @@
+Repairs requested by GPT's contact-descent audit, and their checks (2026-10-24)
+
+1. Energy diagnostic: the sign error is fixed. Energy closes to <= 6e-4 V_f^2 in every
+   3-D run.
+2. Exact constrained minimiser (minimizer.py): Y* = clip(weighted isotonic regression of
+   T = r^2 J/G, 0, M) on a finite domain. It matched a constrained QP solver on 300 random
+   cases to 3e-11 and reproduces GPT's counterexample. Negative response mass is <~1e-6 of
+   the response mass, even in dense cores. When the budget binds, O.3's
+   clipped-and-renormalised target has 4x (dwarf) and 13x (light-halo massive spiral)
+   the minimum mismatch, so the O.3 target should be replaced by Y*.
+3. Conservative 3-D contacts (descent3.py): nearest-neighbour pairs, impulse along the
+   separation. Contacts conserve P and L to 1e-17; the integrator is time-reversible to
+   6e-14 kpc.
+4. Descent property (measured directly): E_mis is not monotone. It rises in 5-12 of 24
+   half-Gyr intervals with contacts and 12-14 without; the net fall is to ~1% (MW, one
+   proposal per orbit, the shot-noise level) or 6-7% (more proposals per orbit). Dwarf ends
+   5-10% above the exact floor. The budget-limited massive spiral is still converging at
+   12 Gyr (66 -> 4 x floor).
+Independent referee: no bug changing headline numbers. Its corrections (the 1e-6 bound, the
+"5-10%" figure, "unconverged" instead of "stalled", the vacuous Plummer test, the psi domain)
+are incorporated.
+Manuscript: hold the descent insertion. The one supported change now is replacing O.3's
+clipped-and-renormalised target with Y*.

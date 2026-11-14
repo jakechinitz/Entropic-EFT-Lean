@@ -1,0 +1,62 @@
+[
+  {
+    "module": "Entropic.Extensions20261023.EmpiricalCertificates",
+    "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\EmpiricalCertificates.lean",
+    "path": "Entropic/Extensions20261023/EmpiricalCertificates.lean",
+    "sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+    "theorems": 7,
+    "original_source_sha256": "407fcd6b8d421b76b19e37d277654bbfcd034c69f7838bab6fc893e4cec412f7",
+    "integrated_sha256": "17fd847cab53876ea5da0a0f2f7e5bf46c9c1b5907aeb3bd49cc82461856abc1",
+    "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+  },
+  {
+    "module": "Entropic.Extensions20261023.MuseProjection",
+    "source": "02 Research\\Unified empirical program 2026-10-23\\formalization\\MuseProjection.lean",
+    "path": "Entropic/Extensions20261023/MuseProjection.lean",
+    "sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+    "theorems": 4,
+    "original_source_sha256": "6eb79dce57fd8ca8159d9e5d0d3c5a2803ee64b933996af1bf09c0b155323254",
+    "integrated_sha256": "f38af918b9ad232a6ac9aaa4f88241fa7f72a97044b102fcec1b1efc4e1a3641",
+    "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+  },
+  {
+    "module": "Entropic.Extensions20261023.ConnectedClosure",
+    "source": "02 Research\\Connected theory closure 2026-10-23\\formalization\\ConnectedClosure.lean",
+    "path": "Entropic/Extensions20261023/ConnectedClosure.lean",
+    "sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+    "theorems": 42,
+    "original_source_sha256": "1622c433a20fdcb50694bcf3deef326294508d05f28b077fa018a40f8c096dd7",
+    "integrated_sha256": "84b4633f7ec80ddca7843b3c991082432ea9d1fdf5243cb944cf141e29fc17bc",
+    "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+  },
+  {
+    "module": "Entropic.Extensions20261023.EffectiveContact",
+    "source": "02 Research\\Effective dynamics and coupling 2026-10-23\\formalization\\EffectiveContact.lean",
+    "path": "Entropic/Extensions20261023/EffectiveContact.lean",
+    "sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+    "theorems": 36,
+    "original_source_sha256": "09970d9ed2954d58505a87661d2f0de6bb9c81c34fb62af9e0858061de3fb08d",
+    "integrated_sha256": "d8738cfa5aa1dec68546be7a1b08f187c40bec770f9910a7f42e1b939cf8f90a",
+    "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+  },
+  {
+    "module": "Entropic.Extensions20261023.MergerContact",
+    "source": "02 Research\\Conservative cluster merger 2026-10-23\\formalization\\MergerContact.lean",
+    "path": "Entropic/Extensions20261023/MergerContact.lean",
+    "sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+    "theorems": 8,
+    "original_source_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+    "integrated_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+    "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+  },
+  {
+    "module": "Entropic.Extensions20261023.ClusterOutliers",
+    "source": "02 Research\\Cluster outlier closure 2026-10-23\\formalization\\ClusterOutliers.lean",
+    "path": "Entropic/Extensions20261023/ClusterOutliers.lean",
+    "sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+    "theorems": 22,
+    "original_source_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+    "integrated_sha256": "6e713f02a9a2ffcc22a836b3585bef6b95e3c5dd798d008656b52faf1406da8c",
+    "proof_scope": "Conditional mathematical certificate; not an observational likelihood or physical selection theorem."
+  }
+]

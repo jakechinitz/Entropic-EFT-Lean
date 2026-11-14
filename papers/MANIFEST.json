@@ -1,0 +1,249 @@
+{
+ "files": {
+  "compact/Entropic_Scalar_EFT_Compact.pdf": {
+   "bytes": 709473,
+   "sha256": "c129b337f8540950a669a03707de5017454d3f897c38a443456d48c41a8e759f"
+  },
+  "compact/source/Astra Quantum gravity completion compact.tex": {
+   "bytes": 165308,
+   "sha256": "5875117bf2d00ffdbb259fb67530d6eaaedfa94e732a92395dbd3b54748297d7"
+  },
+  "empirical-results/Empirical_Results.pdf": {
+   "bytes": 1372686,
+   "sha256": "05fc51ccaeb5300d28a6593f12e78fb10db208a9a8cc8d27e1f94bd70b401585"
+  },
+  "empirical-results/source/01_results_and_basis.tex": {
+   "bytes": 16902,
+   "sha256": "88f4c3935a7ea9cb23e335f463ebaa646c4a6ba289b810e794b32e3040da0583"
+  },
+  "empirical-results/source/02_acceleration.tex": {
+   "bytes": 14074,
+   "sha256": "5ead3a9636e06cf96b488647ebd29c08ceff4c690b1884b6084e037d37b35a8d"
+  },
+  "empirical-results/source/03_history.tex": {
+   "bytes": 14277,
+   "sha256": "678b135824af711953176b0cfd0d10fc4d15d9d0e2a139957e66f4bc48b8da35"
+  },
+  "empirical-results/source/04_dwarfs.tex": {
+   "bytes": 17792,
+   "sha256": "b3b0f2f1c6bc3af1fcc65f8cbe2d640d6b65a7fc18e7f96ec3308666c2ae9e27"
+  },
+  "empirical-results/source/05_cosmology.tex": {
+   "bytes": 40360,
+   "sha256": "15ec37ec07603e4027e848f5acc134af8527d125b926290b951b0a1ffe119279"
+  },
+  "empirical-results/source/05b_clusters.tex": {
+   "bytes": 16040,
+   "sha256": "e2c561c840633a03614399f442cac89dd59f44cbf6c7f753ada8d55db46a1d66"
+  },
+  "empirical-results/source/05c_cross_sector.tex": {
+   "bytes": 2818,
+   "sha256": "b38edbb6d4810429482ea6fa957cdcc86d057a752ef837dc3dec07d4c7cad74b"
+  },
+  "empirical-results/source/05d_distinctive.tex": {
+   "bytes": 5428,
+   "sha256": "8fda747185e026f1f5793b6bb8f9057c49d5c0c05b66a8cd4a5a366523d17172"
+  },
+  "empirical-results/source/05e_predictions.tex": {
+   "bytes": 11296,
+   "sha256": "4fd74491621bef5d3834bdef684293d1a732aad0ec6a242f2fd3cf4adedd7109"
+  },
+  "empirical-results/source/05f_open.tex": {
+   "bytes": 6652,
+   "sha256": "24e648a01391c990082ff829aee11075120c9a315bd5d010308410888381abda"
+  },
+  "empirical-results/source/06_interpretation_and_audit.tex": {
+   "bytes": 24112,
+   "sha256": "e720c8936f0d43f3b922626f04543a7f563d1a32730c6f7818b0de93fdffa3a3"
+  },
+  "empirical-results/source/07_references.tex": {
+   "bytes": 10940,
+   "sha256": "00b985efe5c573740c7f02943658af6d952850d542e0003b879648efbc05f4b4"
+  },
+  "empirical-results/source/Empirical_Results.tex": {
+   "bytes": 3755,
+   "sha256": "3d5a8828ca53891aae58206f5d9da256caa5a6cf8f93769f2600a3206b5db6ad"
+  },
+  "empirical-results/source/figures/a0z_three.pdf": {
+   "bytes": 19955,
+   "sha256": "fb2e857811fb801143edea797391ab7f0ac8ea902ec96929ff9e403714e8164a"
+  },
+  "empirical-results/source/figures/a0z_three.png": {
+   "bytes": 45408,
+   "sha256": "ea4e9047387c46c6155e1702113a1c8a9eab2444a02836a7683209a53622bc98"
+  },
+  "empirical-results/source/figures/cluster_bullet.png": {
+   "bytes": 263426,
+   "sha256": "09b8859fd8f56243b4ab7696e5089c72235e81e8afedd0fe133a21b3ef3d129e"
+  },
+  "empirical-results/source/figures/cluster_lensing.png": {
+   "bytes": 45708,
+   "sha256": "92af72e67a82c6f140b442c2ccd31fbdc0d60f40c67842beddac7f52943dcc60"
+  },
+  "empirical-results/source/figures/cluster_switch.png": {
+   "bytes": 118463,
+   "sha256": "3800b605d2aa21e8dd9feaddc4c459cc78e2ff15f7bdce94667649348ae5a98b"
+  },
+  "empirical-results/source/figures/clusters_three.pdf": {
+   "bytes": 19926,
+   "sha256": "dba10eb1a819d03345f31b927e8dfc46ec8d573fc486a455dce4d9a724c001cb"
+  },
+  "empirical-results/source/figures/clusters_three.png": {
+   "bytes": 60870,
+   "sha256": "56f0a0eb8183f0d2932325cb0f96920252af4986e541bbb9060784f976091a82"
+  },
+  "empirical-results/source/figures/cosmo_params.pdf": {
+   "bytes": 20257,
+   "sha256": "2d807426f4de58c029ef92385734b791db07f633bcb5e2d1ae66c22b38839b92"
+  },
+  "empirical-results/source/figures/cosmo_params.png": {
+   "bytes": 58794,
+   "sha256": "a22e7359c40651ee0378c5e03211ea5bc93ad8509b89c1fcbe59828404ecf9d1"
+  },
+  "empirical-results/source/figures/cosmology.pdf": {
+   "bytes": 30333,
+   "sha256": "3392708a9f1e9d2e62c60e5b77db9e0a11f9842ef69f39cb7e4f8832940743c6"
+  },
+  "empirical-results/source/figures/cosmology.png": {
+   "bytes": 58234,
+   "sha256": "9df4040f27be13c0a782c4a1ae74033b859363f226d4f126d9e532d35d8e46af"
+  },
+  "empirical-results/source/figures/crater.pdf": {
+   "bytes": 28503,
+   "sha256": "021218435b8b9450e8fff07160cf5445b2c81f52b411cb502d5454d9c5cd1039"
+  },
+  "empirical-results/source/figures/crater.png": {
+   "bytes": 101798,
+   "sha256": "1af6302b74ccb1be54b094f120e9531e30ab44373934ac2248950e98149374b7"
+  },
+  "empirical-results/source/figures/kids_three.pdf": {
+   "bytes": 16609,
+   "sha256": "d5b4606da301ab702002c376c7253c3f0f994a6b5707d2145e18166553d4d2b3"
+  },
+  "empirical-results/source/figures/kids_three.png": {
+   "bytes": 36239,
+   "sha256": "e815684a25dbaaca06916db6c82a025b886c90b83fb593276977b8d7d5dd481b"
+  },
+  "empirical-results/source/figures/lmc.pdf": {
+   "bytes": 27904,
+   "sha256": "429a82643237bdc5aea384ce1cfdeeca515f0474e70c71da22d73bf1d0f588b8"
+  },
+  "empirical-results/source/figures/lmc.png": {
+   "bytes": 74812,
+   "sha256": "8a0e4aff9d681c7071209fa7f7fda0862604aac0ebd6e51695a5d7ef3bbecc24"
+  },
+  "empirical-results/source/figures/lmc_three.pdf": {
+   "bytes": 27694,
+   "sha256": "13405dcca5a003a291e9c668034cafc4318e2b35f418b26d446e0fe50da07404"
+  },
+  "empirical-results/source/figures/lmc_three.png": {
+   "bytes": 87904,
+   "sha256": "042dcc411346c409c66fbf094b1d2743e8042f39853363feba9fc99d5432f1c9"
+  },
+  "empirical-results/source/figures/make_comparison_figures.py": {
+   "bytes": 14712,
+   "sha256": "91eb504d34242a28b1da3f0aeea3d764dc591532740429cdfc4dae58cebca739"
+  },
+  "empirical-results/source/figures/omegaL_gate.pdf": {
+   "bytes": 22495,
+   "sha256": "0a3169be0ccfe5fc3216e8a26e930577cc5e4bc9da60a8c18f240bde73c5bdf8"
+  },
+  "empirical-results/source/figures/omegaL_gate.png": {
+   "bytes": 67355,
+   "sha256": "35bb307842ead6963a303a21d667b186fca067db26befee3f3b3c225b36454cf"
+  },
+  "empirical-results/source/figures/redshift.pdf": {
+   "bytes": 27766,
+   "sha256": "d4ba0c7fdf810bff5fa4ec2ade403ffbf141f48e8113ed7eb4e26a1e6d8d26cf"
+  },
+  "empirical-results/source/figures/redshift.png": {
+   "bytes": 96162,
+   "sha256": "0671e4f72d673e585ca9932226a91d685acadbdcd46247298e11c4fef4c32eac"
+  },
+  "empirical-results/source/figures/release_history.pdf": {
+   "bytes": 25871,
+   "sha256": "922588e943981958205e8b6e5a354924a151c1e1aaec3713b76f2ebbc619507a"
+  },
+  "empirical-results/source/figures/release_history.png": {
+   "bytes": 88630,
+   "sha256": "c1a9fb6f1b9d57e5c6408c286f42318f12686132be6135c97b32d660c46a5a0e"
+  },
+  "empirical-results/source/figures/scoreboard.pdf": {
+   "bytes": 37688,
+   "sha256": "eab2b693705d00e0a3302315906f0c393e8c821355e29a4225abf5ea87ddffac"
+  },
+  "empirical-results/source/figures/scoreboard.png": {
+   "bytes": 150628,
+   "sha256": "9421c6ce6371b00c7df0cc3e75d45875a8acddf88ad83e164ef901754900cf1f"
+  },
+  "empirical-results/source/figures/sparc_a0.pdf": {
+   "bytes": 20807,
+   "sha256": "8fa0f37b5a3fa2786a88794e72d800cac70615270814370dd78c6f7602c3d46a"
+  },
+  "empirical-results/source/figures/sparc_a0.png": {
+   "bytes": 65469,
+   "sha256": "a5de8308010518a51f9c8329a8df51c7cfe546d8e1990102746e8715d91948be"
+  },
+  "empirical-results/source/figures/stock_selection.png": {
+   "bytes": 146651,
+   "sha256": "1920f96ba15cb6747e8c69c3c1f4965ce00792e2f7cf40b8c813605950158633"
+  },
+  "full/Entropic_Scalar_EFT.pdf": {
+   "bytes": 2893428,
+   "sha256": "d13fcbbb326f3cfcbdba3f8d3bb7083ca9147c987b6d6361bc63751fafe51c75"
+  },
+  "full/source/Entropic Scalar EFT.tex": {
+   "bytes": 1454033,
+   "sha256": "a611d4cb5f6612e3478cd0bc65e2b3efec3541cd2d5b47e7c9124b333c8efc06"
+  },
+  "microstructure-cdt/Microstructure_CDT.pdf": {
+   "bytes": 713369,
+   "sha256": "fb7cc157f127989b3551d4e61ca3fee2b249ae716282317969d950d6a5e27915"
+  },
+  "microstructure-cdt/source/MICROSTRUCTURE_CDT.tex": {
+   "bytes": 8542,
+   "sha256": "1eda0ec677772d654b9da751f375817bdb3e673d7cc408b0a540081d990a559d"
+  },
+  "microstructure-cdt/source/chapters/01_capacity.tex": {
+   "bytes": 12392,
+   "sha256": "e374558d736b2b6d9abddc9454f1d8dda4b796d17064834b89f997f3690fac2a"
+  },
+  "microstructure-cdt/source/chapters/02_bonds_scale.tex": {
+   "bytes": 11278,
+   "sha256": "133816fc6c51ada46efba23f9dbe460873026cfbf2caa579af22a409605d883e"
+  },
+  "microstructure-cdt/source/chapters/03_geometry.tex": {
+   "bytes": 9603,
+   "sha256": "e3b1100398c77bcba30b0c857e219a8dd252b6c451ee034eaece0e1ed6e15fe4"
+  },
+  "microstructure-cdt/source/chapters/04_cdt_einstein.tex": {
+   "bytes": 17837,
+   "sha256": "74f04bc4e2c46bd54b50a2881b5fca213c96084353c7b488b3bd4287dc865dde"
+  },
+  "microstructure-cdt/source/chapters/04_registered_alpha7_results.tex": {
+   "bytes": 5612,
+   "sha256": "4ebd987f85e94bcf56a714c1bf55873507b93e3c71dbb6c6988f6d6a87565501"
+  },
+  "microstructure-cdt/source/chapters/05_clock_matter.tex": {
+   "bytes": 15002,
+   "sha256": "430bebd5a9a64bfa0de6ee9b4be725877ffcf9133e1f0e512c44418bd7aab9f9"
+  },
+  "microstructure-cdt/source/chapters/06_refinement.tex": {
+   "bytes": 9204,
+   "sha256": "fe277e6d0b0e7bae549b9f46f284ef5f5ecfb2f5db6ea03f3f9b0f4977a08e2c"
+  },
+  "microstructure-cdt/source/chapters/07_comparison.tex": {
+   "bytes": 11229,
+   "sha256": "62ca63a9a65f89486af75f4ed1d816642ae9d88fba55f59fcb9223e6471d374f"
+  },
+  "microstructure-cdt/source/chapters/08_replication.tex": {
+   "bytes": 12232,
+   "sha256": "8f4b3eb46903ce26d6fa76553ab1639eb03ec4cf60be4206f0d4d2b6c43d5b54"
+  },
+  "microstructure-cdt/source/chapters/09_appendices.tex": {
+   "bytes": 18806,
+   "sha256": "7b0b92dcec7b31b367b3318e193c90be929beec4909694d551ee3b57ae5d2596"
+  }
+ },
+ "synced": "2026-11-14"
+}

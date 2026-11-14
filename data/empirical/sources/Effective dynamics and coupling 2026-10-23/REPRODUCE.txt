@@ -1,0 +1,56 @@
+EFFECTIVE DYNAMICS AND COUPLING — REPRODUCTION
+
+Read START HERE.html and Research note/main.pdf first. The final contact uses
+the symmetric gate and the positive Hamiltonian edge completion. Earlier
+one-sided gates and the exchange-only Hamiltonian remain diagnostic records.
+
+All scripts use Python, NumPy, SciPy, Matplotlib; the entropy check also uses
+SymPy. Note rendering uses PyMuPDF and Pillow. check_lean.py uses the available Lean/mathlib 4.19 cache under
+Unified closure 2026-10-21. It does not rebuild the upstream 4.35 project.
+
+Simulation scripts refuse to replace their named result files. To reproduce, preserve
+the old output under Previous results or use a fresh research directory and
+new output names. Never delete old files. No simulation runs during typesetting.
+
+From this directory:
+  python closed_cell.py
+  python local_contact.py
+  python kinetic_feedback.py
+  python cold_contact_check.py
+  python hermitian_contact.py
+  python hamiltonian_check.py
+  python positive_hamiltonian_check.py
+  python interfaces.py
+  python interface_followup.py
+  python thermal_interfaces.py
+  python thermal_refinement.py
+  python thermal_entropy_check.py
+  python plot_thermal_refinement.py
+  python check_lean.py
+  python finalize.py
+
+finalize.py validates saved results without rerunning simulations. It preserves
+exact prior metadata and overview bytes in a timestamped source_records folder
+before writing updated reporting files. The Lean checker writes timestamped
+audit records. Its 36 certificates supplement, rather than rebuild, upstream.
+
+The current kinetic_feedback.py explicitly records the bath-temperature
+argument. The initial high-temperature source is saved in source_records.
+Source versions, Lean audit files and reporting failures are all retained.
+Random seeds are recorded in each result. Different timesteps draw different
+random histories, so sampling differences are not deterministic truncation
+errors. The finite interaction rates are illustrative inputs.
+
+From the workspace root, build the PDF beside its source:
+  python .organization/build_pdfs.py --tex "02 Research/Effective dynamics and coupling 2026-10-23/Research note/main.tex"
+Then render the saved PDF with this directory's render_note.py and inspect
+the resulting Review render folder. The build helper preserves previous PDFs.
+
+The late scalar-only interface test is not an accepted conservative
+continuation. Its resolved-energy deficit motivates the separate thermal
+Euler extension. That extension conserves current and energy and retains
+positive density, a causal sound speed and the floor in five resolution tests.
+It chooses an isotropic gamma=4/3 thermal pressure. Its heat profile is still
+resolution dependent and is not a quantitative prediction for voids. The warm
+spatial and kinetic-contact tests are separate, compatible benchmarks, not
+a combined self-gravitating halo calculation. Neither uses state clipping.

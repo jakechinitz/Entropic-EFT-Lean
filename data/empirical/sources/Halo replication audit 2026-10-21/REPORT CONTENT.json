@@ -1,0 +1,554 @@
+{
+  "pages": [
+    [
+      {
+        "type": "title",
+        "text": "Halo tilt:<br/>independent phase replication"
+      },
+      {
+        "type": "h1",
+        "text": "The tilted candidate survives independent phase replication."
+      },
+      {
+        "type": "body",
+        "text": "Both new realizations retain substantial halo and stellar inclinations for eight billion years. Together with the original run, this establishes repeatability at the tested particle count within the same conditional stock and rigid-disk model. It is stronger evidence of dynamical feasibility, but it is not a proof of continuum stability or a completed prediction of the manuscript. All three also develop late precession drift and become rounder; a stationary configuration has not been demonstrated."
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Realization",
+            "Halo tilt<br/>10-40 kpc",
+            "Stellar tilt<br/>10-40 kpc",
+            "Stellar tilt<br/>6-60 kpc",
+            "Max energy<br/>error (%)"
+          ],
+          [
+            "Original",
+            "40.79 deg",
+            "22.16 deg",
+            "24.38 deg",
+            "0.00160"
+          ],
+          [
+            "Replica 1",
+            "39.58 deg",
+            "21.38 deg",
+            "22.62 deg",
+            "0.00160"
+          ],
+          [
+            "Replica 2",
+            "42.36 deg",
+            "22.33 deg",
+            "24.75 deg",
+            "0.00247"
+          ]
+        ],
+        "widths": [
+          103,
+          106,
+          106,
+          106,
+          107
+        ]
+      },
+      {
+        "type": "small",
+        "text": "Final values use the moments averaged over 7.5-8 Gyr, before computing their axes. The two radial cuts serve different purposes; neither replaces the other. Instantaneous snapshots and complete trajectories are retained in the data files."
+      },
+      {
+        "type": "h2",
+        "text": "What was held fixed"
+      },
+      {
+        "type": "body",
+        "text": "All three runs contain 131,072 positive stock particles (65,536 inversion-pair representatives). The 1,072 positive orbit totals, stellar sample, force approximation, timestep and central regularization are identical. Only the stock phase draw changes: seeds 211033, 211034 and 211035. Each new seed passes the same initial force, torque, positivity and angular-momentum checks."
+      },
+      {
+        "type": "body",
+        "text": "The registered descriptive retention condition is a final halo tilt of at least 35 degrees and stellar tilt of at least 20 degrees in 10-40 kpc. It is not an observational confidence limit. 3 of the three realizations satisfy it. No probability of success for a population is inferred from three seeds."
+      },
+      {
+        "type": "small",
+        "text": "The manuscript and a<sub>0</sub> are unchanged. Existing a<sub>0</sub> = 1.230729 x 10<super>-10</super> m s<super>-2</super>."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "Evolution, not a selected final snapshot"
+      },
+      {
+        "type": "image",
+        "path": "replication_evolution.png",
+        "width": 528,
+        "height": 343.2
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Realization",
+            "Halo range, 6-8 Gyr",
+            "Stellar range, 6-8 Gyr",
+            "Precession / input"
+          ],
+          [
+            "Original",
+            "40.8-46.1",
+            "22.2-26.3",
+            "0.921"
+          ],
+          [
+            "Replica 1",
+            "39.6-44.6",
+            "21.4-25.8",
+            "0.918"
+          ],
+          [
+            "Replica 2",
+            "41.2-45.0",
+            "22.3-27.0",
+            "0.925"
+          ]
+        ],
+        "widths": [
+          103,
+          145,
+          145,
+          135
+        ]
+      },
+      {
+        "type": "small",
+        "text": "Ranges use all four final half-Gyr averages, in degrees. The rate is a descriptive linear fit to the disk precession phase over the full run. The lower-resolution and imposed-field curves are earlier references, not additional fixed-count phase replicas. Changes in inclination and azimuth can occur with excellent energy conservation; conservation alone does not establish equilibrium."
+      },
+      {
+        "type": "small",
+        "text": "The same stellar phase sample is used in every run. These are independent stock phase realizations conditional on one orbit fit, not independent merger histories or stellar fits."
+      },
+      {
+        "type": "small",
+        "text": "Snapshot variation matters: Replica 1 has a halo tilt of 33.50 degrees at the instantaneous 8-Gyr checkpoint, compared with its registered final averaged value of 39.58 degrees. Passing the averaged retention condition does not imply that every snapshot passes it."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "A more faithful stellar-shape comparison"
+      },
+      {
+        "type": "body",
+        "text": "The published comparison uses spherical-cut inertia moments over 6-60 kpc. Its density-axis parameters cannot be compared directly with inertia-axis ratios. I integrated the same parametric stellar density through that cut and propagated 1,000 independent Gaussian draws of the quoted shape uncertainties, following the published prescription. This supplementary diagnostic was added after the live runs began and does not change their registered outcomes."
+      },
+      {
+        "type": "body",
+        "text": "The mapped reference is tilt 25.39 +/- 3.16 degrees, p = 0.8439 +/- 0.0257, q = 0.7739 +/- 0.0182. The quoted uncertainties describe the adopted target; they do not include every observational systematic."
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Realization",
+            "Tilt",
+            "p",
+            "q",
+            "D, averaged",
+            "D, instant 8 Gyr"
+          ],
+          [
+            "Original",
+            "24.38",
+            "0.8487",
+            "0.7905",
+            "0.96",
+            "0.47"
+          ],
+          [
+            "Replica 1",
+            "22.62",
+            "0.8513",
+            "0.7898",
+            "1.62",
+            "2.34"
+          ],
+          [
+            "Replica 2",
+            "24.75",
+            "0.8742",
+            "0.7968",
+            "3.02",
+            "3.13"
+          ]
+        ],
+        "widths": [
+          96,
+          64,
+          66,
+          66,
+          111,
+          125
+        ]
+      },
+      {
+        "type": "small",
+        "text": "D is the sum of the three squared residuals divided by the mapped variances, using major-axis inclination for the tilt diagnostic. It is a published-style summary, not a calibrated chi-square test or a full observational likelihood. Finite-tracer correlations, noncoplanarity and the survey selection function are not modeled. Both averaged and instantaneous results are shown."
+      },
+      {
+        "type": "body",
+        "text": "The original large run has a 24.38-degree stellar inclination in this cut and D = 0.96 for its final averaged shape. Its earlier 22.16-degree value is correct for 10-40 kpc, but using that number alone as the direct observational shortfall was too restrictive."
+      },
+      {
+        "type": "small",
+        "text": "Method source: <link href=\"https://arxiv.org/html/2510.00095v2#S3.SS4\" color=\"#136f87\">Dillamore &amp; Sanders (2026), Section 3.4 and equations 19-20</link>. The comparison here uses the stellar target and does not treat their halo-angle inference as a model-independent measurement."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "Radial shape and the third orientation angle"
+      },
+      {
+        "type": "image",
+        "path": "radial_shapes.png",
+        "width": 528,
+        "height": 179.5
+      },
+      {
+        "type": "body",
+        "text": "Global moments need not reproduce the adopted target in every radial bin. The figure shows all four bins used in the stored diagnostics, with the target processed through the same spherical cuts. It does not refit the radial profile."
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Final snapshot",
+            "Minor-axis offset (deg)",
+            "Intermediate-axis elevation (deg)",
+            "Orientation-sensitive D"
+          ],
+          [
+            "Original",
+            "5.64",
+            "4.93",
+            "3.51"
+          ],
+          [
+            "Replica 1",
+            "1.52",
+            "1.26",
+            "2.53"
+          ],
+          [
+            "Replica 2",
+            "3.76",
+            "1.75",
+            "3.49"
+          ]
+        ],
+        "widths": [
+          110,
+          136,
+          150,
+          132
+        ]
+      },
+      {
+        "type": "small",
+        "text": "After aligning the overall stellar azimuth, the minor-axis angle detects departure from coplanarity. The intermediate-axis elevation would vanish for exact coplanarity with the disk. These are instantaneous 8-Gyr quantities, not the preceding averaged shape. The orientation-sensitive D replaces the inclination residual by the minor-axis offset; it remains a diagnostic, not a calibrated observational probability."
+      },
+      {
+        "type": "h2",
+        "text": "Density shapes remain a separate question"
+      },
+      {
+        "type": "body",
+        "text": "For the analytic A = 0.3 stock target, the spherical-cut inertia ratio is 0.916. Its actual density-contour intercept ratio is about 0.78-0.81 between major-axis radii 10 and 40 kpc. Those are distinct definitions. The live tests do not establish that the evolved stock satisfies every Milky Way halo-shape constraint."
+      },
+      {
+        "type": "small",
+        "text": "The original run illustrates the distinction: its inclination-only instantaneous D is 0.47, whereas its 5.64-degree minor-axis offset raises the orientation-sensitive diagnostic to 3.51. The improved common-cut comparison is useful, but it is not a license to ignore the other axes."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "Shape and density remain visible"
+      },
+      {
+        "type": "image",
+        "path": "replication_shapes.png",
+        "width": 528,
+        "height": 316.8
+      },
+      {
+        "type": "body",
+        "text": "A nonzero eigenvalue gap is necessary for an orientation to be meaningful. The density diagnostic is the absolute cell-mass mismatch over 6-60 kpc, normalized by target mass in that range. It is not an observational likelihood and includes finite sampling noise."
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Realization",
+            "Minimum halo gap",
+            "Final halo density L1",
+            "Final stellar density L1",
+            "Mass change &lt;20 kpc"
+          ],
+          [
+            "Original",
+            "0.111",
+            "0.050",
+            "0.150",
+            "-1.24%"
+          ],
+          [
+            "Replica 1",
+            "0.119",
+            "0.058",
+            "0.140",
+            "-0.22%"
+          ],
+          [
+            "Replica 2",
+            "0.113",
+            "0.048",
+            "0.130",
+            "-0.20%"
+          ]
+        ],
+        "widths": [
+          103,
+          105,
+          108,
+          112,
+          100
+        ]
+      },
+      {
+        "type": "small",
+        "text": "Initial moment checks show that fitting force, mean shape flow and torque does not make the discrete phase sample exactly stationary. The residual shape curvature appears in both the imposed analytic field and the live numerical field. It cannot be read as an instability growth rate without a separate response analysis."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "Compatibility and numerical safeguards"
+      },
+      {
+        "type": "body",
+        "text": "The largest sampled energy error is 0.00247%; the largest angular-momentum error divided by disk angular momentum is 1.30e-13. All weights remain positive. The earlier timestep and central-regularization comparisons are preserved; this audit isolates phase variation at their baseline settings."
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Realization",
+            "Max speed-proxy shift",
+            "Even vertical change",
+            "Max odd term"
+          ],
+          [
+            "Original",
+            "1.39%",
+            "+0.52% to +1.33%",
+            "257"
+          ],
+          [
+            "Replica 1",
+            "1.46%",
+            "-0.14% to +2.05%",
+            "216"
+          ],
+          [
+            "Replica 2",
+            "1.35%",
+            "+0.70% to +1.65%",
+            "186"
+          ]
+        ],
+        "widths": [
+          103,
+          116,
+          180,
+          129
+        ]
+      },
+      {
+        "type": "small",
+        "text": "Speed proxies sample 8.2-60 kpc and are compared with the original spherical stock plus baryons. Vertical values use R = 8.2 kpc and z = +/-1.1 kpc. The odd term is the half-difference of the two potentials, in (km/s)<super>2</super>. These are force comparisons, not new rotation-curve or vertical-equilibrium fits. The odd term is not removed by the small even change."
+      },
+      {
+        "type": "h2",
+        "text": "Stellar velocity anisotropy"
+      },
+      {
+        "type": "body",
+        "text": "At the final instantaneous snapshot, the 6-24 kpc radial anisotropy changes little when coherent local motion is subtracted using 32 angular cells. Inversion partners are counted once. Original: 0.8784 raw, 0.8785 after local subtraction; Replica 1: 0.8835 raw, 0.8841 after local subtraction; Replica 2: 0.8808 raw, 0.8815 after local subtraction. The coarse bins do not resolve all possible streaming."
+      },
+      {
+        "type": "h2",
+        "text": "Positivity of the force reconstruction"
+      },
+      {
+        "type": "small",
+        "text": "No negative reconstructed density was found on the sampled 5-60 kpc integration grids. Across 0.2-160 kpc, the largest integrated negative reconstruction artifact is 1.66e-05 of the stock mass. These are finite multipole/spline artifacts, not negative particle masses. The analytic Laplacian was checked against numerical force divergence. Positivity between sampled points or outside this domain is not proved."
+      },
+      {
+        "type": "h2",
+        "text": "Future phases remain noisier than the initial fit"
+      },
+      {
+        "type": "small",
+        "text": "Transporting each frozen phase quadrature through the prescribed field produces substantial fluctuations relative to the weak transverse force. Initial quietness therefore does not persist automatically. Replication at fixed N tests sensitivity to this effect; it does not make the effect vanish."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "Repeatability is not force convergence"
+      },
+      {
+        "type": "image",
+        "path": "force_resolution.png",
+        "width": 528,
+        "height": 211.2
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Realization",
+            "4 to 6 / total stock force",
+            "4 to 6 / transverse",
+            "6 to 8 / transverse"
+          ],
+          [
+            "Original",
+            "2.41%",
+            "28.5%",
+            "21.9%"
+          ],
+          [
+            "Replica 1",
+            "2.38%",
+            "27.5%",
+            "20.3%"
+          ],
+          [
+            "Replica 2",
+            "1.88%",
+            "24.7%",
+            "31.4%"
+          ]
+        ],
+        "widths": [
+          103,
+          145,
+          140,
+          140
+        ]
+      },
+      {
+        "type": "small",
+        "text": "The table gives maximum RMS fractional changes over the five tested radii, using final frozen snapshots. Each added angular order includes its complete multiplet. The radial spline and regularization are unchanged. An independent implementation reproduces the original order-four force before adding the higher modes."
+      },
+      {
+        "type": "body",
+        "text": "The supporting transverse field is much weaker than the radial field. Consequently a small change relative to total stock acceleration can be a substantial change in the force that supports the tilted figure. The omitted modes include both physical deformation and finite-particle sampling noise; higher-order noise is already present initially."
+      },
+      {
+        "type": "body",
+        "text": "The evidence therefore does not establish convergence of the live trajectories with angular order. Increasing the angular order at fixed particle count also admits more sampling noise. A useful next numerical comparison must control both particle count and force resolution, with a common phase construction or sufficient independent replicas."
+      },
+      {
+        "type": "small",
+        "text": "None of these diagnostics changes the registered runs, selects a new phase seed, adjusts the physical target, or changes a<sub>0</sub>. They limit how strongly the replication result can be interpreted."
+      }
+    ],
+    [
+      {
+        "type": "h1",
+        "text": "What this closes, and what remains"
+      },
+      {
+        "type": "h2",
+        "text": "The route is already present in the manuscript"
+      },
+      {
+        "type": "body",
+        "text": "Section 16 identifies a conserved, assembly-shaped stock as the way to sustain a tilted potential. Appendix O.3 supplies positive stock continuity, a budget and velocity stress, while explicitly leaving the full transport and common variational coupling incomplete. The new work makes one kinetic realization concrete. It does not amend the aligned static solution, which still lacks the required long-lived tilted potential."
+      },
+      {
+        "type": "h2",
+        "text": "The next physical test concerns the disk"
+      },
+      {
+        "type": "table",
+        "rows": [
+          [
+            "Radius (kpc)",
+            "Uncoupled ring rate (rad/Gyr)",
+            "Difference from rigid bulk (rad/Gyr)"
+          ],
+          [
+            "6",
+            "0.578",
+            "0.142"
+          ],
+          [
+            "8.2",
+            "0.494",
+            "0.057"
+          ],
+          [
+            "15",
+            "0.332",
+            "0.109"
+          ],
+          [
+            "20",
+            "0.270",
+            "0.172"
+          ]
+        ],
+        "widths": [
+          108,
+          210,
+          210
+        ]
+      },
+      {
+        "type": "small",
+        "text": "Values refer to the original large run at 8 Gyr. They are the initial precession tendencies of thin test rings in its field. Different radii require internal disk torques to maintain common motion. Disk self-gravity and bending response were omitted from this diagnostic, so it does not predict a warp amplitude or establish a disk instability."
+      },
+      {
+        "type": "h2",
+        "text": "Remaining closure"
+      },
+      {
+        "type": "body",
+        "text": "A controlled particle-number comparison and higher angular/radial force resolution remain necessary. A deformable disk and finite director/polarization response remain necessary for the full theory. A physically selected transport or relaxation law, and formation of the fitted orbit distribution, have not been derived. Repeating one tuned orbit family cannot settle those questions."
+      },
+      {
+        "type": "h2",
+        "text": "The next numerical target is the shared drift"
+      },
+      {
+        "type": "small",
+        "text": "The fitted precession rates are 0.918-0.925 of the construction rate across all three seeds. The late azimuth slip and declining halo shape gap are also shared. This points to a common effect that more phase draws alone will not resolve. The next test should separate a mismatch in the constructed relative equilibrium, systematic finite-sampling effects and a physical collective mode, while controlling particle count and angular force order. No instability growth rate or uniquely identified cause has been established."
+      },
+      {
+        "type": "h2",
+        "text": "Reproducibility"
+      },
+      {
+        "type": "small",
+        "text": "PROTOCOL.txt fixes the seeds and gates. run_replica.py drives unchanged stage copies. replication_assessment.json records every outcome; matched_shape_final.json supplies the supplementary shape comparison. Half-Gyr checkpoints, source snapshots, diagnostic code and a final hash manifest are preserved alongside this report. No prior results were deleted."
+      }
+    ]
+  ],
+  "conclusion": "The tilted candidate survives independent phase replication.",
+  "interpretation": "Both new realizations retain substantial halo and stellar inclinations for eight billion years. Together with the original run, this establishes repeatability at the tested particle count within the same conditional stock and rigid-disk model. It is stronger evidence of dynamical feasibility, but it is not a proof of continuum stability or a completed prediction of the manuscript. All three also develop late precession drift and become rounder; a stationary configuration has not been demonstrated."
+}

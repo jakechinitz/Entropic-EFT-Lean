@@ -1,0 +1,3346 @@
+{
+  "completed_runs": 17,
+  "prior_inputs_unchanged": 172,
+  "checks_passed": true,
+  "runs": {
+    "active_fine": {
+      "particles": 1344,
+      "settings": {
+        "tag": "active_fine",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 9180,
+        "no_partner": 388,
+        "accepted": 7124,
+        "cross_cohort": 1675,
+        "unaffordable_work": 45,
+        "unaffordable_heat": 0,
+        "event_energy_error": 6.505213034913027e-19,
+        "work": -0.09498398779286805,
+        "heat": 1.083086363319615e-07
+      },
+      "max_energy_error_over_initial_binding": 2.3209885342306273e-05,
+      "max_momentum_error": 2.3809146268203476e-15,
+      "max_angular_error": 2.910957816578326e-16,
+      "minimum_clock_surplus": 0.03291501647558892,
+      "minimum_bath": 1.2888288633507926e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 0.0010629853372490228,
+      "entropy_increase": 0.32719204710483846
+    },
+    "active_isolated": {
+      "particles": 672,
+      "settings": {
+        "tag": "active_isolated",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 6.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": true,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 2324,
+        "no_partner": 209,
+        "accepted": 1717,
+        "cross_cohort": 0,
+        "unaffordable_work": 5,
+        "unaffordable_heat": 0,
+        "event_energy_error": 4.404571325722362e-19,
+        "work": -0.008780838357713015,
+        "heat": 1.371131896285825e-08
+      },
+      "max_energy_error_over_initial_binding": 4.524815911646561e-05,
+      "max_momentum_error": 6.995810469551822e-17,
+      "max_angular_error": 9.558455297368638e-17,
+      "minimum_clock_surplus": 0.14877966721849756,
+      "minimum_bath": 4.3180948488445954e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 0.0011849010900980284,
+      "entropy_increase": 0.12171515092632632
+    },
+    "active_nu1": {
+      "particles": 1344,
+      "settings": {
+        "tag": "active_nu1",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 9063,
+        "no_partner": 365,
+        "accepted": 7114,
+        "cross_cohort": 1646,
+        "unaffordable_work": 49,
+        "unaffordable_heat": 0,
+        "event_energy_error": 8.605854744103691e-19,
+        "work": -0.08490077347551324,
+        "heat": 9.69531741523609e-08
+      },
+      "max_energy_error_over_initial_binding": 5.9684309070423395e-05,
+      "max_momentum_error": 2.577673104084566e-15,
+      "max_angular_error": 2.661785098476852e-16,
+      "minimum_clock_surplus": 0.057007125590305074,
+      "minimum_bath": 1.286635083271559e-08,
+      "source_sha256": "1ff1fceaeafc6f6bd20bc3c63304c143feede64086989cc88bd049ef5a9f1d62",
+      "minimum_sampled_entropy_increment": 0.0010717883621154112,
+      "entropy_increase": 0.31824975378487214
+    },
+    "active_res2": {
+      "particles": 2688,
+      "settings": {
+        "tag": "active_res2",
+        "mult": 2,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.36,
+        "eps": 0.08,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 18320,
+        "no_partner": 443,
+        "accepted": 14445,
+        "cross_cohort": 3339,
+        "unaffordable_work": 109,
+        "unaffordable_heat": 0,
+        "event_energy_error": 5.692061405548898e-19,
+        "work": -0.08742527210686318,
+        "heat": 9.954637375712564e-08
+      },
+      "max_energy_error_over_initial_binding": 2.3624813717898566e-05,
+      "max_momentum_error": 3.1639681568158536e-15,
+      "max_angular_error": 3.425950343790778e-16,
+      "minimum_clock_surplus": 0.013621436054688907,
+      "minimum_bath": 6.419263582337639e-09,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 0.0010214106285377778,
+      "entropy_increase": 0.34028986309636045
+    },
+    "active_short_range": {
+      "particles": 1344,
+      "settings": {
+        "tag": "active_short_range",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.3,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 9018,
+        "no_partner": 703,
+        "accepted": 6767,
+        "cross_cohort": 1590,
+        "unaffordable_work": 47,
+        "unaffordable_heat": 0,
+        "event_energy_error": 9.372419561368833e-19,
+        "work": -0.08783170297097084,
+        "heat": 1.0040514183070132e-07
+      },
+      "max_energy_error_over_initial_binding": 6.832630784570696e-05,
+      "max_momentum_error": 2.22606368379465e-15,
+      "max_angular_error": 3.3574258742480567e-16,
+      "minimum_clock_surplus": 0.03468452874330108,
+      "minimum_bath": 1.2889587346004446e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 0.0009668772836710637,
+      "entropy_increase": 0.3204703095338353
+    },
+    "baseline_fine": {
+      "particles": 1344,
+      "settings": {
+        "tag": "baseline_fine",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 6.533932590453249e-06,
+      "max_momentum_error": 2.3205499552866778e-15,
+      "max_angular_error": 3.94320595519234e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "minimum_bath": 1.3095076144821735e-08,
+      "source_sha256": "1ff1fceaeafc6f6bd20bc3c63304c143feede64086989cc88bd049ef5a9f1d62",
+      "minimum_sampled_entropy_increment": 1.5236544642360794e-05,
+      "entropy_increase": 0.12948363572183147
+    },
+    "baseline_optimized": {
+      "particles": 1344,
+      "settings": {
+        "tag": "baseline_optimized",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 2.6194458493020782e-05,
+      "max_momentum_error": 2.4121662510693023e-15,
+      "max_angular_error": 2.808174903082428e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "minimum_bath": 1.3095076144821735e-08,
+      "source_sha256": "1ff1fceaeafc6f6bd20bc3c63304c143feede64086989cc88bd049ef5a9f1d62",
+      "minimum_sampled_entropy_increment": 1.5277369295157994e-05,
+      "entropy_increase": 0.12948081503345177
+    },
+    "baseline_res2": {
+      "particles": 2688,
+      "settings": {
+        "tag": "baseline_res2",
+        "mult": 2,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.36,
+        "eps": 0.08,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 6.279218243072003e-06,
+      "max_momentum_error": 3.600735615350865e-15,
+      "max_angular_error": 3.6188081713980574e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "minimum_bath": 6.547538072410867e-09,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 8.292582078009425e-05,
+      "entropy_increase": 0.1269710308135282
+    },
+    "baseline_seed2": {
+      "particles": 1344,
+      "settings": {
+        "tag": "baseline_seed2",
+        "mult": 1,
+        "seed": 51779,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 2.6645690558210187e-05,
+      "max_momentum_error": 2.4543782673615393e-15,
+      "max_angular_error": 3.77743415933924e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "minimum_bath": 1.3095076144821735e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 1.1446780240176313e-05,
+      "entropy_increase": 0.1302875982977812
+    },
+    "collisionless_baryons": {
+      "particles": 1344,
+      "settings": {
+        "tag": "collisionless_baryons",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": true
+      },
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 2.7317929572994215e-05,
+      "max_momentum_error": 5.78655182250588e-16,
+      "max_angular_error": 2.446665623626357e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "minimum_bath": 1.3095076144821735e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08"
+    },
+    "depleted_nu1": {
+      "particles": 1344,
+      "settings": {
+        "tag": "depleted_nu1",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 0.0001,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 9021,
+        "no_partner": 509,
+        "accepted": 61,
+        "cross_cohort": 37,
+        "unaffordable_work": 4241,
+        "unaffordable_heat": 0,
+        "event_energy_error": 6.505213034913027e-19,
+        "work": -0.003158288925788822,
+        "heat": 3.5873800033135326e-09
+      },
+      "max_energy_error_over_initial_binding": 2.619445849295016e-05,
+      "max_momentum_error": 2.344591836443821e-15,
+      "max_angular_error": 4.0838423301947607e-16,
+      "minimum_clock_surplus": 9.999999999998899e-05,
+      "minimum_bath": 1.3095076144821735e-08,
+      "source_sha256": "1ff1fceaeafc6f6bd20bc3c63304c143feede64086989cc88bd049ef5a9f1d62",
+      "minimum_sampled_entropy_increment": 1.5277369295157994e-05,
+      "entropy_increase": 0.13287723982626765
+    },
+    "exact_floor": {
+      "particles": 1344,
+      "settings": {
+        "tag": "exact_floor",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 0.0,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 9021,
+        "no_partner": 590,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 4244,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 2.619445849295016e-05,
+      "max_momentum_error": 2.4121662510693023e-15,
+      "max_angular_error": 2.808174903082428e-16,
+      "minimum_clock_surplus": 0.0,
+      "minimum_bath": 1.3095076144821735e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 1.5277369295157994e-05,
+      "entropy_increase": 0.12948081503345177
+    },
+    "initial_isolated": {
+      "particles": 672,
+      "settings": {
+        "tag": "initial_isolated",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 6.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": true,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error_over_initial_binding": 3.147085819597975e-05,
+      "max_momentum_error": 1.992144998212527e-17,
+      "max_angular_error": 1.0489605186801012e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "minimum_bath": 4.365025381607245e-08,
+      "source_sha256": "eb2ac302070c189e1eb19ee19bd361c5ffde6913780943ee2ba4a732438aff66",
+      "minimum_sampled_entropy_increment": 1.4000844567291226e-05,
+      "entropy_increase": 0.03145154284793053
+    },
+    "weak_isolated": {
+      "particles": 672,
+      "settings": {
+        "tag": "weak_isolated",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 6.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": true,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 235,
+        "no_partner": 20,
+        "accepted": 181,
+        "cross_cohort": 0,
+        "unaffordable_work": 1,
+        "unaffordable_heat": 0,
+        "event_energy_error": 3.3203691532368573e-19,
+        "work": 0.0011716014823336615,
+        "heat": -8.598785459284156e-10
+      },
+      "max_energy_error_over_initial_binding": 3.1864201008256194e-05,
+      "max_momentum_error": 7.232655691019583e-17,
+      "max_angular_error": 9.992149189806794e-17,
+      "minimum_clock_surplus": 0.35168819126468787,
+      "minimum_bath": 4.324429964255016e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 6.083308903867546e-05,
+      "entropy_increase": 0.05129521732351458
+    },
+    "weak_nu01": {
+      "particles": 1344,
+      "settings": {
+        "tag": "weak_nu01",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 916,
+        "no_partner": 42,
+        "accepted": 734,
+        "cross_cohort": 155,
+        "unaffordable_work": 3,
+        "unaffordable_heat": 0,
+        "event_energy_error": 6.640738306473715e-19,
+        "work": -0.002233544086021368,
+        "heat": 2.9565249568729887e-09
+      },
+      "max_energy_error_over_initial_binding": 3.246477606434564e-05,
+      "max_momentum_error": 2.443768131411327e-15,
+      "max_angular_error": 2.7144172467083395e-16,
+      "minimum_clock_surplus": 0.14860209001116997,
+      "minimum_bath": 1.2962440901417977e-08,
+      "source_sha256": "1ff1fceaeafc6f6bd20bc3c63304c143feede64086989cc88bd049ef5a9f1d62",
+      "minimum_sampled_entropy_increment": 2.6142224061609376e-05,
+      "entropy_increase": 0.18786986689513452
+    },
+    "weak_res2": {
+      "particles": 2688,
+      "settings": {
+        "tag": "weak_res2",
+        "mult": 2,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.36,
+        "eps": 0.08,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 1820,
+        "no_partner": 70,
+        "accepted": 1430,
+        "cross_cohort": 342,
+        "unaffordable_work": 5,
+        "unaffordable_heat": 0,
+        "event_energy_error": 3.1848438816761693e-19,
+        "work": -0.007638316443450972,
+        "heat": 8.680455248631874e-09
+      },
+      "max_energy_error_over_initial_binding": 8.948862273092029e-06,
+      "max_momentum_error": 3.270219142853378e-15,
+      "max_angular_error": 4.235929139076729e-16,
+      "minimum_clock_surplus": 0.2164309147563619,
+      "minimum_bath": 6.4712096555132435e-09,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 0.0003162599580255887,
+      "entropy_increase": 0.18309490946284887
+    },
+    "weak_seed2": {
+      "particles": 1344,
+      "settings": {
+        "tag": "weak_seed2",
+        "mult": 1,
+        "seed": 51779,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      },
+      "contact": {
+        "attempts": 994,
+        "no_partner": 59,
+        "accepted": 766,
+        "cross_cohort": 164,
+        "unaffordable_work": 5,
+        "unaffordable_heat": 0,
+        "event_energy_error": 4.104404025039119e-19,
+        "work": -0.006050262241721322,
+        "heat": 7.350068351678681e-09
+      },
+      "max_energy_error_over_initial_binding": 3.207374631141892e-05,
+      "max_momentum_error": 2.305431778410703e-15,
+      "max_angular_error": 4.099615753214933e-16,
+      "minimum_clock_surplus": 0.2088914290719588,
+      "minimum_bath": 1.2951816373242137e-08,
+      "source_sha256": "6b324c696e2b77748ca169059b244be4a2b116217062b092ef20a2a1542e6c08",
+      "minimum_sampled_entropy_increment": 0.00033567129538836227,
+      "entropy_increase": 0.17860668485851888
+    }
+  },
+  "isolated_controls": [
+    {
+      "tag": "active_isolated",
+      "final_radius_ratio_stock_stars_gas": [
+        0.7268266490083954,
+        1.2693276641370697,
+        1.4636700085415304
+      ]
+    },
+    {
+      "tag": "initial_isolated",
+      "final_radius_ratio_stock_stars_gas": [
+        0.9684137551706589,
+        0.9568345725498318,
+        0.9208843668503225
+      ]
+    },
+    {
+      "tag": "weak_isolated",
+      "final_radius_ratio_stock_stars_gas": [
+        0.9202936088295887,
+        0.9692161296069436,
+        1.0236927292823172
+      ]
+    }
+  ],
+  "merger_diagnostics": [
+    {
+      "tag": "active_fine",
+      "pericentre_time": 8.4,
+      "evaluation_time": 10.4,
+      "core_separation_at_pericentre": 0.25219256998853984,
+      "core_separation_at_evaluation": 1.6109273825374015,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.4250000000000007,
+              0.27500000000000036
+            ],
+            [
+              0.4250000000000007,
+              0.375
+            ],
+            [
+              -0.17499999999999938,
+              -0.9749999999999996
+            ]
+          ],
+          "stock_gas_peak_distance": 1.3865424623862048,
+          "stock_stars_peak_distance": 0.09999999999999964,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.435124161039464,
+              0.1082750959339174,
+              0.014966355045585132
+            ],
+            [
+              0.07516067950817638,
+              0.1453631088161637,
+              -0.02979769877760328
+            ],
+            [
+              -0.3197499485268586,
+              -0.10869417752966248,
+              -0.11020012309156978
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.6249999999999996,
+              -0.7749999999999999
+            ],
+            [
+              -1.6749999999999994,
+              -0.32499999999999973
+            ],
+            [
+              1.825000000000001,
+              0.375
+            ]
+          ],
+          "stock_gas_peak_distance": 3.6366193091936365,
+          "stock_stars_peak_distance": 0.452769256906871,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.3846132689104518,
+              -0.3856042968183077,
+              0.013142187595021323
+            ],
+            [
+              -1.2620963740028917,
+              -0.028258524733866835,
+              0.0962380373960274
+            ],
+            [
+              0.8198039059136185,
+              0.44380177085809425,
+              -0.004457269120946105
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.375,
+          0.27500000000000036
+        ],
+        [
+          -1.6749999999999994,
+          -0.7749999999999999
+        ]
+      ],
+      "contact": {
+        "attempts": 9180,
+        "no_partner": 388,
+        "accepted": 7124,
+        "cross_cohort": 1675,
+        "unaffordable_work": 45,
+        "unaffordable_heat": 0,
+        "event_energy_error": 6.505213034913027e-19,
+        "work": -0.09498398779286805,
+        "heat": 1.083086363319615e-07
+      },
+      "max_energy_error": 2.3209885342306273e-05,
+      "max_momentum_error": 2.3809146268203476e-15,
+      "max_angular_error": 2.910957816578326e-16,
+      "minimum_clock_surplus": 0.03291501647558892,
+      "settings": {
+        "tag": "active_fine",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "active_nu1",
+      "pericentre_time": 8.8,
+      "evaluation_time": 10.8,
+      "core_separation_at_pericentre": 0.26648320055043195,
+      "core_separation_at_evaluation": 1.4246422034304806,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5250000000000004,
+              0.1750000000000007
+            ],
+            [
+              0.7750000000000004,
+              0.27500000000000036
+            ],
+            [
+              -0.8249999999999997,
+              -1.1249999999999996
+            ]
+          ],
+          "stock_gas_peak_distance": 1.8741664813991314,
+          "stock_stars_peak_distance": 0.2692582403567251,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5160276331401971,
+              0.18149655372480408,
+              -0.008833695358932749
+            ],
+            [
+              0.16962842088425392,
+              -0.0012240378740340932,
+              -0.23892150873544574
+            ],
+            [
+              -0.44289203182028236,
+              -0.39532066854772013,
+              0.1084561693546641
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.525,
+              -0.6249999999999996
+            ],
+            [
+              -1.775,
+              -0.6249999999999996
+            ],
+            [
+              0.8250000000000002,
+              1.375
+            ]
+          ],
+          "stock_gas_peak_distance": 3.0858548248418947,
+          "stock_stars_peak_distance": 0.25,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.539389412622675,
+              -0.4890994497373841,
+              -0.00539829209414408
+            ],
+            [
+              -1.377973016935061,
+              -0.1682273543042509,
+              -0.14696084618624278
+            ],
+            [
+              0.5236719001186296,
+              0.6576317169797087,
+              -0.022800511128044893
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.5250000000000004,
+          0.1750000000000007
+        ],
+        [
+          -1.4249999999999994,
+          -0.6249999999999996
+        ]
+      ],
+      "contact": {
+        "attempts": 9063,
+        "no_partner": 365,
+        "accepted": 7114,
+        "cross_cohort": 1646,
+        "unaffordable_work": 49,
+        "unaffordable_heat": 0,
+        "event_energy_error": 8.605854744103691e-19,
+        "work": -0.08490077347551324,
+        "heat": 9.69531741523609e-08
+      },
+      "max_energy_error": 5.9684309070423395e-05,
+      "max_momentum_error": 2.577673104084566e-15,
+      "max_angular_error": 2.661785098476852e-16,
+      "minimum_clock_surplus": 0.057007125590305074,
+      "settings": {
+        "tag": "active_nu1",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "active_res2",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.3374987667982903,
+      "core_separation_at_evaluation": 1.6264873590037294,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.4250000000000007,
+              0.1750000000000007
+            ],
+            [
+              0.47500000000000053,
+              0.025000000000000355
+            ],
+            [
+              -0.12499999999999956,
+              0.3250000000000002
+            ]
+          ],
+          "stock_gas_peak_distance": 0.5700877125495691,
+          "stock_stars_peak_distance": 0.15811388300841925,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.41322804966859833,
+              0.09995976383317785,
+              -0.005423865163577253
+            ],
+            [
+              -0.000709301831940247,
+              -0.22064055252109743,
+              0.24756560731958727
+            ],
+            [
+              -0.3418760000127143,
+              -0.1456333896206791,
+              -0.041904301915735694
+            ]
+          ],
+          "stock_mass": 0.8380848732686033,
+          "baryon_mass": 0.1619151267314085
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.4749999999999996,
+              -0.5249999999999999
+            ],
+            [
+              -1.525,
+              -0.32499999999999973
+            ],
+            [
+              1.125,
+              0.7750000000000004
+            ]
+          ],
+          "stock_gas_peak_distance": 2.9068883707497264,
+          "stock_stars_peak_distance": 0.20615528128088326,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.3007366644547493,
+              -0.34504029133674136,
+              0.026217765509512256
+            ],
+            [
+              -1.5421020346526044,
+              0.04893696646402537,
+              -0.03360104047048012
+            ],
+            [
+              0.9043506997843933,
+              0.6521249585957083,
+              -0.019941638434306706
+            ]
+          ],
+          "stock_mass": 0.2514254619805723,
+          "baryon_mass": 0.04857453801942266
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.4250000000000007,
+          0.1750000000000007
+        ],
+        [
+          -1.4249999999999994,
+          -0.47499999999999964
+        ]
+      ],
+      "contact": {
+        "attempts": 18320,
+        "no_partner": 443,
+        "accepted": 14445,
+        "cross_cohort": 3339,
+        "unaffordable_work": 109,
+        "unaffordable_heat": 0,
+        "event_energy_error": 5.692061405548898e-19,
+        "work": -0.08742527210686318,
+        "heat": 9.954637375712564e-08
+      },
+      "max_energy_error": 2.3624813717898566e-05,
+      "max_momentum_error": 3.1639681568158536e-15,
+      "max_angular_error": 3.425950343790778e-16,
+      "minimum_clock_surplus": 0.013621436054688907,
+      "settings": {
+        "tag": "active_res2",
+        "mult": 2,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.36,
+        "eps": 0.08,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "active_short_range",
+      "pericentre_time": 8.8,
+      "evaluation_time": 10.8,
+      "core_separation_at_pericentre": 0.722666303407422,
+      "core_separation_at_evaluation": 1.3788969064321888,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.47500000000000053,
+              0.1750000000000007
+            ],
+            [
+              0.47500000000000053,
+              0.27500000000000036
+            ],
+            [
+              -0.6749999999999994,
+              -0.32499999999999973
+            ]
+          ],
+          "stock_gas_peak_distance": 1.2539936203984454,
+          "stock_stars_peak_distance": 0.09999999999999964,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.521412743580179,
+              0.14546417721231428,
+              0.025002113835423605
+            ],
+            [
+              -0.0658348908289339,
+              -0.12520749984518387,
+              -0.025690112059201128
+            ],
+            [
+              -0.4284013309148739,
+              -0.07020903587383584,
+              -0.11392747552692851
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.5749999999999997,
+              -0.7249999999999996
+            ],
+            [
+              -1.4249999999999994,
+              -0.5749999999999997
+            ],
+            [
+              0.625,
+              0.9750000000000005
+            ]
+          ],
+          "stock_gas_peak_distance": 2.7802877548915688,
+          "stock_stars_peak_distance": 0.21213203435596445,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.5684891806888257,
+              -0.5189740862544786,
+              -0.012618535541027822
+            ],
+            [
+              -1.5307680270745303,
+              -0.28749479687355894,
+              0.1418460480176207
+            ],
+            [
+              0.6733583081239565,
+              0.5347049417157017,
+              -0.045814101276311706
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.47500000000000053,
+          0.1750000000000007
+        ],
+        [
+          -1.5749999999999997,
+          -0.6749999999999994
+        ]
+      ],
+      "contact": {
+        "attempts": 9018,
+        "no_partner": 703,
+        "accepted": 6767,
+        "cross_cohort": 1590,
+        "unaffordable_work": 47,
+        "unaffordable_heat": 0,
+        "event_energy_error": 9.372419561368833e-19,
+        "work": -0.08783170297097084,
+        "heat": 1.0040514183070132e-07
+      },
+      "max_energy_error": 6.832630784570696e-05,
+      "max_momentum_error": 2.22606368379465e-15,
+      "max_angular_error": 3.3574258742480567e-16,
+      "minimum_clock_surplus": 0.03468452874330108,
+      "settings": {
+        "tag": "active_short_range",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.3,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "baseline_fine",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.3238940364685453,
+      "core_separation_at_evaluation": 2.506583675970516,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5750000000000002,
+              0.07500000000000018
+            ],
+            [
+              0.4250000000000007,
+              -0.07499999999999973
+            ],
+            [
+              -0.37499999999999956,
+              -0.17499999999999938
+            ]
+          ],
+          "stock_gas_peak_distance": 0.9823441352194247,
+          "stock_stars_peak_distance": 0.21213203435596384,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5328333425999409,
+              0.05652906986121904,
+              0.0005796097169570493
+            ],
+            [
+              0.5338080371588564,
+              0.004008869917458956,
+              -0.018752032552851277
+            ],
+            [
+              -0.08504199795848995,
+              -0.09492543129901573,
+              -0.0021908277071224103
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.8749999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.8249999999999997,
+              -0.22499999999999964
+            ],
+            [
+              0.1750000000000007,
+              0.27500000000000036
+            ]
+          ],
+          "stock_gas_peak_distance": 2.136000936329383,
+          "stock_stars_peak_distance": 0.11180339887498948,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.811159741562134,
+              -0.20194997589494734,
+              0.0034643560179619874
+            ],
+            [
+              -1.780659913205148,
+              -0.268665013471097,
+              -0.045526201011157556
+            ],
+            [
+              0.49063726730347035,
+              0.43223898102283803,
+              -0.009340794243125528
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.5250000000000004,
+          0.07500000000000018
+        ],
+        [
+          -1.8749999999999996,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error": 6.533932590453249e-06,
+      "max_momentum_error": 2.3205499552866778e-15,
+      "max_angular_error": 3.94320595519234e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "settings": {
+        "tag": "baseline_fine",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "baseline_optimized",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.3238947903364617,
+      "core_separation_at_evaluation": 2.5065719054800937,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5750000000000002,
+              0.07500000000000018
+            ],
+            [
+              0.4250000000000007,
+              -0.07499999999999973
+            ],
+            [
+              -0.37499999999999956,
+              -0.17499999999999938
+            ]
+          ],
+          "stock_gas_peak_distance": 0.9823441352194247,
+          "stock_stars_peak_distance": 0.21213203435596384,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5328347302138153,
+              0.05651393350373291,
+              0.0005828933695430523
+            ],
+            [
+              0.5338004828667381,
+              0.004004610521421953,
+              -0.01875223838764795
+            ],
+            [
+              -0.08504925569756197,
+              -0.09491229986342403,
+              -0.0021895193509453756
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.8749999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.8249999999999997,
+              -0.22499999999999964
+            ],
+            [
+              0.1750000000000007,
+              0.27500000000000036
+            ]
+          ],
+          "stock_gas_peak_distance": 2.136000936329383,
+          "stock_stars_peak_distance": 0.11180339887498948,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.811164171299983,
+              -0.20190787581800373,
+              0.0034571624713510703
+            ],
+            [
+              -1.7806679064061073,
+              -0.2686121507151965,
+              -0.04552895121046275
+            ],
+            [
+              0.4906649796110959,
+              0.4322390980643754,
+              -0.009366828499133548
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.5250000000000004,
+          0.07500000000000018
+        ],
+        [
+          -1.8749999999999996,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error": 2.6194458493020782e-05,
+      "max_momentum_error": 2.4121662510693023e-15,
+      "max_angular_error": 2.808174903082428e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "settings": {
+        "tag": "baseline_optimized",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "baseline_res2",
+      "pericentre_time": 7.8,
+      "evaluation_time": 9.8,
+      "core_separation_at_pericentre": 0.3076733910832394,
+      "core_separation_at_evaluation": 2.3499958151983273,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5250000000000004,
+              0.07500000000000018
+            ],
+            [
+              0.5250000000000004,
+              0.125
+            ],
+            [
+              -0.12499999999999956,
+              -0.32499999999999973
+            ]
+          ],
+          "stock_gas_peak_distance": 0.7632168761236873,
+          "stock_stars_peak_distance": 0.04999999999999982,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.4987260398535455,
+              0.05179559695344522,
+              0.0014210450315432384
+            ],
+            [
+              0.5053518957677711,
+              0.040517860069570096,
+              -0.0105972818491517
+            ],
+            [
+              -0.0885387239647106,
+              -0.10295672790883732,
+              0.0033290964211728047
+            ]
+          ],
+          "stock_mass": 0.8380848732686033,
+          "baryon_mass": 0.1619151267314085
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.775,
+              -0.2749999999999999
+            ],
+            [
+              -1.7249999999999996,
+              -0.22499999999999964
+            ],
+            [
+              0.07500000000000018,
+              0.3250000000000002
+            ]
+          ],
+          "stock_gas_peak_distance": 1.9448650338776725,
+          "stock_stars_peak_distance": 0.07071067811865513,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.6869569861466733,
+              -0.1882862060546517,
+              -0.0023916419979668627
+            ],
+            [
+              -1.6867595490649978,
+              -0.19072855380134807,
+              -0.016556124172521985
+            ],
+            [
+              0.44034989362554056,
+              0.44336291412254253,
+              -0.01763503362244878
+            ]
+          ],
+          "stock_mass": 0.2514254619805723,
+          "baryon_mass": 0.04857453801942266
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.47500000000000053,
+          0.07500000000000018
+        ],
+        [
+          -1.7249999999999996,
+          -0.2749999999999999
+        ]
+      ],
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error": 6.279218243072003e-06,
+      "max_momentum_error": 3.600735615350865e-15,
+      "max_angular_error": 3.6188081713980574e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "settings": {
+        "tag": "baseline_res2",
+        "mult": 2,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.36,
+        "eps": 0.08,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "baseline_seed2",
+      "pericentre_time": 7.8,
+      "evaluation_time": 9.8,
+      "core_separation_at_pericentre": 0.2998188608290055,
+      "core_separation_at_evaluation": 2.389704945934303,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5250000000000004,
+              0.1750000000000007
+            ],
+            [
+              0.625,
+              -0.12499999999999956
+            ],
+            [
+              -0.17499999999999938,
+              -0.17499999999999938
+            ]
+          ],
+          "stock_gas_peak_distance": 0.7826237921249262,
+          "stock_stars_peak_distance": 0.31622776601683805,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.49146437688053335,
+              0.043513827705527294,
+              -0.0024867723874601416
+            ],
+            [
+              0.4998082039372749,
+              0.05204741513968286,
+              -0.03369994793911016
+            ],
+            [
+              -0.0867054174058353,
+              -0.14634398754980543,
+              0.026819613557792023
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.775,
+              -0.32499999999999973
+            ],
+            [
+              -1.7249999999999996,
+              -0.2749999999999999
+            ],
+            [
+              0.125,
+              0.5250000000000004
+            ]
+          ],
+          "stock_gas_peak_distance": 2.0814658296498645,
+          "stock_stars_peak_distance": 0.07071067811865482,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.6621744825125127,
+              -0.1621893755397852,
+              0.0076247335877226464
+            ],
+            [
+              -1.6713092396044502,
+              -0.19883424287833787,
+              -0.04193989691642688
+            ],
+            [
+              0.43125843888289433,
+              0.5926251173386885,
+              -0.06373284330185129
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.47500000000000053,
+          0.1750000000000007
+        ],
+        [
+          -1.6749999999999994,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error": 2.6645690558210187e-05,
+      "max_momentum_error": 2.4543782673615393e-15,
+      "max_angular_error": 3.77743415933924e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "settings": {
+        "tag": "baseline_seed2",
+        "mult": 1,
+        "seed": 51779,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "collisionless_baryons",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.3250580915229126,
+      "core_separation_at_evaluation": 2.5771739099276236,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.625,
+              0.125
+            ],
+            [
+              0.5250000000000004,
+              0.025000000000000355
+            ],
+            [
+              0.625,
+              0.125
+            ]
+          ],
+          "stock_gas_peak_distance": 0.0,
+          "stock_stars_peak_distance": 0.141421356237309,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5514531243087718,
+              0.06028996330926387,
+              0.0001351371645835801
+            ],
+            [
+              0.5471374830618583,
+              -0.0001142725190449524,
+              -0.014357085270344844
+            ],
+            [
+              0.5523018385487672,
+              0.04978080801955068,
+              0.01085492780622081
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.9249999999999994,
+              -0.32499999999999973
+            ],
+            [
+              -1.8749999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.9749999999999996,
+              -0.2749999999999999
+            ]
+          ],
+          "stock_gas_peak_distance": 0.07071067811865482,
+          "stock_stars_peak_distance": 0.04999999999999982,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.8353287000182723,
+              -0.18722420826532235,
+              0.0057973143593285864
+            ],
+            [
+              -1.8062529482378185,
+              -0.24990297988507476,
+              -0.0400750393928113
+            ],
+            [
+              -1.8602990561845987,
+              -0.21181955156945628,
+              -0.06068733774238882
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.625,
+          0.07500000000000018
+        ],
+        [
+          -1.9749999999999996,
+          -0.2749999999999999
+        ]
+      ],
+      "contact": {
+        "attempts": 0,
+        "no_partner": 0,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 0,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error": 2.7317929572994215e-05,
+      "max_momentum_error": 5.78655182250588e-16,
+      "max_angular_error": 2.446665623626357e-16,
+      "minimum_clock_surplus": 1.2000000000000002,
+      "settings": {
+        "tag": "collisionless_baryons",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.0,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": true
+      }
+    },
+    {
+      "tag": "depleted_nu1",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.32495691557111994,
+      "core_separation_at_evaluation": 2.499285932676175,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5750000000000002,
+              0.125
+            ],
+            [
+              0.375,
+              -0.12499999999999956
+            ],
+            [
+              -0.2749999999999999,
+              -0.32499999999999973
+            ]
+          ],
+          "stock_gas_peak_distance": 0.9617692030835672,
+          "stock_stars_peak_distance": 0.32015621187164217,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5304406622964368,
+              0.05574044367327277,
+              -0.0015404677203379872
+            ],
+            [
+              0.5363547816733122,
+              0.010576236660161109,
+              -0.022203744198516482
+            ],
+            [
+              -0.10504018087845089,
+              -0.10145628687295143,
+              -0.005740891613486715
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.8749999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.8249999999999997,
+              -0.2749999999999999
+            ],
+            [
+              0.125,
+              0.27500000000000036
+            ]
+          ],
+          "stock_gas_peak_distance": 2.0880613017821097,
+          "stock_stars_peak_distance": 0.0707106781186545,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.7852291554142397,
+              -0.19676042725961734,
+              0.008527978886648547
+            ],
+            [
+              -1.7794846726718119,
+              -0.26206430280253423,
+              -0.045224848609719086
+            ],
+            [
+              0.44990207243319386,
+              0.4348702864569953,
+              0.015902345177222114
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.5750000000000002,
+          0.07500000000000018
+        ],
+        [
+          -1.8749999999999996,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 9021,
+        "no_partner": 509,
+        "accepted": 61,
+        "cross_cohort": 37,
+        "unaffordable_work": 4241,
+        "unaffordable_heat": 0,
+        "event_energy_error": 6.505213034913027e-19,
+        "work": -0.003158288925788822,
+        "heat": 3.5873800033135326e-09
+      },
+      "max_energy_error": 2.619445849295016e-05,
+      "max_momentum_error": 2.344591836443821e-15,
+      "max_angular_error": 4.0838423301947607e-16,
+      "minimum_clock_surplus": 9.999999999998899e-05,
+      "settings": {
+        "tag": "depleted_nu1",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 0.0001,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "exact_floor",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.3238947903364617,
+      "core_separation_at_evaluation": 2.5065719054800937,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5750000000000002,
+              0.07500000000000018
+            ],
+            [
+              0.4250000000000007,
+              -0.07499999999999973
+            ],
+            [
+              -0.37499999999999956,
+              -0.17499999999999938
+            ]
+          ],
+          "stock_gas_peak_distance": 0.9823441352194247,
+          "stock_stars_peak_distance": 0.21213203435596384,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5328347302138153,
+              0.05651393350373291,
+              0.0005828933695430523
+            ],
+            [
+              0.5338004828667381,
+              0.004004610521421953,
+              -0.01875223838764795
+            ],
+            [
+              -0.08504925569756197,
+              -0.09491229986342403,
+              -0.0021895193509453756
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.8749999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.8249999999999997,
+              -0.22499999999999964
+            ],
+            [
+              0.1750000000000007,
+              0.27500000000000036
+            ]
+          ],
+          "stock_gas_peak_distance": 2.136000936329383,
+          "stock_stars_peak_distance": 0.11180339887498948,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.811164171299983,
+              -0.20190787581800373,
+              0.0034571624713510703
+            ],
+            [
+              -1.7806679064061073,
+              -0.2686121507151965,
+              -0.04552895121046275
+            ],
+            [
+              0.4906649796110959,
+              0.4322390980643754,
+              -0.009366828499133548
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.5250000000000004,
+          0.07500000000000018
+        ],
+        [
+          -1.8749999999999996,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 9021,
+        "no_partner": 590,
+        "accepted": 0,
+        "cross_cohort": 0,
+        "unaffordable_work": 4244,
+        "unaffordable_heat": 0,
+        "event_energy_error": 0.0,
+        "work": 0.0,
+        "heat": 0.0
+      },
+      "max_energy_error": 2.619445849295016e-05,
+      "max_momentum_error": 2.4121662510693023e-15,
+      "max_angular_error": 2.808174903082428e-16,
+      "minimum_clock_surplus": 0.0,
+      "settings": {
+        "tag": "exact_floor",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 1.0,
+        "available": 0.0,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "weak_nu01",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.39125612229439166,
+      "core_separation_at_evaluation": 2.393887807352445,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5250000000000004,
+              0.125
+            ],
+            [
+              0.375,
+              0.025000000000000355
+            ],
+            [
+              -0.17499999999999938,
+              -0.2749999999999999
+            ]
+          ],
+          "stock_gas_peak_distance": 0.8062257748298546,
+          "stock_stars_peak_distance": 0.18027756377319956,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5401669019297459,
+              0.06016340292504229,
+              0.0008758534188244005
+            ],
+            [
+              0.5605642054276632,
+              -0.037999825332467665,
+              -0.0014316002548363867
+            ],
+            [
+              -0.2270985251802548,
+              -0.1483150146688515,
+              0.028243369674589958
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.8749999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.7249999999999996,
+              -0.22499999999999964
+            ],
+            [
+              0.22500000000000053,
+              0.375
+            ]
+          ],
+          "stock_gas_peak_distance": 2.2135943621178655,
+          "stock_stars_peak_distance": 0.18027756377319945,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.7666145976136822,
+              -0.20385114535037438,
+              0.0017269521737063968
+            ],
+            [
+              -1.7883758093446585,
+              -0.13232783328362452,
+              -0.05460345036801235
+            ],
+            [
+              0.5452523881144444,
+              0.5504096856601862,
+              -0.1132166819237781
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.47500000000000053,
+          0.125
+        ],
+        [
+          -1.8249999999999997,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 916,
+        "no_partner": 42,
+        "accepted": 734,
+        "cross_cohort": 155,
+        "unaffordable_work": 3,
+        "unaffordable_heat": 0,
+        "event_energy_error": 6.640738306473715e-19,
+        "work": -0.002233544086021368,
+        "heat": 2.9565249568729887e-09
+      },
+      "max_energy_error": 3.246477606434564e-05,
+      "max_momentum_error": 2.443768131411327e-15,
+      "max_angular_error": 2.7144172467083395e-16,
+      "minimum_clock_surplus": 0.14860209001116997,
+      "settings": {
+        "tag": "weak_nu01",
+        "mult": 1,
+        "seed": 39177,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "weak_res2",
+      "pericentre_time": 7.8,
+      "evaluation_time": 9.8,
+      "core_separation_at_pericentre": 0.3214688611426894,
+      "core_separation_at_evaluation": 2.3495398462861314,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.47500000000000053,
+              0.07500000000000018
+            ],
+            [
+              0.5750000000000002,
+              0.1750000000000007
+            ],
+            [
+              -0.22499999999999964,
+              -0.2749999999999999
+            ]
+          ],
+          "stock_gas_peak_distance": 0.7826237921249266,
+          "stock_stars_peak_distance": 0.14142135623730964,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.4887503219639005,
+              0.048356405129501304,
+              -0.001493211730423349
+            ],
+            [
+              0.4897236629635434,
+              -0.02872796486172252,
+              -0.03541329366977485
+            ],
+            [
+              -0.17200707408653343,
+              -0.06631553565019824,
+              0.03216852558325245
+            ]
+          ],
+          "stock_mass": 0.8380848732686033,
+          "baryon_mass": 0.1619151267314085
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.7249999999999996,
+              -0.32499999999999973
+            ],
+            [
+              -1.7249999999999996,
+              -0.22499999999999964
+            ],
+            [
+              0.22500000000000053,
+              0.3250000000000002
+            ]
+          ],
+          "stock_gas_peak_distance": 2.0554804791094465,
+          "stock_stars_peak_distance": 0.10000000000000009,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.6163603644737443,
+              -0.18798624438710348,
+              -0.00012051864898744481
+            ],
+            [
+              -1.707706432861637,
+              -0.25193144209403645,
+              -0.03645015974442704
+            ],
+            [
+              0.5083336610140476,
+              0.42830957470113384,
+              -0.05534984152074693
+            ]
+          ],
+          "stock_mass": 0.2514254619805723,
+          "baryon_mass": 0.04857453801942266
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.47500000000000053,
+          0.07500000000000018
+        ],
+        [
+          -1.7249999999999996,
+          -0.32499999999999973
+        ]
+      ],
+      "contact": {
+        "attempts": 1820,
+        "no_partner": 70,
+        "accepted": 1430,
+        "cross_cohort": 342,
+        "unaffordable_work": 5,
+        "unaffordable_heat": 0,
+        "event_energy_error": 3.1848438816761693e-19,
+        "work": -0.007638316443450972,
+        "heat": 8.680455248631874e-09
+      },
+      "max_energy_error": 8.948862273092029e-06,
+      "max_momentum_error": 3.270219142853378e-15,
+      "max_angular_error": 4.235929139076729e-16,
+      "minimum_clock_surplus": 0.2164309147563619,
+      "settings": {
+        "tag": "weak_res2",
+        "mult": 2,
+        "seed": 39177,
+        "dt": 0.005,
+        "end": 12.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.36,
+        "eps": 0.08,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    },
+    {
+      "tag": "weak_seed2",
+      "pericentre_time": 8.0,
+      "evaluation_time": 10.0,
+      "core_separation_at_pericentre": 0.35964342975400754,
+      "core_separation_at_evaluation": 2.4280041825588685,
+      "cohorts": [
+        {
+          "cohort": 0,
+          "projected_peaks_stock_stars_gas": [
+            [
+              0.5750000000000002,
+              0.125
+            ],
+            [
+              0.6750000000000007,
+              -0.12499999999999956
+            ],
+            [
+              0.27500000000000036,
+              -0.22499999999999964
+            ]
+          ],
+          "stock_gas_peak_distance": 0.460977222864644,
+          "stock_stars_peak_distance": 0.26925824035672496,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              0.5220310666920953,
+              0.050793587540523946,
+              0.007589331583453062
+            ],
+            [
+              0.5561138991849383,
+              0.1445052555327827,
+              -0.06532134284514693
+            ],
+            [
+              -0.13717051076319367,
+              -0.09435439898998986,
+              0.005966019197709539
+            ]
+          ],
+          "stock_mass": 0.8380848732685873,
+          "baryon_mass": 0.16191512673140857
+        },
+        {
+          "cohort": 1,
+          "projected_peaks_stock_stars_gas": [
+            [
+              -1.8749999999999996,
+              -0.4249999999999994
+            ],
+            [
+              -1.8249999999999997,
+              -0.32499999999999973
+            ],
+            [
+              0.22500000000000053,
+              0.5750000000000002
+            ]
+          ],
+          "stock_gas_peak_distance": 2.325940669922601,
+          "stock_stars_peak_distance": 0.11180339887498908,
+          "centres_of_mass_stock_stars_gas": [
+            [
+              -1.7217822311785402,
+              -0.2249122627230903,
+              -0.008102463647620912
+            ],
+            [
+              -1.7313878057030239,
+              -0.24255932814751446,
+              -0.022272805779536668
+            ],
+            [
+              0.3317985927632832,
+              0.6091645555900344,
+              -0.08760971193088614
+            ]
+          ],
+          "stock_mass": 0.25142546198057747,
+          "baryon_mass": 0.04857453801942296
+        }
+      ],
+      "global_total_mass_peaks": [
+        [
+          0.5250000000000004,
+          0.125
+        ],
+        [
+          -1.8249999999999997,
+          -0.37499999999999956
+        ]
+      ],
+      "contact": {
+        "attempts": 994,
+        "no_partner": 59,
+        "accepted": 766,
+        "cross_cohort": 164,
+        "unaffordable_work": 5,
+        "unaffordable_heat": 0,
+        "event_energy_error": 4.104404025039119e-19,
+        "work": -0.006050262241721322,
+        "heat": 7.350068351678681e-09
+      },
+      "max_energy_error": 3.207374631141892e-05,
+      "max_momentum_error": 2.305431778410703e-15,
+      "max_angular_error": 4.099615753214933e-16,
+      "minimum_clock_surplus": 0.2088914290719588,
+      "settings": {
+        "tag": "weak_seed2",
+        "mult": 1,
+        "seed": 51779,
+        "dt": 0.01,
+        "end": 12.0,
+        "nu": 0.1,
+        "available": 1.2,
+        "h": 0.45,
+        "eps": 0.1,
+        "contact_h": 0.45,
+        "isolated": false,
+        "collisionless_gas": false
+      }
+    }
+  ],
+  "exploratory_apertures": [
+    {
+      "tag": "active_fine",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.026246857631695833,
+      "own_baryon_retention": 0.08425039170813949,
+      "own_stock_retention": 0.6328125000000011,
+      "own_b_over_s": 0.13313642146471402,
+      "imported_stock_mass": 0.024880644675161313,
+      "imported_baryon_mass": 0.001324469542071306
+    },
+    {
+      "tag": "active_fine",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.07968199363626914,
+      "own_baryon_retention": 0.4051754308789535,
+      "own_stock_retention": 0.9062500000000002,
+      "own_b_over_s": 0.44709013062505204,
+      "imported_stock_mass": 0.12374846956856551,
+      "imported_baryon_mass": 0.01086969542071306
+    },
+    {
+      "tag": "active_fine",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.12748454341939786,
+      "own_baryon_retention": 0.7675550235024884,
+      "own_stock_retention": 0.9505208333333335,
+      "own_b_over_s": 0.8075099425341247,
+      "imported_stock_mass": 0.23636612441403254,
+      "imported_baryon_mass": 0.02665196570833613
+    },
+    {
+      "tag": "active_fine",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.06985855576112529,
+      "own_baryon_retention": 0.020586917359875695,
+      "own_stock_retention": 0.3802083333333334,
+      "own_b_over_s": 0.0541464127821388,
+      "imported_stock_mass": 0.013095076144821733,
+      "imported_baryon_mass": 0.007163130280475375
+    },
+    {
+      "tag": "active_fine",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.08998191847578198,
+      "own_baryon_retention": 0.07018579125044098,
+      "own_stock_retention": 0.924479166666667,
+      "own_b_over_s": 0.0759192784230122,
+      "imported_stock_mass": 0.37757469550902634,
+      "imported_baryon_mass": 0.05690832481392177
+    },
+    {
+      "tag": "active_fine",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.11194394738856574,
+      "own_baryon_retention": 0.1983408930945565,
+      "own_stock_retention": 0.9843750000000003,
+      "own_b_over_s": 0.20148916123891447,
+      "imported_stock_mass": 0.7638794417812647,
+      "imported_baryon_mass": 0.11785477990831876
+    },
+    {
+      "tag": "active_nu1",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.024837431323416648,
+      "own_baryon_retention": 0.062376792013271405,
+      "own_stock_retention": 0.5000000000000014,
+      "own_b_over_s": 0.12475358402654245,
+      "imported_stock_mass": 0.018333106602750438,
+      "imported_baryon_mass": 0.0010402271565534797
+    },
+    {
+      "tag": "active_nu1",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.06839870887547107,
+      "own_baryon_retention": 0.3330869173598763,
+      "own_stock_retention": 0.8776041666666671,
+      "own_b_over_s": 0.3795411758640725,
+      "imported_stock_mass": 0.1086891320020205,
+      "imported_baryon_mass": 0.008049544408981316
+    },
+    {
+      "tag": "active_nu1",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.11229111084201304,
+      "own_baryon_retention": 0.645128388172473,
+      "own_stock_retention": 0.9479166666666669,
+      "own_b_over_s": 0.6805750029072241,
+      "imported_stock_mass": 0.21672351019679992,
+      "imported_baryon_mass": 0.023450829925568732
+    },
+    {
+      "tag": "active_nu1",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.0705176558114926,
+      "own_baryon_retention": 0.02971690169155007,
+      "own_stock_retention": 0.3619791666666668,
+      "own_b_over_s": 0.08209561330615268,
+      "imported_stock_mass": 0.034920203052857965,
+      "imported_baryon_mass": 0.00811060489886813
+    },
+    {
+      "tag": "active_nu1",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.08632274876433806,
+      "own_baryon_retention": 0.08973244224878198,
+      "own_stock_retention": 0.869791666666667,
+      "own_b_over_s": 0.10316544258542595,
+      "imported_stock_mass": 0.4255899747067057,
+      "imported_baryon_mass": 0.05651160738404062
+    },
+    {
+      "tag": "active_nu1",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.10828385641787673,
+      "own_baryon_retention": 0.252997591097874,
+      "own_stock_retention": 0.9817708333333337,
+      "own_b_over_s": 0.2576951591023437,
+      "imported_stock_mass": 0.761696929090461,
+      "imported_baryon_mass": 0.11018079091290284
+    },
+    {
+      "tag": "active_res2",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.02640452151194676,
+      "own_baryon_retention": 0.0837302585273722,
+      "own_stock_retention": 0.6236979166666557,
+      "own_b_over_s": 0.1342480971795887,
+      "imported_stock_mass": 0.02422589086792023,
+      "imported_baryon_mass": 0.0012760983493123928
+    },
+    {
+      "tag": "active_res2",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.07419853630418374,
+      "own_baryon_retention": 0.386042856454407,
+      "own_stock_retention": 0.8919270833333303,
+      "own_b_over_s": 0.43281885219997895,
+      "imported_stock_mass": 0.1627063210994086,
+      "imported_baryon_mass": 0.01044333184243632
+    },
+    {
+      "tag": "active_res2",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.12643000415099748,
+      "own_baryon_retention": 0.763404107910446,
+      "own_stock_retention": 0.9466145833333318,
+      "own_b_over_s": 0.8064571593882028,
+      "imported_stock_mass": 0.24422317010092054,
+      "imported_baryon_mass": 0.0265582157083363
+    },
+    {
+      "tag": "active_res2",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.05957736314599529,
+      "own_baryon_retention": 0.022226072275298315,
+      "own_stock_retention": 0.5859375000000084,
+      "own_b_over_s": 0.03793249668317524,
+      "imported_stock_mass": 0.021825126908036223,
+      "imported_baryon_mass": 0.009635983493123937
+    },
+    {
+      "tag": "active_res2",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.08387325437611268,
+      "own_baryon_retention": 0.07908651098841436,
+      "own_stock_retention": 0.9479166666666673,
+      "own_b_over_s": 0.08343192368008542,
+      "imported_stock_mass": 0.400491078762463,
+      "imported_baryon_mass": 0.05464380493460648
+    },
+    {
+      "tag": "active_res2",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.11211128531268948,
+      "own_baryon_retention": 0.2664633030016857,
+      "own_stock_retention": 0.98046875,
+      "own_b_over_s": 0.27177133692602207,
+      "imported_stock_mass": 0.755149391018062,
+      "imported_baryon_mass": 0.11353407348302164
+    },
+    {
+      "tag": "active_short_range",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.04078741047817293,
+      "own_baryon_retention": 0.054656698003317954,
+      "own_stock_retention": 0.22135416666666793,
+      "own_b_over_s": 0.2469196709796938,
+      "imported_stock_mass": 0.031428182747572184,
+      "imported_baryon_mass": 0.000375
+    },
+    {
+      "tag": "active_short_range",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.06840357450842598,
+      "own_baryon_retention": 0.35661682334992284,
+      "own_stock_retention": 0.8307291666666672,
+      "own_b_over_s": 0.4292816933115056,
+      "imported_stock_mass": 0.16696222084647727,
+      "imported_baryon_mass": 0.005638635782767399
+    },
+    {
+      "tag": "active_short_range",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1151932938511651,
+      "own_baryon_retention": 0.7064649138242094,
+      "own_stock_retention": 0.9531250000000001,
+      "own_b_over_s": 0.7412090899139245,
+      "imported_stock_mass": 0.24487792390816668,
+      "imported_baryon_mass": 0.02148939084142612
+    },
+    {
+      "tag": "active_short_range",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.08076462180933534,
+      "own_baryon_retention": 0.018013552689891233,
+      "own_stock_retention": 0.3437500000000001,
+      "own_b_over_s": 0.05240306237059266,
+      "imported_stock_mass": 0.00873005076321449,
+      "imported_baryon_mass": 0.00748560489886813
+    },
+    {
+      "tag": "active_short_range",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.10344502500629407,
+      "own_baryon_retention": 0.09043738740964248,
+      "own_stock_retention": 0.908854166666667,
+      "own_b_over_s": 0.09950703944212809,
+      "imported_stock_mass": 0.2619015228964352,
+      "imported_baryon_mass": 0.05219090095874353
+    },
+    {
+      "tag": "active_short_range",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.10587681332336263,
+      "own_baryon_retention": 0.24785086175790508,
+      "own_stock_retention": 0.986979166666667,
+      "own_b_over_s": 0.2511206620449486,
+      "imported_stock_mass": 0.7420543148732286,
+      "imported_baryon_mass": 0.10521513525082023
+    },
+    {
+      "tag": "baseline_fine",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.11828952045085468,
+      "own_baryon_retention": 0.17003388172472883,
+      "own_stock_retention": 0.47395833333333487,
+      "own_b_over_s": 0.3587528053972289,
+      "imported_stock_mass": 0.0006547538072410867,
+      "imported_baryon_mass": 0.025847116720067873
+    },
+    {
+      "tag": "baseline_fine",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.18251481074897336,
+      "own_baryon_retention": 0.7883883568358218,
+      "own_stock_retention": 0.8437500000000004,
+      "own_b_over_s": 0.9343862006943068,
+      "imported_stock_mass": 0.02291638325343805,
+      "imported_baryon_mass": 0.03534181214078099
+    },
+    {
+      "tag": "baseline_fine",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16824646311208535,
+      "own_baryon_retention": 0.9681682628258682,
+      "own_stock_retention": 0.9244791666666669,
+      "own_b_over_s": 1.0472580645778404,
+      "imported_stock_mass": 0.21344974116059448,
+      "imported_baryon_mass": 0.04313969030906634
+    },
+    {
+      "tag": "baseline_fine",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.04877329669889973,
+      "own_baryon_retention": 0.08878108111446396,
+      "own_stock_retention": 0.799479166666667,
+      "own_b_over_s": 0.1110486486904044,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.006329796947142041
+    },
+    {
+      "tag": "baseline_fine",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1630642204958236,
+      "own_baryon_retention": 0.23648283395692046,
+      "own_stock_retention": 0.9583333333333336,
+      "own_b_over_s": 0.24676469630287345,
+      "imported_stock_mass": 0.13968081221143183,
+      "imported_baryon_mass": 0.06267296947142033
+    },
+    {
+      "tag": "baseline_fine",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1666777615836163,
+      "own_baryon_retention": 0.6994154622156014,
+      "own_stock_retention": 0.9739583333333337,
+      "own_b_over_s": 0.718116410403184,
+      "imported_stock_mass": 0.5718183249905473,
+      "imported_baryon_mass": 0.12937851508766224
+    },
+    {
+      "tag": "baseline_optimized",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.11828952045085468,
+      "own_baryon_retention": 0.17003388172472883,
+      "own_stock_retention": 0.47395833333333487,
+      "own_b_over_s": 0.3587528053972289,
+      "imported_stock_mass": 0.0006547538072410867,
+      "imported_baryon_mass": 0.025847116720067873
+    },
+    {
+      "tag": "baseline_optimized",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.18251481074897336,
+      "own_baryon_retention": 0.7883883568358218,
+      "own_stock_retention": 0.8437500000000004,
+      "own_b_over_s": 0.9343862006943068,
+      "imported_stock_mass": 0.02291638325343805,
+      "imported_baryon_mass": 0.03534181214078099
+    },
+    {
+      "tag": "baseline_optimized",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16824646311208535,
+      "own_baryon_retention": 0.9681682628258682,
+      "own_stock_retention": 0.9244791666666669,
+      "own_b_over_s": 1.0472580645778404,
+      "imported_stock_mass": 0.21344974116059448,
+      "imported_baryon_mass": 0.04313969030906634
+    },
+    {
+      "tag": "baseline_optimized",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.04877329669889973,
+      "own_baryon_retention": 0.08878108111446396,
+      "own_stock_retention": 0.799479166666667,
+      "own_b_over_s": 0.1110486486904044,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.006329796947142041
+    },
+    {
+      "tag": "baseline_optimized",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1630642204958236,
+      "own_baryon_retention": 0.23648283395692046,
+      "own_stock_retention": 0.9583333333333336,
+      "own_b_over_s": 0.24676469630287345,
+      "imported_stock_mass": 0.13968081221143183,
+      "imported_baryon_mass": 0.06267296947142033
+    },
+    {
+      "tag": "baseline_optimized",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1666777615836163,
+      "own_baryon_retention": 0.6994154622156014,
+      "own_stock_retention": 0.9739583333333337,
+      "own_b_over_s": 0.718116410403184,
+      "imported_stock_mass": 0.5718183249905473,
+      "imported_baryon_mass": 0.12937851508766224
+    },
+    {
+      "tag": "baseline_res2",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.12280102757591552,
+      "own_baryon_retention": 0.20041127596353098,
+      "own_stock_retention": 0.49348958333332393,
+      "own_b_over_s": 0.4061104483904874,
+      "imported_stock_mass": 0.0026190152289643468,
+      "imported_baryon_mass": 0.02581586672006803
+    },
+    {
+      "tag": "baseline_res2",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.18069440859358107,
+      "own_baryon_retention": 0.7831184195091242,
+      "own_stock_retention": 0.8359374999999952,
+      "own_b_over_s": 0.9368145579174624,
+      "imported_stock_mass": 0.03830309772360361,
+      "imported_baryon_mass": 0.03616029691181675
+    },
+    {
+      "tag": "baseline_res2",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16857157713463924,
+      "own_baryon_retention": 0.9723807824112751,
+      "own_stock_retention": 0.9218749999999978,
+      "own_b_over_s": 1.0547859334630807,
+      "imported_stock_mass": 0.2294912094379967,
+      "imported_baryon_mass": 0.04573211416424444
+    },
+    {
+      "tag": "baseline_res2",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.06239928105625983,
+      "own_baryon_retention": 0.09585783395692182,
+      "own_stock_retention": 0.7864583333333375,
+      "own_b_over_s": 0.12188545774654896,
+      "imported_stock_mass": 0.014186332490223549,
+      "imported_baryon_mass": 0.009447599396576111
+    },
+    {
+      "tag": "baseline_res2",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1783407410499889,
+      "own_baryon_retention": 0.36588016552242275,
+      "own_stock_retention": 0.9505208333333339,
+      "own_b_over_s": 0.3849259823578363,
+      "imported_stock_mass": 0.15277588835625366,
+      "imported_baryon_mass": 0.0672590798725804
+    },
+    {
+      "tag": "baseline_res2",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1643126478529734,
+      "own_baryon_retention": 0.7629728799568988,
+      "own_stock_retention": 0.9830729166666666,
+      "own_b_over_s": 0.7761101613336401,
+      "imported_stock_mass": 0.624198629569839,
+      "imported_baryon_mass": 0.1342671508704296
+    },
+    {
+      "tag": "baseline_seed2",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.132963545068425,
+      "own_baryon_retention": 0.2339437720464499,
+      "own_stock_retention": 0.4713541666666682,
+      "own_b_over_s": 0.4963226987062788,
+      "imported_stock_mass": 0.0013095076144821734,
+      "imported_baryon_mass": 0.02290196570833613
+    },
+    {
+      "tag": "baseline_seed2",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.18619328883199365,
+      "own_baryon_retention": 0.8378983254991705,
+      "own_stock_retention": 0.8359375000000004,
+      "own_b_over_s": 1.002345660410222,
+      "imported_stock_mass": 0.04255899747067067,
+      "imported_baryon_mass": 0.03435810021319185
+    },
+    {
+      "tag": "baseline_seed2",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16868631943084503,
+      "own_baryon_retention": 0.976716509983411,
+      "own_stock_retention": 0.916666666666667,
+      "own_b_over_s": 1.0655089199819026,
+      "imported_stock_mass": 0.2285090787271395,
+      "imported_baryon_mass": 0.04411143269458419
+    },
+    {
+      "tag": "baseline_seed2",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.07479791922216195,
+      "own_baryon_retention": 0.10164790446438628,
+      "own_stock_retention": 0.7812500000000002,
+      "own_b_over_s": 0.1301093177144144,
+      "imported_stock_mass": 0.004365025381607245,
+      "imported_baryon_mass": 0.011295452609224665
+    },
+    {
+      "tag": "baseline_seed2",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.16686075334926778,
+      "own_baryon_retention": 0.22009128480269569,
+      "own_stock_retention": 0.9427083333333336,
+      "own_b_over_s": 0.23346699824374342,
+      "imported_stock_mass": 0.14622835028384273,
+      "imported_baryon_mass": 0.06606615051511018
+    },
+    {
+      "tag": "baseline_seed2",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1686581012924489,
+      "own_baryon_retention": 0.7215354778839271,
+      "own_stock_retention": 0.9843750000000003,
+      "own_b_over_s": 0.7329884219773225,
+      "imported_stock_mass": 0.6045560153526014,
+      "imported_baryon_mass": 0.1378115946049231
+    },
+    {
+      "tag": "collisionless_baryons",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.18203663523277183,
+      "own_baryon_retention": 0.546354866819233,
+      "own_stock_retention": 0.4765625000000015,
+      "own_b_over_s": 1.1464495566042885,
+      "imported_stock_mass": 0.0006547538072410867,
+      "imported_baryon_mass": 0.0005684847710356531
+    },
+    {
+      "tag": "collisionless_baryons",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1598974448202908,
+      "own_baryon_retention": 0.8249082941625194,
+      "own_stock_retention": 0.8489583333333338,
+      "own_b_over_s": 0.9716711195043168,
+      "imported_stock_mass": 0.018987860409991526,
+      "imported_baryon_mass": 0.005469090095874356
+    },
+    {
+      "tag": "collisionless_baryons",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1620009246275444,
+      "own_baryon_retention": 0.9316483254991705,
+      "own_stock_retention": 0.9244791666666669,
+      "own_b_over_s": 1.0077548084272716,
+      "imported_stock_mass": 0.2121402335461123,
+      "imported_baryon_mass": 0.03994453929733455
+    },
+    {
+      "tag": "collisionless_baryons",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.15594153002897373,
+      "own_baryon_retention": 0.7780948981558815,
+      "own_stock_retention": 0.8125000000000002,
+      "own_b_over_s": 0.9576552592687769,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.0011558079517260886
+    },
+    {
+      "tag": "collisionless_baryons",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1572052408615019,
+      "own_baryon_retention": 0.9486216118275267,
+      "own_stock_retention": 0.947916666666667,
+      "own_b_over_s": 1.0007436784114565,
+      "imported_stock_mass": 0.10694312184937743,
+      "imported_baryon_mass": 0.018324492367855116
+    },
+    {
+      "tag": "collisionless_baryons",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16517911182969286,
+      "own_baryon_retention": 0.9778799843316742,
+      "own_stock_retention": 0.9739583333333337,
+      "own_b_over_s": 1.0040265079769057,
+      "imported_stock_mass": 0.545628172700904,
+      "imported_baryon_mass": 0.10891084167611732
+    },
+    {
+      "tag": "depleted_nu1",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.11771989481152889,
+      "own_baryon_retention": 0.17787718372141104,
+      "own_stock_retention": 0.4843750000000015,
+      "own_b_over_s": 0.36723031477968615,
+      "imported_stock_mass": 0.00196426142172326,
+      "imported_baryon_mass": 0.025625374334550047
+    },
+    {
+      "tag": "depleted_nu1",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.17763184961203562,
+      "own_baryon_retention": 0.7609984038407984,
+      "own_stock_retention": 0.8437500000000004,
+      "own_b_over_s": 0.9019240341816865,
+      "imported_stock_mass": 0.024880644675161313,
+      "imported_baryon_mass": 0.03489832736974533
+    },
+    {
+      "tag": "depleted_nu1",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16761726761822898,
+      "own_baryon_retention": 0.9714465726567132,
+      "own_stock_retention": 0.9244791666666669,
+      "own_b_over_s": 1.0508041800005008,
+      "imported_stock_mass": 0.2180330178112821,
+      "imported_baryon_mass": 0.04263370553803068
+    },
+    {
+      "tag": "depleted_nu1",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.05799820523774264,
+      "own_baryon_retention": 0.08878108111446396,
+      "own_stock_retention": 0.8046875000000002,
+      "own_b_over_s": 0.11032988721020762,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.008547220802320307
+    },
+    {
+      "tag": "depleted_nu1",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1704310037645134,
+      "own_baryon_retention": 0.2684377791177808,
+      "own_stock_retention": 0.9531250000000003,
+      "own_b_over_s": 0.2816396371071797,
+      "imported_stock_mass": 0.13968081221143183,
+      "imported_baryon_mass": 0.06489039332659859
+    },
+    {
+      "tag": "depleted_nu1",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16335923824726334,
+      "own_baryon_retention": 0.7176754308789505,
+      "own_stock_retention": 0.9739583333333337,
+      "own_b_over_s": 0.7368646135227724,
+      "imported_stock_mass": 0.5849134011353689,
+      "imported_baryon_mass": 0.12716109123248398
+    },
+    {
+      "tag": "exact_floor",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.11828952045085468,
+      "own_baryon_retention": 0.17003388172472883,
+      "own_stock_retention": 0.47395833333333487,
+      "own_b_over_s": 0.3587528053972289,
+      "imported_stock_mass": 0.0006547538072410867,
+      "imported_baryon_mass": 0.025847116720067873
+    },
+    {
+      "tag": "exact_floor",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.18251481074897336,
+      "own_baryon_retention": 0.7883883568358218,
+      "own_stock_retention": 0.8437500000000004,
+      "own_b_over_s": 0.9343862006943068,
+      "imported_stock_mass": 0.02291638325343805,
+      "imported_baryon_mass": 0.03534181214078099
+    },
+    {
+      "tag": "exact_floor",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16824646311208535,
+      "own_baryon_retention": 0.9681682628258682,
+      "own_stock_retention": 0.9244791666666669,
+      "own_b_over_s": 1.0472580645778404,
+      "imported_stock_mass": 0.21344974116059448,
+      "imported_baryon_mass": 0.04313969030906634
+    },
+    {
+      "tag": "exact_floor",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.04877329669889973,
+      "own_baryon_retention": 0.08878108111446396,
+      "own_stock_retention": 0.799479166666667,
+      "own_b_over_s": 0.1110486486904044,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.006329796947142041
+    },
+    {
+      "tag": "exact_floor",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1630642204958236,
+      "own_baryon_retention": 0.23648283395692046,
+      "own_stock_retention": 0.9583333333333336,
+      "own_b_over_s": 0.24676469630287345,
+      "imported_stock_mass": 0.13968081221143183,
+      "imported_baryon_mass": 0.06267296947142033
+    },
+    {
+      "tag": "exact_floor",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1666777615836163,
+      "own_baryon_retention": 0.6994154622156014,
+      "own_stock_retention": 0.9739583333333337,
+      "own_b_over_s": 0.718116410403184,
+      "imported_stock_mass": 0.5718183249905473,
+      "imported_baryon_mass": 0.12937851508766224
+    },
+    {
+      "tag": "weak_nu01",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.09669624237788114,
+      "own_baryon_retention": 0.17202550922058157,
+      "own_stock_retention": 0.5104166666666681,
+      "own_b_over_s": 0.33702956908522014,
+      "imported_stock_mass": 0.00196426142172326,
+      "imported_baryon_mass": 0.018148633226943947
+    },
+    {
+      "tag": "weak_nu01",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1583435953218054,
+      "own_baryon_retention": 0.6899501566832558,
+      "own_stock_retention": 0.8619791666666671,
+      "own_b_over_s": 0.8004255594150154,
+      "imported_stock_mass": 0.03666621320550088,
+      "imported_baryon_mass": 0.0310944644304244
+    },
+    {
+      "tag": "weak_nu01",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16383591130837563,
+      "own_baryon_retention": 0.9427699373266977,
+      "own_stock_retention": 0.9218750000000002,
+      "own_b_over_s": 1.022665694727265,
+      "imported_stock_mass": 0.22065203304024644,
+      "imported_baryon_mass": 0.041968478381477194
+    },
+    {
+      "tag": "weak_nu01",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.07671603603717413,
+      "own_baryon_retention": 0.08106098710451057,
+      "own_stock_retention": 0.7838541666666669,
+      "own_b_over_s": 0.10341335231937558,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.012982068512676841
+    },
+    {
+      "tag": "weak_nu01",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.16793164726445434,
+      "own_baryon_retention": 0.22091943795028493,
+      "own_stock_retention": 0.963541666666667,
+      "own_b_over_s": 0.22927855181867401,
+      "imported_stock_mass": 0.12876824875741366,
+      "imported_baryon_mass": 0.06415125204153917
+    },
+    {
+      "tag": "weak_nu01",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1585370742164368,
+      "own_baryon_retention": 0.5996905797280428,
+      "own_stock_retention": 0.9739583333333337,
+      "own_b_over_s": 0.615725087207402,
+      "imported_stock_mass": 0.595825964589387,
+      "imported_baryon_mass": 0.1292643738026028
+    },
+    {
+      "tag": "weak_res2",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.09609362415318244,
+      "own_baryon_retention": 0.16167044654727902,
+      "own_stock_retention": 0.5299479166666564,
+      "own_b_over_s": 0.3050685576125619,
+      "imported_stock_mass": 0.004255899747067064,
+      "imported_baryon_mass": 0.021491890202470346
+    },
+    {
+      "tag": "weak_res2",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1606392594578996,
+      "own_baryon_retention": 0.706218497850752,
+      "own_stock_retention": 0.852864583333329,
+      "own_b_over_s": 0.8280546661822599,
+      "imported_stock_mass": 0.05401718909738971,
+      "imported_baryon_mass": 0.03278578993629049
+    },
+    {
+      "tag": "weak_res2",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16287895034120875,
+      "own_baryon_retention": 0.9593907510746241,
+      "own_stock_retention": 0.9322916666666647,
+      "own_b_over_s": 1.0290671743370292,
+      "imported_stock_mass": 0.2373482551248894,
+      "imported_baryon_mass": 0.04286658434527165
+    },
+    {
+      "tag": "weak_res2",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.0780939045998755,
+      "own_baryon_retention": 0.08942442228196062,
+      "own_stock_retention": 0.7825520833333376,
+      "own_b_over_s": 0.11427280584450147,
+      "imported_stock_mass": 0.010912563454018113,
+      "imported_baryon_mass": 0.013247472488539892
+    },
+    {
+      "tag": "weak_res2",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.17070212887948924,
+      "own_baryon_retention": 0.24654702804315834,
+      "own_stock_retention": 0.946614583333334,
+      "own_b_over_s": 0.2604513308626485,
+      "imported_stock_mass": 0.13749829952062842,
+      "imported_baryon_mass": 0.06531703461165794
+    },
+    {
+      "tag": "weak_res2",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.1590744135375353,
+      "own_baryon_retention": 0.6527697268093111,
+      "own_stock_retention": 0.9830729166666666,
+      "own_b_over_s": 0.6640094704497363,
+      "imported_stock_mass": 0.6263811422606427,
+      "imported_baryon_mass": 0.13353798420376292
+    },
+    {
+      "tag": "weak_seed2",
+      "cohort": 0,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.09652734438116367,
+      "own_baryon_retention": 0.19227710537978326,
+      "own_stock_retention": 0.5260416666666681,
+      "own_b_over_s": 0.36551687359325036,
+      "imported_stock_mass": 0.0026190152289643468,
+      "imported_baryon_mass": 0.016249694142801335
+    },
+    {
+      "tag": "weak_seed2",
+      "cohort": 0,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.1575921449890955,
+      "own_baryon_retention": 0.6833935370215658,
+      "own_stock_retention": 0.8437500000000004,
+      "own_b_over_s": 0.8099478957292627,
+      "imported_stock_mass": 0.036011459398259796,
+      "imported_baryon_mass": 0.028371055804210482
+    },
+    {
+      "tag": "weak_seed2",
+      "cohort": 0,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16477940710461722,
+      "own_baryon_retention": 0.9688732079867288,
+      "own_stock_retention": 0.9244791666666669,
+      "own_b_over_s": 1.0480205968081797,
+      "imported_stock_mass": 0.22392580207645188,
+      "imported_baryon_mass": 0.040160296911816724
+    },
+    {
+      "tag": "weak_seed2",
+      "cohort": 1,
+      "radius": 1.0,
+      "total_aperture_baryon_fraction": 0.08309599426745916,
+      "own_baryon_retention": 0.09006776344945619,
+      "own_stock_retention": 0.7265625000000002,
+      "own_b_over_s": 0.12396423356484289,
+      "imported_stock_mass": 0.0065475380724108675,
+      "imported_baryon_mass": 0.01277373517934351
+    },
+    {
+      "tag": "weak_seed2",
+      "cohort": 1,
+      "radius": 2.0,
+      "total_aperture_baryon_fraction": 0.16711575689872316,
+      "own_baryon_retention": 0.19539790446438576,
+      "own_stock_retention": 0.9375000000000003,
+      "own_b_over_s": 0.2084244314286781,
+      "imported_stock_mass": 0.12876824875741366,
+      "imported_baryon_mass": 0.0636403933265986
+    },
+    {
+      "tag": "weak_seed2",
+      "cohort": 1,
+      "radius": 3.0,
+      "total_aperture_baryon_fraction": 0.16171438851870482,
+      "own_baryon_retention": 0.5852906580696707,
+      "own_stock_retention": 0.9817708333333337,
+      "own_b_over_s": 0.5961581238693726,
+      "imported_stock_mass": 0.6089210407342086,
+      "imported_baryon_mass": 0.136655786653197
+    }
+  ],
+  "baseline_energy_convergence_order": 2.0032381621805144,
+  "exact_floor_position_difference_from_zero_contact": 0.0,
+  "source_metadata_repairs": [
+    {
+      "tag": "initial_isolated",
+      "old": "1ff1fceaeafc6f6bd20bc3c63304c143feede64086989cc88bd049ef5a9f1d62",
+      "correct": "eb2ac302070c189e1eb19ee19bd361c5ffde6913780943ee2ba4a732438aff66",
+      "backup": "source_records\\initial_isolated_result_before_source_hash_repair.json",
+      "reason": "An initial run hashed the live script at completion after a performance edit; its start-of-run source snapshot is the executed source."
+    }
+  ],
+  "Lean": {
+    "success": true,
+    "theorems": 8,
+    "names": [
+      "reciprocal_pair_momentum",
+      "relative_velocity_update",
+      "reduced_mass_work",
+      "central_pair_torque",
+      "sph_pair_power",
+      "viscous_heat_nonnegative",
+      "negative_work_recharges",
+      "floor_gate_absorbing"
+    ],
+    "compiler": "Lean/mathlib 4.19 standalone supplement; not a rebuild of upstream 4.35",
+    "source_sha256": "d1b24a39e5d8cf667d166c4facc1610ad23373a9693dfc5da8c2e44f227a9dba",
+    "log": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Conservative cluster merger 2026-10-23\\logs\\lean_20261023_132739.log",
+    "audit_source": "C:\\Users\\jakef\\OneDrive\\Documents\\Sol and Fable\\02 Research\\Conservative cluster merger 2026-10-23\\formalization\\Audit_20261023_132739.lean",
+    "contains_sorry": false
+  },
+  "limits": [
+    "Selected pair-relative target, rate, range, initial work allocation and bath identification remain inputs.",
+    "Single-carrier orbital target theorem does not establish equilibrium of this multicarrier interaction.",
+    "The nonzero-contact stock is a kinetic medium with internal energy registers; the full spatial clock/floor-fluid stress has not been evolved.",
+    "Gravitational mass of internal energies is neglected at Newtonian order.",
+    "Two particle resolutions and two seeds establish a qualitative control, not a converged observed mass map.",
+    "Gas-free control changes initial baryonic pressure support to an isotropic velocity distribution; it isolates effective component physics, not an otherwise identical pressure switch.",
+    "No observed lensing, X-ray or galaxy likelihood has been fitted; no cross-sector physical rate has been selected."
+  ]
+}

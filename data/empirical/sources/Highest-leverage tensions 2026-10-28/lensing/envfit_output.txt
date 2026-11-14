@@ -1,0 +1,10 @@
+env templates                 RAR        NFW   CAP_200c     CAP_sp
+none                        188.0      422.4      569.3      481.7
+lin(1)                      184.6      276.6      375.1      312.4
+lin+out(2)                  184.2      264.2      369.0      305.9
+lin per bin(4)              175.9      264.1      353.9      295.3
+lin+out per bin(8)          175.9      250.2      339.7      280.9
+RAR per-bin amplitudes lin [0.   0.   0.92 0.7 ] outer b_e [0.1 0.  0.  0. ]
+NFW per-bin amplitudes lin [0.   0.47 2.16 2.22] outer b_e [8.6 4.2 1.8 0. ]
+CAP_200c per-bin amplitudes lin [0.   1.08 3.36 2.96] outer b_e [8.9 3.  0.  0. ]
+CAP_sp per-bin amplitudes lin [0.   0.4  3.15 2.7 ] outer b_e [8.7 4.4 0.  0. ]

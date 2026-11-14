@@ -1,0 +1,65 @@
+{
+  "source": "Herbonnet et al. 2020, arXiv:1912.04414, Table A2 pp.17-18",
+  "cosmology": {
+    "H0": 70,
+    "Om0": 0.3
+  },
+  "note": "Masses in 1e14 Msun, radii in Mpc; NFW and deprojected aperture results use the same shear measurements and are not independent. NFW mass-concentration prior and simulation bias corrections retained from authors.",
+  "clusters": {
+    "A85": {
+      "z": 0.055,
+      "M200": 8.4,
+      "eM200": 3.3,
+      "M500": 5.7,
+      "eM500": 2.2,
+      "Rap500": 1.35,
+      "Map500": 7.4,
+      "eMap_lo": 2.3,
+      "eMap_hi": 2.3
+    },
+    "A1795": {
+      "z": 0.062,
+      "M200": 13.9,
+      "eM200": 3.3,
+      "M500": 9.3,
+      "eM500": 2.2,
+      "Rap500": 1.45,
+      "Map500": 9.2,
+      "eMap_lo": 2.3,
+      "eMap_hi": 2.3
+    },
+    "A2029": {
+      "z": 0.077,
+      "M200": 18.1,
+      "eM200": 3.8,
+      "M500": 12.1,
+      "eM500": 2.5,
+      "Rap500": 1.52,
+      "Map500": 10.8,
+      "eMap_lo": 2.3,
+      "eMap_hi": 1.9
+    },
+    "A2142": {
+      "z": 0.091,
+      "M200": 14.5,
+      "eM200": 3.4,
+      "M500": 9.7,
+      "eM500": 2.3,
+      "Rap500": 1.54,
+      "Map500": 11.3,
+      "eMap_lo": 2.2,
+      "eMap_hi": 2.1
+    },
+    "ZW1215": {
+      "z": 0.075,
+      "M200": 5.1,
+      "eM200": 3.1,
+      "M500": 3.5,
+      "eM500": 2.2,
+      "Rap500": 1.32,
+      "Map500": 7.0,
+      "eMap_lo": 1.4,
+      "eMap_hi": 2.4
+    }
+  }
+}

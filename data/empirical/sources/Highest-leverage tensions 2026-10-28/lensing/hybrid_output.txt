@@ -1,0 +1,36 @@
+f_hot 0.1  pop 0.15 0.15 0.0
+  support radius r_s (weighted median, kpc) per bin: [173.0, 197.0, 211.0, 220.0]
+  RAR     inner(32)    81.3  all no env   181.8  all + env(8)   170.3
+  NFW     inner(32)   100.7  all no env   420.2  all + env(8)   251.7
+  CAP_sp  inner(32)    90.0  all no env   472.4  all + env(8)   275.9
+  HYB     inner(32)    78.1  all no env   397.4  all + env(8)   225.3
+f_hot 0.2  pop 0.15 0.15 0.0
+  support radius r_s (weighted median, kpc) per bin: [108.0, 116.0, 124.0, 126.0]
+  RAR     inner(32)    78.6  all no env   176.1  all + env(8)   165.3
+  NFW     inner(32)   103.2  all no env   418.6  all + env(8)   252.1
+  CAP_sp  inner(32)    87.0  all no env   463.8  all + env(8)   269.7
+  HYB     inner(32)    68.0  all no env   383.4  all + env(8)   215.8
+f_hot 0.4  pop 0.15 0.15 0.0
+  support radius r_s (weighted median, kpc) per bin: [54.0, 58.0, 62.0, 63.0]
+  RAR     inner(32)    74.7  all no env   166.6  all + env(8)   156.9
+  NFW     inner(32)   109.8  all no env   417.2  all + env(8)   254.1
+  CAP_sp  inner(32)    82.6  all no env   448.2  all + env(8)   259.1
+  HYB     inner(32)    84.9  all no env   392.2  all + env(8)   229.0
+f_hot 0.2  pop 0.2 0.2 0.0
+  support radius r_s (weighted median, kpc) per bin: [98.0, 113.0, 121.0, 125.0]
+  RAR     inner(32)    80.6  all no env   183.2  all + env(8)   170.4
+  NFW     inner(32)    84.5  all no env   406.5  all + env(8)   235.5
+  CAP_sp  inner(32)    95.3  all no env   495.8  all + env(8)   292.1
+  HYB     inner(32)    64.7  all no env   386.6  all + env(8)   215.0
+f_hot 0.2  pop 0.15 0.15 -0.2
+  support radius r_s (weighted median, kpc) per bin: [106.0, 124.0, 135.0, 139.0]
+  RAR     inner(32)    94.2  all no env   153.3  all + env(8)   152.4
+  NFW     inner(32)   408.6  all no env   614.0  all + env(8)   527.4
+  CAP_sp  inner(32)    92.1  all no env   316.8  all + env(8)   203.9
+  HYB     inner(32)   170.6  all no env   376.1  all + env(8)   289.3
+f_hot 0.2  pop 0.15 0.15 0.2
+  support radius r_s (weighted median, kpc) per bin: [109.0, 113.0, 117.0, 120.0]
+  RAR     inner(32)   124.3  all no env   281.4  all + env(8)   247.6
+  NFW     inner(32)   151.7  all no env   637.3  all + env(8)   380.3
+  CAP_sp  inner(32)   149.0  all no env   662.3  all + env(8)   395.5
+  HYB     inner(32)   135.7  all no env   621.4  all + env(8)   364.0

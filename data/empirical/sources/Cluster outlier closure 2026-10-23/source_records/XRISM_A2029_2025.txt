@@ -1,0 +1,1509 @@
+Publications of the Astronomical Society of Japan, 0000, 00, 1–12
+doi: 10.1093/pasj/xxx000
+Advance access publication date: ⟨publication date⟩
+Constraining gas motion and non-thermal pressure beyond
+the core of the Abell 2029 galaxy cluster with XRISM
+XRISM COLLABORATION, Marc AUDARD,1 Hisamitsu AWAKI,2 Ralf BALLHAUSEN,3,4,5
+Aya BAMBA,6
+Ehud BEHAR,7
+Rozenn BOISSAY-MALAQUIN,8,4,5
+Laura BRENNEMAN,9
+Gregory BROWN,10
+Lia
+CORRALES,11 Elisa COSTANTINI,12 Renata CUMBEE,4 Maria DIAZ TRIGO,13 Chris DONE,14 Tadayasu
+DOTANI,15 Ken EBISAWA,15
+Megan ECKART,10
+Dominique ECKERT,1
+Satoshi EGUCHI,16
+Teruaki
+ENOTO,17
+Yuichiro EZOE,18 Adam FOSTER,9
+Ryuichi FUJIMOTO,15
+Yutaka FUJITA,18
+Yasushi
+FUKAZAWA,19
+Kotaro FUKUSHIMA,15
+Akihiro FURUZAWA,20 Luigi GALLO,21
+Javier GARCÍA,4,22
+Liyi GU,12
+Matteo GUAINAZZI,23
+Kouichi HAGINO,6
+Kenji HAMAGUCHI,8,4,5
+Isamu HATSUKADE,24
+Katsuhiro HAYASHI,15
+Takayuki HAYASHI,8,4,5
+Natalie HELL,10
+Edmund HODGES-KLUCK,4 Ann
+HORNSCHEMEIER,4 Yuto ICHINOHE,25 Daiki ISHI,15 Manabu ISHIDA,15 Kumi ISHIKAWA,18 Yoshitaka
+ISHISAKI,18 Jelle KAASTRA,12,26
+Timothy KALLMAN,4 Erin KARA,27
+Satoru KATSUDA,28
+Yoshiaki
+KANEMARU,15 Richard KELLEY,4 Caroline KILBOURNE,4 Shunji KITAMOTO,29 Shogo KOBAYASHI,30
+Takayoshi KOHMURA,31 Aya KUBOTA,32 Maurice LEUTENEGGER,4
+Michael LOEWENSTEIN,3,4,5
+Yoshitomo MAEDA,15
+Maxim MARKEVITCH,4 Hironori MATSUMOTO,33 Kyoko MATSUSHITA,30
+Dan
+MCCAMMON,34 Brian MCNAMARA,35 Francois MERNIER,3,4,5 Eric MILLER,27 Jon MILLER,11 Ikuyuki
+MITSUISHI„36 Misaki MIZUMOTO,37
+Tsunefumi MIZUNO,38
+Koji MORI,24
+Koji MUKAI,8,4,5
+Hiroshi
+MURAKAMI,39 Richard MUSHOTZKY,3 Hiroshi NAKAJIMA,40 Kazuhiro NAKAZAWA,36 Jan-Uwe NESS,41
+Kumiko NOBUKAWA,42
+Masayoshi NOBUKAWA,43
+Hirofumi NODA,44
+Hirokazu ODAKA,33 Shoji
+OGAWA,15 Anna OGORZALEK,3,4,5 Takashi OKAJIMA,4 Naomi OTA,45,∗Stephane PALTANI,1 Robert
+PETRE,4 Paul PLUCINSKY,9 Frederick PORTER,4 Katja POTTSCHMIDT,8,4,5 Kosuke SATO,28,65 Toshiki
+SATO,47 Makoto SAWADA,29
+Hiromi SETA,18 Megumi SHIDATSU,2
+Aurora SIMIONESCU,12
+Randall
+SMITH,9 Hiromasa SUZUKI,24 Andrew SZYMKOWIAK,48 Hiromitsu TAKAHASHI,19 Mai TAKEO,28 Toru
+TAMAGAWA,25 Keisuke TAMURA,8,4,5 Takaaki TANAKA,49 Atsushi TANIMOTO,50 Makoto TASHIRO,28,15
+Yukikatsu TERADA,28,15
+Yuichi TERASHIMA,2
+Yohko TSUBOI,51 Masahiro TSUJIMOTO,15
+Hiroshi
+TSUNEMI,33 Takeshi TSURU,17 Hiroyuki UCHIDA,17 Nagomi UCHIDA,15 Yuusuke UCHIDA,31 Hideki
+UCHIYAMA,52 Yoshihiro UEDA,53 Shinichiro UNO,54 Jacco VINK,55,12 Shin WATANABE,15 Brian J.
+WILLIAMS,4
+Satoshi YAMADA,56
+Shinya YAMADA,29
+Hiroya YAMAGUCHI,15
+Kazutaka YAMAOKA,36
+Noriko YAMASAKI,15
+Makoto YAMAUCHI,24
+Shigeo YAMAUCHI,57 Tahir YAQOOB,8,4,5 Tomokage
+YONEYAMA,51 Tessei YOSHIDA,15 Mihoko YUKITA,58,4 Irina ZHURAVLEVA,59 Tommaso BARTALESI,60,61
+Stefano ETTORI,61,62 Roman KOSARZYCKI,63,4 Lorenzo LOVISARI,64,9 Tom ROSE,35 Arnab SARKAR,27
+Ming SUN,65 Prathamesh TAMHANE65
+1Department of Astronomy, University of Geneva, Versoix CH-1290, Switzerland
+2Department of Physics, Ehime University, Ehime 790-8577, Japan
+3Department of Astronomy, University of Maryland, College Park, MD 20742, USA
+4NASA / Goddard Space Flight Center, Greenbelt, MD 20771, USA
+5Center for Research and Exploration in Space Science and Technology, NASA / GSFC (CRESST II), Greenbelt, MD 20771,
+USA
+6Department of Physics, University of Tokyo, Tokyo 113-0033, Japan
+7Department of Physics, Technion, Technion City, Haifa 3200003, Israel
+8Center for Space Sciences and Technology, University of Maryland, Baltimore County (UMBC), Baltimore, MD, 21250 USA
+Received: ⟨reception date⟩, Accepted: ⟨acception date⟩
+© 0000. Astronomical Society of Japan.
+arXiv:2505.06533v1  [astro-ph.CO]  10 May 2025
+
+2
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+9Center for Astrophysics | Harvard-Smithsonian, Cambridge, MA 02138, USA
+10Lawrence Livermore National Laboratory, Livermore, CA 94550, USA
+11Department of Astronomy, University of Michigan, Ann Arbor, MI 48109, USA
+12SRON Netherlands Institute for Space Research, Leiden, The Netherlands
+13ESO, Karl-Schwarzschild-Strasse 2, 85748, Garching bei München, Germany
+14Centre for Extragalactic Astronomy, Department of Physics, University of Durham, Durham DH1 3LE, UK
+15Institute of Space and Astronautical Science (ISAS), Japan Aerospace Exploration Agency (JAXA), Kanagawa 252-5210,
+Japan
+16Department of Economics, Kumamoto Gakuen University, Kumamoto 862-8680 Japan
+17Department of Physics, Kyoto University, Kyoto 606-8502, Japan
+18Department of Physics, Tokyo Metropolitan University, Tokyo 192-0397, Japan
+19Department of Physics, Hiroshima University, Hiroshima 739-8526, Japan
+20Department of Physics, Fujita Health University, Aichi 470-1192, Japan
+21Department of Astronomy and Physics, Saint Mary’s University, Nova Scotia B3H 3C3, Canada
+22California Institute of Technology, Pasadena, CA 91125, USA
+23European Space Agency (ESA), European Space Research and Technology Centre (ESTEC), 2200 AG Noordwijk, The
+Netherlands
+24Faculty of Engineering, University of Miyazaki, 1-1 Gakuen-Kibanadai-Nishi, Miyazaki, Miyazaki 889-2192, Japan
+25RIKEN Nishina Center, Saitama 351-0198, Japan
+26Leiden Observatory, University of Leiden, P.O. Box 9513, NL-2300 RA, Leiden, The Netherlands
+27Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, MA 02139, USA
+28Department of Physics, Saitama University, Saitama 338-8570, Japan
+29Department of Physics, Rikkyo University, Tokyo 171-8501, Japan
+30Faculty of Physics, Tokyo University of Science, Tokyo 162-8601, Japan
+31Faculty of Science and Technology, Tokyo University of Science, Chiba 278-8510, Japan
+32Department of Electronic Information Systems, Shibaura Institute of Technology, Saitama 337-8570, Japan
+33Department of Earth and Space Science, Osaka University, Osaka 560-0043, Japan
+34Department of Physics, University of Wisconsin, WI 53706, USA
+35Department of Physics & Astronomy, Waterloo Centre for Astrophysics, University of Waterloo, Ontario N2L 3G1, Canada
+36Department of Physics, Nagoya University, Aichi 464-8602, Japan
+37Science Research Education Unit, University of Teacher Education Fukuoka, Fukuoka 811-4192, Japan
+38Hiroshima Astrophysical Science Center, Hiroshima University, Hiroshima 739-8526, Japan
+39Department of Data Science, Tohoku Gakuin University, Miyagi 984-8588
+40College of Science and Engineering, Kanto Gakuin University, Kanagawa 236-8501, Japan
+41European Space Agency(ESA), European Space Astronomy Centre (ESAC), E-28692 Madrid, Spain
+42Department of Science, Faculty of Science and Engineering, KINDAI University, Osaka 577-8502, JAPAN
+43Department of Teacher Training and School Education, Nara University of Education, Nara 630-8528, Japan
+44Astronomical Institute, Tohoku University, Miyagi 980-8578, Japan
+45Department of Physics, Nara Women’s University, Nara 630-8506, Japan
+46International Center for Quantum-field Measurement Systems for Studies of the Universe and Particles (QUP) / High Energy
+Accelerator Research Organization (KEK), 1-1 Oho, Tsukuba, Ibaraki 305-0801, Japan
+47School of Science and Technology, Meiji University, Kanagawa, 214-8571, Japan
+48Yale Center for Astronomy and Astrophysics, Yale University, CT 06520-8121, USA
+49Department of Physics, Konan University, Hyogo 658-8501, Japan
+50Graduate School of Science and Engineering, Kagoshima University, Kagoshima, 890-8580, Japan
+51Department of Physics, Chuo University, Tokyo 112-8551, Japan
+52Faculty of Education, Shizuoka University, Shizuoka 422-8529, Japan
+53Department of Astronomy, Kyoto University, Kyoto 606-8502, Japan
+54Nihon Fukushi University, Shizuoka 422-8529, Japan
+55Anton Pannekoek Institute, the University of Amsterdam, Postbus 942491090 GE Amsterdam, The Netherlands
+56RIKEN Cluster for Pioneering Research, Saitama 351-0198, Japan
+57Department of Physics, Faculty of Science, Nara Women’s University, Nara 630-8506, Japan
+58Johns Hopkins University, MD 21218, USA
+59Department of Astronomy and Astrophysics, University of Chicago, Chicago, IL 60637, USA
+60Dipartimento di Fisica e Astronomia “Augusto Righi” – Alma Mater Studiorum – Università di Bologna, I-40129 Bologna
+61INAF, Osservatorio di Astrofisica e Scienza dello Spazio, 40129 Bologna, Italy
+62INFN, Sezione di Bologna, 40127 Bologna, Italy
+63Department of Physics, The George Washington University, Washington, DC 20052, USA
+64INAF – IASF Istituto di Astrofisica Spaziale e Fisica Cosmica di Milano, Via Alfonso Corti 12, 20133 Milano, Italy
+65Department of Physics and Astronomy, The University of Alabama in Huntsville, Huntsville, AL 35899, USA
+∗E-mail: naomi@cc.nara-wu.ac.jp
+ORCID: 0000-0002-1118-8470, 0000-0003-0890-4920, 0000-0001-9735-4873, 0000-0003-2704-599X, 0000-0003-2663-1954, 0000-0001-6338-9445, 0000-0002-
+5466-3817, 0000-0001-8470-749X, 0000-0001-9894-295X, 0000-0001-7796-4279, 0000-0002-1065-7239, 0000-0002-5352-7178, 0000-0003-3894-5889, 0000-
+0001-7917-3892, 0000-0003-2814-9336, 0000-0003-1244-3100, 0000-0003-3462-8886, 0000-0002-2374-7073, 0000-0003-0058-9719, 0000-0002-0921-8837,
+
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+3
+0000-0001-8055-7113, 0009-0006-4968-7108, 0000-0003-3828-2448, 0000-0001-9911-7038, 0000-0002-1094-3147, 0000-0003-4235-5304, 0000-0001-7515-
+2779, 0000-0003-3518-3049, 0000-0001-6922-6583, 0000-0001-6665-2499, 0000-0003-3057-1536, 0000-0002-2397-206X, 0000-0001-8667-2681, 0000-0002-
+6102-1441, 0000-0001-5540-2822, 0000-0003-0172-0854, 0000-0002-1104-7205, 0000-0002-4541-1044, 0009-0007-2283-3336, 0000-0001-9464-4103, 0000-
+0001-8948-7983, 0000-0001-7773-9266, 0000-0002-3331-7595, 0000-0002-1661-4029, 0000-0002-9099-5755, 0000-0003-2907-0902, 0000-0001-5170-4567,
+0000-0002-7031-4772, 0000-0002-3031-2326, 0000-0003-2869-7682, 0000-0002-9901-233X, 0000-0003-2161-0361, 0000-0001-7263-0296, 0000-0002-0018-
+0369, 0000-0002-8286-8094, 0000-0002-7962-5446, 0000-0001-6988-3938, 0000-0003-2930-350X, 0000-0002-0726-7862, 0000-0003-1130-5363, 0000-0001-
+6020-517X, 0000-0002-5701-0811, 0000-0003-4504-2557, 0000-0002-6054-3432, 0000-0002-2784-3652, 0000-0002-8108-9179, 0000-0003-3850-2041, 0000-
+0003-1415-5823, 0000-0002-6374-1119, 0000-0002-4656-6881, 0000-0001-5774-1633, 0000-0003-2008-6887, 0000-0001-8195-6546, 0000-0002-9714-3862,
+0000-0003-4284-4167, 0000-0002-8152-6172, 0000-0002-4974-687X, 0000-0001-6314-5897, 0000-0002-4383-0368, 0000-0002-0114-5581, 0000-0002-5097-
+1257, 0000-0002-2359-1857, 0000-0003-1780-5481, 0000-0002-9184-5556, 0000-0002-5504-4903, 0000-0003-1518-2188, 0000-0002-5641-745X, 0000-0002-
+7962-4136, 0000-0003-4580-4021, 0000-0001-7821-6715, 0000-0002-4708-4219, 0000-0003-0441-7404, 0000-0003-2063-381X, 0000-0002-9754-3081, 0000-
+0003-4808-893X, 0000-0002-5092-6085, 0000-0003-3841-0980, 0000-0003-4885-5537, 0000-0003-1100-1423, 0000-0001-6366-3459, 0000-0001-7630-8085,
+0009-0004-5838-2213, 0000-0003-4117-8617, 0000-0002-3754-2415, 0000-0002-8310-2218, 0000-0002-5222-1337, 0000-0001-5880-0703, 0000-0001-8176-7665
+Abstract
+We report a detailed spectroscopic study of the gas dynamics and hydrostatic mass bias of the galaxy cluster Abell 2029, utilizing high-resolution
+observations from XRISM Resolve. Abell 2029, known for its cool core and relaxed X-ray morphology, provides an excellent opportunity to
+investigate the influence of gas motions beyond the central region. Expanding upon prior studies that revealed low turbulence and bulk motions
+within the core, our analysis covers regions out to the scale radius R2500 (670 kpc) based on three radial pointings extending from the cluster
+center toward the northern side. We obtain accurate measurements of bulk and turbulent velocities along the line of sight. The results indicate
+that non-thermal pressure accounts for no more than 2% of the total pressure at all radii, with a gradual decrease outward. The observed radial
+trend differs from many numerical simulations, which often predict an increase in non-thermal pressure fraction at larger radii. These findings
+suggest that deviations from hydrostatic equilibrium are small, leading to a hydrostatic mass bias of around 2% across the observed area.
+Keywords: cosmology: observations — galaxies: clusters: individual (Abell 2029) — intergalactic medium — X-rays: galaxies: clusters
+1 Introduction
+Galaxy clusters, the largest gravitationally bound systems in the
+universe, grow through the hierarchical assembly of matter, accu-
+mulating mass via mergers and accretion from the cosmic web.
+Understanding the gas dynamics in these clusters is critical for
+studying their energy budget, as a substantial fraction of the in-
+jected kinetic energy stirs up the intracluster gas, creating bulk
+motions and turbulence that can remain unthermalized for billions
+of years (Norman & Bryan 1999; Miniati 2014; Vazza et al. 2009).
+While the hot intracluster medium (ICM) of clusters is often as-
+sumed to be hydrostatic, both simulations (Lau et al. 2009; Biffi
+et al. 2016) and observations (Ota & Yoshida 2016; Sanders et al.
+2020; Hitomi Collaboration et al. 2018) have suggested that even
+seemingly regular systems can exhibit significant gas motions.
+This prompts a key question: are ‘relaxed’ clusters genuinely in
+dynamical equilibrium, or does their calm appearance conceal sig-
+nificant bulk motions and turbulence?
+The galaxy cluster Abell 2029 (A2029) is a prototypical mas-
+sive galaxy cluster with a cool core and an apparently relaxed X-
+ray morphology (Lewis et al. 2002), located at z = 0.0787 (Sohn
+et al. 2019). However, the unsharp-masked X-ray surface bright-
+ness image reveals a spiral ’sloshing’ structure, which may in-
+dicate significant gas motion in the core region (Paterno-Mahler
+et al. 2013). Similar features have been identified in many clus-
+ters (Ueda et al. 2020), challenging the simplistic assumption of a
+perfectly hydrostatic system and pointing to a more complex dy-
+namical state. Furthermore, cosmological simulations suggest that
+the degree of gas disturbance correlates with a cluster’s connectiv-
+ity to large-scale filamentary structures, highlighting the interplay
+between cluster-scale dynamics and cosmic-scale structure forma-
+tion (Zinger et al. 2016; Gouin et al. 2021).
+In the first paper of our observational series on A2029, utilizing
+the XRISM satellite (Tashiro et al. 2025; Tashiro et al. 2020) and
+its Resolve detector (Ishisaki et al. 2022), we focused on the inner
+region of A2029, aiming to directly measure the turbulent and bulk
+motions in the core (XRISM Collaboration 2025). The results in-
+dicated that non-thermal pressure contributes only a small fraction
+(∼2%) to the total pressure in the cluster center, consistent with a
+subsonic, dynamically stable core. However, the thermodynamic
+state of the gas in the outer regions, particularly at radii approach-
+ing the scale radius R2500 1 remains unclear. This marks an essen-
+tial unresolved issue, as the non-thermal pressure fraction at larger
+radii plays a significant role in determining the hydrostatic mass
+bias – the systematic offset between the true mass of the cluster
+and that inferred assuming hydrostatic equilibrium (Nelson et al.
+2014). Accurately characterizing this bias is essential for deriving
+robust cosmological constraints from cluster mass measurements
+(Allen et al. 2008; Pratt et al. 2019).
+In this paper, we extend the analysis of A2029 to cover the outer
+regions up to R2500 ∼670 kpc (Vikhlinin et al. 2006). By com-
+bining XRISM’s high-resolution spectral data across three radial
+pointings, we simultaneously constrain the bulk and turbulent ve-
+locity components of the ICM. This enables a precise estimate of
+the non-thermal pressure support as a function of radius. Finally,
+we discuss the implications of our findings for hydrostatic mass
+bias and compare our results with predictions from numerical sim-
+ulations and other observations. Our study highlights the impor-
+tance of disentangling gas motions to refine galaxy clusters’ use as
+cosmological probes.
+The cosmological parameters are Ωm0 = 0.3, ΩΛ = 0.7 and
+h = 0.7 throughout this paper. Accordingly, 1′ corresponds to
+89 kpc at the redshift of A2029 (z = 0.0787). We report redshifts
+and velocities corrected to the Solar System barycenter. We use
+the proto-solar abundance table from Lodders & Palme (2009).
+The quoted errors represent the 1σ statistical uncertainties, unless
+stated otherwise.
+2 Observations and data reduction
+To accurately measure the gas velocity at a radius of R2500, it is
+essential to precisely separate the emission from the central cool
+core of the galaxy cluster, which can mix due to the telescope’s
+point spread function (PSF) effect. For this purpose, we covered up
+to R2500 = 7′.5 ∼670 kpc using three consecutive radial pointings
+from the center (figure 1). By simultaneously fitting the spectra
+from these regions, we disentangled the contributions from each
+1 The radius R∆is defined as the radius within which the average mass density
+of the galaxy cluster is ∆times the critical density of the universe at the cluster
+redshift. In this paper, we specifically use R2500 and R200, corresponding to
+∆= 2500 and ∆= 200,respectively.
+
+4
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+radius. The XRISM observations were conducted five times in
+January and July 2024. The observation details are given in table 1.
+The data reduction for the Resolve detector was performed
+in accordance with the XRISM Quick Start Guide v2.1.
+Specifically, we used Data Processing Version 03.00.011.008, re-
+processed with Build8 using the standard xapipeline proce-
+dure. The software and calibration database (CalDB) used were
+XRISM_20Jun2024_Build8 and CalDB 8, respectively. Rise-time
+filtering and pixel-to-pixel coincidence screening were applied to
+the pipeline-produced cleaned-events files to minimize the back-
+ground. The exposure times are summarized in Table 1. A total of
+549 ksec of clean data was obtained in the three pointings for the
+analysis.
+Each spectrum was obtained by integrating the high-resolution
+(Hp) grade events across all pixels in the Resolve field of view, ex-
+cluding pixel 27, which is omitted due to small, abrupt changes in
+its energy scale that cannot be corrected using the current gain-
+monitoring procedure.
+Pixel 11 also experiences such abrupt
+changes, but infrequently, and almost always in a correctable part
+of the observations. However, we identified a small jump (∼3 eV
+at 6 keV) in the energy scale of pixel 11 during OBSID 000150000
+(N1), affecting 5 ks of exposure, via comparison to the gain trend
+on the other pixels, after much of the analysis had been completed.
+To investigate the impact of this interval, we compared full-field
+analysis of the N1 data with and without this interval of time and
+found no differences exceeding the statistical errors.
+Spectral fitting was performed using the Cash statistic (Cash
+1979), which is theoretically valid even when some spectral bins
+contain zero observed counts. However, in practice, fits can be-
+come numerically unstable when a large number of zero-count
+bins are present, particularly in high-resolution spectra. To im-
+prove computational efficiency, we applied optimal binning us-
+ing ftgrouppha (Kaastra & Bleeker 2016), requiring at least one
+count per bin. This allows us to reduce the number of bins while
+retaining essential spectral information. The impact of this binning
+choice is further examined in section 3.2 iv). Furthermore, due to
+the limited number of iron-line counts in the first N2 observation
+(OBSID 000152000), this dataset was excluded from the spectral
+analysis. Although Poisson-based statistics are applicable in prin-
+ciple, we found that including this observation did not improve the
+photon statistics or the robustness of the fits.
+The ARF file, which accounts for the effective area by incorpo-
+rating detector efficiencies and the X-ray Mirror Assembly (XMA)
+response (including PSF effects), was generated using xaarfgen
+with the X-ray image from the Chandra satellite as the input bright-
+ness distribution. To account for the spatial redistribution of pho-
+tons due to the telescope’s PSF, we performed a spatial-spectral
+mixing analysis: the photon observed in each spectral extraction
+region (C0, N1, N2) can originate from multiple spatial annuli (A1,
+A2, A3), as shown in figure 1. Therefore, for each OBSID, we
+generated three separate ARFs corresponding to the contributions
+from A1, A2, and A3 to each of the three spectral regions. In the
+spectral fitting, we constructed emission models for the A1, A2,
+and A3 regions, and convolved each of them with the ARF cor-
+responding to their projected contribution to the observed region
+(C0, N1, or N2). The sum of these convolved models was then
+compared to the observed spectra. This method has been success-
+fully demonstrated in the Hitomi satellite’s Perseus cluster study
+(Hitomi Collaboration et al. 2018), and allows us to correct for
+PSF-induced cross-contamination between annuli.
+The detector background was generated using rslnxbgen on
+a database constructed from dark-earth eclipse data that was
+screened using the same criteria applied to the data, and the
+normalization was optimized by fitting a template model to it.
+Additionally, the cosmic X-ray background (CXB) component
+was estimated from the region outside the R200 radius of A2029,
+based on the analysis of the Xtend data. For further details on the
+CXB estimation, refer to Sarkar et al. (in prep.). These background
+components were accounted for by including their optimized mod-
+els as additive components in the spectral fitting process.
+90 kpc
+1'
+N2
+N1
+C0
+A3
+A2
+A1
+Fig. 1. Chandra image of A2029 overlaid with the Resolve field of view
+covering up to R2500 with three radial pointings (C0, N1, N2 boxes). The
+three annuli (A1, A2, A3) correspond to radii of r < 1′.5, 1′.5 < r < 4′.5,
+and 4′.5<r <7′.5, respectively, with the outermost circle marking R2500 ∼
+670 kpc. Alt text: Three boxes are arranged radially from the cluster center,
+indicating the positions of the detector’s field of view.
+3 Analysis and results
+3.1 Spectral analysis
+The X-ray emission from each source region was assumed to orig-
+inate from thermal emission of a single-temperature plasma. To
+account for gas turbulence and bulk motion, the BAPEC model
+(Smith et al. 2001; Foster et al. 2012) in the XSPEC software
+version 12.14.1 (Arnaud 1996) was employed.
+In this model,
+the gas temperature, metallicity, and normalization, along with
+the Gaussian sigma of velocity broadening (σv, in kms−1) and
+redshift, were treated as free parameters. The Galactic absorp-
+tion was modeled using the TBabs model (Wilms et al. 2000),
+with the hydrogen column density fixed at 3 × 1020 cm−2 (HI4PI
+Collaboration et al. 2016).
+We performed the spectral fitting in the 2–10 keV band. As
+reported in XRISM Collaboration (2025), the two-temperature
+component in the core region was significant in the central area.
+However, it was confirmed that this did not affect the velocity
+measurements.
+For the N1 and N2 regions, we tested a two-
+temperature model but found that the additional component was
+not statistically significant. Therefore, the results in this paper are
+reported based on the single-temperature model. A detailed inves-
+tigation of the multi-temperature model will be presented in Sarkar
+et al. (in prep.).
+Barycentric corrections of +26 kms−1 were applied to the ob-
+servations taken in January 2024 (OBSID 000149000, 000150000,
+and 000151000), which include the Center and N1 regions. A cor-
+rection of −27 kms−1 was applied to the July 2024 observation of
+the N2 region (OBSID 300053010). The difference of 53 kms−1
+
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+5
+Table 1. Observation Log for Abell 2029
+Object
+OBSID
+Coordinatesa
+DATE
+Exposureb
+Fe XXV Heαc
+Fe XXVI Lyαc
+Abell2029_Center
+000149000
+227.7301, 5.7458
+2024-01-10
+12.4
+294
+115
+Abell2029_N1
+000150000
+227.7595, 5.7856
+2024-01-10
+102.2
+289
+129
+Abell2029_Center
+000151000
+227.7291, 5.7457
+2024-01-13
+25.1
+616
+236
+Abell2029_N2
+000152000
+227.7898, 5.8256
+2024-01-13
+42.9
+13
+2
+Abell2029_N2
+300053010
+227.7984, 5.8239
+2024-07-27
+366.2
+104
+83
+a Pointing coordinates. b Net exposure time after data screening in kilo seconds. c Iron line counts without continuum component.
+arises due to the approximately six-month gap between the two
+observing periods.
+When simultaneously fitting all three spec-
+tra, a relative barycentric correction of −53 kms−1 was applied
+to the cluster redshift in the N2 spectrum, aligning it with the ref-
+erence frame of the January 2024 data. After the fit, an additional
++26 kms−1 correction was added to derive the final redshift.
+Figures 2 and 3 show the simultaneous fitting of the three re-
+gions, taking into account the cross-region PSF effects. Table 3
+summarizes the best-fit parameters with and without the cross-
+region PSF corrections. Table 2 summarizes the fraction of photon
+counts in the 2–10 keV band and iron emission lines for the point-
+ing regions. From the table, the contribution from emissions out-
+side the region of interest is non-negligible. In the next subsection,
+we quantitatively evaluate the systematic uncertainties, including
+this effect.
+Table 2. Fraction of photons at the 2–10 keV and Fe
+XXX Heα line in the observation regions originating
+from the annular regions.
+2–10 keV band
+Fe He line
+A1
+A2
+A3
+A1
+A2
+A3
+C1
+0.85
+0.15
+0.00
+0.93
+0.07
+0.00
+N1
+0.19
+0.78
+0.03
+0.34
+0.64
+0.02
+N2
+0.18
+0.13
+0.69
+0.20
+0.12
+0.68
+3.2 Systematic uncertainties
+We estimate the systematic errors for the following factors that
+could affect the gas velocity measurements. i) Resonant scattering,
+ii) Uncertainty in the telescope’s point spread function, iii) Energy
+range, iv) Spectral binning, v) gain calibration accuracy, and vi)
+the background model.
+i) Resonant scattering: As discussed in XRISM Collaboration
+(2025), resonant scattering is expected to be significant in the cen-
+tral region, but it was not detected with a high statistical signifi-
+cance in the current exposure. Therefore, we performed spectral
+fitting of the three regions again, excluding the w-emission line
+(the strongest resonance transition in the Fe XXV Heα triplet) in
+the central region. Figure 4 shows that the velocity remains unaf-
+fected within the range of statistical errors.
+ii) Uncertainties in the telescope’s PSF: The calibration of the
+XMA sub-PSF (corresponding to the Resolve pixel size) can have
+uncertainties of up to 80% for a point source. However, for an ex-
+tended source, the PSF is smoothed, reducing these uncertainties.
+To assess the impact, we tested the effect of a ±30% systematic
+uncertainty in the net effective area (summed over pixels). This
+choice is justified, as a comparison of pixel-to-pixel relative count
+rates with corresponding ray-tracing predictions shows agreement
+within 30% for most pixels.
+We applied this ±30% variation to the effective area for three
+different combinations of source and spectral regions: (A1 to N1,
+A1 to N2, A2 to N2). As shown in figure 4, while the best-fit
+values fluctuate, the uncertainty ranges overlap, indicating that the
+systematic effect does not significantly impact the results.
+iii) Energy range: To evaluate the impact of the energy range
+selection, we performed the fit within a narrow band (5.5–7 keV,
+covering the iron emission line band) instead of the full 2–10 keV
+range. The results remain consistent within statistical errors.
+iv) Spectral binning: Thus far, we have used spectra with bin-
+ning applied. We also compared the parameters obtained using
+the original spectral bins without grouping. When using the un-
+binned spectra, the best-fit value for the turbulent velocity tended
+to be larger in the N2 region when compared to the rebinned case.
+This trend could be due to low photon statistics in the N2 region.
+In any case, the turbulent velocity value was small. To ensure a
+conservative estimate, we quote the upper limit.
+v) Accuracy of the energy scale and instrumental line widths:
+We reviewed the energy scale calibration reports 2 for four obser-
+vations. Correcting the energy scale of the dedicated calibration
+pixel, which is continuously illuminated, based on the same cal-
+ibration time intervals as the main array, makes it a witness for
+the goodness of the intermittent calibration for the main array.
+We found the worst energy offset, 0.12 eV, in OBSID 000149000.
+Adding in quadrature with the current energy-scale accuracy from
+5.4–9.0-keV of ±0.3 eV results in ±0.32 eV, and ∼0.3 eV for
+all three pointings, resulting in a systematic line-of-sight bulk-
+velocity uncertainty of 15 kms−1 at 6 keV.
+The analysis of the calibration pixel in these data sets resulted
+in a range of FWHM widths from 4.45 to 4.73 eV. The current in-
+orbit calibration has a line-spread uncertainty of ∼0.15 eV from
+6–7 keV. This error at 6 keV results in a systematic uncertainty in
+turbulent velocity of ±6 kms−1for turbulence of 50 kms−1 and
+±2kms−1for turbulence of 150 kms−1.
+As a result, the measured gas turbulence and bulk motions (ta-
+ble 3) are largely dominated by statistical errors, except for the
+bulk velocity in the central region. For the evaluation of effec-
+tive three-dimensional velocity discussed in the next subsection,
+the values in the central region are primarily determined by the
+velocity dispersion. Therefore, the impact of instrumental system-
+atic errors on the velocity measurements across all three regions is
+expected to be negligible.
+vi) Background model: In the central region, the contribution of
+the background is negligible. However, in the N1 and N2 regions,
+NXB and CXB contribute approximately 5% and 2% for N1, and
+23% and 6% for N2, respectively, in the 2–10 keV band. To eval-
+uate the impact on the results, we varied the NXB and CXB lev-
+els by ±30%. This test confirmed that there were no statistically
+significant effects on the measurements of redshift or turbulent ve-
+locity. For temperature and metal abundance, we refer readers to
+Sarkar et al. (in prep.) for further details.
+Among the six systematic effects evaluated, only the four that
+2 https://heasarc.gsfc.nasa.gov/docs/xrism/analysis/gainreports/
+index.html
+
+6
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+10−5
+10−4
+10−3
+0.01
+0.1
+1
+counts s−1 keV−1
+NXB
+CXB
+10
+2
+5
+0
+1
+2
+ratio
+Energy (keV)
+Fig. 2. Spectral fitting of three pointing regions in the 2-10 keV band: Center (black and red), N1 (green), and N2 (blue). The observed spectra (data points
+with error bars) include both the source and background components. Solid lines indicate the best-fit BAPEC models for each region; dashed lines show
+the non-X-ray background (NXB), and dotted lines represent the cosmic X-ray background (CXB). The spectra are binned to ensure at least 25 counts per
+bin for better visibility. The lower panels show the data-to-model ratio. Alt text: Line graph showing spectra from 2 to 10 kilo electron volt in units of counts
+per second per kilo electron volt and their fitted curves.
+Table 3. BAPEC model fitting results with and without PSF correction and derived non-thermal pressure fractions.
+Region
+kT
+Z
+vbulk
+σv
+norma
+C-stat/d.o.f.
+χ2/d.o.f.b
+αc
+αturbc
+(keV)
+(solar)
+(kms−1)
+(kms−1)
+(10−2cm−5)
+Center
+6.62+0.11
+−0.11
+0.642+0.021
+−0.024
+13+13
+−7
+148+13
+−9
+4.039+0.042
+−0.037
+7189/7333
+1490/1539
+2.1 ± 0.3
+2.1 ± 0.3
+N1
+7.49+0.21
+−0.21
+0.336+0.029
+−0.023
+−218+16
+−25
+58+37
+−48
+4.584+0.067
+−0.077
+1.6 ± 0.5
+0.3(< 0.7)
+N2
+8.26+0.34
+−0.31
+0.371+0.038
+−0.039
+−93+31
+−20
+94+44
+−50
+2.010+0.043
+−0.039
+0.9 ± 0.7
+0.7(< 1.3)
+Center
+6.38+0.13
+−0.11
+0.610+0.024
+−0.022
+−9+12
+−7
+162+10
+−10
+4.634+0.071
+−0.074
+3653/3634
+854/803
+N1
+7.08+0.21
+−0.2
+0.382+0.025
+−0.022
+−153+13
+−19
+133+20
+−15
+6.002+0.100
+−0.100
+1772/1888
+391/429
+N2
+8.13+0.42
+−0.40
+0.364+0.040
+−0.039
+−114+31
+−16
+110+34
+−42
+2.463+0.076
+−0.072
+1799/1811
+280/307
+The top three rows show the results from simultaneous fitting of three pointings with PSF correction applied, while the bottom three rows present the results
+from individual fits without PSF correction. The uncertainties in the table represent 1σ statistical errors. aThe normalization (norm) values correspond to the
+input surface brightness distribution area. bAs a reference, the chi-squared values were calculated based on the fit results using spectra rebinned to contain at
+least 25 counts per bin. cNon-thermal pressure fractions α and αturb are calculated using equations 4 and 5, respectively. α includes both turbulent and bulk
+velocity contributions, while αturb considers only the turbulent component.
+directly influence the spectral fitting results (i–iv) are shown in fig-
+ure 4. The remaining two, v) gain calibration and vi) background
+modeling, were assessed separately. Gain uncertainty was added
+as a systematic error to the velocity parameters, and variations in
+the background level were tested but found to have negligible im-
+pact on redshift and velocity measurements.
+3.3 Estimation of non-thermal pressure component
+Based on the simultaneous spectral fitting results of the three re-
+gions, we estimate the contribution of non-thermal pressure.
+First, we evaluate two velocity components of gas motion – bulk
+and turbulent – which can contribute to non-thermal pressure sup-
+port and impact hydrostatic mass estimates. The bulk velocity is
+defined as the line-of-sight velocity relative to the brightest cluster
+galaxy (BCG), given by
+vbulk = c(z −zBCG)
+1 + zBCG
+,
+(1)
+where z is the redshift of the gas, and zBCG is the redshift of
+the BCG, determined to be 0.0779 based on MUSE observations
+(XRISM Collaboration 2025). In the central region, the bulk ve-
+locity is consistent with zero within the statistical errors. However,
+in the N1 and N2 regions, significant blueshifts of approximately
+−220 kms−1 and −90 kms−1, respectively, were observed.
+The turbulent velocity shows variation depending on the region.
+In the central region, the turbulent velocity is the largest, measured
+at 148+13
+−9
+kms−1. In the intermediate N1 region, the turbulent
+velocity measurement is an upper limit, 58(< 186) kms−1 (3σ).
+In contrast, the N2 region exhibits a marginal detection of turbulent
+velocity at 94+44
+−50 kms−1.
+Next, the sound speed is estimated as
+cs =
+r
+γkBT
+µmp ,
+(2)
+where γ = 5/3 is the adiabatic index, kB is the Boltzmann con-
+stant, T is the temperature, µ is the mean molecular weight, and
+mp is the proton mass. Taking into account both turbulent and bulk
+velocities, the Mach number of the effective three-dimensional ve-
+locity (Hitomi Collaboration et al. 2018) is defined as
+M3D,eff = σv,eff
+cs
+=
+p
+3σ2v + v2
+bulk
+cs
+,
+(3)
+where σv is the 1D turbulent velocity dispersion. We note that
+equation 3 assumes isotropy for the turbulent component, hence
+the factor of 3, while the bulk velocity is treated as a directional
+
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+7
+0
+0.5
+1
+1.5
+counts s−1 keV−1
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+0
+1
+2
+ratio
+Energy (keV)
+C0
+Fe XXV Heα
+Fe XXVI Lyα
+(a)
+0
+0.05
+0.1
+0.15
+0.2
+counts s−1 keV−1
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+0
+1
+2
+ratio
+Energy (keV)
+N1
+(b)
+0
+0.01
+0.02
+counts s−1 keV−1
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+0
+1
+2
+ratio
+Energy (keV)
+N2
+(c)
+Fig. 3. Same as figure 2, but zoomed-in on the iron emission lines. Panels (a), (b), and (c) correspond to the C0, N1, and N2 regions, respectively. In
+these panels, the contributions from the C0, N1, and N2 regions are shown in red, green, and blue, respectively, while the total model is represented by
+the black solid line. Alt text: Three line graphs showing spectra in units of counts per second per kilo electron volt and their fitted curves. Panels (a), (b),
+and (c) focus on the 6 to 6.6 kilo electron volt range.
+quantity without assuming isotropy. However, it inherently carries
+some uncertainty due to the unknown orientation of the full 3D
+velocity field. We address this limitation in section 4.2. Using
+equation 3, the ratio of non-thermal pressure to the total pressure
+is estimated as
+α = PNT
+Ptot =
+M2
+3D,eff
+M2
+3D,eff + 3
+γ
+.
+(4)
+The results are summarized in figure 4. To examine the con-
+tribution of turbulent motion alone, we also compute the Mach
+number defined as M3D =
+√
+3σv/cs and the corresponding non-
+thermal pressure fraction,
+αturb =
+M2
+3D
+M2
+3D + 3
+γ
+.
+(5)
+In the core region, the estimated turbulent pressure fraction is
+αturb = 2.1 ± 0.3%, in agreement with the analysis in XRISM
+Collaboration (2025).
+The values of the non-thermal pressure fractions estimated from
+equations 4 and 5 are summarized in Table 3. At all radial posi-
+tions, the non-thermal pressure fraction remains small, at 2% or
+less. The radial distribution shows a trend of decreasing from the
+central region outward, with α approximately halving from the
+Center to the N2 region. A more quantitative treatment of the pres-
+sure distribution is provided in the next subsection.
+3.4 Mass modeling with non-thermal pressure
+Given the estimate of the non-thermal pressure provided in Sect.
+3.3, we can attempt to recover the mass profile of the system in
+the presence of kinetic motions and estimate the hydrostatic mass
+bias, b = 1 −Mhyd/Mtot, with Mhyd the mass that is recovered
+under the assumption that the gas in hydrostatic equilibrium. To
+this aim, we make use of the Python package hydromass3 (Eckert
+et al. 2022), which allows to reconstruct the mass profiles of galaxy
+clusters by jointly fitting the surface brightness and spectroscopic
+temperature profiles. In this framework, the 3D mass profile of the
+system is described using a parametric mass model M(< r) and
+combined with the model 3D gas density profile to predict the total
+pressure,
+Ptot(r) = P0 +
+Z r
+r0
+GM(< r)
+r2
+ρgas(r)dr
+(6)
+with r0 the outermost boundary of the available surface brightness
+profile, and P0 = P(r0) the integration constant, that represents
+the pressure at the outer boundary. In the usual case where non-
+thermal pressure is neglected, it is assumed that the total pressure
+described by equation 6 can be entirely ascribed to the thermal
+pressure PT =
+kb
+µmp ρgasT, such that the model pressure and den-
+sity can be combined to predict the gas temperature and compare
+the model to the available spectroscopic temperature data. For the
+3 https://hydromass.readthedocs.io
+
+8
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+4
+5
+6
+7
+8
+9
+10
+kT (keV)
+(a)
+0.0
+0.2
+0.4
+0.6
+0.8
+Z (solar)
+(b)
+0.076
+0.077
+0.078
+0.079
+0.080
+Redshift
+(c)
+300
+200
+100
+0
+100
+Bulk Velocity (km/s)
+(d)
+0
+50
+100
+150
+200
+Turbulent Velocity (km/s)
+(e)
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+Normalization (cm
+5)
+(f)
+200
+400
+600
+Radius (kpc)
+1000
+1200
+1400
+1600
+1800
+2000
+Sound Speed (km/s)
+(g)
+200
+400
+600
+Radius (kpc)
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+Mach Number
+(h)
+200
+400
+600
+Radius (kpc)
+0.000
+0.005
+0.010
+0.015
+0.020
+0.025
+0.030
+Non-thermal Pressure Fraction
+(i)
+Fig. 4. Radial distribution of the measured properties of the intracluster gas. The nine panels, from top to bottom, show (a) temperature, (b) metal
+abundance, (c) redshift, (d) line-of-sight bulk velocity, (e) line-of-sight turbulent velocity, (f) normalization, (g) sound speed, (h) effective Mach number
+(equation 3), and (i) the fraction of non-thermal pressure (equation 4). The ten data points, from left to right, correspond to the fit results in the 2–10 keV
+band (the filled circle); excluding the w-emission lines (the cross); assuming an uncertainty of -30% and +30% in the effective area (the plus signs), which
+are shown in the order of the three combinations of source and spectral regions (A1 to N1, A1 to N2, A2 to N2); the results in the 5.5–7 keV band (the filled
+square); and the results using no rebinning (the filled triangle). In panels (h) and (i), the Mach number considering only turbulence and the corresponding
+non-thermal pressure fraction (equation 5) are indicated by open squares. The x-axis values represent the center of each radial bin (kpc). For each radial
+bin, the results in the 2–10 keV band represent the standard case and are plotted at the leftmost position, while the other data points are slightly shifted to
+the right to avoid overlap. Alt text: Nine line graphs showing data across a horizontal axis ranging from a radius of 0 to 670 kilo parsec.
+details of the procedure, we refer the reader to Eckert et al. (2022).
+Here we extend the framework to include measurements of gas
+velocities, which allow us to constrain departures from hydrostatic
+equilibrium. Following Eckert et al. (2019), we assume that the
+residual gas motions detected by XRISM/Resolve are isotropic,
+such that the spatial velocity term of the Euler equation can be
+described as an additional pressure term (e.g., Lau et al. 2009),
+Ptot = PT + PNT
+(7)
+with
+PNT = 1
+3ρgasσ2
+v,3D.
+(8)
+Here, σv,3D represents the 3D turbulent velocity dispersion.
+Considering a model for PNT (r), the profile of σv,3D can be
+calculated within the model. To allow for a proper comparison
+to the data, we remark that the estimated σv,eff described in equa-
+tion 3 is averaged over the velocity structure along the line of sight,
+weighted by the local emission measure, EM3D (Truong et al.
+2024),
+σv,eff =
+p
+3σ2v + v2
+bulk =
+R
+EM3Dσ2
+v,3D dℓ
+R
+EM3D dℓ
+1/2
+.
+(9)
+For PNT (r), we use the parametric function proposed by
+Angelinelli et al. (2020), which was found to provide a good fit
+to the non-thermal pressure profiles of simulated clusters in the
+Itasca simulation (Vazza et al. 2017). The radial dependence of
+non-thermal pressure ratio in equation 4 is described as a power
+law with a constant floor,
+αNT (r) = PNT
+Ptot = a0
+
+r
+R200,m
+a1
++ a2
+(10)
+The parameters a0, a1, and a2 govern the radial evolution of
+the non-thermal pressure fraction, whereas R200,m represents the
+radius within which the mean density is 200 times the mean den-
+sity of the Universe. For more details on the implementation of the
+non-thermal pressure model, we refer to Chappuis et al. (in prep.).
+We complement the Resolve data with publicly available mea-
+surements of the gas density and temperature profiles of the system
+from XMM-Newton data obtained in the framework of the XMM
+
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+9
+Cluster Outskirts Project (X-COP; Eckert et al. 2017; Ghirardini
+et al. 2019)4. These radial profiles were extracted from a set of
+7 individual XMM-Newton pointings and cover the radial range
+from the core out to R200 ∼2.1 Mpc. We note that these profiles
+are radially averaged, whereas the Resolve data were obtained over
+a single arm covering a fraction of the azimuth; thus, we make the
+assumption that the velocity structure presented here is represen-
+tative of the full azimuth.
+We run hydromass on a dataset made of the Resolve σv,eff mea-
+surements, the X-COP spectroscopic temperature, and the X-COP
+surface brightness profile. We model the mass profile M(< r) as a
+Navarro-Frenk-White (NFW) profile (Navarro et al. 1996; Navarro
+et al. 1997), with the concentration c200 and the overdensity radius
+R200 as free parameters of the model. The full model has six free
+parameters: the NFW parameters c200 and R200, the integration
+constant P0, and the parameters describing αNT (r), i.e. a0, a1
+and a2 (Equation 10). We set uniform priors on both NFW pa-
+rameters, with an allowed range of [1-20] for c200 and [500-4000]
+kpc for R200c. To set the prior on P0, we fit the pressure profile of
+the system with a functional form and evaluate the model pressure
+at the edge of the available data. We then set a uniform prior on
+P0 centered on the estimated value and encompassing uncertain-
+ties of ±50%. Finally, we set uniform priors on the three param-
+eters of the Angelinelli et al. (2020) profile: a0 ∼U(−0.5,2.0),
+a1 ∼U(−1,2), and log a0 ∼U(−6,0). The model is optimized
+using the No U-Turn Sampler (NUTS) as implemented within the
+PyMC package (Salvatier et al. 2016).
+The results of the fitting procedure are shown in figure 5, where
+the left-hand panel displays the Resolve and X-COP spectroscopic
+temperature profiles and the fitted temperature model. We note
+the excellent agreement between the two datasets, which implies
+that our assumption that the Resolve results are representative of
+the full azimuth is probably justified. The right-hand panel of fig-
+ure 5 displays the effective velocity dispersion profile (Equation 3)
+as well as the best-fit model using the Angelinelli et al. (2020)
+parametrization (Equation 10). Posterior predictive checks (PPC)
+generated from the best-fit model agree well with the σv,eff data,
+which shows that the model provides a good representation of the
+data at hand. For comparison, we also show the sound speed pro-
+file in the same figure, which allows to readily convert the model
+velocity dispersion into a turbulent Mach number of ∼0.2 (see
+Sect. 3.3).
+The best-fit NFW model has a total mass M200 = (9.5 ± 0.3) ×
+1014M⊙, which is only 2% larger than the hydrostatic reconstruc-
+tion extracted from the same data (Eckert et al. 2022). The best-
+fitting parameters for the NFW model and the NT pressure ratio
+are shown in table 4. We can see that the floor parameter of the
+Angelinelli et al. (2020) model, a2, is very well constrained at a
+value of ∼2%, whereas the radial trend of αNT (r) is relatively
+poorly constrained. Technically, the fitted profile of αNT becomes
+negative beyond ∼1,500 kpc, which leads to an unphysical veloc-
+ity dispersion; in such a case, our code sets the predicted value of
+σv,3D to zero. Constraints on the velocity field at larger radii and
+throughout a more representative region of the cluster are needed
+to better determine the radial trend of αNT (r).
+These results show that the hydrostatic bias b = 1−Mhyd/Mtot
+is very low, of the order of 0.02 across the radial range of interest.
+The model αNT profile is shown in figure 6, together with the non-
+thermal pressure estimates obtained by converting the measured
+velocities into a non-thermal pressure ratio through equation 4. We
+4 https://dominiqueeckert.wixsite.com/xcop/a2029
+find a good agreement between the estimate obtained with equa-
+tion 4 and the posterior distribution of the model. We note the
+slight decreasing trend in the radial profile of the non-thermal pres-
+sure ratio, although the resulting distribution is consistent with a
+flat profile at ∼1σ. Conversely, numerical simulations usually pre-
+dict an increasing trend of αNT (r) (Lau et al. 2009; Nelson et al.
+2014; Biffi et al. 2016; Vazza et al. 2017; Angelinelli et al. 2020).
+4 Discussion
+We derived new constraints on the gas motions outside the core
+of the galaxy cluster Abell 2029 using Resolve’s high-resolution
+spectroscopic data, placing firm limits on the non-thermal pressure
+and estimating the hydrostatic mass bias b. To verify the reliability
+of this result, we applied two independent methods: Section 3.4
+presents a forward modeling analysis combining Resolve and
+XMM-Newton data, while section 4.1 evaluates density and pres-
+sure profiles based on a deprojection analysis of Resolve data. By
+comparing these approaches, we aim to confirm the robustness of
+the mass bias estimation and discuss the implications of our find-
+ings for the cluster’s gas dynamics and mass estimates.
+4.1 Non-thermal pressure and hydrostatic mass bias
+A direct estimate of the hydrostatic mass bias can be obtained
+through an evaluation of the contribution of the non-thermal com-
+ponent to the total pressure, under the assumption that total “true”
+mass is the one associated to the gravitational potential in equilib-
+rium with the gradient of the total (i.e. thermal plus non-thermal)
+gas pressure divided by the gas density. Following Equation 6
+(with Eqs. 4 and 3) in Ettori & Eckert (2022), the hydrostatic mass
+bias b can be written as
+b(r) = 1 −Mhyd(< r)
+Mtot(< r) = α(r) + A(r)
+1 + A(r)
+,
+(11)
+where
+α = PNT/Ptot
+and
+A = Ptot dα/dr (dPT/dr)−1.
+Alternatively, using the hydrostatic equilibrium equation for the
+thermal and total pressure separately allows us to write
+Mhyd
+Mtot =
+1
+1 + (dPNT/dr)(dPT/dr)−1 ,
+(12)
+which can be translated into another estimate of the hydrostatic
+mass bias, b2 ≈(dPNT/dPT)/(1 + dPNT/dPT). To make these
+calculations using only the 3 points available to the Resolve analy-
+sis, we have estimated the gas density both from the onion-peeling
+deprojection of the values of the normalization of the bapec model
+(see Table 3) and by assuming a universal pressure profile (e.g.,
+Arnaud et al. 2010) and dividing it by the values of the spectro-
+scopic temperatures from the best-fit 1T model. Then, both A and
+dPNT/dPT can be evaluated by estimating the slopes (and rela-
+tive errors) of the linear fit of the relations α −r, PT −r, and
+PNT −PT, respectively. We consistently obtain A in the range
+(0.7 −2.8) × 10−5, which provides a first direct measurement of
+a quantity previously known only from hydrodynamic simulations
+(see e.g., Figure 10 in Angelinelli et al. 2020), and implies val-
+ues of b(r) between 2.1 (±0.3) per cent in the central bin and 0.9
+(±0.7) in the outermost annulus. With the second approach, we
+estimate over the region a b2 of about 2.2 (with a statistical error
+of 0.4) per cent.
+4.2 Comparison with indirect measurements
+The non-thermal pressure contribution to the total pressure varies
+between 0.9 ± 0.7 and 2.1 ± 0.3% within R2500 (Figure 4). It is
+
+10
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+102
+103
+Radius [kpc]
+5
+6
+7
+8
+9
+TX [keV]
+Model
+Model T3D
+X-COP data
+Resolve data
+100
+200
+300
+400
+500
+600
+700
+Radius [kpc]
+102
+103
+v, eff [km/s]
+PPC
+Model
+cs
+R2500
+Data
+Fig. 5. Result of the hydrostatic NFW mass reconstruction. The left-hand panel shows the model spectroscopic temperature profile (blue curve and
+shaded area) and its deprojected 3D counterpart (green). The XMM-Newton X-COP data points are shown in orange, whereas the red points provide
+the temperature measurements obtained by XRISM/Resolve (see Table 3). The right-hand panel shows the fit to the effective velocity dispersion σv,eff
+(Equation 3, red data points) with the Angelinelli et al. (2020) parametrization (gray curve and shaded area). The orange curve shows posterior predictive
+checks (PPC) generated from the best-fit model, which show that the model provides a good representation of the data. For comparison, the blue curve
+shows the sounds speed in the medium (Equation 2). The approximate location of R2500 is highlighted by the vertical dotted line. Alt text: Two line graphs
+showing results from mass modeling. The horizontal axis in the left panel ranges from a radius of 2 to 2000 kilo parsecs, while in the right panel it ranges
+from 0 to 700 kilo parsecs.
+Table 4. Results of hydrostatic mass reconstruction in the presence of non-thermal pressure. The listed parameters are the masses (in unit of
+1014M⊙) and overdensity radii (in kpc) within overdensities of 2500 and 200 times the critical density, the NFW concentration c200 = R200/rs,
+where rs is the scale radius of the NFW profile. Additionally, the table includes the parameters of the Angelinelli et al. (2020) profile
+(Equation 10).
+M2500
+R2500
+M200
+R200
+c200
+a0
+a1
+a2
+3.4 ± 0.1
+608 ± 4
+9.5 ± 0.3
+1979 ± 21
+5.9 ± 0.2
+−0.13 ± 0.12
+1.6 ± 0.5
+0.021 ± 0.004
+0
+100
+200
+300
+400
+500
+600
+700
+800
+Radius [kpc]
+0.000
+0.005
+0.010
+0.015
+0.020
+0.025
+0.030
+0.035
+0.040
+PNT/Ptot
+Model
+R2500
+Eq. 4
+Fig. 6. Non-thermal pressure ratio as a function of cluster-centric radius
+inferred from the best-fit hydrostatic model (blue line and shaded area).
+The red data points show the non-thermal pressure ratio obtained directly
+from the Resolve data points through equation 4. The dashed vertical line
+shows the location of R2500. Alt text: Line graph showing the pressure
+ratio. The horizontal axis ranges from a radius of 0 to 800 kilo parsec, and
+the vertical axis ranges from 0 to 0.04.
+interesting to compare these values with earlier estimates based on
+indirect probes of velocities of gas motions in the ICM. Recently,
+Heinrich et al. (2024) analyzed X-ray surface brightness fluctua-
+tions within R2500 in a sample of bright galaxy clusters observed
+with Chandra, measuring power spectra of density fluctuations and
+converting them to velocity power spectra assuming that both are
+proportional to each other with the proportionality coefficient cal-
+ibrated for clusters in different dynamical states (Zhuravleva et al.
+2023). This fluctuations analysis obtained the non-thermal pres-
+sure contribution between 0.3–2.1% within the R2500 region in
+A2029, accounting for statistical errors and uncertainties related
+to the largest contributing scales. Within the uncertainties, the in-
+direct method is in excellent agreement with the direct XRISM
+Resolve measurements. The same indirect method obtained up-
+per limits on the weighted-average PNT/Ptot of 6 ± 2 and 4 ± 2
+% within R2500 in relaxed and intermediate clusters, respectively,
+placing A2029 within this range.
+These results confirm that the independent methods provide
+consistent estimates, with the hydrostatic mass bias in the R2500
+region being as low as 2%. This suggests that the contribution of
+non-thermal pressure is minimal and has a negligible impact on
+cluster mass estimates. However, our estimate assumes isotropic
+gas motions, while cosmological simulations predict that direc-
+tional dependence may not be negligible, potentially leading to an
+underestimation of velocity dispersion when observations are lim-
+ited to a single azimuthal direction (Ota et al. 2018). In addition,
+
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+11
+simulations of a Perseus-like sloshing core by ZuHone et al. (2018)
+indicate that assuming isotropic gas motions may result in an un-
+derestimation of the total gas velocity. Furthermore, Lau et al.
+(2013) found that random and rotational motions have a greater
+effect on mass estimates than bulk (streaming) motion. These in-
+sights highlight the importance of multi-directional observations
+to better account for the gas velocity field and improve mass esti-
+mates.
+Previous studies suggest that gas motions induced by sloshing
+in the core of A2029 are likely occurring mostly in the plane of
+the sky, with a viewing angle estimated to be less than 30◦based
+on Chandra X-ray imaging (Paterno-Mahler et al. 2013). Based
+on the pressure balance between the radio lobes and the ICM
+ram pressure, they estimate the gas velocity to be approximately
+150 −300 kms−1. Due to projection effects, a viewing angle of
+30◦can lead to an underestimation of the inferred gas velocity by
+a factor of ∼2 (ZuHone et al. 2018). If the true three-dimensional
+velocity in our observation is underestimated by a similar factor,
+the corresponding non-thermal pressure fraction could reach up to
+∼5%. Nevertheless, this still indicates a low level of non-thermal
+pressure support in the core region. Given the uncertainties asso-
+ciated with the 3D structure of gas motions, we plan to perform
+further analysis by dividing the central region into smaller subre-
+gions to search for velocity gradients, and by comparing our results
+in more detail with tailored numerical simulations of sloshing in
+A2029-like clusters. However, such efforts are beyond the scope
+of the present paper.
+5 Conclusions
+In this study, we conducted a detailed investigation of the gas
+dynamics and non-thermal pressure in the galaxy cluster A2029
+using high-resolution spectroscopic data from XRISM Resolve.
+Resolve’s unprecedented spectral resolution and precise velocity
+measurements enabled us to directly assess the role of gas motions
+in hydrostatic mass estimates, a crucial factor in evaluating mass
+bias. Our analysis yielded the following key findings:
+• The observed bulk and turbulent gas velocities were gen-
+erally small.
+In the center, the turbulent velocity reached
+150 kms−1 and decreased with radius. Blueshifts of approx-
+imately 220 kms−1 and 90 kms−1 were detected in the two
+northern regions, indicating significant bulk motions outside the
+core. Both turbulent and bulk motions can contribute to devia-
+tions from hydrostatic equilibrium.
+• In the outer regions up to R2500, the non-thermal pressure com-
+ponent remained small, below 2%, and decreased with radius.
+This trend differs from many simulations predicting an increase
+at large radii. Our direct velocity measurements yielded a low
+hydrostatic mass bias of only 2% across the observed radial
+range.
+• Our results show good agreement with indirect methods, such
+as surface brightness fluctuation analyses, further supporting the
+robustness of our results.
+These findings indicate that within the scale radius R2500, non-
+thermal pressure plays a minimal role in mass estimates based on
+hydrostatic equilibrium in relaxed clusters like A2029. This high-
+lights the XRISM Resolve’s capability to provide accurate con-
+straints on cluster mass, enhancing its potential as cosmological
+probe.
+However, several open questions remain. Future observations
+across multiple azimuthal directions are needed to verify the as-
+sumption of isotropic gas motions. Additionally, a larger sample
+of galaxy clusters will be essential to establish statistically signif-
+icant constraints on non-thermal pressure profiles and hydrostatic
+mass bias in different cluster environments.
+References
+Allen, S. W., Rapetti, D. A., Schmidt, R. W., Ebeling, H., Morris, R. G., &
+Fabian, A. C. 2008, MNRAS, 383, 3, 879
+Angelinelli, M., Vazza, F., Giocoli, C., Ettori, S., Jones, T. W., Brunetti, G.,
+Brüggen, M., & Eckert, D. 2020, MNRAS, 495, 1, 864
+Arnaud, K. A., in G. H. Jacoby & J. Barnes, eds., Astronomical Data
+Analysis Software and Systems V (1996), vol. 101 of Astronomical
+Society of the Pacific Conference Series, p. 17
+Arnaud, M., Pratt, G. W., Piffaretti, R., Böhringer, H., Croston, J. H., &
+Pointecouteau, E. 2010, A&A, 517, A92
+Biffi, V. et al. 2016, ApJ, 827, 2, 112
+Cash, W. 1979, ApJ, 228, 939
+Eckert, D., Ettori, S., Pointecouteau, E., Molendi, S., Paltani, S., & Tchernin,
+C. 2017, Astronomische Nachrichten, 338, 293, 293
+Eckert, D., Ettori, S., Pointecouteau, E., van der Burg, R. F. J., & Loubser,
+S. I. 2022, A&A, 662, A123
+Eckert, D. et al. 2019, A&A, 621, A40
+Ettori, S. & Eckert, D. 2022, A&A, 657, L1
+Foster, A. R., Ji, L., Smith, R. K., & Brickhouse, N. S. 2012, ApJ, 756, 128
+Ghirardini, V. et al. 2019, A&A, 621, A41
+Gouin, C., Bonnaire, T., & Aghanim, N. 2021, A&A, 651, A56
+Heinrich, A., Zhuravleva, I., Zhang, C., Churazov, E., Forman, W., & van
+Weeren, R. J. 2024, MNRAS, 528, 4, 7274
+HI4PI Collaboration et al. 2016, A&A, 594, A116
+Hitomi Collaboration et al. 2018, PASJ, 70, 2, 9
+Ishisaki, Y. et al., in J.-W. A. den Herder, S. Nikzad, & K. Nakazawa,
+eds., Space Telescopes and Instrumentation 2022: Ultraviolet to Gamma
+Ray (2022), vol. 12181 of Society of Photo-Optical Instrumentation
+Engineers (SPIE) Conference Series, p. 121811S
+Kaastra, J. S. & Bleeker, J. A. M. 2016, A&A, 587, A151
+Lau, E. T., Kravtsov, A. V., & Nagai, D. 2009, ApJ, 705, 2, 1129
+Lau, E. T., Nagai, D., & Nelson, K. 2013, ApJ, 777, 2, 151
+Lewis, A. D., Stocke, J. T., & Buote, D. A. 2002, ApJL, 573, 1, L13
+Lodders, K. & Palme, H. 2009, Meteoritics and Planetary Science
+Supplement, 72, 5154
+Miniati, F. 2014, ApJ, 782, 1, 21
+Navarro, J. F., Frenk, C. S., & White, S. D. M. 1996, ApJ, 462, 563
+Navarro, J. F., Frenk, C. S., & White, S. D. M. 1997, ApJ, 490, 493
+Nelson, K., Lau, E. T., Nagai, D., Rudd, D. H., & Yu, L. 2014, ApJ, 782, 2,
+107
+Norman, M. L. & Bryan, G. L., in H.-J. Röser & K. Meisenheimer, eds., The
+Radio Galaxy Messier 87 (1999), vol. 530, p. 106
+Ota, N., Nagai, D., & Lau, E. T. 2018, PASJ, 70, 3, 51
+Ota, N. & Yoshida, H. 2016, PASJ, 68, S19
+Paterno-Mahler, R., Blanton, E. L., Randall, S. W., & Clarke, T. E. 2013,
+ApJ, 773, 2, 114
+Pratt, G. W., Arnaud, M., Biviano, A., Eckert, D., Ettori, S., Nagai, D.,
+Okabe, N., & Reiprich, T. H. 2019, Space Sci. Rev., 215, 2, 25
+Salvatier, J., Wiecki, T. V., & Fonnesbeck, C. 2016, PeerJ Computer Science,
+2:e55
+Sanders, J. S. et al. 2020, A&A, 633, A42
+Smith, R. K., Brickhouse, N. S., Liedahl, D. A., & Raymond, J. C. 2001,
+ApJL, 556, L91
+Sohn, J., Geller, M. J., Walker, S. A., Dell’Antonio, I., Diaferio, A., & Rines,
+K. J. 2019, ApJ, 871, 1, 129
+Tashiro, M. et al., in J.-W. A. den Herder, S. Nikzad, & K. Nakazawa,
+eds., Space Telescopes and Instrumentation 2020: Ultraviolet to Gamma
+Ray (2020), vol. 11444 of Society of Photo-Optical Instrumentation
+Engineers (SPIE) Conference Series, p. 1144422
+Tashiro, M. et al. 2025, PASJ
+Truong, N., Pillepich, A., Nelson, D., Zhuravleva, I., Lee, W., Ayromlou, M.,
+
+12
+Publications of the Astronomical Society of Japan (0000), Vol. 00, No. 0
+& Lehle, K. 2024, A&A, 686, A200
+Ueda, S., Ichinohe, Y., Molnar, S. M., Umetsu, K., & Kitayama, T. 2020,
+ApJ, 892, 2, 100
+Vazza, F., Brunetti, G., Kritsuk, A., Wagner, R., Gheller, C., & Norman, M.
+2009, A&A, 504, 1, 33
+Vazza, F., Jones, T. W., Brüggen, M., Brunetti, G., Gheller, C., Porter, D., &
+Ryu, D. 2017, MNRAS, 464, 1, 210
+Vikhlinin, A., Kravtsov, A., Forman, W., Jones, C., Markevitch, M., Murray,
+S. S., & Van Speybroeck, L. 2006, ApJ, 640, 2, 691
+Wilms, J., Allen, A., & McCray, R. 2000, ApJ, 542, 2, 914
+XRISM Collaboration. 2025, arXiv e-prints, arXiv:2501.05514
+Zhuravleva, I., Chen, M. C., Churazov, E., Schekochihin, A. A., Zhang, C.,
+& Nagai, D. 2023, MNRAS, 520, 4, 5157
+Zinger, E., Dekel, A., Birnboim, Y., Kravtsov, A., & Nagai, D. 2016,
+MNRAS, 461, 1, 412
+ZuHone, J. A., Miller, E. D., Bulbul, E., & Zhuravleva, I. 2018, ApJ, 853, 2,
+180
+Acknowledgments
+We gratefully acknowledge the hard work over many years of all
+of the engineers and scientists who made the XRISM mission
+possible. Part of this work was performed under the auspices of
+the U.S. Department of Energy by Lawrence Livermore National
+Laboratory under Contract DE-AC52-07NA27344. The material
+is based upon work supported by NASA under award num-
+bers 80GSFC21M0002 and 80GSFC24M0006.
+This work was
+supported by JSPS KAKENHI grant numbers JP23H00121,
+JP22H00158,
+JP22H01268,
+JP22K03624,
+JP23H04899,
+JP21K13963,
+JP24K00638,
+JP24K17105,
+JP21K13958,
+JP21H01095,
+JP23K20850,
+JP24H00253,
+JP21K03615,
+JP24K00677,
+JP20K14491,
+JP23H00151,
+JP19K21884,
+JP20H01947,
+JP20KK0071,
+JP23K20239,
+JP24K00672,
+JP24K17104,
+JP24K17093,
+JP20K04009,
+JP21H04493,
+JP20H01946,
+JP23K13154,
+JP19K14762,
+JP20H05857,
+and
+JP23K03459.
+This work was supported by NASA grant num-
+bers 80NSSC20K0733,
+80NSSC18K0978,
+80NSSC20K0883,
+80NSSC20K0737,
+80NSSC24K0678,
+80NSSC18K1684,
+80NSSC23K0650,
+and
+80NNSC22K1922.
+LC
+acknowl-
+edges support from NSF award 2205918.
+CD acknowledges
+support from STFC through grant ST/T000244/1.
+LG ac-
+knowledges financial support from Canadian Space Agency
+grant 18XARMSTMA. NO acknowledges partial support by
+the Organization for the Promotion of Gender Equality at Nara
+Women’s University.
+MS acknowledges the support by the
+RIKEN Pioneering Project Evolution of Matter in the Universe
+(r-EMU) and Rikkyo University Special Fund for Research
+(Rikkyo SFR). AT and the present research are in part supported
+by the Kagoshima University postdoctoral research program
+(KU-DREAM). SY acknowledges support by the RIKEN SPDR
+Program.
+TY acknowledges support by NASA under award
+number 80GSFC24M0006.
+IZ acknowledges partial support
+from the Alfred P. Sloan Foundation through the Sloan Research
+Fellowship.
+SE acknowledges the financial contribution from
+the contracts Prin-MUR 2022 supported by Next Generation
+EU (M4.C2.1.1, n.20227RNLY3 The concordance cosmological
+model:
+stress-tests with galaxy clusters), ASI-INAF Athena
+2019-27-HH.0, “Attività di Studio per la comunità scientifica di
+Astrofisica delle Alte Energie e Fisica Astroparticellare” (Accordo
+Attuativo ASI-INAF n.
+2017-14-H.0), and from the European
+Union’s Horizon 2020 Programme under the AHEAD2020
+project (grant agreement n.
+871158).
+LL acknowledges the
+financial
+contribution
+from
+the
+INAF
+grant
+1.05.12.04.01.
+This work was supported by the JSPS Core-to-Core Program,
+JPJSCCA20220002. The material is based on work supported by
+the Strategic Research Center of Saitama University.

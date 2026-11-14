@@ -1,0 +1,37 @@
+{
+  "A85": {
+    "completed_baryon_total_Msun": 178060732884553.8,
+    "shared_specific_work": 767414.0037989776,
+    "specific_work_using_only_R500_baryons": 536655.8642660638
+  },
+  "A1795": {
+    "completed_baryon_total_Msun": 133261949216566.1,
+    "shared_specific_work": 663893.96740049,
+    "specific_work_using_only_R500_baryons": 473213.3464756857
+  },
+  "A2029": {
+    "completed_baryon_total_Msun": 276314918020755.6,
+    "shared_specific_work": 955977.8021458755,
+    "specific_work_using_only_R500_baryons": 649744.2973086054
+  },
+  "A2142": {
+    "completed_baryon_total_Msun": 336672515231796.3,
+    "shared_specific_work": 1055235.6949276724,
+    "specific_work_using_only_R500_baryons": 700017.8524158928
+  },
+  "A2319": {
+    "completed_baryon_total_Msun": 275415029758065.78,
+    "shared_specific_work": 954419.8428869116,
+    "specific_work_using_only_R500_baryons": 706102.6310040615
+  },
+  "A644": {
+    "completed_baryon_total_Msun": 150756032845718.9,
+    "shared_specific_work": 706127.2830281366,
+    "specific_work_using_only_R500_baryons": 520160.27431114926
+  },
+  "ZW1215": {
+    "completed_baryon_total_Msun": 156595160876293.9,
+    "shared_specific_work": 719672.338441907,
+    "specific_work_using_only_R500_baryons": 528031.2464409603
+  }
+}

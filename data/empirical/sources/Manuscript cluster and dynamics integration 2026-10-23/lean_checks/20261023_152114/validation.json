@@ -1,0 +1,15 @@
+{
+  "toolchain": "Lean/mathlib 4.19.0",
+  "passed": false,
+  "records": [
+    {
+      "module": "Entropic.Extensions20261023.MuseProjection",
+      "theorems": 4,
+      "exit_code": 1,
+      "nonstandard_axioms": [
+        "sorryAx"
+      ],
+      "success": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "purpose": "Check the entropy direction of the selected thermal closure and its thermodynamic derivatives.",
+  "row": {
+    "grid": 256,
+    "dt": 0.028089887640449437,
+    "final_time": 5.0,
+    "gamma": 1.3333333333333333,
+    "minimum_proper_density": 0.2,
+    "minimum_thermal_energy": -9.561018643466925e-12,
+    "max_absolute_mean_energy_drift": 4.440892098500626e-16,
+    "max_absolute_mean_current_drift": 8.881784197001252e-16,
+    "final_mean_thermal_energy": 0.04289144027951319,
+    "max_sound_speed_squared": 0.9828287666873788,
+    "minimum_contact_gate": 0.017469891253331263,
+    "maximum_contact_gate": 1.0000000000000002,
+    "min_final_rest_energy_over_floor": 1.1456872787991224,
+    "density_or_thermal_clipping": false,
+    "minimum_sampled_entropy_increment": 0.0003720979379187861,
+    "final_mean_entropy": 0.08258114532266589
+  },
+  "symbolic": {
+    "thermal_pressure": "0",
+    "thermal_enthalpy": "0",
+    "thermal_sound_numerator": "0"
+  },
+  "entropy_density": "e_th^(1/gamma), with its Lorentz factor in the lab density; chosen entropy normalization",
+  "roundoff": "Only the diagnostic fractional power uses max(e_th,0); negative inversion errors are retained in the evolved state and reported."
+}

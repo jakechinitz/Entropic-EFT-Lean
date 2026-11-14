@@ -1,0 +1,97 @@
+{
+  "micro": {
+    "states": 1680,
+    "eta": 0.029866844393522392,
+    "mean_K2": 50.22291542541819,
+    "g": 7.4198000235709,
+    "epsilon": 0.18794573019441235,
+    "inverse_epsilon": 5.320684853896884,
+    "a0_SI": 1.230729237644181e-10
+  },
+  "redshift": {
+    "range": [
+      0.33,
+      1.44
+    ],
+    "grid_spacing": 0.01,
+    "intercept": 1.0030047415016665,
+    "slope": 1.2259149635283668,
+    "a0_z1_in_1e10": 2.20379944754508,
+    "intercept_marginal_residual_sigma": -0.5399051699666702,
+    "slope_marginal_residual_sigma": 0.25914963528366863
+  },
+  "LMC": {
+    "rM_kpc": 1.8430474042183151,
+    "mass30": 50347525504.73651,
+    "mass50": 82896161265.69237,
+    "cap_radius_kpc": 61.73750307389501,
+    "qumond_mass30": {
+      "exponential (RAR)": 16789586655.417332,
+      "simple": 16813514206.718735,
+      "standard": 15392540647.39014
+    }
+  },
+  "CraterII_Bayes_factors": [
+    {
+      "model_error": 0.1,
+      "LMC_0.3": 197837355.69284457,
+      "LMC_0.5": 261530.94791719617
+    },
+    {
+      "model_error": 0.2,
+      "LMC_0.3": 2985.1879391882035,
+      "LMC_0.5": 925.5093628892355
+    },
+    {
+      "model_error": 0.3,
+      "LMC_0.3": 154.88057064110217,
+      "LMC_0.5": 94.159798425803
+    }
+  ],
+  "cosmology": {
+    "mixing_PBD": {
+      "model": "o12",
+      "data": "PBD",
+      "r": null,
+      "chi2": 2227.329,
+      "params": [
+        0.022381,
+        0.282706,
+        3.046175,
+        0.966731,
+        0.056678
+      ],
+      "parts": {
+        "cmb": 588.578,
+        "bao": 11.735,
+        "sn": 1627.017
+      },
+      "h": 0.68939,
+      "wc": 0.119357,
+      "ratio": 5.333,
+      "nfev": 192,
+      "minutes": 18.7
+    },
+    "current_background_reintegration": {
+      "Frel0": 0.6633922061224816,
+      "Irel": 94.21163098015707,
+      "h": 0.6893926088627393,
+      "OmegaLambda": 0.7066567474788634,
+      "z_half": 7.9149631694360805,
+      "fraction_by_z6": 0.656639831644095
+    }
+  },
+  "sha256": {
+    "Astra Quantum gravity completion.tex": "4b64eceabafe19449b55bd788529e5704b18a18b43a1244cbb339618cf2a8a5d",
+    "Spacetime consolidation 2026-10-16/MICROSTRUCTURE_TO_SPACETIME.md": "66591d8a41a5874bcf7b4104a10ba7100fd7a83c6b96ac90a5a56779016d521b",
+    "llm writing guide.docx": "d429ea801754dbc3f7670cb69100303916b5d6b582e9fa8911b1d29b194cd537",
+    "caustic_fit_bundle_v3.zip": "0c221122c1ff9b360c409dfb9efadbbde0d7faf086378c9086f9e45f5aa06ce9",
+    "Crater II and Antlia 2 vs LCDM/PREREGISTRATION.md": "6c6586ef848e86e82e60b829cddda32aa37e5d27f6d23459ecac5ec9b743903e",
+    "Crater II and Antlia 2 vs LCDM/grid_results.zip": "1c1c91dbbc3e45d209fdafdbdc9325a5644649c00ca0a89c679822ba4b0ecec7",
+    "Crater II and Antlia 2 vs LCDM/lmc_results.zip": "d94485ba72287fdbb4ecf00be23a978b1b474b6f4b9b4257fc3d8424360beab1",
+    "Full Planck tied abundance/fits_lenscorr.jsonl": "039bcc8cafc0a057cac6070c7c10adf8a04666570ccb9478b62c11e4be6d61da",
+    "Release zoom/RESULTS.md": "97b3cd5b567d3b42dc4eaa34ae4c6daa6b95ff15e1b95198561100d55128448f",
+    "Release zoom/zoom_fits.jsonl": "f7cb1ad23fbf3287c07d5b1e9421e75aa1424ccea4b372b5c11498500854d4ac"
+  },
+  "source_snapshot_note": "Main theory snapshot checked at finalization. Changes to the finite geometry-matter account were incorporated; empirical numerical inputs and archived likelihood inputs were unchanged. The live workspace manuscript continues to be edited independently."
+}

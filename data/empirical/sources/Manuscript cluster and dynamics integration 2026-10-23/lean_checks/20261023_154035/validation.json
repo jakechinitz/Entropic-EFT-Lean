@@ -1,0 +1,13 @@
+{
+  "toolchain": "Lean/mathlib 4.19.0",
+  "passed": true,
+  "records": [
+    {
+      "module": "Entropic.Extensions20261023.ConnectedClosure",
+      "theorems": 42,
+      "exit_code": 0,
+      "nonstandard_axioms": [],
+      "success": true
+    }
+  ]
+}

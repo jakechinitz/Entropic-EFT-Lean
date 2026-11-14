@@ -1,0 +1,141 @@
+{
+  "release": "CANUCS Bullet v1, README 17 March 2026; Rihtarsic et al. 2601.22245v2",
+  "cosmology": {
+    "H0": 70,
+    "Om0": 0.3,
+    "z_lens": 0.296
+  },
+  "Dls_over_Ds": 1,
+  "angular_diameter_distance_kpc": 910251.4270192327,
+  "kpc_per_arcsec": 4.413023450684023,
+  "Sigma_crit_Msun_per_kpc2": 1826876059.5312588,
+  "pixel_area_kpc2": 0.04869911395828354,
+  "map_shape": [
+    8000,
+    8000
+  ],
+  "gas_native_pixel_kpc": 8.684830150999115,
+  "BCG_positions_fk5_deg": {
+    "BCG1": [
+      104.65872211191241,
+      -55.95715728753242
+    ],
+    "BCG2": [
+      104.64678521053877,
+      -55.949054587314244
+    ],
+    "BCG3": [
+      104.56641479844741,
+      -55.94336248583845
+    ]
+  },
+  "subcluster_fitted_halo_BCG_offset_kpc": 3.9221282296642803,
+  "subcluster_native_gas_peak_BCG_offset_kpc": 168.59060091332682,
+  "apertures": [
+    {
+      "centre": "BCG1",
+      "radius_kpc": 60.0,
+      "total_projected_Msun": 23148058129965.617,
+      "gas_projected_Msun": 1627325804422.147,
+      "nongas_projected_Msun": 21520732325543.47,
+      "gas_fraction": 0.07030074813556571,
+      "coextensive_gas_only_to_total": 0.4341827076613002,
+      "stellar_Msun_needed_for_coextensive_equality": 2120694961277.2578
+    },
+    {
+      "centre": "BCG1",
+      "radius_kpc": 150.0,
+      "total_projected_Msun": 112810274712263.58,
+      "gas_projected_Msun": 10059411282027.562,
+      "nongas_projected_Msun": 102750863430236.02,
+      "gas_fraction": 0.08917105563021917,
+      "coextensive_gas_only_to_total": 0.5507271459456629,
+      "stellar_Msun_needed_for_coextensive_equality": 8206278644613.656
+    },
+    {
+      "centre": "BCG2",
+      "radius_kpc": 60.0,
+      "total_projected_Msun": 22720045158749.816,
+      "gas_projected_Msun": 2062031808661.2202,
+      "nongas_projected_Msun": 20658013350088.598,
+      "gas_fraction": 0.09075826188959409,
+      "coextensive_gas_only_to_total": 0.5605298511741116,
+      "stellar_Msun_needed_for_coextensive_equality": 1616687182561.0913
+    },
+    {
+      "centre": "BCG2",
+      "radius_kpc": 150.0,
+      "total_projected_Msun": 116067039389913.22,
+      "gas_projected_Msun": 12590121267744.469,
+      "nongas_projected_Msun": 103476918122168.75,
+      "gas_fraction": 0.10847283892069888,
+      "coextensive_gas_only_to_total": 0.6699364111954641,
+      "stellar_Msun_needed_for_coextensive_equality": 6202888124412.766
+    },
+    {
+      "centre": "BCG3",
+      "radius_kpc": 60.0,
+      "total_projected_Msun": 21507907115135.93,
+      "gas_projected_Msun": 988347249246.0002,
+      "nongas_projected_Msun": 20519559865889.93,
+      "gas_fraction": 0.04595273933233898,
+      "coextensive_gas_only_to_total": 0.28380757412843305,
+      "stellar_Msun_needed_for_coextensive_equality": 2494108257028.6064
+    },
+    {
+      "centre": "BCG3",
+      "radius_kpc": 150.0,
+      "total_projected_Msun": 85111763534228.02,
+      "gas_projected_Msun": 6184368467315.182,
+      "nongas_projected_Msun": 78927395066912.83,
+      "gas_fraction": 0.07266173570505462,
+      "coextensive_gas_only_to_total": 0.4487643444555288,
+      "stellar_Msun_needed_for_coextensive_equality": 7596513511663.061
+    }
+  ],
+  "pixel_convergence": [
+    {
+      "centre": "BCG1",
+      "radius_kpc": 60.0,
+      "max_grid_change_total_fraction": 0.0009755606247334736,
+      "max_grid_change_gas_fraction": 0.00021237646864968873
+    },
+    {
+      "centre": "BCG1",
+      "radius_kpc": 150.0,
+      "max_grid_change_total_fraction": 8.460918681896246e-05,
+      "max_grid_change_gas_fraction": 0.0002548430545423752
+    },
+    {
+      "centre": "BCG2",
+      "radius_kpc": 60.0,
+      "max_grid_change_total_fraction": 0.0021322422317591183,
+      "max_grid_change_gas_fraction": 0.0003922671428451263
+    },
+    {
+      "centre": "BCG2",
+      "radius_kpc": 150.0,
+      "max_grid_change_total_fraction": 0.0004999920764148236,
+      "max_grid_change_gas_fraction": 0.00021752467365709904
+    },
+    {
+      "centre": "BCG3",
+      "radius_kpc": 60.0,
+      "max_grid_change_total_fraction": 0.00027313744843515675,
+      "max_grid_change_gas_fraction": 0.00020439318191134426
+    },
+    {
+      "centre": "BCG3",
+      "radius_kpc": 150.0,
+      "max_grid_change_total_fraction": 0.00021464617753963466,
+      "max_grid_change_gas_fraction": 0.00028472359259112956
+    }
+  ],
+  "limits": [
+    "A best-fit reconstruction is an empirical target, not a theory prediction.",
+    "Total minus gas still contains stars. Galaxy lens halos must not be subtracted as purely stellar masses.",
+    "Apertures overlap or include other components and are not isolated halo virial masses.",
+    "No map covariance or model-systematic marginalization; no fit significance or contact-rate bound.",
+    "The previous idealized simulation has the wrong observational resolution and unfitted initial conditions for the 4-kpc alignment."
+  ]
+}

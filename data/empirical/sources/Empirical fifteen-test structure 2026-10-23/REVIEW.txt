@@ -1,0 +1,25 @@
+EMPIRICAL FIFTEEN-TEST ORGANIZATION
+23 October 2026
+
+All fifteen registered test families are represented once in Table 1, with
+resolved links to their discussion. The printed contents and body use:
+I. Distinctive predictions and discriminating tests
+II. Recovery of established phenomenology
+
+The first group identifies specific comparisons and predictions; it does not
+assert that all conventional physics fails. The second group records benchmark
+recovery and compatibility. The table separates the role of each test from its
+actual evidence. High-redshift residual tension, model-dependent dwarf odds,
+historical constant selection, and unfinished likelihoods remain explicit.
+
+The common CMB/galaxy relation states the mass-conversion and survival factors.
+ACT projected lensing is distinguished from the uncompleted full-shape and
+nonlinear growth tests. The prior cluster/dynamics integration is retained.
+
+The PDF has 42 pages (previously 41). All pages were rendered; the four contact
+sheets and the detailed overview/new section/Part II pages were inspected.
+No off-page text, overfull boxes, undefined references, or undefined citations
+were found. The source archive includes the new chapter and exact editorial
+diffs. All original source bytes and the prior archive/PDF are preserved.
+
+No empirical fits, simulations, or Lean proofs were rerun for this edit.

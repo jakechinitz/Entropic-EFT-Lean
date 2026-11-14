@@ -1,0 +1,160 @@
+{
+  "fit_parameters": [
+    0.022379323421948115,
+    0.27424477631205796,
+    3.045850666867355,
+    0.9666293127653468,
+    0.05661581639909799
+  ],
+  "lcdm_parameters": [
+    0.022487702684082463,
+    0.11821088767824338,
+    0.6865583121049351,
+    3.04599920147877,
+    0.9691878255040245,
+    0.05796062348377821
+  ],
+  "verification": {
+    "geodesic": {
+      "cmb": 589.0778347292978,
+      "bao": 11.706763006270112,
+      "sn": 1627.016022787648,
+      "total": 2227.800620523216,
+      "H0": 68.93885586416002
+    },
+    "lcdm": {
+      "cmb": 590.2153049612746,
+      "bao": 11.191153694217714,
+      "sn": 1626.9093666150516,
+      "total": 2228.315825270544,
+      "H0": 68.65583121049352
+    },
+    "delta_chi2": -0.5152047473279708,
+    "delta_AIC_conditional_parameter_counts_5_vs_6": -2.515204747327971
+  },
+  "observables": {
+    "geodesic": {
+      "H0": 68.93877308431982,
+      "rdrag": 147.27157482124755,
+      "EG": [
+        {
+          "z": 0.316,
+          "median": 0.43749976943060026,
+          "min": 0.43748111779558,
+          "max": 0.43752355958671196,
+          "f_baryon_median": 0.6791454912263174
+        },
+        {
+          "z": 0.555,
+          "median": 0.38623346544134957,
+          "min": 0.3862135736526526,
+          "max": 0.38625895706022717,
+          "f_baryon_median": 0.770386632332444
+        }
+      ]
+    },
+    "lcdm": {
+      "H0": 68.65583121049352,
+      "rdrag": 147.45316515096633,
+      "EG": [
+        {
+          "z": 0.316,
+          "median": 0.4411054638689822,
+          "min": 0.4410866375555963,
+          "max": 0.44112977797064284,
+          "f_baryon_median": 0.6795526924158029
+        },
+        {
+          "z": 0.555,
+          "median": 0.3898115677734462,
+          "min": 0.3897914667449334,
+          "max": 0.3898376271000033,
+          "f_baryon_median": 0.7693780450886615
+        }
+      ],
+      "EG_times_f_baryon_over_Omega_max_deviation": 0.00772057225230105,
+      "EG_Poisson_normalization_max_relative_error": 2.847427755581222e-06,
+      "normalization_note": "Using f_baryon=theta_b/delta_b alone leaves delta_total/delta_b; the Poisson check includes this density-transfer ratio."
+    }
+  },
+  "background": {
+    "H0": 68.9387513241619,
+    "vacuum_fraction_z2": 0.9682403298530571,
+    "z_half_vacuum": 7.927775043292813,
+    "release_today": 0.6635663135209895,
+    "stock_survival_today": 0.980376466268188,
+    "stock_drain_since_z1_as_fraction_initial": 0.004934668270983766,
+    "effective_w_vacuum_today": -1.0005399335136254,
+    "table": [
+      {
+        "z": 0,
+        "H": 68.9387513241619,
+        "a0": 1.258826956399366e-10,
+        "vacuum_fraction": 1.0,
+        "release_fraction": 0.6635663135209895
+      },
+      {
+        "z": 0.316,
+        "H": 80.85495987440065,
+        "a0": 1.4764178505335295e-10,
+        "vacuum_fraction": 0.9991556789413246,
+        "release_fraction": 0.6127301985278281
+      },
+      {
+        "z": 0.555,
+        "H": 92.7720543037588,
+        "a0": 1.6940249208892548e-10,
+        "vacuum_fraction": 0.9978794437034312,
+        "release_fraction": 0.5716351063483209
+      },
+      {
+        "z": 1,
+        "H": 120.58452492191185,
+        "a0": 2.2018827956797078e-10,
+        "vacuum_fraction": 0.9933448898028183,
+        "release_fraction": 0.4954596094498601
+      },
+      {
+        "z": 2,
+        "H": 203.03192566450772,
+        "a0": 3.7073787402148266e-10,
+        "vacuum_fraction": 0.9682403298530571,
+        "release_fraction": 0.34481838836098666
+      },
+      {
+        "z": 2.3,
+        "H": 231.950315166771,
+        "a0": 4.235430779769925e-10,
+        "vacuum_fraction": 0.955711046618466,
+        "release_fraction": 0.30669075600256634
+      },
+      {
+        "z": 6,
+        "H": 698.9632596049375,
+        "a0": 1.276312343671769e-09,
+        "vacuum_fraction": 0.6580391976972414,
+        "release_fraction": 0.06486744391993032
+      },
+      {
+        "z": 8,
+        "H": 1018.1834214743878,
+        "a0": 1.859210839900542e-09,
+        "vacuum_fraction": 0.48998674000291315,
+        "release_fraction": 0.03430865122888362
+      },
+      {
+        "z": 10,
+        "H": 1375.8068886345513,
+        "a0": 2.5122340700216745e-09,
+        "vacuum_fraction": 0.2588926117230154,
+        "release_fraction": 0.011618565509438013
+      }
+    ]
+  },
+  "limits": [
+    "Linear perturbations, prescribed release table, massless neutrinos, Alens=1; no nonlinear survey likelihood.",
+    "EG is a narrow-redshift linear transfer prediction, not a survey-window convolved likelihood.",
+    "Baryons used as the velocity tracer; galaxy velocity bias and observational compression are not model-independent.",
+    "Existing Planck/BAO/SN outcomes were known; this is not a blind or external preregistered result."
+  ]
+}

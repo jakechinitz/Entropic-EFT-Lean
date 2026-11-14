@@ -1,0 +1,149 @@
+{
+  "status": "Conditional selected effective completion; nonlinear observations and multistream extension open",
+  "symbolic": {
+    "zero_residuals": {
+      "value_matching": "0",
+      "first_derivative_matching": "0",
+      "second_derivative_matching": "0",
+      "lower_endpoint_X": "0",
+      "lower_endpoint_energy": "0",
+      "stress_energy_identity": "0"
+    },
+    "normalized_cs_numerator": "-4*y**2 + 4*y",
+    "normalized_cs_denominator": "-8*y**2 + 12*y - 3",
+    "sound_speed_range": "0 <= c_s^2 <= 1 for 1/2 <= lambda/L <= 1; endpoints by continuity",
+    "scope": "Algebra and timelike principal symbol; no global inhomogeneous existence theorem."
+  },
+  "parcel": {
+    "min_auxiliary_density": 0.5,
+    "min_material_energy": 0.3333333333333333,
+    "min_total_energy": 2.9999999999999343,
+    "relative_energy_drift": 6.912988699999308e-14,
+    "old_dust_density_at_end": -1.6,
+    "clock_turnaround_time": 10.0,
+    "clock_reverses": true,
+    "cs2_min": 0.0,
+    "cs2_max": 1.0
+  },
+  "patches": [
+    {
+      "initial_delta": 0.0,
+      "cutoff_over_today_background_stock": 0.01,
+      "min_lambda_over_cutoff": 100.00006429683536,
+      "min_total_dark_energy": 0.4528334274089898,
+      "min_clock_velocity": 1.0,
+      "max_cs2": 0.0,
+      "max_friedmann_residual_over_Hbg2": 5.222128908061634e-07,
+      "today_baryon_contrast": 1.0000005254973516,
+      "today_current_over_background_stock": 1.0000006429683537,
+      "today_dark_energy_over_background": 1.0000001661355622,
+      "first_departure_a": null,
+      "min_phi": 0.001708693985628881,
+      "evaluations": 34577
+    },
+    {
+      "initial_delta": -0.1,
+      "cutoff_over_today_background_stock": 0.01,
+      "min_lambda_over_cutoff": 4.707907197488353,
+      "min_total_dark_energy": 0.3413350436715692,
+      "min_clock_velocity": 1.0,
+      "max_cs2": 0.0,
+      "max_friedmann_residual_over_Hbg2": 1.2309036293594797e-07,
+      "today_baryon_contrast": 0.05402930619002915,
+      "today_current_over_background_stock": 0.04707907197488354,
+      "today_dark_energy_over_background": 0.7537762888497447,
+      "first_departure_a": null,
+      "min_phi": 0.001708693985628881,
+      "evaluations": 34655
+    },
+    {
+      "initial_delta": -0.35,
+      "cutoff_over_today_background_stock": 0.01,
+      "min_lambda_over_cutoff": 0.500000362641539,
+      "min_total_dark_energy": 0.33596106785714724,
+      "min_clock_velocity": -0.2962699035572399,
+      "max_cs2": 0.9999985494364739,
+      "max_friedmann_residual_over_Hbg2": 8.280944120031368e-08,
+      "today_baryon_contrast": 0.006686693706637172,
+      "today_current_over_background_stock": -0.0015478558030860095,
+      "today_dark_energy_over_background": 0.7419088418329043,
+      "first_departure_a": 0.660693448007596,
+      "min_phi": 0.001708693985628881,
+      "evaluations": 35351
+    },
+    {
+      "initial_delta": -0.6,
+      "cutoff_over_today_background_stock": 0.01,
+      "min_lambda_over_cutoff": 0.5001848852636204,
+      "min_total_dark_energy": 0.03451535008078169,
+      "min_clock_velocity": -1.0,
+      "max_cs2": 0.9992611418896189,
+      "max_friedmann_residual_over_Hbg2": 4.949544608943872e-07,
+      "today_baryon_contrast": 0.0022547753804232295,
+      "today_current_over_background_stock": -0.2949856358440605,
+      "today_dark_energy_over_background": 0.0762208656116617,
+      "first_departure_a": 0.34887244319626237,
+      "min_phi": -0.6493147609496794,
+      "evaluations": 91961
+    },
+    {
+      "initial_delta": -0.9,
+      "cutoff_over_today_background_stock": 0.01,
+      "min_lambda_over_cutoff": 0.5081791704571542,
+      "min_total_dark_energy": 0.000834229316930251,
+      "min_clock_velocity": -1.0,
+      "max_cs2": 0.9685626154043684,
+      "max_friedmann_residual_over_Hbg2": 1.544382701603265e-07,
+      "today_baryon_contrast": 0.0003335339401513291,
+      "today_current_over_background_stock": -0.007019741233211881,
+      "today_dark_energy_over_background": 0.0018422435382005242,
+      "first_departure_a": 0.17701089583174212,
+      "min_phi": -1.1330111100643439,
+      "evaluations": 77078
+    },
+    {
+      "initial_delta": -0.6,
+      "cutoff_over_today_background_stock": 0.001,
+      "min_lambda_over_cutoff": 0.5158667737215765,
+      "min_total_dark_energy": 0.03452298482798309,
+      "min_clock_velocity": -1.0,
+      "max_cs2": 0.9411560630646862,
+      "max_friedmann_residual_over_Hbg2": 1.2611079810608169e-06,
+      "today_baryon_contrast": 0.002254738298573368,
+      "today_current_over_background_stock": -0.295050886254456,
+      "today_dark_energy_over_background": 0.07623772556061356,
+      "first_departure_a": 0.3597493351557423,
+      "min_phi": -0.649259172009373,
+      "evaluations": 91682
+    },
+    {
+      "initial_delta": -0.6,
+      "cutoff_over_today_background_stock": 0.03,
+      "min_lambda_over_cutoff": 0.5000202891308303,
+      "min_total_dark_energy": 0.034557899717972636,
+      "min_clock_velocity": -1.0,
+      "max_cs2": 0.99991885170872,
+      "max_friedmann_residual_over_Hbg2": 4.882425848681793e-07,
+      "today_baryon_contrast": 0.002254538420914627,
+      "today_current_over_background_stock": -0.29534928656040355,
+      "today_dark_energy_over_background": 0.07631482873735987,
+      "first_departure_a": 0.33113112148259116,
+      "min_phi": -0.6490570456205049,
+      "evaluations": 91565
+    }
+  ],
+  "background_grid": 80000,
+  "fit_inheritance": "Exact action identity for lambda>L; threshold below minimum homogeneous stock through today. No new likelihood is claimed.",
+  "extra_choices": [
+    "positive density cutoff L",
+    "cubic transition with lower endpoint L/2",
+    "canonical constrained continuation at spacelike X",
+    "continuation of V outside reconstructed clock range"
+  ],
+  "limitations": [
+    "Clock can reverse locally; universal monotonic clock is relinquished in the depleted phase.",
+    "Single potential flow does not resolve multistream caustics.",
+    "Positive energy and causal principal symbol do not prove nonlinear PDE stability or observational agreement.",
+    "Patch test uses locally conserved radiation and has no compensating exterior."
+  ]
+}

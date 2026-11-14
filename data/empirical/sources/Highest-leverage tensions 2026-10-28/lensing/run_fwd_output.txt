@@ -1,0 +1,7 @@
+completeness turnover 9.647  model log<Mgal> per bin [10.14  10.555 10.772 10.947]  B21 [10.14, 10.57, 10.78, 10.96]
+profiles 44.9 s
+log <M200c> per bin [11.593 12.04  12.362 12.666]  inverted SHMR at B21 mean [11.559999999999976, 11.959999999999967, 12.31999999999996, 12.79999999999995]  b_eff [0.82 0.89 0.96 1.04]
+RAR       chi2(R<0.31, 32 pts)    84.5 | all 60 no env   188.0 | env A=0.32+-0.17: all   184.6 inner   83.6
+NFW       chi2(R<0.31, 32 pts)    98.7 | all 60 no env   422.4 | env A=2.11+-0.17: all   276.6 inner   94.1
+CAP_200c  chi2(R<0.31, 32 pts)   116.4 | all 60 no env   569.3 | env A=2.44+-0.17: all   375.1 inner  104.5
+CAP_sp    chi2(R<0.31, 32 pts)    93.4 | all 60 no env   481.7 | env A=2.27+-0.17: all   312.4 inner   84.5

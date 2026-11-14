@@ -1,0 +1,14 @@
+{
+  "tag": "baseline_res2",
+  "mult": 2,
+  "seed": 39177,
+  "dt": 0.005,
+  "end": 12.0,
+  "nu": 0.0,
+  "available": 1.2,
+  "h": 0.36,
+  "eps": 0.08,
+  "contact_h": 0.45,
+  "isolated": false,
+  "collisionless_gas": false
+}

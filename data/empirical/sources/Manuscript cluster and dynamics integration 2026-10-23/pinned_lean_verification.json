@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "commit": "a6552daf39daf83d5159fcbcda698d1801731d24",
+  "toolchain": "Lean 4.35.0; pinned mathlib",
+  "pull_request": "https://github.com/jakechinitz/Entropic-EFT-Lean/pull/4",
+  "workflow_run": "https://github.com/jakechinitz/Entropic-EFT-Lean/actions/runs/40013357154",
+  "run_id": 40013357154,
+  "job_id": 120619069460,
+  "build": "success",
+  "source_scan": "success",
+  "axiom_audit": "success",
+  "citation_check": "success",
+  "independent_python_audit": "success",
+  "library_modules": 160,
+  "extension_explicit_theorems": 119,
+  "audit_summary": [
+    "Entropic: 2937 theorems; 0 with nonstandard axioms",
+    "Entropic.EFT: 727 theorems; 0 with nonstandard axioms"
+  ],
+  "merged": false,
+  "finished_at": "2026-10-23T19:47:39Z",
+  "audited_theorem_constants": 2937,
+  "legacy_theorem_constants": 727,
+  "nonstandard_axioms": 0,
+  "ledger_references": 979,
+  "unresolved_ledger_references": 0
+}

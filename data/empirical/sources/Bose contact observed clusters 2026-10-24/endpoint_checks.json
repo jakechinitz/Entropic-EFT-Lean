@@ -1,0 +1,37 @@
+{
+  "A85": {
+    "endpoint_grid_refinement_relative_change": 2.5049563834311783e-07,
+    "H_over_H0": 1.026047518959283,
+    "RAR_mass_over_HSE_with_a0_z": 0.6944595048040211
+  },
+  "A1795": {
+    "endpoint_grid_refinement_relative_change": 5.2531101535358e-07,
+    "H_over_H0": 1.0293367517748504,
+    "RAR_mass_over_HSE_with_a0_z": 0.6939893906313098
+  },
+  "A2029": {
+    "endpoint_grid_refinement_relative_change": 3.0956141960913897e-07,
+    "H_over_H0": 1.0365112833581698,
+    "RAR_mass_over_HSE_with_a0_z": 0.6361656293641111
+  },
+  "A2142": {
+    "endpoint_grid_refinement_relative_change": 6.177128091255923e-07,
+    "H_over_H0": 1.043316203267255,
+    "RAR_mass_over_HSE_with_a0_z": 0.674742770122368
+  },
+  "A2319": {
+    "endpoint_grid_refinement_relative_change": 3.346952186511487e-07,
+    "H_over_H0": 1.0261452546340113,
+    "RAR_mass_over_HSE_with_a0_z": 0.7615722752127508
+  },
+  "A644": {
+    "endpoint_grid_refinement_relative_change": 2.9037347859528495e-08,
+    "H_over_H0": 1.033404672961759,
+    "RAR_mass_over_HSE_with_a0_z": 0.6467079044712256
+  },
+  "ZW1215": {
+    "endpoint_grid_refinement_relative_change": 2.3073208010870871e-07,
+    "H_over_H0": 1.0365112833581698,
+    "RAR_mass_over_HSE_with_a0_z": 0.549155524802365
+  }
+}

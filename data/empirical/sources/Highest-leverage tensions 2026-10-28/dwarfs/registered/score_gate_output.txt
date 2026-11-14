@@ -1,0 +1,48 @@
+gate 17.0 km/s before z_re:
+  tucana_1           support self  gate yes -> relaxed   obs  6.85 rule  6.96 heat  7.11  pulls rule -0.3 heat -0.9
+  cetus_1            support self  gate yes -> relaxed   obs  7.56 rule  7.59 heat  7.94  pulls rule -0.1 heat -1.7
+  leo_1              support self  gate yes -> relaxed   obs  7.26 rule  7.32 heat  7.29  pulls rule -0.3 heat -0.2
+  andromeda_06       support self  gate yes -> relaxed   obs  7.81 rule  7.47 heat  7.65  pulls rule +1.5 heat +0.7
+  leo_2              support self  gate yes -> relaxed   obs  6.89 rule  6.71 heat  6.78  pulls rule +0.9 heat +0.5
+  eridanus_2         support self  gate no  -> retained  obs  6.90 rule  6.88 heat  6.86  pulls rule +0.1 heat +0.2
+  fornax_1           support self  gate yes -> relaxed   obs  7.98 rule  8.13 heat  8.21  pulls rule -0.7 heat -1.2
+  canes_venatici_1   support self  gate yes -> relaxed   obs  7.25 rule  6.84 heat  7.35  pulls rule +2.0 heat -0.5
+  sculptor_1         support self  gate yes -> relaxed   obs  7.24 rule  7.08 heat  7.24  pulls rule +0.7 heat -0.0
+  canes_venatici_2   support self  gate no  -> retained  obs  6.13 rule  5.82 heat  5.72  pulls rule +1.1 heat +1.4
+  andromeda_02       support self  gate yes -> relaxed   obs  7.73 rule  7.93 heat  8.30  pulls rule -0.8 heat -2.4
+  carina_1           support host  gate yes -> retained  obs  7.00 rule  7.27 heat  7.13  pulls rule -1.0 heat -0.5
+  draco_1            support host  gate yes -> retained  obs  7.21 rule  7.04 heat  6.99  pulls rule +0.8 heat +1.1
+  andromeda_05       support host  gate yes -> retained  obs  7.49 rule  7.41 heat  7.32  pulls rule +0.3 heat +0.8
+  leo_4              support host  gate no  -> retained  obs  6.00 rule  6.31 heat  6.26  pulls rule -1.1 heat -0.9
+  andromeda_13       support host  gate no  -> retained  obs  6.50 rule  6.50 heat  6.48  pulls rule -0.0 heat +0.0
+  andromeda_03       support host  gate yes -> retained  obs  7.33 rule  7.33 heat  7.21  pulls rule -0.0 heat +0.5
+  ursa_minor_1       support host  gate yes -> retained  obs  7.26 rule  7.24 heat  7.17  pulls rule +0.1 heat +0.5
+  hercules_1         support host  gate no  -> retained  obs  5.74 rule  6.48 heat  6.46  pulls rule -2.3 heat -2.2
+  andromeda_11       support host  gate no  -> retained  obs  6.72 rule  6.45 heat  6.43  pulls rule +0.5 heat +0.6
+  sextans_1          support host  gate yes -> retained  obs  7.45 rule  7.72 heat  7.66  pulls rule -1.1 heat -0.9
+  andromeda_01       support host  gate yes -> retained  obs  7.86 rule  8.21 heat  8.13  pulls rule -1.4 heat -1.0
+  chi2 (22): {'NFW': np.float64(30.0), 'HEAT': np.float64(24.0), 'RULE': np.float64(21.7)}
+gate 14.0 km/s before z_re:
+  tucana_1           support self  gate yes -> relaxed   obs  6.85 rule  6.96 heat  7.11  pulls rule -0.3 heat -0.9
+  cetus_1            support self  gate yes -> relaxed   obs  7.56 rule  7.59 heat  7.94  pulls rule -0.1 heat -1.7
+  leo_1              support self  gate yes -> relaxed   obs  7.26 rule  7.32 heat  7.29  pulls rule -0.3 heat -0.2
+  andromeda_06       support self  gate yes -> relaxed   obs  7.81 rule  7.47 heat  7.65  pulls rule +1.5 heat +0.7
+  leo_2              support self  gate yes -> relaxed   obs  6.89 rule  6.71 heat  6.78  pulls rule +0.9 heat +0.5
+  eridanus_2         support self  gate yes -> relaxed   obs  6.90 rule  6.43 heat  6.86  pulls rule +1.9 heat +0.2
+  fornax_1           support self  gate yes -> relaxed   obs  7.98 rule  8.13 heat  8.21  pulls rule -0.7 heat -1.2
+  canes_venatici_1   support self  gate yes -> relaxed   obs  7.25 rule  6.84 heat  7.35  pulls rule +2.0 heat -0.5
+  sculptor_1         support self  gate yes -> relaxed   obs  7.24 rule  7.08 heat  7.24  pulls rule +0.7 heat -0.0
+  canes_venatici_2   support self  gate no  -> retained  obs  6.13 rule  5.82 heat  5.72  pulls rule +1.1 heat +1.4
+  andromeda_02       support self  gate yes -> relaxed   obs  7.73 rule  7.93 heat  8.30  pulls rule -0.8 heat -2.4
+  carina_1           support host  gate yes -> retained  obs  7.00 rule  7.27 heat  7.13  pulls rule -1.0 heat -0.5
+  draco_1            support host  gate yes -> retained  obs  7.21 rule  7.04 heat  6.99  pulls rule +0.8 heat +1.1
+  andromeda_05       support host  gate yes -> retained  obs  7.49 rule  7.41 heat  7.32  pulls rule +0.3 heat +0.8
+  leo_4              support host  gate no  -> retained  obs  6.00 rule  6.31 heat  6.26  pulls rule -1.1 heat -0.9
+  andromeda_13       support host  gate yes -> retained  obs  6.50 rule  6.50 heat  6.48  pulls rule -0.0 heat +0.0
+  andromeda_03       support host  gate yes -> retained  obs  7.33 rule  7.33 heat  7.21  pulls rule -0.0 heat +0.5
+  ursa_minor_1       support host  gate yes -> retained  obs  7.26 rule  7.24 heat  7.17  pulls rule +0.1 heat +0.5
+  hercules_1         support host  gate no  -> retained  obs  5.74 rule  6.48 heat  6.46  pulls rule -2.3 heat -2.2
+  andromeda_11       support host  gate no  -> retained  obs  6.72 rule  6.45 heat  6.43  pulls rule +0.5 heat +0.6
+  sextans_1          support host  gate yes -> retained  obs  7.45 rule  7.72 heat  7.66  pulls rule -1.1 heat -0.9
+  andromeda_01       support host  gate yes -> retained  obs  7.86 rule  8.21 heat  8.13  pulls rule -1.4 heat -1.0
+  chi2 (22): {'NFW': np.float64(30.0), 'HEAT': np.float64(24.0), 'RULE': np.float64(25.4)}

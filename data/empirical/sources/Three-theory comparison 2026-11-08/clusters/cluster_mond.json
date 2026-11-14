@@ -1,0 +1,494 @@
+{
+ "A1644": {
+  "stars": false,
+  "R500_kpc": 1054.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1054.0,
+   "Mbar": 44311955889388.19,
+   "M_hydro_NFW": 348280091468494.6,
+   "gbar_over_1.2e-10": 0.04633071426124701,
+   "hydro_total_over_baryon": 7.8597318596785435,
+   "stock_cohort_over_hydro": 0.7857870113415466,
+   "LCDM_fb_over_hydro": 0.8103872836003926,
+   "MOND_simple_over_hydro": 0.6581244438148002,
+   "MOND_standard_over_hydro": 0.597981317585487,
+   "MOND_exp_RAR_over_hydro": 0.6569914605789631
+  },
+  "0.5R500": {
+   "r_kpc": 527.0,
+   "Mbar": 12493395555724.219,
+   "M_hydro_NFW": 125428692407545.92,
+   "gbar_over_1.2e-10": 0.05225027223712411,
+   "hydro_total_over_baryon": 10.03959987083552,
+   "stock_cohort_over_hydro": 0.6151714498008924,
+   "LCDM_fb_over_hydro": 0.6344303392105484,
+   "MOND_simple_over_hydro": 0.4883914949298082,
+   "MOND_standard_over_hydro": 0.4414806497022188,
+   "MOND_exp_RAR_over_hydro": 0.48745040536975853
+  },
+  "rmax": {
+   "r_kpc": 1581.0,
+   "Mbar": 74379632898966.11,
+   "M_hydro_NFW": 583133755695461.2,
+   "gbar_over_1.2e-10": 0.03456364916553124,
+   "hydro_total_over_baryon": 7.839965498183669,
+   "stock_cohort_over_hydro": 0.7877681616575465,
+   "LCDM_fb_over_hydro": 0.812430456877393,
+   "MOND_simple_over_hydro": 0.7528156483729727,
+   "MOND_standard_over_hydro": 0.6920358103037932,
+   "MOND_exp_RAR_over_hydro": 0.7518328242809772
+  }
+ },
+ "A1795": {
+  "stars": true,
+  "R500_kpc": 1153.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1153.0,
+   "Mbar": 67705739708187.28,
+   "M_hydro_NFW": 462836815567063.8,
+   "gbar_over_1.2e-10": 0.059155641755187824,
+   "hydro_total_over_baryon": 6.836005596599302,
+   "stock_cohort_over_hydro": 0.9034625733827871,
+   "LCDM_fb_over_hydro": 0.9317468602952793,
+   "MOND_simple_over_hydro": 0.6790231676891879,
+   "MOND_standard_over_hydro": 0.6104095383837475,
+   "MOND_exp_RAR_over_hydro": 0.6775541062020303
+  },
+  "0.5R500": {
+   "r_kpc": 576.5,
+   "Mbar": 28507341838159.684,
+   "M_hydro_NFW": 229933375987090.62,
+   "gbar_over_1.2e-10": 0.09962937313374799,
+   "hydro_total_over_baryon": 8.065759946769354,
+   "stock_cohort_over_hydro": 0.7657152269249587,
+   "LCDM_fb_over_hydro": 0.7896871210683075,
+   "MOND_simple_over_hydro": 0.4596425672295825,
+   "MOND_standard_over_hydro": 0.4026926118033909,
+   "MOND_exp_RAR_over_hydro": 0.45803668973746564
+  },
+  "rmax": {
+   "r_kpc": 1729.5,
+   "Mbar": 96398511058519.28,
+   "M_hydro_NFW": 645085404261652.1,
+   "gbar_over_1.2e-10": 0.03743333240768856,
+   "hydro_total_over_baryon": 6.691860664425089,
+   "stock_cohort_over_hydro": 0.92292346145156,
+   "LCDM_fb_over_hydro": 0.9518170014287898,
+   "MOND_simple_over_hydro": 0.8506905294220473,
+   "MOND_standard_over_hydro": 0.7796288471132159,
+   "MOND_exp_RAR_over_hydro": 0.8494927652179394
+  }
+ },
+ "A2029": {
+  "stars": true,
+  "R500_kpc": 1414.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1414.0,
+   "Mbar": 127633037172931.73,
+   "M_hydro_NFW": 864421610639573.1,
+   "gbar_over_1.2e-10": 0.07414699972718115,
+   "hydro_total_over_baryon": 6.77271049711335,
+   "stock_cohort_over_hydro": 0.9119059807140868,
+   "LCDM_fb_over_hydro": 0.9404546014933195,
+   "MOND_simple_over_hydro": 0.621067216420608,
+   "MOND_standard_over_hydro": 0.5523816743122169,
+   "MOND_exp_RAR_over_hydro": 0.6194109352269829
+  },
+  "0.5R500": {
+   "r_kpc": 707.0,
+   "Mbar": 54831799586536.734,
+   "M_hydro_NFW": 425234018051164.5,
+   "gbar_over_1.2e-10": 0.1274157073759903,
+   "hydro_total_over_baryon": 7.755244607283972,
+   "stock_cohort_over_hydro": 0.7963740050393735,
+   "LCDM_fb_over_hydro": 0.8213057194366236,
+   "MOND_simple_over_hydro": 0.43141847151663587,
+   "MOND_standard_over_hydro": 0.37292170272905434,
+   "MOND_exp_RAR_over_hydro": 0.42953764628091673
+  },
+  "rmax": {
+   "r_kpc": 2121.0,
+   "Mbar": 192711626473218.34,
+   "M_hydro_NFW": 1210662571432680.5,
+   "gbar_over_1.2e-10": 0.049757193598965244,
+   "hydro_total_over_baryon": 6.282249771790129,
+   "stock_cohort_over_hydro": 0.9830992769016991,
+   "LCDM_fb_over_hydro": 1.013876713433727,
+   "MOND_simple_over_hydro": 0.7976172873080218,
+   "MOND_standard_over_hydro": 0.7225345578157292,
+   "MOND_exp_RAR_over_hydro": 0.7961490996649239
+  }
+ },
+ "A2142": {
+  "stars": true,
+  "R500_kpc": 1424.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1424.0,
+   "Mbar": 148160240835152.2,
+   "M_hydro_NFW": 894611961235681.9,
+   "gbar_over_1.2e-10": 0.0848674189333522,
+   "hydro_total_over_baryon": 6.038137871489124,
+   "stock_cohort_over_hydro": 1.022844350263171,
+   "LCDM_fb_over_hydro": 1.0548660675118917,
+   "MOND_simple_over_hydro": 0.6573009431519803,
+   "MOND_standard_over_hydro": 0.5806816170628306,
+   "MOND_exp_RAR_over_hydro": 0.6553166431267105
+  },
+  "0.5R500": {
+   "r_kpc": 712.0,
+   "Mbar": 58242886744378.05,
+   "M_hydro_NFW": 400606114481731.25,
+   "gbar_over_1.2e-10": 0.1334480408876379,
+   "hydro_total_over_baryon": 6.878198126407259,
+   "stock_cohort_over_hydro": 0.8979205155854875,
+   "LCDM_fb_over_hydro": 0.9260312998455814,
+   "MOND_simple_over_hydro": 0.47726512220802814,
+   "MOND_standard_over_hydro": 0.41147876215597223,
+   "MOND_exp_RAR_over_hydro": 0.47509683320947466
+  },
+  "rmax": {
+   "r_kpc": 2136.0,
+   "Mbar": 229256642993108.6,
+   "M_hydro_NFW": 1316962390473619.0,
+   "gbar_over_1.2e-10": 0.05836449465337988,
+   "hydro_total_over_baryon": 5.744489552318912,
+   "stock_cohort_over_hydro": 1.0751303752427588,
+   "LCDM_fb_over_hydro": 1.1087889870077616,
+   "MOND_simple_over_hydro": 0.8128445425273771,
+   "MOND_standard_over_hydro": 0.7311561489777779,
+   "MOND_exp_RAR_over_hydro": 0.8111078627012266
+  }
+ },
+ "A2255": {
+  "stars": false,
+  "R500_kpc": 1196.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1196.0,
+   "Mbar": 79380857745851.72,
+   "M_hydro_NFW": 525595263012261.1,
+   "gbar_over_1.2e-10": 0.06445887560251345,
+   "hydro_total_over_baryon": 6.621183972274823,
+   "stock_cohort_over_hydro": 0.9327750495718127,
+   "LCDM_fb_over_hydro": 0.9619770086835435,
+   "MOND_simple_over_hydro": 0.6751603837029243,
+   "MOND_standard_over_hydro": 0.604533405964734,
+   "MOND_exp_RAR_over_hydro": 0.6735784147279326
+  },
+  "0.5R500": {
+   "r_kpc": 598.0,
+   "Mbar": 24329427853741.25,
+   "M_hydro_NFW": 186697790150081.4,
+   "gbar_over_1.2e-10": 0.07902396663566345,
+   "hydro_total_over_baryon": 7.673743553380439,
+   "stock_cohort_over_hydro": 0.8048321089961437,
+   "LCDM_fb_over_hydro": 0.8300286173606225,
+   "MOND_simple_over_hydro": 0.5332818191304692,
+   "MOND_standard_over_hydro": 0.4728147244889517,
+   "MOND_exp_RAR_over_hydro": 0.5317738278449616
+  },
+  "rmax": {
+   "r_kpc": 1794.0,
+   "Mbar": 133096266307097.03,
+   "M_hydro_NFW": 889301425778984.8,
+   "gbar_over_1.2e-10": 0.04803417021108106,
+   "hydro_total_over_baryon": 6.681640668469788,
+   "stock_cohort_over_hydro": 0.9243351318048608,
+   "LCDM_fb_over_hydro": 0.9532728662960359,
+   "MOND_simple_over_hydro": 0.7617956798764121,
+   "MOND_standard_over_hydro": 0.6911248045787303,
+   "MOND_exp_RAR_over_hydro": 0.7604390060759864
+  }
+ },
+ "A2319": {
+  "stars": true,
+  "R500_kpc": 1368.0,
+  "rmax_over_R500": 1.0577119526110197,
+  "R500": {
+   "r_kpc": 1368.0,
+   "Mbar": 150745086564650.25,
+   "M_hydro_NFW": 767737666058658.9,
+   "gbar_over_1.2e-10": 0.09356216619941433,
+   "hydro_total_over_baryon": 5.092953167195922,
+   "stock_cohort_over_hydro": 1.2126707246678186,
+   "LCDM_fb_over_hydro": 1.2506352488411425,
+   "MOND_simple_over_hydro": 0.7475578184301335,
+   "MOND_standard_over_hydro": 0.6571051407387036,
+   "MOND_exp_RAR_over_hydro": 0.7450909539025234
+  },
+  "0.5R500": {
+   "r_kpc": 684.0,
+   "Mbar": 52201700468284.97,
+   "M_hydro_NFW": 383673545564288.4,
+   "gbar_over_1.2e-10": 0.1295990280389291,
+   "hydro_total_over_baryon": 7.349828494521714,
+   "stock_cohort_over_hydro": 0.8403019488912093,
+   "LCDM_fb_over_hydro": 0.8666088952061791,
+   "MOND_simple_over_hydro": 0.4520417476115179,
+   "MOND_standard_over_hydro": 0.3903760178424748,
+   "MOND_exp_RAR_over_hydro": 0.4500409069530497
+  },
+  "rmax": {
+   "r_kpc": 1446.949951171875,
+   "Mbar": 163079086032178.8,
+   "M_hydro_NFW": 806065244164558.1,
+   "gbar_over_1.2e-10": 0.09047332415169851,
+   "hydro_total_over_baryon": 4.9427873541399725,
+   "stock_cohort_over_hydro": 1.249512626269425,
+   "LCDM_fb_over_hydro": 1.2886305428975133,
+   "MOND_simple_over_hydro": 0.7813386383499372,
+   "MOND_standard_over_hydro": 0.6879984639915293,
+   "MOND_exp_RAR_over_hydro": 0.7788379625328085
+  }
+ },
+ "A3158": {
+  "stars": false,
+  "R500_kpc": 1123.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1123.0,
+   "Mbar": 61615965940044.7,
+   "M_hydro_NFW": 425955775118815.06,
+   "gbar_over_1.2e-10": 0.05674963155255703,
+   "hydro_total_over_baryon": 6.913074697770551,
+   "stock_cohort_over_hydro": 0.8933904923600072,
+   "LCDM_fb_over_hydro": 0.9213594572681938,
+   "MOND_simple_over_hydro": 0.6838406189942222,
+   "MOND_standard_over_hydro": 0.6158967519520864,
+   "MOND_exp_RAR_over_hydro": 0.6824172602493476
+  },
+  "0.5R500": {
+   "r_kpc": 561.5,
+   "Mbar": 23206093079039.09,
+   "M_hydro_NFW": 186703888403671.22,
+   "gbar_over_1.2e-10": 0.08549324590910447,
+   "hydro_total_over_baryon": 8.045468393484622,
+   "stock_cohort_over_hydro": 0.767646444669927,
+   "LCDM_fb_over_hydro": 0.7916787985582596,
+   "MOND_simple_over_hydro": 0.49175741360871833,
+   "MOND_standard_over_hydro": 0.434272421681648,
+   "MOND_exp_RAR_over_hydro": 0.49026285474386155
+  },
+  "rmax": {
+   "r_kpc": 1684.5,
+   "Mbar": 96837182708167.23,
+   "M_hydro_NFW": 635321260226761.1,
+   "gbar_over_1.2e-10": 0.03963961364331012,
+   "hydro_total_over_baryon": 6.560716064421174,
+   "stock_cohort_over_hydro": 0.9413721226949073,
+   "LCDM_fb_over_hydro": 0.9708432264175885,
+   "MOND_simple_over_hydro": 0.8455636879611629,
+   "MOND_standard_over_hydro": 0.773192415954991,
+   "MOND_exp_RAR_over_hydro": 0.8443069188217748
+  }
+ },
+ "A3266": {
+  "stars": false,
+  "R500_kpc": 1430.0,
+  "rmax_over_R500": 1.122611403465271,
+  "R500": {
+   "r_kpc": 1430.0,
+   "Mbar": 116233096713705.05,
+   "M_hydro_NFW": 879446815613280.9,
+   "gbar_over_1.2e-10": 0.06602174991007441,
+   "hydro_total_over_baryon": 7.5662340630866565,
+   "stock_cohort_over_hydro": 0.8162680610283949,
+   "LCDM_fb_over_hydro": 0.8418225894790704,
+   "MOND_simple_over_hydro": 0.5846819423080164,
+   "MOND_standard_over_hydro": 0.5229300888940712,
+   "MOND_exp_RAR_over_hydro": 0.5832812191827582
+  },
+  "0.5R500": {
+   "r_kpc": 715.0,
+   "Mbar": 41494443562058.414,
+   "M_hydro_NFW": 348629135033444.44,
+   "gbar_over_1.2e-10": 0.0942773049318198,
+   "hydro_total_over_baryon": 8.401826970207237,
+   "stock_cohort_over_hydro": 0.7350871697147557,
+   "LCDM_fb_over_hydro": 0.7581002053694103,
+   "MOND_simple_over_hydro": 0.45168714237522395,
+   "MOND_standard_over_hydro": 0.39687608365808147,
+   "MOND_exp_RAR_over_hydro": 0.4501862573303974
+  },
+  "rmax": {
+   "r_kpc": 1605.3343069553375,
+   "Mbar": 128914198364159.7,
+   "M_hydro_NFW": 1008784341741414.1,
+   "gbar_over_1.2e-10": 0.05810306948544042,
+   "hydro_total_over_baryon": 7.8252384496219545,
+   "stock_cohort_over_hydro": 0.7892507362840953,
+   "LCDM_fb_over_hydro": 0.813959445785332,
+   "MOND_simple_over_hydro": 0.5978874132747779,
+   "MOND_standard_over_hydro": 0.5379110370382079,
+   "MOND_exp_RAR_over_hydro": 0.5966153281943745
+  }
+ },
+ "A644": {
+  "stars": true,
+  "R500_kpc": 1250.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1250.0,
+   "Mbar": 81802150382429.22,
+   "M_hydro_NFW": 593852396584898.8,
+   "gbar_over_1.2e-10": 0.06080985836692223,
+   "hydro_total_over_baryon": 7.259618406222924,
+   "stock_cohort_over_hydro": 0.85074378050899,
+   "LCDM_fb_over_hydro": 0.8773776244399434,
+   "MOND_simple_over_hydro": 0.6317019462137087,
+   "MOND_standard_over_hydro": 0.5671534008400626,
+   "MOND_exp_RAR_over_hydro": 0.6302997536432025
+  },
+  "0.5R500": {
+   "r_kpc": 625.0,
+   "Mbar": 33465173291770.13,
+   "M_hydro_NFW": 309098694716862.4,
+   "gbar_over_1.2e-10": 0.09950899523219199,
+   "hydro_total_over_baryon": 9.236428929321486,
+   "stock_cohort_over_hydro": 0.6686648330456474,
+   "LCDM_fb_over_hydro": 0.6895984151810346,
+   "MOND_simple_over_hydro": 0.4015901533462972,
+   "MOND_standard_over_hydro": 0.35185549335534977,
+   "MOND_exp_RAR_over_hydro": 0.4001886342095826
+  },
+  "rmax": {
+   "r_kpc": 1875.0,
+   "Mbar": 116935750943184.83,
+   "M_hydro_NFW": 809226042529999.2,
+   "gbar_over_1.2e-10": 0.03863439025144446,
+   "hydro_total_over_baryon": 6.920262075566395,
+   "stock_cohort_over_hydro": 0.8924626178203307,
+   "LCDM_fb_over_hydro": 0.920402534187413,
+   "MOND_simple_over_hydro": 0.8109679311019624,
+   "MOND_standard_over_hydro": 0.7423091976960065,
+   "MOND_exp_RAR_over_hydro": 0.809791481107673
+  }
+ },
+ "A85": {
+  "stars": true,
+  "R500_kpc": 1235.0,
+  "rmax_over_R500": 1.3050000395369432,
+  "R500": {
+   "r_kpc": 1235.0,
+   "Mbar": 87073732449413.08,
+   "M_hydro_NFW": 564800999576363.1,
+   "gbar_over_1.2e-10": 0.06631053676173472,
+   "hydro_total_over_baryon": 6.486468234315023,
+   "stock_cohort_over_hydro": 0.952147607119969,
+   "LCDM_fb_over_hydro": 0.9819560539734878,
+   "MOND_simple_over_hydro": 0.6807134003930675,
+   "MOND_standard_over_hydro": 0.6086935353885603,
+   "MOND_exp_RAR_over_hydro": 0.6790760094931639
+  },
+  "0.5R500": {
+   "r_kpc": 617.5,
+   "Mbar": 34055295739316.336,
+   "M_hydro_NFW": 256818633930211.03,
+   "gbar_over_1.2e-10": 0.10373851569372598,
+   "hydro_total_over_baryon": 7.54122459825588,
+   "stock_cohort_over_hydro": 0.8189751051031062,
+   "LCDM_fb_over_hydro": 0.8446143817365506,
+   "MOND_simple_over_hydro": 0.48331365448595887,
+   "MOND_standard_over_hydro": 0.4225190858760777,
+   "MOND_exp_RAR_over_hydro": 0.4815621112894088
+  },
+  "rmax": {
+   "r_kpc": 1611.675048828125,
+   "Mbar": 116866421229196.53,
+   "M_hydro_NFW": 728762129519064.6,
+   "gbar_over_1.2e-10": 0.05225935889733363,
+   "hydro_total_over_baryon": 6.235855619210142,
+   "stock_cohort_over_hydro": 0.990413438844985,
+   "LCDM_fb_over_hydro": 1.021419856478193,
+   "MOND_simple_over_hydro": 0.7862397075723113,
+   "MOND_standard_over_hydro": 0.7107146247656583,
+   "MOND_exp_RAR_over_hydro": 0.7847244430161716
+  }
+ },
+ "RXC1825": {
+  "stars": false,
+  "R500_kpc": 1105.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1105.0,
+   "Mbar": 54060428451452.28,
+   "M_hydro_NFW": 408570544361794.1,
+   "gbar_over_1.2e-10": 0.051426175172949166,
+   "hydro_total_over_baryon": 7.55766382296991,
+   "stock_cohort_over_hydro": 0.8171936927376783,
+   "LCDM_fb_over_hydro": 0.8427771995141993,
+   "MOND_simple_over_hydro": 0.6533691513027827,
+   "MOND_standard_over_hydro": 0.59102143036489,
+   "MOND_exp_RAR_over_hydro": 0.6521287494545488
+  },
+  "0.5R500": {
+   "r_kpc": 552.5,
+   "Mbar": 18022618173562.88,
+   "M_hydro_NFW": 186431014606229.94,
+   "gbar_over_1.2e-10": 0.06857765251351228,
+   "hydro_total_over_baryon": 10.344280326578906,
+   "stock_cohort_over_hydro": 0.5970521885503959,
+   "LCDM_fb_over_hydro": 0.6157438265885505,
+   "MOND_simple_over_hydro": 0.42064162045501313,
+   "MOND_standard_over_hydro": 0.3755369520984512,
+   "MOND_exp_RAR_over_hydro": 0.41959783788256966
+  },
+  "rmax": {
+   "r_kpc": 1657.5,
+   "Mbar": 91717637498333.16,
+   "M_hydro_NFW": 595857103331899.8,
+   "gbar_over_1.2e-10": 0.03877707823178769,
+   "hydro_total_over_baryon": 6.496646878226978,
+   "stock_cohort_over_hydro": 0.9506558265713024,
+   "LCDM_fb_over_hydro": 0.9804175709378649,
+   "MOND_simple_over_hydro": 0.8624120535716037,
+   "MOND_standard_over_hydro": 0.789283640128572,
+   "MOND_exp_RAR_over_hydro": 0.8611566083726696
+  }
+ },
+ "ZW1215": {
+  "stars": true,
+  "R500_kpc": 1358.0,
+  "rmax_over_R500": 1.5,
+  "R500": {
+   "r_kpc": 1358.0,
+   "Mbar": 84297754994694.27,
+   "M_hydro_NFW": 766481773931665.5,
+   "gbar_over_1.2e-10": 0.05309403922676253,
+   "hydro_total_over_baryon": 9.09255263061167,
+   "stock_cohort_over_hydro": 0.6792454725166946,
+   "LCDM_fb_over_hydro": 0.700510297861633,
+   "MOND_simple_over_hydro": 0.5354471828763812,
+   "MOND_standard_over_hydro": 0.4836767686848181,
+   "MOND_exp_RAR_over_hydro": 0.5343998516347608
+  },
+  "0.5R500": {
+   "r_kpc": 679.0,
+   "Mbar": 34759809891404.934,
+   "M_hydro_NFW": 306777440710023.0,
+   "gbar_over_1.2e-10": 0.08757237769879973,
+   "hydro_total_over_baryon": 8.825636321615209,
+   "stock_cohort_over_hydro": 0.6997880926542003,
+   "LCDM_fb_over_hydro": 0.7216960363518204,
+   "MOND_simple_over_hydro": 0.4437085415722711,
+   "MOND_standard_over_hydro": 0.39135908168231803,
+   "MOND_exp_RAR_over_hydro": 0.44233006799274055
+  },
+  "rmax": {
+   "r_kpc": 2037.0,
+   "Mbar": 117468929887775.77,
+   "M_hydro_NFW": 1204458485467057.0,
+   "gbar_over_1.2e-10": 0.032882910618596016,
+   "hydro_total_over_baryon": 10.253421790917304,
+   "stock_cohort_over_hydro": 0.6023428406538036,
+   "LCDM_fb_over_hydro": 0.6212001107020223,
+   "MOND_simple_over_hydro": 0.5888016385623575,
+   "MOND_standard_over_hydro": 0.5422706593546689,
+   "MOND_exp_RAR_over_hydro": 0.5880684621923264
+  }
+ }
+}

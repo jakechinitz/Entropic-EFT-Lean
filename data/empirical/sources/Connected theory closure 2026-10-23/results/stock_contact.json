@@ -1,0 +1,13 @@
+{
+  "scope": "Adiabatic homologous, isolated, self-gravitating stock with conserved canonical orbital actions; baryon mass held fixed. Not a theorem for arbitrary mergers or scalar gradients.",
+  "start_redshift": 2.3,
+  "mass_ratio": 0.9893978474435599,
+  "adiabatic_radius_ratio": 1.0324930012984705,
+  "adiabatic_speed_ratio": 0.9789081005259498,
+  "implied_a0_ratio_from_v4": 0.9182642768886852,
+  "required_H_tracking_a0_ratio": 0.29721327987484814,
+  "mass_ratio_needed_in_this_model": 0.859277670677194,
+  "smallest_a0_ratio_from_any_full_one_unit_release": 0.7874662588160161,
+  "conclusion": "Cosmological mass loss alone does not produce the required equilibrium tracking in this controlled model. A physical redistribution/response contact is required.",
+  "conversion_identity": "D f_u=-Gamma f_u; D f_R=+Gamma f_u implies D(f_u+f_R)=0 for a common Hamiltonian. Relabeling alone changes no total gravitational source."
+}

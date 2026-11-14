@@ -1,0 +1,63 @@
+{
+  "scope": "Conservative relativistic Euler extension with a selected thermal EOS.\nSame cold clock Hamiltonian, constant V=0 and L=3. Add e_th=z*n^(4/3).\nThis is a causal isotropic fluid closure, not a collisionless halo solver.\n",
+  "rows": [
+    {
+      "grid": 128,
+      "dt": 0.056179775280898875,
+      "final_time": 5.0,
+      "gamma": 1.3333333333333333,
+      "minimum_proper_density": 0.2,
+      "minimum_thermal_energy": -9.694578473329331e-12,
+      "max_absolute_mean_energy_drift": 6.661338147750939e-16,
+      "max_absolute_mean_current_drift": 4.440892098500626e-16,
+      "final_mean_thermal_energy": 0.06406859932061545,
+      "max_sound_speed_squared": 0.9828287666463057,
+      "minimum_contact_gate": 0.01746989125459804,
+      "maximum_contact_gate": 1.0000000000000002,
+      "min_final_rest_energy_over_floor": 1.174939650972095,
+      "density_or_thermal_clipping": false
+    },
+    {
+      "grid": 256,
+      "dt": 0.028089887640449437,
+      "final_time": 5.0,
+      "gamma": 1.3333333333333333,
+      "minimum_proper_density": 0.2,
+      "minimum_thermal_energy": -9.561018643466925e-12,
+      "max_absolute_mean_energy_drift": 4.440892098500626e-16,
+      "max_absolute_mean_current_drift": 8.881784197001252e-16,
+      "final_mean_thermal_energy": 0.04289144027951319,
+      "max_sound_speed_squared": 0.9828287666873788,
+      "minimum_contact_gate": 0.017469891253331263,
+      "maximum_contact_gate": 1.0000000000000002,
+      "min_final_rest_energy_over_floor": 1.1456872787991224,
+      "density_or_thermal_clipping": false
+    },
+    {
+      "grid": 512,
+      "dt": 0.014044943820224719,
+      "final_time": 5.0,
+      "gamma": 1.3333333333333333,
+      "minimum_proper_density": 0.2,
+      "minimum_thermal_energy": -9.706568881995283e-12,
+      "max_absolute_mean_energy_drift": 4.440892098500626e-16,
+      "max_absolute_mean_current_drift": 4.440892098500626e-16,
+      "final_mean_thermal_energy": 0.028913093496323084,
+      "max_sound_speed_squared": 0.9828287666893867,
+      "minimum_contact_gate": 0.01746989125330376,
+      "maximum_contact_gate": 1.0000000000000002,
+      "min_final_rest_energy_over_floor": 1.1454554483295145,
+      "density_or_thermal_clipping": false
+    }
+  ],
+  "restricted_mean_state_changes": [
+    0.04521553173136327,
+    0.03087457010039585
+  ],
+  "limitations": [
+    "First-order finite-volume viscosity creates resolution-dependent thermal energy.",
+    "Chosen gamma=4/3 closure; no native selection or calibrated physical viscosity is claimed.",
+    "Planar flat frozen-potential test; no realistic void or collisionless multistream calculation.",
+    "Thermal floor and causal inequalities hold for bounded nonnegative entropy coefficient; shocks require the entropy condition."
+  ]
+}

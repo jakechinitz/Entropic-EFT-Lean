@@ -1,0 +1,35 @@
+{
+  "scope": "Closed deterministic local cell with prescribed two-state contact and constant clock potential. Internal excitation energy is additional kinetic energy of existing stock, not a second rest-mass source.",
+  "rows": [
+    {
+      "available_clock_energy": 0.25,
+      "target_work": 0.7485203026391962,
+      "work_gap": 1.0693147180559945,
+      "final_weight": 0.33379459366457587,
+      "predicted_endpoint": 0.33379459365760716,
+      "final_clock_speed": 5.421178837834802e-27,
+      "min_current": 8.131768256752218e-27,
+      "min_clock_energy_over_floor": 1.0,
+      "max_absolute_total_energy_error": 2.4417579069790918e-11,
+      "contact_activity": 0.40645401190706665,
+      "predicted_activity_bound": 0.4064540118929589,
+      "boundary_clipping": false,
+      "positivity_method": "log current integrates a derived regular fractional-rate equation"
+    },
+    {
+      "available_clock_energy": 1.0,
+      "target_work": 0.7485203026391962,
+      "work_gap": 1.0693147180559945,
+      "final_weight": 0.7999999999997567,
+      "predicted_endpoint": 0.8,
+      "final_clock_speed": 0.523425219758672,
+      "min_current": 0.9012819997473477,
+      "min_clock_energy_over_floor": 1.2514796973597684,
+      "max_absolute_total_energy_error": 4.555911203851792e-12,
+      "contact_activity": 50.47618095145691,
+      "predicted_activity_bound": null,
+      "boundary_clipping": false,
+      "positivity_method": "log current integrates a derived regular fractional-rate equation"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A1795",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A1795",
+    "k": 1,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A1795",
+    "k": 3,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "ZW1215",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "ZW1215",
+    "k": 1,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "ZW1215",
+    "k": 3,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2029",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2029",
+    "k": 1,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A85",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2029",
+    "k": 3,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A85",
+    "k": 1,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2142",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A85",
+    "k": 3,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2142",
+    "k": 1,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2319",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2142",
+    "k": 3,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A2319",
+    "k": 1,
+    "label": "final",
+    "exit_code": 0
+  },
+  {
+    "N": 2000,
+    "seed": 1,
+    "regspec": 15000,
+    "dt": 0.1,
+    "softening": 5,
+    "cluster": "A644",
+    "k": 0,
+    "label": "final",
+    "exit_code": 0
+  }
+]

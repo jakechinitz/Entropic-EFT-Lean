@@ -1,0 +1,358 @@
+{
+  "scope": "Saved-result arithmetic and manuscript integrity; no new optimization, simulation, or Lean build.",
+  "checks": [
+    {
+      "name": "SPARC stock_a0_headline floor 0",
+      "value": 11251.03719673939,
+      "quoted": 11251.0,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC mond_exp_a0_1.2 floor 0",
+      "value": 11216.852452835923,
+      "quoted": 11216.9,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC mond_exp_a0_free floor 0",
+      "value": 11119.714716880382,
+      "quoted": 11119.7,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC nfw_lcdm floor 0",
+      "value": 9585.716838854501,
+      "quoted": 9585.7,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC nfw_free floor 0",
+      "value": 8121.5520882527835,
+      "quoted": 8121.6,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC stock minus fitted MOND, floor 0",
+      "value": 131.32247985900722,
+      "quoted": 131,
+      "tolerance": 0.5,
+      "pass": true
+    },
+    {
+      "name": "SPARC BIC free halo minus fitted MOND, no floor",
+      "value": -950.8443149342982,
+      "quoted": -951,
+      "tolerance": 0.5,
+      "pass": true
+    },
+    {
+      "name": "SPARC stock_a0_headline floor 5",
+      "value": 3427.958030819996,
+      "quoted": 3428.0,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC mond_exp_a0_1.2 floor 5",
+      "value": 3402.0473875321336,
+      "quoted": 3402.0,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC mond_exp_a0_free floor 5",
+      "value": 3319.7938020844445,
+      "quoted": 3319.8,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC nfw_lcdm floor 5",
+      "value": 2700.713549189502,
+      "quoted": 2700.7,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC nfw_free floor 5",
+      "value": 1871.961032779431,
+      "quoted": 1872.0,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "SPARC stock minus fitted MOND, floor 5",
+      "value": 108.16422873555166,
+      "quoted": 108,
+      "tolerance": 0.5,
+      "pass": true
+    },
+    {
+      "name": "SPARC BIC free halo minus stock, floor 5",
+      "value": 499.22601956660924,
+      "quoted": 499,
+      "tolerance": 0.5,
+      "pass": true
+    },
+    {
+      "name": "KiDS MOND including hot gas",
+      "value": 110.45493818719646,
+      "quoted": 110.5,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS optimized NFW",
+      "value": 124.29023294012123,
+      "quoted": 124.3,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS stock grid concentration 1.0",
+      "value": 170.97661746885237,
+      "quoted": 171.0,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS NFW grid concentration 1.0",
+      "value": 252.0853597697007,
+      "quoted": 252.1,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS stock grid concentration 0.6",
+      "value": 146.5787871828191,
+      "quoted": 146.6,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS NFW grid concentration 0.6",
+      "value": 154.0965535984986,
+      "quoted": 154.1,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS stock grid concentration 0.3",
+      "value": 131.6949834345508,
+      "quoted": 131.7,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "KiDS stock minus NFW best score",
+      "value": 7.404750494429578,
+      "quoted": 7.4,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "X-COP median stock_cohort_over_hydro",
+      "value": 0.9119059807140868,
+      "quoted": 0.91,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "X-COP median LCDM_fb_over_hydro",
+      "value": 0.9404546014933195,
+      "quoted": 0.94,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "X-COP median MOND_simple_over_hydro",
+      "value": 0.6573009431519803,
+      "quoted": 0.66,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "X-COP median MOND_standard_over_hydro",
+      "value": 0.5806816170628306,
+      "quoted": 0.58,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "LMC NFW M30 median",
+      "value": 6.276258149899756,
+      "quoted": 6.3,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "LMC NFW M50 median",
+      "value": 9.45140738838289,
+      "quoted": 9.5,
+      "tolerance": 0.051,
+      "pass": true
+    },
+    {
+      "name": "NGC628 completion",
+      "value": 2.040864731946801,
+      "quoted": 2.04,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "NGC628 QUMOND",
+      "value": 8.860111222864528,
+      "quoted": 8.86,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "NGC628 LCDM NFW",
+      "value": 2.0054106195685284,
+      "quoted": 2.01,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "Cosmology delta BIC, delta chi2=-0.28",
+      "value": -15.886053287264433,
+      "quoted": -15.89,
+      "tolerance": 0.012,
+      "pass": true
+    },
+    {
+      "name": "Cosmology delta BIC, delta chi2=0.85",
+      "value": -6.953026643632217,
+      "quoted": -6.95,
+      "tolerance": 0.012,
+      "pass": true
+    },
+    {
+      "name": "Cosmology delta BIC, delta chi2=-0.39",
+      "value": -8.193026643632217,
+      "quoted": -8.19,
+      "tolerance": 0.012,
+      "pass": true
+    },
+    {
+      "name": "Cosmology delta BIC, delta chi2=-0.58",
+      "value": -8.383026643632217,
+      "quoted": -8.38,
+      "tolerance": 0.012,
+      "pass": true
+    },
+    {
+      "name": "Cosmology delta BIC, delta chi2=-0.52",
+      "value": -8.323026643632216,
+      "quoted": -8.32,
+      "tolerance": 0.012,
+      "pass": true
+    },
+    {
+      "name": "Frozen cosmology paired likelihood, standard",
+      "value": 1.0735494228397329,
+      "quoted": 1.07,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "Frozen cosmology paired likelihood, alternative",
+      "value": -0.2846468486864069,
+      "quoted": -0.28,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "Headline LCDM reference",
+      "value": 2239.0262485841436,
+      "quoted": 2239.026,
+      "tolerance": 0.00051,
+      "pass": true
+    },
+    {
+      "name": "Headline delta AIC from unrounded fits",
+      "value": -2.926450577160267,
+      "quoted": -2.93,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "Headline delta BIC from unrounded fits",
+      "value": -14.5325038644247,
+      "quoted": -14.53,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "name": "Frozen standard H0",
+      "value": 68.42235620670189,
+      "quoted": 68.42,
+      "tolerance": 0.0051,
+      "pass": true
+    }
+  ],
+  "numeric_checks_passed": 42,
+  "test_families": [
+    "S01",
+    "S02",
+    "S10",
+    "S11",
+    "S13",
+    "S14",
+    "S15",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S12"
+  ],
+  "references": 50,
+  "labels": 76,
+  "figures": 16,
+  "passed": true,
+  "review_date": "2026-11-08",
+  "coverage_against_old": {
+    "equations": {
+      "old": 70,
+      "current": 70,
+      "removed": []
+    },
+    "references": {
+      "old": 46,
+      "current": 50,
+      "removed": []
+    },
+    "labels": {
+      "old": 53,
+      "current": 76,
+      "removed": []
+    }
+  },
+  "pdf_pages": 58,
+  "pdf_sha256": "6079dc5afa14f4528afa81cd329959db15ab82e5f1e4a92f6bafc03908b9163d",
+  "corrections": [
+    "Corrected SPARC no-floor free-NFW versus fitted-MOND BIC gap from 123 to 951.",
+    "Matched the headline LCDM score to its saved paired run (2239.026) and used the unrounded fits for delta BIC (-14.53).",
+    "Identified common nuisance parameters separately from extra gravity/halo parameters.",
+    "Separated matched likelihood fits from literature and inferred-mass benchmarks.",
+    "Restored lensing uncertainty components, reference-normalization disk scores and evidence-register source key.",
+    "Restored all three QUMOND flux variants in the expanded LMC figure.",
+    "Corrected the scoreboard SPARC label from best chi-square to BIC preference with the 5 km/s floor.",
+    "Identified the illustrative redshift background and the marginal-error envelope.",
+    "Removed an unsupported numerical uncertainty band around the vacuum-density reference.",
+    "Made comparison-figure generation portable and included exact saved evidence.",
+    "Rebuilt the current source archive, README, verification record and hashes.",
+    "Fixed the SPARC table overflow and the R500 PDF bookmark."
+  ],
+  "historical_review": "evidence/legacy_review/current_verification.json",
+  "original_snapshot": "Previous PDFs/20261108_pre_pareto_review",
+  "scope_limit": "Preservation, saved-result arithmetic, provenance, packaging and layout. This review does not certify every physical premise or rerun simulations and likelihood optimizations."
+}

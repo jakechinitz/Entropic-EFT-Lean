@@ -1,0 +1,6 @@
+GEO sn=dovekie off=1 mnu=0 tau=fp cal=fixed nl=0
+GEO sn=dovekie off=1 mnu=0 tau=fp cal=fixed
+GEO sn=dovekie off=0 mnu=0.06 tau=lowE cal=free
+GEO sn=dovekie off=0 mnu=0 tau=fp cal=fixed
+GEO sn=dovekie off=1 mnu=0.06 tau=lowE cal=free
+GEO sn=none off=0 mnu=0.06 tau=lowE cal=free

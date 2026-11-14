@@ -1,0 +1,55 @@
+CONSERVATIVE CLUSTER ENCOUNTER — declared before the calculation
+
+Purpose: evolve gravitating stock, stars/galaxies and pressure-supported gas
+under a common three-dimensional potential, with an explicit finite-work
+contact. Test transport, conserved inventories and projected separations.
+This is an idealized effective-model experiment, not a Bullet Cluster fit.
+
+Starting profiles are two independently declared Plummer spheres, mass ratio
+0.3, scale ratio 0.3^(1/3), initial separation 8 primary scale radii, transverse
+offset 0.6 and relative velocity 0.8 in G=M_primary=a_primary=1 units.
+No observed final lensing map is an input. Stock/baryon allocation uses the
+existing full-release cohort convention; stellar mass fraction is 0.02.
+Stock and stars have the isotropic Plummer distribution; gas starts with its
+analytic hydrostatic temperature in the total Plummer potential. A finite
+radius truncation at 6 scale radii and particle smoothing are approximations
+to be assessed with isolated controls. Initial symmetry removes spurious
+component centre-of-mass displacement, velocity and spin.
+
+Gravity: identical Plummer-softened pair law for all species, including gas.
+Gas: ideal gamma=5/3 conservative SPH, fixed smoothing length, symmetric
+pressure forces and Monaghan viscosity. The gas is baryonic plasma, NOT the
+gamma=4/3 warm capacity fluid from the preceding note. Stock remains kinetic
+and can multistream. No second algebraic RAR halo is added.
+
+Contact: local stock–baryon pairs use central relative-velocity changes and
+opposite impulses, the prior two-exponential target shape, an explicit work
+and heat ledger and the symmetric clock-speed gate. All nearby baryonic
+partners are allowed, including those from the other initial cluster.
+There is no shock flag, cohort exclusion, or galaxy-attachment rule.
+Each stock particle carries one effective internal work register and bath
+ledger. They are internal energies of existing material, not new halo masses.
+Newtonian gravity neglects their O(energy/mc^2) mass correction. The spatial
+kernel and the relative-velocity target are selected multicarrier extensions;
+the old single-centre orbital equilibrium theorem is NOT assumed to hold.
+The bath and register identification are effective inputs, not native spectra.
+
+Declared controls: zero contact, active contact at multiple rates, depleted
+registers with the same contact, an isolated halo, and collisionless baryons.
+Evaluate particle count and timestep refinement; preserve every attempted run.
+The candidate rate is common to every stock particle with accessible baryons;
+local neighbour selection is normalized. The finite range is a numerical /
+effective contact scale and must be reported, not hidden as a fit parameter.
+
+Diagnostics: total mass, momentum, angular momentum, kinetic+gravity+gas+
+register+bath energy, nonnegative gas energy and register/bath boundaries;
+initial-cohort inventory; gas and stock projected profiles, galaxy-core
+separation and observable total projected mass peaks. Tagged components are
+diagnostics, not directly observed maps. The comparison epoch is first
+galaxy-core pericentre plus TWO dynamical units, not a best-looking snapshot.
+Report full time histories and unresolved resolution or seed dependence.
+
+No physical relaxation rate, assembly distribution, cluster abundance or
+observational likelihood is selected by these runs. A successful encounter
+would establish a conditional effective mechanism, not empirical confirmation
+or a uniqueness theorem. Failure or unexpected sensitivity is retained.

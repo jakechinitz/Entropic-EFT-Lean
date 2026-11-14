@@ -1,0 +1,20 @@
+[
+  {
+    "name": "XRISM_A1795_2026",
+    "url": "https://arxiv.org/pdf/2606.08097",
+    "sha256": "3130d3cdba65c23e12102f9fef9226c8cecba5a45c83b3e89ec68dd26f1db243",
+    "bytes": 4870568
+  },
+  {
+    "name": "XRISM_A2029_2025",
+    "url": "https://arxiv.org/pdf/2505.06533",
+    "sha256": "e0b4d9e421f7a3abde4e5b8785d46073a674713d37765f313ce9366545af21e9",
+    "bytes": 1237107
+  },
+  {
+    "name": "XRISM_A2029_2026",
+    "url": "https://arxiv.org/pdf/2608.14415",
+    "sha256": "02f79d985b3b702bb14a42d52dc6bad4dcbe2c8a9421f946f98cf59d3026bf8d",
+    "bytes": 9461968
+  }
+]

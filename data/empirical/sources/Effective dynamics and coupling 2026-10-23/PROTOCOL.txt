@@ -1,0 +1,25 @@
+EFFECTIVE DYNAMICS AND COUPLING — 23 OCTOBER 2026
+
+Extend the selected low-density action without changing the original inputs.
+The other chat's latest assessment was read. The source clock is the scalar
+relative to proper time, not a universal slowing of ordinary physical clocks.
+
+Questions recorded before new numerical results:
+1. Derive a sufficient scaling of contact power that preserves the regular
+   positive current and constant resting energy in the depletion phase.
+2. Give a local radial-velocity transition kernel with a specified positive
+   orbital target, protected angular momentum, an energy/work/heat ledger,
+   and a source-clock gate. The target and mobility remain physical inputs.
+3. Test a closed finite-energy cell. Compare sufficient and insufficient
+   supply, and check whether exhaustion stops redistribution without clipping.
+4. Test actual Hamiltonian transport plus the local velocity contact toward
+   a declared nonthermal equilibrium in a fixed spherical potential. This is
+   not a new RAR fit or a self-consistent halo calculation.
+5. Evolve a spatial depleted/undepleted interface in the selected scalar
+   action. Record conservation, refinement, causal travel and any sign or
+   hyperbolicity failure; do not impose a positive-current clipping rule.
+6. Connect provable identities to standalone Lean certificates. A full
+   covariant multistream action and quantum bath derivation are not presumed.
+
+All inputs, failed tests, source versions and PDFs are preserved. Current
+papers and upstream Lean remain read-only. Output files use exclusive creation.

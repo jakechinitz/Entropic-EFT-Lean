@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx,booktabs,tabularx,longtable,array,float}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem,parskip}
+\usepackage[obeyspaces]{url}
+\usepackage[hidelinks]{hyperref}
+\definecolor{ink}{gray}{0}
+\definecolor{teal}{gray}{0}
+\hypersetup{
+ pdftitle={Empirical Results: History-Dependent Gravity and Cosmological Release},
+ pdfauthor={Jacob Chinitz}}
+\setcounter{tocdepth}{1}
+\hypersetup{bookmarksdepth=2}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.8}
+\renewcommand{\textfraction}{.1}
+\renewcommand{\floatpagefraction}{.8}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{plain}
+\newcommand{\Msun}{M_\odot}
+\newcommand{\kms}{\mathrm{km\,s^{-1}}}
+\newcommand{\aunit}{10^{-10}\,\mathrm{m\,s^{-2}}}
+\newcommand{\LCDM}{\ensuremath{\Lambda\mathrm{CDM}}}
+\newcommand{\source}[1]{\textcolor{teal}{\small [#1]}}
+\newcommand{\empiricalpart}[2]{%
+  \clearpage
+  \section*{Part #1. #2}%
+  \addcontentsline{toc}{part}{#1. #2}}
+
+\author{Jacob Chinitz}
+\title{History-dependent gravity and cosmological release\\[0.3em]
+\large Galaxy, cluster, and cosmological tests against MOND and \LCDM}
+\date{November 8, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+One finite entanglement-capacity ensemble fixes three quantities in this
+construction: the galactic acceleration scale, the gravitating stock
+committed by each baryon, and the fraction of that stock released as
+vacuum energy during structure formation. The resulting stock model is
+compared with MOND and with \LCDM. Matched comparisons use common data
+and likelihoods and count each model's fitted parameters.
+
+In clusters the stock model recovers the hydrostatic masses that \LCDM\
+fits and that the MOND response to the baryons leaves a third short. It
+fits Planck, DESI and DES supernova data as well as \LCDM\ with four
+cosmological parameters against six, a Bayesian information criterion
+difference of 14.5 in its favor. With a gas-retention threshold taken
+from feedback-resolved simulations, adopted after the target was known,
+it gives the vacuum fraction 0.709 with an uncertainty of 0.02 against the
+required 0.707. In galaxies
+the response law has the rotation-curve form of MOND, with an acceleration
+scale set by the expansion rate. Retained stock keeps the mass of the
+Large Magellanic Cloud inferred from its stream and the vertical gravity
+of an old disk, both of which the tested external-field MOND calculations
+miss.
+
+MOND fits weak lensing around isolated galaxies and the SPARC rotation
+curves with a fitted acceleration scale better than the stock model, the
+high-redshift kinematic residuals keep a trend, and Antlia 2
+remains hotter than the model's remnants. Fifteen test families, their
+data, and their open limits are reported, together with the code that
+reproduces each comparison.
+\end{abstract}
+\clearpage
+\tableofcontents
+\clearpage
+\input{01_results_and_basis.tex}
+\empiricalpart{I}{Galaxies}
+\input{02_acceleration.tex}
+\input{03_history.tex}
+\input{04_dwarfs.tex}
+\input{05d_distinctive.tex}
+\empiricalpart{II}{Clusters and cosmology}
+\input{05b_clusters.tex}
+\input{05_cosmology.tex}
+\input{05c_cross_sector.tex}
+\empiricalpart{III}{Predictions beyond the two alternatives}
+\input{05e_predictions.tex}
+\empiricalpart{IV}{Open tests and interpretation}
+\input{05f_open.tex}
+\input{06_interpretation_and_audit.tex}
+\input{07_references.tex}
+\end{document}
