@@ -2,6 +2,20 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Inversion gluing (2026-11-14)
+
+`Entropic/InversionGluing/` (two modules, 57 theorems) identifies the diamond graph with the cell complex
+developed by point inversions through face centres. `Core` has no imports: the development (`develop`), the
+closure rule (`closed_iff_balanced`: a word closes exactly when every port is used equally often from the two
+orientation classes), the classification of closed six-words as three-port hexagons (`six_ring_iff`), and the
+integer form of the statement that regular mirror-glued cells close no ring (`cheb_ne_pow`). `Bridge` proves
+that `DiamondGreen.dNbr` is that neighbour rule (`embed_nbr`, `embed_injective`, `embed_walk`), keeps the
+half-turn frame transport of `AppP.Num.mirror` (the plane reflection is its negative), and gives
+`inversion_vacuum_compatible` and `joint_with_effective_model`. Ledger: C07-101 (girth), C07-128 to C07-133,
+C03-157 and C07-107 rescoped; notes in `ledger/INVERSION_GLUING_20261114.md`. Both files were compiled with
+the pinned Lean 4.35.0 on Windows against the existing build; the selection of the inversion vacuum by the
+host dynamics is not formalized.
+
 ## Contact ledger, release ledger and redshift law (2026-10-29)
 
 Three modules port the general parts of the 2026-10-26 held-out-test formalization, restated on the existing library. `Entropic/ContactLedger.lean`: for any sequence of proposed stock contacts under the acceptance rule and work register of Appendix O.3, kinetic energy plus register changes only by credits, the register never goes negative, heating is bounded by the initial register plus credits, and once both are spent the stock cannot end hotter (`run_heating_bounded`, `spent_register_no_heating`); the mismatch never rises. `Entropic/ReleaseLedger.lean`: committed plus released stock is conserved, the vacuum density is nonnegative and one-signed, `I_rel ≥ F(1)`, and some release happens at `a³ ≤ F(1)/I_rel`; for the paper's reference history (`F(1) = 0.6633922061`, `I_rel = 94.2116`) some release precedes redshift 4.2 (`reference_history_releases_early`), and for the standard-configuration fit (`I_rel = 92.327`) redshift 4.18 (`fitted_history_releases_early`). `Entropic/RAR/Redshift.lean`: with `a₀(z) = ε c H(z)` in `GalacticLaw.gObs`, the boost at fixed baryonic acceleration rises with `H(z)`, `cH/a₀ = 1/ε` at every redshift, and the deep-regime Tully–Fisher zero point moves as `M(z)/M(0) = H(0)/H(z)` (`btfr_redshift`). The held-out record itself, with its 2026-10-26 numbers and the two flags checked on 2026-10-29, is archived in [held-out record](verification/heldout_bestfit_2026-10-26.md).

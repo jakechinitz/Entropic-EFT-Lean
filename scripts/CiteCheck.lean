@@ -3,6 +3,20 @@ open Lean in
 #eval show CoreM Unit from do
   let env ← getEnv
   let items : List (String × List String) := [
+    ("InversionGluing.Bridge.embed_injective", ["InversionGluing.Bridge.embed_injective", "Entropic.InversionGluing.Bridge.embed_injective"]),
+    ("InversionGluing.Bridge.embed_nbr", ["InversionGluing.Bridge.embed_nbr", "Entropic.InversionGluing.Bridge.embed_nbr"]),
+    ("InversionGluing.Bridge.embed_walk", ["InversionGluing.Bridge.embed_walk", "Entropic.InversionGluing.Bridge.embed_walk"]),
+    ("InversionGluing.Bridge.gluing_sum_zero_inverted", ["InversionGluing.Bridge.gluing_sum_zero_inverted", "Entropic.InversionGluing.Bridge.gluing_sum_zero_inverted"]),
+    ("InversionGluing.Bridge.inversion_vacuum_compatible", ["InversionGluing.Bridge.inversion_vacuum_compatible", "Entropic.InversionGluing.Bridge.inversion_vacuum_compatible"]),
+    ("InversionGluing.Bridge.plane_reflection_det", ["InversionGluing.Bridge.plane_reflection_det", "Entropic.InversionGluing.Bridge.plane_reflection_det"]),
+    ("InversionGluing.Bridge.plane_reflection_eq", ["InversionGluing.Bridge.plane_reflection_eq", "Entropic.InversionGluing.Bridge.plane_reflection_eq"]),
+    ("InversionGluing.closed_iff_balanced", ["InversionGluing.closed_iff_balanced", "Entropic.InversionGluing.closed_iff_balanced"]),
+    ("InversionGluing.develop", ["InversionGluing.develop", "Entropic.InversionGluing.develop"]),
+    ("InversionGluing.inversion_moves_face_vertices", ["InversionGluing.inversion_moves_face_vertices", "Entropic.InversionGluing.inversion_moves_face_vertices"]),
+    ("InversionGluing.mirror_fixes_face_vertices", ["InversionGluing.mirror_fixes_face_vertices", "Entropic.InversionGluing.mirror_fixes_face_vertices"]),
+    ("InversionGluing.no_four_ring", ["InversionGluing.no_four_ring", "Entropic.InversionGluing.no_four_ring"]),
+    ("InversionGluing.no_two_ring", ["InversionGluing.no_two_ring", "Entropic.InversionGluing.no_two_ring"]),
+    ("InversionGluing.six_ring_iff", ["InversionGluing.six_ring_iff", "Entropic.InversionGluing.six_ring_iff"]),
     ("DiamondGreen.greenDiamond_eq_integral", ["DiamondGreen.greenDiamond_eq_integral", "Entropic.DiamondGreen.greenDiamond_eq_integral"]),
     ("DiamondGreen.integral_normSq_pow", ["DiamondGreen.integral_normSq_pow", "Entropic.DiamondGreen.integral_normSq_pow"]),
     ("DiamondGreen.dWalks_even", ["DiamondGreen.dWalks_even", "Entropic.DiamondGreen.dWalks_even"]),

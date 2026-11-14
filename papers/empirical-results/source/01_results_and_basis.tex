@@ -1,63 +1,149 @@
-\section{The empirical picture}
+\section{Three theories on the same data}
+\label{sec:overview}
 
-A common microscopic construction ties the galactic acceleration scale,
-the initial gravitating stock, and its conversion into vacuum energy.
-The tests below examine those connections across different formation
-histories and established gravitational and cosmological observations.
+Galaxy dynamics and cosmology favor different descriptions
+of gravity. A modified force law of the MOND type predicts rotation curves,
+the baryonic Tully--Fisher relation, and the dynamics of many dwarf
+galaxies from the visible baryons alone, with one acceleration constant.
+The same law leaves clusters short of mass and has no fit to the cosmic
+microwave background without additional fields. \LCDM\ fits the acoustic
+spectra, the expansion history, and cluster masses with a collisionless
+component and a cosmological constant whose densities are fitted. At
+galaxy scales it reaches the acceleration relation through halo
+populations, feedback, and per-galaxy halo parameters.
 
-Distinctive tests compare common coefficients and inherited stock with
-specified alternatives. LMC masses, Crater II stripping, and NGC~628
-vertical gravity give favorable results against the tested QUMOND
-prescriptions or NFW populations. High-redshift kinematics remains a
-tension. Established benchmarks assess recovery of acceleration, lensing,
-acoustic spectra, expansion distances, cluster gravity, and tensor
-propagation. Their evidential status is stated separately for each test.
+The construction tested here ties three quantities to one finite cell
+ensemble: the galactic acceleration scale $a_0=\epsilon cH$, the initial
+gravitating stock per baryon $1/\epsilon$, and the fraction $\eta_*$ of
+that stock converted into vacuum energy by structure formation. The same
+entropy $g=7.4198$ fixes $\epsilon$ and $\eta_*$
+(Section~\ref{sec:micro}). The numerical comparisons use common data
+and likelihoods within each test and state their fitted parameters.
+Literature predictions, stream-inferred masses, and cluster mass-ratio
+benchmarks retain the inference assumptions stated in their sections.
+Figure~\ref{fig:scoreboard} and Table~\ref{tab:headtohead} give the
+outcome.
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=\textwidth]{figures/scoreboard.pdf}
+\caption{The three descriptions under the prescriptions tested here. Green marks
+agreement or the stated criterion preference, amber a tension or model
+sensitivity, red a shortfall, and gray an untested prediction or fitted
+quantity. These are qualitative summaries of individual comparisons. Numbers are the comparison
+statistic of the corresponding section: a ratio to the data, a $\chi^2$, a
+velocity dispersion in $\kms$, or an acceleration in
+$10^{-10}\,\mathrm{m\,s^{-2}}$. The rotation-curve entry for the stock
+model is its $\chi^2$ excess over MOND at $a_0=1.2$. Table~\ref{tab:headtohead}
+lists the numerical benchmarks and model-specific fitted parameters.}
+\label{fig:scoreboard}
+\end{figure}
 
 \begingroup\small
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.10}
-\begin{longtable}{@{}p{.06\textwidth}p{.24\textwidth}p{.56\textwidth}p{.06\textwidth}@{}}
-\caption{All fifteen test families in the evidence register. Placement
-identifies the role of a test; the status column states its present reach.
-The register is exploratory, with the existing outcomes known.}\label{tab:fifteen}\\
-\toprule ID & Test & Present result and limit & See\\\midrule
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{longtable}{@{}P{.22\textwidth}P{.205\textwidth}P{.205\textwidth}P{.205\textwidth}P{.07\textwidth}@{}}
+\caption{Numerical comparisons and literature benchmarks. Brackets count
+model-specific fitted parameters: SPARC also profiles the common baryonic,
+distance and inclination nuisances; KiDS profiles eight common environment
+amplitudes; cosmology profiles the common calibration and supernova
+offsets. These shared parameters are omitted from the bracketed counts.}
+\label{tab:headtohead}\\
+\toprule
+Test and data & MOND & \LCDM & Stock model & See\\\midrule
 \endfirsthead
-\toprule ID & Test & Present result and limit & See\\\midrule
+\toprule
+Test and data & MOND & \LCDM & Stock model & See\\\midrule
 \endhead
-\multicolumn{4}{@{}l}{\textbf{I. Distinctive predictions and discriminating tests}}\\[3pt]
-S01 & High-redshift kinematics & Reference line projection agrees; galaxy catalogue residuals retain a high-redshift tension. & \ref{sec:redshift}\\
-S02 & CMB--galaxy normalization & Exponential-fit $a_0=1.25883\times10^{-10}\,\mathrm{m\,s^{-2}}$; standard linear-depletion value $1.25005\times10^{-10}\,\mathrm{m\,s^{-2}}$; conditional mass and survival factors. & \ref{sec:crossnorm}\\
-S10 & Binaries and Solar System & Cassini null benchmark is compatible; a Gaia catalogue likelihood remains open. & \ref{sec:binaries}\\
-S11 & $G$ and lepton masses & Close selected-formula values; finite routing tests leave discovery bias unquantified. & \ref{sec:constants}\\
-S13 & Milky Way, LMC, streams, tilt & LMC mass agreement and repeated tilt realizations; Galactic mass and a joint stream fit remain unresolved. & \ref{sec:lmc}, \ref{sec:halo}\\
-S14 & Satellites and tidal dwarfs & Crater II favors stock within the tested grids; Antlia 2 and odds depend strongly on model error. & \ref{sec:crater}\\
-S15 & Old-disk vertical gravity & NGC~628 gives $\chi^2=2.04$ for five dispersions; a broader tracer and force comparison is needed. & \ref{sec:olddisk}\\
-\midrule
-\multicolumn{4}{@{}l}{\textbf{II. Recovery of established phenomenology}}\\[3pt]
-S03 & Local RAR and BTFR & Broad SPARC diagnostic and small BTFR scatter; the score is sensitive to velocity errors. & \ref{sec:localrar}\\
-S04 & Galaxy weak lensing & Updated fifteen-bin diagonal score 10.06; reduction sensitivity and joint covariance remain. & \ref{sec:galaxylensing}\\
-S05 & CMB acoustic peaks & Planck-based matched fit and ACT comparison recover similar quality to the reference cosmology. & \ref{sec:cmb}\\
-S06 & Growth and Weyl power & ACT lensing score 16.21 over ten bins; DESI full-shape and nonlinear growth tests remain open. & \ref{sec:cmb}\\
-S07 & Dark-energy history and distances & Matched BAO/SN fit with exponential allocation; the feedback-resolved retention occupation gives $\Omega_\Lambda=0.709\pm0.02$ against $0.707$ with no input adjusted to it, and the frozen history fits with four parameters at $\Delta\chi^2=+1.07$. & \ref{sec:distances}\\
-S08 & Relaxed and colliding clusters & Positive stock targets and conserved encounters; outlier mechanisms and lens-map fits remain conditional. & \ref{sec:clusters}\\
-S09 & Slip and $E_G$ & Transfer predictions are compatible with two published estimates; a joint window-convolved fit is needed. & \ref{sec:eg}\\
-S12 & Waves and Lorentz tests & Luminal tensor branch is compatible with the polarization benchmark; operator-level Lorentz tests remain open. & \ref{sec:tensor}\\
+SPARC, 130 galaxies, $\chi^2$ with $5\,\kms$ floor & 3402 at $a_0=1.2$ [0]; 3320 with $a_0$ fitted [1] & 2701 with \LCDM\ priors [260] & 3428 [0] & \ref{sec:sparcthree}\\
+Cluster mass at $R_{500}$ / hydrostatic mass, X-COP median & 0.58--0.66, below 1 in 12 of 12 & 0.94 & 0.91 & \ref{sec:clustermond}\\
+LMC $M(<30\,\mathrm{kpc})$, $10^{10}\Msun$; data 4.7--5.1 & 1.54--1.68 & 6.3; 3.7--10.8 over halo scatter & 5.03 [0] & \ref{sec:lmc}\\
+NGC~628 old-disk $\chi^2$ (5 points); mass pull & 8.86; $-2.9\sigma$ & 2.01; $-0.7\sigma$ & 2.04; $-0.2\sigma$ & \ref{sec:olddisk}\\
+Crater II $\sigma_{\rm los}$, $\kms$; data $2.7\pm0.3$ & $2.1^{+0.9}_{-0.6}$, predicted in 2016 & cuspy NFW disfavored by $10^2$--$10^8$ & 2.36 & \ref{sec:crater}\\
+Antlia 2 $\sigma_{\rm los}$, $\kms$; data $6.0\pm0.4$ & $2.8^{+1.3}_{-0.8}$ & low-concentration halos fit & 3.48 & \ref{sec:antlia}\\
+KiDS isolated lenses, $\chi^2$ (60 points) & 110 [0] & 252 at standard $c$; 124 at $0.38c$ [2] & 171 at standard $c$; 132 at $0.3c$ [2] & \ref{sec:kidsthree}\\
+Planck, DESI DR2, DES-Dovekie, $\chi^2-\chi^2_{\Lambda\rm CDM}$ & no fit without added fields & 0 [6] & $+1.07$ [4] & \ref{sec:infocrit}\\
+$\Omega_\Lambda$; required 0.707 & none & fitted & $0.709\pm0.02$, predicted & \ref{sec:coolinggate}\\
+$a_0(z=2.3)/a_0(0)$ & 1 & about 3 in Magneticum & 3.4 & \ref{sec:redshift}\\
 \bottomrule
 \end{longtable}
 \endgroup
-\source{U1; CL1--CL3; D1--D2; T6}
+
+\paragraph{Results on the same data.}
+Outside galaxies the stock model recovers the observations that \LCDM\
+fits and MOND misses. Cluster masses at $R_{500}$ follow the cohort ratio
+$1+k_C=6.18$; the MOND response to the observed baryons supplies 0.48 to
+0.75 of the hydrostatic mass and falls below it in all twelve X-COP
+clusters. The acoustic spectra, baryon acoustic oscillations, and supernova distances are fitted as well
+as by \LCDM\ with four cosmological parameters against six, which gives
+$\Delta\mathrm{AIC}=-2.9$ and $\Delta\mathrm{BIC}=-14.5$
+(Figure~\ref{fig:cosmoparams}). The matter
+density, $\Omega_\Lambda$, and $H_0$ are outputs of the construction.
+
+Inside galaxies the response law has the form of the McGaugh--Lelli
+fitting function, so the rotation-curve shape is shared with MOND. The
+acceleration scale is the cosmological value $\epsilon cH_0$. The SPARC
+galaxies with absolute distances give 1.16--1.19 without a velocity floor,
+within 0.8--1.2 residual-rescaled standard errors of it, and the fitted
+value drifts by 0.25~dex
+between galaxy classes (Section~\ref{sec:sparcthree}).
+Against halos constrained by the \LCDM\ relations, the Bayesian criterion
+prefers the law with no fitted gravity parameter by 390 to 1328. The retained stock adds what
+the tested external-field and algebraic MOND calculations omit: the LMC
+keeps the mass inferred from the Orphan--Chenab stream, with 5.03 against
+the range 4.7--5.1, and the old disk of NGC~628 keeps its vertical gravity.
+\LCDM\ reaches these values within its halo scatter, with the median LMC mass depending on the halo's baryon convention
+(Section~\ref{sec:lmc}); the stock model has no halo freedom.
+
+\paragraph{Where the stock model trails.}
+MOND fits the KiDS isolated-lens profiles better than either model with a
+gravitating component, with $\chi^2=110$ and no halo parameters. On SPARC,
+MOND with $a_0$ fitted to these galaxies scores lower by 108 to 131 and
+MOND at $1.2\times10^{-10}\,\mathrm{m\,s^{-2}}$ by 26 to 34; halos with
+two parameters per galaxy score lower in raw $\chi^2$ and on the Akaike
+criterion. The high-redshift catalogue residuals retain a trend under the $H(z)$
+scaling, slightly larger than under a constant $a_0$. Antlia 2 remains
+hotter than the stock remnants. Crater II's low dispersion was predicted
+by MOND before it was measured; the stock result improves on cuspy halos
+only. The parameter count in cosmology treats the retention gate, the
+measured mixing kernels, and the mapping from optical depth to
+reionization redshift as fixed inputs, and the retention gate was adopted
+after the vacuum-density target was known.
+These items are collected in Section~\ref{sec:open}.
+
+\paragraph{Normalization.}
+The SPARC and NGC~628 comparisons use the frozen four-parameter cosmology,
+with $H_0=68.42\,\kms\,\mathrm{Mpc}^{-1}$ and
+$a_0=\epsilon cH_0=1.2494\times10^{-10}\,\mathrm{m\,s^{-2}}$.
+The LMC and other archived galaxy calculations use either the reference value
+$1.2307\times10^{-10}$ ($H_0=67.4$) or the exponential-allocation
+value $1.2588\times10^{-10}$; each section names its value. The
+differences do not move any result in Table~\ref{tab:headtohead}
+materially: enclosed masses scale as $a_0^{1/2}$, so the LMC values shift
+by $0.8\%$, the NGC~628 $\chi^2$ is 2.04 at both values, and the 22-dwarf
+classification is unchanged with its $\chi^2$ moving by 0.1.
 
 The following calculations retain their individual likelihoods,
 selection effects, and error models. A simulation realization, a fitted
 relation, a conditional normalization, and an observation predicted
 before measurement have different evidential roles. Lean checks the
 stated mathematical implications; observed agreement is assessed
-separately for each test.
+separately for each test. The full fifteen-family evidence register is
+Table~\ref{tab:fifteen} in Appendix~\ref{app:register}.
+\source{X1--X3; U1; C8}
+
+\paragraph{Organization.}
+Section~\ref{sec:micro} derives the common coefficients. Part~I covers
+galaxies, where MOND is the strong alternative: rotation curves, the LMC,
+dwarf satellites, disk vertical gravity, and galaxy lensing. Part~II
+covers clusters and cosmology, where \LCDM\ is the strong alternative.
+Part~III collects relations fixed by the common coefficients that go
+beyond both alternatives. Part~IV states the open items and the joint
+interpretation.
 
 \paragraph{Relation to the theory and CDT accounts.}
 The effective astrophysical calculations use \emph{Entropic Scalar EFT}.
 The companion CDT account distinguishes the electron-anchored scale
-$G_*$, the selected bare coefficient $G_0\simeq1.03002G_*$, and an
+$G_*$, the selected bare coefficient $G_0=(0.9975\pm0.0010)G_*$, and an
 interacting response $G_R$. The measured Newton constant remains the
 effective input here. Matter response and the continuum phase of the
 $\alpha=7$ CDT branch retain their own tests. \source{T1--T5}
@@ -173,7 +259,7 @@ claim that finite capacity uniquely determines that microscopic model.
 \subsection{Two coefficients inherited by the astrophysical branches}
 
 The transverse galactic branch takes its response cell to be the tilt
-mode of the transverse frame, with inertia lever $\ell=g\,c/H$. The
+mode of the transverse frame, with equivalent pendulum length $\ell=g\,c/H$. The
 horizon temperature $\hbar H/2\pi$ then gives the dimensionless coefficient
 \begin{equation}
 \epsilon=\frac{g}{4\pi^2}=0.1879457302,
@@ -195,10 +281,8 @@ and $a_0(0)=1.25883\times10^{-10}\,\mathrm{m\,s^{-2}}$.
 The galaxy calculations specify the reference or fitted normalization used
 in each comparison.
 This coefficient is obtained by evaluating a fixed prescription.
-The tilt-mode identification, its horizon thermalization, and the lever
-are the physical matching assumptions of that prescription; the lever
-coefficient follows from the register enthalpy and a one-nat oriented record
-read at the Unruh temperature of the projected field, given that reading. \source{T1, section 15}
+The tilt-mode identification, its horizon thermalization, and the pendulum length are the physical matching assumptions of that prescription; the coefficient of the pendulum length follows from the register enthalpy and its closure energy tangent
+to the frame screen, both carried at the horizon radius, given equilibrium with the horizon bath and the rigidity of the response cell. \source{T1, section 15}
 
 In the cosmological branch, the committed state has mean energy
 $\varepsilon_K\langle K^2\rangle_*$, while the three normalized record

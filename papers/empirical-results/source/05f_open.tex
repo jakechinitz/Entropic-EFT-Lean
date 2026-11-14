@@ -1,0 +1,120 @@
+\section{Open items}
+\label{sec:open}
+
+The comparisons leave seven open items, each stated with the measurement
+or calculation that would settle it. Five are summarized here with
+pointers to their sections; the high-redshift kinematics and the Milky Way
+mass follow in full.
+
+\paragraph{Rotation-curve normalization.} On SPARC the stock law trails
+MOND with a fitted $a_0$ by 108 to 131 in $\chi^2$ and MOND at
+$1.2\times10^{-10}\,\mathrm{m\,s^{-2}}$ by 26 to 34. The law shape is
+shared, so the gap measures the normalization. The fitted value spreads
+by 0.25~dex between galaxy classes and contains the cosmological $a_0$
+(Section~\ref{sec:sparcthree}). A 2\% determination of $a_0$ from galaxies
+with absolute distances, with correlated distance and stellar-population
+errors, tests the normalization and the Hubble-constant relation of
+Section~\ref{sec:h0galaxies}.
+
+\paragraph{Isolated-galaxy lensing.} MOND fits the KiDS isolated-lens
+profiles with $\chi^2=110$ and no halo parameter. The support-limited stock
+reaches 132 only at a third of the standard concentration
+(Section~\ref{sec:kidsthree}). The hot-gas mass of the lenses and the
+profile of the uncarried stock outside the support decide this comparison.
+A forward model of the stacked profiles with the support radius measured
+from the circumgalactic gas, and the same environment term for all models,
+is the next test.
+
+\paragraph{Antlia 2.} The best stock remnant has $3.48\,\kms$ against the
+measured $6.0\,\kms$ (Section~\ref{sec:antlia}). MOND with the external
+field also falls short. A mock observation with the actual membership,
+gradient, and selection procedure is required.
+
+\paragraph{Release normalization.} The archived reference gate of
+$17\,\kms$ gave a release integral about 20\% below the likelihood target,
+and the likelihood selects $14\,\kms$. The cooling criterion and the
+no-feedback run, computed afterwards, give larger vacuum fractions. The
+feedback-resolved occupation was adopted from published simulations after
+the target and these gates were known, and it lands on the target with
+none of its inputs adjusted. A retention fraction measured in advance
+from converged runs with feedback and photoheating, under a label prescription fixed beforehand, is the
+decisive form of this test.
+
+\paragraph{Cluster outliers.} A1795 and A2029 require transport of
+baryons out of the lensing aperture, and A644 and ZW1215 retain
+reconstruction uncertainty (Section~\ref{sec:clusters}).
+
+\subsection{High-redshift kinematics and the direction of a relaxation correction}
+The reference line projection agrees with the published coefficients
+(Section~\ref{sec:redshift}). The catalogue residuals retain a trend that
+the $H(z)$ scaling does not remove, and a constant $a_0$ leaves a slightly
+smaller one. The catalogue diagnostics use the exponential-allocation
+normalization $a_0=1.2588\times10^{-10}\,\mathrm{m\,s^{-2}}$.
+
+The common cosmology was propagated to 73 KMOS3D, 21 KGES, and 169 KROSS
+objects at three radii. At the KMOS3D outer radius, the log-acceleration
+residual slope is $-0.245$ dex per unit redshift with constant $a_0$ and
+$-0.313$ with the common $H(z)$ law. The latter has median log-velocity
+residual $-0.087$ dex. The reference $z=2.3$ example gives acceleration
+boosts about 2.02 versus 1.39 for the compared evolving and fixed scales.
+These are catalogue central-value diagnostics with specified baryon force
+models; they do not constitute raw-cube likelihoods. The 112-point
+reference projection remains distinct from a regression on the actual
+79-object MUSE selection. The common cosmology has not removed the
+high-redshift residual trend. \source{U1, S01}
+
+Passive relaxation cannot automatically supply a reduction. If
+$\dot n=\Gamma(q-n)$ with $\Gamma>0$, $\dot q\le0$, and initially
+$n\ge q$, then $n$ remains above the target. At fixed baryons a lag behind
+declining $H$ therefore has the wrong sign to suppress an initially
+equilibrated response. Underoccupied assembly states require their own
+history. Relabeling an unchanged stock leaves its total stress unchanged;
+the tested adiabatic cosmological mass loss gives an inferred scale ratio
+0.9183 from $z=2.3$, compared with $H_0/H(2.3)=0.2972$.
+These constraints identify the contact and preparation history as physical
+requirements. \source{D1}
+
+For the selected two-pole quantum response, the noise enhancement
+$\mathcal F$ and mean delay $\bar\tau$ obey
+$\mathcal F H\bar\tau\ge4$. The illustrative three-percent tracking
+condition at occupation argument $x=1$ gives $\mathcal F\gtrsim158$,
+requiring about $6.47\times10^4$ independent cells for three-percent
+force rms. Actual windows, correlations, and gravitational coupling
+remain unspecified, so this is a contact-model constraint.
+\source{D1; T1, N.8}
+
+\subsection{Milky Way mass and a joint satellite fit}
+\label{sec:jointtest}
+The available
+moving-LMC calculations use a Galactic mass within 50 kpc about $17\%$
+above the Brooks et al. inference in the stock model, and about $36\%$
+above it in the NFW model. A joint Milky Way--LMC fit would alter the
+satellite pericentres and the stripping histories. Those changes should
+be propagated to both Crater II and Antlia 2 before assigning a combined
+evidence ratio. \source{G4}\cite{brooks}
+
+\subsection{A decisive program}
+The open items define a program:
+\begin{enumerate}
+\item Infer the Milky Way and LMC jointly using streams, halo reflex
+kinematics, and a common source-conserving force model. Predict additional
+stream observables from the resulting mass distributions.
+\item Evolve the dwarf populations with resolved self-gravity and
+prespecified progenitor priors. Apply the actual stellar selection,
+velocity-gradient, and membership inference to their mock observations.
+Include concentration scatter and physically motivated cores in the
+dark-matter comparison.
+\item Fit the intermediate-redshift galaxy data directly with the
+cosmological $H(z)$ from the same model. Preserve correlations between
+baryonic masses, pressure support, geometry, and acceleration.
+\item Measure retention and source-label loss in converged hydrodynamic
+runs with supernova feedback, photoheating and a label prescription fixed
+in advance, and read the retention gate from gas retention. Use that release history
+with the existing positive-allocation perturbation implementation and
+a matched full cosmological likelihood.
+\item Forward-model the isolated-lens profiles with the support radius
+measured from the circumgalactic gas, and compare MOND, halos, and stock
+with one environment term.
+\end{enumerate}
+Each step tests an existing physical commitment of the construction.
+

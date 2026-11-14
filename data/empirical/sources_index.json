@@ -1,6 +1,6 @@
 {
  "rule": "Text, code and small data files (<= 1 MB; .py .json .md .txt .csv .tsv .tex .yaml .toml .sh .ps1 .dat .npy .npz .sha256) of each research folder the Empirical Results source table cites. Run directories (analysis_*, run_*, runs, logs, inputs, workspace), vendored dependencies, snapshots of other repositories, Lean copies (the Lean lives at the repository root) and large or binary files are left out and listed under excluded with their size.",
- "included_count": 920,
+ "included_count": 941,
  "included": [
   "Bose contact observed clusters 2026-10-24/MANIFEST.json",
   "Bose contact observed clusters 2026-10-24/NUMERICAL AMENDMENT.md",
@@ -920,140 +920,41 @@
   "Retention gate from feedback simulations 2026-10-31/sigmaM.py",
   "Spacetime consolidation 2026-10-16/MICROSTRUCTURE_TO_SPACETIME.md",
   "Stock adjustment resolution 2026-10-21/START HERE.txt",
+  "Three-theory comparison 2026-11-08/README_paper_assembly_scripts.txt",
+  "Three-theory comparison 2026-11-08/RESULTS.md",
+  "Three-theory comparison 2026-11-08/clusters/cluster_mond.json",
+  "Three-theory comparison 2026-11-08/clusters/cluster_mond.py",
+  "Three-theory comparison 2026-11-08/kids/hyb_nuis.py",
+  "Three-theory comparison 2026-11-08/kids/hyb_nuis2.py",
+  "Three-theory comparison 2026-11-08/kids/kids_hyb_grid.json",
+  "Three-theory comparison 2026-11-08/kids/kids_mond.json",
+  "Three-theory comparison 2026-11-08/kids/kids_mond2.json",
+  "Three-theory comparison 2026-11-08/kids/nuis.py",
+  "Three-theory comparison 2026-11-08/kids/nuis2.py",
+  "Three-theory comparison 2026-11-08/lmc_ngc628/lmc_lcdm.json",
+  "Three-theory comparison 2026-11-08/lmc_ngc628/lmc_lcdm.py",
+  "Three-theory comparison 2026-11-08/lmc_ngc628/ngc628_lcdm.json",
+  "Three-theory comparison 2026-11-08/lmc_ngc628/ngc628_lcdm.py",
+  "Three-theory comparison 2026-11-08/sparc/sparc_compare.json",
+  "Three-theory comparison 2026-11-08/sparc/sparc_compare.py",
+  "Three-theory comparison 2026-11-08/sparc/sparc_prior_sens.json",
+  "Three-theory comparison 2026-11-08/sparc/sparc_prior_sens.py",
+  "Three-theory comparison 2026-11-08/sparc/sparc_split.json",
+  "Three-theory comparison 2026-11-08/sparc/sparc_split.py",
   "Unified empirical program 2026-10-23/execution_register.json",
   "Unified empirical program 2026-10-23/results/cosmology_final.json"
  ],
  "excluded": [
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/b25.log",
-   101
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/b35.log",
-   99
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/b84.log",
-   179
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_ref.log",
-   246
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_vp25.log",
-   90
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_vp35.log",
-   80
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_zre70.log",
-   247
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp25_zre7.66.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp25_zre8.00.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp25_zre8.40.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp25_zre8.80.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp25_zre9.20.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp35_zre7.00.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp35_zre7.33.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/corr_vp35_zre7.66.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/frozen_zre7.00.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/frozen_zre7.33.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/frozen_zre7.66.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/frozen_zre8.00.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/frozen_zre8.40.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/frozen_zre8.80.npy",
-   144176
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/tie_alt.log",
-   751
-  ],
-  [
-   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/tie_std.log",
-   795
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_150628/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_150805/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_151139/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152025/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152253/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152808/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152942/",
-   "dir"
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_153135/",
-   "dir"
-  ],
   [
    "02 Research/Bose contact observed clusters 2026-10-24/inputs/",
    "dir"
   ],
   [
    "02 Research/Bose contact observed clusters 2026-10-24/runs/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/source_snapshot/",
    "dir"
   ],
   [
@@ -1223,10 +1124,6 @@
   [
    "02 Research/Bose contact observed clusters 2026-10-24/shared_validation_20261024_151717/ZW1215_k0_shared_resolution.log",
    978
-  ],
-  [
-   "02 Research/Bose contact observed clusters 2026-10-24/source_snapshot/__pycache__/",
-   "dir"
   ],
   [
    "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A1795_k0.log",
@@ -1845,6 +1742,10 @@
    378495
   ],
   [
+   "02 Research/Contact rule physical basis 2026-10-24/ContactSelection.lean",
+   15685
+  ],
+  [
    "02 Research/Contact rule physical basis 2026-10-24/runs_bose_functional.tar.gz",
    25657
   ],
@@ -2107,6 +2008,26 @@
   [
    "02 Research/Effective dynamics and coupling 2026-10-23/results/local_contact_traces.npz",
    1516264
+  ],
+  [
+   "02 Research/Effective dynamics and coupling 2026-10-23/source_records/EffectiveContact_before_joint_contact.lean",
+   3501
+  ],
+  [
+   "02 Research/Effective dynamics and coupling 2026-10-23/source_records/EffectiveContact_before_positive_edge.lean",
+   4022
+  ],
+  [
+   "02 Research/Effective dynamics and coupling 2026-10-23/source_records/EffectiveContact_before_thermal.lean",
+   4404
+  ],
+  [
+   "02 Research/Effective dynamics and coupling 2026-10-23/source_records/EffectiveContact_before_warm_rate_fix.lean",
+   5925
+  ],
+  [
+   "02 Research/Effective dynamics and coupling 2026-10-23/source_records/EffectiveContact_first.lean",
+   3232
   ],
   [
    "02 Research/Effective dynamics and coupling 2026-10-23/source_records/finalization_20261023_124743_581801/START HERE.html",
@@ -2677,6 +2598,10 @@
    "dir"
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/",
+   "dir"
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/__pycache__/",
    "dir"
   ],
@@ -2691,6 +2616,30 @@
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/main.diff",
    81222
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/before_lean/Entropic.lean",
+   3218
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/before_lean/MuseProjection.lean",
+   5161
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/before_lean/MuseProjection_decide.lean",
+   4951
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/before_lean/20261023_port_435/ConnectedClosure.lean",
+   12116
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/before_lean/20261023_port_435/EffectiveContact.lean",
+   5955
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/before_lean/20261023_port_435/EmpiricalCertificates.lean",
+   1742
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/final_diffs/Astra Full_Entropic Scalar EFT.diff",
@@ -2749,52 +2698,104 @@
    1227478
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/ClusterOutliers.lean",
+   5550
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/ClusterOutliers.log",
    2361
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/ConnectedClosure.lean",
+   14580
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/ConnectedClosure.log",
    6698
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/EffectiveContact.lean",
+   8021
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/EffectiveContact.log",
    4472
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/EmpiricalCertificates.lean",
+   2170
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/EmpiricalCertificates.log",
    1742
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/MergerContact.lean",
+   1785
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/MergerContact.log",
    781
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/MuseProjection.lean",
+   5349
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_150907/MuseProjection.log",
    0
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_152046/MuseProjection.lean",
+   5349
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_152046/MuseProjection.log",
    0
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_152114/MuseProjection.lean",
+   5139
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_152114/MuseProjection.log",
    3290
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_152308/MuseProjection.lean",
+   5163
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_152308/MuseProjection.log",
    748
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_153505/ConnectedClosure.lean",
+   14780
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_153505/ConnectedClosure.log",
    11815
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_153505/EffectiveContact.lean",
+   8047
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_153505/EffectiveContact.log",
    5383
   ],
   [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_153505/EmpiricalCertificates.lean",
+   2178
+  ],
+  [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_153505/EmpiricalCertificates.log",
    2071
+  ],
+  [
+   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_154035/ConnectedClosure.lean",
+   14889
   ],
   [
    "02 Research/Manuscript cluster and dynamics integration 2026-10-23/lean_checks/20261023_154035/ConnectedClosure.log",
@@ -4629,70 +4630,6 @@
    81602
   ],
   [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/.gitignore",
-   333
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/CITATION.cff",
-   1416
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/lean-toolchain",
-   25
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/LICENSE",
-   11342
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/axiom_audit_chunk14_2026-10-22.log",
-   112
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/axiom_audit_chunk16_2026-10-23.log",
-   116
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/axiom_audit_chunk17_2026-10-23.log",
-   105
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/axiom_audit_chunk18_2026-10-23.log",
-   105
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/axiom_audit_chunk19_2026-10-23.log",
-   105
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/axiom_audit_final_2026-10-23.log",
-   105
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/citecheck_chunk14_2026-10-22.log",
-   23
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/citecheck_chunk16_2026-10-23.log",
-   23
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/citecheck_chunk17_2026-10-23.log",
-   23
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/citecheck_chunk18_2026-10-23.log",
-   23
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/citecheck_chunk19_2026-10-23.log",
-   23
-  ],
-  [
-   "02 Research/Manuscript cluster and dynamics integration 2026-10-23/repository_snapshot/verification/citecheck_final_2026-10-23.log",
-   23
-  ],
-  [
    "02 Research/Observed cluster tests 2026-10-23/dependencies/",
    "dir"
   ],
@@ -5327,6 +5264,2102 @@
   [
    "02 Research/Observed cluster tests 2026-10-23/source_records/pdf_preview/poppler-7.png",
    69855
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/b25.log",
+   101
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/b35.log",
+   99
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/b84.log",
+   179
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_ref.log",
+   246
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_vp25.log",
+   90
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_vp35.log",
+   80
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/grid_zre70.log",
+   247
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/tie_alt.log",
+   751
+  ],
+  [
+   "02 Research/Retention gate from feedback simulations 2026-10-31/frozen_likelihood/tie_std.log",
+   795
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/paper_assembly_scripts_2026-11-08.tar.gz",
+   39675
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/hyb.log",
+   405
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/hyb2.log",
+   233
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/nuis.log",
+   620
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/nuis2.log",
+   303
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/sparc/sparc.log",
+   918
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/hyb.log",
+   405
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/hyb2.log",
+   233
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/nuis.log",
+   620
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/kids/nuis2.log",
+   303
+  ],
+  [
+   "02 Research/Three-theory comparison 2026-11-08/sparc/sparc.log",
+   918
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/.lake/",
+   "dir"
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/.gitignore",
+   333
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Audit.lean",
+   1702
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/CITATION.cff",
+   1416
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/ClosureRootAudit.lean",
+   3140
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Compatibility.lean",
+   1448
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/CritiqueAudit.lean",
+   1766
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic.lean",
+   5256
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/entropic_lean_v435_2026-10-23.zip",
+   984355
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/entropic_lean_v435_compatibility_2026-10-23.zip",
+   1025336
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/entropic_lean_v435_fouritems_2026-10-23.zip",
+   1056717
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/entropic_lean_v435_settling_2026-10-23.zip",
+   1008335
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/FullAudit.lean",
+   11677
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/GravityAudit.lean",
+   2900
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/lean-toolchain",
+   25
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/LICENSE",
+   11342
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/UnifiedAudit.lean",
+   3932
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_diamondgreen_20261027.tar",
+   307200
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_inversiongluing_20261114.tar",
+   317440
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_ledger_citefix_20261028e.tar",
+   184320
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_pendular_20261028.tar",
+   194560
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_pendular_inertia_20261028d.tar",
+   194560
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_pendular_thermo_20261028f.tar",
+   194560
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_reggegraviton_20261028.tar",
+   307200
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_stiffness_20261024.tar",
+   30720
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_originals_pre_sync_main_cfcfa373_20261029.tar",
+   2979840
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/BlackHole.lean",
+   18277
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/CapacityDomain.lean",
+   4245
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ClosureRoot.lean",
+   25325
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ContactLedger.lean",
+   8575
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ContactSelection.lean",
+   20792
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen.lean",
+   216
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Director.lean",
+   6481
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT.lean",
+   2015
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EnvelopePremises.lean",
+   14154
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/FiniteModel.lean",
+   2693
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/FiniteRenewal.lean",
+   22490
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/FiniteStatistics.lean",
+   3002
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/GalacticLaw.lean",
+   15587
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/GaussianSource.lean",
+   1372
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/GenerationCutoff.lean",
+   2842
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/HistoryCapacity.lean",
+   4040
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/InversionGluing.lean",
+   818
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/IsometricReduction.lean",
+   3686
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Ledger.lean",
+   4000
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/MicroEnvelope3D.lean",
+   7717
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/PositiveLedger.lean",
+   3401
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/PositiveReconstruction.lean",
+   1975
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Projectors.lean",
+   2400
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Reciprocity.lean",
+   6699
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton.lean",
+   344
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReleaseLedger.lean",
+   8604
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Response.lean",
+   1708
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/RetainedRelaxation.lean",
+   2864
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ShellLadder.lean",
+   3758
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Spherical.lean",
+   3663
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Spine.lean",
+   9600
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/StockSettling.lean",
+   12645
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/Counts.lean",
+   6856
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/Elementary.lean",
+   13106
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/GibbsCalculus.lean",
+   11636
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/LegacyBridge.lean",
+   10989
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppB/Supplement.lean",
+   2431
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Calibration.lean",
+   9967
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/CausalDiamond.lean",
+   4828
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Conditional.lean",
+   4900
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Continuum.lean",
+   9191
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Defect.lean",
+   14129
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/ElectronNumerics.lean",
+   18911
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Frame.lean",
+   6021
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/GibbsNumerics.lean",
+   6853
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/History.lean",
+   5261
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Information.lean",
+   10215
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Lattice.lean",
+   5072
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/MoveGraph.lean",
+   6348
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/Sprinkling.lean",
+   6667
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/TiltedMean.lean",
+   4057
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppCDE/WeakField.lean",
+   20037
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Born.lean",
+   3777
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Histories.lean",
+   13933
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Horizon.lean",
+   13672
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/StrongField.lean",
+   14221
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppFG/Subadditivity.lean",
+   9193
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH1/Algebra.lean",
+   23046
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH1/Kinematics.lean",
+   18694
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH1/Marked.lean",
+   20484
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Elimination.lean",
+   6759
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Gaussian.lean",
+   11111
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Legendre.lean",
+   9470
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Pullback.lean",
+   15946
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Spectral.lean",
+   7200
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH10/Symbols.lean",
+   17516
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Clock.lean",
+   12425
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Frame.lean",
+   3890
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Polar.lean",
+   24711
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppH11/Records.lean",
+   14475
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppIJ/Cdt.lean",
+   18028
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppIJ/Color.lean",
+   18712
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppIJ/Shells.lean",
+   12679
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppKN/Fields.lean",
+   7440
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppKN/Response.lean",
+   22442
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppKN/Scalars.lean",
+   15953
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppO/Flow.lean",
+   18224
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppO/Numerics.lean",
+   17614
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppO/Release.lean",
+   25780
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Expansion.lean",
+   12154
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Numbers.lean",
+   31333
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Records.lean",
+   32166
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppP/Spin.lean",
+   42406
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppQ/Algebra.lean",
+   26108
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppQ/Fock.lean",
+   13081
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/AppQ/Weights.lean",
+   7129
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Compatibility/All.lean",
+   8260
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Compatibility/Expanding.lean",
+   15774
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Compatibility/GibbsHistory.lean",
+   2503
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Compatibility/History.lean",
+   4142
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Compatibility/Projection.lean",
+   2052
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Compatibility/SharedModel.lean",
+   8613
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/All.lean",
+   5536
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/CausalBounds.lean",
+   2778
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/Entropy.lean",
+   3207
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/GlobalBackground.lean",
+   8545
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/GlobalFloor.lean",
+   5608
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/GlobalModel.lean",
+   4840
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/GlobalRelease.lean",
+   7035
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/GlobalSpatial.lean",
+   12239
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/InfiniteHistory.lean",
+   4649
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/Metric.lean",
+   2591
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/Motion.lean",
+   2388
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/Obstructions.lean",
+   4423
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/Spatial.lean",
+   7378
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Completion/SpatialRelease.lean",
+   9495
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen/AGM.lean",
+   6735
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen/Fourier.lean",
+   11887
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen/Series.lean",
+   5938
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen/Transience.lean",
+   9577
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen/Value.lean",
+   8426
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/DiamondGreen/Walks.lean",
+   6388
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Audit/ClaimLedger.lean",
+   4897
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Audit/Connections.lean",
+   3910
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Clusters/Projection.lean",
+   1698
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Core/PhysicalInterfaces.lean",
+   3252
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Core/Prelude.lean",
+   2024
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Core/Status.lean",
+   809
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Cosmology/FixedMeasureDarkEnergy.lean",
+   5643
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Cosmology/SaturatedDust.lean",
+   2626
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Edge/Kernel.lean",
+   1969
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Edge/SourceProjection.lean",
+   1617
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Edge/TetrahedralFrame.lean",
+   1891
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Foundations/Postulates.lean",
+   1920
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/FactorSplit.lean",
+   5755
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/ProjectiveColor.lean",
+   3899
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/SpinePropagation.lean",
+   7559
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gauge/VertexRealization.lean",
+   8438
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gaussian/RelativeCovariance.lean",
+   2340
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gravity/FieldDefinitions.lean",
+   1051
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gravity/Static.lean",
+   3778
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Gravity/StrongField.lean",
+   3053
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Information/Renewal.lean",
+   2811
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Instantiation/ToyCDT.lean",
+   11582
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Lattice/FiniteRegulator.lean",
+   2068
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Marked/CorrectedH9.lean",
+   5469
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Marked/EdgeGraph.lean",
+   1245
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Marked/SingleStrandRecord.lean",
+   10315
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Microstructure/Architecture.lean",
+   1916
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Numerics/Spine.lean",
+   1172
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/OpenProblems/Interfaces.lean",
+   934
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Quantum/Histories.lean",
+   1557
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Quantum/Replacement.lean",
+   1911
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/FusionSpec.lean",
+   1859
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/MarkedComplement.lean",
+   1581
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/SharpTransfer.lean",
+   1211
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Representation/SpinDimensions.lean",
+   1948
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Scale/Electron.lean",
+   2220
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Scale/Leptons.lean",
+   2477
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Structure/Connections.lean",
+   13258
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Transport/Telegrapher.lean",
+   1678
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/Transverse/RankOne.lean",
+   2217
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/Admissibility.lean",
+   1898
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/Boundary.lean",
+   2476
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/BranchAudit.lean",
+   1289
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/ClosureInvariant.lean",
+   3106
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/EtaStar.lean",
+   2072
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/EtaUniqueness.lean",
+   1465
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/RootExistence.lean",
+   6229
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/EFT/UV/Spectrum.lean",
+   3322
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/Coupling.lean",
+   6980
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/Gauge.lean",
+   5673
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/Mechanisms.lean",
+   3700
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/NativeSelection.lean",
+   6312
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/ReadableLink.lean",
+   7840
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/Spectrum.lean",
+   3702
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Electromagnetism/Stiffness.lean",
+   4025
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Extensions20261023/ClusterOutliers.lean",
+   4121
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Extensions20261023/ConnectedClosure.lean",
+   12423
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Extensions20261023/EffectiveContact.lean",
+   5981
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Extensions20261023/EmpiricalCertificates.lean",
+   1750
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Extensions20261023/MergerContact.lean",
+   1339
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Extensions20261023/MuseProjection.lean",
+   4940
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/FourItems/Selection.lean",
+   3940
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/FourItems/Streams.lean",
+   4577
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/InversionGluing/Bridge.lean",
+   7999
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/InversionGluing/Core.lean",
+   15749
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Main/Core.lean",
+   11010
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Main/Cosmo.lean",
+   22793
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Main/Galactic.lean",
+   30826
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/ADM.lean",
+   12133
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Bridge81.lean",
+   2641
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Conformal.lean",
+   4681
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/DiagCommutant.lean",
+   1875
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Fields.lean",
+   24851
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Harmonic.lean",
+   10132
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/IBPForm.lean",
+   1472
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Intertwiner.lean",
+   36517
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Kinetic.lean",
+   2989
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/LieJJ.lean",
+   107051
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/LieTensor.lean",
+   19580
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Pair.lean",
+   82831
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/PairGen.lean",
+   60925
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/RealForms.lean",
+   2626
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Schur.lean",
+   24281
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/SlGen.lean",
+   4168
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/SU3Form.lean",
+   31564
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Pass2/Var.lean",
+   12263
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/RAR/Pendular.lean",
+   12539
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/RAR/Redshift.lean",
+   3696
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Continuum.lean",
+   3838
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Data.lean",
+   15815
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Graviton.lean",
+   4852
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Identify.lean",
+   116177
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsA0.lean",
+   8384
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsA1.lean",
+   7579
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsA2.lean",
+   7572
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsA3.lean",
+   7585
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsA4.lean",
+   7583
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsA5.lean",
+   7569
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/MomentsB.lean",
+   12002
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Normalized.lean",
+   6278
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Resolvent.lean",
+   10526
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Schur.lean",
+   4503
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Symbol.lean",
+   10343
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/ReggeGraviton/Taylor.lean",
+   6230
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Algebra.lean",
+   25015
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Analysis.lean",
+   19767
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Counting.lean",
+   3525
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Dirac.lean",
+   10209
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Gaussian.lean",
+   4665
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Information.lean",
+   5585
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Legacy.lean",
+   2965
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Spin.lean",
+   27160
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/Entropic/Sweep/Staggered.lean",
+   5241
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/scripts/AxiomAudit.lean",
+   1173
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/scripts/CiteCheck.lean",
+   101985
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/scripts/CompatibilityAudit.lean",
+   1907
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axioms.log",
+   2824
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_2026-10-29.log",
+   244
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk10_2026-10-22.log",
+   104
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk11_2026-10-22.log",
+   104
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk12_2026-10-22.log",
+   104
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk13_2026-10-22.log",
+   104
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk14_2026-10-22.log",
+   112
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk16_2026-10-23.log",
+   116
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk17_2026-10-23.log",
+   105
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk18_2026-10-23.log",
+   105
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk19_2026-10-23.log",
+   105
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk2_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk3_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk4_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk5_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk6_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk7_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk8_2026-10-22.log",
+   103
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_chunk9_2026-10-22.log",
+   104
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_compatibility_2026-10-23.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_completion_2026-10-23.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_contactclusters_2026-10-24.log",
+   151
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_contact_2026-10-24.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_diamondgreen_2026-10-27.log",
+   129
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_em_2026-10-24.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_em_stiffness_2026-10-24.log",
+   151
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_envelope2_2026-10-24.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_envelope3_2026-10-24.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_envelope_2026-10-24.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_final_2026-10-23.log",
+   105
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_fouritems_2026-10-23.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_rar_pendular_2026-10-28.log",
+   105
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_rar_thermo_lever_2026-10-28.log",
+   1239
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_readable_link_2026-10-25.log",
+   293
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_reggegraviton_2026-10-28.log",
+   175
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_settling_2026-10-23.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/axiom_audit_switch_2026-10-24.log",
+   152
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/build.log",
+   102
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk10_appO_2026-10-22.tar.gz",
+   66599
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk11_appP_2026-10-22.tar.gz",
+   78158
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk12_appQ_2026-10-22.tar.gz",
+   66512
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk13_main_2026-10-22.tar.gz",
+   74697
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk14b_single_library_2026-10-22.tar.gz",
+   793381
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk14_final_2026-10-22.tar.gz",
+   124138
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk2_appB_2026-10-22.tar.gz",
+   486615
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk3_appCDE_2026-10-22.tar.gz",
+   527005
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk4_appFG_2026-10-22.tar.gz",
+   53704
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk5_appH1_2026-10-22.tar.gz",
+   84229
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk6_appH10_2026-10-22.tar.gz",
+   57200
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk7_appH11_2026-10-22.tar.gz",
+   56263
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk8_appIJ_2026-10-22.tar.gz",
+   59325
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/chunk9_appKN_2026-10-22.tar.gz",
+   61313
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_chunk14_2026-10-22.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_chunk16_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_chunk17_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_chunk18_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_chunk19_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_compatibility_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_completion_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_contactclusters_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_contact_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_em_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_envelope2_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_envelope3_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_envelope_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_final_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_fouritems_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_rar_pendular_2026-10-28.log",
+   21
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_settling_2026-10-23.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/citecheck_switch_2026-10-24.log",
+   23
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/closure_root_verification_2026-10-22.log",
+   13758
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/compatibility_audit_2026-10-28.log",
+   1018
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/critique_verification_2026-10-22.log",
+   3840
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/electromagnetism_2026-10-24_Audit.log",
+   4684
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/entropic_lean_v435_2026-10-22_two_library.zip",
+   889300
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/entropic_lean_v435_2026-10-23_chunk16.zip",
+   956890
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/entropic_lean_v435_2026-10-23_chunk17.zip",
+   962558
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/entropic_lean_v435_2026-10-23_chunk18.zip",
+   965143
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/entropic_lean_v435_2026-10-23_chunk19.zip",
+   983219
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/extensions_ci_2026-10-23.log",
+   2557218
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/formalization_update_compatibility_2026-10-23.tar.gz",
+   26312
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/formalization_update_completion_fouritems_2026-10-23.tar.gz",
+   67386
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/formalization_update_envelope2_2026-10-24.tar.gz",
+   16956
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/formalization_update_envelope_2026-10-24.tar.gz",
+   18524
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/formalization_update_settling_2026-10-23.tar.gz",
+   199995
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/formalization_v435_snapshot.tar.gz",
+   431122
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/gravity_verification_2026-10-22.log",
+   6361
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/native_em_selection_20261024_Audit.log",
+   1745
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk10_originals_2026-10-22.tar.gz",
+   45366
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk11_originals_2026-10-22.tar.gz",
+   47653
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk12_originals_2026-10-22.tar.gz",
+   49927
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk13_originals_2026-10-22.tar.gz",
+   51616
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk14b_originals_2026-10-22.tar.gz",
+   1669019
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk14_originals_2026-10-22.tar.gz",
+   57964
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk15_16_originals_2026-10-23.tar.gz",
+   441124
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk17_originals_2026-10-23.tar.gz",
+   1368438
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk18_originals_2026-10-23.tar.gz",
+   449579
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk19_originals_2026-10-23.tar.gz",
+   450631
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk20_originals_2026-10-23.tar.gz",
+   452808
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk2_originals_2026-10-22.tar.gz",
+   428367
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk3_originals_2026-10-22.tar.gz",
+   33375
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk4_originals_2026-10-22.tar.gz",
+   35353
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk5_originals_2026-10-22.tar.gz",
+   62272
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk6_originals_2026-10-22.tar.gz",
+   36005
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk7_originals_2026-10-22.tar.gz",
+   37802
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk8_originals_2026-10-22.tar.gz",
+   42218
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_chunk9_originals_2026-10-22.tar.gz",
+   43781
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_compatibility_originals_2026-10-23.tar.gz",
+   5150
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_completion_originals_2026-10-23.tar.gz",
+   9826
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_contactclusters_sync_2026-10-24.tar",
+   40960
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_contact_sync_2026-10-24.tar",
+   20480
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_em435_sync_2026-10-24.tar",
+   51200
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_envelope2_originals_2026-10-24.tar.gz",
+   13628
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_envelope3_sync_2026-10-24.tar",
+   51200
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_envelope_originals_2026-10-24.tar.gz",
+   6437
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_plainwording_settling_originals_2026-10-23.tar.gz",
+   870757
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_settling_tools_original_2026-10-23.tar.gz",
+   45
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/pre_switch_sync_2026-10-24.tar",
+   40960
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/proc_self_compat.c",
+   622
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/lean_435_alignment_20261024_171548_194292/axiom_audit.log",
+   107
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/lean_435_alignment_20261024_171548_194292/citation_check.log",
+   24
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/lean_435_alignment_20261024_171548_194292/em_axiom_audit.log",
+   6355
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/verification/lean_435_alignment_20261024_171548_194292/source_scan.log",
+   74
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/empty_zip_attempt.zip",
+   0
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout.lean",
+   1969
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/zip_tempfile_ziNxnxTj",
+   897438
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Audit/ClaimLedger.lean",
+   4892
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Audit/Connections.lean",
+   3930
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Clusters/Projection.lean",
+   1693
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Core/PhysicalInterfaces.lean",
+   3248
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Core/Prelude.lean",
+   2021
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Core/Status.lean",
+   805
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Cosmology/FixedMeasureDarkEnergy.lean",
+   5632
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Cosmology/SaturatedDust.lean",
+   2621
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Edge/Kernel.lean",
+   1965
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Edge/SourceProjection.lean",
+   1613
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Edge/TetrahedralFrame.lean",
+   1887
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Foundations/Postulates.lean",
+   1916
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gauge/FactorSplit.lean",
+   5806
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gauge/ProjectiveColor.lean",
+   3893
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gauge/SpinePropagation.lean",
+   7575
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gauge/VertexRealization.lean",
+   8497
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gaussian/RelativeCovariance.lean",
+   2336
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gravity/FieldDefinitions.lean",
+   1047
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gravity/Static.lean",
+   3773
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Gravity/StrongField.lean",
+   3060
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Information/Renewal.lean",
+   2807
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Instantiation/ToyCDT.lean",
+   11640
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Lattice/FiniteRegulator.lean",
+   2063
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Marked/CorrectedH9.lean",
+   5478
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Marked/EdgeGraph.lean",
+   1241
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Marked/SingleStrandRecord.lean",
+   10326
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Microstructure/Architecture.lean",
+   1912
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Numerics/Spine.lean",
+   1164
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/OpenProblems/Interfaces.lean",
+   945
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Quantum/Histories.lean",
+   1553
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Quantum/Replacement.lean",
+   1907
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Representation/FusionSpec.lean",
+   1862
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Representation/MarkedComplement.lean",
+   1577
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Representation/SharpTransfer.lean",
+   1207
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Representation/SpinDimensions.lean",
+   1944
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Scale/Electron.lean",
+   2215
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Scale/Leptons.lean",
+   2472
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Structure/Connections.lean",
+   13321
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Transport/Telegrapher.lean",
+   1674
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/Transverse/RankOne.lean",
+   2213
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/Admissibility.lean",
+   1894
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/Boundary.lean",
+   2472
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/BranchAudit.lean",
+   1285
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/ClosureInvariant.lean",
+   3102
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/EtaStar.lean",
+   2072
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/EtaUniqueness.lean",
+   1461
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/RootExistence.lean",
+   6255
+  ],
+  [
+   "02 Research/Unified closure 2026-10-21/formalization/_to_delete/EntropicEFT_two_library_layout/UV/Spectrum.lean",
+   3318
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_150628/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_150805/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_151139/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152025/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152253/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152808/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_152942/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/analysis_20261024_153135/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/inputs/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/runs/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/__pycache__/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A1795_k0_final.log",
+   965
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A1795_k1_final.log",
+   1023
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A1795_k3_final.log",
+   1022
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2029_k0_final.log",
+   965
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2029_k1_final.log",
+   1022
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2029_k3_final.log",
+   1029
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2142_k0_final.log",
+   963
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2142_k1_final.log",
+   1023
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2142_k3_final.log",
+   1029
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2319_k0_final.log",
+   955
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2319_k1_final.log",
+   1015
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A2319_k3_final.log",
+   1031
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A644_k0_final.log",
+   949
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A644_k1_final.log",
+   1002
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A644_k3_final.log",
+   1011
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A85_k0_final.log",
+   940
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A85_k1_final.log",
+   997
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/A85_k3_final.log",
+   1002
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/ZW1215_k0_final.log",
+   972
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/ZW1215_k1_final.log",
+   1033
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/final_suite_20261024_150234/ZW1215_k3_final.log",
+   1028
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/refined_suite_20261024_145933/A1795_k0_refined.log",
+   646
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/refined_suite_20261024_145933/A1795_k1_refined.log",
+   539
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/refined_suite_20261024_145933/A1795_k3_refined.log",
+   385
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A1795_k1.log",
+   1047
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A1795_k3.log",
+   1042
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A2029_k1.log",
+   1046
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A2029_k3.log",
+   1053
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A2142_k1.log",
+   1039
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A2142_k3.log",
+   1046
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A2319_k1.log",
+   1040
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A2319_k3.log",
+   1044
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A644_k1.log",
+   1028
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A644_k3.log",
+   1033
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A85_k1.log",
+   1019
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/A85_k3.log",
+   1026
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/ZW1215_k1.log",
+   1050
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_scaling_suite_20261024_151407/ZW1215_k3.log",
+   1056
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_validation_20261024_151717/A1795_k0_shared_resolution.log",
+   970
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_validation_20261024_151717/A1795_k3_shared_resolution.log",
+   1060
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/shared_validation_20261024_151717/ZW1215_k0_shared_resolution.log",
+   978
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/source_snapshot/__pycache__/",
+   "dir"
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A1795_k0.log",
+   960
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A1795_k1.log",
+   1015
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A1795_k3.log",
+   1023
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2029_k0.log",
+   959
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2029_k1.log",
+   1018
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2029_k3.log",
+   1020
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2142_k0.log",
+   962
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2142_k1.log",
+   1019
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2142_k3.log",
+   1020
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2319_k0.log",
+   959
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2319_k1.log",
+   1018
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A2319_k3.log",
+   1024
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A644_k0.log",
+   949
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A644_k1.log",
+   1003
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A644_k3.log",
+   1010
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A85_k0.log",
+   934
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A85_k1.log",
+   993
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/A85_k3.log",
+   999
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/ZW1215_k0.log",
+   979
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/ZW1215_k1.log",
+   1031
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/suite_20261024_145414/ZW1215_k3.log",
+   1028
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/validation_finish_20261024_152441/A1795_shared_timestep.log",
+   1043
+  ],
+  [
+   "02 Research/Bose contact observed clusters 2026-10-24/validation_finish_20261024_152441/ZW1215_shared_resolution.log",
+   1063
   ]
  ]
 }

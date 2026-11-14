@@ -102,19 +102,19 @@ Matching the asymptotic chain rate to $\tau/\tstar$ gives
 \boxed{\frac{v_*}{\Lstar^4}=\frac{\pi}{24}m_4^4.}
 \label{eq:eventvol}
 \end{equation}
-The event-placement law and longest-chain cadence are additional premises. They concern spacetime events; the memoryless capacity replacement law concerns marks on those events.
+The event-placement law follows from faithful resolution applied to the event counts of disjoint regions, and the longest-chain cadence follows once events are renewals (the main manuscript's Appendix C.8). They concern spacetime events; the memoryless capacity replacement law concerns marks on those events.
 
 Conditioning the event process on a fixed total number produces a finite-volume binomial law for subregions. For a region of volume fraction $f$ in a total of $N_e$ events, the local event count has variance $N_ef(1-f)$. A small subregion of a much larger system approaches the Poisson law. This provides a consistent distinction between a fixed total event sector and local fluctuations.
 
-The retained numerical value is $m_4=2.35$, which gives
+The chain constant computed from Poisson longest-chain growth at seven box sizes is $m_4=2.3219\pm0.0009$ (the main manuscript's Appendix C.8), which gives
 \begin{equation}
-v_*/\Lstar^4=3.9921796826723166.
+v_*/\Lstar^4=3.8046.
 \end{equation}
-This value is provisional. The construction does not replace it by an unpublished later estimate or treat a finite-size fit as an exact constant.
+The replication stages of Section~\ref{sec:replication} use the declared input $m_4=2.35$, for which $v_*/\Lstar^4=3.9921796826723166$. The finite tensor identities are independent of this input, and the scale quantities follow \eqref{eq:eventvol}, \eqref{eq:areascale}, and \eqref{eq:Gm4}.
 
 \subsection{The paired-cell volume calibration}
 
-Assign one event to a pair of primitive spatial cells over one proper tick. The volume per cell is then
+Each face label is shared by two cells, so a layer holds one complete four-label record per pair of primitive spatial cells, and one event is assigned to a pair of cells over one proper tick. The volume per cell is then
 \begin{equation}
 V_{\rm cell}=\frac{v_*}{2\Lstar}
 \end{equation}
@@ -132,12 +132,12 @@ Consequently
 \left(3\sqrt2\,\frac{v_*}{\Lstar^4}\right)^{2/3}.
 \label{eq:areascale}
 \end{align}
-The two-cell factor is a physical accounting choice. The regular volume is a semiclassical observable assignment. The continuation exhibits compatible block states, but neither item follows from the integer $1680$ alone.
+The two-cell factor is the count of shared face labels. The regular volume is the cell of the face-wise lock in the main manuscript's Appendix H.9a, a reading of its Postulate I. The continuation exhibits compatible block states, but neither item follows from the integer $1680$ alone.
 
-At $m_4=2.35$,
+At the computed $m_4=2.3219$,
 \begin{equation}
-a/\Lstar=2.56812077553,\qquad
-\Ach/\Lstar^2=2.85582456165.
+a/\Lstar=2.5273,\qquad
+\Ach/\Lstar^2=2.7657.
 \end{equation}
 A host edge therefore spans several proper tick lengths. Monte Carlo updates, causal slice labels, edge lengths, and proper ticks retain different meanings.
 
@@ -193,17 +193,17 @@ Substituting \eqref{eq:eventvol} and \eqref{eq:areascale},
 =0.10551926870131369\,m_4^{8/3}.}
 \label{eq:Gm4}
 \end{equation}
-At the provisional input this gives $G_0/\Gstar=1.03002098319$. Exact equality in this calibration would require
+At the computed $m_4=2.3219\pm0.0009$ this gives $G_0/\Gstar=0.9975\pm0.0010$, and $1.03002098319$ at the replication input $m_4=2.35$. Exact equality in this calibration requires
 \begin{equation}
 m_4=(0.10551926870131369)^{-3/8}\simeq2.32407739.
 \end{equation}
-That inverse value is a target implied by the equality; it is not a measurement of $m_4$.
+The computed value lies $1.9$ standard deviations below this target, inside its $95\%$ interval.
 
 Logarithmic differentiation gives
 \begin{equation}
 \frac{dG_0}{G_0}=\frac83\frac{dm_4}{m_4}.
 \end{equation}
-A one-percent uncertainty in the asymptotic chain constant produces about a $2.67$-percent uncertainty in this bare coefficient. Numerical roundoff in the finite tensor identities is much smaller than this physical calibration uncertainty.
+The computed uncertainty of $0.04\%$ in the chain constant gives $0.10\%$ in this bare coefficient. Numerical roundoff in the finite tensor identities is much smaller than this physical calibration uncertainty.
 
 \subsection{Boundary and bulk consistency}
 

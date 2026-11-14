@@ -49,6 +49,9 @@ Those stay in the author's archive.
 | C6 | [`Highest-leverage tensions 2026-10-28`](empirical/sources/Highest-leverage%20tensions%202026-10-28) | One-harness ΛCDM and direct geodesic release fits across supernova, neutrino and lensing settings, with independent review. |
 | D1 | [`Connected theory closure 2026-10-23`](empirical/sources/Connected%20theory%20closure%202026-10-23) | Depletion action, unchanged linear domain, lag and noise bounds, and conditional tensor calculation; 42 Lean declarations. |
 | D2 | [`Effective dynamics and coupling 2026-10-23`](empirical/sources/Effective%20dynamics%20and%20coupling%202026-10-23) | Finite-work contact, warm fluid stress, compression and feedback checks; 36 Lean declarations. |
+| X1 | [`Three-theory comparison 2026-11-08/sparc`](empirical/sources/Three-theory%20comparison%202026-11-08/sparc) | SPARC under the stock law, MOND with three interpolating functions, and NFW halos; prior and sample sensitivity of a0. |
+| X2 | [`Three-theory comparison 2026-11-08`](empirical/sources/Three-theory%20comparison%202026-11-08) | MOND on the X-COP profiles, abundance-matched ΛCDM LMC masses and NGC 628 halo, and information criteria. |
+| X3 | [`Three-theory comparison 2026-11-08/kids`](empirical/sources/Three-theory%20comparison%202026-11-08/kids) | MOND, support-limited stock and NFW on the KiDS isolated-lens forward model with matched nuisances. |
 
 ## Reproducing
 

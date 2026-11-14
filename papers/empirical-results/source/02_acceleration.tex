@@ -1,25 +1,15 @@
-\section{A cosmological acceleration scale: prediction and tension}
-\label{sec:redshift}
+\section{Rotation curves and the acceleration scale}
+\label{sec:rotation}
 
-The model predicts an acceleration scale proportional to the cosmic
-expansion rate, with its coefficient fixed by equation~\eqref{eq:eps}.
-Using the background specified for this comparison gives
-\begin{equation}
-\frac{a_0(z)}{10^{-10}\,\mathrm{m\,s^{-2}}}
-=1.23072924\sqrt{0.315(1+z)^3+0.685}.
-\label{eq:aznumeric}
-\end{equation}
-Its linear projection over $0.33\le z\le1.44$ is
-\begin{equation}
-\frac{a_0^{\rm line}(z)}{10^{-10}\,\mathrm{m\,s^{-2}}}
-=1.002784+1.225645z.
-\label{eq:projection}
-\end{equation}
-The published MOND-based kinematic analysis in Appendix E of
-Ciocan et al. gives an intercept $1.03\pm0.05$ and slope
-$1.20\pm0.10$ in these units. The main-text dark-halo decomposition gives a
-larger slope, about $1.59$. These are distinct inferences from the
-kinematic analysis and must be compared separately. \cite{ciocan}
+The response law follows from the tilt mode of the transverse frame and
+the horizon temperature, which also fix its normalization. On the 130
+SPARC galaxies of the archived pipeline, the stock law at the
+cosmological normalization gives $\chi^2=3428$ with a $5\,\kms$ velocity
+floor and no fitted gravity parameter. MOND with the same interpolating
+function gives 3402 at $a_0=1.2\times10^{-10}\,\mathrm{m\,s^{-2}}$ and
+3320 when $a_0$ is fitted to these galaxies. NFW halos constrained by the
+\LCDM\ concentration and stellar-to-halo relations give 2701 with two
+parameters per galaxy.
 
 \subsection{What is measured}
 
@@ -33,14 +23,6 @@ stars and gas. The radial acceleration relation, or RAR, describes how
 $g_{\rm obs}$ depends on $g_b$. In the galaxy outskirts $g_b$ is small and
 the inferred attraction exceeds the Newtonian baryonic value. The
 parameter $a_0$ locates the transition.
-
-At intermediate redshift, the rotation field, pressure support, inclination,
-gas profile, and stellar mass must be inferred together. Ciocan et al.
-explicitly describe the resulting RAR as model dependent. Their Appendix E
-refits the kinematics within a MOND framework and then estimates the
-redshift dependence. The coefficient comparison here uses that inference;
-it does not treat the measurements as a direct model-independent
-measurement of the substrate. \cite{ciocan}
 
 \subsection{Why a cosmological acceleration enters}
 
@@ -62,18 +44,15 @@ horizon through this temperature comparison, with a different interpolation.
 
 The capacity model supplies that coefficient through the tilt mode of the
 transverse frame. The baryonic field is its restoring stiffness and its
-inertia lever is $\ell=g\,c/H$, so its frequency is $\omega=\sqrt{g_b/\ell}$.
+equivalent pendulum length is $\ell=g\,c/H$, so its frequency is $\omega=\sqrt{g_b/\ell}$.
 At the horizon temperature its gap is
 $\hbar\omega/k_BT_H=2\pi\omega/H=\sqrt{g_b/a_0}$ with $a_0=\epsilon cH$ and
-$\epsilon=g/(4\pi^2)$; for a lever in apparent-horizon radii the factor
+$\epsilon=g/(4\pi^2)$; for a pendulum length in apparent-horizon radii the factor
 $4\pi^2$ is the square of the $2\pi$ in $T_H$.
 The construction connects the galaxy's transition scale to an external
-cosmological state without adjusting a coefficient for the high-redshift
-sample. The tilt-mode identification, its thermalization, and the lever are the
-matching inputs described in the theory; the lever coefficient
-is the ratio of the register enthalpy to a one-nat oriented record read at
-the Unruh temperature of the projected baryonic field, and that reading is
-the premise. \source{T1, section 15 and N.8}
+cosmological state with no coefficient fitted to galaxies. The tilt-mode identification, its thermalization, and the pendulum length are the matching inputs described in the theory; the coefficient of the pendulum length is the ratio of the register enthalpy, which sets the inertia through the
+rotational inertia of the horizon, to its closure energy tangent to the frame
+screen, which sets the restoring weight in the baryonic field. Equilibrium with the horizon bath fixes the register energies, and the rigidity of the response cell, whose registers share one axis, is the premise. \source{T1, section 15 and N.8}
 
 The thermal variable is the occupation energy of the transverse response.
 The construction assigns no ordinary radiation temperature to an orbiting star.
@@ -124,7 +103,7 @@ For a pointlike baryonic source, $g_b=GM_b/r^2$, so the leading term implies
 v_c^4=GM_ba_0.
 \end{equation}
 This is the baryonic Tully--Fisher scaling. In the proposed contact branch,
-its normalization evolves with $H(z)$. The isolated equilibrium response
+its normalization evolves with $H(z)$ (Section~\ref{sec:redshift}). The isolated equilibrium response
 uses the cosmological contact at the epoch being modeled. A previously
 formed, subsequently stripped stock evolves through its own transport history.
 
@@ -137,92 +116,6 @@ Separate live tilted-stock realizations retain stellar tilt for eight
 Gyr at a fixed radial target. A common evolution with changing $a_0$,
 the required energy exchange, and converged nonspherical forces remains
 to be tested. \source{T1, O.3; G7}
-
-\subsection{Why the fitted intercept lies below the local value}
-
-The numerical curve in equation~\eqref{eq:aznumeric} has
-$a_0(0)=1.230729\,\aunit$ and $a_0(1)=2.203315\,\aunit$.
-The intercept of a line fitted over a positive-redshift interval is a
-different quantity from the value of the curved function at zero.
-
-For points $(z_i,f_i)$ with equal weights, minimizing
-$\sum_i[f_i-(A+Bz_i)]^2$ gives
-\begin{equation}
-B=\frac{\sum_i(z_i-\bar z)(f_i-\bar f)}
-{\sum_i(z_i-\bar z)^2},\qquad A=\bar f-B\bar z.
-\label{eq:linefit}
-\end{equation}
-Using $z_i=0.33,0.34,\ldots,1.44$ gives equation~\eqref{eq:projection}.
-The resulting intercept is $1.003$ and the slope is $1.226$; both are
-within the published marginal errors.
-
-The curvature follows analytically. Write
-$u=1+z$ and $E=\sqrt{\Omega_m u^3+\Omega_\Lambda}$. Then
-\begin{equation}
-\frac{d^2E}{dz^2}
-=\frac{3\Omega_m u\,[\Omega_m u^3+4\Omega_\Lambda]}{4E^3}>0.
-\end{equation}
-Across the stated interval, a single straight line averages the increasing
-slope and extrapolates below the true value at $z=0$. The lower intercept
-therefore has a direct mathematical explanation within the proposed
-curve. Its precise size depends on the interval and weights.
-
-\begin{figure}[htbp]
-\centering\includegraphics[width=\textwidth]{figures/redshift.pdf}
-\caption{The calculated acceleration curve and its linear projection.
-The published line summarizes the Appendix E inference. The right panel
-shows marginal coefficient errors, with no assumption of independence.
-The uniform-grid projection is not a refit to the original galaxy data.}
-\end{figure}
-
-The individual coefficient differences are $-0.54$ and $+0.26$ times the
-quoted marginal errors. A joint significance requires the fitted
-intercept--slope covariance and the survey's effective redshift weighting.
-The two agreements are consequences of one curve, not independent
-probabilities to multiply.
-
-\subsection{A joint cosmological test}
-
-The prediction fixes the absolute function, including normalization and
-curvature. This comparison uses $\Omega_m=0.315$ and
-$\Omega_\Lambda=0.685$. A joint test must use the release model's
-fitted $H(z)$ in equation~\eqref{eq:a0}, propagate its uncertainty, and
-fit the individual galaxies with their correlated baryonic and kinematic
-errors. Galaxy formation can also produce an evolving RAR in conventional
-halo models, so evolution alone does not distinguish the mechanisms.
-
-\subsection{Catalogue tests and the direction of a relaxation correction}
-The common cosmology was propagated to 73 KMOS3D, 21 KGES, and 169 KROSS
-objects at three radii. At the KMOS3D outer radius, the log-acceleration
-residual slope is $-0.245$ dex per unit redshift with constant $a_0$ and
-$-0.313$ with the common $H(z)$ law. The latter has median log-velocity
-residual $-0.087$ dex. The reference $z=2.3$ example gives acceleration
-boosts about 2.02 versus 1.39 for the compared evolving and fixed scales.
-These are catalogue central-value diagnostics with specified baryon force
-models; they do not constitute raw-cube likelihoods. The 112-point
-reference projection remains distinct from a regression on the actual
-79-object MUSE selection. The common cosmology has not removed the
-high-redshift residual trend. \source{U1, S01}
-
-Passive relaxation cannot automatically supply a reduction. If
-$\dot n=\Gamma(q-n)$ with $\Gamma>0$, $\dot q\le0$, and initially
-$n\ge q$, then $n$ remains above the target. At fixed baryons a lag behind
-declining $H$ therefore has the wrong sign to suppress an initially
-equilibrated response. Underoccupied assembly states require their own
-history. Relabeling an unchanged stock leaves its total stress unchanged;
-the tested adiabatic cosmological mass loss gives an inferred scale ratio
-0.9183 from $z=2.3$, compared with $H_0/H(2.3)=0.2972$.
-These constraints identify the contact and preparation history as physical
-requirements. \source{D1}
-
-For the selected two-pole quantum response, the noise enhancement
-$\mathcal F$ and mean delay $\bar\tau$ obey
-$\mathcal F H\bar\tau\ge4$. The illustrative three-percent tracking
-condition at occupation argument $x=1$ gives $\mathcal F\gtrsim158$,
-requiring about $6.47\times10^4$ independent cells for three-percent
-force rms. Actual windows, correlations, and gravitational coupling
-remain unspecified, so this is a contact-model constraint.
-\source{D1; T1, N.8}
 
 \subsection{Stock selection reaches the response law}
 \label{sec:stockselection}
@@ -285,18 +178,93 @@ baryons from the counted region therefore shows a total of about 30 stock
 masses per present baryonic mass. The same stock, measured against the
 cohort's original baryons, holds the ratio $k_C$.
 
-\textbf{Weak lensing.} An isolated finite stock bounds the excess surface
-density by $(1+S)g_{\rm bar}/\pi G$. A signal on the deep response law then
-requires $S\ge\tfrac\pi4\sqrt{a_0/g_{\rm bar}}-1$: about 12 at
-$4.7\times10^{-13}$, 31 at $7.6\times10^{-14}$ and 275 at
-$10^{-15}\,\mathrm{m\,s^{-2}}$. Stocks of about 30 fit the inner KiDS
-bins \cite{brouwer21}. The carried stock ends with the support, where
-hot gas outweighs the condensed baryons, and the uncarried stock outside
-keeps the halo profile. A population forward model of the four isolated
-stellar-mass bins of \cite{brouwer21}, with 60 points, full covariance,
-the same hot gas and a common environment term, gives $\chi^2=140$ for
-the support-limited stock against $133$ for truncated NFW halos when
-both fit a halo-mass shift and a concentration factor. Both leave
-$3$--$6\sigma$ residuals at $0.5$--$1.5\,$Mpc, where neighbouring
-structure contributes. \source{G8, G12}
+\subsection{Three models on the same rotation curves}
+\label{sec:sparcthree}
+\label{sec:localrar}
+
+The SPARC comparison uses the 130 galaxies of quality 1--2 with
+inclinations between $30^\circ$ and $80^\circ$, 2710 radial points, and
+per-galaxy distance, inclination, disk and bulge mass-to-light nuisances
+with Gaussian priors of 0.1~dex on the mass-to-light ratios. The pipeline
+of the evidence register reproduces its archived scores, 11258.0 without
+and 3433.2 with a $5\,\kms$ velocity floor at
+$a_0=1.2588\times10^{-10}\,\mathrm{m\,s^{-2}}$. Only the gravity model is
+changed in Table~\ref{tab:sparcthree}. \cite{sparcnew}
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabularx}{\textwidth}{@{}Xcrr@{}}
+\toprule
+Model & Gravity parameters & $\chi^2$, no floor & $\chi^2$, $5\,\kms$ floor\\
+\midrule
+Stock law, $a_0=1.2494$ & 0 & 11251.0 & 3428.0\\
+MOND, same function, $a_0=1.2$ & 0 & 11216.9 & 3402.0\\
+MOND, same function, $a_0$ fitted (0.94; 0.91) & 1 & 11119.7 & 3319.8\\
+MOND, simple function, $a_0$ fitted (1.00; 0.96) & 1 & 11212.5 & 3338.7\\
+MOND, standard function, $a_0$ fitted (1.20; 1.05) & 1 & 12596.2 & 3595.8\\
+NFW with \LCDM\ priors & 260 & 9585.7 & 2700.7\\
+NFW, free & 260 & 8121.6 & 1872.0\\
+\bottomrule
+\end{tabularx}
+\caption{SPARC rotation curves under each gravity model, with $a_0$ in
+$10^{-10}\,\mathrm{m\,s^{-2}}$. The \LCDM\ priors are the Dutton--Macci\`o
+concentration relation with 0.11~dex scatter and the Moster et al.
+stellar-to-halo relation with 0.3~dex scatter in halo mass at fixed
+stellar mass. The penalized $\chi^2$ includes the nuisance priors. The parameter column
+counts gravity parameters in addition to the common profiled baryonic,
+distance and inclination nuisances.}
+\label{tab:sparcthree}
+\end{table}
+
+The exponential response of equation~\eqref{eq:rar} is the function that
+McGaugh, Lelli and Schombert fitted to the radial acceleration relation.
+On rotation curves the stock law and MOND with that function therefore
+differ only in the value of $a_0$. Halo models fit the individual curves
+more closely in raw $\chi^2$ and spend 260 parameters to do so. With
+$N=2710$ points and the $5\,\kms$ floor, the Bayesian information
+criterion places MOND with a fitted $a_0$ first, 100 below the stock law,
+and the stock law 499 below free halos and 1328 below prior-constrained
+halos. Without the floor, free halos lead the stock law by 1074 and MOND
+with a fitted $a_0$ by 951, and the stock law leads the prior-constrained
+halos by 390. The Akaike criterion prefers the halos in every case. Without the
+floor the median $\chi^2$ per point is near 1.5 and the total is about
+four per point, so neither criterion is statistically calibrated there. The quoted
+criteria use the penalized objective and the stated parameter counts;
+they compare these fits without integrating over the nuisance priors.
+\cite{lelli17,dutton,moster}
+
+\paragraph{How firmly the galaxies fix $a_0$.}
+The fitted $a_0$ depends on the error model and the nuisance priors
+(Figure~\ref{fig:sparca0}). Without the floor, most of the preference for
+$a_0\simeq0.94$ sits in the prior penalties: of the $\Delta\chi^2=131$
+between the fitted and the cosmological value, 14 comes from the
+velocities and 117 from the priors, mainly inclination, disk
+mass-to-light ratio, and distance. Doubling all prior widths reduces the
+difference to 18. The 38 galaxies with tip-of-the-red-giant-branch,
+Cepheid, or supernova distances give $a_0=1.16$--$1.19$, and the
+cosmological value costs $\Delta\chi^2=1.8$--4.9. With the floor the fits
+prefer 0.87--1.00. Split by flat rotation speed, the best values run from
+0.43--0.51 for curves without a flat part and 0.77--0.84 for
+$V_f\ge150\,\kms$ to 1.34--1.67 for $80\le V_f<150\,\kms$. That spread of
+about 0.25~dex exceeds the formal error of any single fit by a factor of
+ten and contains the cosmological value. It applies equally to a fitted
+MOND constant. The comparison therefore fixes the shape of the law and
+places $a_0$ within the present systematic range; it does not yet test the
+normalization at the few-percent level. \source{X1}
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=\textwidth]{figures/sparc_a0.pdf}
+\caption{Best-fit $a_0$ for the exponential law under alternative nuisance
+priors (left) and for galaxy classes split by flat rotation speed (right),
+with and without the $5\,\kms$ velocity floor. Error bars are the formal
+$1\sigma$ ranges scaled by $\sqrt{\chi^2/\nu}$. The horizontal lines mark
+the cosmological value $\epsilon cH_0$ and the canonical MOND value.}
+\label{fig:sparca0}
+\end{figure}
+
+For 100 flat-velocity galaxies the baryonic Tully--Fisher log residual has
+median 0.020~dex and rms 0.067~dex at the reference normalization. All
+rotation-curve checks use diagonal velocity errors and the algebraic law
+applied to disk mass models; the director-field solution and correlated
+noncircular motions are outside this comparison. \source{U1, S03; X1}
 
