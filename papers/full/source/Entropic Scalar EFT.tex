@@ -171,7 +171,9 @@ and the charged generator. C.5 uses a normalized geometry--capacity
 matching to set \(G=G_*\). The coherent angular model instead gives
 \(\hbar G_0/c^3=A_{\rm ch}/(4\ln2)\) before imposing that equality.
 The event law, mean event assignment, and regular coarse area--volume
-calibration in C.8, with the computed chain constant \(m_4=2.3219\pm0.0009\), give \(G_0/G_*=0.9975\pm0.0010\).
+calibration in C.8, with the finite-size fit estimate \(m_4=2.3219\pm0.0009\), give \(G_0/G_*=0.9975\pm0.0010\).
+The quoted fit errors are conditional on the correction law and analysis
+window; C.8 gives their sensitivity.
 These are distinct normalization prescriptions. Their comparison with a
 renormalized bulk measurement must use one common state and action.
 
@@ -1159,6 +1161,14 @@ With the additive-generator prescription, the dressed scale is
 \boxed{L_*=Z_eL_*^{(0)}}.
 \]
 Appendix~H writes the controlled vertex, decomposes its complete edge Hessian, and enumerates all $56{,}800$ states of the one-step routing block. H.9 also constructs a finite recurrence contraction with $E_e^{\rm evt}=-(3\hbar/2\tau_*)\ln(1-rZ_e)$; its relative energy difference is $7.37\times10^{-26}$, and every completion in which the marked configurations act as exclusive or independent blocks lies within that difference of the additive form. The additive-generator prescription supplies the exact formulas used here.
+The hard-core charged routing block permits the vacuum and one marked
+motif, fixing $Z_\mu=1+\zeta_*$ within this vertex. An additional
+multiplicative correction $1+\epsilon_\mu$ to the muon ratio must satisfy
+$-3.3\times10^{-8}\lesssim\epsilon_\mu\lesssim5.6\times10^{-8}$ at two
+experimental standard deviations when the other factors are held fixed.
+An added $\zeta_*^2$ term therefore needs a coefficient of order
+$2\times10^{-3}$ or less. The pole-mass identification of I.1 and its
+radiative matching remain conditions of this precision comparison.
 
 \paragraph{The anchor is a gauge choice.}
 Because counting fixes only dimensionless quantities, exactly one dimensionful measurement must be supplied, and which one is a convention. The physical content of the framework is carried by anchor-invariant statements: the lepton ratios $m_\mu/m_e$ and $m_\tau/m_e$; the hierarchy
@@ -1189,7 +1199,10 @@ G_*=6.6742890813\times10^{-11}\ {\rm m^3\,kg^{-1}\,s^{-2}}
 \]
 These three comparisons probe one marked-fiber weight through different graph polynomials. The scalar stiffness, source map, and weak-field bridge reproduce the same dressed $G_*$ after substitution, so they remain one consistency chain rather than an independent determination.
 
-In fractional terms the three agreements are about $1.6\times10^{-6}$, $1.2\times10^{-8}$, and $6\times10^{-6}$; equivalently, the calibrated substrate length matches the Planck length to $8.2\times10^{-7}$. The shell integers alone, before the marked response, give $m_\mu/m_e=720\cdot\tfrac27=205.71$ and $m_\tau/m_e=720^2(\tfrac27)^4=3454.6$, already within $0.51\%$ and $0.65\%$ of the measured ratios; the marked vertex supplies the remaining fraction of a percent. A second route to Newton's constant runs through the geometric sector: the absolute angular rule and the event calibration of Appendix~C.8 give $G_0/G_*=0.1055\,m_4^{8/3}$, where $m_4$ is the longest-chain constant of Poisson events in four dimensions, and exact equality requires $m_4=2.3241$. The computed value is $m_4=2.3219\pm0.0009$, so $G_0/G_*=0.9975\pm0.0010$, and the equality value lies $1.9$ standard deviations away by the $\chi^2$ profile of the fit, inside its $95\%$ interval. The interacting coefficient $G_R$ measured on the native ensemble completes the test of that route, and its lattice factor is known to $9\%$ (Sections~23.1 and~24).
+In fractional terms the three agreements are about $1.6\times10^{-6}$, $1.2\times10^{-8}$, and $6\times10^{-6}$; equivalently, the calibrated substrate length matches the Planck length to $8.2\times10^{-7}$. The shell integers alone, before the marked response, give $m_\mu/m_e=720\cdot\tfrac27=205.71$ and $m_\tau/m_e=720^2(\tfrac27)^4=3454.6$, already within $0.51\%$ and $0.65\%$ of the measured ratios; the marked vertex supplies the remaining fraction of a percent. A second route to Newton's constant runs through the geometric sector: the absolute angular rule and the event calibration of Appendix~C.8 give $G_0/G_*=0.1055\,m_4^{8/3}$, where $m_4$ is the longest-chain constant of Poisson events in four dimensions, and exact equality requires $m_4=2.3241$. The free-exponent finite-size fit gives $m_4=2.3219\pm0.0009$ and
+$G_0/G_*=0.9975\pm0.0010$. Its profile interval contains equality at
+$95\%$ confidence. The correction exponent and the stationarity of the
+$W=64$ analysis window affect that comparison, as quantified in C.8. The interacting coefficient $G_R$ measured on the native ensemble completes the test of that route, and its lattice factor is known to $9\%$ (Sections~23.1 and~24).
 
 \paragraph{Routing-integer audit.}
 The displayed action makes the coefficient of $\zeta_*^2$ in $Z_e$ equal to
@@ -1208,7 +1221,20 @@ the comparison selects the seven-state member of the stated discrete family.
 Neither reading is historically blind: the target and the residual were
 already known, as Appendix~L records.
 
-Two remarks keep this honest. The resolvability is partly fortunate: $\zeta_*^2\simeq2.6\times10^{-5}$ places the rung spacing just above the CODATA uncertainty, so the integer is measurable at all; a smaller $\zeta_*$ would bury the ladder inside the error bar, and a larger one would leave $n=7$ one near-miss among many. And since the alphabet is symmetric about zero, one might expect the neutral label $m=0$ to drop out of a return sum, giving coefficient six; $n=6$ lies outside the band, so the neutral label demonstrably participates in the second marked return. With the current PDG tau mass, $2/7$ is the only member of the forty-three distinct rationals in $[0,1]$ with denominator at most eleven that lies within one experimental standard deviation. Its residual is $-0.125\sigma$; $3/11$ gives $-1.436\sigma$. This finite candidate test does not assign probabilities to microscopic models.
+Treating the return coefficient and second-shell coefficient as continuous
+variables, with the other factors fixed, gives
+\[
+n=7.03\pm0.43,\qquad q=0.287\pm0.010.
+\]
+The first constraint comes from $G$, and the second from the tau mass.
+The precision of the muon ratio fixes $\zeta_*$ much more tightly than
+either of these two coefficients. Among the forty-three distinct
+rationals in $[0,1]$ with denominator at most eleven, $2/7$ alone lies
+within one experimental standard deviation of the tau mass; $3/11$,
+$2/7$ and $3/10$ lie within two. The selected coefficient $2/7$ has
+residual $-0.125\sigma$, and $3/11$ has $-1.436\sigma$. These scans test
+the stated discrete families. Their probabilities require a model of the
+choices available before the measurements were known.
 
 The same comparison has a dimensionless form. Squaring the hierarchy gives the electron's gravitational coupling,
 \[
@@ -2569,7 +2595,21 @@ Every run opens by recomputing the single-cell chain on its own tables and refus
 
 Three cell-order calculations bound the closure sector's contribution to vacuum stiffness. The static closure weight induces only about one percent of the bare geometric coupling. The selected memoryless kernel, modeled as cell-by-cell redraws, has a closed stationary state with vacuum admissibility $0.536$ and no detectable curvature action. A separate closure-class history tilt, solved by a Doob transform on a ring, also remains short-ranged and well below the required coupling. These are calculations of specified effective models; they do not derive the refresh kernel from Postulate~III.
 
-Two further calculations extend the exclusion beyond the label sector, to the conserved capacity field that Section~24.7 introduces as the carrier of the long-range sector. Even a field the labels cannot see might rank geometries on its own, because integrating out a conserved Gaussian field induces a purely geometric action: $\tfrac{1}{2}\ln\det'L(g)$ per channel, the spanning-tree entropy of the slice graph by the matrix-tree theorem. Computed on degree-matched proxies for smooth extended and for crumpled geometry, and on real engine slices, that entropy is nearly universal at fixed coordination: the per-cell differential is a few times $10^{-4}$, and with all seven channels the phase-tipping force is of order $10^{-3}$ against the bare $k_0\simeq2.2$. The theory's own non-Gaussianity closes the loophole tighter still. The finite budget of Postulate~I gives the field a saturation mass $m^2=2/g_{\mathrm{share,eff}}\simeq0.27$, and the massive determinant suppresses precisely the soft modes that carried the residual sensitivity, shrinking the differential by a further factor of three at the budget mass and toward zero beyond. What the field retains is a local renormalization of the host's couplings, of order $0.08$ per cell in the seven-channel count: enough to relocate the host's phase boundaries, and unable to create the phase.
+A conserved Gaussian capacity field supplies a further geometric
+response through $\tfrac12\ln\det' L(g)$ per channel. On degree-matched
+proxies, the infinite-volume value per cell is $0.60323$ for diamond
+and $0.60820$ for the four-regular tree spectral density. Their
+difference is $4.97\times10^{-3}$ per channel, or $0.035$ for seven
+channels, compared with the bare $k_0\simeq2.2$. The budget saturation
+mass $m^2=2/g_{\mathrm{share,eff}}\simeq0.27$ reduces the differential
+to $1.79\times10^{-3}$ per channel, or $0.013$ for seven. On the
+sampled engine slices the local effective-action shift has scale
+$0.08$ per cell. These calculations quantify dressing of the supplied
+geometry; a displacement of its phase boundary requires projection
+onto the host's conjugate operators. The inversion complex preserves
+the single-cell label calculations and has only even elementary
+hexagons, for which the two label-orientation readings coincide
+(Appendix~J.4).
 
 Within the tested models, static weight, refresh, history tilts, and conserved fields do not supply vacuum stiffness. The refresh does couple geometry to the density of closure failure, which the defect experiment measures. The same pass verifies the locality fracture: injectivity-preserving unit shifts split the $1680$ states into $48$ components of $35$ states. This excludes that local realization of the full-entropy kernel; it does not derive the nonlocal physical operator.
 
@@ -3047,7 +3087,10 @@ Weak-field action / bridge law & EFT / gravity & Closed for the ordinary longitu
 \hline
 $G_*$ & gravitational scale & Parameter-free output of the decorated scale branch; historical postdiction & $G_*=(9/4)(\hbar c/m_e^2)Z_e^2\ln^2(1-e^{-7g_{\mathrm{share,eff}}})=6.6742890813\times10^{-11}$, or $-0.073\sigma$ relative to CODATA; the residual was known before the vertex was constructed & Part I, App. D, H, L \\
 \hline
-Event volume and channel area & physical scale & Conditional calibration & A Poisson event law, maximal-chain clock, one event per pair of cells, and the regular cell of the face-wise lock give $v_{\rm ev}=(\pi/24)m_4^4L_*^4$ and $G_0/G_*=0.1055\,m_4^{8/3}$. The event law follows from faithful resolution, the clock from events as renewals, and the pair count from face sharing; the face-wise lock is a premise. The computed $m_4=2.3219\pm0.0009$ gives $G_0/G_*=0.9975\pm0.0010$, with the equality value $2.3241$ inside the $95\%$ interval. A compatible quantum volume state exists; its selection is open. & App.~C.8 \\
+Event volume and channel area & physical scale & Conditional calibration & A Poisson event law, maximal-chain clock, one event per pair of cells, and the regular cell of the face-wise lock give $v_{\rm ev}=(\pi/24)m_4^4L_*^4$ and $G_0/G_*=0.1055\,m_4^{8/3}$. The event law follows from faithful resolution, the clock from events as renewals, and the pair count from face sharing; the face-wise lock is a premise. The free-exponent fit $m_4=2.3219\pm0.0009$ gives
+$G_0/G_*=0.9975\pm0.0010$; equality lies inside its conditional
+$95\%$ profile interval. Correction-law and time-window sensitivity
+remain. A compatible quantum volume state exists; its selection is open. & App.~C.8 \\
 \hline
 Coherent bonds and renewal & microscopic state & Exact finite identities in a selected state & Encoding preserves the local marginal. Moving frames and background-wide replacement preserve retained coherence. Unequal path-conditioned reset counts can dephase; differing geometric event records remain unresolved. & App.~H.14, P.2, Q.11a \\
 \hline
@@ -3343,7 +3386,42 @@ The sector of Appendix~O has a one-signed accumulation law. A reconstructed decr
 
 \subsection{27.4 Correlated-constant falsifiers}
 
-The inferred $L_*$, induced $G_*$, and matched weak-field $G$ are not independent legs: the matched route carries the same electron length calibration. Their agreement is a normalization audit rather than a separate falsifier. The marked action adds two independent tests because the same $\zeta_*$ enters the muon and tau through different graph polynomials. The tau mass has the larger experimental uncertainty and admits a sharper test. The selected ratio gives $m_\tau c^2=1776.9188$ MeV with numerical uncertainty below $10^{-4}$ MeV, against the present $1776.93\pm0.09$ MeV. A measurement with total uncertainty $\sigma_\tau$ that lies more than $3\sigma_\tau$ from this value, with the world average also beyond three of its own standard deviations, rejects the second-shell factor $1+(2/7)\zeta_*$. A future independent determination of $L_*$ would provide a fourth test of the shared vertex.
+The inferred $L_*$, induced $G_*$ and matched weak-field $G$ share the
+electron length calibration. Their agreement checks that normalization.
+The marked response also enters two mass ratios through different graph
+polynomials. Their selected values are
+\[
+\frac{m_\mu}{m_e}=206.768\,280\,237,\qquad
+m_\tau c^2=1776.9188~\mathrm{MeV}.
+\]
+Within the specified vertex and pole-mass matching, the muon ratio is a
+pure number; the electron-mass input contributes about
+$6\times10^{-7}$ MeV to the tau value and a relative $6\times10^{-10}$
+to $G_*$. The present muon ratio $206.768\,2827(46)$ lies
+$0.54\sigma$ above the selected value. A tenfold reduction of its
+uncertainty would put an unchanged central value $5.35\sigma$ away.
+The MuSEUM program seeks more than an order-of-magnitude improvement
+in high-field muonium spectroscopy, and Mu-MASS targets a muon-mass
+precision of $1$ ppb \citep{MuSEUMHighField2026,Crivelli2018MuMass}.
+At these precisions the muon ratio is the more selective forward test.
+The tau mass independently tests the second-shell factor
+$1+(2/7)\zeta_*$ against the present $1776.93\pm0.09$ MeV.
+A new determination differing from its selected value by more than three
+total standard deviations, with the adjusted world value also beyond
+three of its own standard deviations, rejects the corresponding scale-chain
+formula. Failure of the muon formula tests the shared marked response;
+failure of the tau formula tests its second-shell extension. A future
+independent determination of $L_*$ would test the shared length calibration.
+
+For a quantitative forecast, let the unknown true value have the Gaussian
+distribution of the present measurement, and let a future independent
+measurement have Gaussian error $s$. Its predictive variance is
+$\sigma_{\rm now}^2+s^2$. The probability of falling within $2s$ of the
+selected muon ratio is $0.137$ at a tenfold precision improvement and
+$0.062$ at $1$ ppb. For the tau mass it is $0.778$, $0.666$ and $0.207$
+at $s=0.07$, $0.05$ and $0.012$ MeV, respectively. These are forecasts
+under the stated Gaussian model and experimental independence assumption.
+They quantify the selectivity of each proposed precision.
 
 \subsection{27.5 Many-Pasts status}
 
@@ -5129,9 +5207,22 @@ sizes by \(3.60\). The equality value therefore lies \(1.9\) standard
 deviations above that fit, inside its profile \(95\%\) interval
 \(2.3204\)--\(2.3242\), and \(0.5\) standard deviations above the fit
 without \(W=8\). Each site hosts
-\(0.5019\pm0.0008\) events per tick. A deficit of \(G_0\) below \(G_*\)
-larger than \(0.5\%\) is excluded at \(95\%\) confidence. The comparison
-with the physical coefficient also carries the lattice factor
+\(0.5019\pm0.0008\) events per tick. Within this fit, deficits of
+\(G_0\) below \(G_*\) larger than \(0.5\%\) lie outside the
+\(95\%\) profile interval.
+
+The extrapolation has a separate dependence on the correction law and
+the sampled time interval. Fixing \(p=1.373\) gives
+\(m_4=2.32163\pm0.00035\), with \(\chi^2=2.51\) for five degrees of
+freedom; the quoted error is conditional on that exponent. Fixed
+\(p=1.25\) and \(1.50\) give \(2.32235\) and \(2.32103\), respectively.
+The two \(W=64\) trajectories also give lower velocities in their final
+quarter than over the full second-half window. Their duration and seed
+count leave slow relaxation and a statistical fluctuation unresolved.
+The fixed-exponent errors therefore quantify a sensitivity calculation;
+the stationarity and correction-law uncertainties remain to be resolved
+before assigning a precision significance to exact bare equality.
+The comparison with the physical coefficient also carries the lattice factor
 \(G_{\rm vol}/G_0=1.064\) of J.14, whose logarithmic standard error is
 \(0.089\). The runs and fits are recorded in
 \texttt{02 Research/Forward tests 2026-11-09}.
@@ -11096,6 +11187,37 @@ The numerical integration and extrapolation uncertainty is about $0.002$ in inve
 The calculation checks the zero-momentum Ward identity, longitudinal backgrounds, independent electric and magnetic orientations, gauge-parameter dependence, exact finite-volume determinants, and momentum-grid convergence. Cubic Wilson, anisotropic Wilson and six-link Symanzik controls reproduce their reference finite terms; the Symanzik scale ratio is $5.2917$ against $5.2921038$ \citep{TakedaWolff2007YM,Snippe1996YM,SakaiSaitoNakamura2000YM}. These controls test the absolute normalization, anisotropy and longer-loop terms. The resulting $47.65$ belongs to the chosen pure-gauge action. A physical QCD comparison requires the finite quark contribution and the physical value of $d$ in the same regulator.
 
 
+\paragraph{Renewal counts and closure conditioning.}
+\label{sec:color-renewal-completion}
+The renewal completion assigns $N_{x,n}$ uses of the primitive instrument
+to each temporal circuit incidence at site $x$ in layer $n$, with
+independent Poisson counts of mean $\rho=a_t/(2L_*)$ from C.8 and one use
+per spatial incidence. At fixed count history $N$, the closure-conditioned
+frame measure has weight
+\[
+ W_N(U)=\prod_{p_E}K_{(2+N_{a(p),n}+N_{b(p),n})h}(U_p)
+          \prod_{p_M}K_{6h}(U_p),\qquad
+ Z_N=\int W_N(U)\prod_e dU_e,
+\]
+where $a(p)$ and $b(p)$ are the endpoints of the spatial bond in mixed
+square $p$ and $h=(2/3)\ln(14/13)$. Keeping the C.8 Poisson law as the
+physical count marginal after closure gives
+\[
+ dP(N,U)=P_{\rm C.8}(N)\,\frac{W_N(U)}{Z_N}\prod_e dU_e.
+\]
+The renewal attachment and the retained Poisson marginal are physical
+conditions of this completion. The volume identification above gives
+$d/L_*\simeq1.0731$. The electric stiffness is obtained by minimizing the
+quadratic field energy at fixed counts and averaging over their Poisson
+law; electric and magnetic finite loop terms are evaluated on those
+backgrounds. The matter terms enter the common-cone condition in I.9.
+The fixed-layer transfer construction of I.4 applies at specified counts.
+A Hamiltonian realization of the normalized history average remains open.
+The layered completion specifies when the two bond readings enter each
+mixed circuit. Independent event timings require their own incidence
+and closure rules; I.8 defines two such completions and I.9 compares
+their electric responses and quark contributions.
+
 \paragraph{Finite-count action matching.}
 The closed-memory completion of I.6 uses the same temporal heat kernel
 and a spatial weight $[1-\gamma\delta(U)]^M$. Its exact common-cone
@@ -11683,7 +11805,9 @@ For a fixed complex the factor $K_s(I)^{-N_p}$ cancels from the
 conditional frame law. The probability of the specified records is
 $Z_s/K_s(I)^{N_p}$, which multiplies the host weight when the complex
 fluctuates. The physical record resolution and its normalization are
-therefore part of the coupled geometric action. Sharp closure is a
+therefore part of the coupled geometric action. For the renewal completion
+of I.5, this closure conditioning is performed at fixed count history,
+and the physical count marginal is specified separately by C.8. Sharp closure is a
 conditional-density limit; a finite native record requires an instrument
 and its response function. The face-matching effect derived below
 specifies such a response for the primitive spin frame.
@@ -11851,6 +11975,34 @@ physical frame dynamics, retained-history allocation and clock
 attachment. H.10's factorization and I.7's geometric interface leave
 these joint data to that realization.
 
+\paragraph{Clock attachment of closure records.}
+A cell renewal and a circuit-closure record specify different parts of
+the event history. On a complex whose cells persist between their own
+renewals, renewal at one end of a bond closes a mixed triangle. The
+heat-time-per-incidence rule assigns it $3h$. A spatial hexagon persists
+until one of its six cells renews. Recording it once at every such
+change gives a computed quadratic gluon speed of about $1.40c$ with the
+C.8 renewal rate and volume identification.
+
+One completion records each persistent hexagon at an independent
+Poisson process of rate $\nu$, with kernel $K_{6h}$ at each record,
+while mixed triangles close at cell renewals. A second completion
+assigns each bond its own Poisson readings at rate $2/a_t$, each of heat
+time $h$. Every renewal of either end cell adds a temporal incidence of
+heat time $h$, and each hexagon is recorded independently at rate
+$1/a_t$ with kernel $K_{6h}$. The rates $\nu$ and $1/a_t$ in the two
+completions are fixed by equality of the electric and magnetic
+quadratic coefficients, including the computed matter contributions.
+
+At specified marginal rates, the faithful-resolution condition of H.8
+selects independent record processes. The assignment of a separate
+record process to a persistent circuit or to a bond reading supplies
+physical clock data beyond the four closure conditions.
+Both completions retain the specified Poisson marginal through the
+history-by-history normalization of I.5. Their event transfers still
+require a positivity or Hamiltonian construction. The finite positive
+layered transfer of I.4 has its own established domain.
+
 \subsection*{I.9 Fundamental matter and the QCD interface}
 
 The local color algebra supports a specified extension to fundamental matter. A continuous $PU(3)$ Brownian path beginning at the identity has a unique continuous lift to $SU(3)$. With normalized Haar measures,
@@ -11957,6 +12109,53 @@ The long endpoint $-3\mathbf n_j$ is reached by the five-edge path $(\mathbf n_a
 
 At small momentum, $Q_{\rm imp}=(4t/3)\boldsymbol\sigma\cdot k+O(k^3)$; $t=3/4$ sets the tree speed. For $m=0$ and $r_W>0$, the Wilson sum vanishes only at reciprocal-lattice zero because the bond differences span the primitive translations. Since $H_f^2$ has blocks $M^2+QQ^\dagger$ and $M^2+Q^\dagger Q$, there is exactly one free four-component Dirac node per chosen flavor and color. The leading matrices satisfy the Dirac Clifford algebra. Periodic boxes with $96$ and $324$ one-particle states reproduce the Bloch spectra within $4\times10^{-14}$; independent link and site-frame tests give gauge-covariance residuals below $8\times10^{-16}$.
 
+\paragraph{Direction records and the Wilson operator.}
+The tetrahedral identity $\mathbf n_j\cdot\mathbf n_l=-1/3$ for
+$j\ne l$ relates the Wilson function to the four-port amplitude.
+Define
+\[
+f(k)=\sum_j e^{ik\cdot\mathbf n_j},\qquad
+\mathbf V(k)=\sum_j\mathbf n_j e^{ik\cdot\mathbf n_j},\qquad
+W(k)=\sum_{j<l}[1-\cos(k\cdot(\mathbf n_j-\mathbf n_l))].
+\]
+Then exactly
+\[
+W(k)=\frac32|\mathbf V(k)|^2
+     =8\left(1-\frac{|f(k)|^2}{16}\right).
+\]
+For the normalized port vector with components
+$e^{ik\cdot\mathbf n_j}/2$, $W/8$ is its squared projection onto the
+three-dimensional complement of the symmetric port state. The
+nearest-neighbor hop is $Q=-it\,\boldsymbol\sigma\cdot\mathbf V$.
+The symmetric component survives at zero momentum; the direction
+component has weight $O(k^2)$ at long wavelength.
+
+Let $P_b$ project the four neighboring amplitudes at cell $b$ onto
+their symmetric combination, with parallel transport to a common
+frame when color links are present. Embed $I_4-P_b$ on those four
+neighbors and call the resulting operator $D_b$. On either sublattice
+the zero-field Bloch symbol satisfies
+\[
+\sum_bD_b\ \longleftrightarrow\ \frac12W(k).
+\]
+If a cell continuously holds a direction record of strength
+$0\le s\le1$ and renewal multiplies that amplitude component by
+$1-s$, independent renewals of rate $\lambda$ give the decay generator
+$\lambda s\sum_bD_b$. In bond units its coefficient of $W$ is
+\[
+\gamma_W=\frac{\lambda d}{2c}s
+        =\frac{d}{4L_*}s\simeq0.2683s.
+\]
+This coefficient is fixed for the specified complete-record rule
+$s=1$. The native color channel and occupation flag leave this
+direction record unspecified. Identifying its amplitude damping with
+the Hermitian, opposite-sublattice mass term $r_WW$ requires a
+many-body realization, including the filled vacuum and retained
+histories. The five-edge improvement of $Q_{\rm imp}$ also needs its
+own record assignment. Under this additional identification,
+$r_W=0.2683$ gives $\alpha_s^{-1}(\mu_*)=51.15$ in the layered
+completion, compared with $51.04$ at the dispersion value $0.2905$.
+
 \paragraph{Positive transfer with quarks.}
 On $L^2(SU(3)^E)\otimes\mathcal F_{\rm quark}$, let $P$ project onto local link-plus-fermion Gauss singlets, $C$ be product $SU(3)$ heat convolution, $B$ multiply by the square root of the spatial heat-kernel product, and $F(U)=e^{-a_tH_f(U)/2}$ after second quantization. At finite volume the Fock space is finite and $H_f(U)$ is uniformly bounded. The transfer
 \[
@@ -11982,13 +12181,108 @@ For a continuum action with matched quark operators, $T_R=1/2$, $C_F=4/3$, $C_A=
 \qquad
 \beta_0=11-\frac23N_f,\quad \beta_1=102-\frac{38}{3}N_f
 \]
-\citep{PDGQCD2025EM}. Six flavors give $(\beta_0,\beta_1)=(7,26)$. Finite lattice-to-continuum constants still depend on the full matter regulator. A partial six-flavor electric calculation at $a_t/d\simeq1.886$ gives the following approximate shifts in inverse coupling:
+\citep{PDGQCD2025EM}. Six flavors give $(\beta_0,\beta_1)=(7,26)$.
+Finite lattice-to-continuum constants depend on the matter regulator and
+its temporal transfer. The improved spatial operator above has a free
+$k^4$ term in $E^2$ whose direction average vanishes at
+$r_W=\sqrt{27/320}\simeq0.2905$; the cubic anisotropy remains. This is a
+specified dispersion criterion for the Wilson coefficient.
+
+\paragraph{Strong-coupling comparison.}
+For each clock attachment, both quark finite terms enter the equation
+fixing the common quadratic gluon cone:
 \[
-\begin{array}{c|rrrrrrrr}
-r_W&0.05&0.10&0.15&0.20&0.30&0.45&0.60&1.00\\ \hline
-\Delta\alpha_E^{-1}&+7.4&+4.3&+3.0&+2.2&+1.3&+0.5&0.0&-0.7
-\end{array}
-\] These are electric finite terms only. Magnetic matching, speed retuning and mass renormalization remain required, with the same finite temporal transfer in each integral. The pure-gauge heat-kernel value $47.65$, finite-count value $47.5945$ and graph coordinate $51.9195$ have their stated action and field-content definitions. A measured-QCD comparison uses the complete matter matching and physical bond length.
+\mathcal G_E(r)+Q_E(r)=\mathcal G_M(r)+Q_M,
+\qquad r=a_t/d.
+\]
+Here $\mathcal G_E,\mathcal G_M$ include the gauge stiffness and finite
+gauge corrections, and $Q_E,Q_M$ are contributions to $g^{-2}$. The
+renewal mean $\rho=rd/(2L_*)$ varies with $r$. With six quark flavors,
+the C.8 volume identification and the improved operator at
+$r_W=0.2905$, the layered completion gives
+$\alpha_{s,\overline{\rm MS}}^{-1}(\mu_*)=51.04$ at
+$\mu_*=L_*^{-1}$ and $a_t/d\simeq1.803$.
+
+The event completions determine the electric stiffness by minimizing
+the quadratic gauge energy for each event history. The quark response
+is evaluated in the resulting relaxed link field, including its
+static temporal potential. At this order, changing the background
+interpolation by an admissible periodic link field changes the
+minimizing response by its negative and preserves the total field.
+This removes dependence on that background split on the fixed event
+complex. The specified spatial transport paths remain part of the
+matter operator.
+
+The event estimates use the zero-step finite gauge constants of the
+uniform diamond regulator, $p_E=-0.2506$ and $p_M=-0.2660$. Their
+changes under random timing have not been computed. The low-energy
+reference $\alpha_s(M_Z)=0.1180$ corresponds to inverse coupling
+$52.48$ under one-loop running and $53.02$ under two-loop running.
+The calculations give
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.42\linewidth}ccc@{}}
+\hline
+Clock attachment & $\alpha_s^{-1}(\mu_*)$ &
+\multicolumn{2}{c}{$\alpha_s(M_Z)$}\\
+ & & one loop & two loops\\
+\hline
+\raggedright Mixed triangles at renewals; Poisson hexagon records
+ & $50.99\pm0.15$ & $0.143$ & $0.157$\\
+\raggedright Common layers & $51.04$ & $0.142$ & $0.156$\\
+\raggedright Bond readings and hexagon weights spread continuously
+ & $52.10\pm0.07$ & $0.124$ & $0.133$\\
+\raggedright Independent Poisson bond readings and hexagon records
+ & $53.98\pm0.04$ & $0.100$ & $0.106$\\
+\hline
+\end{tabular}
+\end{center}
+The continuously spread row is the subdivision limit of the layered
+count rule, with bond-reading heat time $2h\,dt/a_t$ and hexagon
+stiffness $\kappa_6\,dt/a_t$ between cell renewals. Its uncertainty
+includes the estimated quark step contribution. The errors on the two
+Poisson rows describe the numerical stiffness and quark calculations,
+including the tested discretization and box-size limits. They exclude
+the uncomputed random-timing gluon correction and higher-order matching.
+Both running columns use microscopic matching through the terms
+specified above.
+
+For independent bond readings, the cone gives $a_t/d\simeq1.680$.
+Paired event samples at $16$ and $32$ fine layers give a stiffness
+ratio $1.00017\pm0.00020$; the extrapolation factor to zero layer
+spacing is $1.00035\pm0.00041$. The $8^3$ block check gives
+$0.99928\pm0.00070$ relative to the $6^3$ regression. The resulting
+$53.98$ lies $1.50$ and $0.96$ above the one- and two-loop references,
+or $2.9\%$ and $1.8\%$. The renewal-triangle value lies $2.8\%$ and
+$3.8\%$ below them. The two specified Poisson completions therefore
+span approximately $51$--$54$ and place the reference between them.
+This span measures the calculated clock dependence; it carries no
+confidence level and supplies no bound on other clock attachments.
+
+The low-energy scale is more sensitive than the microscopic inverse
+coupling. With fixed quark thresholds, the leading-log relation for
+the three-flavor QCD scale is
+\[
+\Delta\ln\Lambda_3=-\frac{2\pi}{9}\Delta\alpha_s^{-1}(\mu_*).
+\]
+Applying this sensitivity around the two-loop reference gives scale
+ratios about $4.1$ and $0.51$ for the renewal-triangle and independent
+bond-reading estimates. Thus these specified completions place the
+strong scale within factors of two to four of the reference across
+the microscopic-to-QCD hierarchy. The comparison remains conditional
+on clock attachment, the matter regulator and the matching terms.
+
+On common layers, changing $r_W$ from $0.2905$ to $0.105$ gives
+$52.81$. The direction-record model above supplies a conditional
+alternative coefficient. A precision prediction requires its
+Hamiltonian realization, physical clock selection and the missing
+matching corrections. Two-loop matching is regulator dependent
+\citep{LuscherWeisz1995Matching}; its sign and magnitude on the event
+complex remain uncomputed. Critical-mass matching, the interacting
+matter cone and the remaining matter counterterms also require
+separate calculations. The pure-gauge heat-kernel value $47.65$,
+finite-count value $47.5945$ and graph coordinate $51.9195$ retain
+their stated action and field-content definitions.
 
 \paragraph{Geometry and physical matching.}
 For a joint geometric history sum, the matter and gauge partition
@@ -12001,7 +12295,12 @@ Haar-normalized face weights retain their sewn geometry dependence.
 The variation of $\log Z_{\rm color,matter}$ contributes to the
 geometric response. H.15 supplies a finite gauge/refinement control
 with this response retained; the $SU(3)$ coupled measure and its
-renormalized gravitational matching remain to be determined.
+renormalized gravitational matching remain to be determined. For the renewal ensemble
+of I.5, imposing the physical marginal $P_{\rm C.8}(N)$ requires the
+reference count weight to be proportional to
+$P_{\rm C.8}(N)/Z_{\rm color,matter}(N)$. This normalization preserves
+the specified event law after conditioning on the color and matter
+vacuum.
 
 The interface to established QCD is the matched effective action and operator map,
 \[
@@ -12033,8 +12332,10 @@ The common microscopic realization requires the route-frame closure
 instrument, joint interaction, physical frame law, energy attachment
 and retained-history allocation.
 Physical QCD further requires native flavor and chiral assignments,
-mass and coupling matching, a common interacting metric and clock,
-and the physical bond length. Nonperturbative continuum control,
+mass matching, microscopic selection of the coupling inputs, a common
+interacting metric and clock, and the physical bond identification.
+The one-loop coupling comparison above uses the specified renewal
+completion and matter regulator. Nonperturbative continuum control,
 confinement and hadron observables require the corresponding matched
 calculations. The finite geometric control uses $\mathbb Z_2$ fields
 and neutral orbital matter.
@@ -12109,17 +12410,67 @@ An EPRL calculation exposed the need for this control. A vertex amplitude \citep
 
 \subsection*{J.4 Exact results at cell order}
 
-Six calculations, independent of any Monte Carlo run, fix what the substrate can and cannot do for the vacuum before the coupled measurements are read.
+Cell, ring and Gaussian calculations constrain the substrate contribution to vacuum stiffness independently of the coupled Monte Carlo measurements.
 
 \paragraph{Induced curvature coupling.} The geometry marginal of the coupled measure weights a slice by the free energy of its labels, and the leading geometric dependence enters through the coordination $q$ of slice edges, the discrete curvature variable. A transfer-matrix evaluation of the label free energy on the ring of cells around an edge gives, at the physical $\beta=1$ weighting, an induced coupling $c_0=+0.019$ per slice edge, against the bare $k_0\simeq2.2$: about one percent. The label correlation length is about half a lattice step, and the beyond-quadratic dependence on $q$ is negligible at physical coordinations. The closure weighting alone therefore cannot supply the host's geometric stiffness, and its predicted effect on the coupled sweep is a steer too small to see at single-seed resolution, a prediction the calculation of J.5 confirms.
+
+\paragraph{Labels on the inversion complex.}
+At the physical cell weighting, let
+\[
+T_{mm'}=\frac1{49}\sum_{a,b}e^{-E(m,m',a,b)},
+\qquad F(q)=-\ln\operatorname{Tr}T^q.
+\]
+Port permutation symmetry makes $T$ independent of the pair of ports
+used by the ring. With largest eigenvalue $\lambda_1$, the residual
+$F(q)+q\ln\lambda_1$ is $0.02166$ for a three-cell ring and
+$-8.07\times10^{-5}$ for a six-cell ring. The largest subleading
+eigenvalue magnitude gives a correlation length $0.546$ cell steps.
+For label reversal $N$, the cell symmetry gives $NT=TN$ and $N^2=I$.
+Hence $\operatorname{Tr}(NT)^q=\operatorname{Tr}T^q$ for even $q$.
+The oriented three-cell residual is $0.00224$.
+
+The inversion complex has two elementary six-cell rings per cell.
+In this ring calculation their total residual is
+$-1.61\times10^{-4}$ nats per cell, and the orientation fork vanishes
+exactly. Fixed hinge coordination removes the varying $q$ through
+which the induced-curvature fit probes the simplicial host. The
+single-cell refresh and fracture results also carry over. These
+statements concern the cell and ring calculations; the dynamical-host
+measurements of J.5--J.14 require a separate realization on the fixed
+inversion graph.
 
 \paragraph{The refresh at cell order.} Modeling the selected memoryless kernel as whole-boundary redraws arriving at unit rate per cell, the single-cell stationary state is exact: the probability that $k$ faces retain their last self-drawn values is $k!(4-k)!/120$, vacuum admissibility is $0.536$, and $\langle K^2\rangle=48.74$ against the ensemble value $50.22$. The state is geometry-blind to exponential accuracy and induces no vacuum curvature action. It does couple geometry updates to the local density of closure failure when their rates depend on that density. This calculation tests the effective refresh model, not a derivation of its microscopic operator.
 
 \paragraph{The history-weighting ceiling.} Two computations bound the strongest vacuum role a Many-Pasts tilt over closure-class observables could play. Amplifying the closure link interaction to $128$ times the physical $\beta=1$ weighting saturates the link-agreement ratio near $0.55$ with correlation length $1.7$ links and a curvature-sector signal near $0.1$: a structural ceiling, set by the ground-state degeneracy of the closure-plus-injectivity interaction, twenty times below the bare coupling. Independently, the exact Doob-transform solution of a closure-maintaining history tilt (paths weighted by time-integrated closure quality) on a ring of six seven-state faces drives the nearest-neighbor label correlation from $-0.12$ through zero to only $+0.13$ across the full tilt range, with longer-range correlations near $0.03$ throughout: no long-range order at any tilt strength. Together with the two paragraphs above this closes the label sector: static weight, refresh, and closure-class history weighting each fail, quantitatively, to supply vacuum geometric stiffness at cell order.
 
-\paragraph{The free conserved field, integrated out.} A conserved Gaussian field back-coupled to the geometry induces, on integration, the geometric action $\tfrac{1}{2}\ln\det'L(g)$ per channel and slice: the spanning-tree entropy of the slice graph, by the matrix-tree theorem. Computed on degree-matched graph classes, the entropy per cell is $0.607$--$0.613$ on diamond-cubic lattices (the smooth extended proxy), $0.609$ on random $4$-regular graphs (the crumpled proxy), and $0.56$--$0.57$ on real engine slices: nearly universal at fixed coordination, with the genuinely nonlocal soft-mode part diluting as $\ln N/N$ per cell. The per-cell differential between extended and crumpled geometry is a few times $10^{-4}$; with all seven channels the phase-tipping force is of order $10^{-3}$ against $k_0\simeq2.2$.
+\paragraph{The free conserved field, integrated out.}
+Integrating out a conserved Gaussian field gives the geometric action
+$\tfrac12\ln\det' L(g)$ per channel and slice. By the matrix-tree
+theorem this is the spanning-tree contribution together with the
+finite-volume zero-mode normalization. Diamond tori with $128$ to
+$432$ cells give $0.607$--$0.613$ per cell, random four-regular
+graphs give about $0.609$, and the sampled engine slices give
+$0.56$--$0.57$. The infinite-volume diamond integral is $0.60323$;
+the four-regular tree spectral density gives
+$\tfrac12\ln(27/8)=0.60820$. Their differential is
+$4.97\times10^{-3}$ per cell and channel, or $0.035$ for seven
+channels, compared with $k_0\simeq2.2$. The finite-volume soft-mode
+contribution dilutes as $\ln N/N$; the difference between the two
+limiting spectral densities remains finite.
 
-\paragraph{The budget-bounded field.} The finite budget of Postulate~I makes the field non-Gaussian, with saturation curvature $m^2=2/g_{\mathrm{share,eff}}\simeq0.27$, and the massive determinant differential between the same proxies shrinks from $1.2\times10^{-3}$ per cell at zero mass to $4\times10^{-4}$ at the budget mass and toward zero beyond: the theory's own non-Gaussianity suppresses the modes where the sensitivity lived. What survives, measured on eight engine slices, is a local effective-action shift of scale $\simeq0.08$ per cell in the seven-channel count.  This number is not itself a displacement in \(\Delta\), or a norm in the \((k_0,\Delta)\) plane; obtaining that displacement requires projection onto the CDT conjugate operators.  The result shows perturbative dressing of the host. The two containers no branch covers are named in Section~24.3: long-range field kernels and non-equilibrium geometry--field co-evolution, both unspecified by the theory.
+\paragraph{The budget-bounded field.}
+The saturation curvature $m^2=2/g_{\mathrm{share,eff}}\simeq0.27$
+replaces $L$ by $L+m^2$. The infinite-volume determinant densities
+become $0.65327$ on diamond and $0.65506$ for the tree spectral
+density. The differential is $1.79\times10^{-3}$ per channel, or
+$0.013$ for seven channels, and decreases toward zero as the mass
+increases. On eight engine slices the local effective-action shift
+has scale $0.08$ per cell in the seven-channel count. A displacement
+in $(k_0,\Delta)$ requires projection onto the corresponding CDT
+conjugate operators. These results establish the size of the tested
+Gaussian dressing. Long-range field kernels and nonequilibrium
+geometry--field evolution require additional dynamics, as specified
+in Section~24.3.
 
 \paragraph{The fracture construction.} Under unit label shifts preserving injectivity, the $1680$-state move graph has $48$ connected components of $35$ states, labeled by slot ordering and parity. This proves that the tested move class cannot equilibrate the full admissibility ensemble. More general microscopic dynamics are not excluded.
 
@@ -21469,6 +21820,21 @@ O.~Delgado Friedrichs, M.~O'Keeffe, and O.~M. Yaghi,
 M.~Elgersma and S.~Wagon,
 ``The quadrahelix: a nearly perfect loop of tetrahedra,''
 \href{https://arxiv.org/abs/1610.00280}{arXiv:1610.00280} (2016).
+
+\bibitem[Crivelli(2018)]{Crivelli2018MuMass}
+P.~Crivelli, ``The Mu-MASS (MuoniuM lAser SpectroScopy) experiment,''
+\emph{Hyperfine Interactions} \textbf{239}, 49 (2018),
+\href{https://arxiv.org/abs/1811.00310}{arXiv:1811.00310}.
+
+\bibitem[MuSEUM Collaboration(2026)]{MuSEUMHighField2026}
+MuSEUM Collaboration, ``MuSEUM High-Field,'' collaboration program,
+\url{https://museum.kek.jp/projects/1_project.html}, accessed 15 November 2026.
+
+\bibitem[L\"uscher and Weisz(1995)]{LuscherWeisz1995Matching}
+M.~L\"uscher and P.~Weisz, ``Two-loop relation between the bare lattice
+coupling and the MS coupling in pure SU(N) gauge theories,''
+\emph{Physics Letters B} \textbf{349}, 165--169 (1995),
+\href{https://arxiv.org/abs/hep-lat/9502001}{arXiv:hep-lat/9502001}.
 
 \end{thebibliography}
 

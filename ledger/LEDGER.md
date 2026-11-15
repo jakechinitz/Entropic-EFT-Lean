@@ -7,8 +7,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-01 | D | medium | Induced Newton scale value and sigma offset (headline) | proved: AppCDE.Gstar_value |
 | C01-02 | B | medium | Muon and tau mass ratios (values and sigma) | partial: Spine.muRatio/tauRatio_bracket, AppCDE.Conditional.muon_sigma; tau σ data |
 | C01-03 | B | easy | Shell-integer ratios before marked response | proved: Main.Core.shell_ratios (exact rationals and the 0.51%, 0.65% gaps) |
-| C01-04 | B | medium | Routing-integer uniqueness audit | data/B: depends on CODATA comparison; n = 7 residual via AppCDE.residuals |
-| C01-05 | ? | easy | Farey-count test for the 2/7 tau weight | partial: (a) Main.Core.farey_count (43 rationals); (b) data |
+| C01-04 | B | medium | Routing-integer uniqueness audit | proved: Extensions20261115.ScaleChainTests.return_integer_unique (n = 7 alone within 2σ among integers n ≥ −200), Extensions20261115.ScaleChainTests.return_neighbours (n = 6, 8 at −2.41, +2.26σ), Extensions20261115.ScaleChainTests.return_absent (n = 0 at −16.4σ); n = 7 offset AppCDE.Gstar_value. CODATA G is an input |
+| C01-05 | ? | easy | Farey-count test for the 2/7 tau weight | proved: (a) Main.Core.farey_count (43 rationals); (b) Extensions20261115.ScaleChainTests.second_shell_rational_unique, Extensions20261115.ScaleChainTests.second_shell_neighbours (candidate replaces the 2/7 of Z_τ2 only; 3/11 at −1.44σ, 3/10 at +1.32σ). PDG tau mass is an input |
 | C01-06 | B | medium | Electron-anchored length: baseline and dressed | proved: AppCDE.L0_value, Lstar_value |
 | C01-07 | B | medium | Marked-fiber weight zeta_* and dressing factors | proved: AppCDE.zeta_rat, Ze_bracket |
 | C01-08 | A | easy | Closed form of G_* in terms of electron data | proved (existing): AppB.Gstar_closed_form |
@@ -20,7 +20,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-14 | ? | easy | Dark-to-baryon ratio 1/epsilon and the a_0 relation | proved: Main.Core.abundance (1/ε ∈ (5.319, 5.322), a₀Ω_c/Ω_b = cH₀); 5.333 conversion is C13-97 |
 | C01-15 | E | n | Eleven-candidate abundance test | premise (E) |
 | C01-16 | D | n | Data comparisons stated in the introduction | data (D) |
-| C01-17 | B | unknown | Geometric-route Newton coefficient | proved (B): AppQ.W.calibration_numbers (1.03002); m₄ values not formalized |
+| C01-17 | B | unknown | Geometric-route Newton coefficient | proved (B): AppQ.W.calibration_numbers (1.03002); at the computed m₄ = 2.3219 Extensions20261115.ChainConstant.calibration_23219 (G₀/G_* = 0.9975). The value of m₄ is a simulation result |
 | C01-18 | A | hard | CDT weight at alpha = 7 | proved (counts): AppQ.alpha_seven, AppQ.cdt_asymmetry |
 | C01-19 | A | easy | Seven-label alphabet and 1680-state count | proved (existing): EFT.UV.boundaryStates_card |
 | C01-20 | ? | - | Exclusion audit of closure variance | partial: (a) C(7,3) = 35; (b) closure variance not formalized |
@@ -67,6 +67,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C01-61 | C | hard | Exact lapse source | premise (C) |
 | C01-62 | C | hard | PPN values of the Einstein parent | premise (C) |
 | C01-63 | E | n | Three charged-lepton shells | premise (E) |
+| C01-64 | B | medium | Continuous return and second-shell coefficients n = 7.03 ± 0.43, q = 0.287 ± 0.010 | Proved: Extensions20261115.ScaleChainTests.return_coefficient_fit, Extensions20261115.ScaleChainTests.second_shell_fit (brackets of the values selected by G, G ∓ σ and by m_τ, m_τ ∓ σ); monotonicity Extensions20261115.ScaleChainTests.Gn_mono, Extensions20261115.ScaleChainTests.tauQ_mono. CODATA and PDG values are inputs. |
 | C02-01 | A | easy | Selector-projector idempotence and orthogonality | proved: Main.Galactic.selector_projector |
 | C02-02 | A | easy | Nesting identity for child carriers | proved: Main.Galactic.nesting |
 | C02-03 | A | easy | Haar volume of the two-phase cell | proved: Main.Galactic.haar_two_phase |
@@ -322,6 +323,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-172 | A | easy | Cosmological entropy scaling | proved: Main.Cosmo.cosmological_entropy |
 | C03-173 | D | n | Conclusion restatements | data (D) |
 | C03-174 | C | medium | Projective color group | premise (C) |
+| C03-175 | B | easy | Muon forward test: present offset and 5.35σ at tenfold precision | Proved: Extensions20261115.ScaleChainTests.muon_forward; present offset AppCDE.Conditional.muon_sigma. The experimental targets are cited inputs. |
+| C03-176 | D | n | Forecast probabilities of the muon and tau tests under the Gaussian model | Numerical (normal distribution function); recomputed in 02 Research/Claude integration 2026-11-15; not formalized in Lean. |
 | C04-01 | A | easy | ADM coefficient from Einstein-Hilbert coefficient | proved: AppB.adm_coefficient |
 | C04-02 | A | easy | Canonical cell site density and four-volume | proved: AppB.cell_density |
 | C04-03 | C | medium | gamma_Q and kappa/gamma exactness in the canonical discretization | premise (C): canonical discretization choice |
@@ -495,6 +498,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C05-80 | E | n | Ponderomotive residual bound | interpretive (E) |
 | C05-81 | C | easy | Apparent-horizon capacity and trace suppression | partial: AppCDE.radiation_trace (coupling to T is premise) |
 | C05-82 | C | easy | Positive static stiffness | proved: AppCDE.gamma_pos |
+| C05-83 | B | easy | Calibration numerics at the computed chain constants (m_4 = 2.3219 and fixed-exponent fits) | Proved: Extensions20261115.ChainConstant.calibration_23219, Extensions20261115.ChainConstant.calibration_fixed_exponent, Extensions20261115.ChainConstant.below_equality. The m_4 values, their errors and the W = 64 window dependence are simulation results, not formalized. |
 | C06-01 | C | easy | Capacity fraction lies in [0,1] | proved: AppFG.capacity_fraction |
 | C06-02 | C | medium | Continuous multiplicative lapse map is a power law | proved (existing): BlackHole.lapse_is_power, lapse_exponent_pos, f_one |
 | C06-03 | A | easy | Weak-field expansion of q^alpha | proved: AppFG.power_weak_field |
@@ -980,6 +984,16 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C10-102 | A | easy | Normalization of the sourced partition function | proved: AppIJ.sourced_normalization |
 | C10-103 | B | easy | Registered normalization result Q2 | B |
 | C10-104 | D | n | Matter-response trace diagnostic interval | D |
+| C10-105 | A | easy | Direction-record identity W = (3/2)|V|^2 = 8(1 − |f|^2/16) | Proved: Extensions20261115.DirectionRecord.wilson_identity, Extensions20261115.DirectionRecord.wilson_eq_port, Extensions20261115.DirectionRecord.wilson_eq_direction, Extensions20261115.DirectionRecord.wilson_cos, Extensions20261115.DirectionRecord.direction_weight, Extensions20261115.DirectionRecord.tet_dot. |
+| C10-106 | A | easy | Hop as −it σ·V; symmetric component at zero momentum and O(k^2) direction weight | Proved: Extensions20261115.DirectionRecord.hop_eq_sigma_dot, Extensions20261115.DirectionRecord.hop_det, Extensions20261115.DirectionRecord.wilson_zero, Extensions20261115.DirectionRecord.wilson_le_sq (W ≤ (8/3)|k|^2). |
+| C10-107 | A | medium | Bloch symbol W/2 of the cell-projector sum and the renewal decay generator | Proved: Extensions20261115.DirectionRecord.record_symbol, Extensions20261115.DirectionRecord.decay_generator, Extensions20261115.DirectionRecord.decay_symbol, Extensions20261115.DirectionRecord.gammaW_eq. Zero-field statement; colour parallel transport is not formalized. |
+| C10-108 | B | easy | Bond length d/L_* = 1.0731 and complete-record coefficient γ_W = 0.2683 | Proved: Extensions20261115.ClockCoupling.bond_length_value, Extensions20261115.ClockCoupling.gammaW_value, Extensions20261115.ClockCoupling.dispersion_value, Extensions20261115.ClockCoupling.gammaW_below_dispersion, given the C.8 volume identification at m_4 = 2.3219. |
+| C10-109 | C | hard | Identification of the record damping with the Hermitian Wilson mass; 51.15 at r_W = 0.2683 | Premise (many-body realization open) and numerical matching; not formalized. |
+| C10-110 | C | medium | Clock attachment of closure records: renewal-triangle and independent-reading completions | Premise: the assignment of record processes is clock data beyond the four closure conditions. Independence at fixed marginals is AppH1.fixed_marginal_kl (existing). The 1.40c speed of the every-change rule is numerical. |
+| C10-111 | A | easy | Relaxed link field: admissible background changes preserve the total field and the minimum | Proved: Extensions20261115.ClockCoupling.relaxed_field_invariance. |
+| C10-112 | B | hard | Matched inverse couplings for four clock attachments (50.99, 51.04, 52.10, 53.98) and their offsets | Values numerical (02 Research/Native color running 2026-11-10; stiffness, quark and paired-limit calculations), not formalized. Arithmetic of the comparison proved: Extensions20261115.ClockCoupling.independent_row_offsets, Extensions20261115.ClockCoupling.renewal_triangle_offsets, Extensions20261115.ClockCoupling.reference_between. |
+| C10-113 | A | easy | Leading-log scale sensitivity Δ ln Λ_3 = −(2π/9) Δα_s^{-1}(μ_*); ratios 4.1 and 0.51 | Proved: Extensions20261115.ClockCoupling.runChain_shift, Extensions20261115.ClockCoupling.scale_sensitivity, Extensions20261115.ClockCoupling.Lambda3_invariant, Extensions20261115.ClockCoupling.scale_ratios, Extensions20261115.ClockCoupling.beta_values. |
+| C10-114 | A | easy | Labels on the inversion complex: orientation readings coincide on even rings; tree density ½ ln(27/8) | Proved: Extensions20261115.LabelRing.orientation_even, Extensions20261115.LabelRing.orientation_six, Extensions20261115.LabelRing.orientation_odd, Extensions20261115.LabelRing.tree_density. Ring residuals, correlation length and the diamond determinant integral are numerical, not formalized. |
 | C11-01 | A | easy | One-bit fermionic defect entropy | proved: AppKN.one_bit_entropy |
 | C11-02 | E | n | Remaining K.1 cross-check list | E |
 | C11-03 | A | easy | Count of oriented injective tetrahedral states | proved (existing): EFT.UV.boundaryStates_card |

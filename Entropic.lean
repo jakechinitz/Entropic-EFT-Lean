@@ -156,3 +156,9 @@ import Entropic.ReleaseLedger
 import Entropic.RAR.Redshift
 -- Inversion gluing: the diamond complex as the development of point inversions.
 import Entropic.InversionGluing
+-- Direction records, clock attachment, scale-chain tests and the chain constant, 2026-11-15.
+import Entropic.Extensions20261115.DirectionRecord
+import Entropic.Extensions20261115.ClockCoupling
+import Entropic.Extensions20261115.ScaleChainTests
+import Entropic.Extensions20261115.ChainConstant
+import Entropic.Extensions20261115.LabelRing
