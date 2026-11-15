@@ -2,6 +2,35 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Direction records, clock attachment and scale-chain tests (2026-11-15)
+
+`Entropic/Extensions20261115/` (five modules, 56 theorems) formalizes the statements added to the full paper on
+15 November 2026. `DirectionRecord`: for the four port phases of a Bloch wave on the diamond bonds, the Wilson
+function is the direction record, `W = (3/2)|V|² = 8(1 − |f|²/16)` (`wilson_identity`), `W/8` is the weight of the
+port vector outside the symmetric state (`direction_weight`), the hop is `−it σ·V` (`hop_eq_sigma_dot`, `hop_det`),
+`W ≤ (8/3)|k|²` (`wilson_le_sq`), and the sum of cell projectors `Σ_b (I − P_b)` acts on a Bloch wave as `W/2`
+(`record_symbol`), which gives the renewal decay generator and `γ_W = (d/4L_*) s` (`decay_symbol`, `gammaW_eq`).
+`ClockCoupling`: `d/L_* = 1.07306…` and `γ_W = 0.26826…` from the C.8 volume identification (`bond_length_value`,
+`gammaW_value`); a change of background by an admissible field leaves the relaxed total field and its minimum
+unchanged (`relaxed_field_invariance`); the offsets of the four clock-attachment rows against the references
+(`independent_row_offsets`, `renewal_triangle_offsets`, `reference_between`); one-loop running through fixed
+thresholds carries a shift of `α⁻¹(μ_*)` unchanged, so `Δ ln Λ₃ = −(2π/9)Δα⁻¹` (`runChain_shift`,
+`scale_sensitivity`) with ratios `0.51` and `4.1` (`scale_ratios`). `ScaleChainTests`, on the certified brackets
+of `Spine` and `AppCDE`: the measured `G` selects a return coefficient in `(7.02, 7.04)` with one-σ ends near
+`6.60` and `7.46` (`return_coefficient_fit`), seven is the only integer `n ≥ −200` within two σ
+(`return_integer_unique`); the tau mass selects a second-shell coefficient in `(0.286, 0.288)` with ends near
+`0.277` and `0.297` (`second_shell_fit`), and `2/7` is the only rational with denominator at most eleven within
+one σ (`second_shell_rational_unique`); the muon offset at tenfold precision is `5.34…5.37σ` (`muon_forward`).
+`ChainConstant`: the C.8 calibration at `m₄ = 2.3219` and at the fixed-exponent fits (`calibration_23219`,
+`calibration_fixed_exponent`). `LabelRing`: `Tr (NT)^q = Tr T^q` for even `q` (`orientation_even`) and
+`½ ln(27/8)` (`tree_density`). Ledger: C01-04, C01-05 and C01-17 updated; new rows C01-64, C03-175, C03-176,
+C05-83, C10-105 to C10-114; notes in `ledger/CLOCK_AND_SCALE_CHAIN_20261115.md`. Each module was compiled with
+the pinned Lean 4.35.0 on Linux against the Mathlib cache and the modules it imports; the namespace audit reports
+zero nonstandard axioms and all 44 cited names resolve. The matched couplings, the chain constants and the
+measured values are inputs; the clock attachment, the Wilson-mass identification and the Section 27 forecast
+probabilities are not formalized. This entry also adds `ledger/INVERSION_GLUING_20261114.md`, which the entry
+below cites.
+
 ## Inversion gluing (2026-11-14)
 
 `Entropic/InversionGluing/` (two modules, 57 theorems) identifies the diamond graph with the cell complex
