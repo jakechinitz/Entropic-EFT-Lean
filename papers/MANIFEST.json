@@ -1,24 +1,24 @@
 {
  "files": {
   "compact/Entropic_Scalar_EFT_Compact.pdf": {
-   "bytes": 709473,
-   "sha256": "c129b337f8540950a669a03707de5017454d3f897c38a443456d48c41a8e759f"
+   "bytes": 615786,
+   "sha256": "26d9467f9dc61a620aad4d639297d79438b0d5d26fefeab546fb554fe611a72b"
   },
   "compact/source/Astra Quantum gravity completion compact.tex": {
-   "bytes": 165308,
-   "sha256": "5875117bf2d00ffdbb259fb67530d6eaaedfa94e732a92395dbd3b54748297d7"
+   "bytes": 165786,
+   "sha256": "fbc6e23b7594f3066e397ecdc4d82597200af31c2369a137a44ed47c0990abdd"
   },
   "empirical-results/Empirical_Results.pdf": {
-   "bytes": 1372686,
-   "sha256": "05fc51ccaeb5300d28a6593f12e78fb10db208a9a8cc8d27e1f94bd70b401585"
+   "bytes": 1372850,
+   "sha256": "bf7fae911c912c89955dcc750beb46b4c2a29b71419616e3b349469d3db3e515"
   },
   "empirical-results/source/01_results_and_basis.tex": {
-   "bytes": 16902,
-   "sha256": "88f4c3935a7ea9cb23e335f463ebaa646c4a6ba289b810e794b32e3040da0583"
+   "bytes": 16989,
+   "sha256": "8abf8c449f2a1b24d7ec38934561f5ce09099b56576abe36d264e621163c3264"
   },
   "empirical-results/source/02_acceleration.tex": {
-   "bytes": 14074,
-   "sha256": "5ead3a9636e06cf96b488647ebd29c08ceff4c690b1884b6084e037d37b35a8d"
+   "bytes": 14166,
+   "sha256": "1f0e0ed2412f6ce7aa4739d180a4df085c8b4ad792d719f634e3050dcb0074ec"
   },
   "empirical-results/source/03_history.tex": {
    "bytes": 14277,
@@ -189,12 +189,12 @@
    "sha256": "1920f96ba15cb6747e8c69c3c1f4965ce00792e2f7cf40b8c813605950158633"
   },
   "full/Entropic_Scalar_EFT.pdf": {
-   "bytes": 2543529,
-   "sha256": "b323cdaa0350c88abad3d14c3c925213f9cb343a615efe1a1555635f06925670"
+   "bytes": 2544690,
+   "sha256": "8e786f146912d867c69082f0f57fa2d3f9f84b300f6213ed2c57100092a55dec"
   },
   "full/source/Entropic Scalar EFT.tex": {
-   "bytes": 1512856,
-   "sha256": "4fb604757c775f0242c05687a2006bcac7ed66d73cbdcf57d53ff1e38a2f1ddb"
+   "bytes": 1513066,
+   "sha256": "aa45391582359ba7d2632eb0320048862fcf4f625f89c786735f146b6625735e"
   },
   "microstructure-cdt/Microstructure_CDT.pdf": {
    "bytes": 713369,
