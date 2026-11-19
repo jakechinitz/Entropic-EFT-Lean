@@ -166,3 +166,6 @@ import Entropic.Extensions20261115.LabelRing
 import Entropic.Extensions20261119.AngularRule
 import Entropic.Extensions20261119.HostCount
 import Entropic.Extensions20261119.Cavity
+import Entropic.Extensions20261119.CellDensity
+import Entropic.Extensions20261119.Polarizations
+import Entropic.Extensions20261119.Equipartition

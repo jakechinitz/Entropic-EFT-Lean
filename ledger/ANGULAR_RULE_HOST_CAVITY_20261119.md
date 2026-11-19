@@ -22,3 +22,23 @@ Inputs that the Lean takes as given:
 
 Not formalized: the greybody and line-width numerics of F.6, the environment estimates, and the volume dependence of
 the bifurcation line (C10-116, data).
+
+## Addendum, 19 November 2026: response-cell density and one ladder per cell
+
+| Module | What is proved | Ledger |
+|---|---|---|
+| `CellDensity` | O.3 density: mutual-field form; cell grip `(4π/g)ħc/L_*/C_E(x)`; ratio to the horizon nats `(2/3)ε²x⁴n(1+n)` and its bound below one; two-polarization tilt spread `(1+2n)/(εx)` | C05-86, C05-87 |
+| `Polarizations` | `1 + n_B = 1/(1 − e^{−x})`; `1 + 2n_B(x) = coth(x/2)` with deep scale `4a`; `1 + 2n_B(2x) = coth x` | C05-87 |
+
+Inputs: the equipartition matching of O.3, the single thermal ladder per cell (a premise in N.8), and the SPARC fits
+that select it (`02 Research/UV origin of carrier and thermal matching 2026-11-19`).
+
+## Addendum: equipartition over the tilt polarizations (19 November 2026, third entry)
+
+| module | content | rows |
+|---|---|---|
+| `Equipartition` | mean mutual field energy per cell `Θ(1+qmn)/(2qλ(1+n))`; equal to `mΘ/2` for every `n` iff `λ = 1`, `qm = 1`; response `1 + n`; displaced nats are horizon nats; `n_nat k_BT_U = g²/(4πG)` | C05-88, C05-89 |
+
+The equipartition identification, single occupancy of displaced nats and the numerical measurements of `λqm` and `qm`
+are inputs or data, not formalized.
+

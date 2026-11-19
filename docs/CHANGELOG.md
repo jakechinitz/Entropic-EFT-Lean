@@ -2,6 +2,33 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Equipartition over the tilt polarizations (2026-11-19, third entry)
+
+`Entropic/Extensions20261119/Equipartition` (5 theorems). For `m` tilt polarizations, `q` field units per quantum and
+O.3 matching coefficient `λ`, the mean mutual field energy per cell is `Θ(1+qmn)/(2qλ(1+n))` (`cell_energy`); it is
+`mΘ/2` for every occupation if and only if `λ = 1` and `qm = 1` (`equipartition_iff`), and the mean response is then
+`1 + n` (`mean_response`), the exponential law, from the two tilt polarizations of N.8 with half a field unit each.
+A mass with `2πMcR/ħ` displaced nats has `ħ/(2πcR)` per nat, the N.8 horizon nat (`displaced_nat_mass`), and
+`n_nat k_BT_U = g²/(4πG)` (`holographic_equipartition`). Ledger: new rows C05-88 and C05-89; C05-87 note updated. The
+full paper is synced to the version in which N.8 derives the half unit from the O.3 half-Θ rule read per
+polarization, with the abundance and SPARC measurements, and Section 20 reads single occupancy through the horizon
+nats of N.8 and the per-defect exclusivity of Section 3.2. Built with `lake env lean` against the Mathlib cache. The equipartition identification, single occupancy and
+the numerical measurements `λqm = 0.997 ± 0.012` and `qm = 0.991 ± 0.029` are inputs or data.
+
+## Response-cell density and the single thermal ladder (2026-11-19, second entry)
+
+`Entropic/Extensions20261119/CellDensity` and `Polarizations` (12 theorems) formalize the statements added to O.3 and
+N.8 of the full paper on 19 November 2026. `CellDensity`: the O.3 equipartition density gives half a `k_BT_H` per cell
+equal to the mutual field energy (`half_theta_mutual`); with the lever and the register grip, the grip of one cell is
+`(4π/g) ħc/L_* / C_E(x)`, so in the deep regime every cell grips the baryonic field with `1.694 ħc/L_*` (`cell_grip`);
+the density over the bulk density of horizon nats is `(2/3)ε²x⁴n(1+n)` (`horizon_fraction`), and `x⁴n(1+n) ≤ 24`
+(`x4_einstein_le`) keeps it below one for `ε ≤ 1/5` (`horizon_bound`, `eps_le`); the two-polarization thermal tilt
+spread is `(1 + 2n)/(εx)` (`tilt_spread`). `Polarizations`: the three rigid-frame responses `1/(1 − e^{−x})`,
+`coth(x/2)` and `coth x` (`one_ladder`, `two_ladders`, `two_ladders_coth`, `zero_m`) and the factor four in the deep
+scale (`deep_scale`). Ledger: new rows C05-86 and C05-87. Built with the pinned Lean 4.35.0 against the Mathlib cache;
+the 12 names depend only on `propext`, `Classical.choice` and `Quot.sound`. The equipartition matching of O.3, the
+single ladder per cell and the SPARC comparison are inputs.
+
 ## Angular rule, host couplings and cavity ensemble (2026-11-19)
 
 `Entropic/Extensions20261119/` (three modules, 17 theorems) formalizes statements added to the full paper on 18 and
