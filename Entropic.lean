@@ -162,3 +162,7 @@ import Entropic.Extensions20261115.ClockCoupling
 import Entropic.Extensions20261115.ScaleChainTests
 import Entropic.Extensions20261115.ChainConstant
 import Entropic.Extensions20261115.LabelRing
+-- Angular rule from flat subdivision, count content of the host couplings, cavity ensemble, 2026-11-19.
+import Entropic.Extensions20261119.AngularRule
+import Entropic.Extensions20261119.HostCount
+import Entropic.Extensions20261119.Cavity

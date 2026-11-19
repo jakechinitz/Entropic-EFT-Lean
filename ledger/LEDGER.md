@@ -192,7 +192,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C03-41 | A | easy | Equivariant encoding dimension | proved: AppQ.encoded_counts, AppQ.encoded_cell (16·105 = 1680) |
 | C03-42 | A | easy | Bond pairing preserves marginal, ln 2 per cut | proved: AppQ.Fock.separable_vs_coherent |
 | C03-43 | A | easy | Angular rule replica trace and curvature weight | proved: AppQ.hinge_semigroup, hinge_trace, replica_traces |
-| C03-44 | C | easy | Bare Einstein coefficient from angular rule | premise (C) |
+| C03-44 | C | easy | Bare Einstein coefficient from angular rule | proved (C): the angular rule is forced by flat-subdivision invariance, Extensions20261119.AngularRule.flat_subdivision_fixes_rule, Extensions20261119.AngularRule.wrong_amplitude_weight, Extensions20261119.AngularRule.hinge_linear; on the causal host the hinge traces fix κ₀ + 6Δ = 2r ln 2, Extensions20261119.HostCount.einstein_coefficient, Extensions20261119.HostCount.six_ln_two. Premises: wedge factors are scalars of the angle alone; Regge identity; channel area A_ch |
 | C03-45 | C | medium | Provisional G_0/G_* value | premise (C) |
 | C03-46 | C | medium | Integer bundles with area ratio 1:3 give alpha = 7 | premise (C) |
 | C03-47 | A | medium | Intertwiner space dimensions 7 and 19 | partial: AppQ.W.intertwiner_counts (weight counts 7, 19) |
@@ -499,6 +499,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C05-81 | C | easy | Apparent-horizon capacity and trace suppression | partial: AppCDE.radiation_trace (coupling to T is premise) |
 | C05-82 | C | easy | Positive static stiffness | proved: AppCDE.gamma_pos |
 | C05-83 | B | easy | Calibration numerics at the computed chain constants (m_4 = 2.3219 and fixed-exponent fits) | Proved: Extensions20261115.ChainConstant.calibration_23219, Extensions20261115.ChainConstant.calibration_fixed_exponent, Extensions20261115.ChainConstant.below_equality. The m_4 values, their errors and the W = 64 window dependence are simulation results, not formalized. |
+| C05-84 | A | easy | Cavity ensemble: coexistence at τ_c = 32/27, jump (64/81)N_B, stationary caps for τ ≤ 8√3/9 | Proved on the reduced weight F(τ,x) = τ(1 − √(1−x)) − x²: Extensions20261119.Cavity.F_critical_nonneg, Extensions20261119.Cavity.F_critical_zero, Extensions20261119.Cavity.gas_wins, Extensions20261119.Cavity.cap_wins, Extensions20261119.Cavity.coexistence, Extensions20261119.Cavity.stationary_bound. The reduced weight from the two fillings is an input |
+| C05-85 | A | easy | Boundary weight per channel: T_eq = T_H/(1 − γ/ln 2), unbiased only at γ = 0 | Proved: Extensions20261119.Cavity.unbiased_boundary |
 | C06-01 | C | easy | Capacity fraction lies in [0,1] | proved: AppFG.capacity_fraction |
 | C06-02 | C | medium | Continuous multiplicative lapse map is a power law | proved (existing): BlackHole.lapse_is_power, lapse_exponent_pos, f_one |
 | C06-03 | A | easy | Weak-field expansion of q^alpha | proved: AppFG.power_weak_field |
@@ -994,6 +996,8 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C10-112 | B | hard | Matched inverse couplings for four clock attachments (50.99, 51.04, 52.10, 53.98) and their offsets | Values numerical (02 Research/Native color running 2026-11-10; stiffness, quark and paired-limit calculations), not formalized. Arithmetic of the comparison proved: Extensions20261115.ClockCoupling.independent_row_offsets, Extensions20261115.ClockCoupling.renewal_triangle_offsets, Extensions20261115.ClockCoupling.reference_between. |
 | C10-113 | A | easy | Leading-log scale sensitivity Δ ln Λ_3 = −(2π/9) Δα_s^{-1}(μ_*); ratios 4.1 and 0.51 | Proved: Extensions20261115.ClockCoupling.runChain_shift, Extensions20261115.ClockCoupling.scale_sensitivity, Extensions20261115.ClockCoupling.Lambda3_invariant, Extensions20261115.ClockCoupling.scale_ratios, Extensions20261115.ClockCoupling.beta_values. |
 | C10-114 | A | easy | Labels on the inversion complex: orientation readings coincide on even rings; tree density ½ ln(27/8) | Proved: Extensions20261115.LabelRing.orientation_even, Extensions20261115.LabelRing.orientation_six, Extensions20261115.LabelRing.orientation_odd, Extensions20261115.LabelRing.tree_density. Ring residuals, correlation length and the diamond determinant integral are numerical, not formalized. |
+| C10-115 | A | easy | Count content of the host couplings: κ₀ + 6Δ = 2r ln 2; Δ from the angular amplitude; centring leaves κ₀ + 6Δ fixed | Proved: Extensions20261119.HostCount.logW_counts, Extensions20261119.HostCount.einstein_coefficient, Extensions20261119.HostCount.delta_from_amplitude, Extensions20261119.HostCount.centring_shift, Extensions20261119.HostCount.six_ln_two. Counting identities (Dehn–Sommerville) and the coverage sums S₄₁, S₃₂ are inputs |
+| C10-116 | D | n | Volume dependence of the bifurcation line at κ₀ = 2.2 and the host value Δ = 0.326 | data (D): published pseudo-critical values and an unregistered four-slice probe; not formalized |
 | C11-01 | A | easy | One-bit fermionic defect entropy | proved: AppKN.one_bit_entropy |
 | C11-02 | E | n | Remaining K.1 cross-check list | E |
 | C11-03 | A | easy | Count of oriented injective tetrahedral states | proved (existing): EFT.UV.boundaryStates_card |
@@ -1431,7 +1435,7 @@ Status: pending unless marked. Kinds: A exact, B numeric, C premise-conditional,
 | C15-47 | A | easy | Bond Hamiltonian spectrum and unique coherent ground state | proved: AppQ.Fock.car, He_explicit, bond_spectrum (spectrum {0,1,1,2}, unique coherent ground state) |
 | C15-48 | A | easy | Separable mixture has the same local marginals | proved: AppQ.Fock.separable_vs_coherent |
 | C15-49 | A | easy | Joint renewal marginals | proved: AppQ.Fock.purification_marginal, AppP.renewal_tp |
-| C15-50 | A | easy | Absolute angular semigroup normalization | proved: AppQ.hinge_semigroup |
+| C15-50 | A | easy | Absolute angular semigroup normalization | proved: AppQ.hinge_semigroup; forced by flat subdivision: Extensions20261119.AngularRule.flat_subdivision_fixes_rule, Extensions20261119.AngularRule.rule_satisfies, Extensions20261119.AngularRule.bFlat_eq_bH |
 | C15-51 | A | easy | Hinge trace and deficit weight | proved: AppQ.hinge_trace |
 | C15-52 | A | easy | Replica traces | proved: AppQ.replica_traces |
 | C15-53 | C | easy | Bare channel-area relation hbar G_0/c^3 = A_ch/(4 ln 2) | proved (algebra): AppQ.channel_area_relation; premises (C) |

@@ -3,6 +3,23 @@ open Lean in
 #eval show CoreM Unit from do
   let env ← getEnv
   let items : List (String × List String) := [
+    ("Extensions20261119.AngularRule.bFlat_eq_bH", ["Extensions20261119.AngularRule.bFlat_eq_bH", "Entropic.Extensions20261119.AngularRule.bFlat_eq_bH"]),
+    ("Extensions20261119.AngularRule.flat_subdivision_fixes_rule", ["Extensions20261119.AngularRule.flat_subdivision_fixes_rule", "Entropic.Extensions20261119.AngularRule.flat_subdivision_fixes_rule"]),
+    ("Extensions20261119.AngularRule.hinge_linear", ["Extensions20261119.AngularRule.hinge_linear", "Entropic.Extensions20261119.AngularRule.hinge_linear"]),
+    ("Extensions20261119.AngularRule.rule_satisfies", ["Extensions20261119.AngularRule.rule_satisfies", "Entropic.Extensions20261119.AngularRule.rule_satisfies"]),
+    ("Extensions20261119.AngularRule.wrong_amplitude_weight", ["Extensions20261119.AngularRule.wrong_amplitude_weight", "Entropic.Extensions20261119.AngularRule.wrong_amplitude_weight"]),
+    ("Extensions20261119.Cavity.F_critical_nonneg", ["Extensions20261119.Cavity.F_critical_nonneg", "Entropic.Extensions20261119.Cavity.F_critical_nonneg"]),
+    ("Extensions20261119.Cavity.F_critical_zero", ["Extensions20261119.Cavity.F_critical_zero", "Entropic.Extensions20261119.Cavity.F_critical_zero"]),
+    ("Extensions20261119.Cavity.cap_wins", ["Extensions20261119.Cavity.cap_wins", "Entropic.Extensions20261119.Cavity.cap_wins"]),
+    ("Extensions20261119.Cavity.coexistence", ["Extensions20261119.Cavity.coexistence", "Entropic.Extensions20261119.Cavity.coexistence"]),
+    ("Extensions20261119.Cavity.gas_wins", ["Extensions20261119.Cavity.gas_wins", "Entropic.Extensions20261119.Cavity.gas_wins"]),
+    ("Extensions20261119.Cavity.stationary_bound", ["Extensions20261119.Cavity.stationary_bound", "Entropic.Extensions20261119.Cavity.stationary_bound"]),
+    ("Extensions20261119.Cavity.unbiased_boundary", ["Extensions20261119.Cavity.unbiased_boundary", "Entropic.Extensions20261119.Cavity.unbiased_boundary"]),
+    ("Extensions20261119.HostCount.centring_shift", ["Extensions20261119.HostCount.centring_shift", "Entropic.Extensions20261119.HostCount.centring_shift"]),
+    ("Extensions20261119.HostCount.delta_from_amplitude", ["Extensions20261119.HostCount.delta_from_amplitude", "Entropic.Extensions20261119.HostCount.delta_from_amplitude"]),
+    ("Extensions20261119.HostCount.einstein_coefficient", ["Extensions20261119.HostCount.einstein_coefficient", "Entropic.Extensions20261119.HostCount.einstein_coefficient"]),
+    ("Extensions20261119.HostCount.logW_counts", ["Extensions20261119.HostCount.logW_counts", "Entropic.Extensions20261119.HostCount.logW_counts"]),
+    ("Extensions20261119.HostCount.six_ln_two", ["Extensions20261119.HostCount.six_ln_two", "Entropic.Extensions20261119.HostCount.six_ln_two"]),
     ("Extensions20261115.ChainConstant.below_equality", ["Extensions20261115.ChainConstant.below_equality", "Entropic.Extensions20261115.ChainConstant.below_equality"]),
     ("Extensions20261115.ChainConstant.calibration_23219", ["Extensions20261115.ChainConstant.calibration_23219", "Entropic.Extensions20261115.ChainConstant.calibration_23219"]),
     ("Extensions20261115.ChainConstant.calibration_fixed_exponent", ["Extensions20261115.ChainConstant.calibration_fixed_exponent", "Entropic.Extensions20261115.ChainConstant.calibration_fixed_exponent"]),
