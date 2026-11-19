@@ -2,6 +2,24 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Angular rule, host couplings and cavity ensemble (2026-11-19)
+
+`Entropic/Extensions20261119/` (three modules, 17 theorems) formalizes statements added to the full paper on 18 and
+19 November 2026. `AngularRule`: a positive, continuous, multiplicative wedge factor with `2k(2π) = 1` is
+`e^{−θ ln 2/(2π)}` (`flat_subdivision_fixes_rule`, through the Cauchy step of `BlackHole.lapse_is_power`); any other
+amplitude leaves a flat hinge with log-weight `ln 2 − 2πb'` (`wrong_amplitude_weight`); the hinge weight is exactly
+linear in the deficit (`hinge_linear`); the amplitude is `AppQ.bH` (`bFlat_eq_bH`). `HostCount`: with the counting
+identities of causal triangulations, the hinge traces give `κ₀ + 6Δ = 2r ln 2` whatever the per-simplex factors
+(`logW_counts`, `einstein_coefficient`, `six_ln_two`), the angular amplitude sets `Δ` (`delta_from_amplitude`), and a
+centring term moves the couplings along `κ₀ + 6Δ = const` (`centring_shift`). `Cavity`: the reduced weight
+`τ(1 − √(1−x)) − x²` has its coexistence point at `τ = 32/27`, `x = 8/9` (`F_critical_nonneg`, `F_critical_zero`,
+`gas_wins`, `cap_wins`, `coexistence`), stationary caps need `τ ≤ 8√3/9` (`stationary_bound`), and a boundary weight
+leaves the equilibrium temperature at `T_H` only when it vanishes (`unbiased_boundary`). Ledger: C03-44 and C15-50
+updated; new rows C05-84, C05-85, C10-115, C10-116; notes in `ledger/ANGULAR_RULE_HOST_CAVITY_20261119.md`. Each
+module was built with the pinned Lean 4.35.0 on Linux against the Mathlib cache and the modules it imports; the 17
+cited names resolve and depend only on `propext`, `Classical.choice` and `Quot.sound`. The angle-locality of the
+wedge factor, the counting identities and the reduced cavity weight are inputs.
+
 ## Direction records, clock attachment and scale-chain tests (2026-11-15)
 
 `Entropic/Extensions20261115/` (five modules, 56 theorems) formalizes the statements added to the full paper on
