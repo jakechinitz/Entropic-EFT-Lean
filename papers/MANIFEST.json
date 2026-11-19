@@ -189,12 +189,12 @@
    "sha256": "1920f96ba15cb6747e8c69c3c1f4965ce00792e2f7cf40b8c813605950158633"
   },
   "full/Entropic_Scalar_EFT.pdf": {
-   "bytes": 2542494,
-   "sha256": "82efc760124bb8db4d445410a7013aec6c3f99f84cd0768fd5166e6d4c6a028e"
+   "bytes": 2543529,
+   "sha256": "b323cdaa0350c88abad3d14c3c925213f9cb343a615efe1a1555635f06925670"
   },
   "full/source/Entropic Scalar EFT.tex": {
-   "bytes": 1512137,
-   "sha256": "1a49ea128ee54a43c0a771db727f1011a6515a30b23e4d3852cb714727ddaa63"
+   "bytes": 1512856,
+   "sha256": "4fb604757c775f0242c05687a2006bcac7ed66d73cbdcf57d53ff1e38a2f1ddb"
   },
   "microstructure-cdt/Microstructure_CDT.pdf": {
    "bytes": 713369,

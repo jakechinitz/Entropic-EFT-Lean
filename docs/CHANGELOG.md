@@ -10,8 +10,9 @@ O.3 matching coefficient `λ`, the mean mutual field energy per cell is `Θ(1+qm
 `1 + n` (`mean_response`), the exponential law, from the two tilt polarizations of N.8 with half a field unit each.
 A mass with `2πMcR/ħ` displaced nats has `ħ/(2πcR)` per nat, the N.8 horizon nat (`displaced_nat_mass`), and
 `n_nat k_BT_U = g²/(4πG)` (`holographic_equipartition`). Ledger: new rows C05-88 and C05-89; C05-87 note updated. The
-full paper is synced to the version with the Section 20 single-occupancy paragraph and the shared field unit in N.8
-and O.3. Built with `lake env lean` against the Mathlib cache. The equipartition identification, single occupancy and
+full paper is synced to the version in which N.8 derives the half unit from the O.3 half-Θ rule read per
+polarization, with the abundance and SPARC measurements, and Section 20 reads single occupancy through the horizon
+nats of N.8 and the per-defect exclusivity of Section 3.2. Built with `lake env lean` against the Mathlib cache. The equipartition identification, single occupancy and
 the numerical measurements `λqm = 0.997 ± 0.012` and `qm = 0.991 ± 0.029` are inputs or data.
 
 ## Response-cell density and the single thermal ladder (2026-11-19, second entry)
