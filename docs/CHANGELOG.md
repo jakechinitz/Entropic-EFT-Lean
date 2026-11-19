@@ -9,7 +9,9 @@ a locked group reads as its summed Unruh grip exceeding about `2.5 k_BT_H`; bulk
 the mutual field at `T_H` and of the baryonic field at `T_U` give `n(1+n)εx²` ladders per displaced nat, the O.3
 density (`ladders_per_nat`). Ledger: new row C05-90. The full paper is synced to the version in which N.8 states the
 measured rigidity requirement and identifies the equipartition premise with bulk equipartition (Padmanabhan 2012),
-and Section 20 restricts single occupancy to each source's own commitment (38 SPARC points exceed 1 + 1/ε).
+and Section 20 restricts single occupancy to each source's own commitment (38 SPARC points exceed 1 + 1/ε). J.14 now
+reports the vertex-order alternation at the registered 32k and 64k volumes and that the published bifurcation line runs
+nearly parallel to the α = 7 count line.
 
 ## Equipartition over the tilt polarizations (2026-11-19, third entry)
 
