@@ -42,3 +42,9 @@ that select it (`02 Research/UV origin of carrier and thermal matching 2026-11-1
 The equipartition identification, single occupancy of displaced nats and the numerical measurements of `λqm` and `qm`
 are inputs or data, not formalized.
 
+## Addendum: response ladders (19 November 2026, fourth entry)
+
+| module | content | rows |
+|---|---|---|
+| `Ladders` | `T_U/T_H = εx²`; bulk-equipartition counts give `n(1+n)εx²` ladders per displaced nat | C05-90 |
+

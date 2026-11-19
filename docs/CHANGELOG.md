@@ -2,6 +2,15 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Response ladders and bulk equipartition (2026-11-19, fourth entry)
+
+`Entropic/Extensions20261119/Ladders` (2 theorems): `T_U/T_H = εx²` (`unruh_ratio`), so the harmonic requirement on
+a locked group reads as its summed Unruh grip exceeding about `2.5 k_BT_H`; bulk-equipartition counts, `E/(½k_BT)`, of
+the mutual field at `T_H` and of the baryonic field at `T_U` give `n(1+n)εx²` ladders per displaced nat, the O.3
+density (`ladders_per_nat`). Ledger: new row C05-90. The full paper is synced to the version in which N.8 states the
+measured rigidity requirement and identifies the equipartition premise with bulk equipartition (Padmanabhan 2012),
+and Section 20 restricts single occupancy to each source's own commitment (38 SPARC points exceed 1 + 1/ε).
+
 ## Equipartition over the tilt polarizations (2026-11-19, third entry)
 
 `Entropic/Extensions20261119/Equipartition` (5 theorems). For `m` tilt polarizations, `q` field units per quantum and
