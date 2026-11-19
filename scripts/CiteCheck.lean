@@ -3,6 +3,18 @@ open Lean in
 #eval show CoreM Unit from do
   let env ← getEnv
   let items : List (String × List String) := [
+    ("Extensions20261119.CellDensity.cell_grip", ["Extensions20261119.CellDensity.cell_grip", "Entropic.Extensions20261119.CellDensity.cell_grip"]),
+    ("Extensions20261119.CellDensity.eps_le", ["Extensions20261119.CellDensity.eps_le", "Entropic.Extensions20261119.CellDensity.eps_le"]),
+    ("Extensions20261119.CellDensity.half_theta_mutual", ["Extensions20261119.CellDensity.half_theta_mutual", "Entropic.Extensions20261119.CellDensity.half_theta_mutual"]),
+    ("Extensions20261119.CellDensity.horizon_bound", ["Extensions20261119.CellDensity.horizon_bound", "Entropic.Extensions20261119.CellDensity.horizon_bound"]),
+    ("Extensions20261119.CellDensity.horizon_fraction", ["Extensions20261119.CellDensity.horizon_fraction", "Entropic.Extensions20261119.CellDensity.horizon_fraction"]),
+    ("Extensions20261119.CellDensity.tilt_spread", ["Extensions20261119.CellDensity.tilt_spread", "Entropic.Extensions20261119.CellDensity.tilt_spread"]),
+    ("Extensions20261119.CellDensity.x4_einstein_le", ["Extensions20261119.CellDensity.x4_einstein_le", "Entropic.Extensions20261119.CellDensity.x4_einstein_le"]),
+    ("Extensions20261119.Polarizations.deep_scale", ["Extensions20261119.Polarizations.deep_scale", "Entropic.Extensions20261119.Polarizations.deep_scale"]),
+    ("Extensions20261119.Polarizations.one_ladder", ["Extensions20261119.Polarizations.one_ladder", "Entropic.Extensions20261119.Polarizations.one_ladder"]),
+    ("Extensions20261119.Polarizations.two_ladders", ["Extensions20261119.Polarizations.two_ladders", "Entropic.Extensions20261119.Polarizations.two_ladders"]),
+    ("Extensions20261119.Polarizations.two_ladders_coth", ["Extensions20261119.Polarizations.two_ladders_coth", "Entropic.Extensions20261119.Polarizations.two_ladders_coth"]),
+    ("Extensions20261119.Polarizations.zero_m", ["Extensions20261119.Polarizations.zero_m", "Entropic.Extensions20261119.Polarizations.zero_m"]),
     ("Extensions20261119.AngularRule.bFlat_eq_bH", ["Extensions20261119.AngularRule.bFlat_eq_bH", "Entropic.Extensions20261119.AngularRule.bFlat_eq_bH"]),
     ("Extensions20261119.AngularRule.flat_subdivision_fixes_rule", ["Extensions20261119.AngularRule.flat_subdivision_fixes_rule", "Entropic.Extensions20261119.AngularRule.flat_subdivision_fixes_rule"]),
     ("Extensions20261119.AngularRule.hinge_linear", ["Extensions20261119.AngularRule.hinge_linear", "Entropic.Extensions20261119.AngularRule.hinge_linear"]),

@@ -2,6 +2,20 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Response-cell density and the single thermal ladder (2026-11-19, second entry)
+
+`Entropic/Extensions20261119/CellDensity` and `Polarizations` (12 theorems) formalize the statements added to O.3 and
+N.8 of the full paper on 19 November 2026. `CellDensity`: the O.3 equipartition density gives half a `k_BT_H` per cell
+equal to the mutual field energy (`half_theta_mutual`); with the lever and the register grip, the grip of one cell is
+`(4π/g) ħc/L_* / C_E(x)`, so in the deep regime every cell grips the baryonic field with `1.694 ħc/L_*` (`cell_grip`);
+the density over the bulk density of horizon nats is `(2/3)ε²x⁴n(1+n)` (`horizon_fraction`), and `x⁴n(1+n) ≤ 24`
+(`x4_einstein_le`) keeps it below one for `ε ≤ 1/5` (`horizon_bound`, `eps_le`); the two-polarization thermal tilt
+spread is `(1 + 2n)/(εx)` (`tilt_spread`). `Polarizations`: the three rigid-frame responses `1/(1 − e^{−x})`,
+`coth(x/2)` and `coth x` (`one_ladder`, `two_ladders`, `two_ladders_coth`, `zero_m`) and the factor four in the deep
+scale (`deep_scale`). Ledger: new rows C05-86 and C05-87. Built with the pinned Lean 4.35.0 against the Mathlib cache;
+the 12 names depend only on `propext`, `Classical.choice` and `Quot.sound`. The equipartition matching of O.3, the
+single ladder per cell and the SPARC comparison are inputs.
+
 ## Angular rule, host couplings and cavity ensemble (2026-11-19)
 
 `Entropic/Extensions20261119/` (three modules, 17 theorems) formalizes statements added to the full paper on 18 and
