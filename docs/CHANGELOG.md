@@ -12,7 +12,9 @@ A mass with `2πMcR/ħ` displaced nats has `ħ/(2πcR)` per nat, the N.8 horizon
 `n_nat k_BT_U = g²/(4πG)` (`holographic_equipartition`). Ledger: new rows C05-88 and C05-89; C05-87 note updated. The
 full paper is synced to the version in which N.8 derives the half unit from the O.3 half-Θ rule read per
 polarization, with the abundance and SPARC measurements, and Section 20 reads single occupancy through the horizon
-nats of N.8 and the per-defect exclusivity of Section 3.2. Built with `lake env lean` against the Mathlib cache. The equipartition identification, single occupancy and
+nats of N.8 and the per-defect exclusivity of Section 3.2. A consistency sweep then updated the O.3 field-unit sentence,
+the premise of the Section 15 RAR derivation and the per-ladder counting of Section 20, and the premise sentences of
+the compact paper (with one sentence on the cap) and of the empirical-results paper (sections 1 and 2). Built with `lake env lean` against the Mathlib cache. The equipartition identification, single occupancy and
 the numerical measurements `λqm = 0.997 ± 0.012` and `qm = 0.991 ± 0.029` are inputs or data.
 
 ## Response-cell density and the single thermal ladder (2026-11-19, second entry)
