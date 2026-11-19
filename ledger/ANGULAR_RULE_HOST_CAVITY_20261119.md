@@ -32,3 +32,13 @@ the bifurcation line (C10-116, data).
 
 Inputs: the equipartition matching of O.3, the single thermal ladder per cell (a premise in N.8), and the SPARC fits
 that select it (`02 Research/UV origin of carrier and thermal matching 2026-11-19`).
+
+## Addendum: equipartition over the tilt polarizations (19 November 2026, third entry)
+
+| module | content | rows |
+|---|---|---|
+| `Equipartition` | mean mutual field energy per cell `Θ(1+qmn)/(2qλ(1+n))`; equal to `mΘ/2` for every `n` iff `λ = 1`, `qm = 1`; response `1 + n`; displaced nats are horizon nats; `n_nat k_BT_U = g²/(4πG)` | C05-88, C05-89 |
+
+The equipartition identification, single occupancy of displaced nats and the numerical measurements of `λqm` and `qm`
+are inputs or data, not formalized.
+

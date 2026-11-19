@@ -4,7 +4,7 @@ Current versions of the four papers, synced from the author's publication set on
 
 | Folder | Paper | PDF | SHA-256 (PDF) |
 |---|---|---|---|
-| [`full/`](full) | Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure | [Entropic_Scalar_EFT.pdf](full/Entropic_Scalar_EFT.pdf) | `e8876d809bfd2d46…` |
+| [`full/`](full) | Entropic Scalar EFT: From Entanglement Microstructure to Gravity and Cosmic Structure | [Entropic_Scalar_EFT.pdf](full/Entropic_Scalar_EFT.pdf) | `82efc760124bb8db…` |
 | [`compact/`](compact) | Entropic Scalar EFT: Microstructure, Gravity, and the Retained Quantum Sector (Compact Derivation) | [Entropic_Scalar_EFT_Compact.pdf](compact/Entropic_Scalar_EFT_Compact.pdf) | `c129b337f8540950…` |
 | [`empirical-results/`](empirical-results) | History-dependent gravity and cosmological release: galaxy, cluster, and cosmological tests against MOND and ΛCDM | [Empirical_Results.pdf](empirical-results/Empirical_Results.pdf) | `05fc51ccaeb5300d…` |
 | [`microstructure-cdt/`](microstructure-cdt) | A microscopic realization of causal triangulations with native matter and clock dynamics | [Microstructure_CDT.pdf](microstructure-cdt/Microstructure_CDT.pdf) | `fb7cc157f127989b…` |
