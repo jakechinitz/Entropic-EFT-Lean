@@ -2,6 +2,15 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Bath temperature and the tightened rigidity requirement (2026-11-19, fifth entry; paper and ledger text only)
+
+Full paper synced. Section 15 states the horizon-bath temperature as a measured quantity, `k_BT = f ħH/2π` with
+`f = 0.997 ± 0.012` at formation (abundance) and `f = 0.99 (+0.07, −0.08)` today (44 SPARC galaxies with ladder
+distances), the exclusion of the surface-gravity temperature of the apparent horizon, and the lag bound `τ < 6.7 Gyr`;
+Section 27.3 cites the bound. N.8 states the abundance-tightened rigidity requirement (`κ = Nεx² ≥ 3.1` at formation)
+and the tested frames (UV-size frames, horizon registers resident in a cell). Ledger C05-90 notes the numbers. No Lean
+source changed.
+
 ## Response ladders and bulk equipartition (2026-11-19, fourth entry)
 
 `Entropic/Extensions20261119/Ladders` (2 theorems): `T_U/T_H = εx²` (`unruh_ratio`), so the harmonic requirement on
