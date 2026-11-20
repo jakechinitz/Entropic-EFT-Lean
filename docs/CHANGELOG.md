@@ -2,6 +2,20 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Cell specification, third epoch of the bath temperature, exact lag bounds (2026-11-20; paper and ledger text only)
+
+Full paper synced (436 pages). N.8 states the specification of the response cell: the sign of the dipole is a thermal
+variable, so the finite-frame numbers are those of a signed axis on the whole sphere; the grip required by the Planck
+ratio is `3.1`, `3.6`, `4.3` under three counts of the density of a finite frame (600, 680, 810 registers) and `6.1`,
+`7.9`, `8.5` for a dipole held at the down-field end; the ladder condition is a condition on participation,
+`N_p = 1/ΣP_i²` in the place of `N`; the terms of the register action between registers do not supply the coordinate.
+Appendix L, Appendix O.3 and the status row of the RAR law point to it. Section 15 adds a third epoch,
+`f = 1.007 (+0.027, −0.023)` at `z = 0.97` from the MOND-based fit of the MUSE sample (`1.08` and `1.10` from the
+dark-halo decompositions of the same galaxies), and states the lag exactly: `τ < 4.1 Gyr` at `z = 0` (the earlier
+`6.7 Gyr` was first order in the lag) and `τ < 0.66 Gyr` at `z = 0.97`, both for a static baryonic field. Section 27.3
+cites the bounds. The source also carries two wording changes in the colour sector made in the author's workspace on
+19 November. Ledger C05-90 notes the numbers. No Lean source changed.
+
 ## Bath temperature and the tightened rigidity requirement (2026-11-19, fifth entry; paper and ledger text only)
 
 Full paper synced. Section 15 states the horizon-bath temperature as a measured quantity, `k_BT = f ħH/2π` with
