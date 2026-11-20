@@ -2,6 +2,20 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Direction of stock exchange as a conditional result; required relaxation rate (2026-11-20, third entry; paper text only)
+
+Full paper synced (441 pages). Appendix O.3 has a new paragraph, "Direction of a single exchange". The effective theory
+postulates a constraint at each spherical surface: the enclosed stock equals the total tilt occupation assigned to the
+surface. Given that and the bath rates of the ladder, the outward affinity of a prepared state is `x - ln(1+1/n)` for
+every configuration of the cells: `-0.205` and `+0.018` at enclosed stock 2 and 5 for `x = 0.2`, zero at `4.517`.
+Conserved positive stock on a radial lattice relaxes to the capped law from both sides. The result needs unbounded
+occupation by units without identity. A packet-carried oscillator and the director stiffness do not supply the sign,
+and the specified transfer supplies neither the tilt number operator nor the constraint. The status row "Stock
+selection" reads "stock occupation postulated". Section 15 states that the three bath-temperature epochs hold under
+that identification, and that the lag bounds for a static baryonic field require relaxation faster than the mode
+frequency by `26` (`x = 3`) and `390` (`x = 0.2`) at `z = 0.97` and by `7` and `110` today, so the ladder rates fix the
+direction of exchange and leave its rate open. No ledger row or Lean source changed.
+
 ## Appendix T: the matter excess and the formation charge (2026-11-20, second entry; paper text only)
 
 Full paper synced (440 pages). New Appendix T states what produces the conserved baryonic charge on which the formation
