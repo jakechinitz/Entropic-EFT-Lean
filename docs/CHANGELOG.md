@@ -2,6 +2,68 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Direction of stock exchange as a conditional result; required relaxation rate (2026-11-20, third entry; paper text only)
+
+Full paper synced (441 pages). Appendix O.3 has a new paragraph, "Direction of a single exchange". The effective theory
+postulates a constraint at each spherical surface: the enclosed stock equals the total tilt occupation assigned to the
+surface. Given that and the bath rates of the ladder, the outward affinity of a prepared state is `x - ln(1+1/n)` for
+every configuration of the cells: `-0.205` and `+0.018` at enclosed stock 2 and 5 for `x = 0.2`, zero at `4.517`.
+Conserved positive stock on a radial lattice relaxes to the capped law from both sides. The result needs unbounded
+occupation by units without identity. A packet-carried oscillator and the director stiffness do not supply the sign,
+and the specified transfer supplies neither the tilt number operator nor the constraint. The status row "Stock
+selection" reads "stock occupation postulated". Section 15 states that the three bath-temperature epochs hold under
+that identification, and that the lag bounds for a static baryonic field require relaxation faster than the mode
+frequency by `26` (`x = 3`) and `390` (`x = 0.2`) at `z = 0.97` and by `7` and `110` today, so the ladder rates fix the
+direction of exchange and leave its rate open. No ledger row or Lean source changed.
+
+## Appendix T: the matter excess and the formation charge (2026-11-20, second entry; paper text only)
+
+Full paper synced (440 pages). New Appendix T states what produces the conserved baryonic charge on which the formation
+map of O.15 acts. T.1: the specified transfer has no reaction that changes baryon or lepton number, and its closure
+weights, gluing characters and renewal channel carry no CP-odd bias. T.2: a conditional completion with an added
+pseudoscalar and scalar triplet gives the lepton-number-violating coefficient
+`κ_W(F) = κ_ν R(F)[1 + iς a_CP (1 − F)]`, whose interference invariant is proportional to `ς a_CP (F₁ − F₂)`. T.3: two
+coupling sets reach `η_B = 6.1e-10` at fitted `a_CP = 2.17` and `3.27`; the yield is zero at `a_CP = 0`, reverses with
+`ς`, and runs from `1.60` to `−2.26` of the reference as the starting temperature goes from `1.0` to `2.0 T_c`, so the
+excess is a fit in the coupling and the thermal history. T.4: the handedness operator `q = J₁·(J₂×J₃)` of the spin-3
+cell gives the exact response `−(C_j/3)⟨q⟩ d(1−r)³/dt` with `C_3 = 45/16807`; its sign depends on the record kernel.
+T.5: the ratio of committed stock to baryonic mass holds for any value of the excess. O.15, Section 20 and the status
+table point to the appendix; six references added. The ledger does not yet extract Appendix T. No Lean source changed.
+
+## Cell specification, third epoch of the bath temperature, exact lag bounds (2026-11-20; paper and ledger text only)
+
+Full paper synced (436 pages). N.8 states the specification of the response cell: the sign of the dipole is a thermal
+variable, so the finite-frame numbers are those of a signed axis on the whole sphere; the grip required by the Planck
+ratio is `3.1`, `3.6`, `4.3` under three counts of the density of a finite frame (600, 680, 810 registers) and `6.1`,
+`7.9`, `8.5` for a dipole held at the down-field end; the ladder condition is a condition on participation,
+`N_p = 1/ΣP_i²` in the place of `N`; the terms of the register action between registers do not supply the coordinate.
+Appendix L, Appendix O.3 and the status row of the RAR law point to it. Section 15 adds a third epoch,
+`f = 1.007 (+0.027, −0.023)` at `z = 0.97` from the MOND-based fit of the MUSE sample (`1.08` and `1.10` from the
+dark-halo decompositions of the same galaxies), and states the lag exactly: `τ < 4.1 Gyr` at `z = 0` (the earlier
+`6.7 Gyr` was first order in the lag) and `τ < 0.66 Gyr` at `z = 0.97`, both for a static baryonic field. Section 27.3
+cites the bounds. The source also carries two wording changes in the colour sector made in the author's workspace on
+19 November. Ledger C05-90 notes the numbers. No Lean source changed.
+
+## Bath temperature and the tightened rigidity requirement (2026-11-19, fifth entry; paper and ledger text only)
+
+Full paper synced. Section 15 states the horizon-bath temperature as a measured quantity, `k_BT = f ħH/2π` with
+`f = 0.997 ± 0.012` at formation (abundance) and `f = 0.99 (+0.07, −0.08)` today (44 SPARC galaxies with ladder
+distances), the exclusion of the surface-gravity temperature of the apparent horizon, and the lag bound `τ < 6.7 Gyr`;
+Section 27.3 cites the bound. N.8 states the abundance-tightened rigidity requirement (`κ = Nεx² ≥ 3.1` at formation)
+and the tested frames (UV-size frames, horizon registers resident in a cell). Ledger C05-90 notes the numbers. No Lean
+source changed.
+
+## Response ladders and bulk equipartition (2026-11-19, fourth entry)
+
+`Entropic/Extensions20261119/Ladders` (2 theorems): `T_U/T_H = εx²` (`unruh_ratio`), so the harmonic requirement on
+a locked group reads as its summed Unruh grip exceeding about `2.5 k_BT_H`; bulk-equipartition counts, `E/(½k_BT)`, of
+the mutual field at `T_H` and of the baryonic field at `T_U` give `n(1+n)εx²` ladders per displaced nat, the O.3
+density (`ladders_per_nat`). Ledger: new row C05-90. The full paper is synced to the version in which N.8 states the
+measured rigidity requirement and identifies the equipartition premise with bulk equipartition (Padmanabhan 2012),
+and Section 20 restricts single occupancy to each source's own commitment (38 SPARC points exceed 1 + 1/ε). J.14 now
+reports the vertex-order alternation at the registered 32k and 64k volumes and that the published bifurcation line runs
+nearly parallel to the α = 7 count line.
+
 ## Equipartition over the tilt polarizations (2026-11-19, third entry)
 
 `Entropic/Extensions20261119/Equipartition` (5 theorems). For `m` tilt polarizations, `q` field units per quantum and

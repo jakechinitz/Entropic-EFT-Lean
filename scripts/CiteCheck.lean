@@ -20,6 +20,8 @@ open Lean in
     ("Extensions20261119.Equipartition.mean_response", ["Extensions20261119.Equipartition.mean_response", "Entropic.Extensions20261119.Equipartition.mean_response"]),
     ("Extensions20261119.Equipartition.displaced_nat_mass", ["Extensions20261119.Equipartition.displaced_nat_mass", "Entropic.Extensions20261119.Equipartition.displaced_nat_mass"]),
     ("Extensions20261119.Equipartition.holographic_equipartition", ["Extensions20261119.Equipartition.holographic_equipartition", "Entropic.Extensions20261119.Equipartition.holographic_equipartition"]),
+    ("Extensions20261119.Ladders.unruh_ratio", ["Extensions20261119.Ladders.unruh_ratio", "Entropic.Extensions20261119.Ladders.unruh_ratio"]),
+    ("Extensions20261119.Ladders.ladders_per_nat", ["Extensions20261119.Ladders.ladders_per_nat", "Entropic.Extensions20261119.Ladders.ladders_per_nat"]),
     ("Extensions20261119.AngularRule.bFlat_eq_bH", ["Extensions20261119.AngularRule.bFlat_eq_bH", "Entropic.Extensions20261119.AngularRule.bFlat_eq_bH"]),
     ("Extensions20261119.AngularRule.flat_subdivision_fixes_rule", ["Extensions20261119.AngularRule.flat_subdivision_fixes_rule", "Entropic.Extensions20261119.AngularRule.flat_subdivision_fixes_rule"]),
     ("Extensions20261119.AngularRule.hinge_linear", ["Extensions20261119.AngularRule.hinge_linear", "Entropic.Extensions20261119.AngularRule.hinge_linear"]),
