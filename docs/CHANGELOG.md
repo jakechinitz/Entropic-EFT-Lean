@@ -2,6 +2,20 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Appendix T: the matter excess and the formation charge (2026-11-20, second entry; paper text only)
+
+Full paper synced (440 pages). New Appendix T states what produces the conserved baryonic charge on which the formation
+map of O.15 acts. T.1: the specified transfer has no reaction that changes baryon or lepton number, and its closure
+weights, gluing characters and renewal channel carry no CP-odd bias. T.2: a conditional completion with an added
+pseudoscalar and scalar triplet gives the lepton-number-violating coefficient
+`κ_W(F) = κ_ν R(F)[1 + iς a_CP (1 − F)]`, whose interference invariant is proportional to `ς a_CP (F₁ − F₂)`. T.3: two
+coupling sets reach `η_B = 6.1e-10` at fitted `a_CP = 2.17` and `3.27`; the yield is zero at `a_CP = 0`, reverses with
+`ς`, and runs from `1.60` to `−2.26` of the reference as the starting temperature goes from `1.0` to `2.0 T_c`, so the
+excess is a fit in the coupling and the thermal history. T.4: the handedness operator `q = J₁·(J₂×J₃)` of the spin-3
+cell gives the exact response `−(C_j/3)⟨q⟩ d(1−r)³/dt` with `C_3 = 45/16807`; its sign depends on the record kernel.
+T.5: the ratio of committed stock to baryonic mass holds for any value of the excess. O.15, Section 20 and the status
+table point to the appendix; six references added. The ledger does not yet extract Appendix T. No Lean source changed.
+
 ## Cell specification, third epoch of the bath temperature, exact lag bounds (2026-11-20; paper and ledger text only)
 
 Full paper synced (436 pages). N.8 states the specification of the response cell: the sign of the dipole is a thermal
