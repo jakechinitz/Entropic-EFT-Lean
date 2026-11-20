@@ -2,6 +2,26 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## The response cell stated once as a postulate (2026-11-20, fifth entry; paper text only)
+
+Full paper synced (441 pages). N.8 has a new paragraph, "The response cell as postulated": one postulated object, a
+locked group of registers whose tilt is a harmonic ladder of gap `x_P k_B T_H`, and four properties (unbounded
+occupation by quanta without identity; Gibbons-Hawking weights on each time slice; one quantum per baryonic field unit
+at the O.3 cell density; total occupation on a spherical surface equal to the enclosed stock). The exponential law,
+`a_0 = eps c H`, the cap and the direction of stock exchange follow from them, and the specified transfer supplies none
+of the four. The three counting rules and two sign cases for the rigidity requirement are merged into one range,
+summed grip 3.1 to 8.5 at formation (600 to 1620 registers). The Section 15 growth clause is qualified: first order in
+the lag, with a finite-delay branch only for growth by two orders of magnitude. No ledger row or Lean source changed.
+
+## Consolidation of Section 15 and O.3 (2026-11-20, fourth entry; paper text only)
+
+Full paper synced (441 pages). Section 15 states that the effective theory applies the Gibbons-Hawking weights to the
+response cell on each time slice, and that a state re-established by relaxation would appear as a lag of `a_0(z)`
+behind `H(z)`. The growth clause now says the fit is two-sided and the bound on the lag lapses only where the growth
+term cancels the Hubble term, in windows of growth rate narrower than 3% at different rates for different fields.
+The O.3 paragraph on the direction of exchange is shortened: the lattice numbers and the separate accounts of
+alternatives are reduced to three sentences. N.8 was not consolidated in this pass. No ledger row or Lean source changed.
+
 ## Direction of stock exchange as a conditional result; required relaxation rate (2026-11-20, third entry; paper text only)
 
 Full paper synced (441 pages). Appendix O.3 has a new paragraph, "Direction of a single exchange". The effective theory
