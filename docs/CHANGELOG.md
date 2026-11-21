@@ -2,6 +2,24 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Transport numbers verified and corrected (2026-11-21; paper text and ledger only)
+
+Full, compact and empirical-results papers synced (442, 48 and 59 pages). The transport numbers of the sixth entry
+of 2026-11-20 were checked under a rule written before the check (RULE_56). The driver reproduces a stored run of the
+original selection code exactly and all seeds rerun identically. Three statements were wrong and are replaced in the
+O.3 paragraph "Transport rate and the lag bound", Section 15, Section 27.1 and the status table of the full paper, and
+in the compact and empirical-results papers, which had received the first-pass numbers.
+Step times against a paired fixed-scale branch (eight seeds): 0.25, 0.38, 0.49, 0.89, 1.6, 3.1, 4.2 Gyr at 5 to
+200 kpc at one proposal per orbit and 0.12 to 2.2 Gyr at three (the first-pass outer values were short by factors of
+1.5 to 3.5). The Section 15 bound is `a_fit = εcH(t − 0.66 Gyr)`, an 11% excess of the fitted scale, and a step time
+is not that `τ`: with `a₀ = εcH(t)` followed from a settled state the fitted scale at `z = 0.97` equals its
+fixed-scale value within 1% from 10 to 50 kpc and exceeds it by 9% and 30% at 100 and 200 kpc (the first pass had
+11, 24, 44% at 50, 100, 200 kpc). The statement that inner kinematics bound the contact amplitude at about one
+proposal per orbit is withdrawn. N.8: the gap is within 0.7%, and the paramagnet occupation is that of two-level
+registers. Ledger row C05-92 and its extraction entry rewritten; correction table added to
+`ledger/GALACTIC_TRANSPORT_20261120.md`. No Lean file changed. The compact and empirical-results sources also carry
+a cross-paper sweep made by another agent on the same day. Not checked by a fresh instance.
+
 ## Stock transport and the lag bound; the cell count as a state count (2026-11-20, sixth entry)
 
 Full paper synced (441 pages). Section 15: the conclusion that a weak bath cannot track and that the rate is free is

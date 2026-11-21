@@ -6,9 +6,7 @@ and cosmological energy transfer. The calculations use the same
 microscopic entropy and conversion fraction in every sector, so a change
 of either coefficient moves several observables at once.
 
-Against MOND, the retained stock supplies the cluster mass, the LMC mass
-inferred from its stream, the vertical gravity of the NGC~628 old disk,
-and a fit to the acoustic spectra. MOND fits the isolated-lens profiles
+In the seven X-COP clusters with stellar profiles, the coextensive stock budget accounts for a median of 91\% of the hydrostatic mass at $R_{500}$. The stock model also recovers the LMC mass inferred from its stream and the vertical gravity of the NGC~628 old disk, and fits the acoustic spectra. MOND fits the isolated-lens profiles
 better, predicted the Crater II dispersion in advance, shares the
 rotation-curve law, and fits SPARC with a lower $\chi^2$ when its $a_0$ is
 fitted. Against \LCDM, the stock model matches the cosmological
@@ -32,8 +30,7 @@ Finite face and cell ensemble
 evidence measure define the ensemble. \\
 Horizon and transverse response
 & $\epsilon=g/(2\pi)^2$; $a_0=\epsilon cH$; Bose response.
-& The tilt-mode pendulum length $\ell=g\,c/H$ in the horizon bath connects the
-count to acceleration and fixes the mode energy. \\
+& The pendulum length $\ell=g\,c/H$ fixes the tilt energy at a given baryonic field. The response law assigns the horizon-temperature weight to each level on each time slice. \\
 Retained galactic stock
 & An inertial positive mass component, inherited by carriers and
 transported by collisionless evolution.
@@ -111,7 +108,7 @@ constant problem.
 
 \subsection{Scope of the verification}
 
-The integrated Lean 4.35.0 library contains 160 modules and 2,937 audited theorem
+The 29 October 2026 snapshot of the integrated Lean 4.35.0 library contains 160 modules and 2,937 audited theorem
 constants, including its legacy sublibrary. The manuscript ledger records
 874 statements as proved, 90 in part, 153 as physical premises, 64 as
 data comparisons, and 19 as simulation outputs. Its other entries
@@ -219,6 +216,10 @@ G12 & \path{02 Research/Highest-leverage tensions 2026-10-28}: \path{lensing/},
 Isolated-lens population forward model with support-limited stock, and
 the satellite support assignment for the classical dwarfs, with
 independent review. \\
+G13 & \path{evidence/stock_transport/}. Eight-seed step responses with
+paired fixed-scale controls, and the response to $a_0=\epsilon cH(t)$
+from a settled state, for the spherical Milky Way benchmark
+in Section~\ref{sec:stocklags}. \\
 C1 & \path{02 Research/Full Planck tied abundance/model.py},
 \path{RESULTS.md}, and \path{fits_lenscorr.jsonl} in that folder;
 \path{02 Research/Dark energy prediction tests/common.py}.

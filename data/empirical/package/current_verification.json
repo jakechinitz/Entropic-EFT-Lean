@@ -294,9 +294,100 @@
       "quoted": 68.42,
       "tolerance": 0.0051,
       "pass": true
+    },
+    {
+      "name": "Controlled stock step time at 5 kpc, 1.0 proposals per orbit",
+      "value": 0.25302007734829307,
+      "quoted": 0.25,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "name": "Controlled stock step time at 10 kpc, 1.0 proposals per orbit",
+      "value": 0.3785136576045267,
+      "quoted": 0.38,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "name": "Controlled stock step time at 20 kpc, 1.0 proposals per orbit",
+      "value": 0.48918365228849636,
+      "quoted": 0.49,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "name": "Controlled stock step time at 5 kpc, 3.0 proposals per orbit",
+      "value": 0.12114045738384499,
+      "quoted": 0.12,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "name": "Controlled stock step time at 10 kpc, 3.0 proposals per orbit",
+      "value": 0.14373429946295047,
+      "quoted": 0.14,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "name": "Controlled stock step time at 20 kpc, 3.0 proposals per orbit",
+      "value": 0.23913008692722773,
+      "quoted": 0.24,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    {
+      "name": "Excess over the fixed-scale value at 10 kpc from a settled state, percent",
+      "value": 0.36228196666679474,
+      "quoted": 0.4,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "name": "Excess over the fixed-scale value at 20 kpc from a settled state, percent",
+      "value": -0.0957176184190639,
+      "quoted": -0.1,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "name": "Excess over the fixed-scale value at 30 kpc from a settled state, percent",
+      "value": -1.0502918219555053,
+      "quoted": -1.1,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "name": "Excess over the fixed-scale value at 50 kpc from a settled state, percent",
+      "value": 0.4791518728674319,
+      "quoted": 0.5,
+      "tolerance": 0.05,
+      "pass": true
+    },
+    {
+      "name": "Excess over the fixed-scale value at 100 kpc from a settled state, percent",
+      "value": 8.91827021071486,
+      "quoted": 9,
+      "tolerance": 0.5,
+      "pass": true
+    },
+    {
+      "name": "Excess over the fixed-scale value at 200 kpc from a settled state, percent",
+      "value": 30.254911163743742,
+      "quoted": 30,
+      "tolerance": 0.5,
+      "pass": true
+    },
+    {
+      "name": "Observational limit at z = 0.97 as an excess of the fitted scale, percent",
+      "value": 10.605884996193282,
+      "quoted": 11,
+      "tolerance": 0.5,
+      "pass": true
     }
   ],
-  "numeric_checks_passed": 42,
+  "numeric_checks_passed": 55,
   "test_families": [
     "S01",
     "S02",
@@ -315,44 +406,7 @@
     "S12"
   ],
   "references": 50,
-  "labels": 76,
+  "labels": 77,
   "figures": 16,
-  "passed": true,
-  "review_date": "2026-11-08",
-  "coverage_against_old": {
-    "equations": {
-      "old": 70,
-      "current": 70,
-      "removed": []
-    },
-    "references": {
-      "old": 46,
-      "current": 50,
-      "removed": []
-    },
-    "labels": {
-      "old": 53,
-      "current": 76,
-      "removed": []
-    }
-  },
-  "pdf_pages": 58,
-  "pdf_sha256": "6079dc5afa14f4528afa81cd329959db15ab82e5f1e4a92f6bafc03908b9163d",
-  "corrections": [
-    "Corrected SPARC no-floor free-NFW versus fitted-MOND BIC gap from 123 to 951.",
-    "Matched the headline LCDM score to its saved paired run (2239.026) and used the unrounded fits for delta BIC (-14.53).",
-    "Identified common nuisance parameters separately from extra gravity/halo parameters.",
-    "Separated matched likelihood fits from literature and inferred-mass benchmarks.",
-    "Restored lensing uncertainty components, reference-normalization disk scores and evidence-register source key.",
-    "Restored all three QUMOND flux variants in the expanded LMC figure.",
-    "Corrected the scoreboard SPARC label from best chi-square to BIC preference with the 5 km/s floor.",
-    "Identified the illustrative redshift background and the marginal-error envelope.",
-    "Removed an unsupported numerical uncertainty band around the vacuum-density reference.",
-    "Made comparison-figure generation portable and included exact saved evidence.",
-    "Rebuilt the current source archive, README, verification record and hashes.",
-    "Fixed the SPARC table overflow and the R500 PDF bookmark."
-  ],
-  "historical_review": "evidence/legacy_review/current_verification.json",
-  "original_snapshot": "Previous PDFs/20261108_pre_pareto_review",
-  "scope_limit": "Preservation, saved-result arithmetic, provenance, packaging and layout. This review does not certify every physical premise or rerun simulations and likelihood optimizations."
+  "passed": true
 }
