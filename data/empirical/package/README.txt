@@ -1,5 +1,5 @@
 EMPIRICAL RESULTS: HISTORY-DEPENDENT GRAVITY AND COSMOLOGICAL RELEASE
-Current edition: November 8, 2026, three-theory comparison with Pareto review.
+Current edition: November 21, 2026. Three-theory comparison and radial stock transport.
 
 CONTENTS
 Empirical_Results.tex and its numbered inputs are the current manuscript.
@@ -32,6 +32,8 @@ From the Sol and Fable workspace:
 The helper preserves the prior PDF and keeps compiler files in 05 Build Files.
 For a standalone copy, run pdflatex on Empirical_Results.tex until references
 settle (normally two or three passes). The supplied figures require no Python.
+
+The stock_transport evidence folder contains the saved step and drift results, their protocols and the interpretation of the fixed-scale offset, and the verification of November 21 (verify_results.json with its rule and note), whose values the manuscript quotes.
 
 EVIDENCE AND REPRODUCIBILITY SCOPE
 evidence/three_theory contains exact copies of the saved X1-X3 output files and
