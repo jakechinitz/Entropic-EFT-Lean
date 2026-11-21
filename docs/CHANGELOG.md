@@ -2,6 +2,26 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Stock transport and the lag bound; the cell count as a state count (2026-11-20, sixth entry)
+
+Full paper synced (441 pages). Section 15: the conclusion that a weak bath cannot track and that the rate is free is
+replaced. Renewal sets the weights on each slice (new H.4 paragraph: maximum path entropy with slice-dependent
+marginals redraws per slice), so the measured lag bounds the transport of stock. New O.3 paragraph "Transport rate and
+the lag bound": the contact dynamics run with `a₀(t)` follows a step in `a₀` within 0.29, 0.59, 0.59 Gyr at 5, 10,
+20 kpc at one proposal per orbital period, meeting the bound 0.66 Gyr at `z = 0.97` inside 20 kpc, and inside 100 kpc
+at three; with `a₀ = εcH(t)` the outer fitted scale at `z = 0.97` exceeds `εcH` by 11, 24, 44% at 50, 100, 200 kpc.
+The contact amplitude is bounded from below by the lag bound (O.3 premises, status row Stock selection); Section 27.1
+gains a fifth stock-selection test, the outward rise of the fitted scale at `z ≃ 1`. O.3 states the count as the
+orientation count of one headless register times the field energy in units of `k_BT_U`. New N.8 paragraph "The
+capacity factor and the identity of registers": at fixed one-cell state no one-cell field term on the residual
+factor responds; a correlation-only ladder needs supplied terms; the rigid frame requires identical registers.
+
+New module `Entropic/Extensions20261120/CellCount.lean`: `register_state_count`, `field_energy_count`,
+`cell_density_count`, `one_cell_mean` (classical finite form). Ledger rows C05-91 (proved) and C05-92 (numerical),
+addendum `ledger/GALACTIC_TRANSPORT_20261120.md`, four names added to `scripts/CiteCheck.lean`. The module was written
+without a local Lean toolchain and is checked by CI only. Not formalized: the trace form, the H.4 entropy bound,
+the exact diagonalizations and every transport number. No result of 20 November has been checked by a fresh instance.
+
 ## The response cell stated once as a postulate (2026-11-20, fifth entry; paper text only)
 
 Full paper synced (441 pages). N.8 has a new paragraph, "The response cell as postulated": one postulated object, a

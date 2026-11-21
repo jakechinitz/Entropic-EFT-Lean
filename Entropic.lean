@@ -170,3 +170,5 @@ import Entropic.Extensions20261119.CellDensity
 import Entropic.Extensions20261119.Polarizations
 import Entropic.Extensions20261119.Equipartition
 import Entropic.Extensions20261119.Ladders
+-- Cell count as a register state count; one-cell means at fixed marginals, 2026-11-20.
+import Entropic.Extensions20261120.CellCount
