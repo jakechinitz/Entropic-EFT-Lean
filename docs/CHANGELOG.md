@@ -11,7 +11,8 @@ order: 0.061 +- 0.008, 0.082 +- 0.008, 0.075 +- 0.006 at 16k, 64k, 128k; largest
 0.0303, 0.0205, growing as N_4^0.59. Registered reading NO GROWTH (1.9 combined errors against the threshold 2;
 block errors at 64k and 128k are lower bounds). No condensation at 128k. Reported-only Newton ratios 1.00 (64k,
 stationary) and 1.04 (128k, not stationary), inside the J.14 band. Section 24.10, Appendix J.14 and the status row
-updated. No ledger row or Lean source changed.
+updated. The abstract loses one sentence, "These tests are small and do not yet measure Newton's constant.", which
+could be read as covering the registered connected-host normalization. No ledger row or Lean source changed.
 
 ## Transport numbers verified and corrected (2026-11-21; paper text and ledger only)
 
