@@ -14,6 +14,13 @@ stationary) and 1.04 (128k, not stationary), inside the J.14 band. Section 24.10
 updated. The abstract loses one sentence, "These tests are small and do not yet measure Newton's constant.", which
 could be read as covering the registered connected-host normalization. No ledger row or Lean source changed.
 
+Third pass, same day (full, compact and CDT papers; 442, 48 and 47 pages). The published line is refitted with its
+finite-size form: at 128k it lies at 0.337 +- 0.006, above the host coupling by 0.011, a margin comparable to the 0.01
+uncertainty of the published points. The full paper now states that margin, gives all three continuation ratios
+(0.858, 1.001, 1.045; the 128k window fails stationarity and the width gate), and leaves the phase at 2e5 and above
+open; its earlier wording placed 128k plainly beyond the crossing. The compact paper (Section 15.3) and the CDT paper
+(new paragraph "Logged continuation and the bifurcation boundary", two tables, two references) carry the same result.
+
 ## Transport numbers verified and corrected (2026-11-21; paper text and ledger only)
 
 Full, compact and empirical-results papers synced (442, 48 and 59 pages). The transport numbers of the sixth entry
