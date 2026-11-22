@@ -2,6 +2,25 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## CDT host phase at 128k: registered reading no growth (2026-11-22; paper text only)
+
+Full paper synced (442 pages). The logged continuation of the alpha = 7 runs (RULE_15, fixed before the runs)
+extends the 16k and 64k runs by 200,000 sweeps and grows the 64k state to N_41 = 128,000, beyond the crossing the
+fitted bifurcation line places near 1.1e5 at the host coupling. Mean central-window alternation of the largest vertex
+order: 0.061 +- 0.008, 0.082 +- 0.008, 0.075 +- 0.006 at 16k, 64k, 128k; largest order as a fraction of N_4: 0.0493,
+0.0303, 0.0205, growing as N_4^0.59. Registered reading NO GROWTH (1.9 combined errors against the threshold 2;
+block errors at 64k and 128k are lower bounds). No condensation at 128k. Reported-only Newton ratios 1.00 (64k,
+stationary) and 1.04 (128k, not stationary), inside the J.14 band. Section 24.10, Appendix J.14 and the status row
+updated. The abstract loses one sentence, "These tests are small and do not yet measure Newton's constant.", which
+could be read as covering the registered connected-host normalization. No ledger row or Lean source changed.
+
+Third pass, same day (full, compact and CDT papers; 442, 48 and 47 pages). The published line is refitted with its
+finite-size form: at 128k it lies at 0.337 +- 0.006, above the host coupling by 0.011, a margin comparable to the 0.01
+uncertainty of the published points. The full paper now states that margin, gives all three continuation ratios
+(0.858, 1.001, 1.045; the 128k window fails stationarity and the width gate), and leaves the phase at 2e5 and above
+open; its earlier wording placed 128k plainly beyond the crossing. The compact paper (Section 15.3) and the CDT paper
+(new paragraph "Logged continuation and the bifurcation boundary", two tables, two references) carry the same result.
+
 ## Transport numbers verified and corrected (2026-11-21; paper text and ledger only)
 
 Full, compact and empirical-results papers synced (442, 48 and 59 pages). The transport numbers of the sixth entry

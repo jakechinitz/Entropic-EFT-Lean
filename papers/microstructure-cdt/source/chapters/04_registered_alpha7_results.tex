@@ -80,6 +80,96 @@ after removing the active small-sample correction floor, gives
 $R=1.179,1.022,0.973$ for A2, A4 and A5. These are exploratory estimator
 checks; the local-stiffness values above determine the registered result.
 
+\paragraph{Logged continuation and the bifurcation boundary.}
+The published transition between the bifurcation and de~Sitter phases of
+the bare CDT measure at $\kappa_0=2.2$ and $80$ slices moves to larger
+$\Delta$ as the volume grows, with pseudo-critical values $0.22$, $0.30$,
+$0.34$ and $0.355\pm0.01$ at $N_{41}=40$k, 80k, 140k and 160k
+\cite{coumbe,higherorder}. The published finite-size form
+$\Delta_c(N)=\Delta_c(\infty)-AN^{-1/\gamma}$ with $\gamma=2.71$, fitted to
+these four values with errors $0.01$, gives
+$\Delta_c(\infty)=0.552\pm0.024$ and reaches the host value
+$\Delta=0.326$ at $N_{41}\simeq1.1\times10^5$. The registered volumes lie
+above the fitted boundary by $0.24$, $0.13$ and $0.05$ at 16k, 32k and
+64k, on the de~Sitter side. The connected patches reproduce the plain CDT
+weight exactly, so the published scaling applies to this measure, and it
+places the host couplings in the bifurcation phase at large volume.
+
+A logged continuation samples the first volume beyond the fitted
+crossing. Its windows and reading were fixed before the runs. It extends
+A2 and A5 by $200{,}000$ sweeps each and grows the final A5 state to
+$N_{41}=128{,}000$, where it runs for $300{,}000$ sweeps. All $140$ engine
+audits pass. At 128k the fitted boundary lies at
+$\Delta=0.337\pm0.006$, above the host value by $0.011$, a margin
+comparable to the $0.01$ uncertainty of the published points.
+
+The published order parameter of the transition compares the largest
+vertex order of neighboring slices \cite{coumbe}. Let $O(t)$ be the
+largest vertex order in slice $t$. The central window is the run of
+consecutive slices around the slice with the most vertices whose vertex
+counts are at least half of that maximum, trimmed to an even length. The
+alternation is
+\[
+ q=\frac{\bigl|\sum_i(-1)^iO(t_i)\bigr|}{\sum_iO(t_i)},
+\]
+with the sums over the window. Checkpoints every $2{,}500$ sweeps, after
+the first $20{,}000$ new sweeps at 16k and 64k and after the first
+$50{,}000$ sweeps at the 128k target, give the following means, with
+errors from ten blocks.
+
+\begin{center}
+\small
+\begin{tabular}{lrrll}
+\hline
+Run & $N_{41}$ & Checkpoints & $\overline q$ & $\overline{O_{\max}/N_4}$\\
+\hline
+A2 continued & 16,000 & 72 & $0.061\pm0.008$ & $0.0493\pm0.0011$\\
+A5 continued & 64,000 & 72 & $0.082\pm0.008$ & $0.0303\pm0.0006$\\
+B128 & 128,000 & 100 & $0.075\pm0.006$ & $0.0205\pm0.0003$\\
+\hline
+\end{tabular}
+\end{center}
+
+The registered reading is no growth. The 64k mean exceeds the 16k mean by
+$1.9$ combined errors, below the registered threshold of two, and the
+128k mean lies below the 64k mean. The largest order grows as
+$N_4^{0.59}$, slower than the volume, so no vertex condenses. The
+registered bifurcation criterion, $\overline q\geq0.15$ at 128k with the
+largest order growing at least as $N_4^{0.90}$, fails on both counts. In
+the 64k and 128k runs the sign of the alternation never changes, and both
+runs descend from one 64k state, so their block errors are lower bounds.
+The 128k mean exceeds the 16k mean by $1.4$ combined errors, and the 16k
+point lies $0.24$ above the fitted boundary.
+
+The last $200{,}000$ sweeps of each continuation run give reported-only
+ratios.
+
+\begin{center}
+\small
+\begin{tabular}{lrrrl}
+\hline
+Run & $N_{41}$ & $R$ & $\sigma_{\ln R}$ & Blob eligibility\\
+\hline
+A2 continued & 16,000 & 0.858 & 0.059 & Pass\\
+A5 continued & 64,000 & 1.001 & 0.061 & Pass\\
+B128 & 128,000 & 1.045 & 0.045 & Drifting, width $11.9$\\
+\hline
+\end{tabular}
+\end{center}
+
+All three ratios lie inside the agreement band. Successive windows of one
+run differ by $0.21$ in $\ln R$ at 16k and by $0.11$ at 64k, more than the
+jackknife error of a single window, so the scatter between windows sets
+the uncertainty of a reported-only value. The 128k window fails
+stationarity in $\widetilde s_0$ at $|z|=3.8$, and its width exceeds the
+registered maximum $K/8=10$. No reading was fixed in advance for these
+ratios.
+
+The phase at larger volume is open. The fitted boundary exceeds the host
+value by $0.04$ at $N_{41}=2\times10^5$ and by $0.06$ at $2.6\times10^5$,
+and runs at those volumes test whether the boundary of this measure
+follows the published form.
+
 \paragraph{Matter-response status.}
 A separately registered curvature-trace test used two new streams at
 fixed $\kappa_4$, with 64 saved geometries and two source marks per
