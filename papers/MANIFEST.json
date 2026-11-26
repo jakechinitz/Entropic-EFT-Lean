@@ -1,12 +1,12 @@
 {
  "files": {
   "compact/Entropic_Scalar_EFT_Compact.pdf": {
-   "bytes": 620756,
-   "sha256": "1aa4e6792bd1c8edbc2885871c138da5764014a72df2b37e1bc84e2cf6c91737"
+   "bytes": 620916,
+   "sha256": "9af3dff380243473f24f4b9d3aa5cc98ded29a0c8ff74bf5ffa1989fd47897ee"
   },
   "compact/source/Astra Quantum gravity completion compact.tex": {
-   "bytes": 170579,
-   "sha256": "b8526b9419c4a2ade0df1248fa88700b89f0f95db7abe48ea17df5ca86fd5dbe"
+   "bytes": 170744,
+   "sha256": "d09250db7258a3452e779abcd606ccbec541a934037eef46f91bbc7818549087"
   },
   "empirical-results/Empirical_Results.pdf": {
    "bytes": 1375968,
@@ -189,12 +189,12 @@
    "sha256": "1920f96ba15cb6747e8c69c3c1f4965ce00792e2f7cf40b8c813605950158633"
   },
   "full/Entropic_Scalar_EFT.pdf": {
-   "bytes": 2600871,
-   "sha256": "ffb094389fd391f65d924b5591e719c0a8a8e49d5b73e00e87fd372c31b44e2c"
+   "bytes": 2601435,
+   "sha256": "756174663aae193da52750e186f9ef0b87d29fbd5d852ede9bd79d439155beda"
   },
   "full/source/Entropic Scalar EFT.tex": {
-   "bytes": 1558095,
-   "sha256": "93b45925924eb17281a81c66009e746ff3bf1d77ecb9bb2f0aff481e6ebef794"
+   "bytes": 1558754,
+   "sha256": "27b48f437eee058ff35f5e6d4bc3f01c4d8ed325498ba1eb78f6f36978db3028"
   },
   "microstructure-cdt/Microstructure_CDT.pdf": {
    "bytes": 573013,

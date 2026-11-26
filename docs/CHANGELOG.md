@@ -2,7 +2,7 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
-## Q.11: the angular rule as the corner boost of quantized GR (2026-11-26; paper text only)
+## Q.11 corner boost and the finite-capacity premise (2026-11-26)
 
 Full paper Q.11, new paragraph "Corner boosts of quantized general relativity". In Chandrasekaran's Lorentzian
 quantization of vacuum GR on null cones (arXiv:2611.34924, eqs. 4.12, 5.22, 5.23, 5.39, 5.50), corner boosts are
@@ -13,6 +13,14 @@ area sector holds 2^N states: the flat spectrum saturates the Bekenstein-Hawking
 contributes one to his finite corner trace. His corner state is proportional to exp(-A/4G hbar), so its modular flow
 is the boost (an inference; he does not use the term); the lattice Bisognano-Wichmann requirement becomes the
 identification of the coarse bond vacuum with that state. Not checked by a fresh session.
+
+Also (same date): Section 1.1 and the Appendix Q finite-capacity evidence paragraph of the full paper, and input 1 of
+the compact account, state that finite local capacity holds for vacuum causal diamonds in that quantization (finite-
+dimensional Hilbert space, discrete area spectrum, finite corner trace); vacuum only, per-channel area left to the
+cell; abstracts unchanged. Lean: new module `Entropic/Extensions20261126/CornerBoost.lean` (channel_boost_eq_rule,
+channel_full_turn, sector_replica_iff, level_contributes_one; built locally against Lean 4.35.0 and the pinned
+Mathlib, standard axioms only); docstring on `TheoryInputs.finiteCapacity` records the external support and that it
+stays a premise; ledger rows C03-44, C15-50, C06-01; addendum `ledger/CORNER_BOOST_FINITE_CAPACITY_20261126.md`.
 
 ## Black-hole logarithmic correction; R reproduced from raw profiles (2026-11-26; paper text only)
 
