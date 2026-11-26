@@ -19,6 +19,8 @@ Full (444 pages), compact and CDT papers synced. No Lean change.
 - Also carried from the author's workspace (edits of 23 Nov by another session): the 64k and 128k runs described as
   descending from one state with one parity sign (full J.14, compact, CDT chapter 4), the CDT paper's date, and a
   sentence of F.5 citing the angular rule of Q.11 for the Dorau-Much area input (22 Nov).
+- Full paper, Newton coupling stated plainly: abstract (one clause, approved by the author), overview, Section 24.10
+  opening, status-table row. The simulated geometry's Newton coupling matches the coupling fixed by the cell count.
 - Not verified by a fresh session. The photon coefficient is arithmetic on Sen's eq. (1.2) with n_V = 1; the 15% is
   a lattice estimate (Srednicki method, kappa = 0.295).
 
