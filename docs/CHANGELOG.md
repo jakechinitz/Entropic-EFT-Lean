@@ -2,6 +2,26 @@
 
 Dated notes for the Lean library, newest first. They were the opening sections of the README until 2026-11-08.
 
+## Black-hole logarithmic correction; R reproduced from raw profiles (2026-11-26; paper text only)
+
+Full (444 pages), compact and CDT papers synced. No Lean change.
+- Full paper F.6, new paragraph "Logarithmic correction": at fixed channel count each sector has degeneracy exactly
+  2^N, so the channel count adds no ln A_H term. If the host's long-wavelength sector is Einstein gravity with the
+  photon, the one-loop correction is Sen's (arXiv:1205.0971): C = 199/90 with J summed, 77/45 at fixed M and J_z
+  (pure gravity 106/45 and 167/90). Chandrasekaran (arXiv:2611.34924) obtains 106/45 from a Lorentzian quantization
+  of vacuum GR on null cones. The registered ratio G_vol/G_0 bounds a graviton shift of the area coefficient; a
+  separate exterior entanglement term with the cell as cutoff would lower it by about 15%, which the window scatter
+  (0.11 to 0.21 in ln R) does not yet resolve. The logarithm rests on the superposition of channel sectors (Q.11a)
+  and the host's tensor-sector test.
+- Compact: the same conditional statement, with both citations.
+- CDT paper, chapter 4: the registered analysis code, rerun on the raw per-sweep profiles of A2c, A5c and B128,
+  reproduces R = 0.858, 1.001 and 1.045 to the quoted digits; the area-coefficient bound and the conditional log.
+- Also carried from the author's workspace (edits of 23 Nov by another session): the 64k and 128k runs described as
+  descending from one state with one parity sign (full J.14, compact, CDT chapter 4), the CDT paper's date, and a
+  sentence of F.5 citing the angular rule of Q.11 for the Dorau-Much area input (22 Nov).
+- Not verified by a fresh session. The photon coefficient is arithmetic on Sen's eq. (1.2) with n_V = 1; the 15% is
+  a lattice estimate (Srednicki method, kappa = 0.295).
+
 ## CDT host phase at 128k: registered reading no growth (2026-11-22; paper text only)
 
 Full paper synced (442 pages). The logged continuation of the alpha = 7 runs (RULE_15, fixed before the runs)

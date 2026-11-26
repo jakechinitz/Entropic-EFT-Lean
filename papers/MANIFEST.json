@@ -1,12 +1,12 @@
 {
  "files": {
   "compact/Entropic_Scalar_EFT_Compact.pdf": {
-   "bytes": 619666,
-   "sha256": "d23067d8a0c83d7380c5c5a56f6849c3a39ff1f86b450da17df7cf68f1fa65c0"
+   "bytes": 620756,
+   "sha256": "1aa4e6792bd1c8edbc2885871c138da5764014a72df2b37e1bc84e2cf6c91737"
   },
   "compact/source/Astra Quantum gravity completion compact.tex": {
-   "bytes": 169480,
-   "sha256": "2c16b0c4cc7b4ae97ce2ad3c2f44126095874beb62d977a60960d41c4b989d7b"
+   "bytes": 170579,
+   "sha256": "b8526b9419c4a2ade0df1248fa88700b89f0f95db7abe48ea17df5ca86fd5dbe"
   },
   "empirical-results/Empirical_Results.pdf": {
    "bytes": 1375968,
@@ -189,20 +189,20 @@
    "sha256": "1920f96ba15cb6747e8c69c3c1f4965ce00792e2f7cf40b8c813605950158633"
   },
   "full/Entropic_Scalar_EFT.pdf": {
-   "bytes": 2595001,
-   "sha256": "b11136fb18022169ce52486784d53138b435413ae414707c7ef84eff3fb3d023"
+   "bytes": 2599077,
+   "sha256": "aeec5ca92f6edc9befda2b6ccb24033d253b98d100e3a0e13a9c374d4e3978be"
   },
   "full/source/Entropic Scalar EFT.tex": {
-   "bytes": 1553301,
-   "sha256": "f44e0782635f6d733bdac45a35225f66d7c64171149f713d1bf3a100ee519f59"
+   "bytes": 1556058,
+   "sha256": "6f48228de0387783f95b418193d206c0e24bb0b97ded1f06a9fd974cc2ae0c68"
   },
   "microstructure-cdt/Microstructure_CDT.pdf": {
-   "bytes": 571076,
-   "sha256": "5fc6ad5cf21532c693e3f39e0894e0a88d18443ee06a20d4e7fe117afa160f33"
+   "bytes": 573013,
+   "sha256": "749fb1651afceab62791da728c39e6284844c0ba2860057c4c9a1a66cf494d79"
   },
   "microstructure-cdt/source/MICROSTRUCTURE_CDT.tex": {
-   "bytes": 9033,
-   "sha256": "c6a66b82d7e0546152b3f15bc2d581b6e07cae65319c8d73ecf41da6345de0f2"
+   "bytes": 9442,
+   "sha256": "54c67572a8df3649f5236482d896485e27c813f735329c61f2b42af138671798"
   },
   "microstructure-cdt/source/chapters/01_capacity.tex": {
    "bytes": 12392,
@@ -221,8 +221,8 @@
    "sha256": "74f04bc4e2c46bd54b50a2881b5fca213c96084353c7b488b3bd4287dc865dde"
   },
   "microstructure-cdt/source/chapters/04_registered_alpha7_results.tex": {
-   "bytes": 9882,
-   "sha256": "8a18c04e5da0a652ee76a02aeb41e2b38f92b1ba717e357ad2d9aa9181a3fb9a"
+   "bytes": 10601,
+   "sha256": "6af3837b05df1e58bd5193100405ffb13119c0e9200d3403d0ffa114f5eb62e0"
   },
   "microstructure-cdt/source/chapters/05_clock_matter.tex": {
    "bytes": 15002,
@@ -245,5 +245,5 @@
    "sha256": "7b0b92dcec7b31b367b3318e193c90be929beec4909694d551ee3b57ae5d2596"
   }
  },
- "synced": "2026-11-22"
+ "synced": "2026-11-26"
 }

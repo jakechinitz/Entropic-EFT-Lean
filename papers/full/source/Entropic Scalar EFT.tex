@@ -5919,7 +5919,7 @@ S_{\rm BH}=\frac{k_BA}{4L_P^2}.
 On the matched branch $L_P(G_*)=L_*$. The factorized $j=3$ completion
 supplies a definite map between one capacity cut and physical geometric
 area. The semiclassical area law provides the continuum normalization for
-that map. \citet{DorauMuch2026} derive the semiclassical Einstein equations from the Araki--Uhlmann relative entropy of coherent excitations across a bifurcate Killing horizon, with this area law as the one gravitational input. The cut map supplies that input from the cell structure.
+that map. \citet{DorauMuch2026} derive the semiclassical Einstein equations from the Araki--Uhlmann relative entropy of coherent excitations across a bifurcate Killing horizon. Their one gravitational input is this area law, applied with one coefficient at every local horizon. The normalization in this subsection takes that law as given. The angular rule of Q.11 derives the input in bare form: one tensor fixes both the replica entropy of a cut and the curvature weight, which gives $S=k_BAc^3/(4\hbar G_0)$ with the same $G_0$ that enters the Regge action and the same coefficient on every cut. Two conditions remain: the lattice Bisognano--Wichmann property of the bond vacuum, and equality of $G_0$ with the interacting coupling $G_{\rm R}$; C.8 gives $G_0/G_*=0.9975\pm0.0010$.
 
 \paragraph{Projected-area form of the quarter.}
 When a coarse spatial horizon is represented as the boundary of a convex body in Euclidean three-space, Cauchy's surface-area formula gives
@@ -6187,6 +6187,37 @@ estimates from the same spectrum use the Hawking width
 \citep{Agullo2021}; merger widths remove the spectrum
 \citep{Coates2022}. The stretched-layer cavity above is a different
 boundary theory.
+
+\paragraph{Logarithmic correction.}
+At fixed channel count each sector has degeneracy exactly $2^N$, so the
+channel count contributes no term in $\ln A_H$. The logarithmic
+correction is a one-loop property of the massless fields on the
+Euclidean exterior and depends only on that spectrum and on the ensemble
+\citep{Sen2013Log}. The baseline exterior propagates the two graviton
+polarizations and no additional scalar (Appendix~N), and at
+astrophysical horizon radii the photon is the only other massless field.
+If the long-wavelength sector of the host is Einstein gravity with the
+photon, the entropy is
+\[
+\frac{S}{k_B}=\frac{A_Hc^3}{4\hbar G_0}+C\ln\frac{A_H}{L_*^2},
+\]
+with $C=199/90$ when the angular momentum is summed and $C=77/45$ at
+fixed mass and fixed $J_z$; pure gravity gives $106/45$ and $167/90$.
+\citet{Chandrasekaran2026Null} obtains the pure-gravity value $106/45$
+at fixed mass from a Lorentzian quantization of vacuum general
+relativity on null cones, in which a causal diamond of bounded size has
+a finite-dimensional Hilbert space and a discrete area spectrum. The
+registered host gives $G_{\rm vol}/G_0=1.001$ at 64k and $1.045$ at 128k
+(Appendix~J.14). Graviton fluctuations of the host enter $G_{\rm vol}$,
+so this ratio bounds their shift of the area coefficient. A separate
+exterior entanglement term for the two graviton polarizations with the
+cell as cutoff would lower the ratio by about $15\%$; the scatter
+between windows, $0.11$ to $0.21$ in $\ln R$, does not yet resolve a
+shift of that size. The channel
+sectors have the flat spectrum of fixed-area states. The correlations
+that carry the logarithm belong to their superposition over channel
+number (Q.11a), and their long-wavelength two-point function is the
+tensor-sector test of the host.
 
 \subsection*{F.7 Dynamical formation as a free-boundary problem}
 
@@ -13828,11 +13859,9 @@ and 128k, and the largest vertex order per slice is the fraction
 \(0.0493\), \(0.0303\) and \(0.0205\) of \(N_4\), so it grows as
 \(N_4^{0.59}\). The registered reading is no growth: the 64k alternation
 exceeds the 16k value by \(1.9\) combined errors, below the threshold of
-two, and the 128k value lies below the 64k value. The higher alternation
-of the single final states was a fluctuation of single configurations.
-In the 64k and 128k runs the sign of the alternation never changes and
-both start from one 64k state, so their block errors are lower bounds,
-which strengthens the reading. The fitted line at 128k lies at
+two, and the 128k value lies below the 64k value. The 64k and 128k runs descend from one 64k state and retain the same
+parity sign throughout both windows. Their block errors are lower bounds.
+Independent starts would test whether this sign persists in equilibrium. The fitted line at 128k lies at
 \(\Delta=0.337\pm0.006\), above the host value by \(0.011\), a margin
 comparable to the \(0.01\) uncertainty of the published points. The
 native couplings show neither signature of the bifurcation phase there.
@@ -17345,7 +17374,7 @@ The occupation gate, the six measured kernels and the post-reionization gate fix
 \text{low-}z\text{ offset},\ \textstyle\sum m_\nu=0,\ \text{nonlinear}&2226.767&2226.483&-0.28
 \end{array}
 \]
-The first row also frees the Planck calibration and places $z_{\rm re}=8.12$ at $\tau=0.0587$, the optical depth of the $\Lambda$CDM fit, with $I_{\rm rel}=92.0$ and $H_0=68.42\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$. The second gives $z_{\rm re}=7.89$, $I_{\rm rel}=93.7$ and $H_0=68.89\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$. The parameter count gives $\Delta{\rm AIC}=-2.9$ and $-4.3$. In the first configuration the extreme kernels give $\chi^2=2240.16$ and $2240.32$, and post-reionization gates of $35$ and $25\,{\rm km\,s^{-1}}$ give $2240.19$ and $2241.66$, the second at $\tau=0.067$. Holding $z_{\rm re}$ at $7.66$ independently of the fitted $\tau$ gives $2259.18$ and $2230.74$, because the integral then exceeds the value the data select by about $3.5$. A larger optical depth places reionization earlier, closes small halos to entry sooner and lowers the vacuum density, so the frozen history predicts a correlation between $\tau$ and $\Omega_{\Lambda,0}$ that $\Lambda$CDM lacks. With $a_0=\epsilon cH_0$, the first fit gives $a_0=1.249\times10^{-10}\,\mathrm{m\,s^{-2}}$, and the astrophysical chain without cosmological data gives $a_0=(1.27\pm0.04)\times10^{-10}\,\mathrm{m\,s^{-2}}$, against $(1.20\pm0.02\pm0.24)\times10^{-10}\,\mathrm{m\,s^{-2}}$ from rotation curves \citep{McGaugh2016}. Neither value uses galactic data.
+The first row also frees the Planck calibration and places $z_{\rm re}=8.12$ at $\tau=0.0587$, the optical depth of the $\Lambda$CDM fit, with $I_{\rm rel}=92.0$ and $H_0=68.42\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$. The second gives $z_{\rm re}=7.89$, $I_{\rm rel}=93.7$ and $H_0=68.89\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$. The parameter count gives $\Delta{\rm AIC}=-2.9$ and $-4.3$. In the first configuration the extreme kernels give $\chi^2=2240.16$ and $2240.32$, and post-reionization gates of $35$ and $25\,{\rm km\,s^{-1}}$ give $2240.19$ and $2241.66$, the second at $\tau=0.067$. Holding $z_{\rm re}$ at $7.66$ independently of the fitted $\tau$ gives $2259.18$ and $2230.74$, because the integral then exceeds the value the data select by about $3.5$. A larger optical depth places reionization earlier, closes small halos to entry sooner and lowers the vacuum density, so the frozen history predicts a correlation between $\tau$ and $\Omega_{\Lambda,0}$ that $\Lambda$CDM lacks. With $a_0=\epsilon cH_0$, the first fit gives $a_0=1.249\times10^{-10}\,\mathrm{m\,s^{-2}}$, and the astrophysical chain without cosmological data gives $a_0=(1.27\pm0.04)\times10^{-10}\,\mathrm{m\,s^{-2}}$, against $(1.20\pm0.02\pm0.24)\times10^{-10}\,\mathrm{m\,s^{-2}}$ from rotation curves \citep{McGaugh2016}. Both evaluations use the same fixed acceleration coefficient. Neither refits it to the rotation curves used for comparison.
 
 \paragraph{Large-scale release bias.}
 The same first-entry construction fixes the response of release locations to
@@ -21567,6 +21596,11 @@ V. Chandrasekaran, R. Longo, G. Penington, and E. Witten,
 \emph{Journal of High Energy Physics} \textbf{2023}(2), 082 (2023),
 doi:10.1007/JHEP02(2023)082.
 
+\bibitem[Chandrasekaran(2026)]{Chandrasekaran2026Null}
+V.~Chandrasekaran,
+``An algebraic quantization of gravity from the null cone,''
+arXiv:2611.34924 (2026).
+
 \bibitem[Bianconi(2025)]{Bianconi2025}
 G. Bianconi,
 ``Gravity from entropy,''
@@ -22289,6 +22323,11 @@ R.~Landauer,
 G.~L. Bryan and M.~L. Norman,
 ``Statistical properties of X-ray clusters: Analytic and numerical comparisons,''
 \emph{The Astrophysical Journal} \textbf{495}, 80 (1998).
+
+\bibitem[Sen(2013)]{Sen2013Log}
+A.~Sen,
+``Logarithmic corrections to Schwarzschild and other non-extremal black hole entropy in different dimensions,''
+\emph{Journal of High Energy Physics} \textbf{2013}(4), 156 (2013), arXiv:1205.0971.
 
 \bibitem[Shin et al.(2019)]{Shin2019}
 T.~Shin et al.,
