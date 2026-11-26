@@ -15,6 +15,9 @@ namespace Entropic.EFT.Foundations
 /-- The five theory-defining commitments stated in Section 1.1, plus the common
 faithful-resolution rule used on states and histories. -/
 structure TheoryInputs where
+  /-- Finite local entanglement capacity.  External support, not formalized: the Lorentzian
+  quantization of vacuum general relativity on null cones gives every causal diamond a
+  finite-dimensional Hilbert space (Chandrasekaran, arXiv:2611.34924).  It stays a premise here. -/
   finiteCapacity : Prop
   informationGeometry : Prop
   massEntropy : Prop

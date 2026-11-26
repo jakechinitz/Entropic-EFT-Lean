@@ -172,3 +172,5 @@ import Entropic.Extensions20261119.Equipartition
 import Entropic.Extensions20261119.Ladders
 -- Cell count as a register state count; one-cell means at fixed marginals, 2026-11-20.
 import Entropic.Extensions20261120.CellCount
+-- The angular rule as the corner boost weight of quantized GR, 2026-11-26.
+import Entropic.Extensions20261126.CornerBoost
